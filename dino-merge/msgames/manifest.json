@@ -1,0 +1,37 @@
+{
+    "name": "Dinosaurs Merge Master",
+    "short_name": "Dinosaurs Merge Master",
+    "description": "Merge dinosaurs and fight enemies! Use strategy to combine troops on battlefield. Fuse them into giant monster to win!",
+    "icons": [
+        {
+            "src": "./icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./banner-1920x1080.jpg",
+            "sizes": "1920x1080",
+            "type": "image/jpeg"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "ms_start_compatible": true,
+    "background_color": "#000000",
+    "id": "dinosaurs-merge-master",
+    "lang": "en",
+    "orientation": "portrait-primary",
+    "categories": ["games"],
+    "prefer_related_applications": false,
+    "dir": "auto",
+    "display_override": ["window-controls-overlay"],
+    "_msstart": {
+        "leaderboards": {
+            "default": {
+                "score_type": "Numeric",
+                "score_order_by": "Desc"
+            }
+        }
+    }
+}
