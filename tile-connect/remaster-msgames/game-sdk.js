@@ -37,6 +37,14 @@ var __publicField = (obj, key, value) => {
   return value;
 };
 
+// <define:__GAME_CONFIG__>
+var define_GAME_CONFIG_default;
+var init_define_GAME_CONFIG = __esm({
+  "<define:__GAME_CONFIG__>"() {
+    define_GAME_CONFIG_default = { AppId: "", ApiHost: "https://fbig-singleplay-apps.citigo.site", OtherHost: "https://fbig-leaderboards.citigo.site", Ads: { Enabled: true, ShowAdOnLoad: { Enabled: false, DelaySeconds: 0, PlacementId: "interstitial_demo" }, InterstitialAdOptions: [{ PlacementId: "interstitial_demo", SecondsFirstTime: 60, SecondsBetweenAds: 90 }], RewardedVideoAdOptions: [{ PlacementId: "rewarded_video_demo", SecondsFirstTime: 0, SecondsBetweenAds: 0 }], BannerDisplayAdOptions: [{ PlacementId: "banner_demo", Position: "bottom", BannerHeight: 50, SecondsReload: 60, Platform: "ALL" }] }, GameSDK: { MSGames: { GameName: "Localhost", UseLoginFeature: true } }, Core: { StartSDKAfterLoadGame: true }, GameEngine: { DynamicAtlas: { IOS: { Enabled: false, MaxAtlasCount: 6, MaxAtlasSize: 4096, MaxFrameSize: 2048 }, Android: { Enabled: false, MaxAtlasCount: 6, MaxAtlasSize: 4096, MaxFrameSize: 2048 }, Desktop: { Enabled: false, MaxAtlasCount: 6, MaxAtlasSize: 4096, MaxFrameSize: 2048 } }, ForceDesktopDPR: false }, Gameplay: { StartAdAtLevel: 1, MaxRescueCount: 1, Tutorial: { ForceUseTutorial: false } }, Firebase: { Enabled: false, Options: { AppId: "", ApiKey: "", ProjectId: "", AuthDomain: "", StorageBucket: "", MeasurementId: "", MessagingSenderId: "" }, Services: { Analytics: { Enabled: false }, Performance: { Enabled: false }, RemoteConfig: { Enabled: false } } }, Analytics: { GoogleAnalytics: { Enabled: false, ConsoleLog: false }, FirebaseAnalytics: { Enabled: false, ConsoleLog: false }, FacebookAnalytics: { Prefix: "fba", Enabled: false, ConsoleLog: false } }, PerformanceMonitor: { CoreFlows: true, EngineFlows: true, FpsTracking: { Enabled: true, TrackingDuration: 60, TrackingInterval: 10 }, LoadResources: true }, RemoteConfig: { Enabled: false, Options: { ForceReloadGame: false, FetchIntervalInSeconds: 300 }, ServiceType: "mockup", DefaultConfigId: "default", SupportedDataTypes: ["GameCore", "Gameplay"], MockupConfig: { Enabled: true }, SelfHostedConfig: { Enabled: false, AppId: "", ApiKey: "", ApiUrl: "" } }, Network: { MaximumRequest: 6, Timeout: 15e3, Retries: 3 }, Leaderboards: { Limit: 50, LeaderboardId: "", LeaderboardEndlessId: "" }, Notification: { Enabled: true, ApiUrl: "https://notifications.sunstudio.io", GameTitle: "Sun Studio", GameImage: "https://sunstudio.io/images/logo.png" }, DailyRewards: { MaxDays: 7, MockTime: 0, CheckInterrupt: false }, Mockup: { Ads: { Enabled: false, ErrorRate: 5, GiphyApiKey: "VmjHIRsfrwCAssDS4mDo9DoImxJm1lLM" }, Match: { Enabled: false, CreateFailRate: 5, PlayerInfo: { Id: "player-mock", Name: "Player Mock", Photo: "", Signature: "" }, OpponentInfo: { Id: "opponent-mock", Name: "Opponent Mock", Photo: "", Signature: "" } }, GameSDK: { Context: { Enabled: false }, Player: { SubscribeBot: { Enabled: true, CanSubscribeBot: true }, ConnectedPlayers: { Enabled: false, ErrorRate: 5, RandomDelayMs: 1e3, AvatarUrl: "https://picsum.photos/seed/%1/300/300", NumOfPlayers: 3 } }, AddShortcut: { Enabled: true }, Tournament: { Enabled: false, ErrorRates: 5, RandomDelayMs: 1e3, NumOfTournament: { Normal: 10, HostPage: 2 } } }, Profile: { Enabled: false, ErrorRate: 5, RandomDelayMs: 1e3, AvatarUrl: "https://picsum.photos/seed/%1/300/300" }, Leaderboards: { Enabled: false, MinScore: 10, MaxScore: 100, ErrorRate: 5, NumOfLeaders: 50, RandomDelayMs: 1e3 }, LoadingScreen: { Enabled: false } }, Debugger: { ShowConsole: false, ShowProfiler: false, EventLogging: false, CanvasRecorder: { Enabled: false, Options: { Type: "png", Quality: 0.85, RecordFps: 60, SyncFps: true } }, MonitorError: { Enabled: false, ApiKey: "", Service: "BugSnag", TrackUser: false, FilterErrors: { Codes: { Accepted: [], Ignored: ["USER_INPUT", "NETWORK_FAILURE"] }, Messages: { Accepted: [], Ignored: ["Load image failed"] } }, ListPlayerDevIds: [] } }, AdaptivePerformance: { Enabled: false, Quality: { Min: 1, Max: 2, AdjustStep: 0.1 }, Options: { FpsThreshold: 48, CheckInterval: 2e3, AutoUpgradeQuality: true, OnlyUpdateWhenSwitchScene: false }, TrackingSceneNames: ["GameScene"] }, FrameCapture: { Enabled: false, Options: { Quality: 0.85, RenderType: "jpeg", UseBlobIfPossible: true, FallbackWithWideframe: "Default" }, WideframeConfigs: { Default: { Width: 952, Height: 492, Wideframe: "./public/wideframes/default.png", RenderOptions: {} }, ShareScore: { Width: 1500, Height: 2e3, Wideframe: "./public/wideframes/share-score.png", RenderOptions: {} }, ShareLeaderboard: { Width: 1500, Height: 2e3, Wideframe: "./public/wideframes/share-leaderboard.png", RenderOptions: {} }, ResultChallenge: { Width: 952, Height: 492, Wideframe: "./public/wideframes/result-challenge.png", RenderOptions: {} } } } };
+  }
+});
+
 // <define:__INIT_CONFIG__>
 var init_define_INIT_CONFIG = __esm({
   "<define:__INIT_CONFIG__>"() {
@@ -52,6 +60,7 @@ var empty_script_default;
 var init_empty_script = __esm({
   "libs/empty-script.js"() {
     "use strict";
+    init_define_GAME_CONFIG();
     init_define_INIT_CONFIG();
     empty_script_default = {};
   }
@@ -62,6 +71,7 @@ var html2, css2, _BaseAsyncPopup, BaseAsyncPopup, BaseAsyncPopup_default;
 var init_BaseAsyncPopup = __esm({
   "src/game-sdk/common/BaseAsyncPopup.ts"() {
     "use strict";
+    init_define_GAME_CONFIG();
     init_define_INIT_CONFIG();
     html2 = /*html*/
     `
@@ -217,6 +227,7 @@ var _SubscribeBotAsyncPopup, SubscribeBotAsyncPopup, SubscribeBotAsyncPopup_defa
 var init_SubscribeBotAsyncPopup = __esm({
   "src/game-sdk/common/SubscribeBotAsyncPopup.ts"() {
     "use strict";
+    init_define_GAME_CONFIG();
     init_define_INIT_CONFIG();
     init_BaseAsyncPopup();
     _SubscribeBotAsyncPopup = class _SubscribeBotAsyncPopup extends BaseAsyncPopup_default {
@@ -242,6 +253,7 @@ var LOCAL_STORE_KEY, _MockSubscribeBot, MockSubscribeBot, MockSubscribeBot_defau
 var init_MockSubscribeBot = __esm({
   "src/game-sdk/common/MockSubscribeBot.ts"() {
     "use strict";
+    init_define_GAME_CONFIG();
     init_define_INIT_CONFIG();
     LOCAL_STORE_KEY = "MockSubscribeBot";
     _MockSubscribeBot = class _MockSubscribeBot {
@@ -355,6 +367,7 @@ var _CreateShortcutAsyncPopup, CreateShortcutAsyncPopup, CreateShortcutAsyncPopu
 var init_CreateShortcutAsyncPopup = __esm({
   "src/game-sdk/common/CreateShortcutAsyncPopup.ts"() {
     "use strict";
+    init_define_GAME_CONFIG();
     init_define_INIT_CONFIG();
     init_BaseAsyncPopup();
     _CreateShortcutAsyncPopup = class _CreateShortcutAsyncPopup extends BaseAsyncPopup_default {
@@ -380,6 +393,7 @@ var LOCAL_STORE_KEY2, _MockAddShortcut, MockAddShortcut, MockAddShortcut_default
 var init_MockAddShortcut = __esm({
   "src/game-sdk/common/MockAddShortcut.ts"() {
     "use strict";
+    init_define_GAME_CONFIG();
     init_define_INIT_CONFIG();
     LOCAL_STORE_KEY2 = "MockAddShortcut";
     _MockAddShortcut = class _MockAddShortcut {
@@ -458,6 +472,7 @@ var require_names_surnames = __commonJS({
 });
 
 // src/game-sdk/index.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 init_empty_script();
 init_empty_script();
@@ -466,6 +481,7 @@ init_empty_script();
 init_empty_script();
 
 // src/utils/function/security.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var usedCallLocations = [];
 var blockAccess = /* @__PURE__ */ __name((source) => {
@@ -514,12 +530,15 @@ var wrapGetterToBlockObjectAccess = /* @__PURE__ */ __name((source, key) => {
 var security_default = wrapGetterToBlockObjectAccess;
 
 // src/game-sdk/adapters/msgames/MsGamesAdapter.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 
 // src/game-sdk/sdk/GameSDK.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 
 // src/game-sdk/sdk/Context.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var _Context = class _Context {
   constructor(adapter) {
@@ -743,9 +762,11 @@ var Context = _Context;
 var Context_default = Context;
 
 // src/game-sdk/sdk/Extra.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 
 // src/game-sdk/common/LoadingScreenElement.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var html = (
   /*html*/
@@ -887,6 +908,7 @@ var LoadingScreenElement = _LoadingScreenElement;
 var LoadingScreenElement_default = LoadingScreenElement;
 
 // src/game-sdk/exceptions/SDKCommonError.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var _SDKCommonError = class _SDKCommonError extends Error {
   constructor(code, message) {
@@ -1039,6 +1061,7 @@ var Extra = _Extra;
 var Extra_default = Extra;
 
 // src/game-sdk/sdk/Player.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var GameName = "Game Core".replace(/ /g, "-");
 var _Player = class _Player {
@@ -1211,9 +1234,11 @@ var Player = _Player;
 var Player_default = Player;
 
 // src/game-sdk/sdk/Tournament.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 
 // src/game-sdk/sdk/TournamentInstance.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var _TournamentInstance = class _TournamentInstance {
   constructor(id, payload, isPageHosted = false) {
@@ -1901,9 +1926,11 @@ var GameSDK2 = _GameSDK;
 var GameSDK_default = GameSDK2;
 
 // src/game-sdk/adapters/msgames/MsGamesAdInstance.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 
 // src/game-sdk/sdk/AdInstance.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var _AdInstance = class _AdInstance {
   constructor(type, placementId) {
@@ -2021,11 +2048,11 @@ var MsGamesAdInstance = _MsGamesAdInstance;
 var MsGamesAdInstance_default = MsGamesAdInstance;
 
 // src/game-sdk/adapters/msgames/MsGamesContext.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var _MsGamesContext = class _MsGamesContext extends Context_default {
   constructor(adapter, sdk) {
     super(adapter);
-    __publicField(this, "sdk");
     this.sdk = sdk;
   }
   getID() {
@@ -2035,24 +2062,16 @@ var _MsGamesContext = class _MsGamesContext extends Context_default {
     return "SOLO";
   }
   switchAsync(_) {
-    return new Promise((_2, reject) => {
-      reject(new Error("Unsupported"));
-    });
+    this.adapter.extra.exceptionUnsupported();
   }
   chooseAsync() {
-    return new Promise((_, reject) => {
-      reject(new Error("Unsupported"));
-    });
+    this.adapter.extra.exceptionUnsupported();
   }
   createAsync(_) {
-    return new Promise((_2, reject) => {
-      reject(new Error("Unsupported"));
-    });
+    this.adapter.extra.exceptionUnsupported();
   }
   getPlayersAsync() {
-    return new Promise((_, reject) => {
-      reject(new Error("Unsupported"));
-    });
+    this.adapter.extra.exceptionUnsupported();
   }
 };
 __name(_MsGamesContext, "MsGamesContext");
@@ -2060,15 +2079,19 @@ var MsGamesContext = _MsGamesContext;
 var MsGamesContext_default = MsGamesContext;
 
 // src/game-sdk/adapters/msgames/MsGamesPlayer.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 
 // src/game-sdk/adapters/msgames/commons/MsGamesUser.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 
 // src/utils/string/generateName.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 
 // src/utils/number/random.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var func = /* @__PURE__ */ __name((length2) => {
   return Math.floor(Math.random() * Math.pow(10, length2));
@@ -2076,9 +2099,11 @@ var func = /* @__PURE__ */ __name((length2) => {
 var random_default = func;
 
 // src/utils/object/hasOwn.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 
 // src/utils/valid/isObject.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var func2 = /* @__PURE__ */ __name((input) => {
   const isValidObject = typeof input === "object" || typeof input === "function";
@@ -2126,23 +2151,23 @@ var func4 = /* @__PURE__ */ __name(async () => {
 var generateName_default = func4;
 
 // src/game-sdk/adapters/msgames/commons/MsGamesUser.ts
+var GameName2 = "Game Core".replace(/ /g, "-");
+var guestIDStore = GameName2 + "_GuestID";
+var guestNameStore = GameName2 + "_GuestName";
+var guestDataStore = GameName2 + "_GuestData";
+var guestStatsStore = GameName2 + "GuestStats";
 var _MsGamesUser = class _MsGamesUser {
-  constructor(gameName, userInfo) {
+  constructor(userInfo) {
     __publicField(this, "_personalInfo");
     __publicField(this, "_uniqueId");
     __publicField(this, "photo");
     __publicField(this, "_playerData");
     __publicField(this, "_playerStats");
-    __publicField(this, "guestIDStore");
-    __publicField(this, "guestNameStore");
-    __publicField(this, "guestDataStore");
-    __publicField(this, "guestStatsStore");
     __publicField(this, "isGuest");
-    this.setUpDataStoreKeys(gameName);
     this.isGuest = true;
     if (userInfo) {
       this._uniqueId = userInfo.playerId;
-      localStorage.setItem(this.guestIDStore, this._uniqueId);
+      localStorage.setItem(guestIDStore, this._uniqueId);
       this.isGuest = false;
     }
     this._personalInfo = {
@@ -2209,40 +2234,34 @@ var _MsGamesUser = class _MsGamesUser {
     }
   }
   async checkAndGetNameFromLocalStorage() {
-    const localName = localStorage.getItem(this.guestNameStore);
+    const localName = localStorage.getItem(guestNameStore);
     if (localName != null) {
       return localName;
     } else {
       const randomName = await generateName_default();
-      localStorage.setItem(this.guestNameStore, randomName);
+      localStorage.setItem(guestNameStore, randomName);
       return randomName;
     }
   }
   getDataFromLocalStorage() {
-    const data = localStorage.getItem(this.guestDataStore);
+    const data = localStorage.getItem(guestDataStore);
     if (data) {
       return JSON.parse(data);
     }
     return {};
   }
   writeDataToLocalStorage(data) {
-    return localStorage.setItem(this.guestDataStore, JSON.stringify(data));
+    return localStorage.setItem(guestDataStore, JSON.stringify(data));
   }
   getStatsFromLocalStorage() {
-    const data = localStorage.getItem(this.guestStatsStore);
+    const data = localStorage.getItem(guestStatsStore);
     if (data) {
       return JSON.parse(data);
     }
     return {};
   }
   writeStatsToLocalStorage(data) {
-    return localStorage.setItem(this.guestStatsStore, JSON.stringify(data));
-  }
-  setUpDataStoreKeys(gameName) {
-    this.guestDataStore = gameName + "_GuestData";
-    this.guestIDStore = gameName + "_GuestID";
-    this.guestNameStore = gameName + "_GuestName";
-    this.guestStatsStore = gameName + "GuestStats";
+    return localStorage.setItem(guestStatsStore, JSON.stringify(data));
   }
 };
 __name(_MsGamesUser, "MsGamesUser");
@@ -2256,16 +2275,25 @@ var _MsGamesPlayer = class _MsGamesPlayer extends Player_default {
     __publicField(this, "sdk");
     __publicField(this, "player");
     __publicField(this, "signature", "");
+    __publicField(this, "isLoginEnabled", false);
     this.sdk = sdk;
+    this.updateLoginEnabledConfig();
+  }
+  updateLoginEnabledConfig() {
+    const gameConfig = define_GAME_CONFIG_default;
+    if (!gameConfig)
+      return;
+    const { MSGames } = gameConfig.GameSDK;
+    if (!MSGames)
+      return;
+    this.isLoginEnabled = MSGames.UseLoginFeature;
   }
   async initPlayerAsync() {
     let user = await this.tryGettingSignedInPlayer();
-    const isLoginEnable = this.adapter.getLoginFeatureEnabled();
-    const gameName = this.adapter.getGameName();
-    if (isLoginEnable && user === null) {
+    if (this.isLoginEnabled && user === null) {
       user = await this.tryMakingPlayerSignedIn();
     }
-    this.player = new MsGamesUser_default(gameName, user);
+    this.player = new MsGamesUser_default(user);
     if (user) {
       this.signature = `${user.playerId} ${user.signature}`;
     }
@@ -2349,9 +2377,7 @@ var _MsGamesPlayer = class _MsGamesPlayer extends Player_default {
     });
   }
   subscribeBotAsync() {
-    return new Promise((_, reject) => {
-      reject(new Error("Unsupported"));
-    });
+    this.adapter.extra.exceptionUnsupported();
   }
   getStatsAsync(keys) {
     return new Promise((resolve, reject) => {
@@ -2372,9 +2398,7 @@ var _MsGamesPlayer = class _MsGamesPlayer extends Player_default {
     });
   }
   getConnectedPlayersAsync() {
-    return new Promise((_, reject) => {
-      reject(new Error("Unsupported"));
-    });
+    this.adapter.extra.exceptionUnsupported();
   }
   isGuest() {
     if (!this.player)
@@ -2397,22 +2421,23 @@ var MsGamesPlayer = _MsGamesPlayer;
 var MsGamesPlayer_default = MsGamesPlayer;
 
 // src/game-sdk/adapters/msgames/MsGamesTournaments.ts
+init_define_GAME_CONFIG();
 init_define_INIT_CONFIG();
 var _MsGamesTournament = class _MsGamesTournament extends Tournament_default {
   createAsync(_payload) {
-    return Promise.reject(new Error("Unsupported"));
+    this.adapter.extra.exceptionUnsupported();
   }
   shareAsync(_payload) {
-    return Promise.reject(new Error("Unsupported"));
+    this.adapter.extra.exceptionUnsupported();
   }
   joinAsync(_tournamentID) {
-    return Promise.reject(new Error("Unsupported"));
+    this.adapter.extra.exceptionUnsupported();
   }
   postScoreAsync(_score) {
-    return Promise.reject(new Error("Unsupported"));
+    this.adapter.extra.exceptionUnsupported();
   }
   getTournamentsAsync() {
-    return Promise.reject(new Error("Unsupported"));
+    this.adapter.extra.exceptionUnsupported();
   }
 };
 __name(_MsGamesTournament, "MsGamesTournament");
@@ -2420,29 +2445,23 @@ var MsGamesTournament = _MsGamesTournament;
 var MsGamesTournaments_default = MsGamesTournament;
 
 // src/game-sdk/adapters/msgames/MsGamesAdapter.ts
+var GameName3 = "Game Core".replace(/ /g, "-");
 var _MsGamesAdapter = class _MsGamesAdapter extends GameSDK_default {
   constructor(sdk) {
     super();
     __publicField(this, "sdk");
     __publicField(this, "shareImageBase64");
     __publicField(this, "notificationImageBase64");
-    __publicField(this, "gameName");
-    __publicField(this, "useLoginFeature");
     this.sdk = sdk;
   }
   initialize() {
     super.initialize();
-    this.updatePlatformConfig();
     this.tournament = new MsGamesTournaments_default(this);
     this.player = new MsGamesPlayer_default(this, this.sdk);
     this.context = new MsGamesContext_default(this, this.sdk);
     this.rewardedVideoInstance = new MsGamesAdInstance_default("rewarded", this.sdk);
     this.interstitialAdInstance = new MsGamesAdInstance_default("interstitial", this.sdk);
     this.player.initPlayerAsync();
-  }
-  updatePlatformConfig() {
-    this.gameName = "Mock";
-    this.useLoginFeature = false;
   }
   async loadImageAsync(path) {
     const base64 = await fetch(path).then((res) => res.blob()).then((blob) => {
@@ -2494,7 +2513,7 @@ var _MsGamesAdapter = class _MsGamesAdapter extends GameSDK_default {
     }
     return new Promise((resolve, reject) => {
       this.sdk.shareAsync({
-        title: this.gameName,
+        title: GameName3,
         text: "Play now!",
         image: this.shareImageBase64
       }).then(() => resolve()).catch(reject);
@@ -2629,7 +2648,7 @@ var _MsGamesAdapter = class _MsGamesAdapter extends GameSDK_default {
       }
     }
     let defaultData = {
-      title: this.gameName,
+      title: GameName3,
       description: "We miss you!",
       type: 0,
       minDelayInSeconds: 3.6,
@@ -2641,12 +2660,6 @@ var _MsGamesAdapter = class _MsGamesAdapter extends GameSDK_default {
       console.info("\u{1F680} > scheduleNotificationAsync");
       this.sdk.scheduleNotificationAsync(defaultData).then(() => resolve()).catch(reject);
     });
-  }
-  getGameName() {
-    return this.gameName;
-  }
-  getLoginFeatureEnabled() {
-    return this.useLoginFeature;
   }
 };
 __name(_MsGamesAdapter, "MsGamesAdapter");
