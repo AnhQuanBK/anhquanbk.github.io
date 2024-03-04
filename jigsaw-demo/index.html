@@ -3,7 +3,7 @@
   <div id="puzzle"></div>
   <script>
     let testImg = new Image()
-    testImg.src = 'test.jpg'
+    testImg.src = "test.jpg"
     testImg.onload = () => {
         const autogen = new headbreaker.Canvas('puzzle', {
             width: 720, height: 450, img: testImg
@@ -16,4 +16,7 @@
         autogen.draw();
     }
   </script>
+  <div id="final-image">
+    <img src="test.jpg">
+  </div>
 </body>
