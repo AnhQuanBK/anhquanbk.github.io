@@ -1,0 +1,19 @@
+<script src="https://flbulgarelli.github.io/headbreaker/js/headbreaker.js"></script>
+<body>
+  <div id="puzzle"></div>
+  <script>
+    let testImg = new Image()
+    testImg.src = 'test.jpg'
+    testImg.onload = () => {
+        const autogen = new headbreaker.Canvas('puzzle', {
+            width: 720, height: 450, img: testImg
+        });
+        autogen.autogenerate({
+            horizontalPiecesCount: 7,
+            verticalPiecesCount: 5,
+        });
+        autogen.shuffleGrid();
+        autogen.draw();
+    }
+  </script>
+</body>
