@@ -1,0 +1,5 @@
+{
+    "puzzles": [
+        {"_id":"demo-vertical-1","type":"vertical","category":"classic","image":"classic-vertical-p20.jpg","hasThumbnail":false,"renderOptions":[]}
+    ]
+}
