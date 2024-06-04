@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"/><title>Dinosaurs Merge Master</title><link rel="manifest" href="manifest.json"/><style>:root {
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"/><title>Game Core</title><link rel="manifest" href="manifest.json"/><style>:root {
                 --sat: env(safe-area-inset-top);
                 --sar: env(safe-area-inset-right);
                 --sab: env(safe-area-inset-bottom);
@@ -26,19 +26,14 @@
                 margin: 0;
                 padding: 0;
                 color: white;
-                overflow: hidden;
                 background: transparent;
+                overflow: hidden;
             }
 
             #app {
                 width: 100%;
                 height: 100%;
                 position: absolute;
-            }
-
-            #app.has-background {
-                background-image: url(./assets/svgs/background.svg);
-                box-shadow: rgb(0 0 0 / 10%) 0px 0px 16px 16px;
             }
 
             canvas {
@@ -49,6 +44,7 @@
                 transform: translate(-50%, -50%);
                 left: 50%;
                 top: 50%;
+                box-shadow: rgb(0 0 0 / 10%) 0px 0px 16px 16px;
                 touch-action: none;
             }
 
@@ -56,50 +52,8 @@
                 display: none;
             }
 
-            #background-mask {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background-color: rgb(0, 0, 0, 1);
-            }
-
-            #background {
-                display: none;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            #background-image {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-            }
-
-            @media (min-aspect-ratio: 16 / 9) {
-                #background {
-                    background-size: contain;
-                }
-
-                #background-image {
-                    object-fit: contain;
-                }
-            }
-
-            @media (max-aspect-ratio: 16 / 9) {
-                #background {
-                    background-size: cover;
-                }
-
-                #background-image {
-                    object-fit: cover;
-                }
-            }
-
-            #lds-dual-ring {
+            #lds-dual-ring,
+            #wait-ads-dual-ring {
                 display: block;
                 width: 64px;
                 height: 64px;
@@ -151,10 +105,19 @@
 
             div[hidden] {
                 display: none !important;
-            }</style><link href="sdk.86d19cc9eb7f2971a554.bundle.js" rel="preload" as="script"/><link href="vendors.75e43a553673f40f2cb1.bundle.js" rel="preload" as="script"/><link href="engine.9be5420df4642d72e063.bundle.js" rel="preload" as="script"/><link href="game.2be9f4a60f4c7cf027df.bundle.js" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }</script><link href="https://www.googletagmanager.com/gtag/js?id=G-CFEP5D5EV6" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
-        window.__GA_CONFIG = {
-            GAME_NAME: 'Dinosaurs Merge Master',
-            GA_MEASUREMENT_ID: 'G-CFEP5D5EV6',
-            BUILD_VERSION: '7',
-        }</script><script src="https://assets.msn.com/staticsb/statics/latest/msstart-games-sdk/msstart-v1.0.0-rc.13.min.js"></script></head><body oncontextmenu="event.preventDefault()"><div><div id="background"><img id="background-image" crossorigin="use-credentials"/></div><div id="background-mask"></div></div><div id="app" class="has-background"></div><script src="sdk.86d19cc9eb7f2971a554.bundle.js"></script><script>"use strict";function initFbInstant(){var t=1,n=setInterval((function(){"FBInstant"in window&&(clearInterval(n),FBInstant.initializeAsync().then((function(){window.focus();var n=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(t){initGoogleAnalytics(n,t)})).catch((function(){initGoogleAnalytics(n,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(t++),t>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(t,n){if(window.__GA_CONFIG){var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=FBInstant.getEntryPointData()||{},s=e.fbig_ad_id,o=e.fbig_adset_id,_=e.fbig_campaign_id,g=document.createElement("script");g.async=!0,g.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(g),gtag("set","client_storage","none"),gtag("set","client_id","100."+t),gtag("set","user_id",t),gtag("set","send_page_view",!1),gtag("js",new Date),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,medium:n,campaign:_,groups:"GA"}),gtag("set","user_properties",{user_id:t,traffic_source:n,campaign_id:_,adset_id:o,ad_id:s}),gtag("event","app_launch",{send_to:"GA"}),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.75e43a553673f40f2cb1.bundle.js"></script><script defer="defer" src="engine.9be5420df4642d72e063.bundle.js"></script><script defer="defer" src="game.2be9f4a60f4c7cf027df.bundle.js"></script></body></html>
+            }</style><link href="sdk.e2c6d6c05476ccccdef2.bundle.js" rel="preload" as="script"/><link href="vendors.a0431fa072e272a4ca43.bundle.js" rel="preload" as="script"/><link href="engine.4606b258a675ebea8dfa.bundle.js" rel="preload" as="script"/><link href="game.91fe31fc38e597723e6e.bundle.js" rel="preload" as="script"/><script defer="defer" src="libs/sentry.min.js"></script><script>"use strict"
+
+    var waitSentryTimer = setInterval(function () {
+    if (!window.hasOwnProperty('Sentry')) return
+    clearInterval(waitSentryTimer)
+    var dns = "null"
+    if(dns === "null" || !dns) return
+    
+    Sentry.init({
+        dsn: dns,
+        environment: 'production',
+        release: '0',
+        tracesSampleRate: '1.0',
+    })
+    }, 100)</script><script>window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }</script><script src="https://assets.msn.com/staticsb/statics/latest/msstart-games-sdk/msstart-v1.0.0-rc.14.min.js"></script></head><body oncontextmenu="event.preventDefault()"><div id="app"></div><script src="sdk.e2c6d6c05476ccccdef2.bundle.js"></script><script>"use strict";function initFbInstant(){var t=1,n=setInterval((function(){"FBInstant"in window&&(clearInterval(n),FBInstant.initializeAsync().then((function(){window.focus();var n=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(t){initGoogleAnalytics(n,t)})).catch((function(){initGoogleAnalytics(n,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(t++),t>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(t,n){if(window.__GA_CONFIG){var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=FBInstant.getEntryPointData()||{},s=e.fbig_ad_id,o=e.fbig_adset_id,_=e.fbig_campaign_id,g=document.createElement("script");g.async=!0,g.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(g),gtag("set","client_storage","none"),gtag("set","client_id","100."+t),gtag("set","user_id",t),gtag("set","send_page_view",!1),gtag("js",new Date),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,medium:n,campaign:_,groups:"GA"}),gtag("set","user_properties",{user_id:t,traffic_source:n,campaign_id:_,adset_id:o,ad_id:s}),gtag("event","app_launch",{send_to:"GA"}),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.a0431fa072e272a4ca43.bundle.js"></script><script defer="defer" src="engine.4606b258a675ebea8dfa.bundle.js"></script><script defer="defer" src="game.91fe31fc38e597723e6e.bundle.js"></script></body></html>
