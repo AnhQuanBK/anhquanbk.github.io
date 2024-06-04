@@ -1,7 +1,7 @@
 {
-    "name": "Game Core",
-    "short_name": "Game Core",
-    "description": "",
+    "name": "Dinosaurs Merge Master",
+    "short_name": "Dinosaurs Merge Master",
+    "description": "Merge dinosaurs and fight enemies! Use strategy to combine troops on battlefield. Fuse them into giant monster to win!",
     "icons": [
         {
             "src": "./icon-512x512.png",
@@ -19,7 +19,7 @@
     "theme_color": "#ffffff",
     "ms_start_compatible": true,
     "background_color": "#000000",
-    "id": "game-core",
+    "id": "dinosaurs-merge-master",
     "lang": "en",
     "orientation": "portrait-primary",
     "categories": ["games"],
