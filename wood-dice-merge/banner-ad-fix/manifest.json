@@ -1,0 +1,37 @@
+{
+    "name": "Wood Dice Merge",
+    "short_name": "Wood Dice Merge",
+    "description": "Wood Dice Merge is an amazing wooden board game. Roll the dice, match 3 same dice to merge magic dice. Easy to play and hard to master.",
+    "icons": [
+        {
+            "src": "./icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./banner-1920x1080.jpg",
+            "sizes": "1920x1080",
+            "type": "image/jpeg"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "ms_start_compatible": true,
+    "background_color": "#000000",
+    "id": "wood-dice-merge",
+    "lang": "en",
+    "orientation": "portrait-primary",
+    "categories": ["games"],
+    "prefer_related_applications": false,
+    "dir": "auto",
+    "display_override": ["window-controls-overlay"],
+    "_msstart": {
+        "leaderboards": {
+            "default": {
+                "score_type": "Numeric",
+                "score_order_by": "Desc"
+            }
+        }
+    }
+}
