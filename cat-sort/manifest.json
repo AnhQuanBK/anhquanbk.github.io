@@ -1,0 +1,37 @@
+{
+    "name": "Cat Sort Puzzle",
+    "short_name": "Cat Sort Puzzle",
+    "description": "Immerse yourself in the whimsical world of Cat Sort Puzzle, the latest free sorting game sensation! With its vibrant art style and an adorable array of colorful cats, this game promises a purr-fect blend of fun and brain exercise!",
+    "icons": [
+        {
+            "src": "./icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./banner-1920x1080.jpg",
+            "sizes": "1920x1080",
+            "type": "image/jpeg"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "ms_start_compatible": true,
+    "background_color": "#000000",
+    "id": "cat-sort-puzzle",
+    "lang": "en",
+    "orientation": "portrait-primary",
+    "categories": ["games"],
+    "prefer_related_applications": false,
+    "dir": "auto",
+    "display_override": ["window-controls-overlay"],
+    "_msstart": {
+        "leaderboards": {
+            "default": {
+                "score_type": "Numeric",
+                "score_order_by": "Desc"
+            }
+        }
+    }
+}
