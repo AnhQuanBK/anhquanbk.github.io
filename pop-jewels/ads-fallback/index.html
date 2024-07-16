@@ -1,0 +1,136 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"/><title>Pop Jewels Master</title><link rel="manifest" href="manifest.json"/><style>:root {
+                --sat: env(safe-area-inset-top);
+                --sar: env(safe-area-inset-right);
+                --sab: env(safe-area-inset-bottom);
+                --sal: env(safe-area-inset-left);
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+            }
+
+            html {
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                scroll-behavior: smooth;
+                font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+                background-color: #191919;
+            }
+
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                color: white;
+                background: transparent;
+                overflow: hidden;
+            }
+
+            #app {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            #app.portrait {
+                box-shadow: rgb(0 0 0 / 10%) 0px 0px 16px 16px;
+            }
+
+            #background {
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: #000;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            #background-mask {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgb(0, 0, 0, 0);
+            }
+
+            canvas {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                position: relative;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                /* box-shadow: rgb(0 0 0 / 10%) 0px 0px 16px 16px; */
+                touch-action: none;
+            }
+
+            #capture {
+                display: none;
+            }
+
+            #lds-dual-ring,
+            #wait-ads-dual-ring {
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 0px auto;
+                border-radius: 50%;
+                border: 6px solid #fff;
+                border-color: #fff transparent #fff transparent;
+                animation: lds-dual-ring 1.2s linear infinite;
+                -webkit-animation: lds-dual-ring 1.2s linear infinite;
+            }
+
+            #lds-text,
+            #wait-ads-text {
+                text-align: center;
+                -webkit-text-align: center;
+                margin-top: 30px;
+                font-size: 1.2rem;
+            }
+
+            #lds-content,
+            #wait-ads-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+            }
+
+            #wait-ads-mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: #191919;
+            }
+
+            @keyframes lds-dual-ring {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            div[hidden] {
+                display: none !important;
+            }</style><link href="sdk.1934e326ce66e0a8e2d8.bundle.js" rel="preload" as="script"/><link href="vendors.354004e6689881759650.bundle.js" rel="preload" as="script"/><link href="engine.69d16527d781f50b5266.bundle.js" rel="preload" as="script"/><link href="game.ddd7c93c88b664cc9c7e.bundle.js" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }</script><link href="https://www.googletagmanager.com/gtag/js?id=G-ZERRF1MM3Q" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
+        window.__GA_CONFIG = {
+            GAME_NAME: 'Pop Jewels Master',
+            GA_MEASUREMENT_ID: 'G-ZERRF1MM3Q',
+            BUILD_VERSION: '10',
+        }</script><script src="https://assets.msn.com/staticsb/statics/latest/msstart-games-sdk/msstart-v1.0.0-rc.13.min.js"></script></head><body oncontextmenu="event.preventDefault()"><div><div id="background"></div><div id="background-mask"></div></div><div id="app" class="portrait"></div><script src="sdk.1934e326ce66e0a8e2d8.bundle.js"></script><script>"use strict";function initFbInstant(){var n=1,t=setInterval((function(){"FBInstant"in window&&(clearInterval(t),FBInstant.initializeAsync().then((function(){window.focus();var t=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(n){initGoogleAnalytics(t,n)})).catch((function(){initGoogleAnalytics(t,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(n++),n>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(n,t){if(window.__GA_CONFIG){var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(e),gtag("set","client_storage","none"),gtag("set","send_page_view",!1),clearInterval(window.__analyticsTimer);var s=FBInstant.getEntryPointData()||{},o=s.fbig_ad_id,_=s.fbig_adset_id,c=s.fbig_campaign_id;gtag("set","client_id","100."+n),gtag("set","user_id",n),gtag("set","user_properties",{user_id:n,traffic_source:t,campaign_id:c,adset_id:_,ad_id:o}),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,medium:t,campaign:c}),gtag("event","app_launch"),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.354004e6689881759650.bundle.js"></script><script defer="defer" src="engine.69d16527d781f50b5266.bundle.js"></script><script defer="defer" src="game.ddd7c93c88b664cc9c7e.bundle.js"></script></body></html>
