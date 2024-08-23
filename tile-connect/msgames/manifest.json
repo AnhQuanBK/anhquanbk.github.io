@@ -14,7 +14,7 @@
             "type": "image/jpeg"
         }
     ],
-    "start_url": "/",
+    "start_url": "/ms-games/",
     "display": "standalone",
     "theme_color": "#ffffff",
     "ms_start_compatible": true,
