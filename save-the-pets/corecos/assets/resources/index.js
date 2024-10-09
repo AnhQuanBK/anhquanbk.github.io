@@ -1,0 +1,1 @@
+System.register("chunks:///resources.js",[],function(){return{execute:function(){}}});(function(e){e("virtual:///prerequisite-imports/resources","chunks:///resources.js")})(function(e,r){System.register(e,[r],function(e,r){return{setters:[function(r){var t={};for(var u in r)if("default"!==u&&"__esModule"!==u)t[u]=r[u];e(t)}],execute:function(){}}})});
