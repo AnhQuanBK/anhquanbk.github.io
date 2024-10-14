@@ -1,0 +1,1 @@
+window.__errorQueue=[];function errorHandler(r){if(!window.__errorQueue)return;window.__errorQueue.push(r)}window.addEventListener("error",function(r){errorHandler(r.error)});window.addEventListener("unhandledrejection",function(r){errorHandler(r.reason)});
