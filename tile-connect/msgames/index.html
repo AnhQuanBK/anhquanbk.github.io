@@ -65,6 +65,33 @@
                 -webkit-animation: lds-dual-ring 1.2s linear infinite;
             }
 
+            #loading-game-icon-blur,
+            #loading-game-icon {
+                display: block;
+                background-image: url('icon-512x512.png');
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+            }
+
+            #loading-game-icon-blur {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                filter: blur(30px);
+                -webkit-filter: blur(30px);
+            }
+
+            #loading-game-icon {
+                width: 75px;
+                height: 75px;
+                margin: 0 auto;
+                animation: icon-fade-in 0.4s ease-in, icon-bubble 1.5s ease-in-out infinite;
+            }
+
             #lds-text,
             #wait-ads-text {
                 text-align: center;
@@ -103,12 +130,31 @@
                 }
             }
 
+            @keyframes icon-fade-in {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes icon-bubble {
+                0%,
+                100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.05);
+                }
+            }
+
             div[hidden] {
                 display: none !important;
-            }</style><link href="sdk.3bdc15073735823ef463.bundle.js" rel="preload" as="script"/><link href="vendors.f7d1e5590868ad76c0c2.bundle.js" rel="preload" as="script"/><link href="engine.70002a90ee8bea57a0e8.bundle.js" rel="preload" as="script"/><link href="game.df33019a70ad8e3b2d7e.bundle.js" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
+            }</style><link href="sdk.a26959a463f5e069e72e.bundle.js" rel="preload" as="script"/><link href="vendors.1197d61690b858d01d10.bundle.js" rel="preload" as="script"/><link href="engine.6c5dff4b672b57edcf6e.bundle.js" rel="preload" as="script"/><link href="game.e76b92145233e6f2b331.bundle.js" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }</script><link href="https://www.googletagmanager.com/gtag/js?id=G-C4JRJDT1W8" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
         window.__GA_CONFIG = {
             GAME_NAME: 'Tile Connect Master',
             GA_MEASUREMENT_ID: 'G-C4JRJDT1W8',
-            BUILD_VERSION: '13',
-        }</script><script src="https://assets.msn.com/staticsb/statics/latest/msstart-games-sdk/msstart-v1.0.0-rc.14.min.js"></script></head><body oncontextmenu="event.preventDefault()"><div id="app"></div><script src="sdk.3bdc15073735823ef463.bundle.js"></script><script>"use strict";function initFbInstant(){var t=1,n=setInterval((function(){"FBInstant"in window&&(clearInterval(n),FBInstant.initializeAsync().then((function(){window.focus();var n=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(t){initGoogleAnalytics(n,t)})).catch((function(){initGoogleAnalytics(n,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(t++),t>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(t,n){if(window.__GA_CONFIG){var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=FBInstant.getEntryPointData()||{},s=e.fbig_ad_id,o=e.fbig_adset_id,_=e.fbig_campaign_id,g=document.createElement("script");g.async=!0,g.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(g),gtag("set","client_storage","none"),gtag("set","client_id","100."+t),gtag("set","user_id",t),gtag("set","send_page_view",!1),gtag("js",new Date),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,medium:n,campaign:_,groups:"GA"}),gtag("set","user_properties",{user_id:t,traffic_source:n,campaign_id:_,adset_id:o,ad_id:s}),gtag("event","app_launch",{send_to:"GA"}),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.f7d1e5590868ad76c0c2.bundle.js"></script><script defer="defer" src="engine.70002a90ee8bea57a0e8.bundle.js"></script><script defer="defer" src="game.df33019a70ad8e3b2d7e.bundle.js"></script></body></html>
+            BUILD_VERSION: '16',
+        }</script><script src="https://assets.msn.com/staticsb/statics/latest/msstart-games-sdk/msstart-v1.0.0-rc.14.min.js"></script></head><body oncontextmenu="event.preventDefault()"><div id="app"></div><script src="sdk.a26959a463f5e069e72e.bundle.js"></script><script>"use strict";function initFbInstant(){var t=1,n=setInterval((function(){"FBInstant"in window&&(clearInterval(n),FBInstant.initializeAsync().then((function(){window.focus();var n=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(t){initGoogleAnalytics(n,t)})).catch((function(){initGoogleAnalytics(n,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(t++),t>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(t,n){if(window.__GA_CONFIG){var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=FBInstant.getEntryPointData()||{},s=e.fbig_ad_id,o=e.fbig_adset_id,_=e.fbig_campaign_id,g=document.createElement("script");g.async=!0,g.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(g),gtag("set","client_storage","none"),gtag("set","client_id","100."+t),gtag("set","user_id",t),gtag("set","send_page_view",!1),gtag("js",new Date),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,medium:n,campaign:_,groups:"GA"}),gtag("set","user_properties",{user_id:t,traffic_source:n,campaign_id:_,adset_id:o,ad_id:s}),gtag("event","app_launch",{send_to:"GA"}),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.1197d61690b858d01d10.bundle.js"></script><script defer="defer" src="engine.6c5dff4b672b57edcf6e.bundle.js"></script><script defer="defer" src="game.e76b92145233e6f2b331.bundle.js"></script></body></html>
