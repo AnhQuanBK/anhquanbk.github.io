@@ -14,12 +14,12 @@
             "type": "image/jpeg"
         }
     ],
-    "start_url": "/msgames/",
+    "start_url": "/ms-games/",
     "display": "standalone",
     "theme_color": "#ffffff",
     "ms_start_compatible": true,
     "background_color": "#000000",
-    "id": "save-the-pets",
+    "id": "9p3610rr8qt5",
     "lang": "en",
     "orientation": "portrait-primary",
     "categories": ["games"],
