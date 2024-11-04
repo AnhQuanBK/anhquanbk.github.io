@@ -1,7 +1,7 @@
 {
-    "name": "Game Core",
-    "short_name": "Game Core",
-    "description": "",
+    "name": "Solitaire Spider Master",
+    "short_name": "Solitaire Spider Master",
+    "description": "Solitaire Spider is a fun and challenging solitaire game. You can choose from 1, 2 or 4 suits, and enjoy various features such as playing by missions and customizing your themes. Whether you are a beginner or an expert, Solitaire Spider will keep you entertained for hours!",
     "icons": [
         {
             "src": "./icon-512x512.png",
@@ -14,12 +14,12 @@
             "type": "image/jpeg"
         }
     ],
-    "start_url": "/",
+    "start_url": "/ms-games/",
     "display": "standalone",
     "theme_color": "#ffffff",
     "ms_start_compatible": true,
     "background_color": "#000000",
-    "id": "game-core",
+    "id": "solitaire-spider-master",
     "lang": "en",
     "orientation": "portrait-primary",
     "categories": ["games"],
