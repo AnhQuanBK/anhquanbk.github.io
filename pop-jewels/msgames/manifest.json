@@ -1,7 +1,7 @@
 {
-    "name": "Game Core",
-    "short_name": "Game Core",
-    "description": "",
+    "name": "Pop Jewels Master",
+    "short_name": "Pop Jewels Master",
+    "description": "Pop Jewels Master is a free-to-play match-3 puzzle game with beautiful gems and challenging puzzles.",
     "icons": [
         {
             "src": "./icon-512x512.png",
@@ -19,7 +19,7 @@
     "theme_color": "#ffffff",
     "ms_start_compatible": true,
     "background_color": "#000000",
-    "id": "game-core",
+    "id": "pop-jewels-master",
     "lang": "en",
     "orientation": "portrait-primary",
     "categories": ["games"],
