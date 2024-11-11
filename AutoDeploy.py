@@ -3,6 +3,13 @@
 import hashlib
 import os
 import sys
+import gc
+import atexit
+
+
+def cleanup():
+    gc.collect()
+    print("Garbage collection done")
 
 
 def get_hash():
@@ -22,5 +29,7 @@ def main():
     # Run cmd command git push origin master
     os.system("git push")
 
+
+gc.enable()
 
 main()
