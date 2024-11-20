@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"/><title>Dinosaurs Merge Master</title><link rel="manifest" href="manifest.json"/><style>:root {
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"/><title>Game Core</title><style>:root {
                 --sat: env(safe-area-inset-top);
                 --sar: env(safe-area-inset-right);
                 --sab: env(safe-area-inset-bottom);
@@ -17,7 +17,6 @@
                 font-size: 18px;
                 scroll-behavior: smooth;
                 font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
-                background-color: #191919;
             }
 
             body {
@@ -26,19 +25,18 @@
                 margin: 0;
                 padding: 0;
                 color: white;
-                overflow: hidden;
                 background: transparent;
+                overflow: hidden;
             }
 
             #app {
                 width: 100%;
                 height: 100%;
                 position: absolute;
-            }
-
-            #app.has-background {
                 background-image: url(./assets/svgs/background.svg);
-                box-shadow: rgb(0 0 0 / 10%) 0px 0px 16px 16px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
             }
 
             canvas {
@@ -49,6 +47,7 @@
                 transform: translate(-50%, -50%);
                 left: 50%;
                 top: 50%;
+                box-shadow: rgb(0 0 0 / 10%) 0px 0px 16px 16px;
                 touch-action: none;
             }
 
@@ -56,50 +55,8 @@
                 display: none;
             }
 
-            #background-mask {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background-color: rgb(0, 0, 0, 1);
-            }
-
-            #background {
-                display: none;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            #background-image {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-            }
-
-            @media (min-aspect-ratio: 16 / 9) {
-                #background {
-                    background-size: contain;
-                }
-
-                #background-image {
-                    object-fit: contain;
-                }
-            }
-
-            @media (max-aspect-ratio: 16 / 9) {
-                #background {
-                    background-size: cover;
-                }
-
-                #background-image {
-                    object-fit: cover;
-                }
-            }
-
-            #lds-dual-ring {
+            #lds-dual-ring,
+            #wait-ads-dual-ring {
                 display: block;
                 width: 64px;
                 height: 64px;
@@ -109,6 +66,35 @@
                 border-color: #fff transparent #fff transparent;
                 animation: lds-dual-ring 1.2s linear infinite;
                 -webkit-animation: lds-dual-ring 1.2s linear infinite;
+            }
+
+            #lds-text,
+            #wait-ads-text {
+                text-align: center;
+                -webkit-text-align: center;
+                margin-top: 30px;
+                font-size: 1.2rem;
+                color: white;
+            }
+
+            #lds-content,
+            #wait-ads-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+            }
+
+            #wait-ads-mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: #191919;
             }
 
             #loading-game-icon-blur,
@@ -138,45 +124,6 @@
                 animation: icon-fade-in 0.4s ease-in, icon-bubble 1.5s ease-in-out infinite;
             }
 
-            #lds-text,
-            #wait-ads-text {
-                text-align: center;
-                -webkit-text-align: center;
-                margin-top: 30px;
-                font-size: 1.2rem;
-            }
-
-            #lds-content,
-            #wait-ads-content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -webkit-transform: translate(-50%, -50%);
-            }
-
-            #wait-ads-mask {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                background-color: #191919;
-            }
-
-            #adblock-checker {
-                position: absolute;
-                visibility: hidden;
-            }
-
-            #prebid-ads {
-                height: 2px;
-                width: 2px;
-                visibility: hidden;
-            }
-
             @keyframes lds-dual-ring {
                 0% {
                     transform: rotate(0deg);
@@ -202,20 +149,30 @@
                     transform: scale(1);
                 }
                 50% {
-                    transform: scale(1.05);
+                    transform: scale(1.25);
                 }
             }
 
             div[hidden] {
                 display: none !important;
-            }</style><link href="sdk.17fb22cde4334db3f429.bundle.js" rel="preload" as="script"/><link href="vendors.f4e998a338df6637e281.bundle.js" rel="preload" as="script"/><link href="engine.8df58d9e175f20f14ea8.bundle.js" rel="preload" as="script"/><link href="game.432988cfc9f0300a9d87.bundle.js" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }</script><link href="https://www.googletagmanager.com/gtag/js?id=G-CFEP5D5EV6" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
+            }</style><link href="sdk.bundle.js" rel="preload" as="script"/><link href="vendors.bundle.js" rel="preload" as="script"/><link href="engine.bundle.js" rel="preload" as="script"/><link href="game.bundle.js" rel="preload" as="script"/><script defer="defer" src="libs/sentry.min.js"></script><script>"use strict"
+
+    var waitSentryTimer = setInterval(function () {
+    if (!window.hasOwnProperty('Sentry')) return
+    clearInterval(waitSentryTimer)
+    var dns = "null"
+    if(dns === "null" || !dns) return
+    
+    Sentry.init({
+        dsn: dns,
+        environment: 'production',
+        release: '0',
+        tracesSampleRate: '1.0',
+    })
+    }, 100)</script><link href="https://www.googletagmanager.com/gtag/js?id=G-ZERRF1MM3Q" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
         window.__GA_CONFIG = {
-            GAME_NAME: 'Dinosaurs Merge Master',
-            GA_MEASUREMENT_ID: 'G-CFEP5D5EV6',
-            BUILD_VERSION: '13',
-        }</script><script src="https://assets.msn.com/staticsb/statics/latest/msstart-games-sdk/msstart-v1.0.0-rc.13.min.js"></script><script>(function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "on0nmitv06");</script></head><body oncontextmenu="event.preventDefault()"><div id="adblock-checker"><div id="prebid-ads"></div></div><div><div id="background"><img id="background-image" crossorigin="use-credentials"/></div><div id="background-mask"></div></div><div id="app" class="has-background"></div><script src="sdk.17fb22cde4334db3f429.bundle.js"></script><script>"use strict";function initFbInstant(){var n=1,t=setInterval((function(){"FBInstant"in window&&(clearInterval(t),FBInstant.initializeAsync().then((function(){window.focus();var t=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(n){initGoogleAnalytics(t,n)})).catch((function(){initGoogleAnalytics(t,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(n++),n>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(n,t){if(window.__GA_CONFIG){var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=FBInstant.getEntryPointData()||{},s=e.fbig_ad_id,o=e.fbig_adset_id,_=e.fbig_campaign_id,g=t;!!e.notificationPayload&&(g="msn_notification");var d=document.createElement("script");d.async=!0,d.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(d),gtag("set","client_storage","none"),gtag("set","client_id","100."+n),gtag("set","user_id",n),gtag("set","send_page_view",!1),gtag("js",new Date),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,medium:g,campaign:_,groups:"GA"}),gtag("set","user_properties",{user_id:n,traffic_source:g,campaign_id:_,adset_id:o,ad_id:s}),gtag("event","app_launch",{send_to:"GA"}),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.f4e998a338df6637e281.bundle.js"></script><script defer="defer" src="engine.8df58d9e175f20f14ea8.bundle.js"></script><script defer="defer" src="game.432988cfc9f0300a9d87.bundle.js"></script></body></html>
+            GAME_NAME: 'Game Core',
+            GA_MEASUREMENT_ID: 'G-ZERRF1MM3Q',
+            BUILD_VERSION: '0',
+        }</script><script src="https://assets.msn.com/staticsb/statics/latest/msstart-games-sdk/msstart-v1.0.0-rc.13.min.js"></script></head><body><div id="app"></div><div id="lds-content" hidden><div id="lds-dual-ring"></div><div id="lds-text"><span id="lds-percent">0</span>% нагруженный</div></div><div id="root"></div><script src="sdk.bundle.js"></script><script>"use strict";function initFbInstant(){var t=1,n=setInterval((function(){"FBInstant"in window&&(clearInterval(n),FBInstant.initializeAsync().then((function(){window.focus();var n=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(t){initGoogleAnalytics(n,t)})).catch((function(){initGoogleAnalytics(n,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(t++),t>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(t,n){window.__GA_CONFIG.GAME_NAME;var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=FBInstant.getEntryPointData()||{},s=e.fbig_ad_id,o=e.fbig_adset_id,_=e.fbig_campaign_id,g=document.createElement("script");g.async=!0,g.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(g),gtag("set","client_storage","none"),gtag("set","client_id","100."+t),gtag("set","user_id",t),gtag("set","send_page_view",!1),gtag("js",new Date),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,medium:n,campaign:_,groups:"GA"}),gtag("set","user_properties",{user_id:t,traffic_source:n,campaign_id:_,adset_id:o,ad_id:s}),gtag("event","app_launch",{send_to:"GA"}),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.bundle.js"></script><script defer="defer" src="engine.bundle.js"></script><script defer="defer" src="game.bundle.js"></script></body></html>
