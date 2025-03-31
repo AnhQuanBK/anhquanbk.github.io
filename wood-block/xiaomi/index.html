@@ -132,6 +132,25 @@
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 999;
+                background-color: aqua;
+                display: none;
+            }
+
+            #adsbygoogle {
+                display: none;
+                width: 100%;
+                height: 51px;
+                max-height: 51px !important;
+            }
+
+            @media (min-width: 640px) {
+                #game-banner {
+                    display: block;
+                }
+
+                #adsbygoogle {
+                    display: inline-block;
+                }
             }
 
             @keyframes lds-dual-ring {
@@ -170,7 +189,7 @@ function gtag() { dataLayer.push(arguments); }</script><link href="https://www.g
         window.__GA_CONFIG = {
             GAME_NAME: 'Wood Block Master',
             GA_MEASUREMENT_ID: 'G-HH3S41Q58C',
-            BUILD_VERSION: '5',
+            BUILD_VERSION: '6',
         }</script><script src="libs/xiaomi.js"></script></head><body oncontextmenu="event.preventDefault()"><div id="app"></div><div id="lds-content" hidden><div id="lds-dual-ring"></div><div id="lds-text"><span id="lds-percent">0</span>%</div></div><div id="game-banner"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3423367744172781" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display: inline-block;
                     width: 100%;
                     height: 51px;
