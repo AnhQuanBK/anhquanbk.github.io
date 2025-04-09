@@ -1,0 +1,524 @@
+{
+	"textures": [
+		{
+			"image": "daily-missions-resources-32bit.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 994,
+				"h": 915
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "popup",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 583,
+						"h": 780
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 583,
+						"h": 780
+					},
+					"frame": {
+						"x": 2,
+						"y": 2,
+						"w": 583,
+						"h": 780
+					}
+				},
+				{
+					"filename": "ribbon",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 490,
+						"h": 127
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 490,
+						"h": 127
+					},
+					"frame": {
+						"x": 2,
+						"y": 786,
+						"w": 490,
+						"h": 127
+					}
+				},
+				{
+					"filename": "block",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 496,
+						"h": 115
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 496,
+						"h": 115
+					},
+					"frame": {
+						"x": 496,
+						"y": 786,
+						"w": 496,
+						"h": 115
+					}
+				},
+				{
+					"filename": "progress-border",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 179,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 179,
+						"h": 28
+					},
+					"frame": {
+						"x": 589,
+						"y": 2,
+						"w": 179,
+						"h": 28
+					}
+				},
+				{
+					"filename": "button-border",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 105,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 105,
+						"h": 58
+					},
+					"frame": {
+						"x": 772,
+						"y": 2,
+						"w": 105,
+						"h": 58
+					}
+				},
+				{
+					"filename": "button-blue",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 101,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 101,
+						"h": 54
+					},
+					"frame": {
+						"x": 881,
+						"y": 2,
+						"w": 101,
+						"h": 54
+					}
+				},
+				{
+					"filename": "button-green",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 101,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 101,
+						"h": 54
+					},
+					"frame": {
+						"x": 881,
+						"y": 60,
+						"w": 101,
+						"h": 54
+					}
+				},
+				{
+					"filename": "blank",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 100
+					},
+					"frame": {
+						"x": 589,
+						"y": 34,
+						"w": 100,
+						"h": 100
+					}
+				},
+				{
+					"filename": "mission-progress-icon/icon-tournament",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 66,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 66,
+						"h": 55
+					},
+					"frame": {
+						"x": 693,
+						"y": 34,
+						"w": 66,
+						"h": 55
+					}
+				},
+				{
+					"filename": "mission-progress-icon/icon-invite",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 85,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 85,
+						"h": 54
+					},
+					"frame": {
+						"x": 763,
+						"y": 64,
+						"w": 85,
+						"h": 54
+					}
+				},
+				{
+					"filename": "mission-progress-icon/icon-shuffle",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 63,
+						"h": 72
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 63,
+						"h": 72
+					},
+					"frame": {
+						"x": 693,
+						"y": 93,
+						"w": 63,
+						"h": 72
+					}
+				},
+				{
+					"filename": "progress-middle",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 10,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 10,
+						"h": 24
+					},
+					"frame": {
+						"x": 852,
+						"y": 64,
+						"w": 10,
+						"h": 24
+					}
+				},
+				{
+					"filename": "progress-left",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 24
+					},
+					"frame": {
+						"x": 866,
+						"y": 64,
+						"w": 9,
+						"h": 24
+					}
+				},
+				{
+					"filename": "mission-progress-icon/icon-match-pair",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 84,
+						"h": 63
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 84,
+						"h": 63
+					},
+					"frame": {
+						"x": 589,
+						"y": 138,
+						"w": 84,
+						"h": 63
+					}
+				},
+				{
+					"filename": "progress-right",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 24
+					},
+					"frame": {
+						"x": 677,
+						"y": 138,
+						"w": 9,
+						"h": 24
+					}
+				},
+				{
+					"filename": "close",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 63,
+						"h": 63
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 63,
+						"h": 63
+					},
+					"frame": {
+						"x": 852,
+						"y": 118,
+						"w": 63,
+						"h": 63
+					}
+				},
+				{
+					"filename": "mission-progress-icon/icon-finish",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 62,
+						"h": 57
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 62,
+						"h": 57
+					},
+					"frame": {
+						"x": 919,
+						"y": 118,
+						"w": 62,
+						"h": 57
+					}
+				},
+				{
+					"filename": "mission-progress-icon/icon-coin",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 59,
+						"h": 51
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 59,
+						"h": 51
+					},
+					"frame": {
+						"x": 919,
+						"y": 179,
+						"w": 59,
+						"h": 51
+					}
+				},
+				{
+					"filename": "mission-progress-icon/icon-rocket",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 58,
+						"h": 78
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 58,
+						"h": 78
+					},
+					"frame": {
+						"x": 760,
+						"y": 122,
+						"w": 58,
+						"h": 78
+					}
+				},
+				{
+					"filename": "mission-progress-icon/icon-magnify",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 58,
+						"h": 68
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 58,
+						"h": 68
+					},
+					"frame": {
+						"x": 677,
+						"y": 169,
+						"w": 58,
+						"h": 68
+					}
+				},
+				{
+					"filename": "mission-progress-icon/icon-kiem",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 57,
+						"h": 73
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 57,
+						"h": 73
+					},
+					"frame": {
+						"x": 589,
+						"y": 205,
+						"w": 57,
+						"h": 73
+					}
+				},
+				{
+					"filename": "icon-check",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 53,
+						"h": 47
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 53,
+						"h": 47
+					},
+					"frame": {
+						"x": 822,
+						"y": 185,
+						"w": 53,
+						"h": 47
+					}
+				},
+				{
+					"filename": "coin",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 50,
+						"h": 49
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 49
+					},
+					"frame": {
+						"x": 739,
+						"y": 204,
+						"w": 50,
+						"h": 49
+					}
+				},
+				{
+					"filename": "mission-progress-icon/icon-share",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 58
+					},
+					"frame": {
+						"x": 650,
+						"y": 241,
+						"w": 48,
+						"h": 58
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:3f8bec9b8d486a7074be25012692dd68:b77bf28b08960abd8781d89f50d404b2:d020621e218d5f0a5aa89f5852fb2b05$"
+	}
+}
