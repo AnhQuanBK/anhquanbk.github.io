@@ -1,0 +1,671 @@
+{
+	"textures": [
+		{
+			"image": "journey-resources-32bit.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1737,
+				"h": 256
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "frame",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 148,
+						"h": 175
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 148,
+						"h": 175
+					},
+					"frame": {
+						"x": 2,
+						"y": 2,
+						"w": 148,
+						"h": 175
+					}
+				},
+				{
+					"filename": "border-middle",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 124,
+						"h": 43
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 124,
+						"h": 43
+					},
+					"frame": {
+						"x": 2,
+						"y": 180,
+						"w": 124,
+						"h": 43
+					}
+				},
+				{
+					"filename": "road-middle",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 124,
+						"h": 21
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 124,
+						"h": 21
+					},
+					"frame": {
+						"x": 2,
+						"y": 226,
+						"w": 124,
+						"h": 21
+					}
+				},
+				{
+					"filename": "icon-check",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 48
+					},
+					"frame": {
+						"x": 129,
+						"y": 180,
+						"w": 48,
+						"h": 48
+					}
+				},
+				{
+					"filename": "themes/argentina",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 153,
+						"y": 2,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "icon-back",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 41,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 41,
+						"h": 36
+					},
+					"frame": {
+						"x": 153,
+						"y": 127,
+						"w": 41,
+						"h": 36
+					}
+				},
+				{
+					"filename": "road-right",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 116,
+						"h": 85
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 116,
+						"h": 85
+					},
+					"frame": {
+						"x": 180,
+						"y": 166,
+						"w": 116,
+						"h": 85
+					}
+				},
+				{
+					"filename": "themes/australia",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 286,
+						"y": 2,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/bangkok",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 299,
+						"y": 127,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/barcelona",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 419,
+						"y": 2,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/brazil",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 432,
+						"y": 127,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/canada",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 552,
+						"y": 2,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/denmark",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 565,
+						"y": 127,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/dubai",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 685,
+						"y": 2,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/egypt",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 698,
+						"y": 127,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/india",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 818,
+						"y": 2,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/las-vegas",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 831,
+						"y": 127,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/london",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 951,
+						"y": 2,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/newyork",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 964,
+						"y": 127,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/paris",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 1084,
+						"y": 2,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/rome",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 1097,
+						"y": 127,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/singapore",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 1217,
+						"y": 2,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "themes/tokyo",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 130,
+						"h": 122
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 130,
+						"h": 122
+					},
+					"frame": {
+						"x": 1230,
+						"y": 127,
+						"w": 130,
+						"h": 122
+					}
+				},
+				{
+					"filename": "border-right",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 123,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 123,
+						"h": 96
+					},
+					"frame": {
+						"x": 1350,
+						"y": 2,
+						"w": 123,
+						"h": 96
+					}
+				},
+				{
+					"filename": "border-left",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 123,
+						"h": 94
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 123,
+						"h": 94
+					},
+					"frame": {
+						"x": 1363,
+						"y": 101,
+						"w": 123,
+						"h": 94
+					}
+				},
+				{
+					"filename": "road-left",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 116,
+						"h": 83
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 116,
+						"h": 83
+					},
+					"frame": {
+						"x": 1476,
+						"y": 2,
+						"w": 116,
+						"h": 83
+					}
+				},
+				{
+					"filename": "blank",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 100,
+						"h": 100
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 100
+					},
+					"frame": {
+						"x": 1595,
+						"y": 2,
+						"w": 100,
+						"h": 100
+					}
+				},
+				{
+					"filename": "glow",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 93,
+						"h": 82
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 93,
+						"h": 82
+					},
+					"frame": {
+						"x": 1489,
+						"y": 88,
+						"w": 93,
+						"h": 82
+					}
+				},
+				{
+					"filename": "level-active",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 81
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 81
+					},
+					"frame": {
+						"x": 1489,
+						"y": 173,
+						"w": 80,
+						"h": 81
+					}
+				},
+				{
+					"filename": "level-completed",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 81
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 81
+					},
+					"frame": {
+						"x": 1572,
+						"y": 173,
+						"w": 80,
+						"h": 81
+					}
+				},
+				{
+					"filename": "level-inactive",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 81
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 81
+					},
+					"frame": {
+						"x": 1655,
+						"y": 105,
+						"w": 80,
+						"h": 81
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:e53579fb8d393619f458415caaa1f268:aa55d8cb4abb02689be8d0f2b4ec8c6a:17d1ef00595481a0b96ac85e14a3b183$"
+	}
+}
