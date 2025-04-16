@@ -1,4 +1,4 @@
-import{e as k,j as e,l as n,m as o,n as i,o as l,p as s,q as a,t as d,u as B,x as c,y as u}from"./chunks-IFIOZIYD.js";var r,m,b=k(()=>{"use strict";e();n();o();i();l();s();a();u();c();B();r=class{popup;title;content;okButton;noButton;okCallback$;noCallback$;async setupTemplate(){
+import{e as k,j as e,l as n,m as o,n as i,o as l,p as s,q as a,t as d,u as B,x as c,y as u}from"./chunks-PQQ7TJBQ.js";var r,m,b=k(()=>{"use strict";e();n();o();i();l();s();a();u();c();B();r=class{popup;title;content;okButton;noButton;okCallback$;noCallback$;async setupTemplate(){
 let t=await d();t&&(this.popup=t,this.title=t.querySelector("#title"),this.content=t.querySelector("\
 #content"),this.okButton=t.querySelector("#ok"),this.noButton=t.querySelector("#no"),this.hide())}onYes=t=>{
 this.okButton&&(this.okButton.removeEventListener("click",this.okCallback$),this.okCallback$=this.handleCallback$(
