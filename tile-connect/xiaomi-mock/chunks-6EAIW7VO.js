@@ -1,4 +1,4 @@
-import{j as _,l as S,m as d,n as R,o as D,p as a,q as A,x as N,y as T}from"./chunks-YRGLJTH6.js";_();S();d();R();D();a();A();T();N();var O=(E=>(E.CORE_BOOTING="core-booting",E.REQUEST_CORE_START="c\
+import{j as _,l as S,m as d,n as R,o as D,p as a,q as A,x as N,y as T}from"./chunks-IFIOZIYD.js";_();S();d();R();D();a();A();T();N();var O=(E=>(E.CORE_BOOTING="core-booting",E.REQUEST_CORE_START="c\
 ore-start",E.CORE_STARTING="core-starting",E.CORE_READY="core-ready",E.GAME_SDK_READY="game-sdk-read\
 y",E.GAME_SDK_STARTED="game-sdk-started",E.CONTEXT_DATA_PROCESSED="context-data-processed",E.CONTEXT_SESSION_TYPE_DETECTED=
 "context-session-type-detected",E.GAME_READY="game-ready",E.BUNDLE_READY="bundle-ready",E.PLAYER_INFO_LOADED=

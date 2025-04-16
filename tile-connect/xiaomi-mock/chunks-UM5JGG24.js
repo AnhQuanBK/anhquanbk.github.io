@@ -1,5 +1,5 @@
-import{a as d}from"./chunks-KEX3JHX6.js";import{j as s,l as a,m as n,n as o,o as p,p as c,q as u,
-x as l,y as h}from"./chunks-YRGLJTH6.js";s();a();n();o();p();c();u();h();l();s();a();n();o();p();c();u();h();l();s();a();n();o();p();c();u();h();l();var m=class{options;performance;isRunning=!1;checkTimer;fpsHistory;actualFPS=0;constructor(e,t){
+import{a as d}from"./chunks-6EAIW7VO.js";import{j as s,l as a,m as n,n as o,o as p,p as c,q as u,
+x as l,y as h}from"./chunks-IFIOZIYD.js";s();a();n();o();p();c();u();h();l();s();a();n();o();p();c();u();h();l();s();a();n();o();p();c();u();h();l();var m=class{options;performance;isRunning=!1;checkTimer;fpsHistory;actualFPS=0;constructor(e,t){
 this.options=t,this.performance=e}start=()=>{this.isRunning||(this.isRunning=!0,this.checkTimer=this.
 options.CheckInterval,this.fpsHistory=[])};stop=()=>{this.isRunning&&(this.isRunning=!1,this.options.
 OnlyUpdateWhenSwitchScene&&this.checkFps())};postStep=e=>{this.isRunning&&(this.checkTimer-=e,!(this.
