@@ -161,8 +161,8 @@
     {
       "level": 9,
       "mode": "normal",
-      "time": 90,
-      "colors": 8,
+      "time": 80,
+      "colors": 9,
       "specials": {
         "bomb": 1,
         "rocket": 0
@@ -174,7 +174,7 @@
       "columns": 4,
       "rows": 8,
       "theme": [
-        "umbrella"
+        "candy"
       ]
     },
     {
