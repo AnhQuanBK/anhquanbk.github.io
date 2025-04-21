@@ -1060,7 +1060,7 @@
 					}
 				},
 				{
-					"filename": "icons/info-dot",
+					"filename": "icons/info-dot-shine",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -1165,6 +1165,48 @@
 					}
 				},
 				{
+					"filename": "icons/info-dot",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 46
+					},
+					"frame": {
+						"x": 930,
+						"y": 512,
+						"w": 39,
+						"h": 46
+					}
+				},
+				{
+					"filename": "icons/continue",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 46,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 46,
+						"h": 55
+					},
+					"frame": {
+						"x": 972,
+						"y": 512,
+						"w": 46,
+						"h": 55
+					}
+				},
+				{
 					"filename": "icons/share",
 					"rotated": false,
 					"trimmed": false,
@@ -1226,27 +1268,6 @@
 						"w": 30,
 						"h": 33
 					}
-				},
-				{
-					"filename": "icons/continue",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 46,
-						"h": 55
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 46,
-						"h": 55
-					},
-					"frame": {
-						"x": 971,
-						"y": 512,
-						"w": 46,
-						"h": 55
-					}
 				}
 			]
 		}
@@ -1254,6 +1275,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:b2c3340675a983b37f64496f98e8e6f2:0467853f7aa05aa7c341457cfcebf770:3ed7f446b7e32ba5f09387362d473a40$"
+		"smartupdate": "$TexturePacker:SmartUpdate:69e95b8ec980de067b95e4e79a75b100:7d1db459d07cb727bc1cee44ce11e069:3ed7f446b7e32ba5f09387362d473a40$"
 	}
 }

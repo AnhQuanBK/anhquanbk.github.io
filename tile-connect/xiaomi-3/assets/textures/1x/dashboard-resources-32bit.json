@@ -4,8 +4,8 @@
 			"image": "dashboard-resources-32bit.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 493,
-				"h": 1148
+				"w": 510,
+				"h": 1204
 			},
 			"scale": 0.5,
 			"frames": [
@@ -31,24 +31,24 @@
 					}
 				},
 				{
-					"filename": "journey/frame",
+					"filename": "title",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 186,
-						"h": 187
+						"w": 180,
+						"h": 83
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 186,
-						"h": 187
+						"w": 180,
+						"h": 83
 					},
 					"frame": {
-						"x": 2,
-						"y": 324,
-						"w": 186,
-						"h": 187
+						"x": 324,
+						"y": 2,
+						"w": 180,
+						"h": 83
 					}
 				},
 				{
@@ -67,9 +67,114 @@
 					},
 					"frame": {
 						"x": 324,
-						"y": 2,
+						"y": 88,
 						"w": 161,
 						"h": 106
+					}
+				},
+				{
+					"filename": "icons/info-dot-shine",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 23
+					},
+					"frame": {
+						"x": 488,
+						"y": 88,
+						"w": 20,
+						"h": 23
+					}
+				},
+				{
+					"filename": "icons/info-dot",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 20,
+						"h": 22
+					},
+					"frame": {
+						"x": 488,
+						"y": 114,
+						"w": 20,
+						"h": 22
+					}
+				},
+				{
+					"filename": "icons/settings",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 21
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 21
+					},
+					"frame": {
+						"x": 488,
+						"y": 139,
+						"w": 20,
+						"h": 21
+					}
+				},
+				{
+					"filename": "lucky-wheel/bulb-off",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 20
+					},
+					"frame": {
+						"x": 488,
+						"y": 163,
+						"w": 19,
+						"h": 20
+					}
+				},
+				{
+					"filename": "progress/progress-middle",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 10
+					},
+					"frame": {
+						"x": 488,
+						"y": 186,
+						"w": 12,
+						"h": 10
 					}
 				},
 				{
@@ -87,10 +192,94 @@
 						"h": 106
 					},
 					"frame": {
-						"x": 2,
-						"y": 514,
+						"x": 324,
+						"y": 197,
 						"w": 161,
 						"h": 106
+					}
+				},
+				{
+					"filename": "dash",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 2,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 2,
+						"h": 44
+					},
+					"frame": {
+						"x": 503,
+						"y": 186,
+						"w": 2,
+						"h": 44
+					}
+				},
+				{
+					"filename": "progress/progress-left",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 11,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 11,
+						"h": 10
+					},
+					"frame": {
+						"x": 488,
+						"y": 199,
+						"w": 11,
+						"h": 10
+					}
+				},
+				{
+					"filename": "progress/progress-right",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 11,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 11,
+						"h": 10
+					},
+					"frame": {
+						"x": 488,
+						"y": 212,
+						"w": 11,
+						"h": 10
+					}
+				},
+				{
+					"filename": "icons/arrow",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 6,
+						"h": 11
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 6,
+						"h": 11
+					},
+					"frame": {
+						"x": 488,
+						"y": 225,
+						"w": 6,
+						"h": 11
 					}
 				},
 				{
@@ -109,9 +298,219 @@
 					},
 					"frame": {
 						"x": 324,
-						"y": 111,
+						"y": 306,
 						"w": 161,
 						"h": 106
+					}
+				},
+				{
+					"filename": "lucky-wheel/ribbon",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 245,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 245,
+						"h": 64
+					},
+					"frame": {
+						"x": 2,
+						"y": 324,
+						"w": 245,
+						"h": 64
+					}
+				},
+				{
+					"filename": "panel-icon",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 63,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 63,
+						"h": 64
+					},
+					"frame": {
+						"x": 250,
+						"y": 324,
+						"w": 63,
+						"h": 64
+					}
+				},
+				{
+					"filename": "buttons/frame",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 201,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 201,
+						"h": 55
+					},
+					"frame": {
+						"x": 2,
+						"y": 391,
+						"w": 201,
+						"h": 55
+					}
+				},
+				{
+					"filename": "lucky-wheel/wheel-middle",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 80
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 80
+					},
+					"frame": {
+						"x": 206,
+						"y": 391,
+						"w": 80,
+						"h": 80
+					}
+				},
+				{
+					"filename": "buttons/green-shine",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 198,
+						"h": 52
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 198,
+						"h": 52
+					},
+					"frame": {
+						"x": 2,
+						"y": 449,
+						"w": 198,
+						"h": 52
+					}
+				},
+				{
+					"filename": "icons/shop",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 19
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 19
+					},
+					"frame": {
+						"x": 289,
+						"y": 391,
+						"w": 21,
+						"h": 19
+					}
+				},
+				{
+					"filename": "buttons/green",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 198,
+						"h": 52
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 198,
+						"h": 52
+					},
+					"frame": {
+						"x": 289,
+						"y": 415,
+						"w": 198,
+						"h": 52
+					}
+				},
+				{
+					"filename": "journey/frame",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 186,
+						"h": 187
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 186,
+						"h": 187
+					},
+					"frame": {
+						"x": 289,
+						"y": 470,
+						"w": 186,
+						"h": 187
+					}
+				},
+				{
+					"filename": "coin-panel",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 78,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 78,
+						"h": 24
+					},
+					"frame": {
+						"x": 203,
+						"y": 474,
+						"w": 78,
+						"h": 24
+					}
+				},
+				{
+					"filename": "panel-name",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 76,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 76,
+						"h": 23
+					},
+					"frame": {
+						"x": 203,
+						"y": 501,
+						"w": 76,
+						"h": 23
 					}
 				},
 				{
@@ -130,9 +529,135 @@
 					},
 					"frame": {
 						"x": 2,
-						"y": 623,
+						"y": 504,
 						"w": 161,
 						"h": 106
+					}
+				},
+				{
+					"filename": "icons/coin",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 34
+					},
+					"frame": {
+						"x": 166,
+						"y": 504,
+						"w": 34,
+						"h": 34
+					}
+				},
+				{
+					"filename": "progress/border-full",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 118,
+						"h": 12
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 118,
+						"h": 12
+					},
+					"frame": {
+						"x": 166,
+						"y": 541,
+						"w": 118,
+						"h": 12
+					}
+				},
+				{
+					"filename": "icons/cup",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 59,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 59,
+						"h": 46
+					},
+					"frame": {
+						"x": 166,
+						"y": 556,
+						"w": 59,
+						"h": 46
+					}
+				},
+				{
+					"filename": "lucky-wheel/icon-coin",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 44
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 44
+					},
+					"frame": {
+						"x": 228,
+						"y": 556,
+						"w": 54,
+						"h": 44
+					}
+				},
+				{
+					"filename": "icons/invite-friends",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 53,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 53,
+						"h": 34
+					},
+					"frame": {
+						"x": 228,
+						"y": 603,
+						"w": 53,
+						"h": 34
+					}
+				},
+				{
+					"filename": "icons/daily-spin",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 51,
+						"h": 46
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 51,
+						"h": 46
+					},
+					"frame": {
+						"x": 166,
+						"y": 605,
+						"w": 51,
+						"h": 46
 					}
 				},
 				{
@@ -151,9 +676,51 @@
 					},
 					"frame": {
 						"x": 2,
-						"y": 732,
+						"y": 613,
 						"w": 161,
 						"h": 106
+					}
+				},
+				{
+					"filename": "blank",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 50,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 50
+					},
+					"frame": {
+						"x": 220,
+						"y": 640,
+						"w": 50,
+						"h": 50
+					}
+				},
+				{
+					"filename": "lucky-wheel/arrow",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 50
+					},
+					"frame": {
+						"x": 166,
+						"y": 654,
+						"w": 48,
+						"h": 50
 					}
 				},
 				{
@@ -171,10 +738,52 @@
 						"h": 106
 					},
 					"frame": {
-						"x": 2,
-						"y": 841,
+						"x": 273,
+						"y": 660,
 						"w": 161,
 						"h": 106
+					}
+				},
+				{
+					"filename": "icons/daily-missions",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 47
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 47
+					},
+					"frame": {
+						"x": 217,
+						"y": 693,
+						"w": 48,
+						"h": 47
+					}
+				},
+				{
+					"filename": "lucky-wheel/icon-shuffle",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 44,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 44,
+						"h": 50
+					},
+					"frame": {
+						"x": 166,
+						"y": 707,
+						"w": 44,
+						"h": 50
 					}
 				},
 				{
@@ -193,9 +802,114 @@
 					},
 					"frame": {
 						"x": 2,
-						"y": 950,
+						"y": 722,
 						"w": 161,
 						"h": 106
+					}
+				},
+				{
+					"filename": "lucky-wheel/icon-hint",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 43,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 43,
+						"h": 55
+					},
+					"frame": {
+						"x": 213,
+						"y": 743,
+						"w": 43,
+						"h": 55
+					}
+				},
+				{
+					"filename": "lucky-wheel/icon-defuse",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 42,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 42,
+						"h": 53
+					},
+					"frame": {
+						"x": 166,
+						"y": 760,
+						"w": 42,
+						"h": 53
+					}
+				},
+				{
+					"filename": "icons/rewards",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 40,
+						"h": 43
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 43
+					},
+					"frame": {
+						"x": 437,
+						"y": 660,
+						"w": 40,
+						"h": 43
+					}
+				},
+				{
+					"filename": "lucky-wheel/bulb",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 37,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 37,
+						"h": 36
+					},
+					"frame": {
+						"x": 437,
+						"y": 706,
+						"w": 37,
+						"h": 36
+					}
+				},
+				{
+					"filename": "lucky-wheel/icon-rocket",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 33,
+						"h": 51
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 33,
+						"h": 51
+					},
+					"frame": {
+						"x": 437,
+						"y": 745,
+						"w": 33,
+						"h": 51
 					}
 				},
 				{
@@ -213,52 +927,10 @@
 						"h": 106
 					},
 					"frame": {
-						"x": 324,
-						"y": 220,
+						"x": 259,
+						"y": 769,
 						"w": 161,
 						"h": 106
-					}
-				},
-				{
-					"filename": "title",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 180,
-						"h": 83
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 180,
-						"h": 83
-					},
-					"frame": {
-						"x": 2,
-						"y": 1059,
-						"w": 180,
-						"h": 83
-					}
-				},
-				{
-					"filename": "lucky-wheel/ribbon",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 245,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 245,
-						"h": 64
-					},
-					"frame": {
-						"x": 191,
-						"y": 329,
-						"w": 245,
-						"h": 64
 					}
 				},
 				{
@@ -276,31 +948,10 @@
 						"h": 106
 					},
 					"frame": {
-						"x": 191,
-						"y": 396,
+						"x": 2,
+						"y": 831,
 						"w": 161,
 						"h": 106
-					}
-				},
-				{
-					"filename": "buttons/frame",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 201,
-						"h": 55
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 201,
-						"h": 55
-					},
-					"frame": {
-						"x": 191,
-						"y": 505,
-						"w": 201,
-						"h": 55
 					}
 				},
 				{
@@ -318,8 +969,8 @@
 						"h": 106
 					},
 					"frame": {
-						"x": 166,
-						"y": 563,
+						"x": 2,
+						"y": 940,
 						"w": 161,
 						"h": 106
 					}
@@ -339,8 +990,8 @@
 						"h": 106
 					},
 					"frame": {
-						"x": 330,
-						"y": 563,
+						"x": 2,
+						"y": 1049,
 						"w": 161,
 						"h": 106
 					}
@@ -361,7 +1012,7 @@
 					},
 					"frame": {
 						"x": 166,
-						"y": 672,
+						"y": 878,
 						"w": 161,
 						"h": 106
 					}
@@ -382,7 +1033,7 @@
 					},
 					"frame": {
 						"x": 330,
-						"y": 672,
+						"y": 878,
 						"w": 161,
 						"h": 106
 					}
@@ -403,7 +1054,7 @@
 					},
 					"frame": {
 						"x": 166,
-						"y": 781,
+						"y": 987,
 						"w": 161,
 						"h": 106
 					}
@@ -423,8 +1074,8 @@
 						"h": 106
 					},
 					"frame": {
-						"x": 330,
-						"y": 781,
+						"x": 166,
+						"y": 1096,
 						"w": 161,
 						"h": 106
 					}
@@ -444,8 +1095,8 @@
 						"h": 106
 					},
 					"frame": {
-						"x": 166,
-						"y": 890,
+						"x": 330,
+						"y": 987,
 						"w": 161,
 						"h": 106
 					}
@@ -466,618 +1117,9 @@
 					},
 					"frame": {
 						"x": 330,
-						"y": 890,
+						"y": 1096,
 						"w": 161,
 						"h": 106
-					}
-				},
-				{
-					"filename": "buttons/green",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 198,
-						"h": 52
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 198,
-						"h": 52
-					},
-					"frame": {
-						"x": 166,
-						"y": 999,
-						"w": 198,
-						"h": 52
-					}
-				},
-				{
-					"filename": "lucky-wheel/wheel-middle",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 80,
-						"h": 80
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 80,
-						"h": 80
-					},
-					"frame": {
-						"x": 355,
-						"y": 396,
-						"w": 80,
-						"h": 80
-					}
-				},
-				{
-					"filename": "panel-name",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 76,
-						"h": 23
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 76,
-						"h": 23
-					},
-					"frame": {
-						"x": 355,
-						"y": 479,
-						"w": 76,
-						"h": 23
-					}
-				},
-				{
-					"filename": "lucky-wheel/icon-hint",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 43,
-						"h": 55
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 43,
-						"h": 55
-					},
-					"frame": {
-						"x": 395,
-						"y": 505,
-						"w": 43,
-						"h": 55
-					}
-				},
-				{
-					"filename": "progress/border-full",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 118,
-						"h": 12
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 118,
-						"h": 12
-					},
-					"frame": {
-						"x": 367,
-						"y": 999,
-						"w": 118,
-						"h": 12
-					}
-				},
-				{
-					"filename": "panel-icon",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 63,
-						"h": 64
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 63,
-						"h": 64
-					},
-					"frame": {
-						"x": 185,
-						"y": 1054,
-						"w": 63,
-						"h": 64
-					}
-				},
-				{
-					"filename": "icons/cup",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 59,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 59,
-						"h": 46
-					},
-					"frame": {
-						"x": 251,
-						"y": 1054,
-						"w": 59,
-						"h": 46
-					}
-				},
-				{
-					"filename": "coin-panel",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 78,
-						"h": 24
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 78,
-						"h": 24
-					},
-					"frame": {
-						"x": 367,
-						"y": 1014,
-						"w": 78,
-						"h": 24
-					}
-				},
-				{
-					"filename": "icons/rewards",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 40,
-						"h": 43
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 40,
-						"h": 43
-					},
-					"frame": {
-						"x": 251,
-						"y": 1103,
-						"w": 40,
-						"h": 43
-					}
-				},
-				{
-					"filename": "icons/daily-spin",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 51,
-						"h": 46
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 51,
-						"h": 46
-					},
-					"frame": {
-						"x": 313,
-						"y": 1054,
-						"w": 51,
-						"h": 46
-					}
-				},
-				{
-					"filename": "blank",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 50,
-						"h": 50
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 50,
-						"h": 50
-					},
-					"frame": {
-						"x": 367,
-						"y": 1041,
-						"w": 50,
-						"h": 50
-					}
-				},
-				{
-					"filename": "lucky-wheel/arrow",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 48,
-						"h": 50
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 48,
-						"h": 50
-					},
-					"frame": {
-						"x": 439,
-						"y": 329,
-						"w": 48,
-						"h": 50
-					}
-				},
-				{
-					"filename": "icons/invite-friends",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 53,
-						"h": 34
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 53,
-						"h": 34
-					},
-					"frame": {
-						"x": 294,
-						"y": 1103,
-						"w": 53,
-						"h": 34
-					}
-				},
-				{
-					"filename": "lucky-wheel/icon-defuse",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 42,
-						"h": 53
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 42,
-						"h": 53
-					},
-					"frame": {
-						"x": 420,
-						"y": 1041,
-						"w": 42,
-						"h": 53
-					}
-				},
-				{
-					"filename": "icons/daily-missions",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 48,
-						"h": 47
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 48,
-						"h": 47
-					},
-					"frame": {
-						"x": 439,
-						"y": 382,
-						"w": 48,
-						"h": 47
-					}
-				},
-				{
-					"filename": "lucky-wheel/icon-shuffle",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 44,
-						"h": 50
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 44,
-						"h": 50
-					},
-					"frame": {
-						"x": 438,
-						"y": 432,
-						"w": 44,
-						"h": 50
-					}
-				},
-				{
-					"filename": "lucky-wheel/icon-rocket",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 33,
-						"h": 51
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 33,
-						"h": 51
-					},
-					"frame": {
-						"x": 441,
-						"y": 485,
-						"w": 33,
-						"h": 51
-					}
-				},
-				{
-					"filename": "icons/settings",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 20,
-						"h": 21
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 20,
-						"h": 21
-					},
-					"frame": {
-						"x": 441,
-						"y": 539,
-						"w": 20,
-						"h": 21
-					}
-				},
-				{
-					"filename": "icons/coin",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 34,
-						"h": 34
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 34,
-						"h": 34
-					},
-					"frame": {
-						"x": 350,
-						"y": 1103,
-						"w": 34,
-						"h": 34
-					}
-				},
-				{
-					"filename": "lucky-wheel/icon-coin",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 54,
-						"h": 44
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 54,
-						"h": 44
-					},
-					"frame": {
-						"x": 387,
-						"y": 1097,
-						"w": 54,
-						"h": 44
-					}
-				},
-				{
-					"filename": "lucky-wheel/bulb",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 37,
-						"h": 36
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 37,
-						"h": 36
-					},
-					"frame": {
-						"x": 444,
-						"y": 1097,
-						"w": 37,
-						"h": 36
-					}
-				},
-				{
-					"filename": "dash",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 2,
-						"h": 44
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 2,
-						"h": 44
-					},
-					"frame": {
-						"x": 166,
-						"y": 514,
-						"w": 2,
-						"h": 44
-					}
-				},
-				{
-					"filename": "icons/info-dot",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 20,
-						"h": 23
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 1,
-						"w": 20,
-						"h": 22
-					},
-					"frame": {
-						"x": 448,
-						"y": 1014,
-						"w": 20,
-						"h": 22
-					}
-				},
-				{
-					"filename": "icons/shop",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 21,
-						"h": 19
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 21,
-						"h": 19
-					},
-					"frame": {
-						"x": 185,
-						"y": 1121,
-						"w": 21,
-						"h": 19
-					}
-				},
-				{
-					"filename": "lucky-wheel/bulb-off",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 19,
-						"h": 20
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 19,
-						"h": 20
-					},
-					"frame": {
-						"x": 209,
-						"y": 1121,
-						"w": 19,
-						"h": 20
-					}
-				},
-				{
-					"filename": "progress/progress-middle",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 12,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 12,
-						"h": 10
-					},
-					"frame": {
-						"x": 444,
-						"y": 1136,
-						"w": 12,
-						"h": 10
-					}
-				},
-				{
-					"filename": "progress/progress-left",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 11,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 11,
-						"h": 10
-					},
-					"frame": {
-						"x": 459,
-						"y": 1136,
-						"w": 11,
-						"h": 10
-					}
-				},
-				{
-					"filename": "progress/progress-right",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 11,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 11,
-						"h": 10
-					},
-					"frame": {
-						"x": 473,
-						"y": 1136,
-						"w": 11,
-						"h": 10
-					}
-				},
-				{
-					"filename": "icons/arrow",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 6,
-						"h": 11
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 6,
-						"h": 11
-					},
-					"frame": {
-						"x": 485,
-						"y": 432,
-						"w": 6,
-						"h": 11
 					}
 				}
 			]
@@ -1086,6 +1128,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:fe9d5d067906633c1f51e1da36bb0040:060d638800afed8b0edc3343c6279c14:d795f787a316eb8a740c5f7653034767$"
+		"smartupdate": "$TexturePacker:SmartUpdate:e5186158228276ac0941c9bc32ecee1d:42f7a9989ade5e73b52efb8a6932c268:d795f787a316eb8a740c5f7653034767$"
 	}
 }
