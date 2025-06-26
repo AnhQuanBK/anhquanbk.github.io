@@ -93430,9 +93430,17 @@ ${"_".repeat(requiredUnderscoreCount)}`);
     getGapFromContainerCenterToBottomBg() {
       return this.bg.y + this.bg.displayHeight / 2;
     }
-    isBgHigherBottom() {
+    isUnitBarBgHigherThanBottom() {
       const { height } = WorldUtils_default.getWorldSize();
       return this.bg.getWorldPosition().y + this.bg.displayHeight / 2 < height / 2;
+    }
+    getGapFromButtonSpaceToBottom() {
+      const { height } = WorldUtils_default.getWorldSize();
+      return this.bg.getWorldPosition().y + 70 - height / 2;
+    }
+    isButtonSpaceBelowBottom() {
+      const { height } = WorldUtils_default.getWorldSize();
+      return this.bg.getWorldPosition().y + 70 > height / 2;
     }
     createMeleeBlock() {
       this.meleeBlock = new UnitPriceBlock_default(this.scene, UnitConstants_default.MELEE_UNIT_TYPE,
@@ -93896,40 +93904,68 @@ ${"_".repeat(requiredUnderscoreCount)}`);
         levelBar,
         battleLevelBar,
         // showUnitButton,
-        settingsButton,
+        settingsButton
         // leaderboardButton,
         // battleButton,
-        unitBar,
-        totalHpBar,
-        startButton
         // bossChallengeButton,
       } = this.objects;
       import_display13.Align.In.TopRight(coinBar, gameZone, -60, -25);
       import_display13.Align.In.TopCenter(levelBar, gameZone, 0, -22);
       import_display13.Align.In.TopCenter(battleLevelBar, gameZone, 10, -27);
       import_display13.Align.In.TopLeft(settingsButton, gameZone, -5, -2);
-      const { y, scaleY } = fieldManager.fieldBackground;
+      this.alignTotalHpBar();
+      this.alignUnitBar();
+      this.alignStartButton();
+      this.handleUnitBarChangeForBannerAds();
+    }
+    alignTotalHpBar() {
+      if (this.objects === null) return;
+      const { fieldManager } = this.scene;
+      const { totalHpBar } = this.objects;
+      const { y } = fieldManager.fieldBackground;
       const { height: worldHeight } = WorldUtils_default.getWorldSize();
+      const fieldBgCenter = y - worldHeight / 2;
+      totalHpBar.setPosition(0, fieldBgCenter);
+    }
+    alignStartButton() {
+      if (this.objects === null) return;
+      const { startButton, unitBar } = this.objects;
+      startButton.setPosition(0, unitBar.y - 72);
+    }
+    alignUnitBar() {
+      if (this.objects === null) return;
+      const { fieldManager } = this.scene;
+      const { unitBar } = this.objects;
+      const { height: worldHeight } = WorldUtils_default.getWorldSize();
+      const { y, scaleY } = fieldManager.fieldBackground;
       const pixelRatio = WorldUtils_default.getPixelRatio();
-      const posX = 0;
-      if (!WorldUtils_default.isLandscape()) {
+      const isLandscape = WorldUtils_default.isLandscape();
+      if (!isLandscape) {
         unitBar.createStampsBanner();
       }
-      unitBar.reviveBg();
-      unitBar.x = posX;
-      totalHpBar.x = posX;
-      startButton.x = posX;
-      const posY = y - worldHeight / 2;
-      totalHpBar.y = posY;
+      const fieldBgCenter = y - worldHeight / 2;
       const marginUnitBar = 255;
-      unitBar.y = posY - marginUnitBar * scaleY * pixelRatio;
-      if (unitBar.isBgHigherBottom()) {
+      unitBar.reviveBg();
+      const unitBarCenterY = fieldBgCenter + marginUnitBar * scaleY * pixelRatio;
+      unitBar.setPosition(0, unitBarCenterY);
+      if (unitBar.isButtonSpaceBelowBottom()) {
+        const distance = unitBar.getGapFromButtonSpaceToBottom();
+        const bannerHeight = AdsUtils_default.getBannerHeight();
+        unitBar.y = worldHeight / 2 - distance - bannerHeight;
+      }
+      if (unitBar.isUnitBarBgHigherThanBottom()) {
         const distance = unitBar.getGapFromContainerCenterToBottomBg();
         unitBar.y = worldHeight / 2 - distance;
       }
-      startButton.y = unitBar.y - 72;
+    }
+    handleUnitBarChangeForBannerAds() {
+      if (this.objects === null) return;
+      const { unitBar } = this.objects;
+      const { height: worldHeight } = WorldUtils_default.getWorldSize();
+      const unitBarCenterOffsetY = 70;
+      const bannerHeight = AdsUtils_default.getBannerHeight();
       const isLandscape = WorldUtils_default.isLandscape();
-      const isBannerAdsObstructing = gameZone.displayHeight - (unitBar.y + 70) < AdsUtils_default.getBannerHeight();
+      const isBannerAdsObstructing = worldHeight / 2 - (unitBar.y + unitBarCenterOffsetY) < bannerHeight;
       if (!isLandscape && isBannerAdsObstructing) {
         this.changeUnitBarForBannerAds();
       }
@@ -101532,11 +101568,7 @@ umber") return;
     }
     createTitle() {
       const title = FontUtils_default.buildText(language23.getText("START_OVER_TITLE").toUpperCase(),
-      22).setDefaultStroke().setFixedWidth(13 * 25).setAlign("center").setHighQuality().setDefaultShadow(
-      {
-        offsetX: -8,
-        offsetY: 8
-      }).build(this.scene);
+      22).applyScreenHeaderStyle().build(this.scene);
       title.setName("title");
       this.add(title);
       import_display34.Align.In.TopCenter(title, this.popup, 0, -13);
@@ -101634,7 +101666,9 @@ umber") return;
         // this.shareBtn,
         // this.challengeFriendsBtn,
       ];
-      const targetsAlpha = targets.map((target) => target.alpha);
+      for (const target of targets) {
+        target.setAlpha(0);
+      }
       AnimUtils.runTween(
         this.scene.tweens.add({
           ...BubbleTouch_default,
@@ -101643,17 +101677,12 @@ umber") return;
           delay: this.scene.tweens.stagger(100, { start: delay }),
           props: {
             scale: {
-              getStart: (target) => target.scale - 0.3,
-              getEnd: (target) => target.scale
+              from: 0.7,
+              to: 1
             },
             alpha: {
-              getStart: (target) => {
-                target.setAlpha(0);
-                return 0;
-              },
-              getEnd: (target, key, value, targetIndex) => {
-                return targetsAlpha[targetIndex];
-              }
+              from: 0,
+              to: 1
             }
           }
         }),
