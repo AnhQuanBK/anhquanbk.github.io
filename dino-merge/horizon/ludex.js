@@ -1,3 +1,19626 @@
-"use strict";var Im=Object.create,St=Object.defineProperty,Lm=Object.defineProperties,Xo=Object.getOwnPropertyDescriptor,Cm=Object.getOwnPropertyDescriptors,Em=Object.getOwnPropertyNames,Yt=Object.getOwnPropertySymbols,Mm=Object.getPrototypeOf,xa=Object.prototype.hasOwnProperty,Zo=Object.prototype.propertyIsEnumerable,Ze=Math.pow,Jo=(e,t,r)=>t in e?St(e,t,{enumerable:!0,configurable:!0,writable:!0,value:r}):e[t]=r,S=(e,t)=>{for(var r in t||={})xa.call(t,r)&&Jo(e,r,t[r]);if(Yt)for(var r of Yt(t))Zo.call(t,r)&&Jo(e,r,t[r]);return e},R=(e,t)=>Lm(e,Cm(t)),wa=(e,t)=>{var r={};for(var n in e)xa.call(e,n)&&t.indexOf(n)<0&&(r[n]=e[n]);if(e!=null&&Yt)for(var n of Yt(e))t.indexOf(n)<0&&Zo.call(e,n)&&(r[n]=e[n]);return r},F=(e,t)=>()=>(e&&(t=e(e=0)),t),Tm=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),It=(e,t)=>{for(var r in t)St(e,r,{get:t[r],enumerable:!0})},Om=(e,t,r,n)=>{if(t&&typeof t=="object"||typeof t=="function")for(let y of Em(t))!xa.call(e,y)&&y!==r&&St(e,y,{get:()=>t[y],enumerable:!(n=Xo(t,y))||n.enumerable});return e},_m=(e,t,r)=>(r=e!=null?Im(Mm(e)):{},Om(t||!e||!e.__esModule?St(r,"default",{value:e,enumerable:!0}):r,e)),se=(e,t,r,n)=>{for(var y=n>1?void 0:n?Xo(t,r):t,f=e.length-1,w;f>=0;f--)(w=e[f])&&(y=(n?w(t,r,y):w(y))||y);return n&&y&&St(t,r,y),y},P,s=F(()=>{P={AppId:"dinosaurs-merge-master",AppDescription:"",ApiHost:"https://fbig-singleplay-apps.citigo.site",OtherHost:"https://fbig-leaderboards.citigo.site",Ads:{Enabled:!1,PreloadAds:!0,NotifyPlayerBeforeShow:!1,ShowAdOnLoad:{Enabled:!1,DelaySeconds:0,PlacementId:"interstitial_demo"},DegradationTracking:{ResetTimeMinutes:5,MaxFailedAttempts:8},AdServiceConfigs:{AdSense:{Enabled:!1,UsePreload:!1,DataAdClient:"ca-pub-1234567890",DataAdChannel:"1234567890",DataAdBreakTest:!1,DataAdFrequencyHint:30},Savana:{Enabled:!1,UsePreload:!1,DataAdClient:"ca-pub-1234567890",DataAdChannel:"1234567890",DataAdBreakTest:!1,DataAdFrequencyHint:45,BannerAdSlotId:"1234567890"},AppLovin:{Enabled:!1,UsePreload:!1}},InterstitialAdOptions:[{AdService:"platform",PlacementId:"interstitial_demo",SecondsFirstTime:30,SecondsBetweenAds:45},{AdService:"adsense",PlacementId:"interstitial_adsense",SecondsFirstTime:30,SecondsBetweenAds:45}],RewardedVideoAdOptions:[{AdService:"platform",PlacementId:"rewarded_video_demo",SecondsFirstTime:0,SecondsBetweenAds:0},{AdService:"adsense",PlacementId:"rewarded_video_adsense",SecondsFirstTime:0,SecondsBetweenAds:0}],RewardedInterstitialAdOptions:[{AdService:"platform",PlacementId:"rewarded_interstitial_demo",SecondsFirstTime:0,SecondsBetweenAds:0},{AdService:"adsense",PlacementId:"rewarded_interstitial_adsense",SecondsFirstTime:0,SecondsBetweenAds:0}],BannerDisplayAdOptions:[{AdService:"platform",PlacementId:"banner_demo",Position:"bottom",BannerHeight:50,SecondsReload:60,Platform:"ALL"}]},Languages:{DetectPlayerLocale:!0},GameSDKOptions:{AllowWithoutSDK:!0,UseNameGenerator:!0,MSGames:{LoginOnStart:!1,MaxLoginAttemptsPerDay:1},Yandex:{LoginOnStart:!1,MaxLoginAttemptsPerDay:1},TranssionH5:{GaId:"G-XXXXXXXXXX"}},Core:{InitAsync:!1,AverageLoadTime:3,StartSDKAfterLoadGame:!0,FastCheckTournamentContext:!0},GameEngine:{ForceDesktopDPR:2,AutoResizeCanvas:!0,PreferredFPS:{Mobile:60,Desktop:60},DynamicAtlas:{IOS:{Enabled:!0,AutoAtlasSize:!1,MaxAtlasCount:2,MaxAtlasSize:4096,MaxFrameSize:2048},Android:{Enabled:!0,AutoAtlasSize:!1,MaxAtlasCount:2,MaxAtlasSize:4096,MaxFrameSize:2048},Desktop:{Enabled:!0,AutoAtlasSize:!1,MaxAtlasCount:2,MaxAtlasSize:4096,MaxFrameSize:2048},UsePowerOfTwo:!1,TextureBleeding:!0,AllowNonePackable:!1,TextureAtlasOptimize:!0,OnlyOptimizeWhenRenderTooLong:!0},DynamicAssets:{Enabled:!0,Debug:!1,Resolution:{Adjust:2,Original:2},Compression:{PNG:{colors:256,quality:50,dither:.6,palette:!0,compressionLevel:8},JPEG:{quality:50,mozjpeg:!0},WEBP:{quality:35,lossless:!1,alphaQuality:40,smartSubsample:!0,preset:"drawing"}},IgnoreFiles:[]},HybridFileCache:{Enabled:!0,BuildMode:{Enabled:!0,InvalidateMode:"version",SupportedExtensions:[".json",".cconb"]},PreviewMode:{Enabled:!1,CacheScene:!1,CachePrefab:!1,CacheUuidExtension:!1,InvalidateMode:"commitId",SupportedExtensions:[".json",".cconb"]}}},Gameplay:{StartAdAtLevel:1,MaxRescueCount:1,Tutorial:{Enabled:!0,ForceUseTutorial:!1}},Firebase:{Enabled:!1,Options:{AppId:"",ApiKey:"",ProjectId:"",AuthDomain:"",StorageBucket:"",MeasurementId:"",MessagingSenderId:""},Services:{Analytics:{Enabled:!1},Performance:{Enabled:!1},RemoteConfig:{Enabled:!1}}},Analytics:{GoogleAnalytics:{Enabled:!0,ConsoleLog:!1},ClarityAnalytics:{Enabled:!1,ConsoleLog:!1,ScreenshotCanvas:{Interval:1500,ByEvent:["APP_READY","PAGE_VIEW","BUTTON_CLICK","AD_SHOWING","LEVEL_START","LEVEL_END"]}},FirebaseAnalytics:{Enabled:!1,ConsoleLog:!1},FacebookAnalytics:{Prefix:"fba",Enabled:!1,ConsoleLog:!1}},PerformanceMonitor:{CoreFlows:!0,EngineFlows:!0,FpsTracking:{Enabled:!0,TrackingDuration:60,TrackingInterval:10},LoadResources:!0},RemoteConfig:{Enabled:!1,Options:{ForceReloadGame:!1,FetchIntervalInSeconds:300},ServiceType:"mockup",DefaultConfigId:"default",SupportedDataTypes:["Ludex","Gameplay"],MockupConfig:{Enabled:!0},SelfHostedConfig:{Enabled:!1,AppId:"",ApiKey:"",ApiUrl:""}},Network:{MaximumRequest:6,Timeout:15e3,Retries:3},Leaderboards:{LeaderboardList:[]},Notification:{Enabled:!1,ApiUrl:"https://notifications.sunstudio.io"},DailyRewards:{MaxDays:7,MockTime:0,CheckInterrupt:!1},Mockup:{Ads:{Enabled:!1,ErrorRate:5,GiphyApiKey:"VmjHIRsfrwCAssDS4mDo9DoImxJm1lLM",SafeAreaBottom:0},Match:{Enabled:!1,ErrorRate:5,PlayerInfo:{Id:"player-mock",Name:"Player Mock",Photo:"",Signature:""},OpponentInfo:{Id:"opponent-mock",Name:"Opponent Mock",Photo:"",Signature:""}},GameSDK:{SlowAPI:{Enabled:!1,ErrorRate:5,StartDelay:1e3,InitialDelay:1e3,PlayerDataDelay:1e3},Context:{Enabled:!1},Player:{SubscribeBot:{Enabled:!1,CanSubscribeBot:!0},ConnectedPlayers:{Enabled:!1,ErrorRate:5,RandomDelayMs:1e3,NumOfPlayers:3}},AddShortcut:{Enabled:!1},Tournament:{Enabled:!1,ErrorRates:5,RandomDelayMs:1e3,NumOfTournament:{Normal:10,HostPage:2}},Payments:{Enabled:!1,ErrorRates:5,RandomDelayMs:1e3,Products:[]}},Profile:{Enabled:!1,ErrorRate:5,RandomDelayMs:1e3,AvatarUrl:"https://picsum.photos/seed/%1/300/300",RandomNameApiKey:"a1f7164dc9d2468b953aef67b0a19355"},Leaderboards:{Enabled:!0,MinScore:10,MaxScore:100,ErrorRate:5,NumOfLeaders:{Min:10,Max:50},DefaultLimit:60,RandomDelayMs:1e3},LoadingScreen:{Enabled:!1}},Debugger:{Console:{Enabled:!1},Profiler:{Enabled:!1},EventLogging:{Enabled:!1},CanvasRecorder:{Enabled:!1,OnlyCore:!1,PanelExpanded:!1,Options:{Type:"png",Quality:.85,RecordFps:60,SyncFps:!0}},MonitorError:{Enabled:!1,ApiKey:"",Service:"BugSnag",TrackUser:!1,TrackPerformance:!1,FilterErrors:{Codes:{Accepted:[],Ignored:["USER_INPUT","NETWORK_FAILURE"]},Messages:{Accepted:[],Ignored:["Load image failed"]}},Feedback:!1},ListPlayerDevIds:["guest-007"],InputRecorder:{Enabled:!1,Logging:!0,PlaybackDelay:0,TimeScale:1,UseVisualizer:!0,SkipInactivity:{Enabled:!0,MinTime:3e3},MouseEvents:{mousedown:!0,mouseup:!0,mousemove:!0,mouseenter:!0,mouseleave:!0,mouseout:!0,mouseover:!0}}},AdaptivePerformance:{Enabled:!0,Quality:{Min:1,Max:2,AdjustStep:.1},Options:{FpsThreshold:48,CheckInterval:2e3,AutoUpgradeQuality:!0,OnlyUpdateWhenSwitchScene:!1},TrackingSceneNames:["GameScene"]},FrameCapture:{Enabled:!1,Options:{Quality:.85,RenderType:"jpeg",UseBlobIfPossible:!0,FallbackWithWideframe:"Default"}}}}),g,o=F(()=>{g={AllowWithoutSDK:!0,UseNameGenerator:!0}}),Qt,km,i=F(()=>{"use strict";Qt={},window.__listeners=Qt,km=window.addEventListener.bind(window),window.addEventListener=(e,t,r)=>{Qt[e]||(Qt[e]=[]),Qt[e].push(t),km(e,t,r)}});function Gm(){let e=["error","unhandledrejection"],t=window.__listeners??[];for(let r of e)t[r]?.[0]&&window.removeEventListener(r,t[r].shift())}function ei(e){window.__errorQueue&&window.__errorQueue.push(typeof e=="string"?new Error(e):e)}function $m(){window.addEventListener("error",e=>{ei(e.error)}),window.addEventListener("unhandledrejection",e=>{ei(e.reason)})}var c=F(()=>{"use strict";window.__errorQueue=[],window.addEventListener("load",()=>{Gm(),$m()})}),et,Aa,Jt,ba,Fm,Xt,Bm,va,Vm,Um,Hm,Km,jm,ti,Wm,l=F(()=>{"use strict";window.__sdkLoadingCount=window.__sdkLoadingCount??0,window.__errorQueue=window.__errorQueue??[],et=e=>{let t=Ludex?.Utils.Function.toError(e);t?.message&&(Aa("app_crash_handle",{error:t.message}),window.__errorQueue?.push(t),codex?.monitorError?.sendException(t))},Aa=(e,t)=>{codex?.analytics?.event(e,t)},Jt=null,ba=()=>{Jt&&(clearInterval(Jt),Jt=null)},Fm=()=>{if(ba(),!(window.__sdkLoadingCount>=70)){let e=70-window.__sdkLoadingCount,t=e>0?3e3/e:3e3;Jt=setInterval(()=>{if(window.__sdkLoadingCount>=70){ba();return}window.__sdkLoadingCount++,window.GameSDK?.setLoadingProgress(window.__sdkLoadingCount)},t)}},Xt=null,Bm=()=>{va(),Xt=setTimeout(()=>{window.__sdkLoadingCount<=1&&window.GameSDK?.extra?.displayWarnLoading?.(!0)},8e3)},va=()=>{Xt!==null&&(clearTimeout(Xt),Xt=null),window.GameSDK?.extra?.displayWarnLoading?.(!1)},Vm=async e=>{let t=document.createElement("script");return t.src=`https://www.googletagmanager.com/gtag/js?id=${e}`,t.async=!0,new Promise((r,n)=>{let y=!1,f=null,w=null,A=null,x=()=>{f!==null&&clearTimeout(f),w&&t.removeEventListener("load",w),A&&t.removeEventListener("error",A)};f=setTimeout(()=>{y||(y=!0,x(),n(new Error(`Timeout loading GA script after ${1e4/1e3}s`)))},1e4),w=()=>{y||(y=!0,x(),r())},A=()=>{y||(y=!0,x(),n(new Error("Failed to load GA script")))},t.addEventListener("load",w),t.addEventListener("error",A),document.head.appendChild(t)})},Um=(e,t,r)=>{try{if(typeof window.gtag!="function")throw new Error("window.gtag function not found after loading script.");let n=window.GameSDK?.getEntryPointData()||{},{fbig_ad_id:y,fbig_adset_id:f,fbig_campaign_id:w,fb_instant_game_adset_id:A,fb_instant_game_ad_id:x,fb_instant_game_campaign_id:v}=n,D=y??x??void 0,I=f??A??void 0,E=w??v??void 0;window.dataLayer=window.dataLayer||[],window.gtag("js",new Date),window.gtag("set",{client_id:`100.${e}`,user_id:e,send_page_view:!1});let b="0";for(let _ of r)window.gtag("config",_,{cookie_flags:"SameSite=None;Secure",build:b,medium:t,campaign:E,groups:"GA"});let T=(Ludex?.Utils?.Browser?.getQueryParams()||{}).entry_point||t,U={user_id:e,player_id:e,app_version:b,traffic_source:t,traffic_source_detail:T,ad_id:D,adset_id:I,campaign_id:E,new_user:void 0,coins:void 0,score:void 0};window.gtag("set","user_properties",U)}catch(n){et(n)}},Hm=async()=>{let e=[],t;try{return;if(window.GameSDK)try{a=await window.GameSDK.getEntryPointAsync()??a}catch{}}catch(r){et(r)}finally{jm()}},Km=()=>{try{if(!codex?.player||typeof window.gtag!="function")return;let e=codex.player.getBestScore()??0,t=codex.player.getGameData()?.coins??0,r=codex.player.isFirstSession()??void 0,n=window.GameSDK?.getEntryPointData()||{},{content:y,notif_id:f}=n,w={new_user:r,coins:t,score:e};(y||f)&&(w.traffic_source_detail=y??`notif_${f}`);let A=Object.entries(w).filter(([x,v])=>v!==void 0).reduce((x,[v,D])=>(x[v]=D,x),{});Object.keys(A).length>0&&window.gtag("set","user_properties",A)}catch(e){et(e)}},jm=()=>{try{let{Events:e,Plugins:{Analytics:{Events:t}}}=Ludex;Aa(t.APP_LAUNCH),codex.event.catchUp(e.GAME_SDK_READY,()=>{Aa(t.APP_INITIALIZED)}),codex.event.catchUp(Ludex.Events.PLAYER_INFO_LOADED,Km)}catch(e){et(e)}},ti=async(e=0)=>{try{Bm(),await window.GameSDK.initializeAsync(),va(),window.__sdkLoadingCount=1,window.GameSDK.setLoadingProgress(window.__sdkLoadingCount),Fm(),await Hm(),codex.event.emit(Ludex.Events.GAME_SDK_READY)}catch(t){if(va(),ba(),e>=5){et(t);return}setTimeout(()=>ti(e+1),2e3)}},Wm=()=>{let e=0,t=()=>{window.GameSDK?ti():e<1e4?(e+=50,setTimeout(t,50)):et(new Error(`GameSDK not found after ${1e4/1e3}s`))};t()},Wm()});function qm(e){let t=document.createElement("div");t.innerHTML=".",t.style.fontFamily=`'${e}'`,t.style.position="absolute",t.style.left="-100px",t.style.top="-100px",document.body.appendChild(t)}function zm(){let e="Lilita One, M PLUS 1p, Baloo 2";if(!e)return;let t=e.split(",").map(r=>r.trim());for(let r of t)qm(r);setTimeout(()=>{let r=t.join("&family="),n=document.createElement("link");n.href=`https://fonts.googleapis.com/css2?family=${r}&display=swap`,n.rel="stylesheet",n.as="style",document.head.appendChild(n)},200)}var d=F(()=>{"use strict";document.addEventListener("DOMContentLoaded",zm,{once:!0})});function Ym(){let e=arguments;e[0]==="event"&&(typeof e[2]!="object"&&(e[2]={}),e[2].build="0",e[2].send_to="GA",e[2].extend_session=1),window.dataLayer.push(e)}function Qm(){try{return}catch{}}var u=F(()=>{"use strict";window.dataLayer=window.dataLayer||[],window.gtag=Ym,Qm()}),Jm,p=F(()=>{"use strict";Jm=window.navigator.getGamepads,window.navigator.getGamepads=()=>{try{return Jm()}catch{return[]}}}),Lt,m=F(()=>{"use strict";Lt=window.performance||{},(typeof Lt.mark!="function"||typeof Lt.measure!="function")&&(Lt={mark:()=>{},measure:()=>{}}),Lt.mark("load-start"),window.__perf=Lt}),Z={};It(Z,{default:()=>M});var M,O=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),M=null}),Da,Zt,Sa=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Da=class{adapter;extra;currentContextID=null;currentContextType="SOLO";currentContextPlayers=[];m=null;n=null;w=null;P;T=[];v;constructor(e){this.adapter=e,this.extra=e.extra}setCurrentContextId(e){this.E(e),this.currentContextID=e,this.currentContextType="THREAD"}initContextInfo(e,t){let{Array:r,String:n}=Ludex.Utils;this.P={},this.v={},this.T=r.fillWith(10,()=>n.generateObjectId()),!(!e||!t)&&(["SOLO","THREAD","POST","GROUP"].indexOf(t)<0||(this.currentContextID=e,this.currentContextType=t))}getID(){return this.currentContextID}getType(){return this.currentContextType}async re(){if(this.w)return;let e=(await Promise.resolve().then(()=>(O(),Z))).default;typeof e=="function"&&(this.w=new e,await this.w.setupTemplate())}async ie(){if(this.m)return;let e=(await Promise.resolve().then(()=>(O(),Z))).default;typeof e=="function"&&(this.m=new e,await this.m.setupTemplate())}async ne(){if(this.n)return;let e=(await Promise.resolve().then(()=>(O(),Z))).default;typeof e=="function"&&(this.n=new e,await this.n.setupTemplate())}async switchAsync(e,t=!1){if(this.extra.checkPopupShown(),await this.extra.awaitRandomDelay(),this.validateSwitchAsyncContextId(e),e==="SOLO"&&t){this.currentContextID=null,this.currentContextType="SOLO",this.b([]);return}await this.re(),await new Promise((n,y)=>{this.w||this.adapter.extra.exceptionUnsupported(),this.w.onYes(this.u(n)),this.w.onNo(this.y(y)),this.w.show(e),this.extra.isPopupShown=!0}),this.currentContextID=e,this.currentContextType="THREAD",this.$(e,10);let r=this.v[e].map(n=>this.O(n));this.b(r)}async chooseAsync(e){this.extra.checkPopupShown(),await this.extra.awaitRandomDelay(),await this.ie(),await new Promise((y,f)=>{this.m||this.adapter.extra.exceptionUnsupported(),this.m.onYes(this.u(y)),this.m.onNo(this.y(f)),this.m.show(),this.extra.isPopupShown=!0});let t=Math.floor(Math.random()*this.T.length),r=this.T[t];this.E(r),this.currentContextID=r,this.currentContextType="THREAD",this.$(r,2);let n=this.v[r].map(y=>this.O(y));this.b(n)}async createAsync(e){if(this.extra.checkPopupShown(),await this.extra.awaitRandomDelay(),await this.oe(e),await this.ne(),await new Promise((n,y)=>{this.n||this.adapter.extra.exceptionUnsupported(),this.n.onYes(this.u(n)),this.n.onNo(this.y(y)),this.n.show(e),this.extra.isPopupShown=!0}),!this.P[e]){let{Utils:{String:n}}=Ludex;this.P[e]=n.generateObjectId()}let t=this.P[e];this.E(t),this.currentContextID=t,this.currentContextType="THREAD";let r=this.O(e);this.b([r])}u=e=>()=>{this.extra.isPopupShown=!1,e(!0)};y=e=>()=>{this.extra.isPopupShown=!1;try{this.extra.exceptionUserInput("Player closed the context menu")}catch(t){e(t)}};async getPlayersAsync(){return await this.extra.awaitRandomDelay(),this.currentContextPlayers}$(e,t){if(!this.v[e]){let{Array:r,String:n}=Ludex.Utils,y=Math.floor(Math.random()*t),f=r.fillWith(y,()=>n.generateObjectId());this.v[e]=f}return this.v[e]}O(e){return{getID:()=>e,getName:()=>`Player ${e}`,getPhoto:()=>""}}b(e){if(this.currentContextType==="SOLO"){this.currentContextPlayers=[];return}this.currentContextPlayers=e}E(e){this.currentContextID===e&&this.extra.exceptionSameContext()}async oe(e){if((!e||Array.isArray(e))&&this.extra.exceptionClientUnsupportedOperation("Client does not support no player IDS or multiple player IDs yet"),!Ludex.Utils.Valid.isString(e)){let r=`Array of type String contained a value of another type: ${e}`;this.extra.exceptionInvalidParam(r)}if(e===GameSDK.player.getID()&&this.extra.exceptionInvalidParam("At least one player id besides the current player must be provided."),(await GameSDK.player.getConnectedPlayersAsync()).some(r=>r.getID()===e))return;let t=`Provided ID ${e} is not a connected player of the current player.`;this.extra.exceptionInvalidParam(t)}validateSwitchAsyncContextId(e){this.E(e),!Ludex.Utils.Valid.isString(e)&&this.extra.exceptionClientUnsupportedOperation("Client requires update to support this operation")}},Zt=Da}),ai,ri=F(()=>{ai="./assets/async-popup.html"}),si,ni=F(()=>{si="./assets/loading.html"}),eh,er,oi,ii,ci,Ia=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),ri(),ni(),eh=e=>!!document.querySelector(e),er={},oi=async e=>{let{template:t,selector:r}=e;if(t in er)return await er[t],document.querySelector(r);let n=(await fetch(t)).text();er[t]=n;let y=await er[t];return eh(r)||document.body.insertAdjacentHTML("beforeend",y),document.querySelector(r)},ii=async()=>oi({template:ai,selector:"#async-popup-container"}),ci=async()=>oi({template:si,selector:"#loading-screen"})}),li,La,di,ui=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Ia(),La=class{L=0;c=null;constructor(){this.le()}async le(){this.c=await ci(),this.c&&(this.c.setAttribute("data-clarity-unmask","true"),this.ce())}ce(){if(!this.c)return;let e="logo-128x128.png",t=this.c.querySelector("#lds-game-icon");t&&t instanceof HTMLElement&&(t.style.backgroundImage=`url(${e})`,t.style.backgroundColor="transparent");let r=this.c.querySelector("#lds-game-icon-blur");r&&r instanceof HTMLElement&&(r.style.backgroundImage=`url(${e})`,r.style.backgroundColor="transparent")}setLoadingProgress(e){if(this.L>=e)return;this.L=e,this.L>=100&&(this.L=100);let t=document.getElementById("lds-percent");t&&(t.innerHTML=`${e}`)}displayWarnLoading(e){let t=document.getElementById("lds-warn-text");t&&(clearTimeout(li),e?(t.style.display="block",t.offsetWidth,t.style.opacity="0.8"):(t.style.opacity="0",li=setTimeout(()=>{t.style.display="none"},300)))}removeLoadingElement(){this.c&&(this.c.style.opacity="0",setTimeout(()=>{this.c?.remove()},300))}},di=La}),Ca,pi,mi=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Ca=class extends Error{code;constructor(e,t){super(t),this.code=e}},pi=Ca}),th,Ea,hi,fi=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),ui(),mi(),th=1e4,Ea=class{adapter;isGuest=!1;isPopupShown=!1;loadingElement=null;constructor(e){this.adapter=e}async subscribeBotAsync(){if(!await this.adapter.player.canSubscribeBotAsync())return!1;let{analytics:e}=codex,{Plugins:{Analytics:{Events:{BOT_SUBSCRIBE:t,BOT_SUBSCRIBE_POPUP:r}}}}=Ludex;e.event(r);try{return await this.waitSDKInitiatedAsync(),await this.adapter.player.subscribeBotAsync(),e.event(t,{success:!0}),!0}catch{return e.event(t,{success:!1}),!1}}async checkAndCreateShortcutAsync(){if(!await this.adapter.canCreateShortcutAsync())return;let{analytics:e}=codex,{Plugins:{Analytics:{Events:{SHORTCUT_CREATE:t,SHORTCUT_CREATE_POPUP:r}}}}=Ludex;e.event(r);try{await this.waitSDKInitiatedAsync(),await this.adapter.createShortcutAsync(),e.event(t,{success:!0})}catch{e.event(t,{success:!1})}}waitSDKInitiatedAsync(){let{Events:{GAME_SDK_READY:e}}=Ludex;return new Promise(t=>{codex.event.catchUp(e,t)})}async waitLudexReadyAsync(){let e=0;return new Promise(t=>{let r=setInterval(()=>{if("Ludex"in window){clearInterval(r),t();return}e+=10,e>th&&(e=0)},10)})}createLoadingElement(){this.loadingElement||(this.loadingElement=new di)}setLoadingElementProgress(e){this.loadingElement&&this.loadingElement.setLoadingProgress(e)}displayWarnLoading(e){this.loadingElement&&this.loadingElement.displayWarnLoading(e)}destroyLoadingElement(){this.loadingElement&&this.loadingElement.removeLoadingElement()}checkPopupShown(){this.isPopupShown&&this.exceptionPendingRequest("Please wait for the popup to close")}async delayInitialAsync(){let{Utils:{Time:e},Configs:{Mockup:{GameSDK:{SlowAPI:t}}}}=Ludex;!t.Enabled||t.InitialDelay<=0||await e.sleepAsync(t.InitialDelay)}async delayStartAsync(){let{Configs:{Mockup:{GameSDK:{SlowAPI:e}}},Utils:{Time:t}}=Ludex;!e.Enabled||e.StartDelay<=0||await t.sleepAsync(e.StartDelay)}async delayPlayerDataAsync(){let{Configs:{Mockup:{GameSDK:{SlowAPI:e}}},Utils:{Time:t}}=Ludex;!e.Enabled||e.PlayerDataDelay<=0||await t.sleepAsync(e.PlayerDataDelay)}awaitRandomDelay(e=1e3){let{Utils:{Time:t}}=Ludex;return t.sleepAsync(Math.random()*e)}randomException(e){let t=Math.floor(Math.random()*e.length),r=e[t];this[`exception${r}`]()}getErrorMessage(e){let{Valid:t,Object:r}=Ludex.Utils;return!r.hasOwn(e,"message")||!t.isString(e.message)?null:e.message}o(e,t){throw new pi(e,t)}exceptionUserInput(e){this.o("USER_INPUT",e)}exceptionUnsupported(){this.o("UNSUPPORTED","Unsupported method")}exceptionInvalidParam(e){this.o("INVALID_PARAM",e)}exceptionPendingRequest(e){this.o("PENDING_REQUEST",e)}exceptionMethodNotImplemented(){this.o("METHOD_NOT_IMPLEMENTED","Method not implemented")}exceptionTournamentNotFound(e){this.o("TOURNAMENT_NOT_FOUND",e)}exceptionSameContext(){this.o("SAME_CONTEXT","Must specify a context other than the current one.")}exceptionInvalidOperation(e){this.o("INVALID_OPERATION",e)}exceptionNetworkFailure(e="Request failed to be processed"){this.o("NETWORK_FAILURE",e)}exceptionUnknown(e){this.o("UNKNOWN",e)}exceptionClientUnsupportedOperation(e){this.o("CLIENT_UNSUPPORTED_OPERATION",e)}exceptionRateLimited(e){this.o("RATE_LIMITED",e)}},hi=Ea}),Ma,yi,gi=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Ia(),Ma=class{popup;title;content;okButton;noButton;N;R;async setupTemplate(){let e=await ii();e&&(this.popup=e,this.title=e.querySelector("#title"),this.content=e.querySelector("#content"),this.okButton=e.querySelector("#ok"),this.noButton=e.querySelector("#no"),this.hide())}onYes=e=>{this.okButton&&(this.okButton.removeEventListener("click",this.N),this.N=this.W(e),this.okButton.addEventListener("click",this.N,{once:!0}))};onNo=e=>{this.noButton&&(this.noButton.removeEventListener("click",this.R),this.R=this.W(e),this.noButton.addEventListener("click",this.R,{once:!0}))};W=e=>t=>{t.stopImmediatePropagation(),this.hide(),e()};show(e){this.content.textContent=`${e}`,this.popup.style.display="flex"}hide(){this.popup.style.display="none"}},yi=Ma}),Pi={};It(Pi,{default:()=>rh});var Ta,rh,xi=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),gi(),Ta=class extends yi{show(e){this.title.textContent="Purchase",this.okButton.textContent="Purchase",this.noButton.textContent="Cancel";let t=JSON.stringify(e,null,2);super.show(`Do you want to purchase?
-Payload: ${t}`)}},rh=Ta}),tr,ah,nh,sh,oh,wi,Oa,_a,Ai,bi=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),tr=["Unsupported","NetworkFailure","PendingRequest","ClientUnsupportedOperation"],ah=[...tr,"InvalidParam"],nh=[...tr,"InvalidParam","UserInput"],sh=[...tr,"NetworkFailure"],oh=[...tr,"InvalidParam","UserInput"],wi="ProductsDataMockKey",Oa="PurchasesDataMockKey",_a=class{adapter;extra;context;A=null;constructor(e){this.adapter=e,this.extra=e.extra,this.context=e.context}async initPaymentInfoAsync(){let{Configs:{Mockup:{GameSDK:{Payments:{Enabled:e}}}}}=Ludex;e&&await this.createMockProductsData()}async getCatalogAsync(){await this.l(),this.randomError(ah);let e=this.M();return Object.values(e)}async de(){if(this.A)return;let e=(await Promise.resolve().then(()=>(xi(),Pi))).default;typeof e=="function"&&(this.A=new e,await this.A.setupTemplate())}async purchaseAsync(e){return this.extra.checkPopupShown(),await this.l(),this.he(e),this.randomError(nh),await this.de(),await new Promise((t,r)=>{this.A||this.adapter.extra.exceptionUnsupported(),this.A.onYes(this.u(t)),this.A.onNo(this.y(r)),this.A.show(e),this.extra.isPopupShown=!0}),this.ue(e)}async getPurchasesAsync(){await this.l(),this.randomError(sh);let e=this.adapter.player.getID();return e?this.k()[e]||[]:[]}async consumePurchaseAsync(e){await this.l(),this.ye(e),this.randomError(oh);let t=this.adapter.player.getID();if(!t)return;let r=(this.k()[t]||[]).filter(n=>n.purchaseToken!==e);this.z(t,r)}onReady(e){e()}async l(){let{Configs:{Mockup:{GameSDK:{Payments:{RandomDelayMs:e}}}}}=Ludex;return this.extra.awaitRandomDelay(e)}randomError(e){let{Configs:{Mockup:{GameSDK:{Payments:{ErrorRates:t}}}}}=Ludex;Math.random()*100<t&&this.extra.randomException(e)}he(e){let{Utils:{Object:t,Valid:r}}=Ludex;r.isObject(e)||this.extra.exceptionInvalidParam("Config must be an object"),t.hasOwn(e,"productID")||this.extra.exceptionInvalidParam("Config must have productID");let{productID:n}=e;r.isString(n)||this.extra.exceptionInvalidParam("productID must be a string"),t.hasOwn(e,"developerPayload")&&!r.isString(e.developerPayload)&&this.extra.exceptionInvalidParam("developerPayload must be a string")}ye(e){let{Utils:{Valid:t}}=Ludex;t.isString(e)||this.extra.exceptionInvalidParam("Purchase token must be a string")}ue(e){let{Utils:{String:t}}=Ludex,r={productID:e.productID,paymentID:t.generateObjectId(),purchaseToken:t.generateObjectId(),purchaseTime:new Date().toISOString(),developerPayload:e.developerPayload,signedRequest:t.generateObjectId()},n=this.adapter.player.getID();if(n){let y=this.k()[n]||[];y.push(r),this.z(n,y)}return r}async createMockProductsData(){let{Configs:{Mockup:{GameSDK:{Payments:{Enabled:e,Products:t}}}}}=Ludex;if(!e)return;let r=this.M();if(Object.values(r).length>=t.length)return;let n=this.pe();await Promise.all(n)}pe(){let{Configs:{Mockup:{GameSDK:{Payments:{Products:e}}}}}=Ludex;return e.map(t=>{let r={productID:t.id,title:`Product ${t.id}`,description:`Description for ${t.id}`,price:t.price.toString(),priceCurrencyCode:"USD",priceAmount:t.price};return this.ge(t.id,r),r})}M(){let{Utils:{Browser:e,Valid:t}}=Ludex,r=e.getLocalStorage(wi);return t.isObject(r)?r:{}}ge(e,t){let r=this.M();r[e]=t,this.fe(r)}fe(e){let{Utils:{Browser:t,Valid:r}}=Ludex;r.isObject(e)&&t.writeLocalStorage(wi,e)}k(){let{Utils:{Browser:e,Valid:t}}=Ludex,r=e.getLocalStorage(Oa);return t.isObject(r)?r:{}}z(e,t){let{Utils:{Browser:r}}=Ludex;if(!Array.isArray(t))return;let n=r.getLocalStorage(Oa)??{};n[e]=t,r.writeLocalStorage(Oa,n)}u=e=>()=>{this.extra.isPopupShown=!1,e(!0)};y=e=>()=>{this.extra.isPopupShown=!1;try{this.extra.exceptionUserInput("Player closed the context menu")}catch(t){e(t)}}},Ai=_a}),vi,Di,Na,Si,Ii=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),vi="Dinosaurs Merge Master".replace(/ /g,"-"),Di="https://picsum.photos/seed/%1/300/300",Na=class{adapter;extra;defaultPlayerInfo;currentPlayerInfo;infoKey=`${vi}_PlayerInfo`;dataKey=`${vi}_PlayerData`;D=null;C=null;constructor(e){this.adapter=e,this.extra=e.extra,this.initDefaultPlayerInfo()}initDefaultPlayerInfo(){let e="guest-007";this.defaultPlayerInfo={playerId:e,playerName:"Guest",playerPhoto:Di.replace("%1",e)},this.extra.isGuest=!0,this.currentPlayerInfo=S({},this.defaultPlayerInfo)}initPlayerInfo(e){this.updateCurrentPlayerInfo(e);let{Utils:{Browser:t}}=Ludex;t.writeLocalStorage(this.infoKey,this.currentPlayerInfo)}async canSubscribeBotAsync(){return await this.q(),this.D||this.extra.exceptionUnsupported(),this.D.canSubscribeBotAsync()}async subscribeBotAsync(){return await this.q(),this.D||this.extra.exceptionUnsupported(),this.D.subscribeBotAsync()}getID(){return this.currentPlayerInfo.playerId}getName(){return this.currentPlayerInfo.playerName}getPhoto(){return this.currentPlayerInfo.playerPhoto}async getDataAsync(e){if(e.length<1)return{};await this.extra.delayPlayerDataAsync();let{Utils:{Browser:t,Valid:r,Object:n}}=Ludex,y=t.getLocalStorage(this.dataKey);if(!r.isObject(y))return{};let f={};for(let w of e)n.hasOwn(y,w)&&(f[w]=y[w]);return f}async setDataAsync(e){await this.extra.delayPlayerDataAsync();let{Utils:{Browser:t}}=Ludex;t.writeLocalStorage(this.dataKey,e)}async getSignedPlayerInfoAsync(){return{getPlayerID:()=>this.getID()??"",getSignature:this.me}}async getConnectedPlayersAsync(){return await this.we(),this.C||this.extra.exceptionUnsupported(),this.C.getConnectedPlayersAsync()}updateCurrentPlayerInfo(e){let{Utils:{Browser:t,Valid:r,Object:n,String:y}}=Ludex,f=e??"",w="Nameless";if(this.extra.isGuest){let A=t.getLocalStorage(this.infoKey);r.isObject(A)&&n.hasOwn(A,"playerId")&&r.isString(A.playerId)&&(f=A.playerId),r.isObject(A)&&n.hasOwn(A,"playerName")&&r.isString(A.playerName)&&(w=A.playerName)}r.isEmpty(f)&&(f=y.generateObjectId()),w==="Nameless"&&this.Ae()&&(w=y.generateNameUsingString(f)),this.currentPlayerInfo.playerId=f,this.currentPlayerInfo.playerName=w,this.currentPlayerInfo.playerPhoto=Di.replace("%1",f),this.xe(f)}Ae(){return g?.UseNameGenerator===!0}ve(){let{Match:e}=Ludex.Configs.Mockup;return e.Enabled?e.PlayerInfo:null}De(){let{Match:e}=Ludex.Configs.Mockup;return e.Enabled?e.OpponentInfo:null}xe(e){let t=this.De();e!==t?.Id&&(t=this.ve()),t&&(this.currentPlayerInfo.playerId=t.Id,t.Name&&(this.currentPlayerInfo.playerName=t.Name),t.Photo&&(this.currentPlayerInfo.playerPhoto=t.Photo))}me=()=>{let e=this.Ie();return Ludex.Utils.Valid.isString(e)?e:"default_token"};Ie(){let{Configs:{Mockup:{Match:e}}}=Ludex,t=e.PlayerInfo.Id===this.getID(),r=e.OpponentInfo.Id===this.getID();return t?e.PlayerInfo.Signature:r?e.OpponentInfo.Signature:null}async q(){if(this.D)return;let e=(await Promise.resolve().then(()=>(O(),Z))).default;typeof e=="function"&&(this.D=new e(this.adapter))}async we(){if(this.C)return;let e=(await Promise.resolve().then(()=>(O(),Z))).default;typeof e=="function"&&(this.C=new e(this.extra))}},Si=Na}),Ra,Li,Ci=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Ra=class{id;G;F;s;U;B;constructor(e,t,r=!1){let{config:n,data:y}=t;this.id=e,this.G=n.title,this.F=`0123${this.id}`,this.s=JSON.stringify(y??{}),this.U=n.endTime??this.Se(),this.B=r?"PAGE_HOSTED":"DEFAULT"}Se(){return Math.round((Date.now()+1e3*60*60*24*7)/1e3)}getID(){return this.id}getTitle(){return this.G}getPayload(){return this.s}getEndTime(){return this.U}getContextID(){return this.F}getTournamentType(){return this.B}toObject(){return{id:this.id,title:this.G,payload:this.s,endTime:this.U,contextId:this.F,tournamentType:this.B}}},Li=Ra}),Ct,ih,ch,lh,dh,uh,Ei,ka,Ga,Mi,Ti=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Sa(),Ci(),Ct=["Unsupported","NetworkFailure","PendingRequest","ClientUnsupportedOperation"],ih=[...Ct,"InvalidParam","UserInput"],ch=[...Ct,"InvalidOperation","UserInput"],lh=[...Ct,"InvalidParam","UserInput"],dh=[...Ct,"InvalidParam","UserInput"],uh=[...Ct,"NetworkFailure"],Ei="TournamentsDataMockKey",ka="TournamentLeadersMockKey",Ga=class{adapter;extra;context;x=null;n=null;constructor(e){this.adapter=e,this.extra=e.extra,this.context=e.context}async initTournamentInfoAsync(e){let{Configs:{Mockup:{GameSDK:{Tournament:{Enabled:t}}}}}=Ludex;t&&(await this.createMockTournamentsData(),e&&await this.Pe(e))}Pe=async e=>{this.Y(e)&&await this.joinAsync(e)};async createMockTournamentsData(){let{Utils:{Object:e},Configs:{Mockup:{GameSDK:{Tournament:{Enabled:t,NumOfTournament:r}}}}}=Ludex,{Normal:n,HostPage:y}=r;if(!t)return;let f=this.S(),w=e.vals(f),A=this.Ee(w),x=A.filter(_=>_.tournamentType==="DEFAULT"),v=A.filter(_=>_.tournamentType==="PAGE_HOSTED"),{length:D}=x,{length:I}=v,E=n-D,b=y-I,T=this.be(E),U=this.Le(b);await Promise.all([...T,...U])}Ee(e){let t=Date.now()/1e3,r=e.filter(y=>y.endTime>t),n={};for(let y of r)n[y.id]=y;return this.Q(n),r}be(e){let{Utils:{String:t,Array:r,Number:n},Configs:{Mockup:{GameSDK:{Tournament:{ExtraPlayerTournamentPayload:y}}}}}=Ludex,{leaderboard:f}=codex,w=GameSDK.player.getID(),A=GameSDK.player.getName();return r.length(e).map(async()=>{let x=`${A}'s Tournament ${t.generateObjectId()}`,v=await f.createLeaderboardAsync({name:x}),D=this.j({initialScore:0,config:{title:x,tournamentTitle:x},data:S({playerId:w,playerName:A,leaderboardId:v},y)}).getID().toString();if(this._(D))return;let I=n.random(2),E=codex.player.getConnectedPlayerIds(I,0).map(b=>({playerId:b,score:n.random(4)}));E.sort((b,T)=>b.score-T.score),this.H(D,E)})}Le(e){let{Utils:{String:t,Array:r,Number:n},Configs:{Mockup:{GameSDK:{Tournament:{ExtraGlobalTournamentPayload:y}}}}}=Ludex,{leaderboard:f}=codex;return r.length(e).map(async()=>{let w=t.generateObjectId(),A=S({leaderboardId:w,playerId:"global"},y),x=`Global Tournament ${w}`;await f.createLeaderboardAsync({name:x,_id:w,type:"world_tournament_leaderboard",description:JSON.stringify(A)});let v=this.j({initialScore:0,config:{title:x,tournamentTitle:x},data:A},!0).getID().toString();if(this._(v))return;let D=n.random(2),I=r.length(D).map(()=>({playerId:t.generateObjectId(),score:n.random(4)}));I.sort((E,b)=>E.score-b.score),this.H(v,I)})}async l(){let{Configs:{Mockup:{GameSDK:{Tournament:{RandomDelayMs:e}}}}}=Ludex;return this.extra.awaitRandomDelay(e)}randomError(e){let{Configs:{Mockup:{GameSDK:{Tournament:{ErrorRates:t}}}}}=Ludex;Math.random()*100<t&&this.extra.randomException(e)}async Ce(){if(this.n)return;let e=(await Promise.resolve().then(()=>(O(),Z))).default;typeof e=="function"&&(this.n=new e,await this.n.setupTemplate())}async _e(){if(this.x)return;let e=(await Promise.resolve().then(()=>(O(),Z))).default;typeof e=="function"&&(this.x=new e,await this.x.setupTemplate())}async createAsync(e){this.extra.checkPopupShown(),await this.l(),this.context.getID()!==null&&this.extra.exceptionInvalidOperation("Cannot create tournament while in a context"),this.Te(e),this.randomError(ih),await this.Ce(),await new Promise((n,y)=>{this.n||this.adapter.extra.exceptionUnsupported(),this.n.onYes(this.u(n)),this.n.onNo(this.y(y)),this.n.show(e),this.extra.isPopupShown=!0});let t=this.j(e),r=t.getContextID();return this.Oe(r),t}j(e,t=!1){let{Utils:{String:r}}=Ludex,n=r.generateObjectId(),y=new Li(n,e,t),f=y.toObject();return this.Ne(n,f),y}async postScoreAsync(e){await this.l(),this.J(),e<0&&this.extra.exceptionInvalidParam("Score must be a positive number"),this.randomError(dh);let t=codex.player.getPlayerId();this.X(t,e)}async shareAsync(e){this.extra.checkPopupShown(),await this.l(),this.J(),this.Re(e),this.randomError(lh),await this._e();let{score:t}=e,r=t,n=this.K();if(n){let f=codex.player.getPlayerId(),w=n.getID().toString(),A=this.Me(w,f);A&&A<t&&(r=A)}await new Promise((f,w)=>{this.x||this.adapter.extra.exceptionUnsupported(),this.x.onYes(this.u(f)),this.x.onNo(this.y(w)),this.x.show(r),this.extra.isPopupShown=!0});let y=codex.player.getPlayerId();this.X(y,t)}async getTournamentsAsync(){await this.l(),this.randomError(uh);let e=this.S(),{Utils:{Object:t}}=Ludex;return t.vals(e).map(r=>this.V(r.id)).filter(r=>r!==null)}async joinAsync(e){await this.l();let{Utils:{Valid:t}}=Ludex;t.isString(e)||this.extra.exceptionInvalidParam("Tournament ID must be a string");let r=this.V(e);r||this.extra.exceptionTournamentNotFound("Tournament could not be found."),this.randomError(ch);let n=r.getContextID();await GameSDK.context.switchAsync(n)}Oe(e){this.context instanceof Zt&&this.context.setCurrentContextId(e)}u=e=>()=>{this.extra.isPopupShown=!1,e(!0)};y=e=>()=>{this.extra.isPopupShown=!1;try{this.extra.exceptionUserInput("Player closed the context menu")}catch(t){e(t)}};K(){let e=this.context.getID();if(!e)return null;let t=this.S();for(let r in t)if(Object.hasOwn(t,r)&&t[r].contextId===e)return this.V(r);return null}Te(e){let{Utils:{Object:t,Valid:r}}=Ludex;r.isObject(e)||this.extra.exceptionInvalidParam("Payload must be an object"),t.hasOwn(e,"initialScore")||this.extra.exceptionInvalidParam("Payload must have initialScore"),t.hasOwn(e,"config")||this.extra.exceptionInvalidParam("Payload must have config");let{initialScore:n,config:y}=e;r.isNumber(n)||this.extra.exceptionInvalidParam("initialScore must be a number"),r.isObject(y)||this.extra.exceptionInvalidParam("Config must be an object"),t.hasOwn(y,"title")||this.extra.exceptionInvalidParam("Config must have title"),t.hasOwn(y,"tournamentTitle")||this.extra.exceptionInvalidParam("Config must have tournamentTitle"),t.hasOwn(e,"data")&&!r.isObject(e.data)&&this.extra.exceptionInvalidParam("Data must be an object")}Re(e){let{Utils:{Object:t,Valid:r}}=Ludex;r.isObject(e)||this.extra.exceptionInvalidParam("Payload must be an object"),t.hasOwn(e,"score")||this.extra.exceptionInvalidParam("Payload must have score");let{score:n}=e;r.isNumber(n)||this.extra.exceptionInvalidParam("Score must be a number"),t.hasOwn(e,"data")&&!r.isObject(e.data)&&this.extra.exceptionInvalidParam("Data must be an object")}J(){this.K()||this.extra.exceptionTournamentNotFound("There is no tournament for this context.")}V(e){let t=this.Y(e);return t?{getID:()=>t.id,getTitle:()=>t.title,getPayload:()=>t.payload,getEndTime:()=>t.endTime,getContextID:()=>t.contextId,getTournamentType:()=>t.tournamentType}:null}Y(e){let t=this.S();return t[e]?t[e]:null}Ne(e,t){let r=this.S();r[e]=t,this.Q(r)}S(){let{Utils:{Browser:e,Valid:t}}=Ludex,r=e.getLocalStorage(Ei);return t.isObject(r)?r:{}}Q(e){let{Utils:{Browser:t,Valid:r}}=Ludex;r.isObject(e)&&t.writeLocalStorage(Ei,e)}Me(e,t){let r=this.Z(e,t);return r?r.score??null:null}X(e,t){let r=this.K();if(!r)return;let n=r.getID().toString();if(!n)return;let y=this.Z(n,e);if(!y){this.ee(n,{playerId:e,score:t});return}y.score<t&&(y.score=t,this.ee(n,y))}Z(e,t){let r=this._(e);if(!r.length)return null;let{Utils:{Array:n}}=Ludex;return n.search(r,y=>y.playerId===t)??null}_(e){let{Utils:{Browser:t,Object:r}}=Ludex,n=t.getLocalStorage(ka);if(!r.hasOwn(n,e))return[];let y=n[e];return Array.isArray(y)?(y.sort((f,w)=>w.score-f.score),y):[]}ee(e,t){let{Utils:{Array:r}}=Ludex,n=this._(e),y=r.searchIndex(n,f=>f.playerId===t.playerId);y===-1?n.push(t):n[y]=t,this.H(e,n)}H(e,t){let{Utils:{Browser:r,Object:n}}=Ludex;if(!Array.isArray(t))return;let y=r.getLocalStorage(ka)??{};n.assign(y,{[e]:t}),r.writeLocalStorage(ka,y)}},Mi=Ga}),$a,Oi,_i=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Sa(),fi(),bi(),Ii(),Ti(),$a=class{extra;player;context;tournament;payments;I=null;isInitialized=!1;bannerAdInstances={};rewardedVideoInstance=null;interstitialAdInstance=null;rewardedInterstitialInstance=null;initialize(){this.extra=new hi(this),this.player=new Si(this),this.context=new Zt(this),this.tournament=new Mi(this),this.payments=new Ai(this)}isNeedSDK(){return g?.AllowWithoutSDK!==!0}getLocale(){return Ludex.Utils.Browser.getLocale()}getPlatform(){let{Device:e}=Ludex.Utils;return e.isAndroid()?"ANDROID":e.isIOS()?"IOS":e.isDesktop()?"WEB":e.isMobile()?"MOBILE_WEB":null}getSDKName(){return"Ludex"}getSDKVersion(){return"1.0.0"}async initializeAsync(){if(this.isInitialized)return;this.initialize(),this.extra.createLoadingElement(),this.isNeedSDK()&&await this.checkSDKInitialized(),await this.extra.waitLudexReadyAsync(),await this.extra.delayInitialAsync();let e=Ludex.Utils.Browser.getQueryParams();if(e.splashPreview){this.extra.destroyLoadingElement();return}let t=e.playerId;this.player.initPlayerInfo(t);let r=e.context_source_id,n=e.context_type;this.context.initContextInfo(r,n),this.isInitialized=!0}async checkSDKInitialized(){this.extra.exceptionInvalidOperation("GameSDK requires AllowWithoutSDK=true in game config")}async startGameAsync(e=!0){this.isInitialized||this.extra.exceptionInvalidOperation("GameSDK is not initialized"),await this.extra.delayStartAsync();let t=90;window.__sdkLoadingCount=t,this.setLoadingProgress(t),this.extra.destroyLoadingElement();let{Events:r,Utils:{Browser:{getQueryParams:n}}}=Ludex,y=n().tournament_id;await this.tournament.initTournamentInfoAsync(y),await this.payments.initPaymentInfoAsync(),e&&codex.event.emit(r.GAME_SDK_STARTED)}setLoadingProgress(e){this.extra.setLoadingElementProgress(e)}getEntryPointData(){let{Utils:{Browser:e,Json:t}}=Ludex,{payload:r="{}"}=e.getQueryParams();return typeof r!="string"?{}:t.decode(r)}async getEntryPointAsync(){return"no_entry"}async loadBannerAdAsync(e){if(e){if(!this.bannerAdInstances[e]){let t=(await Promise.resolve().then(()=>(O(),Z))).default;typeof t!="function"&&this.extra.exceptionInvalidOperation("Banner ads mock is not enabled"),this.bannerAdInstances[e]=new t("banner",e)}await this.bannerAdInstances[e].loadAsync(),await this.bannerAdInstances[e].showAsync()}}async hideBannerAdAsync(e){this.bannerAdInstances[e]&&await this.bannerAdInstances[e].hideAsync()}getBannerHeight(e){return e.BannerHeight}async getInterstitialAdAsync(e){if(!this.interstitialAdInstance){let t=(await Promise.resolve().then(()=>(O(),Z))).default;typeof t!="function"&&this.extra.exceptionInvalidOperation("Interstitial ads mock is not enabled"),this.interstitialAdInstance=new t("interstitial",e)}return this.interstitialAdInstance}async getRewardedVideoAsync(e){if(!this.rewardedVideoInstance){let t=(await Promise.resolve().then(()=>(O(),Z))).default;typeof t!="function"&&this.extra.exceptionInvalidOperation("Rewarded video ads mock is not enabled"),this.rewardedVideoInstance=new t("rewarded",e)}return this.rewardedVideoInstance}async getRewardedInterstitialAsync(e){if(!this.rewardedInterstitialInstance){let t=(await Promise.resolve().then(()=>(O(),Z))).default;typeof t!="function"&&this.extra.exceptionInvalidOperation("Rewarded interstitial ads mock is not enabled"),this.rewardedInterstitialInstance=new t("rewarded_interstitial",e)}return this.rewardedInterstitialInstance}async getTournamentAsync(){this.tournament.randomError(["Unsupported","NetworkFailure"]);let e=this.context.getID(),{Array:t,Valid:r}=Ludex.Utils;r.isString(e)||this.extra.exceptionInvalidOperation("Not in a context");let n=await this.tournament.getTournamentsAsync(),y=t.search(n,f=>f.getContextID()===e);return y||this.extra.exceptionTournamentNotFound("A Tournament with current context was not found"),y}getSupportedAPIs(){let{CanSubscribeBot:e}=Ludex.Configs.Mockup.GameSDK.Player.SubscribeBot;return e?["player.canSubscribeBotAsync"]:[]}async canCreateShortcutAsync(){return await this.te(),this.I||this.extra.exceptionUnsupported(),this.I.canCreateShortcutAsync()}async createShortcutAsync(){return await this.te(),this.I||this.extra.exceptionUnsupported(),this.I.createShortcutAsync()}async te(){if(this.I)return;let e=(await Promise.resolve().then(()=>(O(),Z))).default;typeof e=="function"&&(this.I=new e(this))}},Oi=$a}),Fa,ph,mh,tt,rr=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Fa=class{usedCallLocations;constructor(){this.usedCallLocations=Object.create(null)}getCallerLine(){let e=new Error;if(!e.stack)return null;let t=e.stack.split(`
-`)[4];return t?t.trim():null}blockAccess(){try{let e=this.getCallerLine();if(!e||this.usedCallLocations[e])return!1;if(["eval","at <","(<"].some(t=>e.includes(t)))throw new Error(`Access blocked for the caller: ${e}`);return this.usedCallLocations[e]=!0,!1}catch{return!0}}},ph=new Fa,mh=(e,t)=>{let r=Object.getOwnPropertyDescriptor(e,t);if(!r)return;let{value:n,get:y,initializer:f}=r;n&&typeof n!="object"||y&&typeof y!="function"||f&&typeof f!="function"||Object.defineProperty(e,t,{enumerable:!1,get(){if(!ph.blockAccess())return n??f?.call(this)??y?.call(this)},set(){}})},tt=mh});function hh(){let e,t=window,r="GameSDK";return"FBInstant"in t?(r="FBInstant",e=new M(window.FBInstant)):"YaGames"in t?(r="Yandex",e=new M(window.YaGames)):"funmax"in t?(r="Xiaomi",e=new M(window.funmax)):"$msstart"in t?(r="MsGames",e=new M(window.$msstart)):"gdsdk"in t?(r="GameDistribution",e=new M(window.gdsdk)):"h5sdk"in t?(r="TranssionH5",e=new M(window.h5sdk)):"CrazyGames"in t?(r="CrazyGames",e=new M(window.CrazyGames.SDK)):"GlanceGamingAdInterface"in t?(r="Glance",e=new M(window.GlanceGamingAdInterface)):e=new Oi,e}var h=F(()=>{"use strict";O(),O(),O(),O(),O(),O(),O(),O(),O(),_i(),rr(),window.GameSDK=Object.seal(hh()),tt(window,"GameSDK")}),Ni,pe,ar=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Ni=(e=>(e.CORE_BOOTING="core-booting",e.REQUEST_CORE_START="core-start",e.CORE_STARTING="core-starting",e.CORE_READY="core-ready",e.GAME_SDK_READY="game-sdk-ready",e.GAME_SDK_STARTED="game-sdk-started",e.CONTEXT_DATA_PROCESSED="context-data-processed",e.CONTEXT_SESSION_TYPE_DETECTED="context-session-type-detected",e.GAME_READY="game-ready",e.BUNDLE_READY="bundle-ready",e.PLAYER_INFO_LOADED="player-info-loaded",e.REQUEST_SHOW_BANNER_ADS="request-show-banner-ads",e.SWITCH_SCENE="switch-scene",e.SCENE_LOADED="scene-loaded",e.PRELOAD_SCENE="preload-scene",e.SCENE_PROGRESS="scene-progress",e.SCENE_LAUNCHED="scene-launched",e.SCENE_RENDERED="scene-rendered",e.SCENE_BEFORE_RENDERED="scene-before-rendered",e.MARK_IS_TEST_SCENE="mark-is-test-scene",e.PRELOAD_SCREENS="preload-screens",e.OPENING_SCREEN="opening-screen",e.OPEN_SCREEN="open-screen",e.OPENED_SCREEN="opened-screen",e.CLOSING_SCREEN="closing-screen",e.CLOSE_SCREEN="close-screen",e.CLOSED_SCREEN="closed-screen",e.CORE_PLUGIN_READY="core-plugin-ready",e.MODULE_PLUGIN_READY="module-plugin-ready",e.AD_SHOWING="ad-showing",e.AD_CLOSED="ad-closed",e.AD_FAILED="ad-failed",e.LANGUAGE_CHANGED="language-changed",e.REQUEST_LANGUAGE="request-language",e.REQUEST_HOT_RELOAD="request-hot-reload",e.REQUEST_SAVE_CONFIG="request-save-config",e.REQUEST_UPDATE_CONFIG="request-update-config",e.REMOTE_CONFIG_UPDATED="remote-config-updated",e.VISIBILITY_HIDDEN="visibility-hidden",e.VISIBILITY_VISIBLE="visibility-visible",e.REQUEST_RESIZE_GAME="request-resize-game",e.REQUEST_QUALITY_UPGRADED="request-quality-upgraded",e.REQUEST_QUALITY_DOWNGRADED="request-quality-downgraded",e))(Ni||{}),pe=Ni}),Zd=Tm((e,t)=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var r=Object.prototype.hasOwnProperty,n="~";function y(){}Object.create&&(y.prototype=Object.create(null),new y().__proto__||(n=!1));function f(v,D,I){this.fn=v,this.context=D,this.once=I||!1}function w(v,D,I,E,b){if(typeof I!="function")throw new TypeError("The listener must be a function");var T=new f(I,E||v,b),U=n?n+D:D;return v._events[U]?v._events[U].fn?v._events[U]=[v._events[U],T]:v._events[U].push(T):(v._events[U]=T,v._eventsCount++),v}function A(v,D){--v._eventsCount===0?v._events=new y:delete v._events[D]}function x(){this._events=new y,this._eventsCount=0}x.prototype.eventNames=function(){var v=[],D,I;if(this._eventsCount===0)return v;for(I in D=this._events)r.call(D,I)&&v.push(n?I.slice(1):I);return Object.getOwnPropertySymbols?v.concat(Object.getOwnPropertySymbols(D)):v},x.prototype.listeners=function(v){var D=n?n+v:v,I=this._events[D];if(!I)return[];if(I.fn)return[I.fn];for(var E=0,b=I.length,T=new Array(b);E<b;E++)T[E]=I[E].fn;return T},x.prototype.listenerCount=function(v){var D=n?n+v:v,I=this._events[D];return I?I.fn?1:I.length:0},x.prototype.emit=function(v,D,I,E,b,T){var U=n?n+v:v;if(!this._events[U])return!1;var _=this._events[U],ue=arguments.length,Ft,K;if(_.fn){switch(_.once&&this.removeListener(v,_.fn,void 0,!0),ue){case 1:return _.fn.call(_.context),!0;case 2:return _.fn.call(_.context,D),!0;case 3:return _.fn.call(_.context,D,I),!0;case 4:return _.fn.call(_.context,D,I,E),!0;case 5:return _.fn.call(_.context,D,I,E,b),!0;case 6:return _.fn.call(_.context,D,I,E,b,T),!0}for(K=1,Ft=new Array(ue-1);K<ue;K++)Ft[K-1]=arguments[K];_.fn.apply(_.context,Ft)}else{var Ng=_.length,Br;for(K=0;K<Ng;K++)switch(_[K].once&&this.removeListener(v,_[K].fn,void 0,!0),ue){case 1:_[K].fn.call(_[K].context);break;case 2:_[K].fn.call(_[K].context,D);break;case 3:_[K].fn.call(_[K].context,D,I);break;case 4:_[K].fn.call(_[K].context,D,I,E);break;default:if(!Ft)for(Br=1,Ft=new Array(ue-1);Br<ue;Br++)Ft[Br-1]=arguments[Br];_[K].fn.apply(_[K].context,Ft)}}return!0},x.prototype.on=function(v,D,I){return w(this,v,D,I,!1)},x.prototype.once=function(v,D,I){return w(this,v,D,I,!0)},x.prototype.removeListener=function(v,D,I,E){var b=n?n+v:v;if(!this._events[b])return this;if(!D)return A(this,b),this;var T=this._events[b];if(T.fn)T.fn===D&&(!E||T.once)&&(!I||T.context===I)&&A(this,b);else{for(var U=0,_=[],ue=T.length;U<ue;U++)(T[U].fn!==D||E&&!T[U].once||I&&T[U].context!==I)&&_.push(T[U]);_.length?this._events[b]=_.length===1?_[0]:_:A(this,b)}return this},x.prototype.removeAllListeners=function(v){var D;return v?(D=n?n+v:v,this._events[D]&&A(this,D)):(this._events=new y,this._eventsCount=0),this},x.prototype.off=x.prototype.removeListener,x.prototype.addListener=x.prototype.on,x.prefixed=n,x.EventEmitter=x,typeof t<"u"&&(t.exports=x)}),Fg,Ur,Fn=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Fg={_id:"",name:"",createdBy:"",description:"",expireTime:6048e5,type:"app_leaderboard",timezone:"utc+0",createdAt:"2024-01-01T09:00:00.000Z",sortOrder:"desc",statistics:"max",resettable:"manually",resetScore:0,numberOfLeaders:15,amountPlayer:15},Ur=Fg}),uu={};It(uu,{default:()=>Wg});var cu,Bg,Bn,Vg,Ug,Hg,Hr,Kr,Kg,jr,jg,lu,du,Vn,Wg,pu=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Fn(),{Configs:{Mockup:{Leaderboards:{MinScore:cu,MaxScore:Bg,NumOfLeaders:Bn,ErrorRate:Vg,DefaultLimit:Ug,RandomDelayMs:Hg}}},Utils:{Valid:Hr,Browser:Kr,Time:Kg,Object:jr,Number:jg}}=Ludex,lu="LeadersMockKey",du="LeaderboardsMockKey",Vn=class{async getPlayers(e,t){if(await this.awaitRandomDelay(),this.randomResponseError("Get players error"))return{data:[]};let{playerIds:r}=t,n=[];if(r&&r.length>0){let y=this.getLeadersData(e);for(let f of r){let w=y[f];w&&n.push(w)}}return{data:n}}async getLeaders(e,t){if(await this.awaitRandomDelay(),this.randomResponseError("Get leaders error"))return{data:[]};let{limit:r,offset:n}=t,y=this.getLeadersData(e),f=jr.vals(y);this.sortLeadersRank(f);let w=[],A=n,x=r===0?Ug:n+r;for(let v=A;v<x;v++){let D=f[v];D&&w.push(D)}return this.sortLeadersRank(w),{data:w}}async getLeaderboardAsync(e){return await this.awaitRandomDelay(),this.randomResponseError("Get leaderboard error")?null:this.getLeaderBoard(e)||null}async getLeaderboardsAsync(e){if(await this.awaitRandomDelay(),this.randomResponseError("Get leaderboards error"))return[];let{limit:t=9999,type:r}=e;if(t<=0)return[];let n=this.getLeaderBoardsData(),y=jr.vals(n);return r===void 0?y.slice(0,t):y.filter(f=>f.type===r).slice(0,t)}getLeadersData(e){let t=this.getPlayersData(),r=Object.keys(t[e]),n={};for(let y of r){let f=t[e][y];Hr.isObject(f)&&(n[y]=f)}return n}sortLeadersRank(e){e.sort((t,r)=>parseInt(r.score,10)-parseInt(t.score,10)),e.forEach((t,r)=>{t.rank=r+1})}async setScoreAsync(e,t,r){if(await this.awaitRandomDelay(),this.randomResponseError("Set score error"))return null;let n={success:!1},y=this.getLeaderBoard(e);if(!y)return n;let f=this.getPlayersData(),w=f[e][t];w||(w=this.createPlayerData(t),y.amountPlayer+=1,y.numberOfLeaders+=1,this.writeLeaderBoard(e,y)),w.score=r.toString(),f[e][t]=w;let A=jr.vals(f[e]);return this.sortLeadersRank(A),A.forEach((x,v)=>{f[e][x.playerId]=x}),this.writePlayersData(e,f),n.success=!0,n}async createLeaderboard(e){if(await this.awaitRandomDelay(),this.randomResponseError("Create leaderboard error"))return null;let{_id:t}=e,r=this.getLeaderBoardsData();if(r[t])return r[t];let{numberOfLeaders:n}=e;return n=n??jg.random(Bn.Max-Bn.Min)+Bn.Min,this.createPlayersData(e,n),this.createLeaderboardData(e,n)}createLeaderboardData(e,t){let{_id:r}=e,n=R(S(S({},Ur),e),{createdAt:new Date().toISOString(),createdBy:"mock",numberOfLeaders:t,amountPlayer:t});return this.writeLeaderBoard(r,n),n}createPlayersData(e,t){let{_id:r,name:n}=e,y=n==="friends-leaderboard-key",f={[r]:{}},w=[];for(let A=0;A<t;A++){let x=y?`connected-player-${A}`:A.toString(),v=this.createPlayerData(x);w.push(v)}return this.sortLeadersRank(w),w.forEach((A,x)=>{f[r][A.playerId]=A}),this.writePlayersData(r,f),f}createPlayerData(e){return{playerId:e,score:this.randomScore(),rank:0}}randomScore(){return Math.floor(Math.random()*(Bg-cu)+cu).toString()}getLeaderBoardsData(){let e=Kr.getLocalStorage(du);return Hr.isObject(e)?e:{}}writeLeaderBoardsData(e){Hr.isObject(e)&&Kr.writeLocalStorage(du,e)}getLeaderBoard(e){let t=this.getLeaderBoardsData();return t[e]?t[e]:null}writeLeaderBoard(e,t){let r=this.getLeaderBoardsData();r[e]=t,this.writeLeaderBoardsData(r)}getPlayersData(){let e=Kr.getLocalStorage(lu);return Hr.isObject(e)?e:{}}writePlayersData(e,t){let r=this.getPlayersData();r[e]||(r[e]={}),jr.assign(r[e],t[e]),Kr.writeLocalStorage(lu,r)}randomResponseError(e){return Math.random()*100<Vg}async awaitRandomDelay(){await Kg.sleepAsync(Math.random()*Hg)}},Wg=Vn}),Wo,um,pm=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Wo=class{options;performance;isRunning=!1;checkTimer;fpsHistory;actualFPS=0;constructor(e,t){this.options=t,this.performance=e}start=()=>{this.isRunning||(this.isRunning=!0,this.checkTimer=this.options.CheckInterval,this.fpsHistory=[])};stop=()=>{this.isRunning&&(this.isRunning=!1,this.options.OnlyUpdateWhenSwitchScene&&this.checkFps())};postStep=e=>{this.isRunning&&(this.checkTimer-=e,!(this.checkTimer>0)&&(this.checkTimer+=this.options.CheckInterval,this.fpsHistory.push(this.actualFPS),this.options.OnlyUpdateWhenSwitchScene||this.fpsHistory.length>=5&&this.checkFps()))};checkFps(){let{ads:e}=this.performance.codex;if(e.isAdFullSizeShowing()||this.fpsHistory.length===0)return;let t=!1;this.options.AutoUpgradeQuality&&this.isHighFps()&&(t=this.performance.upgradeGraphicsQuality()),this.isLowFps()&&(t=this.performance.downgradeGraphicsQuality()),t&&(this.fpsHistory=[])}getFpsMedian(){return this.getMedian(this.fpsHistory)}getMedian(e){if(e.length===0)return Number.NaN;let t=e.sort((n,y)=>n-y),r=Math.floor(t.length/2);return t.length%2===0?(t[r-1]+t[r])/2:t[r]}isLowFps(){return this.getFpsMedian()<this.options.FpsThreshold}isHighFps(){return this.getFpsMedian()>this.options.FpsThreshold*1.2}},um=Wo}),Tx,qo,mm,hm=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),ar(),pm(),{Utils:{Device:Tx}}=Ludex,qo=class extends Ludex.Plugins.BasePlugin{enabled=!1;quality;fpsTracker;pixelRatio;trackingSceneNames=[];configure(e){let{Enabled:t,Quality:r,Options:n,TrackingSceneNames:y}=e;this.enabled=t,this.quality=r,this.pixelRatio=Tx.pixelRatio(),this.trackingSceneNames=y,this.createFPSTracker(n)}trackingScene=e=>{this.trackingSceneNames.indexOf(e)<0||(this.stopFPSTracker(),this.startFPSTracker())};getCurrentQuality(){return this.pixelRatio}downgradeGraphicsQuality(){this.event.emit(pe.REQUEST_QUALITY_DOWNGRADED);let{Min:e,AdjustStep:t}=this.quality,r=this.pixelRatio;if(r<=e)return!1;let n=+(r-t).toFixed(2);return n<e?!1:(this.pixelRatio=n,this.resizeGameWorld(this.pixelRatio),!0)}upgradeGraphicsQuality(){this.event.emit(pe.REQUEST_QUALITY_UPGRADED);let{Max:e,AdjustStep:t}=this.quality,r=this.pixelRatio;if(r>=e)return!1;let n=+(r+t).toFixed(2);return n>e?!1:(this.pixelRatio=n,this.resizeGameWorld(this.pixelRatio),!0)}createFPSTracker(e){this.fpsTracker=new um(this,e)}get event(){return this.codex.event}startFPSTracker=()=>{this.fpsTracker.start()};stopFPSTracker=()=>{this.fpsTracker.stop()};resizeGameWorld(e){let t={forcePixelRatio:e};this.event.emit(pe.REQUEST_RESIZE_GAME,t)}updatePostStepDeltaTime(e){this.fpsTracker.postStep(e)}updateActualFPS(e){this.fpsTracker.actualFPS=e}},mm=qo}),fm={};It(fm,{default:()=>Ox});var Ox,ym=F(()=>{"use strict";s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),hm(),Ox=mm});s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),ar(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ri=(e=>(e.DRAFT="draft",e.SINGLE="single",e.TOURNAMENT="tournament",e.MATCHING_GROUP="matching-group",e.CHALLENGE_FRIEND="challenge-friend",e))(Ri||{}),j=Ri,fh=j,nr=fh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var yh=e=>e,ki=yh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var gh=()=>{},Gi=gh,$i={asConst:ki,noop:Gi};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ph=(e,t)=>{if(e)return t<0?e[e.length+t]:e[t]},Fi=Ph;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var xh=(e,t)=>{let r=[];for(let n=0;n<e;n++)r.push(t(n));return r},sr=xh,wh=e=>sr(e,()=>{}),rt=wh,Ah=(e,t)=>{let r=Math.ceil(e.length/t);return rt(r).map((n,y)=>e.slice(y*t,y*t+t))},Bi=Ah;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var bh=(e,t)=>e.filter(r=>t.indexOf(r)<0),Vi=bh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var vh=e=>e.reduce((t,r)=>t.concat(r),[]),Ui=vh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Dh=(e,t)=>e.indexOf(t)>=0,Hi=Dh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Sh=(e,t)=>e.slice(0,t),Ki=Sh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ih=(e,t)=>{for(let r=0;r<e.length;r++)if(t(e[r],r))return e[r]},or=Ih;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Lh=(e,t)=>{for(let r=0;r<e.length;r++)if(t(e[r],r))return r;return-1},ir=Lh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ch=e=>{for(let t=e.length-1;t>0;t--){let r=Math.floor(Math.random()*(t+1));[e[t],e[r]]=[e[r],e[t]]}},cr=Ch;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Eh=e=>{let t=[...e];return cr(t),t},ji=Eh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Mh=(e,t,r)=>r.indexOf(e)===t&&e!==null&&e!==void 0,Th=e=>e.filter(Mh),Wi=Th,qi={at:Fi,chunk:Bi,difference:Vi,fillWith:sr,length:rt,limit:Ki,search:or,searchIndex:ir,has:Hi,shuffle:cr,toShuffled:ji,unique:Wi,flatten:Ui};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Oh=()=>"OffscreenCanvas"in window&&typeof OffscreenCanvas<"u",_h=(e,t)=>{let r=new OffscreenCanvas(0,0),n=r.getContext(e,t);return n?{canvas:r,context:n}:null},Nh=(e,t)=>{let r=document.createElement("canvas"),n=r.getContext(e,t);return n?{canvas:r,context:n}:null},Rh=e=>{let{contextType:t="2d",contextAttributes:r={},type:n="auto"}=e,y=null;return n!=="canvas"&&Oh()&&(y=_h(t,r)),!y&&n!=="offscreen"&&(y=Nh(t,r)),y},at=Rh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var kh=e=>!e||e===""||e===0||typeof e=="number"&&isNaN(e),lr=kh,Gh=e=>lr(e)?e!==!1&&e!==0:typeof e=="string"||Array.isArray(e)?e.length===0:typeof e=="object"&&e!==null?Object.keys(e).length===0:!1,nt=Gh,zi="Dinosaurs Merge Master",Ba={},dr=e=>nt(e)?GameSDK.getSDKName()??"Storage":e??"Storage",$h=e=>{let t=`${zi}_${e}`;return Ba[t]?Promise.resolve(Ba[t]):new Promise((r,n)=>{let y=1,f,w=A=>{f=indexedDB.open(zi,A),f.onerror=x=>{let v=x.target.error;v?.name==="VersionError"?(y++,w(y)):n(v)},f.onsuccess=x=>{let v=f.result;if(!v.objectStoreNames.contains(e)){y++,w(y);return}Ba[t]=v,r(v)},f.onupgradeneeded=x=>{let v=x.target.result;y=v.version,v.objectStoreNames.contains(e)||v.createObjectStore(e)}};w(y)})},ur=$h,Fh=async(e,t)=>{try{let r=dr(t),n=await ur(r);if(!n.objectStoreNames.contains(r))return{};let y=n.transaction(r,"readonly").objectStore(r);return new Promise((f,w)=>{let A=y.get(e);A.onerror=()=>w(A.error),A.onsuccess=()=>f(A.result)})}catch{return{}}},Yi=Fh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Bh=e=>{try{return JSON.parse(e)}catch{return null}},st=Bh,Vh=e=>{try{let t=localStorage.getItem(e);return t===null?null:st(t)}catch{return null}},pr=Vh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Uh=e=>{try{return JSON.stringify(e,null,0)}catch{return""}},ot=Uh,Hh=e=>st(ot(e)),mr=Hh,Kh=()=>{let e="en_US",t=mr(window.navigator.languages)||[],r=or(t,n=>n.indexOf("-")>-1);return!r||r.indexOf("-")===-1?e:r.replace("-","_")},Qi=Kh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var jh=()=>{let e=window.location.search.substring(1);if(!e)return{};let t=e.split("&"),r={};for(let n of t){let y=n.split("=");r[y[0]]=decodeURIComponent(y[1])}return r},Ji=jh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Wh=()=>{let{body:e,documentElement:t}=document,{clientHeight:r}=e,{clientHeight:n}=t;return Math.max(n,r)||0},Xi=Wh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var qh=()=>{let{body:e,documentElement:t}=document,{clientWidth:r}=e,{clientWidth:n}=t;return Math.max(n,r)||0},Zi=qh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var zh=e=>{localStorage.removeItem(e)},ec=zh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Yh=async(e,t,r)=>{try{if(nt(t))return;let n=dr(r),y=await ur(n);if(!y.objectStoreNames.contains(n))return;let f=y.transaction(n,"readwrite").objectStore(n);return new Promise((w,A)=>{try{let x=f.put(t,e);x.onsuccess=()=>w(),x.onerror=()=>A(x.error)}catch(x){A(x)}})}catch{}},tc=Yh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Qh=()=>{let e="vibrate"in window.navigator;if(e)try{window.navigator.vibrate(0)}catch{return!1}return e},Jh=e=>{try{return Qh()?(window.navigator.vibrate(0),window.navigator.vibrate(e),!0):!1}catch{return!1}},rc=Jh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Xh=(e,t,r)=>{let n,y=!1;return function(...f){if(r&&!y){y=!0,e.apply(this,f);return}clearTimeout(n),n=setTimeout(()=>{e.apply(this,f)},t)}},Et=Xh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Zh=e=>{let t=Object.create(null);return function(...r){let n=`__memoize__${JSON.stringify(r)}`;if(n in t)return t[n];let y=e.apply(this,r);return t[n]=y,y}},be=Zh;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ef=(e,t,r)=>{let n,y=!1,f=!1;return function(...w){if(r&&!f){f=!0,e.apply(this,w);return}y&&(y=!1,e.apply(this,w)),clearTimeout(n),n=setTimeout(()=>{y=!0},t)}},Mt=ef;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var tf=(e,t)=>{let r=e.value;return e.value=async function(...n){await t.apply(this,n);let y=r.apply(this,n);return y instanceof Promise?await y:y},e},ac=tf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var rf=e=>{if(e instanceof Error)return e;if(e!==null&&typeof e=="object"&&"message"in e&&typeof e.message=="string"){let t=new Error(e.message);return"stack"in e&&typeof e.stack=="string"&&(t.stack=e.stack),"name"in e&&typeof e.name=="string"&&(t.name=e.name),"code"in e&&typeof e.code=="string"&&Object.assign(t,{code:e.code}),t}if(e!==null&&typeof e=="object")try{return new Error(JSON.stringify(e,null,2))}catch{return new Error(`[Object conversion failed] ${String(e)}`)}return new Error(String(e))},me=rf,af=(e,t)=>{let r=e.value;return e.value=async function(...n){let y;try{let f=r.apply(this,n);return f instanceof Promise?await f:f}catch(f){y=me(f)}finally{t?.(y)}},e},nc=af;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var nf=e=>{let t=typeof e=="object"||typeof e=="function",r=Array.isArray(e);return e!==null&&t&&!r},H=nf,sc=(e,t)=>{if(typeof e!==t)throw new Error(`Value ${e} is not type of ${t} (${typeof e})`)},sf=(e,t,r)=>{let n;return r||sc(e,t),!H(e)||!r?e:Object.defineProperty(e,r,{get(){return n},set(y){sc(y,t),n=y}})},it=sf,of=(e,t)=>{let r=e.value;return e.value=function(...n){return t.forEach((y,f)=>{try{it(n[f],y)}catch(w){let A="[Decorator:validateParams]";throw w instanceof Error?(w.message=`${A}: ${w.message}`,w):new Error(`${A}: ${w}`)}}),r.apply(this,n)},e},oc=of;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var cf=(e,t)=>{for(let r of t)try{return it(e,r),!1}catch{}return!0},lf=(e,t)=>{let r=e.value;return e.value=function(...n){let y=r.apply(this,n);if(cf(y,t))throw new Error(`[Decorator:validateReturn] ${y} (${typeof y}) is not type of ${t.join(" | ")}`);return y},e},ic=lf,Va=class ce{static isProperty(t,r,n){return!!(n&&(typeof n.value<"u"||n.get||n.set))}static isFunction(t,r,n){return!!(n&&(typeof n.value=="function"||typeof n.initializer=="function"))}static trace=(t,r,n)=>{try{let{value:y,initializer:f,get:w,set:A}=n??{};try{if(!(w||A)&&typeof y!="function")if(typeof f=="function"){let x=f?.();if(typeof x!="function"&&typeof x>"u")throw new Error("Initializer returned undefined")}else if(y){let x=typeof y}else throw new Error("Unsupported decorator")}catch{}}catch{}finally{}return n};static locked(t,r,n){return R(S({},n),{value:()=>{throw new Error("Method is locked")}})}static preStart(t){return(r,n,y)=>ce.isFunction("preStart",n,y)?ac(y,t):y}static tryCatch(t){return(r,n,y)=>ce.isFunction("tryCatch",n,y)?nc(y,t):y}static debounce(t){return(r,n,y)=>{if(!ce.isFunction("debounce",n,y))return y;let f=y.value;return f?y.value=Et(f,t):y.initializer&&(f=y.initializer,y.initializer=function(){return Et(f.call(this),t)}),y}}static throttle(t){return(r,n,y)=>{if(!ce.isFunction("throttle",n,y))return y;let f=y.value;return f?y.value=Mt(f,t):y.initializer&&(f=y.initializer,y.initializer=function(){return Mt(f.call(this),t,!0)}),y}}static memoize(t,r,n){if(!ce.isFunction("memoize",r,n))return n;let y=n.value;return y?n.value=be(y):n.initializer&&(y=n.initializer,n.initializer=function(){return be(y.call(this))}),n}static validateValue(t){return(r,n,y)=>{if(!ce.isProperty("validateValue",n,y))return y;try{return it(r,t,n)}catch(f){return f instanceof Error,y}}}static validateReturn=(...t)=>(r,n,y)=>ce.isFunction("validateReturn",n,y)?ic(y,t):y;static validateParams=(...t)=>(r,n,y)=>ce.isFunction("validateParams",n,y)?oc(y,t):y},Tt=Va,df=()=>{self.onmessage=n=>{let{action:y,payload:f}=n.data;switch(y){case"drawImage":break;case"saveData":break;case"getData":break;default:}};function e(n){}function t(n){}function r(n){}},Ot=class Nn{worker=null;static _instance;constructor(){this.init()}static get inst(){return this._instance||(this._instance=new Nn),this._instance}init(){let t=new Blob([`(${df.toString()})()`],{type:"application/javascript"});this.worker=new Worker(URL.createObjectURL(t))}static postMessage(t,r){if(!this.inst.worker)throw new Error("Worker is not initialized");this.inst.worker.postMessage({action:t,payload:r})}};se([Tt.tryCatch()],Ot.prototype,"init",1),se([Tt.tryCatch()],Ot,"postMessage",1);var Ua=Ot,cc=Ua;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var uf=e=>e==null,lc=e=>{if(!H(e))return e;for(let t in e)if(uf(e[t]))delete e[t];else{let r=e[t];H(r)&&(e[t]=lc(r))}return e},hr=lc;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var dc=Object,pf=(e,t)=>{if("assign"in dc)return dc.assign(e,t);let r=e;for(let n in t)r[n]=t[n];return r},Le=pf,mf=e=>typeof e!="object"||e===null?null:Le(e,{}),fr=mf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var uc=(e,t)=>{for(let r in t)H(e[r])&&H(t[r])?uc(e[r],t[r]):Le(e,{[r]:t[r]});return e},yr=uc,hf=(e,t)=>{try{let r=pr(e),n={};H(r)&&(n=r);let y=fr(t);if(!H(y))return!1;let f=hr(y),w=yr(n,f),A=ot(w);return localStorage.setItem(e,A),!0}catch{return!1}},pc=hf,mc={createCanvas:at,getLocale:Qi,getLocalStorage:pr,getQueryParams:Ji,getScreenHeight:Xi,getScreenWidth:Zi,writeLocalStorage:pc,vibrate:rc,getIndexedDB:Yi,WebWorker:cc,setIndexedDB:tc,removeKeyLocalStorage:ec};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ff=()=>window.devicePixelRatio??1,gr=ff,yf=e=>e*gr(),hc=yf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var gf=()=>/Android/i.test(navigator.userAgent),fc=gf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Pf=()=>!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent),yc=Pf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var xf=()=>/iPhone|iPad|iPod/i.test(navigator.userAgent),gc=xf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var wf=()=>/Android|iPhone|iPad|iPod/i.test(navigator.userAgent),Pc=wf,xc={getPhysicPixels:hc,isDesktop:yc,isMobile:Pc,isAndroid:fc,isIOS:gc,pixelRatio:gr};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Af=e=>[null,e],$e=Af;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var bf=e=>e[1]!==null,ct=bf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var vf=e=>[e,null],xe=vf,Df=e=>t=>{if(ct(t))return t;try{return xe(e(t[0]))}catch(r){return $e(me(r))}},Pr=Df;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Sf=e=>async t=>{if(ct(t))return t;try{return xe(await e(t[0]))}catch(r){return $e(me(r))}},xr=Sf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var If=e=>{try{return xe(e())}catch(t){return $e(me(t))}},wc=If;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Lf=async e=>{try{return xe(await e())}catch(t){return $e(me(t))}},Ac=Lf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Cf=e=>e[1],bc=Cf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ef=e=>e[0],vc=Ef;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Mf=e=>e[1]===null,Dc=Mf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Tf=xe,Sc=Tf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Of=(...e)=>t=>e.reduce((r,n)=>Pr(n)(r),t),Ic=Of;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var _f=(...e)=>async t=>{let r=t;for(let n of e)r=await xr(n)(r);return r},Lc=_f,Cc={apply:Pr,applyAsync:xr,applyImmediate:wc,applyImmediateAsync:Ac,lift:Sc,success:xe,pipe:Ic,pipeAsync:Lc,extractSuccess:vc,extractFailure:bc,isFailure:ct,isSuccess:Dc};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),rr(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Nf=e=>{let t=e.map(r=>Promise.resolve(r).then(n=>({status:"fulfilled",value:n}),n=>({status:"rejected",reason:n})));return Promise.all(t)},Ec=Nf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Rf=e=>typeof Promise.any=="function"?Promise.any(e):new Promise((t,r)=>{let n=[],y=0,f=w=>{if(!(w<e.length))if(n.length>0)t(n[0]);else{let A=new Error("All promises were rejected");A.errors=n,r(A)}};e.forEach((w,A)=>{w.then(x=>{n[A]=x,y++,f(y)}).catch(x=>{n[A]=x,y++,f(y)})})}),Mc=Rf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var kf=async(e,t)=>{try{if(t){let r=new Promise((n,y)=>setTimeout(()=>y(new Error("Timeout")),t));return[await Promise.race([e,r]),null]}return[await e,null]}catch(r){return[null,me(r)]}},Tc=kf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();function Ha(){let e={},t=n=>{let y=!1,f={release:()=>{y||(y=!0,r(n))}};return e[n]?new Promise(w=>{e[n].push(()=>w(f))}):(e[n]=[],Promise.resolve(f))},r=n=>{let y=e[n].shift();y?y():delete e[n]};return{use:t}}s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Gf=(e,t)=>{try{return e()}catch(r){try{return t()}catch{throw r}}},Oc=Gf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var $f=async(e,t)=>{try{return await e()}catch(r){try{return await t()}catch{throw r}}},_c=$f;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ff=e=>{let{generate:t,generateSeed:r=()=>Math.random()*1e6,seed:n=Date.now()}=e,y=n;return(...f)=>(y=r(y),t(y,...f))},Nc=Ff;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Rc=(e,t)=>{e.__proto__.valueOf=()=>t,e.__proto__.toString=()=>`${t}`},Bf=e=>e.constructor(R(S({},e),{__proto__:e.__proto__})),kc=e=>{let t=Object.keys(e);for(let r of t){let n=Object.getOwnPropertyDescriptor(e,r)?.value;if(H(n)){kc(n);continue}try{let y=n;Rc(y,n),Object.defineProperty(e,r,{enumerable:!1,configurable:!0,get(){return Bf(y)},set(f){Le(y,f),Rc(y,f)}})}catch{}}},Gc=kc;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Vf=(e,t,r=setTimeout)=>t<=0?Promise.resolve(e).then(n=>({status:"fulfilled",value:n})):Promise.race([Promise.resolve(e).then(n=>({status:"fulfilled",value:n})),new Promise(n=>r(()=>n({status:"timeout",duration:t,promise:e}),t))]),$c=Vf,Fc={debounce:Et,throttle:Mt,syncVars:Gc,memoize:be,retry:Oc,retryAsync:_c,allSettled:Ec,timeOut:$c,any:Mc,accessBlocker:tt,rng:Nc,handleAsync:Tc,toError:me,mutex:Ha};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Uf=e=>{let t={};for(let r in e){let n=e[r];t[n]=r}return t},wr=Uf,Hf=be((e,t)=>{let r=e.toLowerCase();if(typeof e=="string"){let n=t[r];if(typeof n=="string")return n}return"?"}),Kf=be(e=>{let t=[],r=/:([A-Z0-9?]+)/gm,n=null;for(;n=r.exec(e),n!==null;)t.push(n[1]);return t}),jf=be(e=>{let t=[],r=/(\d+[A-Z?]|[A-Z?])/gm,n=null;for(;n=r.exec(e),n!==null;){let y=n[0];if(y.length>=2){let{length:f}=y,w=y.slice(0,f-1),A=y[f-1],x=rt(+w).map(()=>A);t.push(...x);continue}t.push(y)}return t}),Wf=(e,t)=>{let r=e,n=wr(t),y={},f=0,w=0,A=Kf(r);for(let x of A){f=0,w++,y[w]||(y[w]={});let v=jf(x);for(let D of v){f++;let I=Hf(D,n);y[w][f]=I}}return y},Bc=Wf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var qf=(e,t)=>H(e)?typeof Object.hasOwn=="function"?Object.hasOwn(e,t):Object.prototype.hasOwnProperty.call(e,t):!1,oe=qf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var zf=e=>typeof e=="string",Ar=zf,Yf=be((e,t)=>{if(!H(t)||!oe(t,e))return"?";let r=t[e];return typeof r=="string"?`${r.toUpperCase()}`:"?"}),Vc=(e,t,r=!1)=>{let n="";if(!H(e))return n;let y="",f=1;for(let w in e){if(!oe(e,w))continue;let A=e[w];if(H(A)){n+=`:${Vc(A,t,!0)}`;continue}if(!Ar(A))continue;let x=Yf(A,t);x===y?(f++,n=n.slice(0,-2)):f=1,n+=`${f}${x}`,y=x}return n=n.replace(/1([A-Z])/g,"$1"),n},Uc=Vc;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Qf=(e,t)=>{try{if(!e)return"";if(t){let r=atob(e),n=btoa(t);return r=r.replace(n,"="),atob(r)}return atob(e)}catch{return""}},Hc=Qf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Jf=()=>({}),Ka={},_t=e=>(Ka[e]||(Ka[e]=Jf()),Ka[e]),Kc=(e,t)=>{let r=_t(t),n=Object.keys(r).length;r[e]=n+1},Xf=(e,t,r=1)=>{let n=e[0],y=[],f=_t(r);if(t)for(let x in t)Kc(x,r);for(let x=1;x<e.length;x++){let v=e[x],D=`${n}${v}`;x++,n=e[x],f[D]===void 0&&(Kc(D,r),f=_t(r))}n=e[0];let w=1,A=0;for(;w<e.length;){let x=e[w],v=`${n}${x}`,D=Zf(e.slice(A),f);if(D!==null){y.push(f[D]),w+=D.length-v.length,n="",A=w+1,w++;continue}f[v]===void 0?n=v:(y.push(f[v]),n="",A=w+1),w++}return y},Zf=(e,t)=>{let r=Object.keys(t);return r=r.filter(n=>e.indexOf(n)>-1&&e!==n),r.length===0?null:r.sort((n,y)=>y.length-n.length)[0]},jc=Xf;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ey=e=>{let t={};for(let r in e)t[e[r]]=r;return t},ty=(e,t,r=1)=>{let n="",y="",f=_t(r);t&&(f=S(S({},t),f));let w=ey(f);for(let A in e){let x=e[A];w[x]!==void 0?n=w[x]:n="?",y+=n}return y},Wc=ty;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ry=(e,t)=>{try{if(!e)return"";if(t){let r=btoa(e),n=btoa(t);return r=r.replace("=",n),btoa(r)}return btoa(e)}catch{return""}},qc=ry,zc={decodeMap:Bc,encodeMap:Uc,hashToString:Hc,stringToHash:qc,lwzCompress:jc,lwzDecompress:Wc};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ay=(e,t)=>{let r=e.split(","),n=r[0].match(/:(.*?);/);if(!n)return null;let y=n[1],f=atob(r[r.length-1]),w=f.length,A=new Uint8Array(w);for(;w--;)A[w]=f.charCodeAt(w);return new File([A],t,{type:y})},Yc=ay;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ny=e=>new Promise((t,r)=>{let n=new FileReader;n.onloadend=()=>t(n.result),n.onerror=r,n.readAsDataURL(e)}),Qc=ny;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var lt=new Image,sy=(e,t=!0,r=!0)=>new Promise(n=>{t&&(lt=new Image),lt.onload=()=>{n(lt),r&&URL.revokeObjectURL(lt.src)},lt.onerror=()=>{n(null)},lt.src=URL.createObjectURL(e)}),Jc=sy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var oy=async(e,t)=>{let r=await fetch(e).then(n=>n.blob()).catch(()=>null);return r?new File([r],t):null},Xc=oy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var We=at({contextType:"2d",contextAttributes:{willReadFrequently:!0}}),iy=async e=>new Promise((t,r)=>{let n=new FileReader;n.onload=()=>t(n.result),n.onerror=r,n.readAsDataURL(e)}),cy=async(e,t="png")=>{let{width:r,height:n}=e;if(!r||!n)throw new Error("Element has no width or height");if(!We)throw new Error("Failed to create canvas");if(We.canvas.width=r,We.canvas.height=n,We.context.drawImage(e,0,0,r,n),We.canvas instanceof HTMLCanvasElement)return We.canvas.toDataURL(`image/${t}`,.85);let y=await We.canvas.convertToBlob({type:`image/${t}`});return iy(y)},Zc=cy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var el=at({contextType:"2d",contextAttributes:{willReadFrequently:!0}}),ly=async(e,t="png")=>{try{if(!el)throw new Error("Failed to create canvas");let{canvas:r,context:n}=el;return r.width=e.width,r.height=e.height,n.drawImage(e,0,0,e.width,e.height),r instanceof HTMLCanvasElement?new Promise(y=>{r.toBlob(f=>y(f),`image/${t}`,.9)}):r.convertToBlob({type:`image/${t}`,quality:.9})}catch{return null}},tl=ly;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var dy=async e=>{if(!e)throw new Error("url is empty");try{let t=await fetch(e);if(!t.ok)throw new Error("Network response was not ok");return await t.blob()}catch(t){throw t instanceof Error?t:new Error("Failed to fetch image")}},rl=dy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var uy=async e=>new Promise((t,r)=>{e||r(new Error("url is empty"));let n=new Image;n.crossOrigin="anonymous",n.onload=()=>{t(n)},n.onerror=y=>{r(y)},n.src=e}),al=uy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var py=(e,t)=>{if(isNaN(e)||isNaN(t))throw new Error("width and height must be numbers");return{string:"+",style:`font-size: 1px; padding: ${Math.floor(t/2)}px ${Math.floor(e/2)}px;`}},my=(e,t=1)=>{let r=new Image;r.onload=function(){let n=this,y=n.width*t,f=n.height*t,w=py(y,f)},r.src=e},nl=my,sl={base64ToFile:Yc,blobToDataImage:Qc,blobToHtmlImage:Jc,blobUrlToFile:Xc,elementToBase64:Zc,elementToBlob:tl,fetchImage:rl,loadImage:al,logImage:nl};s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ol={clone:mr,decode:st,encode:ot};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ja=class Xd{perf=null;static _inst;static get inst(){return this._inst||(this._inst=new Xd),this._inst}static setService(t){this.inst.perf=t??null}static measure(t){this.inst.perf?.measure(t)}static start(t){this.inst.perf?.start(t)}static stop(t){try{this.inst.perf?.stop(t)}catch{}}static putMetric(t,r,n=Date.now()){this.inst.perf?.putMetric(t,r,n)}static incMetric(t,r,n=1){this.inst.perf?.incrementMetric(t,r,n)}static putAttr(t,r,n){let y=n.slice(0,100);this.inst.perf?.putAttr(t,r,y)}static rmAttr(t,r){this.inst.perf?.removeAttr(t,r)}},il=ja,cl={Mark:il};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var hy=(e,t)=>{if(typeof e!="number")return"0";let r=Ze(10,t),n=e,y=0;for(;n>=r;)n=Math.floor(n/1e3),y++;let f=n.toString(),w=["","K","M","B","T","Qa","Qi","Sx","Sp","Oc","No","Dc","Ud","Dd","Td","Qad","Qid","Sxd","Spd"][y];return`${f}${w}`},ll=hy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var fy=(e,t,r="0")=>{let n=e.toString(),y=n.length;for(let f=0;f<t-y;f++)n=n+r;return n},dl=fy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var yy=(e,t,r="0")=>{let n=e.toString(),y=n.length;for(let f=0;f<t-y;f++)n=r+n;return n},ul=yy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var gy=(e,t)=>{let r=t?Math.random()>.5?1:-1:1;return Math.floor(Math.random()*e)*r},Nt=gy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Py=e=>e>0?1:e<0?-1:e===0?0:Number.NaN,pl=Py;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var xy=(e,t)=>{let{fractionalDigits:r=0,startAbbreviate:n=1e3,abbreviateStep:y=3,maxLength:f=-1,removeLastZero:w=!0,suffixes:A=["","k","m","b","t","q"]}=t||{},x=f===-1?99999999:f;if(e>=n){let E=Math.floor(e/Ze(10,y)),b=Math.floor((E.toString().length-1)/y)+1,T=(e/Ze(Ze(10,y),b)).toFixed(r),U=x-A[b].length,_=T.substring(0,U);return(w?ml(_):_)+A[b]}let v=e.toFixed(r),D=x-A[0].length,I=v.substring(0,D);return w?ml(I):I+A[0]},ml=e=>{if(e.indexOf(".")<0)return e;for(let t=e.length-1;t>=0;t--){if(e[t]===".")return e.substring(0,t);if(e[t]!=="0")return e.substring(0,t+1)}return e},hl=xy,fl={getShortNumber:ll,sign:pl,padEnd:dl,padStart:ul,random:Nt,toAbbreviatedString:hl};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var yl=e=>{let t=e.replace(/[-_\s.]+(.)?/g,(r,n)=>n?n.toUpperCase():"");return t.substring(0,1).toUpperCase()+t.substring(1)},br=e=>{let t=e.replace(/[-_\s.]+(.)?/g,(r,n)=>n?n.toUpperCase():"");return t.substring(0,1).toLowerCase()+t.substring(1)},Wa=e=>{let t={};for(let r in e){let n=e[r],y=br(r);Array.isArray(n)?t[y]=n.map(f=>typeof f=="object"?Wa(f):f):typeof n=="object"?t[y]=Wa(n):t[y]=e[r]}return t},gl=Wa;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Pl=(e,t)=>{let r={};for(let n in t)if(oe(t,n))if(oe(e,n)){let y=e[n],f=t[n];if(H(y)&&H(f)&&y!==null&&f!==null&&typeof y!="function"&&typeof f!="function"){let w=Pl(y,f);Object.keys(w).length>0&&(r[n]=w)}else Object.is(y,f)||(r[n]=f)}else r[n]=t[n];for(let n in e)oe(e,n)&&!oe(t,n)&&(r[n]=void 0);return r},xl=Pl;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var wl=(e,t)=>{let r={};for(let n in t)if(oe(t,n))if(H(t[n])&&t[n]!==null)if(H(e[n])&&e[n]!==null){if(typeof t[n]=="function")continue;let y=wl(e[n],t[n]);Object.keys(y).length>0&&(r[n]=y)}else oe(e,n)||(r[n]=Le({},t[n]));else oe(e,n)||(r[n]=t[n]);return r},Al=wl;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var wy=e=>["string","number","symbol"].indexOf(typeof e)>-1,vr=wy,Ay=(e,t)=>{let r={};for(let n of e){let y=n[t];vr(y)&&(r[y]=n)}return r},bl=Ay;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Dr=e=>e.replace(/([a-z])([A-Z])/g,"$1_$2").replace(/\s+/g,"_").toLowerCase(),qa=e=>{let t={};for(let r in e){let n=e[r],y=Dr(r);Array.isArray(n)?t[y]=n.map(f=>typeof f=="object"?qa(f):f):typeof n=="object"?t[y]=qa(n):t[y]=e[r]}return t},vl=qa;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var by=e=>Object.keys(e).map(t=>e[t]),Dl=by,Sl={assign:Le,camelCaseKeys:gl,clone:fr,clear:hr,diff:xl,hasOwn:oe,invert:wr,keyBy:bl,merge:yr,snakeCaseKeys:vl,vals:Dl,filterDeep:Al};s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ya={};It(Ya,{Signal:()=>Sr,SignalAbortedError:()=>Rt,SignalController:()=>za}),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Rt=class extends Error{constructor(e="Signal aborted with no reason"){super(e),this.name="SignalAbortedStopped"}},Sr=class _g{state={type:"running"};callbacks=[];once(t){this.callbacks.push(t)}off(t){this.callbacks=this.callbacks.filter(r=>r!==t)}abort(t){let r=this.constructReason(t);this.state={type:"stopped",reason:r};for(let n of this.callbacks)n(r);this.callbacks=[]}get aborted(){return this.state.type==="stopped"}get reason(){if(this.state.type==="stopped")return this.state.reason}wrap(t){if(!this.aborted)return t}chain(t){t instanceof _g?t.once(r=>this.abort(r)):t.addEventListener("abort",()=>this.abort(t.reason),{once:!0})}promise(){return this.aborted?Promise.resolve(this.reason):new Promise(t=>{this.once(r=>t(r))})}constructReason(t){return t instanceof Error?t:typeof t=="string"?new Rt(t):new Rt}},za=class{signal;renew(){this.signal?.abort();let e=new Sr;return this.signal=e,e}abort(){this.signal?.abort()}promise(){return this.signal===void 0?Promise.resolve(void 0):this.signal.promise()}},Il=Ya;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var vy=e=>e&&e[0].toUpperCase()+e.slice(1),Ll=vy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();function Dy(e,t=2){let r=[],n=e.split(" "),y=n.length;for(let f=y;f>=1;f--)for(let w=0;w<=y-f;w++){let A=n.slice(w,w+f).join(" ");e.split(A).length-1>=t&&r.indexOf(A)<0&&A.length>1&&r.push(A)}return r.sort((f,w)=>f.length-w.length)}var Cl=Dy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var qe=null,Sy="Anonymous",Iy=async()=>{let e="https://randommer.io/api/Name",{RandomNameApiKey:t}=Ludex.Configs.Mockup.Profile,r=await fetch(e,{method:"GET",headers:{"X-Api-Key":t,"Content-Type":"application/json"},body:JSON.stringify({nameType:"surname",quantity:1e3})});if(!r.ok)throw new Error("Can't fetch names");let n=await r.json();if(!H(n)||!oe(n,"data")||!Array.isArray(n.data))throw new Error("Invalid names response");return n.data},Ly=async()=>{try{if(!qe&&(qe=await Iy(),!qe))throw new Error("Cannot fetch names");let e=qe[Nt(qe.length)],t=qe[Nt(qe.length)];return`${e} ${t}`}catch{return Sy}},El=Ly;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Cy=(e=16)=>{let t=y=>Math.floor(y).toString(e),r=t(Date.now()/1e3),n=Array(e+1).join(" ");return r+n.replace(/./g,()=>t(Math.random()*e))},Ml=Cy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ey=e=>{let t=e?e.split("_"):[],r=t.length>0?t[0]:"en_US";switch(r){case"id":case"in":r="id";break}return r},Tl=Ey;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var My=(e,t)=>{let r=e.split(" "),n=(r.length<=1?[...r]:[r[0],r.pop()]).join(" "),y=n.lastIndexOf(" ")||0,f=y>=0?y:t;return(n.length>t?n.substring(0,f):n).substring(0,t)},Ol=My;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ty=e=>{let t=0;if(e.length===0)return t;for(let r=0;r<e.length;r++){let n=e.charCodeAt(r);t=(t<<5)-t+n,t=t&t}return t},_l=Ty;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Oy=(e,t)=>{for(let r=0;r<t.length;r++)if(e[r]!==t[r])return!1;return!0},Nl=Oy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var _y=(e,t,r=" ")=>{let n=Math.floor(t);if(e.length>=n)return e;let y=n-e.length,f="";for(let w=0;w<y;w++)f+=r;return f.slice(0,y)+e},Rl=_y;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ny=e=>Object.keys(e).reduce((t,r)=>{let n=e[r];return n!==void 0&&t.push(`${r}=${n}`),t},[]).join("&"),kl=Ny;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ry=(e,t)=>{let r="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789*#%&!",n="",y=e;t!==void 0&&(y-=t.length,n+=t);for(let f=0;f<y;f++){let w=Math.floor(Math.random()*r.length);n+=r.charAt(w)}return n},Gl=Ry;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ky="0123456789ABCDEF",Gy=(e="0x")=>{let t=e;for(let r=0;r<6;r++)t+=ky[Math.floor(Math.random()*16)];return t},$l=Gy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var $y=e=>e.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[đĐ]/g,t=>t==="\u0111"?"d":"D"),Fl=$y;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();function Ul(e){let t=Fy(e),r=t%Bl.length,n=(t>>8)%Vl.length,y=(t>>16)%1e4;return`${Bl[r]}${Vl[n]}${y}`}var Fy=e=>{let t=0;for(let r=0;r<e.length;r++){let n=e.charCodeAt(r);t=(t<<5)-t+n,t=t|0}return t=Math.abs(t),t},Bl=["James","Mary","John","Patricia","Robert","Jennifer","Michael","Linda","William","Elizabeth","David","Susan","Richard","Jessica","Joseph","Sarah","Thomas","Karen","Charles","Nancy","Christopher","Lisa","Daniel","Margaret","Matthew","Betty","Anthony","Sandra","Mark","Ashley","Donald","Dorothy","Steven","Kimberly","Paul","Emily","Andrew","Donna","Joshua","Michelle","Kenneth","Carol","Kevin","Amanda","Brian","Melissa","George","Deborah"],Vl=["Smith","Johnson","Williams","Jones","Brown","Davis","Miller","Wilson","Moore","Taylor","Anderson","Thomas","Jackson","White","Harris","Martin","Thompson","Garcia","Martinez","Robinson","Clark","Rodriguez","Lewis","Lee","Walker","Hall","Allen","Young","Hernandez","King","Wright","Lopez","Hill","Scott","Green","Adams","Baker","Gonzalez","Nelson","Carter","Mitchell","Perez","Roberts","Turner","Phillips","Campbell","Parker","Evans"],Hl={toCamelCase:br,toUpperCamelCase:yl,capitalize:Ll,generateObjectId:Ml,getLanguageCode:Tl,getShortName:Ol,hashCode:_l,matchStart:Nl,padStart:Rl,params:kl,random:Gl,randomColor:$l,removeDiacritics:Fl,findDuplicateSubstrings:Cl,generateNameAsync:El,toSnakeCase:Dr,generateNameUsingString:Ul};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Kl=[60,3600,86400,86400*7,86400*30,86400*365,Number.POSITIVE_INFINITY],By=["second","minute","hour","day","week","month","year"],Vy=(e,t,r,n="Soon")=>{try{let y=t??"en",f=r??{numeric:"auto"},w=Math.round((e*1e3-Date.now())/1e3),A=Math.abs(Math.round((e*1e3-Date.now())/1e3)),x=ir(Kl,D=>D>A),v=x?Kl[x-1]:1;return new Intl.RelativeTimeFormat(y,f).format(Math.floor(w/v),By[x])}catch(y){if(n!==void 0)return"Soon";throw y}},jl=Vy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Uy=e=>{let t=new Date(e),r=t.getUTCHours(),n=t.getUTCMinutes(),y=t.getUTCSeconds(),f=t.getUTCMilliseconds(),w=r<10?`0${r}`:`${r}`,A=n<10?`0${n}`:`${n}`,x=y<10?`0${y}`:`${y}`,v=`${f}`;return f<10?v=`00${f}`:f<100&&(v=`0${f}`),`${w}:${A}:${x}:${v}`},Wl=Uy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Hy=e=>{let t=new Date(e),r=new Date;return t.getDate()===r.getDate()&&t.getMonth()===r.getMonth()&&t.getFullYear()===r.getFullYear()},ql=Hy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ky=e=>new Promise(t=>setTimeout(t,e)),zl=Ky,Yl={isToday:ql,sleepAsync:zl,getRelativeTime:jl,getTimeString:Wl};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var jy=e=>typeof e=="boolean",Ql=jy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Wy=()=>!!codex?.player?.getPlayerDataByKey("debug"),Jl=Wy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var qy=e=>typeof e=="function",Ir=qy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var zy=e=>typeof e=="number",Xl=zy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Yy=e=>Ir(e)?e instanceof Promise||"then"in e&&typeof e.then=="function"?!0:e.constructor.name==="AsyncFunction":!1,Zl=Yy;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Qy=(e,t,r)=>{let{timeout:n=1e3,checkInterval:y=16}=r??{},f,w;return new Promise((A,x)=>{if(typeof e!="function")throw new Error("Input from must be a function");w=setInterval(()=>{let v=e(),D=typeof t=="function"?t():t;v===D&&(clearTimeout(f),clearInterval(w),A(!0))},y),n>0&&(clearTimeout(f),f=setTimeout(()=>{clearInterval(w),x(new Error("Timeout"))},n))})},ed=Qy,td={isBoolean:Ql,isDebugger:Jl,isEmpty:nt,isFalsy:lr,isFunction:Ir,isNumber:Xl,isObject:H,isPromise:Zl,isPropertyKey:vr,isString:Ar,isValueChangeAsync:ed},Jy={Array:qi,Browser:mc,Decorator:Tt,Device:xc,Function:Fc,Hash:zc,Image:sl,Json:ol,Mark:cl.Mark,Object:Sl,Signal:Il,String:Hl,Number:fl,Time:Yl,Valid:td,Error:Cc},rd=Jy,Xy=Object.preventExtensions({Dtos:{},Utils:Object.freeze(rd),Match:Object.freeze({Modes:Object.freeze(nr)}),Events:Object.freeze(pe),Configs:Object.seal(P),Plugins:Object.seal({Ads:null,Audio:null,Analytics:null})});window.Ludex=Xy,window.TypeGuard=$i,window.GameName="Dinosaurs Merge Master",window.CommitId="9a467fe7",window.BuildVersion="0",s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Valid:dt,Object:ze,String:Qa,Json:ad}=Ludex.Utils,kt="is invalid",Ja=class ae{static strict={};static data={};static addDefaultData(t){dt.isObject(t)||this.prototype.e("default data",kt),t=ad.clone(t);let{name:r}=this;dt.isObject(ae.data[r])||(ae.data[r]={}),ae.data[r]=ze.merge(ae.data[r],t)}static getDefaultData(){let{name:t}=this;return ad.clone(ae.data[t])}static addValidateFunction(t,r){dt.isString(t)||this.prototype.e("validate key",kt),typeof r!="function"&&this.prototype.e("validate function",kt);let n=`validate${Qa.capitalize(t)}`;ze.assign(this.prototype,{[n]:r})}constructor(t){this.ke(),this.processData(t)}static makeStrict(){ae.strict[this.name]=!0}static makeLoose(){ae.strict[this.name]=!1}processData(t){this.d(t),this.h(t),this.setupData(t)}ke(){let{name:t}=this.constructor;this.Ge(ae.data[t])}Ge(t){dt.isObject(t)||this.e("data",kt);for(let r in t)if(ze.hasOwn(t,r)){let n=t[r];ze.assign(this,{[r]:n})}}p(t){dt.isObject(t)||this.e("structure","is not object");let r=this.getKeys();for(let n of r){let y=this[n];y===void 0&&this.e("structure",`has no key ${n}`),!ze.hasOwn(t,n)&&y!==void 0&&this.ae(n,t)}}ae(t,r){dt.isObject(r)||this.e("data",kt);let n=this[t];n===void 0&&this.e("default",`has no key ${t}`),ze.assign(r,{[t]:n})}g(t){let r=this.getKeys();for(let n of r){let y=t[n],f=Qa.removeDiacritics(n).replace(/[^a-zA-Z0-9]/g,""),w=`validate${Qa.capitalize(f)}`,A=this[w];if(typeof A=="function")try{A.call(this,y)}catch(x){if(ae.strict[this.constructor.name])throw x;this.ae(n,t)}else this.e("validate",`has no function ${w}`)}}f(t){let r=this.getKeys();for(let n of r){let y=t[n];ze.assign(this,{[n]:y})}}e(t,r){throw new Error(`${this.constructor.name}: ${t} ${r}`)}toObject(){let t={},r=Object.keys(this),n,y;for(n=0;n<r.length;n++)y=r[n],y!=="toObject"&&(t[y]=this[y]);return t}getKeys(){return Object.keys(this).filter(t=>t!=="toObject"&&t!=="strict")}},ee=Ja;Ludex.Dtos={Base:ee},s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Xa=class{codex;plugins;constructor(e){this.codex=e,this.plugins={}}install(e,t,r,n){if(typeof t!="function"){GameSDK.getSDKName();return}let y=new t(this.codex);this.plugins[e]=y,r&&Object.defineProperty(this.codex,n,{get:()=>y}),y.init()}get(e){return this.plugins[e]}},nd=Xa;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Za=class{codex;constructor(e){this.codex=e}init(){}},sd=Za,en=class{codex;plugins;ads;auth;audio;event;match;player;profile;context;storage;language;missions;analytics;visibility;leaderboard;dailyRewards;remoteConfig;frameCapture;firebase;monitorError;adaptivePerformance;inputRecorder;console;profiler;canvasRecorder;constructor(){this.codex=this,this.plugins=new nd(this.codex)}async boot(){}async start(){}getBuildVersion(){return 0}};window.Ludex.Plugins={BasePlugin:sd};var od=en;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var tn=class extends Error{payload;constructor(e,t){super(e),this.name="BadRequest",this.message=e??"This request is bad",this.payload=t}},Lr=tn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var rn=class extends Error{payload;constructor(e,t){super(e),this.name="RequestTimeout",this.message=e??"This request is timeout",this.payload=t}},Cr=rn,{Utils:{Valid:Zy,Time:eg},Configs:{AppId:id,Network:an}}=Ludex,tg=e=>{if(!e.ok)throw new Lr(void 0,{response:e})},cd=()=>{let e=codex.auth.getToken();return{token:e,timeout:an.Timeout,headers:{Authorization:`Bearer ${e}`,"Content-Type":"application/json"}}},ld=(e,t,r,n)=>async()=>{try{if(!id)throw new Lr("AppId is not defined");let y=`${e}/apps/${id}/${t}`,f=new AbortController;r.signal=f.signal;let w=setTimeout(()=>{f.abort()},r.timeout);Zy.isObject(n)&&(r.body=JSON.stringify(n));let A=await fetch(y,r);return clearTimeout(w),tg(A),await A.json()||{}}catch(y){if(y instanceof Lr)return null;throw y instanceof Object&&"name"in y&&y.name==="AbortError"?new Cr:y}},nn=async(e,t)=>{try{return e()}catch(r){if(r instanceof Cr&&t>0)try{return await eg.sleepAsync(600),await nn(e,t-1)}catch{return{}}return r instanceof Cr?{}:{}}},Re=async(e,t,r,n=an.Retries)=>{try{let y=R(S(S({},cd()),t),{method:"GET"}),f=ld(r,e,y);return await nn(f,n)}catch{return{}}},he=async(e,t,r,n,y=an.Retries)=>{try{let f=R(S(S({},cd()),r),{method:"POST"}),w=ld(n,e,f,t);return await nn(w,y)}catch{return{}}},{Configs:{Notification:{ApiUrl:rg}},Utils:{Object:ag}}=Ludex,dd=async e=>{if(!ag.hasOwn(e,"playerId"))throw new Error("Missing playerId");let{playerId:t}=e;await he(`players/${t}`,e,{},rg,10)};s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ng={score:"score",settings:"settings",isFirstLogin:"isFirstLogin",gameData:"gameData",missionsData:"missionsData",notificationData:"notificationData",dailyRewardedData:"dailyRewardedData",lastCallSwitchGame:"lastCallSwitchGame",remoteConfig:"remoteConfig"},ud=ng;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var sg={ASID:null,playerId:"0000",name:"Guest",photo:"",locale:"en_US",connectedPlayers:{},data:{score:0,isFirstLogin:!0,settings:{sound:!0,music:!0,vibrate:!0,language:"en"},gameData:{coins:0,level:1},notificationData:{D1:{arrivalDate:0},D2:{arrivalDate:0},D3:{arrivalDate:0},D4:{arrivalDate:0},D5:{arrivalDate:0},D6:{arrivalDate:0},D7:{arrivalDate:0}},missionsData:{process:{}},lastCallSwitchGame:0}},Pe=sg,{Valid:Gt}=Ludex.Utils,{playerId:og,name:ig,photo:cg,locale:lg}=Pe,$t="is invalid",Er=class extends ee{setupData(e){this.f(e)}d(e){this.p(e)}h(e){this.g(e)}validateId(e){(!Gt.isString(e)||!e)&&this.e("_id",$t)}validatePlayerId(e){(!Gt.isString(e)||!e)&&this.e("playerId",$t)}validateName(e){(!Gt.isString(e)||!e)&&this.e("name",$t)}validatePhoto(e){Gt.isString(e)||this.e("photo",$t)}validateLocale(e){(!Gt.isString(e)||!e)&&this.e("locale",$t)}toObject(){return super.toObject()}};Er.addDefaultData({playerId:og,name:ig,photo:cg,locale:lg});var ut=Er,dg=new ut({playerId:"10",name:"Your Friend"}).toObject(),ie=dg;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var sn=class extends Error{code;constructor(e){super(e),this.code="CREATE_MATCH_FAILED"}},te=sn,on=class extends te{constructor(e){super(e),this.name="PlayerIdNotValid",this.message=e??"Player id is not valid"}},G=on,{Dtos:cn,Utils:{Array:ug,Object:pg,Json:N8,Valid:ln},Events:mg}=Ludex,dn=class{codex;constructor(e){this.codex=e}initContext=()=>{let e={contextId:GameSDK.context.getID()??"",contextType:GameSDK.context.getType(),entryPointData:GameSDK.getEntryPointData()},t=new cn.Context.Info(e),{contextId:r,contextType:n,entryPointData:y}=t.toObject();this.codex.context.receiveContext(r,n,y)};initPlayer=async()=>{try{let{player:e}=this.codex,t=this.getPlayerInfo(),r=ug.unique(pg.vals(ud)),n=await GameSDK.player.getDataAsync(r),y=new cn.Player.Data(n).toObject();e.receiveData(t,y)}catch{}finally{this.codex.event.emit(mg.PLAYER_INFO_LOADED)}};getPlayerInfo=()=>{try{let e=GameSDK.player.getID(),t=GameSDK.player.getName(),r=GameSDK.player.getPhoto(),n=GameSDK.getLocale();if(!ln.isString(e))throw new G;return ln.isString(t)||(t="You"),(!ln.isString(n)||!n)&&(n="en"),new cn.Player.Info({playerId:e,name:t,photo:r,locale:n}).toObject()}catch{return ie}}},pd=dn;ar(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var md=(e=>(e.IDLE="idle",e.LOADING="loading",e.FILLED="filled",e.SHOWING="showing",e))(md||{}),Mr=md;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var hd=(e=>(e.BANNER="banner",e.INTERSTITIAL="interstitial",e.REWARDED_VIDEO="rewarded_video",e.REWARDED_INTERSTITIAL="rewarded_interstitial",e))(hd||{}),ve=hd;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var un=class extends Error{code;constructor(e,t){super(t),this.code=e,this.message=t}},pt=un;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var pn=class{type;service;placementId;_status;constructor(e,t){this.type=e,this._status=Mr.IDLE,this.placementId=t}setStatus(e){this._status!==e&&(this._status=e)}get status(){return this._status}e(e){throw new pt("AD_INSTANCE_ERROR",e)}},fd=pn,mn=class extends fd{loadAsync(){this.e("This method is not implemented")}showAsync(){this.e("This method is not implemented")}hideAsync(){this.e("Unsupported method")}},yd=mn;Ludex.Plugins.Ads={Types:ve,Status:Mr,AdError:pt,AdInstance:yd};var{Utils:{Array:Tr,Object:gd,Function:hg}}=Ludex,hn=class extends Ludex.Plugins.BasePlugin{enabled;config;lastCallAdShownTime;isAdFullSizeShowed;ads={};safeAreaBottom;degradationTracking={failedAttempts:0,lastSuccessTime:0};init(){let e=Date.now()/1e3;this.lastCallAdShownTime={[ve.BANNER]:e,[ve.INTERSTITIAL]:e,[ve.REWARDED_VIDEO]:e,[ve.REWARDED_INTERSTITIAL]:e},this.isAdFullSizeShowed=!1,this.calculateSafeAreaBottom(),this.resetDegradationTracking()}calculateSafeAreaBottom(){try{let e=getComputedStyle(document.documentElement).getPropertyValue("--sab");this.safeAreaBottom=parseInt(e,10),isNaN(this.safeAreaBottom)&&(this.safeAreaBottom=0)}catch{this.safeAreaBottom=0}}configure(e){this.config=e,this.enabled=this.config.Enabled}checkEnabled(){if(!this.enabled)throw new pt("ADS_NOT_ENABLED","Ads is't enabled")}isAdFullSizeShowing(){return this.isAdFullSizeShowed}setAdInstance(e,t,r){let n=`${e}-${t}`;this.ads[n]||(this.ads[n]={type:e,placementId:t,interval:null,instance:new r(e,t)})}async loadAdAsync(e,t){this.checkEnabled();try{await this.getAd(e,t).instance.loadAsync()}catch(r){throw this.degradationTracking.failedAttempts++,r}}async showAdAsync(e,t){if(this.checkEnabled(),!this.canShowAd(e,t))return;let{event:r}=this.codex,n=this.getAd(e,t);try{r.emit(Ludex.Events.AD_SHOWING,{type:e,placementId:t}),this.isAdFullSizeShowed=!0,await n.instance.showAsync(),this.resetDegradationTracking(),this.lastCallAdShownTime[e]=Date.now()/1e3}catch(y){throw this.degradationTracking.failedAttempts++,y}finally{r.emit(Ludex.Events.AD_CLOSED,{type:e,placementId:t}),this.isAdFullSizeShowed=!1}}getAdStatus(e,t){return this.checkEnabled(),this.getAd(e,t).instance.status}getAd(e,t){let r=null;if(t?r=this.getAdByPlacementId(t,e):r=this.getPriorityAdByType(e),!r)throw new pt("AD_INSTANCE_NOT_INITIATED","The instance ads not yet initiated");return r}getAdsByType(e){return gd.vals(this.ads).filter(t=>t.type===e)}getAdByPlacementId(e,t){let r=gd.vals(this.ads);return Tr.search(r,y=>y.placementId===e&&(!t||y.type===t))||null}getPriorityAdByType(e){let t=this.getAdsByType(e);return t.length&&Tr.search(t,n=>n.type===e)||null}canShowAd(e,t){return this.canShowAdByTime(e,t)}canShowAdByTime(e,t){try{let r=Date.now()/1e3,n;if(t)n=this.getCommonAdConfig(t);else{let v=this.getPriorityAdByType(e);if(!v)return!1;n=this.getCommonAdConfig(v.placementId)}let{SecondsBetweenAds:y,SecondsFirstTime:f}=n,w=r-this.lastCallAdShownTime[e],A=w>y,x=w>f;return this.lastCallAdShownTime[e]>0?A:x}catch{return!1}}canShowBannerAd(e){try{let t=this.getBannerConfig(e),{Platform:r}=t;if(r==="ALL")return!0;let n=GameSDK.getPlatform();return n?n===r:!1}catch{return!1}}async showBannerAdAsync(e,t=!0){this.checkEnabled();let r=this.getAd(ve.BANNER,e);if(!this.canShowBannerAd(r.placementId))throw new Error("Banner ad can not be shown");this.cleanBannerReloadTimer(r),t?await this.showBannerAdWithSchedule(r):await this.showBannerAdOnce(r)}async showBannerAdOnce(e){let{event:t}=this.codex;if(!this.isAdFullSizeShowing())try{await e.instance.loadAsync(),await e.instance.showAsync(),t.emit(Ludex.Events.AD_SHOWING,{type:ve.BANNER,placementId:e.placementId})}catch(r){let n=hg.toError(r);if(n.code!=="AD_NOT_FILLED")try{await e.instance.hideAsync()}catch{}t.emit(Ludex.Events.AD_FAILED,{type:ve.BANNER,placementId:e.placementId,error:n})}}async showBannerAdWithSchedule(e){await this.showBannerAdOnce(e);let t=this.getBannerConfig(e.placementId),{SecondsReload:r}=t;if(r<=0||!r)return;let n=()=>this.showBannerAdWithSchedule(e);e.interval=setTimeout(n,r*1e3)}async hideBannerAdAsync(e){this.checkEnabled();let t=this.getAd(ve.BANNER,e);this.cleanBannerReloadTimer(t),await t.instance.hideAsync();let{event:r}=this.codex;r.emit(Ludex.Events.AD_CLOSED,{type:ve.BANNER,placementId:e})}cleanBannerReloadTimer(e){try{let{interval:t}=e;if(!t)return;clearInterval(t)}catch{}}getCommonAdConfig(e){let t=[...this.config.InterstitialAdOptions,...this.config.RewardedVideoAdOptions,...this.config.RewardedInterstitialAdOptions],r=Tr.search(t,n=>n.PlacementId===e);if(!r)throw new Error(`Ad config with placementId ${e} not found`);return r}getBannerConfig(e){let t=Tr.search(this.config.BannerDisplayAdOptions,r=>r.PlacementId===e);if(!t)throw new Error(`Banner config with placementId ${e} not found`);return t}getBannerHeight(e,t,r=!0){this.checkEnabled();let n=this.getBannerConfig(e),y=GameSDK.getBannerHeight(n);return r?(this.safeAreaBottom<=0&&this.calculateSafeAreaBottom(),(y+this.safeAreaBottom)*t):y*t}getSafeAreaBottom(e){return this.safeAreaBottom<=0&&this.calculateSafeAreaBottom(),this.safeAreaBottom*e}resetDegradationTracking(){this.degradationTracking={failedAttempts:0,lastSuccessTime:Date.now()}}isServiceDegraded(){let e=Date.now(),{MaxFailedAttempts:t,ResetTimeMinutes:r}=this.config.DegradationTracking,{lastSuccessTime:n,failedAttempts:y}=this.degradationTracking;return e-n>r*60*1e3&&this.resetDegradationTracking(),y>=t}},Pd=hn,xd=Pd;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var fg={APP_LAUNCH:"app_launch",APP_INITIALIZED:"app_initialized",ENGINE_READY:"engine_ready",LOAD_START:"load_start",LOAD_COMPLETE:"load_complete",APP_READY:"app_ready",PAGE_VIEW:"page_view",SCREEN_OPEN:"screen_open",BUTTON_CLICK:"button_click",TUTORIAL_BEGIN:"tutorial_begin",TUTORIAL_STEP:"tutorial_step",TUTORIAL_COMPLETE:"tutorial_complete",MATCH_START:"match_start",MATCH_RESCUE:"match_rescue",MATCH_END:"match_end",LEVEL_START:"level_start",LEVEL_RESCUE:"level_rescue",LEVEL_END:"level_end",USE_ITEM:"use_item",EARN_ITEM:"earn_item",GET_FREE_ITEM:"get_free_item",SHARE:"share",INVITE:"invite",MESSAGE:"message",SHORTCUT_CREATE:"shortcut_create",SHORTCUT_CREATE_POPUP:"shortcut_create_popup",BOT_SUBSCRIBE:"bot_subscribe",BOT_SUBSCRIBE_POPUP:"bot_subscribe_popup",AD_INIT:"ad_init",AD_LOAD:"ad_load",AD_LOAD_FAILED:"ad_load_failed",AD_SHOWING:"ad_showing",AD_SHOW:"ad_show",AD_SHOW_FAILED:"ad_show_failed",AD_REWARD:"ad_reward",NEW_USER:"new_user",RETURNING_USER:"returning_user",JOIN_GROUP:"join_group",TOURNAMENT_START:"tournament_start",TOURNAMENT_SHARE:"tournament_share",TOURNAMENT_CREATE:"tournament_create",TOURNAMENT_POST_SCORE:"tournament_post_score",SWITCH_GAME_POPUP:"switch_game_popup",SWITCH_GAME:"switch_game"},L=fg;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var fn=class{history=[];missing=[];outOfOrder=[];completed=!1;failed=!1;warned=[];debug=!1;restrict=!1;addEvent(e,t){if(this.completed||this.failed){this.debugLog("Skip event:",e);return}this.history.push(e),this.validateAndUpdate(e)}validateAndUpdate(e){let t=this.validateFunnelState();if(t.hasFailed){this.failed=!0,this.logValidationError();return}t.hasWarnings&&this.handleWarnings(t.warnings),this.checkFunnelCompletion(e)}validateFunnelState(){let e={hasFailed:!1,hasWarnings:!1,warnings:[]},t=this.getCurrentSteps().filter(n=>n.t);for(let n=0;n<t.length;n++){let y=t[n],f=this.history.indexOf(y.name);if(f===-1)return this.missing=[y.name],e.hasFailed=!0,e;if(n>0){let w=t[n-1];if(this.history.indexOf(w.name)>f)return this.missing=[w.name],e.hasFailed=!0,e}}let r=this.validateDependencies();return r.length>0&&(e.hasWarnings=!0,e.warnings=r,this.outOfOrder=r),e}getCurrentSteps(){let e=this.history[this.history.length-1],t=this.funnelSteps.findIndex(r=>r.name===e);return this.funnelSteps.slice(0,t+1)}validateDependencies(){let e=[];return this.history.forEach((t,r)=>{let n=this.funnelSteps.find(f=>f.name===t);if(!n?.r?.length)return;let y=n.r.find(f=>!this.history.includes(f)||this.history.indexOf(f)>r);y&&!this.warned.includes(t)&&(e.push({event:t,missingDependency:y}),this.warned.push(t))}),e}checkFunnelCompletion(e){let t=this.funnelSteps[this.funnelSteps.length-1];e===t.name&&this.funnelSteps.filter(r=>r.t).every(r=>this.history.includes(r.name))&&(this.completed=!0,this.logCompletion())}handleWarnings(e){for(let t of e);}logValidationError(){let e=this.constructor.name;if(this.missing.length,this.restrict)throw new Error(`[${e}] Funnel is required to be completed ! (missing: ${this.missing.join(", ")})`)}logCompletion(){let e=this.constructor.name,t=this.outOfOrder.length>0}debugLog(...e){this.debug}isFunnelCompleted(){return this.completed}isFunnelFailed(){return this.failed}getEventHistory(){return[...this.history]}getMissingEvents(){return[...this.missing]}getOutOfOrderEvents(){return[...this.outOfOrder]}},Ce=fn,yn=class extends Ce{debug=!1;funnelSteps=[{name:L.AD_INIT,t:!0,s:{service:"adsense"},a:"Init adsense ad"},{name:L.AD_LOAD_FAILED,t:!1,s:{service:this.service},a:"Platform ad load failed (trigger for adsense)"},{name:L.AD_LOAD,t:!0,s:{service:"adsense"},a:"Start loading adsense ad"},{name:L.AD_LOAD_FAILED,t:!1,r:[L.AD_LOAD],s:{service:"adsense"},a:"Adsense ad load failed"},{name:L.AD_SHOWING,t:!0,r:[L.AD_LOAD],s:{service:"adsense"},a:"Adsense ad is showing"},{name:L.AD_SHOW,t:!1,r:[L.AD_SHOWING],s:{service:"adsense"},a:"Adsense ad shown successfully"},{name:L.AD_SHOW_FAILED,t:!1,r:[L.AD_SHOWING],s:{service:"adsense"},a:"Adsense ad show failed"},{name:L.AD_LOAD,t:!1,s:{service:"adsense"},a:"Preload adsense ad"}];get service(){return GameSDK?.getSDKName()??"Ludex"}addEvent(e,t){let{service:r}=t??{};!r||!(r==="adsense"||e===L.AD_LOAD_FAILED&&r==="platform")||super.addEvent(e,t)}},wd=yn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var gn=class extends Ce{debug=!1;restrict=!1;funnelSteps=[{name:L.ENGINE_READY,t:!1,a:"Game engine initialized"},{name:L.APP_LAUNCH,t:!0,a:"Application launched"},{name:L.APP_INITIALIZED,t:!0,r:[L.APP_LAUNCH],a:"Application initialized"},{name:L.LOAD_START,t:!0,r:[L.APP_INITIALIZED],a:"Start loading game assets"},{name:L.LOAD_COMPLETE,t:!0,r:[L.LOAD_START],a:"Game assets loaded completely"},{name:L.APP_READY,t:!0,r:[L.LOAD_COMPLETE],a:"Game is ready to play"}]},Ad=gn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Match:{Modes:mt}}=Ludex,Pn=class extends Ce{debug=!1;funnelSteps=[{name:L.MATCH_START,t:!0,s:{game_mode:mt.SINGLE},a:"Match started"},{name:L.LEVEL_START,t:!0,r:[L.MATCH_START],s:{game_mode:mt.SINGLE},a:"Level started"},{name:L.LEVEL_RESCUE,t:!1,r:[L.LEVEL_START],s:{game_mode:mt.SINGLE},a:"User was rescued"},{name:L.LEVEL_END,t:!0,r:[L.LEVEL_START],s:{game_mode:mt.SINGLE},a:"Level ended"},{name:L.MATCH_END,t:!0,r:[L.LEVEL_START],s:{game_mode:mt.SINGLE},a:"Match ended"}];addEvent(e,t){let{game_mode:r}=t??{};!r||r.toLowerCase()!==mt.SINGLE||super.addEvent(e,t)}},bd=Pn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var xn=class extends Ce{debug=!1;funnelSteps=[{name:L.AD_INIT,t:!0,s:{service:this.service},a:"Init platform ad"},{name:L.AD_LOAD,t:!0,s:{service:this.service},a:"Start loading platform ad"},{name:L.AD_LOAD_FAILED,t:!1,r:[L.AD_LOAD],s:{service:this.service},a:"Platform ad load failed"},{name:L.AD_SHOWING,t:!0,r:[L.AD_LOAD],s:{service:this.service},a:"Platform ad is showing"},{name:L.AD_SHOW,t:!1,r:[L.AD_SHOWING],s:{service:this.service},a:"Platform ad shown successfully"},{name:L.AD_SHOW_FAILED,t:!1,r:[L.AD_SHOWING],s:{service:this.service},a:"Platform ad show failed"},{name:L.AD_LOAD,t:!1,s:{service:this.service},a:"Preload platform ad"}];get service(){return"platform"}addEvent(e,t){t?.service===this.service&&super.addEvent(e,t)}},vd=xn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Utils:{String:Ye,Valid:yg}}=Ludex,wn=class{codex;name;color;options;selfLog;currentPath;constructor(e,t,r){this.codex=e,this.name=t,this.options=r,this.color=r.color||"#FFF",this.selfLog=r.log,this.currentPath="/"}event(e,t){this.logInfo("event",{name:e,payload:t});let r=this.formatEventName(e);this.processEvent(r,t)}logInfo(e,t){this.selfLog}pageview(e){let t=this.getPageTitle(e);t=this.addGameModeToPageTitle(t),document.title=t,this.event(L.PAGE_VIEW,{page_path:e,page_title:t})}levelStart(e,t,r){this.event(L.LEVEL_START,{level:e,score:t,level_name:this.getLevelName(e),game_mode:r?Ye.toUpperCamelCase(r):void 0})}levelFail(e,t,r){this.event(L.LEVEL_END,{level:e,score:t,success:!1,level_name:this.getLevelName(e),game_mode:r?Ye.toUpperCamelCase(r):void 0})}levelRescue(e,t,r){this.event(L.LEVEL_RESCUE,{level:e,score:t,level_name:this.getLevelName(e),game_mode:r?Ye.toUpperCamelCase(r):void 0})}levelComplete(e,t,r){this.event(L.LEVEL_END,{level:e,score:t,success:!0,level_name:this.getLevelName(e),game_mode:r?Ye.toUpperCamelCase(r):void 0})}initAdEvent(e){let{adService:t,state:r}=e;this.event(L.AD_INIT,{ad_service:t,state:r})}loadAdEvent(e){let{type:t,placement:r,service:n}=e;this.event(L.AD_LOAD,{ad_type:t,screen_name:r,ad_service:n})}showAdEvent(e){let{type:t,placement:r,service:n}=e;this.event(L.AD_SHOW,{ad_type:t,screen_name:r,ad_service:n})}loadInterstitialAd(e){let{placement:t,service:r}=e;this.loadAdEvent({type:"interstitial",placement:t,service:r})}showInterstitialAd(e){let{placement:t,service:r}=e;this.showAdEvent({type:"interstitial",placement:t,service:r})}loadRewardedVideoAd(e){let{placement:t,service:r}=e;this.loadAdEvent({type:"rewarded_video",placement:t,service:r})}showRewardedVideoAd(e){let{placement:t,service:r}=e;this.showAdEvent({type:"rewarded_video",placement:t,service:r})}receiveVideoReward(e){let{placement:t,service:r}=e;this.event(L.AD_REWARD,{screen_name:t,ad_service:r})}loadRewardedInterstitialAd(e){let{placement:t,service:r}=e;this.loadAdEvent({type:"rewarded_interstitial",placement:t,service:r})}showRewardedInterstitialAd(e){let{placement:t,service:r}=e;this.showAdEvent({type:"rewarded_interstitial",placement:t,service:r})}receiveInterstitialReward(e){let{placement:t,service:r}=e;this.event(L.AD_REWARD,{screen_name:t,ad_service:r})}loadAdFail(e){let{type:t,placement:r,service:n}=e;this.event(L.AD_LOAD_FAILED,{ad_type:t,screen_name:r,ad_service:n})}showAdFail(e){let{type:t,placement:r,service:n}=e;this.event(L.AD_SHOW_FAILED,{ad_type:t,screen_name:r,ad_service:n})}showingAd(e){let{type:t,placement:r,service:n}=e;this.event(L.AD_SHOWING,{ad_type:t,screen_name:r,ad_service:n})}formatEventName(e){return e.toLowerCase().replace(/:/g,"_")}getLevelName(e){return`Level ${Ye.padStart(e.toString(),5,"0")}`}getPageTitle(e){let t=e.split("/").pop();if(!yg.isString(t))return e;let r=t.replace(/([-_\s.])/g," $1");return Ye.toUpperCamelCase(r)}addGameModeToPageTitle(e){let{match:t}=this.codex,r=t.getMatchState(),{mode:n}=r;return n||(n="Normal"),`${Ye.toUpperCamelCase(n)}::${e}`}},Dd=wn;Ludex.Plugins.Analytics={Events:L,BaseFunnel:Ce,BaseAnalytics:Dd};var An=class extends Ludex.Plugins.BasePlugin{analytics=[];placement="unknown";funnels=[];constructor(e){super(e),this.initFunnels()}add(e){let t=this.analytics.findIndex(r=>r.name===e.name);t!==-1?this.analytics[t]=e:this.analytics.push(e)}isActive(){return this.analytics.length>=1}initFunnels(){this.addFunnel(new Ad),this.addFunnel(new wd),this.addFunnel(new vd),this.addFunnel(new bd)}addFunnel(e){this.funnels.push(e)}i(e,t){for(let r of this.funnels)r.addEvent(e,t)}pageview=e=>{if(!this.isActive())return;this.placement=e;let t=this.getPageByKey(e);for(let r of this.analytics)r.pageview(t);this.i(L.PAGE_VIEW)};event(e,t){if(this.isActive()){for(let r of this.analytics)r.event(e,t);this.i(e,t)}}levelStart(e,t,r){if(this.isActive()){for(let n of this.analytics)n.levelStart(e,t,r);this.i(L.LEVEL_START,{score:t,game_mode:r})}}levelRescue(e,t,r){if(this.isActive()){for(let n of this.analytics)n.levelRescue(e,t,r);this.i(L.LEVEL_RESCUE,{score:t,game_mode:r})}}levelFail(e,t,r){if(this.isActive()){for(let n of this.analytics)n.levelFail(e,t,r);this.i(L.LEVEL_END,{score:t,game_mode:r})}}levelComplete(e,t,r){if(this.isActive()){for(let n of this.analytics)n.levelComplete(e,t,r);this.i(L.LEVEL_END,{score:t,game_mode:r})}}async initAdEvent(e){if(this.isActive()){await new Promise(t=>{let{Events:r}=Ludex;this.codex.event.catchUp(r.GAME_READY,t)});for(let t of this.analytics)t.initAdEvent(e)}}loadInterstitialAd(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.loadInterstitialAd(t);this.i(L.AD_LOAD,t)}showInterstitialAd(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.showInterstitialAd(t);this.i(L.AD_SHOW,t)}loadRewardedVideoAd(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.loadRewardedVideoAd(t);this.i(L.AD_LOAD,t)}showRewardedVideoAd(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.showRewardedVideoAd(t);this.i(L.AD_SHOW,t)}receiveVideoReward(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.receiveVideoReward(t);this.i(L.AD_REWARD,t)}loadRewardedInterstitialAd(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.loadRewardedInterstitialAd(t);this.i(L.AD_LOAD,t)}showRewardedInterstitialAd(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.showRewardedInterstitialAd(t);this.i(L.AD_SHOW,t)}receiveInterstitialReward(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.receiveInterstitialReward(t);this.i(L.AD_REWARD,t)}loadAdFail(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.loadAdFail(t);this.i(L.AD_LOAD_FAILED,t)}showAdFail(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.showAdFail(t);this.i(L.AD_SHOW_FAILED,t)}showingAd(e){if(!this.isActive())return;let t=R(S({},e),{placement:this.placement});for(let r of this.analytics)r.showingAd(t);this.i(L.AD_SHOWING,t)}getPageByKey(e){let t=e;if(t.indexOf("_")>-1){let y=t.replace(/_/g,"-");return y=y.toLowerCase(),y}let r=t.length-1,n="";for(;r>0;){n=t.charAt(r);let y=isNaN(parseInt(n,10)),f=n===n.toUpperCase();y&&f&&(t=`${t.slice(0,r)}-${t.slice(r)}`),r--}return t.toLowerCase()}},Sd=An,Id=Sd;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var bn=class{key;constructor(e){this.key=e}getKey(){return this.key}},Ld=bn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Decorator:Cd}=Ludex.Utils,Or=class{id;isMuteAll;masterVolume;audioClips;constructor(e){this.id=e,this.masterVolume=1,this.isMuteAll=!1,this.audioClips={}}getId(){return this.id}getAudioClip(e){return this.audioClips[e]?this.audioClips[e]:null}setAudioClip(e,t){this.audioClips[e]=S(S({},this.audioClips[e]),t)}async play(e,t){let r=this.getAudioClip(e);if(r){let{audioPlayer:n}=r;this.playWithRealConfig(n,t)}else await this.loadAndPlay(e,t)}async loadAndPlay(e,t){let r=await this.onLoadAudio(e,t);if(!r)return;let{volume:n=1}=t||{};this.setAudioClip(e,{volume:n,audioPlayer:r}),this.playWithRealConfig(r,t)}playWithRealConfig(e,t){if(t){let{volume:r=1}=t;t.volume=this.masterVolume*r}e.play(t)}pause(e){let t=this.getAudioClip(e);if(!t)return!1;let{audioPlayer:r}=t;return r.pause(),!0}resume(e){let t=this.getAudioClip(e);if(!t)return!1;let{audioPlayer:r}=t;return r.resume(),!0}stop(e){let t=this.getAudioClip(e);if(!t)return!1;let{audioPlayer:r}=t;return r.stop(),!0}stopAll(){this.callAudioPlayers("stop")}muteAll(){this.isMuteAll||(this.isMuteAll=!0,this.callAudioPlayers("mute"))}unmuteAll(){this.isMuteAll&&(this.isMuteAll=!1,this.callAudioPlayers("unmute"))}setVolume(e){this.masterVolume=e,this.callAudioPlayers("setVolume")}getVolume(){return this.masterVolume}queueAudioPlayer(e,t){try{let{audioPlayer:r,volume:n=1}=e;switch(t){case"play":r.play();break;case"pause":r.pause();break;case"resume":r.resume();break;case"stop":r.stop();break;case"mute":r.setVolume(0);break;case"unmute":case"setVolume":r.setVolume(this.masterVolume*n);break;default:throw new Error(`Unsupported function: ${t}`)}}catch{}}callAudioPlayers(e){let{Object:t}=Ludex.Utils,r=t.vals(this.audioClips);for(let n of r)this.queueAudioPlayer(n,e)}};se([Cd.tryCatch(),Cd.validateParams("string")],Or.prototype,"loadAndPlay",1);var Ed=Or;Ludex.Plugins.Audio={BaseAudioPlayer:Ld,BaseChannelManager:Ed};var{Decorator:Md}=Ludex.Utils,_r=class extends Ludex.Plugins.BasePlugin{firstChannelId;channels={};addChannel(e){let t=e.getId();this.channels[t]=e,this.firstChannelId||(this.firstChannelId=t)}getChannel(e){if(e===void 0)return this.channels[this.firstChannelId];let t=this.channels[e];if(!t)throw new Error(`Channel ${e} not found`);return t}async play(e,t,r){await this.getChannel(r).play(e,t)}pause(e,t){try{this.getChannel(t).pause(e)}catch{}}resume(e,t){try{this.getChannel(t).resume(e)}catch{}}stop(e,t){try{this.getChannel(t).stop(e)}catch{}}stopAll(e){try{this.getChannel(e).stopAll()}catch{}}mute(e){try{this.getChannel(e).muteAll()}catch{}}unmute(e){try{this.getChannel(e).unmuteAll()}catch{}}setVolume(e,t){try{this.getChannel(t).setVolume(e)}catch{}}getVolume(e){try{return this.getChannel(e).getVolume()}catch{return-1}}};se([Md.tryCatch(),Md.validateParams("string")],_r.prototype,"play",1);var Td=_r,Od=Td;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var gg={token:"",isRequesting:!1},_d=gg,{Utils:{Object:Pg}}=Ludex,vn=class extends Ludex.Plugins.BasePlugin{init(){let{storage:e}=this.codex;e.addStorage("auth",_d)}async requestToken(){let{storage:e}=this.codex;try{if(e.getStorageData("auth","isRequesting")||e.getStorageData("auth","token")!=="")return;e.setStorageData("auth","isRequesting",!0);let t=(await GameSDK.player.getSignedPlayerInfoAsync()).getSignature();e.setStorageData("auth","token",t)}catch(t){if(Pg.hasOwn(t,"code")&&t.code==="PENDING_REQUEST")return;e.setStorageData("auth","token","")}finally{e.setStorageData("auth","isRequesting",!1)}}getToken(){let{storage:e}=this.codex;return e.getStorageData("auth","token")??""}},Nd=vn,Rd=Nd;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var kd=(e=>(e.SOLO="solo",e.TOURNAMENT="tournament",e.SHARE_INVITE="share_invite",e.MATCHING_GROUP="matching_group_match",e.CHALLENGE_FRIEND="challenge_friend_match",e))(kd||{}),De=kd;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var xg=nr,ke=xg,{Configs:wg,Utils:{Array:Ag,Valid:bg,Browser:vg}}=Ludex,Dn=class{codex;constructor(e){this.codex=e}isValidContextType(e){return["THREAD","POST","SOLO","GROUP"].indexOf(e)>=0}isValidEntryPointData(e){return bg.isObject(e)}isTournamentEntryPoint(e){return Ag.has(["facebook~game_list~tournaments","fb_feed_tournament_unit","messenger~bot_thread~tournaments"],e)}receiveContext(e,t,r){let{storage:n}=this.codex;n.setStorageData("context","contextId",e),this.isValidEntryPointData(r)&&n.setStorageData("context","entryPointData",r),this.isValidContextType(t)&&n.setStorageData("context","contextType",t)}getContextId(){let{storage:e}=this.codex;return e.getStorageData("context","contextId")??""}getContextType(){let{storage:e}=this.codex;return e.getStorageData("context","contextType")??"SOLO"}getContextData(){let{storage:e}=this.codex;return e.getStorageData("context","entryPointData")??{}}getSessionContextType(){let{storage:e}=this.codex;return e.getStorageData("context","sessionContextType")??"unknown"}async detectContextSessionType(){let{storage:e}=this.codex,t=this.getContextData(),{type:r}=t??{},{SOLO:n,TOURNAMENT:y,MATCHING_GROUP:f,SHARE_INVITE:w,CHALLENGE_FRIEND:A}=De,x=n;r===y&&(x=y),r===f&&(x=f),(r===A||r===w)&&(x=A),x===n&&(wg.Core.FastCheckTournamentContext?x=this.fastCheckTournamentContext()||x:x=await this.outdatedCheckTournamentContext()||x),e.setStorageData("context","sessionContextType",x)}fastCheckTournamentContext(){let e=vg.getQueryParams().entry_point;return typeof e!="string"||!this.isTournamentEntryPoint(e)?!1:De.TOURNAMENT}async outdatedCheckTournamentContext(){let{storage:e}=this.codex;if(!("getTournamentAsync"in GameSDK))return!1;try{let t=await GameSDK.getTournamentAsync();return e.setStorageData("context","contextId",t.getContextID()),t.getEndTime()>Date.now()/1e3?De.TOURNAMENT:!1}catch{return!1}}detectContextGameMode(){let{player:e,storage:t}=this.codex,r=this.getContextData(),n=this.getSessionContextType(),y=e.getPlayerId(),{matchId:f,playerId:w,opponentId:A=ie.playerId}=r??{},x=y===w,v=A===ie.playerId||[A,w].indexOf(y)>=0,{TOURNAMENT:D,MATCHING_GROUP:I,SHARE_INVITE:E,CHALLENGE_FRIEND:b}=De,T=ke.SINGLE;n===D&&(T=ke.TOURNAMENT),n===E&&!x&&(T=ke.CHALLENGE_FRIEND),n===b&&f&&v&&(T=ke.CHALLENGE_FRIEND),n===I&&(T=ke.MATCHING_GROUP),t.setStorageData("context","contextGameMode",T)}},Gd=Dn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Sn=class extends Error{constructor(e){super(e),this.name="PlayerHasFinishedMatch",this.message=e??"Player has finished match"}},Nr=Sn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var In=class extends Error{constructor(e){super(e),this.name="PlayerNotJoinInMatch",this.message=e||"Player is not join in match"}},ht=In,{Events:Rr,Plugins:{Analytics:$d},Utils:{Valid:Dg}}=Ludex,Ln=class{codex;constructor(e){this.codex=e}async processContextData(){let{player:e,context:t}=this.codex,r=t.getContextId(),n=t.getContextData(),y=t.getSessionContextType(),{type:f,matchId:w,playerId:A,opponentId:x,playerScore:v,action:D}=n;D&&await this.processEntryPointAction(D);let I=e.isFirstSession();setTimeout(()=>{this.logUserAnalytics(I)},1e3);let{TOURNAMENT:E,SHARE_INVITE:b,MATCHING_GROUP:T,CHALLENGE_FRIEND:U}=De;if(y===E)try{await this.processTournamentModeAsync(r);return}catch{}if(y===U){if(f===b&&typeof A=="string"){await this.processChallengeFromPostAsync(A);return}if(f===U&&typeof w=="string"&&typeof A=="string"&&typeof x=="string"){await this.processChallengeFromMessageAsync({contextId:r,matchId:w,playerId:A,opponentId:x});return}}if(y===T&&typeof A=="string"&&typeof v=="number"){await this.processMatchingGroupModeAsync(A,v);return}if(I){await this.processSingleModeAsync(!0),e.loggedIn();return}this.switchToDashboardScene()}logUserAnalytics(e){try{let{player:t,analytics:r}=this.codex;if(e)r.event($d.Events.NEW_USER);else{let{coins:n}=t.getPlayerData().gameData;r.event($d.Events.RETURNING_USER,{coins:n})}}catch{}}async processEntryPointAction(e){try{let{player:t}=this.codex;switch(e){case"reset_data":t.setPlayerDataByName("score",0),t.setGameData({coins:0,level:1}),await t.syncProfileToServer();break;case"enable_debug":t.setPlayerDataByName("debug",!0);break;case"set_locale_en":this.requestSetLocale("en");break;case"set_locale_ru":this.requestSetLocale("ru");break}}catch{}}requestSetLocale(e){let{event:t}=this.codex;t.emit(Rr.REQUEST_LANGUAGE,{locale:e})}async processTournamentModeAsync(e){let{match:t,player:r}=this.codex,n=r.getPlayerId();if(Dg.isEmpty(e))throw new Error("Cannot get contextId");await t.tournament.continue.processAsync({playerId:n,contextId:e}),this.switchToGameScene()}async processChallengeFromPostAsync(e){let{match:t,player:r}=this.codex,n=r.getPlayerId();if(n===e)await t.single.start.processAsync({playerId:n});else try{await t.challenge.friend.processAsync({playerId:n,opponentId:e})}catch{await t.single.start.processAsync({playerId:n})}this.switchToGameScene()}async processChallengeFromMessageAsync(e){try{await this.processContinueChallengeFromMessageAsync(e)}catch(t){if(t instanceof Nr){await this.processAwaitChallengeFromMessageAsync(e);return}if(t instanceof ht){await this.processJoinChallengeFromMessageAsync(e);return}this.switchToDashboardScene()}}async processContinueChallengeFromMessageAsync(e){let{contextId:t,matchId:r,playerId:n,opponentId:y}=e,{match:f,player:w}=this.codex,A=w.getPlayerId();if(n===A)await f.challenge.continue.processAsync({contextId:t,matchId:r,playerId:A,opponentId:y});else{let x=y===ie.playerId;await f.challenge.continue.processAsync({contextId:t,matchId:r,playerId:A,opponentId:x?y:n})}this.switchToGameScene()}async processJoinChallengeFromMessageAsync(e){let{contextId:t,matchId:r,playerId:n}=e,{match:y,player:f}=this.codex,w=f.getPlayerId();await y.challenge.join.processAsync({contextId:t,matchId:r,playerId:w,opponentId:n}),this.switchToGameScene()}async processAwaitChallengeFromMessageAsync(e){let{contextId:t,matchId:r,playerId:n}=e,{match:y,player:f}=this.codex,w=f.getPlayerId();try{await y.challenge.await.processAsync({contextId:t,matchId:r,playerId:w,opponentId:n}),this.switchToChallengeResultScene()}catch{await this.processResultChallengeFromMessageAsync(e)}}async processResultChallengeFromMessageAsync(e){let{contextId:t,matchId:r,playerId:n}=e,{match:y,player:f}=this.codex,w=f.getPlayerId();try{await y.challenge.result.processAsync({contextId:t,matchId:r,playerId:w,opponentId:n}),this.switchToChallengeResultScene()}catch{this.switchToDashboardScene()}}async processMatchingGroupModeAsync(e,t){let{match:r,player:n}=this.codex;await r.group.join.processAsync({playerId:n.getPlayerId(),opponentId:e,opponentScore:t}),this.switchToGameScene()}async processSingleModeAsync(e){let{match:t,player:r}=this.codex,n=r.getPlayerId();e&&await t.handler.setMatchCustomData({playerId:n,contextId:"SOLO"}),await t.single.start.processAsync({playerId:n}),this.switchToGameScene()}switchToDashboardScene(){let{event:e}=this.codex;e.emit(Rr.SWITCH_SCENE,{sceneName:"DashboardScene",sceneData:{isFromLoader:!0}})}switchToGameScene(){let{event:e}=this.codex;e.emit(Rr.SWITCH_SCENE,{sceneName:"GameScene",sceneData:{isFromLoader:!0}})}switchToChallengeResultScene(){let{event:e}=this.codex;e.emit(Rr.SWITCH_SCENE,{sceneName:"ChallengeResultScene",sceneData:{isFromLoader:!0}})}},Fd=Ln;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Sg={processed:!1,contextId:"",contextType:"SOLO",entryPointData:{},contextGameMode:"",sessionContextType:""},kr=Sg,{Events:Gr,Utils:{Function:Bd}}=Ludex,Cn=class extends Ludex.Plugins.BasePlugin{context;loader;constructor(e){super(e),this.loader=new Fd(e),this.context=new Gd(e)}init(){let{storage:e}=this.codex;e.addStorage("context",kr)}getSessionContextTypes(){return De}async processContextData(){let{event:e,monitorError:t}=this.codex;e.catchUp(Gr.CONTEXT_SESSION_TYPE_DETECTED,async()=>{try{await this.loader.processContextData(),e.emit(Gr.CONTEXT_DATA_PROCESSED)}catch(r){this.switchToDashboardScene(),t?.sendException(Bd.toError(r))}})}async detectContextSessionType(){let{event:e,monitorError:t}=this.codex;try{await this.context.detectContextSessionType()}catch(r){t?.sendException(Bd.toError(r))}finally{e.emit(Gr.CONTEXT_SESSION_TYPE_DETECTED)}}detectContextGameMode(){this.context.detectContextGameMode()}receiveContext(e,t,r){this.context.receiveContext(e,t,r)}getContextId(){return this.context.getContextId()}getContextType(){return this.context.getContextType()}getContextData(){return this.context.getContextData()}getSessionContextType(){return this.context.getSessionContextType()}switchToDashboardScene(){let{event:e}=this.codex;e.emit(Gr.SWITCH_SCENE,{sceneName:"DashboardScene"})}},Vd=Cn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Valid:En}=Ludex.Utils,{contextId:Ig,contextType:Lg,entryPointData:Cg}=kr,Mn="is invalid",$r=class extends ee{data;setupData(e){this.f(e)}d(e){this.p(e)}h(e){this.g(e)}validateContextId(e){En.isString(e)||this.e("contextId",Mn)}validateContextType(e){(!En.isString(e)||!e)&&this.e("contextType",Mn)}validateEntryPointData(e){En.isObject(e)||this.e("entryPointData",Mn)}toObject(){return super.toObject()}};$r.addDefaultData({contextId:Ig,contextType:Lg,entryPointData:Cg});var Ud=$r;Ludex.Dtos.Context={Info:Ud};var Hd=Vd;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Eg={0:{id:1,type:"coin",value:300},1:{id:2,type:"coin",value:500},2:{id:3,type:"coin",value:1e3},3:{id:4,type:"coin",value:2e3},4:{id:5,type:"coin",value:3e3},5:{id:6,type:"coin",value:5e3},6:{id:7,type:"coin",value:1e3}},Kd=Eg,{Object:Mg}=Ludex.Utils,Tn=class{async getDailyRewardsAsync(){return Mg.vals(Kd)}},jd=Tn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Tg={REWARDED:"rewarded",SKIPPED:"skipped",READY:"ready",WAITING:"waiting"},fe=Tg;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Og={dailyRewards:{}},Wd=Og,{Configs:{DailyRewards:{CheckInterrupt:qd,MaxDays:zd,MockTime:Yd}},Utils:{Array:On,Valid:Qe}}=Ludex,Fr=Yd>0?Yd:864e5,_n=class extends Ludex.Plugins.BasePlugin{dailyRewardsApi=new jd;init(){let{storage:e}=this.codex;e.addStorage("dailyRewards",Wd)}async requestDailyRewardsAsync(){let e=await this.dailyRewardsApi.getDailyRewardsAsync(),{logs:t,rewards:r}=this.parseDailyRewards(e);this.setRewardsLog(t),this.setDailyRewards(r)}getDailyRewards(){let{storage:e}=this.codex;return e.getStorageData("dailyRewards","dailyRewards")||null}logLoginReward(){qd?this.logFromFirstReward():this.logFromLastReward()}logFromFirstReward(){let{player:e}=this.codex,{dailyRewardedData:t}=e.getPlayerData();if(!Qe.isObject(t))return;let{logDays:r,firstReward:n}=t,y=new Date,f=[...r];if(n===0){f[0]=!0,Qe.isDebugger()||y.setHours(0,0,0,0),this.setRewardsLog({logDays:f,firstReward:y.valueOf(),lastReward:y.valueOf()});return}let w=y.valueOf()-n,A=Math.floor(w/Fr);A>=zd||A>=r.length||(f[A]=!0,Qe.isDebugger()||y.setHours(0,0,0,0),this.setRewardsLog({logDays:f,lastReward:y.valueOf()}))}logFromLastReward(){let{player:e}=this.codex,{dailyRewardedData:t}=e.getPlayerData();if(!Qe.isObject(t))return;let{logDays:r,lastReward:n}=t,y=new Date,f=[...r];if(n===0){f[0]=!0,Qe.isDebugger()||y.setHours(0,0,0,0),this.setRewardsLog({logDays:f,firstReward:y.valueOf(),lastReward:y.valueOf()});return}let w=y.valueOf()-n;if(Math.floor(w/Fr)<1)return;let A=On.searchIndex(f,x=>x===!1);A!==void 0&&(f[A]=!0,Qe.isDebugger()||y.setHours(0,0,0,0),this.setRewardsLog({logDays:f,lastReward:y.valueOf()}))}setRewardsLog(e){let{logDays:t,firstReward:r,lastReward:n}=e,{player:y}=this.codex,{dailyRewardedData:f}=y.getPlayerData();Qe.isObject(f)&&(this.isSameLog(f,e)||y.setPlayerDataByName("dailyRewardedData",{logDays:t!==void 0?[...t]:[...f.logDays],firstReward:r??f.firstReward,lastReward:n??f.lastReward}))}isSameLog(e,t){if(t.firstReward!==void 0&&e.firstReward!==t.firstReward||t.lastReward!==void 0&&e.lastReward!==t.lastReward)return!1;if(t.logDays!==void 0){if(e.logDays.length!==t.logDays.length)return!1;for(let r=0;r<t.logDays.length;r++)if(e.logDays[r]!==t.logDays[r])return!1}return!0}parseDailyRewards(e){let{player:t}=this.codex,{dailyRewardedData:r}=t.getPlayerData(),{logDays:n,firstReward:y,lastReward:f}=r??{};if(n===void 0||y===void 0||y===0||f===void 0||f===0||n.length!==e.length){let w=this.getDefaultDailyRewards(e);return{logs:{logDays:w.logDays,firstReward:0,lastReward:0},rewards:w.rewards}}return qd?this.parseFromFirstReward(e,n,y,f):this.parseFromLastReward(e,n,y,f)}parseFromFirstReward(e,t,r,n){let y=Date.now()-r;if(y<0){let D=this.getDefaultDailyRewards(e);return{logs:{logDays:D.logDays,firstReward:0,lastReward:0},rewards:D.rewards}}let f=Math.floor(y/Fr),w=f>=zd||f>=t.length,A=On.search(t.slice(0,f),D=>D===!1)!==void 0;if(w||A){let D=this.getDefaultDailyRewards(e);return{logs:{logDays:D.logDays,firstReward:0,lastReward:n},rewards:D.rewards}}let x=[],v={};for(let D=0;D<e.length;D++){let I=e[D],E=x.length>f,b=x.length===f,T=t[D];if(E){x.push(!1),v[I.id]=R(S({},I),{status:fe.WAITING});continue}if(x.push(T),b){v[I.id]=R(S({},I),{status:T?fe.REWARDED:fe.READY});continue}v[I.id]=R(S({},I),{status:T?fe.REWARDED:fe.SKIPPED})}return{logs:{logDays:x,firstReward:r,lastReward:n},rewards:v}}parseFromLastReward(e,t,r,n){let y=Date.now()-n;if(y<0){let v=this.getDefaultDailyRewards(e);return{logs:{logDays:v.logDays,firstReward:0,lastReward:0},rewards:v.rewards}}let f=Math.floor(y/Fr)>=1,w=On.searchIndex(t,v=>v===!1);if(w===-1&&f){let v=this.getDefaultDailyRewards(e);return v.rewards[e[0].id].status=f?fe.READY:fe.WAITING,{logs:{logDays:v.logDays,firstReward:0,lastReward:n},rewards:v.rewards}}let A=[],x={};for(let v=0,D=e.length;v<D;v++){let I=e[v],E=w!==-1&&v>w,b=v===w;if(E){A.push(!1),x[I.id]=R(S({},I),{status:fe.WAITING});continue}if(b){A.push(!1),x[I.id]=R(S({},I),{status:f?fe.READY:fe.WAITING});continue}A.push(!0),x[I.id]=R(S({},I),{status:fe.REWARDED})}return{logs:{logDays:A,firstReward:r,lastReward:n},rewards:x}}getDefaultDailyRewards(e){let t=[],r={};for(let n of e)t.push(!1),r[n.id]=R(S({},n),{status:fe.WAITING});return r[e[0].id].status=fe.READY,{logDays:t,rewards:r}}setDailyRewards(e){let{storage:t}=this.codex;t.setStorageData("dailyRewards","dailyRewards",e)}},Qd=_n,Jd=Qd;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var eu=_m(Zd(),1),tu=eu.default,Rg=new tu,Fe=Rg;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var kg={names:[],history:[]},ru=kg,{Utils:{Decorator:Be}}=Ludex,Se=class extends Ludex.Plugins.BasePlugin{enableLog=!1;muteEvents=[];init(){let{storage:e}=this.codex;e.addStorage("event",ru)}enableLogEvent(){this.enableLog=!0}on(e,t){this.addEventName(e),this.addHistory(e,"on","listening"),Fe.on(e,t)}once(e,t){this.addEventName(e),this.addHistory(e,"once","listening"),Fe.once(e,t)}waitTo(e,t){return new Promise((r,n)=>{let y,f=w=>{clearTimeout(y),r(w)};this.once(e,f),t&&t>0&&(y=setTimeout(()=>{this.off(e,f),n(new Error(`Event ${e} timeout`))},t))})}catchUp(e,t){if(this.once(e,t),!(this.getEventEmitCount(e)>0))return;let{payload:r}=this.getLastEventInfo(e)??{};this.emit(e,r)}off(e,t){Fe.off(e,t),this.addHistory(e,"action","removed")}mute(e){this.muteEvents.indexOf(e)>-1||this.muteEvents.push(e)}clear(e){Fe.removeAllListeners(e),this.addHistory(e,"action","removed")}emit(e,t){if(this.muteEvents.indexOf(e)>-1)return;let r=[];t&&(r=[t]),this.addHistory(e,"action","called",t),Fe.emit(e,...r)}addEventName(e){let{storage:t}=this.codex,r=t.getStorageData("event","names");r&&r.indexOf(e)<0&&r.push(e)}limitHistory(e){if(e.length<=1e4)return e;let{Utils:{Array:t}}=Ludex;return t.limit(e,1e4)}getEventListeners(e){return this.getHistory().filter(t=>t.name===e&&t.status==="listening").map(t=>t.name)}getHistory(){let{storage:e}=this.codex,t=e.getStorageData("event","history")??[];return this.limitHistory(t)}getEventEmitCount(e){return this.getHistory().filter(t=>t.name===e&&t.status==="called").length}getLastEventInfo(e){let t=this.getHistory(),r=null;for(let n=t.length-1;n>=0;n--)if(t[n].name===e){r=t[n];break}return r}getTypeFromHistory(e){return this.getLastEventInfo(e)?.type??null}getCallsFromHistory(e){return this.getLastEventInfo(e)?.called??0}addHistory(e,t,r,n){let y=this.getTypeFromHistory(e)??t,f=this.getCallsFromHistory(e),w=r==="called"?f+1:f;this.getHistory().push({type:y,status:r,name:e,called:w,payload:n??{}}),this.logEventInfo(e,y,r,w)}logEventInfo(e,t,r,n){this.enableLog&&(r==="listening"&&Fe.listenerCount(e)>1,r==="called"&&Fe.listenerCount(e)<=0)}};se([Be.validateParams("string","function")],Se.prototype,"on",1),se([Be.validateParams("string","function")],Se.prototype,"once",1),se([Be.validateParams("string")],Se.prototype,"waitTo",1),se([Be.validateParams("string","function")],Se.prototype,"catchUp",1),se([Be.validateParams("string","function")],Se.prototype,"off",1),se([Be.validateParams("string")],Se.prototype,"mute",1),se([Be.validateParams("string")],Se.prototype,"clear",1),se([Be.validateParams("string")],Se.prototype,"emit",1);var au=Se,nu=au;O(),O(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Rn=class extends Error{locale;constructor(e){super(`Locale "${e}" not found`),this.name="LocaleNotFoundError",this.locale=e}},Vr=Rn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var kn=class extends Error{key;locale;constructor(e,t){let r=String(e);super(`Text with key "${r}" not found in locale "${t}"`),this.name="MissingKeyInLocaleError",this.key=r,this.locale=t}},Bt=kn,{Utils:{Object:Gn,Function:su,Browser:Gg},Configs:{Languages:{DetectPlayerLocale:$g}}}=Ludex,$n=class extends Ludex.Plugins.BasePlugin{locale;fallbackLocale;data={};setFallbackLocale(e){this.fallbackLocale=e}hasTextKey(e,t){let r=t??this.getCurrentLocale(),{text:n}=this.getLocaleData(r);return Gn.hasOwn(n,e)}hasTextureKey(e,t){let r=t??this.getCurrentLocale(),{texture:n}=this.getLocaleData(r);return Gn.hasOwn(n,e)}add(e,t,r=!1){this.data[e]=t,r&&this.setFallbackLocale(e)}choose(e){this.locale=e;let{event:t}=this.codex;t.emit(Ludex.Events.LANGUAGE_CHANGED,{locale:e})}getText(e,t,r,n=!1){try{return this.uncaughtGetText(e,t,r,!n)}catch(y){return y instanceof Bt||y instanceof Vr,String(e)}}getTexture(e,t,r=!1){return this.uncaughtGetTexture(e,t,!r)}uncaughtGetText(e,t=[],r,n=!0){if(!n||this.fallbackLocale===void 0){let w=this.getRawText(e,r??this.getCurrentLocale());return this.replaceVariables(w,t)}let y=this.fallbackLocale,f=su.retry(()=>this.getRawText(e,r??this.getCurrentLocale()),()=>this.getRawText(e,y));return this.replaceVariables(f,t)}getRawText(e,t){if(!this.hasTextKey(e,t))throw new Bt(e,t);let{text:r}=this.getLocaleData(t);return r[e]}uncaughtGetTexture(e,t,r=!0){if(!r||this.fallbackLocale===void 0)return this.getRawTexture(e,t??this.getCurrentLocale());let n=this.fallbackLocale;return su.retry(()=>this.getRawTexture(e,t??this.getCurrentLocale()),()=>this.getRawTexture(e,n))}getRawTexture(e,t){if(!this.hasTextureKey(e,t))throw new Bt(e,t);let{texture:r}=this.getLocaleData(t);return r[e]}getCurrentLocale(){return this.locale??"en"}getLocaleData(e){let t=e??this.getCurrentLocale();if(!Gn.hasOwn(this.data,t))throw new Vr(t);return this.data[t]}replaceVariables(e,t){let r=t.length;if(r===0)return e;let n=e;for(let y=0;y<r;y++){let f=t[y],w=`%{${y}}`;n=n.replace(w,f)}return n}getPlayerLanguage(){let{player:e}=this.codex,t=GameSDK.getLocale()?.trim().split(/[-_]/)[0],r=this.getBrowserLanguage();return t!==r?t??r:e.isFirstSession()?r:e.getPlayerSetting("language")??r}getBrowserLanguage(){return $g===!1?"en":Gg.getLocale()?.trim()?.split(/[-_]/)[0]}},ou=$n,iu=ou;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),Fn();var{Configs:{OtherHost:Vt,Mockup:Ut,AppId:qg},Utils:{Object:Ht,String:Un,Valid:zg}}=Ludex,Hn=class{mockAPI;async initMockAPI(){if(this.mockAPI)return;let e=(await Promise.resolve().then(()=>(pu(),uu))).default;if(typeof e!="function")throw new Error("Cannot load LeaderboardAPIMock");this.mockAPI=new e}async getLeadersAsync(e,t,r){let n=Un.params(r),y;return Ut.Leaderboards.Enabled?(await this.initMockAPI(),"playerIds"in r?y=await this.mockAPI.getPlayers(e,r):y=await this.mockAPI.getLeaders(e,r)):y=await Re(`${t}?${n}`,{},Vt),!Ht.hasOwn(y,"data")||!Array.isArray(y.data)?[]:y.data}async getLeaderboardAsync(e){let t,r=`leaderboards/${e}`;return Ut.Leaderboards.Enabled?(await this.initMockAPI(),t=await this.mockAPI.getLeaderboardAsync(e)):(t=await Re(r,{},Vt),Ht.hasOwn(t,"data")&&typeof t.data=="object"&&(t=t.data)),t}async getLeaderboardsAsync(e){let t,r=Un.params(e);return Ut.Leaderboards.Enabled?(await this.initMockAPI(),t=await this.mockAPI.getLeaderboardsAsync(e)):(t=await Re(`leaderboards?${r}`,{},Vt),Ht.hasOwn(t,"data")&&Array.isArray(t.data)?t=t.data:t=[]),t}async setLeaderboardScoreAsync(e){let{leaderboardId:t,playerId:r,score:n}=e;Ut.Leaderboards.Enabled?(await this.initMockAPI(),await this.mockAPI.setScoreAsync(t,r,n)):await he(`leaderboards/${t}/players/${r}`,{score:n},{},Vt)}async createLeaderboardAsync(e){let t=e._id??Un.generateObjectId(),r=e.numberOfLeaders,n=R(S(S({},Ur),e),{_id:t,appId:qg,numberOfLeaders:r}),y="leaderboards",f;if(Ut.Leaderboards.Enabled?(await this.initMockAPI(),f=await this.mockAPI.createLeaderboard(n)):(f=await he(y,n,{},Vt),Ht.hasOwn(f,"data")&&zg.isObject(f.data)&&(f=f.data)),!Ht.hasOwn(f,"_id")||f._id!==t)throw new Error("Create leaderboard failed");return t}},mu=Hn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Yg={limit:0,offset:0,leaders:{},isRequesting:!1,amountPlayer:0},Kn=Yg;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Qg={leaderboards:{}},hu=Qg,{Utils:{Array:Jg,Valid:Xg,Json:fu,Object:Wr}}=Ludex,jn=class extends Ludex.Plugins.BasePlugin{lbAPI=new mu;configs;init(){let{storage:e}=this.codex;e.addStorage("leaderboard",hu),this.configs={}}addLeaderboard(e){let{name:t,type:r,leaderboardId:n,autoSortRank:y}=e;if(this.getLeaderboard(t))return;let f=`leaderboards/${n}/`;(r==="global"||r==="tournament")&&(f+="leaders"),r==="friends"&&(f+="players"),this.configs[t]={id:n,name:t,type:r,host:f,autoSortRank:y};let w=fu.clone(Kn);this.setLeaderboard(t,S({},w))}async requestLeaderboardsAsync(e){try{return await this.lbAPI.getLeaderboardsAsync(e)}catch{return[]}}async requestLeaderboardAsync(e,t){try{this.validateLeaderboard(e),this.clearLeaderboard(e),this.setLeaderboard(e,{isRequesting:!0});let{id:r,type:n,host:y}=this.configs[e],f=[];if(n==="friends"){let{player:w}=this.codex,A=w.getPlayerId(),x=w.getConnectedPlayerIds(t,0),v=[A,...x];this.configs[e].playerIds=[...v],f=await this.lbAPI.getLeadersAsync(r,y,{playerIds:v})}else f=await this.lbAPI.getLeadersAsync(r,y,{limit:t,offset:0});if(f.length===0)return;await this.receiveLeaderboardAsync(e,f),this.setLeaderboard(e,{limit:t,offset:0})}finally{let r=await this.lbAPI.getLeaderboardAsync(this.configs[e].id),n=r?r.resettable:"",y=r?r.amountPlayer:0;this.setLeaderboard(e,{isRequesting:!1,resettable:n,amountPlayer:y})}}async loadMoreLeaderboardAsync(e,t){let r=this.getLeaderboard(e);if(r&&this.configs[e].type!=="friends")try{this.setLeaderboard(e,{isRequesting:!0});let{id:n,host:y}=this.configs[e],{offset:f,limit:w}=r,A=f+w,x=await this.lbAPI.getLeadersAsync(n,y,{limit:t,offset:A});if(x.length===0)return;this.receiveLeaderboardAsync(e,x),this.setLeaderboard(e,{limit:t,offset:A})}finally{this.setLeaderboard(e,{isRequesting:!1})}}getLeaderboard(e){let{storage:t}=this.codex,r=t.getStorageData("leaderboard","leaderboards");return!r||!r[e]?null:r[e]}async getLeadersByPlayerIdsAsync(e,t){try{this.validateLeaderboard(e);let{id:r}=this.configs[e],n=`leaderboards/${r}/players`,y=await this.lbAPI.getLeadersAsync(r,n,{playerIds:t});return y.length===0?[]:this.toLeaders(y)}catch{return[]}}async getLeaderboardResponseAsync(e){return this.lbAPI.getLeaderboardAsync(e)}clearLeaderboard(e){try{this.validateLeaderboard(e);let t=fu.clone(Kn);this.setLeaderboard(e,null),this.setLeaderboard(e,S({},t))}catch{}}isLeaderboardEmpty(e){let t=this.getLeaderboard(e);if(!t)return!0;let{leaders:r}=t;return Object.keys(r).length===0}isExistLeaderboardId(e){let{configs:t}=this;return Wr.vals(t).some(r=>r.id===e)}getLeaderboardName(e){let{configs:t}=this,r=Jg.search(Wr.vals(t),n=>n.id===e);return r?r.name:null}async setLeaderboardScoreAsync(e,t,r){try{if(GameSDK.extra.isGuest)return;this.validateLeaderboard(e);let{id:n}=this.configs[e],y=await this.getLastScoreOnLeaderboard(e,t);if(y&&r<=y)return;await this.lbAPI.setLeaderboardScoreAsync({leaderboardId:n,playerId:t,score:r})}catch{}}async getLastScoreOnLeaderboard(e,t){let r=await this.getLeadersByPlayerIdsAsync(e,[t]);return r.length===0?null:r[0].score}async createLeaderboardAsync(e){return this.lbAPI.createLeaderboardAsync(e)}validateLeaderboard(e){let t=this.getLeaderboard(e);if(!Xg.isObject(t))throw new Error(`Leaderboard with name ${e} not found`)}setLeaderboard(e,t){if(!t)return;let{storage:r}=this.codex;r.setStorageData("leaderboard","leaderboards",{[e]:t})}async receiveLeaderboardAsync(e,t){this.validateLeaderboard(e);let r=(await this.toLeaders(t)).filter(x=>x.name&&x.photo),{leaders:n={}}=this.getLeaderboard(e)??{},y=r.filter(x=>n[x.playerId]?(n[x.playerId]=x,!1):!0),f=Wr.vals(n);y.length>0&&f.unshift(...y);let w=f.sort((x,v)=>v.score-x.score);this.configs[e].autoSortRank&&(w=w.map((x,v)=>R(S({},x),{rank:v+1})));let A=Wr.keyBy(w,"playerId");this.setLeaderboard(e,{leaders:A})}async toLeaders(e){let{profile:t}=this.codex,r=e.map(y=>y.playerId);await t.requestProfiles(r);let n=t.getProfiles();return e.map(y=>{let{playerId:f}=y,w=n[f];if(!w){let{language:A}=this.codex,x=A.getText("core.nameless")??"Nameless";return R(S({},y),{name:x,photo:"default"})}return R(S({},y),{name:w.name,photo:w.photo})}).map(y=>R(S({},y),{score:parseInt(y.score,10)}))}},yu=jn,gu=yu;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Wn=class{APIHost;setAPIHost(e){this.APIHost=e}getAPIHost(){return this.APIHost}},Pu=Wn,{Utils:xu}=Ludex,qn=class extends Pu{async createSingleMatchAsync(e){let t=await he("single-matches",e,{},this.getAPIHost());return this.returnValidMatchData(t)}async getSingleMatchDetailAsync(){let e=await Re("single-matches/active",{},this.getAPIHost());return this.returnValidMatchData(e)}async updateSingleMatchMoveAsync(e,t){let r=`single-matches/${e}/move`,n=await he(r,t,{},this.getAPIHost());return this.returnValidMatchData(n)}async finishSingleMatchAsync(e){let t=`single-matches/${e}/finish`,r=await he(t,{},{},this.getAPIHost());return this.returnValidMatchData(r)}async createMatchAsync(e){let t=await he("matches",e,{},this.getAPIHost());return this.returnValidMatchData(t)}async joinMatchAsync(e){let t=`matches/${e}/join`,r=await he(t,{},{},this.getAPIHost());return this.returnValidMatchData(r)}async getMatchDetailByIdAsync(e){let t=`matches/${e}`,r=await Re(t,{},this.getAPIHost());return this.returnValidMatchData(r)}async finishMatchAsync(e){let{matchId:t="",score:r=0,level:n=0,extraData:y={}}=e,f=`matches/${t}/finish`,w=await he(f,{matchId:t,score:r,level:n,extraData:y},{},this.getAPIHost());return this.returnValidMatchData(w)}returnValidMatchData(e){return xu.Valid.isObject(e)?xu.Object.hasOwn(e,"data")?e.data??{}:{}:{}}},wu=qn,zn=class{matchAPI;constructor(e){this.createAPI(),this.setAPIConfig(e)}createAPI(){this.matchAPI=new wu}setAPIConfig(e){e.matchAPIHost&&this.matchAPI.setAPIHost(e.matchAPIHost)}setMatchAPIInstance(e){this.matchAPI=e}getMatchAPI(){return this.matchAPI}},Au=zn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Yn=class{codex;match;constructor(e,t){this.codex=e,this.match=t}startLog(e){this.match.useCPUProfile}endLog(){this.match.useCPUProfile}async processAsync(e){throw new Error("Not implemented")}},N=Yn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Object:Zg,Valid:Kt,Json:eP}=Ludex.Utils,Qn=class{codex;match;nextHandler;stateData;constructor(e){this.codex=e.codex,this.match=e.match,this.nextHandler=null,this.stateData={Before:null,After:null}}setNext(e){return this.nextHandler=e,e}async processAsync(e){this.se("Before",e)}async nextAsync(e){this.se("After",e),this.Fe(),this.nextHandler&&await this.nextHandler.processAsync(e)}se(e,t){if(!Kt.isDebugger())return;this.stateData[e]=eP.clone(t);let r=t,{profiles:n,customData:y}=r,f=wa(r,["profiles","customData"])}Fe(){let{After:e,Before:t}=this.stateData;if(!e||!t)return;let r=Zg.diff(t,e);if(!Kt.isEmpty(r)){let n=r,{profiles:y={},customData:f={}}=n,w=wa(n,["profiles","customData"]);Kt.isEmpty(w),Kt.isEmpty(y),Kt.isEmpty(f)}this.stateData.After=null,this.stateData.Before=null}},C=Qn,Jn=class extends C{async processAsync(e){await this.nextAsync(e)}async nextAsync(e){this.nextHandler&&await this.nextHandler.processAsync(e)}},k=Jn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Xn=class extends te{constructor(e){super(e),this.name="LevelNotDefined",this.message=e??"Level is not defined"}},qr=Xn;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Zn=class extends te{constructor(e){super(e),this.name="MatchModeNotDefined",this.message=e??"Match id is not defined"}},ft=Zn,{Plugins:tP,Utils:rP}=Ludex,{Analytics:aP}=tP,{String:bu,Valid:vu}=rP,es=class extends C{async processAsync(e){super.processAsync(e);let{mode:t,customData:r}=e,{level:n}=r;this.validateMode(t),this.validateLevel(n);let{analytics:y}=this.codex;y.event(aP.Events.MATCH_START,{level:n,game_mode:bu.toUpperCamelCase(t),level_name:this.getLevelName(n)}),await this.nextAsync(e)}validateMode(e){if(!vu.isString(e))throw new ft}validateLevel(e){if(!vu.isNumber(e))throw new qr}getLevelName(e){return`Level ${bu.padStart(e.toString(),5,"0")}`}},Y=es;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var nP={OPEN:"open",ACTIVE:"active",FINISHED:"finished"},W=nP,ts=class extends C{async processAsync(e){super.processAsync(e);let{mode:t,status:r}=e,n=t??ke.SINGLE;r===W.FINISHED&&(n=ke.SINGLE),this.contextGameModeDetected(n),await this.nextAsync(e)}contextGameModeDetected(e){let{storage:t}=this.codex;t.setStorageData("context","contextGameMode",e)}},$=ts;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var rs=class extends Error{constructor(e){super(e),this.name="GetMatchDetailFailed",this.message=e??"Get match detail failed"}},yt=rs;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var as=class extends Error{constructor(e){super(e),this.name="MatchAreNotActive",this.message=e??"Match are not active"}},zr=as;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ns=class extends te{constructor(e){super(e),this.name="MatchIdNotValid",this.message=e??"Match id is not valid"}},re=ns;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ss=class extends Error{constructor(e){super(e),this.name="OpponentHasFinishedMatch",this.message=e||"Opponent has finished match"}},Du=ss;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var os=class extends te{constructor(e){super(e),this.name="OpponentIdNotValid",this.message=e??"Opponent id is not valid"}},z=os;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var is=class extends Error{constructor(e){super(e),this.name="PlayerNotCurrentInMatch",this.message=e??"The player is not currently in this match"}},gt=is;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var cs=class extends Error{constructor(e){super(e),this.name="PlayerNotFinishedMatch",this.message=e||"Player not finished match"}},Yr=cs,{Dtos:sP,Utils:{Object:oP}}=Ludex,ls=class extends C{async processAsync(e){super.processAsync(e),this.validateMatchData(e);let t=await this.getMatchAsync(e),r=new sP.Match.Data(t).toObject();this.validateAwaitMatchData(e,r),this.updateMatchData(e,r),this.validateMatchStatus(e),this.validatePlayerTurn(e),this.validateOpponentTurn(e),await this.nextAsync(e)}validateMatchData(e){let{id:t}=e;if(typeof t!="string")throw new re}validateMatchStatus(e){let{status:t}=e;if(t!==W.ACTIVE)throw new zr}validateAwaitMatchData(e,t){let{id:r,customData:n}=e,{_id:y,whitePlayerId:f,blackPlayerId:w}=t;if(typeof y!="string"||y!==r)throw new yt;let{playerId:A}=n,x=f===A,v=w===A;if(!x&&w===ie.playerId)throw new ht;if(!x&&!v)throw new gt}validatePlayerTurn(e){let{profiles:t,customData:r}=e,{playerId:n}=r;if(typeof n!="string")throw new G;let{finished:y}=t[n];if(!y)throw new Yr}validateOpponentTurn(e){let{profiles:t,customData:r}=e,{opponentId:n}=r;if(typeof n!="string")throw new z;let{finished:y}=t[n];if(y)throw new Du}async getMatchAsync(e){let{id:t}=e;return t?this.match.api.getMatchAPI().getMatchDetailByIdAsync(t):{}}updateMatchData(e,t){this.updateMatchGeneral(e,t),this.updatePlayerIds(e,t),this.initializeProfiles(e),this.updateScoresAndStatus(e,t)}updateMatchGeneral(e,t){let{status:r,extraData:n}=t;e.status=r,e.customData=oP.merge(e.customData,n)}updatePlayerIds(e,t){let{whitePlayerId:r,blackPlayerId:n}=t,y=r===e.customData.playerId;e.customData.playerId=y?r:n,e.customData.opponentId=y?n:r}initializeProfiles(e){let{playerId:t,opponentId:r}=e.customData;if(!t||!r)return;let n={name:"",photo:"",finished:!1};e.profiles[t]||(e.profiles[t]=S({id:t},n)),e.profiles[r]||(e.profiles[r]=S({id:r},n))}updateScoresAndStatus(e,t){let{playerId:r,opponentId:n}=e.customData;if(!r||!n)return;let{whitePlayerId:y,whitePlayerScore:f,whitePlayerFinish:w,blackPlayerScore:A,blackPlayerFinish:x}=t,v=y===r;e.profiles[r].score=v?f:A,e.profiles[n].score=v?A:f,e.profiles[r].finished=v?w:x,e.profiles[n].finished=v?x:w}},Su=ls;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var iP={level:1,rescued:0,contextId:null,playerId:null,opponentId:null,tournamentId:null,leaderboardId:null},Pt=iP,ds=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),this.initializeMatch(e),await this.nextAsync(e)}initializeMatch(e){let{id:t,mode:r,customData:n}=this.payload;e.id=t??null,e.mode=r||null,e.status=W.OPEN,e.startAt=0,e.finishAt=0,e.profiles={},e.customData=S(S(S({},Pt),e.customData),n)}},q=ds;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var cP=De,we=cP;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var us=class extends Error{constructor(e){super(e),this.name="UnavailableFeature",this.message=`Unavailable feature: ${e}`}},B=us;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ps=class extends te{constructor(e){super(e),this.name="ContextIdNotValid",this.message=e??"Context id is not valid"}},Q=ps;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ms=class extends te{constructor(e){super(e),this.name="ProfileNotFound",this.message=e??"Profile not found"}},V=ms,hs=class extends C{async processAsync(e){super.processAsync(e),this.validateData(e);let t=await this.createWideframesAwaitingAsync(e);t&&this.sendMessageAsync(e,t),await this.nextAsync(e)}validateData(e){let{id:t,customData:r}=e,{contextId:n,opponentId:y}=r;if(!t||typeof t!="string")throw new re;if(!n||typeof n!="string")throw new Q;if(!y||typeof y!="string")throw new z}async createWideframesAwaitingAsync(e){try{let{frameCapture:t}=this.codex,{profiles:r,customData:n}=e,{playerId:y,opponentId:f}=n;if(!y||!f)return null;let w=r[y],A=r[f];if(!w||!A)return null;let{photo:x,score:v=0,finished:D}=w;if(!D)return null;let{photo:I,score:E=0,finished:b}=A;return b?null:await t.renderAsync("result-challenge",{playerId:y,playerPhoto:x,playerScore:v,opponentId:f,opponentPhoto:I,opponentScore:E,isPlayerFinished:!0,isOpponentFinished:!1})}catch{return null}}async sendMessageAsync(e,t){let{id:r,profiles:n,customData:y}=e,{playerId:f,opponentId:w}=y;if(!f||typeof f!="string")throw new G;if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");let A=n[f];if(!A)throw new V;let{name:x}=A,v={data:{type:we.CHALLENGE_FRIEND,matchId:r,playerId:f,opponentId:w},action:"CUSTOM",template:"challenge",cta:{default:"Play",localizations:{vi_VN:"Ch\u01A1i ngay"}},text:{default:`${x} is waiting for you to finish this game. Play now!`,localizations:{vi_VN:`${x} \u0111ang ch\u1EDD b\u1EA1n k\u1EBFt th\xFAc tr\u1EADn \u0111\u1EA5u. Ch\u01A1i ngay!`}},image:t,strategy:"LAST",notification:"PUSH"};await GameSDK.extra.updateAsync(v)}},Iu=hs;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Dtos:lP}=Ludex,fs=class extends C{async processAsync(e){super.processAsync(e),this.validateData(e);let{customData:t}=e,{playerId:r,opponentId:n}=t,y=r,f=await this.getProfile(y);if(!f)throw new V;if(this.updateMatchProfile(e,y,f),y=n,y!==ie.playerId){let w=await this.getProfile(y);if(!w)throw new V;this.updateMatchProfile(e,y,w)}else this.updateMatchProfile(e,y);await this.nextAsync(e)}validateData(e){let{customData:t}=e,{playerId:r,opponentId:n}=t;if(!r||typeof r!="string")throw new G;if(!n||typeof n!="string")throw new z}async getProfile(e){let{profile:t}=this.codex;return await t.requestProfiles([e]),t.getProfiles()[e]}updateMatchProfile(e,t,r){let{name:n,photo:y}=r??ie,f=new lP.Match.Profile({id:t,name:n,photo:y}).toObject();e.profiles[t]?(e.profiles[t].name=f.name,e.profiles[t].photo=f.photo):e.profiles[t]=f}},le=fs,ys=class extends N{async processAsync(e){try{this.startLog(e);let{matchId:t,playerId:r,opponentId:n}=e,y=new k(this),f=new q(this,{id:t,mode:j.CHALLENGE_FRIEND,customData:{playerId:r,opponentId:n}});y.setNext(f);let w=new Su(this);f.setNext(w);let A=new le(this);w.setNext(A);let x=new Iu(this);A.setNext(x);let v=new Y(this);x.setNext(v);let D=new $(this);v.setNext(D);let I=this.match.getMatchState();await y.processAsync(I)}finally{this.endLog()}}},Lu=ys;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var gs=class extends te{constructor(e){super(e),this.name="CreateContextFailed",this.message=e??"Create context failed"}},xt=gs,{Valid:Cu,Object:Eu}=Ludex.Utils,Ps=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e);let{opponentId:t}=this.payload,r=await this.createAsync(t);e.customData.contextId=r,await this.nextAsync(e)}async createAsync(e){try{await GameSDK.context.createAsync(e)}catch(r){this.validateError(r)}let t=GameSDK.context.getID();if(!Cu.isString(t))throw new xt;return t}validateError(e){if(!Eu.hasOwn(e,"code"))throw e;if(e.code!=="SAME_CONTEXT"){if(e.code==="INVALID_PARAM"){if(!this.isNotConnectedPlayerError(e))throw e;return}throw e}}validateErrorMessage(e){if(!Eu.hasOwn(e,"message")||!Cu.isString(e.message))throw e}isNotConnectedPlayerError(e){return this.validateErrorMessage(e),e.message.indexOf("is not a connected player of the current player")>-1}},Mu=Ps;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var xs=class extends te{constructor(e){super(e),this.name="MatchAreNotOpen",this.message=e??"Match are not open"}},Ve=xs,{Dtos:dP,Utils:{Object:uP}}=Ludex,ws=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),this.validateData(e);let t=await this.createMatchAsync(e),r=new dP.Match.Data(t).toObject();this.updateMatchState(e,r),await this.nextAsync(e)}validateData(e){let{status:t,customData:r}=e,{opponentId:n}=r;if(typeof n!="string")throw new z;if(t!==W.OPEN)throw new Ve}async createMatchAsync(e){let{opponentId:t}=e.customData,{extraData:r}=this.payload;if(!t)return{};let n={opponentPlayerId:t,extraData:r};return this.match.api.getMatchAPI().createMatchAsync(n)}updateMatchState(e,t){this.updateMatchGeneral(e,t),this.updatePlayerIds(e,t),this.initializeProfiles(e),this.updateFinishStatus(e,t)}updateMatchGeneral(e,t){let{_id:r,extraData:n}=t;e.id=r||null,e.customData=uP.merge(e.customData,n)}updatePlayerIds(e,t){let{whitePlayerId:r,blackPlayerId:n}=t,{customData:y}=e,f=r===y.opponentId,w=f?n:r,A=f?r:n;e.customData.playerId=w,e.customData.opponentId=A}initializeProfiles(e){let{playerId:t,opponentId:r}=e.customData;if(!t||!r)return;let n={name:"",photo:"",finished:!1};e.profiles[t]||(e.profiles[t]=S({id:t},n)),e.profiles[r]||(e.profiles[r]=S({id:r},n))}updateFinishStatus(e,t){let{playerId:r,opponentId:n}=e.customData;if(!r||!n)return;let{whitePlayerId:y,whitePlayerFinish:f,blackPlayerFinish:w}=t,A=y===e.customData.opponentId,x=A?w:f,v=A?f:w;e.profiles[r].finished=x,e.profiles[n].finished=v}},Qr=ws;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var As=class extends C{async processAsync(e){if(super.processAsync(e),e.status!==W.OPEN)throw new Ve;this.startMatch(e),await this.nextAsync(e)}startMatch(e){e.status=W.ACTIVE,e.startAt=Date.now()}},J=As;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var bs=class extends C{async processAsync(e){super.processAsync(e),this.validateData(e);let t=await this.createWideframesChallengeAsync(e);t&&this.sendMessageAsync(e,t),await this.nextAsync(e)}validateData(e){let{id:t,customData:r}=e,{contextId:n,opponentId:y}=r;if(!t||typeof t!="string")throw new re;if(!n||typeof n!="string")throw new Q;if(!y||typeof y!="string")throw new z}async createWideframesChallengeAsync(e){try{let{frameCapture:t}=this.codex,{profiles:r,customData:n}=e,{playerId:y,opponentId:f}=n;if(!y||!f)return null;let w=r[y],A=r[f];if(!w||!A)return null;let{photo:x,score:v=0}=w,{photo:D,score:I=0}=A;return await t.renderAsync("result-challenge",{playerId:y,playerPhoto:x,playerScore:v,opponentId:f,opponentPhoto:D,opponentScore:I,isPlayerFinished:!1,isOpponentFinished:!1})}catch{return null}}async sendMessageAsync(e,t){let{id:r,profiles:n,customData:y}=e,{playerId:f,opponentId:w}=y;if(!f||typeof f!="string")throw new G;if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");let{name:A}=n[f],x={data:{type:we.CHALLENGE_FRIEND,matchId:r,playerId:f,opponentId:w},action:"CUSTOM",template:"challenge",cta:{default:"Play",localizations:{vi_VN:"Ch\u01A1i ngay"}},text:{default:`${A} challenges you`,localizations:{vi_VN:`${A} th\u1EED th\xE1ch b\u1EA1n trong tr\u1EADn \u0111\u1EA5u n\xE0y. Ch\u01A1i ngay!`}},image:t,strategy:"IMMEDIATE",notification:"PUSH"};await GameSDK.extra.updateAsync(x)}},Jr=bs,vs=class extends N{async processAsync(e){try{this.startLog(e);let{playerId:t,opponentId:r,extraData:n}=e,y=new k(this),f=new Mu(this,{opponentId:r});y.setNext(f);let w=new q(this,{mode:j.CHALLENGE_FRIEND,customData:{playerId:t,opponentId:r}});f.setNext(w);let A=new Qr(this,{extraData:n});w.setNext(A);let x=new le(this);A.setNext(x);let v=new J(this);x.setNext(v);let D=new Y(this);v.setNext(D);let I=new Jr(this);D.setNext(I);let E=new $(this);I.setNext(E);let b=this.match.getMatchState();await y.processAsync(b)}finally{this.endLog()}}},Tu=vs;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ds=class extends Error{constructor(e){super(e),this.name="SameContext",this.message=e??"Same context"}},Xr=Ds,{Utils:Ou}=Ludex,Ss=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e);let{contextId:t}=this.payload;await this.switchAsync(t),e.customData.contextId=t,await this.nextAsync(e)}checkSameContext(e){let t=e==="SOLO",r=GameSDK.context.getID();if(r===e)throw new Xr;if(t&&r===null)throw new Xr}async switchAsync(e){let t=e==="SOLO";try{this.checkSameContext(e),await GameSDK.context.switchAsync(e,t)}catch(r){if(r instanceof Xr)return;if(!Ou.Object.hasOwn(r,"code"))throw r;if(Ou.Device.isAndroid()&&t&&r.code==="INVALID_PARAM")return;if(r.code!=="SAME_CONTEXT")throw r}}},Ue=Ss;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Dtos:pP,Utils:{Object:mP}}=Ludex,Is=class extends C{async processAsync(e){super.processAsync(e),this.validateMatchData(e);let t=await this.getMatchAsync(e),r=new pP.Match.Data(t).toObject();this.validateContinueMatchData(e,r),this.updateMatchData(e,r),this.validatePlayerTurn(e),await this.nextAsync(e)}validateMatchData(e){let{id:t,status:r}=e;if(typeof t!="string")throw new re;if(r!==W.OPEN)throw new Ve}validateContinueMatchData(e,t){let{id:r,customData:n}=e,{_id:y,whitePlayerId:f,blackPlayerId:w}=t;if(typeof y!="string"||y!==r)throw new yt;let{playerId:A}=n,x=f===A,v=w===A;if(!x&&w===ie.playerId)throw new ht;if(!x&&!v)throw new gt}validatePlayerTurn(e){let{profiles:t,customData:r}=e,{playerId:n}=r;if(typeof n!="string")throw new G;let{finished:y}=t[n];if(y)throw new Nr}async getMatchAsync(e){let{id:t}=e;return t?this.match.api.getMatchAPI().getMatchDetailByIdAsync(t):{}}updateMatchData(e,t){this.updateMatchGeneral(e,t),this.updatePlayerIds(e,t),this.initializeProfiles(e),this.updateScoresAndStatus(e,t)}updateMatchGeneral(e,t){let{extraData:r}=t;e.customData=mP.merge(e.customData,r)}updatePlayerIds(e,t){let{whitePlayerId:r,blackPlayerId:n}=t,y=r===e.customData.playerId;e.customData.playerId=y?r:n,e.customData.opponentId=y?n:r}initializeProfiles(e){let{playerId:t,opponentId:r}=e.customData;if(!t||!r)return;let n={name:"",photo:"",finished:!1};e.profiles[t]||(e.profiles[t]=S({id:t},n)),e.profiles[r]||(e.profiles[r]=S({id:r},n))}updateScoresAndStatus(e,t){let{playerId:r,opponentId:n}=e.customData;if(!r||!n)return;let{whitePlayerId:y,whitePlayerScore:f,whitePlayerFinish:w,blackPlayerScore:A,blackPlayerFinish:x}=t,v=y===r;e.profiles[r].score=v?f:A,e.profiles[n].score=v?A:f,e.profiles[r].finished=v?w:x,e.profiles[n].finished=v?x:w}},_u=Is;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ls=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){if(super.processAsync(e),this.payload.ignore){await this.nextAsync(e);return}this.validateData(e);let t=await this.createWideframesCurrentScoreAsync(e);t&&this.sendMessageAsync(e,t),await this.nextAsync(e)}validateData(e){let{id:t,customData:r}=e,{contextId:n,opponentId:y}=r;if(!t||typeof t!="string")throw new re;if(!n||typeof n!="string")throw new Q;if(!y||typeof y!="string")throw new z}async createWideframesCurrentScoreAsync(e){try{let{player:t,frameCapture:r}=this.codex,{playerId:n,photo:y}=t.getPlayer(),{opponentId:f}=e.customData;if(f==null)return null;let w=e.profiles[f];if(!w)return null;let A=w.photo;return await r.renderAsync("update-challenge",{playerId:n,playerPhoto:y,opponentId:f,opponentPhoto:A})}catch{return null}}async sendMessageAsync(e,t){let{id:r,profiles:n,customData:y}=e,{playerId:f,opponentId:w}=y;if(!f||typeof f!="string")throw new G;if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");let A=n[f];if(!A)throw new V;let{name:x}=A,v={data:{type:we.CHALLENGE_FRIEND,matchId:r,playerId:f,opponentId:w},action:"CUSTOM",template:"challenge",cta:{default:"Play",localizations:{vi_VN:"Ch\u01A1i ngay"}},text:{default:`${x} made an update.`,localizations:{vi_VN:`${x} \u0111\xE3 c\u1EADp nh\u1EADt tr\u1EADn \u0111\u1EA5u. Ch\u01A1i ngay!`}},image:t,strategy:"LAST",notification:"PUSH"};if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");await GameSDK.extra.updateAsync(v)}},Nu=Ls,Cs=class extends N{async processAsync(e){try{this.startLog(e);let{contextId:t,matchId:r,playerId:n,opponentId:y,sendUpdateMessage:f=!0}=e,w=new k(this),A=new Ue(this,{contextId:t});w.setNext(A);let x=new q(this,{id:r,mode:j.CHALLENGE_FRIEND,customData:{playerId:n,opponentId:y}});A.setNext(x);let v=new _u(this);x.setNext(v);let D=new le(this);v.setNext(D);let I=new J(this);D.setNext(I);let E=new Nu(this,{ignore:!f});I.setNext(E);let b=new Y(this);E.setNext(b);let T=new $(this);b.setNext(T);let U=this.match.getMatchState();await w.processAsync(U)}finally{this.endLog()}}},Ru=Cs;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Plugins:hP,Utils:fP}=Ludex,{Analytics:yP}=hP,{String:ku,Valid:Gu}=fP,Es=class extends C{async processAsync(e){super.processAsync(e);let{customData:t,mode:r,startAt:n,finishAt:y}=e,{level:f}=t;this.validateMode(r),this.validateLevel(f);let{analytics:w}=this.codex,A=Math.floor((y-n)/1e3);w.event(yP.Events.MATCH_END,{level:f,game_mode:ku.toUpperCamelCase(r),level_name:this.getLevelName(f),time_played:A}),await this.nextAsync(e)}validateMode(e){if(!Gu.isString(e))throw new ft}validateLevel(e){if(!Gu.isNumber(e))throw new qr}getLevelName(e){return`Level ${ku.padStart(e.toString(),5,"0")}`}},Ee=Es;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ms=class extends Error{constructor(e){super(e),this.name="LeaderboardNotExist",this.message=e??"Leaderboard not exist in game"}},Zr=Ms;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ts=class extends Error{constructor(e){super(e),this.name="ScoreNotValid",this.message=e??"Score is not valid"}},wt=Ts,{Utils:{Valid:gP},Configs:{Leaderboards:{LeaderboardList:PP}}}=Ludex,Os=class extends C{payload;skipPostScore;constructor(e,t){super(e),this.payload={score:0,playerId:""},this.skipPostScore=!!t?.ignore}async processAsync(e){if(super.processAsync(e),this.skipPostScore){await this.nextAsync(e);return}this.setupSetScorePayload(e),"submitGameResultsAsync"in GameSDK.extra&&await GameSDK.extra.submitGameResultsAsync(this.payload.score);for(let t of PP){let{Id:r,Mode:n}=t;!e.mode||!this.isValidMode(n,e.mode)||this.setLeaderboardScoreAsync(S({leaderboardId:r},this.payload))}await this.nextAsync(e)}isValidMode(e,t){return e===t}async setupSetScorePayload(e){let{profiles:t,customData:r}=e,{playerId:n}=r;if(!n||!t[n])throw new V;let{score:y}=t[n];if(!gP.isNumber(y))throw new wt;this.payload={score:y,playerId:n}}async setLeaderboardScoreAsync(e){try{let{playerId:t,score:r,leaderboardId:n}=e,y=this.codex.leaderboard.getLeaderboardName(n);if(!y)throw new Zr;await this.codex.leaderboard.setLeaderboardScoreAsync(y,t,r)}catch{}}},He=Os;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Dtos:xP,Utils:wP}=Ludex,{Valid:ea,Object:AP}=wP,_s=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),this.validateMatchData(e);let{useAPI:t}=this.payload;if(t){let r=await this.finishMatchAsync(e),n=new xP.Match.Data(r).toObject();this.updateMatchFromAPI(e,n)}else this.updateMatchData(e);this.updateMatchState(e),await this.nextAsync(e)}validateMatchData(e){let{status:t,profiles:r,customData:n}=e;if(t!==W.ACTIVE)throw new zr;let{playerId:y}=n;if(!y||!AP.hasOwn(r,y))throw new gt}updateMatchData(e){let{playerId:t}=e.customData;if(!ea.isString(t))throw new G;e.profiles[t].finished=!0}updateMatchState(e){e.status=W.FINISHED,e.finishAt=Date.now()}async finishMatchAsync(e){let{id:t,profiles:r,customData:n}=e,{level:y,playerId:f}=n;if(!ea.isString(f))throw new G;let{score:w}=r[f],{extraData:A}=this.payload,x={matchId:t??"",score:w,level:y,extraData:A};return this.match.api.getMatchAPI().finishMatchAsync(x)}updateMatchFromAPI(e,t){let{playerId:r,opponentId:n}=e.customData;if(!ea.isString(r))throw new G;if(!ea.isString(n))throw new z;let{whitePlayerId:y,whitePlayerScore:f,blackPlayerScore:w,whitePlayerFinish:A,blackPlayerFinish:x}=t,v=r===y,D=v?f:w,I=v?w:f,E=v?A:x,b=v?x:A;e.profiles[r].score=D,e.profiles[n].score=I,e.profiles[r].finished=E,e.profiles[n].finished=b}},Me=_s;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ns=class extends C{async processAsync(e){super.processAsync(e),this.validateData(e);let t=await this.createWideframesResultAsync(e);t&&this.progressSendFinishedMessage(e,t),await this.nextAsync(e)}validateData(e){let{id:t,customData:r}=e,{contextId:n,opponentId:y}=r;if(!t||typeof t!="string")throw new re;if(!n||typeof n!="string")throw new Q;if(!y||typeof y!="string")throw new z}async createWideframesResultAsync(e){try{let{frameCapture:t}=this.codex,{profiles:r,customData:n}=e,{playerId:y,opponentId:f}=n;if(!y||!f)return null;let w=r[y],A=r[f];if(!w||!A)return null;let{photo:x,score:v=0,finished:D}=w,{photo:I,score:E=0,finished:b}=A;return await t.renderAsync("result-challenge",{playerId:y,playerPhoto:x,playerScore:v,opponentId:f,opponentPhoto:I,opponentScore:E,isPlayerFinished:!!D,isOpponentFinished:!!b})}catch{return null}}progressSendFinishedMessage(e,t){let{profiles:r,customData:n}=e,{playerId:y,opponentId:f}=n;if(!y||typeof y!="string")throw new G;if(!f||typeof f!="string")throw new z;if(!r[y]||!r[f])throw new V;let{score:w=0,finished:A}=r[y],{score:x=0,finished:v}=r[f];A?this.sendFinishMessageAsync(e,t):v&&w>x?this.sendBestScoreMessageAsync(e,t):this.sendPlayTurnMessageAsync(e,t)}async sendFinishMessageAsync(e,t){let{id:r,profiles:n,customData:y}=e,{playerId:f,opponentId:w}=y;if(!f||typeof f!="string")throw new G;if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");let A=n[f];if(!A)throw new V;let{name:x}=A,v={data:{type:we.CHALLENGE_FRIEND,matchId:r,playerId:f,opponentId:w,status:W.FINISHED},action:"CUSTOM",template:"finished",cta:{default:"See result",localizations:{vi_VN:"Xem k\u1EBFt qu\u1EA3"}},text:{default:`${x} just finished. Check them now.`,localizations:{vi_VN:`${x} v\u1EEBa ho\xE0n th\xE0nh m\xE0n ch\u01A1i. Nh\u1EA5n \u0111\u1EC3 xem k\u1EBFt qu\u1EA3 tr\u1EADn \u0111\u1EA5u.`}},image:t,strategy:"IMMEDIATE",notification:"PUSH"};if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");await GameSDK.extra.updateAsync(v)}async sendPlayTurnMessageAsync(e,t){let{id:r,profiles:n,customData:y}=e,{playerId:f,opponentId:w}=y;if(!f||typeof f!="string")throw new G;let A=n[f];if(!A)throw new V;let{name:x,score:v}=A,D={data:{type:we.CHALLENGE_FRIEND,matchId:r,playerId:f,opponentId:w,status:W.ACTIVE},action:"CUSTOM",template:"finished",cta:{default:"Play",localizations:{vi_VN:"Ch\u01A1i ngay"}},text:{default:`${x} got ${v} scores. So easy! Can you?`,localizations:{vi_VN:`${x} \u0111\xE3 \u0111\u1EA1t ${v} \u0111i\u1EC3m! Nh\u1EA5n Ch\u01A1i \u0111\u1EC3 so t\xE0i!`}},image:t,strategy:"IMMEDIATE",notification:"PUSH"};if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");await GameSDK.extra.updateAsync(D)}async sendBestScoreMessageAsync(e,t){let{id:r,profiles:n,customData:y}=e,{playerId:f,opponentId:w}=y;if(!f||typeof f!="string")throw new G;let A=n[f];if(!A)throw new V;let{name:x,score:v}=A,D={data:{type:we.CHALLENGE_FRIEND,matchId:r,playerId:f,opponentId:w,status:W.FINISHED},action:"CUSTOM",template:"pass_score",cta:{default:"See result",localizations:{vi_VN:"Xem k\u1EBFt qu\u1EA3"}},text:{default:`${x} beat your high score. Their score: ${v}`,localizations:{vi_VN:`${x} \u0111\xE3 v\u01B0\u1EE3t qua \u0111i\u1EC3m s\u1ED1 c\u1EE7a b\u1EA1n, v\u1EDBi ${v} \u0111i\u1EC3m!`}},image:t,strategy:"IMMEDIATE",notification:"PUSH"};if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");await GameSDK.extra.updateAsync(D)}},$u=Ns;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Rs=class extends C{ignore;constructor(e,t){super(e),this.ignore=!!t?.ignore}async processAsync(e){super.processAsync(e),this.setPlayerBestScore(e),await this.nextAsync(e)}setPlayerBestScore(e){if(this.ignore)return;let{profiles:t,customData:r}=e,{playerId:n}=r;if(!n||!t[n])throw new V;let{player:y}=this.codex,f=y.getBestScore()||0,{score:w=0}=t[n];w<=f||(y.setBestScore(w),t[n].bestScore=w)}},Te=Rs,ks=class extends N{async processAsync(e){try{this.startLog(e);let{extraData:t}=e??{},r=new k(this),n=new Me(this,{useAPI:!0,extraData:t});r.setNext(n);let y=new $u(this);n.setNext(y);let f=new Ee(this);y.setNext(f);let w=new Te(this);f.setNext(w);let A=new He(this);w.setNext(A);let x=new $(this);A.setNext(x);let v=this.match.getMatchState();await r.processAsync(v)}finally{this.endLog()}}},Fu=ks;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Gs=class extends Error{constructor(e){super(e),this.name="ContextAreSolo",this.message=e??"Context are solo"}},Bu=Gs;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var $s=class extends Error{constructor(e){super(e),this.name="ContextNotChallenge",this.message=e??"Context is not a challenge"}},Vu=$s;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Fs=class extends Error{constructor(e){super(e),this.name="NetworkFailure",this.message=e??"Network failure"}},Uu=Fs,{Utils:bP,Dtos:vP}=Ludex,{Array:DP,Object:SP}=bP,Bs=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),this.checkCurrentContext();let t=await this.getOpponentIdFromContextAsync();e.customData.opponentId=t,await this.nextAsync(e)}checkCurrentContext(){let e=GameSDK.context.getID();if(typeof e!="string")throw new Q;if(e==="SOLO")throw new Bu}async getOpponentIdFromContextAsync(){let{ignoreId:e}=this.payload,t=await this.getContextPlayers([e]);if(t.length>1)throw new Vu;let r=ie;return t.length===1&&(r=t[0]),r.playerId}async getContextPlayers(e){try{let t=await GameSDK.context.getPlayersAsync(),r=[];for(let n of t){let y=n.getID();if(e.indexOf(y)>-1)continue;let f=n.getName();if(!f)continue;let w=n.getPhoto();r.push(new vP.Player.Info({playerId:y,name:f,photo:w}).toObject())}return DP.unique(r)}catch(t){if(SP.hasOwn(t,"code")&&t.code==="NETWORK_FAILURE")throw new Uu;return[]}}},ta=Bs;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Vs=class extends Error{constructor(e){super(e),this.name="ContextIsTournament",this.message=e??"Context is a tournament"}},jt=Vs,{Object:IP}=Ludex.Utils,Us=class extends C{async processAsync(e){super.processAsync(e);let t=await this.chooseAsync();await this.checkContextTournament(),e.customData.contextId=t,await this.nextAsync(e)}async chooseAsync(){try{await GameSDK.context.chooseAsync({filters:["INCLUDE_EXISTING_CHALLENGES"],minSize:2,maxSize:2})}catch(t){if(!IP.hasOwn(t,"code")||t.code!=="SAME_CONTEXT")throw t}let e=GameSDK.context.getID();if(typeof e!="string")throw new xt;return e}async checkContextTournament(){try{if(!GameSDK.context.getID())return;throw"getTournamentAsync"in GameSDK?(await GameSDK.getTournamentAsync(),new jt):new B("getTournamentAsync")}catch(e){if(e instanceof jt)throw e}}},Hu=Us,Hs=class extends N{async processAsync(e){try{this.startLog(e);let{playerId:t,extraData:r}=e,n=new k(this),y=new Hu(this);n.setNext(y);let f=new q(this,{mode:j.CHALLENGE_FRIEND,customData:{playerId:t}});y.setNext(f);let w=new ta(this,{ignoreId:t});f.setNext(w);let A=new Qr(this,{extraData:r});w.setNext(A);let x=new le(this);A.setNext(x);let v=new J(this);x.setNext(v);let D=new Y(this);v.setNext(D);let I=new Jr(this);D.setNext(I);let E=new $(this);I.setNext(E);let b=this.match.getMatchState();await n.processAsync(b)}finally{this.endLog()}}},Ku=Hs;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ks=class extends Error{constructor(e){super(e),this.name="JoinMatchFailed",this.message=e??"Join match failed"}},ju=Ks;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var js=class extends Error{constructor(e){super(e),this.name="MatchAreFinished",this.message=e??"Match are finished"}},Wu=js;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ws=class extends Error{constructor(e){super(e),this.name="OtherPlayerHasJoinedMatch",this.message=e??"Other player has joined match"}},qu=Ws,{Dtos:LP,Utils:{Object:CP}}=Ludex,qs=class extends C{async processAsync(e){super.processAsync(e),this.validateMatchData(e);let t=await this.joinMatchAsync(e),r=new LP.Match.Data(t).toObject();this.validateJoinMatchData(e,r),this.updateMatchData(e,r),await this.nextAsync(e)}validateMatchData(e){let{status:t}=e;if(t!==W.OPEN)throw new Ve}validateJoinMatchData(e,t){let{id:r,customData:n}=e,{_id:y,blackPlayerId:f,whitePlayerId:w,whitePlayerFinish:A,blackPlayerFinish:x}=t,v=f===n.playerId,D=w===n.opponentId;if(typeof y!="string"||y!==r||!D)throw new ju;if(A&&x)throw new Wu;if(!v)throw new qu}async joinMatchAsync(e){let{id:t}=e;return t?this.match.api.getMatchAPI().joinMatchAsync(t):{}}updateMatchData(e,t){this.updateMatchGeneral(e,t),this.updatePlayerIds(e,t),this.initializeProfiles(e),this.updateScoresAndStatus(e,t)}updateMatchGeneral(e,t){let{extraData:r}=t;e.customData=CP.merge(e.customData,r)}updatePlayerIds(e,t){let{whitePlayerId:r,blackPlayerId:n}=t,{customData:y}=e,f=r===y.playerId,w=f?r:n,A=f?n:r;e.customData.playerId=w,e.customData.opponentId=A}initializeProfiles(e){let{playerId:t,opponentId:r}=e.customData;if(!t||!r)return;let n={name:"",photo:"",finished:!1};e.profiles[t]||(e.profiles[t]=S({id:t},n)),e.profiles[r]||(e.profiles[r]=S({id:r},n))}updateScoresAndStatus(e,t){let{playerId:r,opponentId:n}=e.customData;if(!r||!n)return;let{whitePlayerId:y,whitePlayerScore:f,whitePlayerFinish:w,blackPlayerScore:A,blackPlayerFinish:x}=t,v=y===e.customData.playerId;e.profiles[r].score=v?f:A,e.profiles[n].score=v?A:f,e.profiles[r].finished=v?w:x,e.profiles[n].finished=v?x:w}},zu=qs;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var zs=class extends C{async processAsync(e){super.processAsync(e),this.validateData(e);let t=await this.createWideframesAcceptedAsync(e);t&&this.sendMessageAsync(e,t),await this.nextAsync(e)}validateData(e){let{id:t,customData:r}=e,{contextId:n,opponentId:y}=r;if(!t||typeof t!="string")throw new re;if(!n||typeof n!="string")throw new Q;if(!y||typeof y!="string")throw new z}async createWideframesAcceptedAsync(e){try{let{frameCapture:t}=this.codex,{profiles:r,customData:n}=e,{playerId:y,opponentId:f}=n;if(!y||!f)return null;let w=r[y],A=r[f];if(!w||!A)return null;let{photo:x,score:v=0,finished:D}=w;if(D)return null;let{photo:I,score:E=0,finished:b}=A;return b?await t.renderAsync("result-challenge",{playerId:y,playerPhoto:x,playerScore:v,opponentId:f,opponentPhoto:I,opponentScore:E,isPlayerFinished:!1,isOpponentFinished:!0}):null}catch{return null}}async sendMessageAsync(e,t){let{id:r,profiles:n,customData:y}=e,{playerId:f,opponentId:w}=y;if(!f||typeof f!="string")throw new G;if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");let A=n[f];if(!A)throw new V;let{name:x}=A,v={data:{type:we.CHALLENGE_FRIEND,matchId:r,playerId:f,opponentId:w},action:"CUSTOM",template:"challenge",cta:{default:"Play",localizations:{vi_VN:"Ch\u01A1i ngay"}},text:{default:`${x} accepted the challenge.`,localizations:{vi_VN:`${x} \u0111\xE3 ch\u1EA5p nh\u1EADn tham gia tr\u1EADn \u0111\u1EA5u.`}},image:t,strategy:"LAST",notification:"PUSH"};await GameSDK.extra.updateAsync(v)}},Yu=zs,Ys=class extends N{async processAsync(e){try{this.startLog(e);let{matchId:t,playerId:r,opponentId:n}=e,y=new k(this),f=new q(this,{id:t,mode:j.CHALLENGE_FRIEND,customData:{playerId:r,opponentId:n}});y.setNext(f);let w=new zu(this);f.setNext(w);let A=new le(this);w.setNext(A);let x=new J(this);A.setNext(x);let v=new Yu(this);x.setNext(v);let D=new Y(this);v.setNext(D);let I=new $(this);D.setNext(I);let E=this.match.getMatchState();await y.processAsync(E)}finally{this.endLog()}}},Qu=Ys;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var EP={_id:"",status:"",appId:"",createdAt:"",startedAt:null,finishedAt:null,winnerId:"",whitePlayerId:"",blackPlayerId:"",whitePlayerScore:0,blackPlayerScore:0,whitePlayerFinish:!1,blackPlayerFinish:!1,extraData:{}},Ju=EP,{Configs:{AppId:MP},Utils:{Valid:ye}}=Ludex,ge="is invalid",Wt=class extends ee{setupData(e){this.f(e)}d(e){this.p(e)}h(e){this.g(e)}validateId(e){(!ye.isString(e)||!e)&&this.e("_id",ge)}validateStatus(e){(!ye.isString(e)||!e)&&this.e("status",ge)}validateAppId(e){(!ye.isString(e)||e!==MP)&&this.e("appId",ge)}validateCreatedAt(e){ye.isString(e)||this.e("createdAt",ge)}validateStartedAt(e){e!==null&&(ye.isString(e)||this.e("startedAt",ge))}validateFinishedAt(e){e!==null&&(ye.isString(e)||this.e("finishedAt",ge))}validateExtraData(e){e!==null&&(ye.isObject(e)||this.e("extraData",ge))}validateWinnerId(e){e!==null&&(!ye.isString(e)||!e)&&this.e("winnerId",ge)}validateWhitePlayerId(e){(!ye.isString(e)||!e)&&this.e("whitePlayerId",ge)}validateBlackPlayerId(e){(!ye.isString(e)||!e)&&this.e("blackPlayerId",ge)}validateWhitePlayerScore(e){ye.isNumber(e)||this.e("whitePlayerScore",ge)}validateBlackPlayerScore(e){ye.isNumber(e)||this.e("blackPlayerScore",ge)}validateWhitePlayerFinish(e){ye.isBoolean(e)||this.e("whitePlayerFinish",ge)}validateBlackPlayerFinish(e){ye.isBoolean(e)||this.e("blackPlayerFinish",ge)}toObject(){return super.toObject()}};Wt.makeStrict(),Wt.addDefaultData(Ju);var ra=Wt;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Qs=class extends Error{constructor(e){super(e),this.name="MatchAreNotFinished",this.message=e||"Match are not finished"}},Xu=Qs;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Js=class extends Error{constructor(e){super(e),this.name="OpponentNotFinishedMatch",this.message=e||"Opponent not finished match"}},Zu=Js,{Utils:{Object:TP}}=Ludex,Xs=class extends C{async processAsync(e){super.processAsync(e),this.validateMatchData(e);let t=await this.getMatchAsync(e),r=new ra(t).toObject();this.validateResultMatchData(e,r),this.updateMatchData(e,r),this.validatePlayerTurn(e),this.validateOpponentTurn(e),await this.nextAsync(e)}validateMatchData(e){let{id:t}=e;if(typeof t!="string")throw new re}validateResultMatchData(e,t){let{id:r}=e,{_id:n,whitePlayerFinish:y,blackPlayerFinish:f}=t;if(typeof n!="string"||n!==r)throw new yt;if(!y&&!f)throw new Xu}validatePlayerTurn(e){let{profiles:t,customData:r}=e,{playerId:n}=r;if(typeof n!="string")throw new G;let{finished:y}=t[n];if(!y)throw new Yr}validateOpponentTurn(e){let{profiles:t,customData:r}=e,{opponentId:n}=r;if(typeof n!="string")throw new z;let{finished:y}=t[n];if(!y)throw new Zu}async getMatchAsync(e){let{id:t}=e;return t?this.match.api.getMatchAPI().getMatchDetailByIdAsync(t):null}updateMatchData(e,t){this.updateMatchGeneral(e,t),this.updatePlayerIds(e,t),this.initializeProfiles(e),this.updateScoresAndStatus(e,t)}updateMatchGeneral(e,t){let{extraData:r}=t;e.status=W.FINISHED,e.customData=TP.merge(e.customData,r)}updatePlayerIds(e,t){let{whitePlayerId:r,blackPlayerId:n}=t,{customData:y}=e,f=r===y.playerId,w=f?r:n,A=f?n:r;e.customData.playerId=w,e.customData.opponentId=A}initializeProfiles(e){let{playerId:t,opponentId:r}=e.customData;if(!t||!r)return;let n={name:"",photo:"",finished:!0};e.profiles[t]||(e.profiles[t]=S({id:t},n)),e.profiles[r]||(e.profiles[r]=S({id:r},n))}updateScoresAndStatus(e,t){let{playerId:r,opponentId:n}=e.customData;if(!r||!n)return;let{whitePlayerId:y,whitePlayerScore:f,whitePlayerFinish:w,blackPlayerScore:A,blackPlayerFinish:x}=t,v=y===e.customData.playerId;e.profiles[r].score=v?f:A,e.profiles[n].score=v?A:f,e.profiles[r].finished=v?w:x,e.profiles[n].finished=v?x:w}},ep=Xs,Zs=class extends N{async processAsync(e){try{this.startLog(e);let{matchId:t,playerId:r,opponentId:n}=e,y=new k(this),f=new q(this,{id:t,mode:j.CHALLENGE_FRIEND,customData:{playerId:r,opponentId:n}});y.setNext(f);let w=new ep(this);f.setNext(w);let A=new le(this);w.setNext(A);let x=new $(this);A.setNext(x);let v=this.match.getMatchState();await y.processAsync(v)}finally{this.endLog()}}},tp=Zs;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var eo=class extends N{fallbackSingleMode;async processAsync(e){try{this.startLog(e);let{playerId:t,extraData:r,fallbackSingleMode:n}=e;this.fallbackSingleMode=n;let y=await this.startFLowChallengeFriend({playerId:t,extraData:r});if(y===!0)return;if(y instanceof jt)await this.startFlowTournament(t);else if(this.fallbackSingleMode)await this.startFlowSingle(t);else throw y}finally{this.endLog()}}startFLowChallengeFriend=async e=>{try{return await this.match.challenge.invite.processAsync(e),!0}catch(t){return t}};startFlowTournament=async e=>{try{let t=GameSDK.context.getID();if(typeof t!="string")throw new Q;await this.match.tournament.continue.processAsync({playerId:e,contextId:t})}catch{await this.startFlowSingle(e)}};startFlowSingle=async e=>this.match.single.start.processAsync({playerId:e})},rp=eo;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var to=class extends Error{constructor(e){super(e),this.name="LeaderboardIdNotValid",this.message=e??"Leaderboard id is not valid"}},Oe=to;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Valid:ap}=Ludex.Utils,ro=class extends C{payload;leaderboardPayload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),this.setupSetScorePayload(e),"submitGameResultsAsync"in GameSDK.extra&&await GameSDK.extra.submitGameResultsAsync(this.payload.score),this.setLeaderboardScoreAsync(),await this.nextAsync(e)}async setupSetScorePayload(e){let{profiles:t,customData:r}=e,{playerId:n}=r;if(!n||!t[n])throw new V;let{score:y,leaderboardId:f}=this.payload;if(!ap.isNumber(y))throw new wt;if(!ap.isString(f))throw new Oe;this.leaderboardPayload={score:y,playerId:n,leaderboardId:f}}async setLeaderboardScoreAsync(){try{let{playerId:e,score:t,leaderboardId:r}=this.leaderboardPayload,n=this.codex.leaderboard.getLeaderboardName(r);if(!n)throw new Zr;await this.codex.leaderboard.setLeaderboardScoreAsync(n,e,t)}catch{}}},aa=ro,{Utils:{Valid:OP}}=Ludex,ao=class extends aa{constructor(e){super(e,{score:0,leaderboardId:""})}async setupSetScorePayload(e){let{profiles:t,customData:r}=e,{playerId:n,leaderboardId:y}=r;if(!y)throw new Oe;if(!n||!t[n])throw new V;let{score:f}=t[n];if(!OP.isNumber(f))throw new wt;this.payload.score=f,this.payload.leaderboardId=y,super.setupSetScorePayload(e)}},At=ao;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var no=class extends C{async processAsync(e){super.processAsync(e),this.validateData(e),this.progressSendGroupMessage(e),await this.nextAsync(e)}validateData(e){let{id:t,customData:r}=e,{contextId:n,opponentId:y}=r;if(!t||typeof t!="string")throw new re;if(!n||typeof n!="string")throw new Q;if(!y||typeof y!="string")throw new z}async createWideframesResultGroupAsync(e){try{let{frameCapture:t}=this.codex,{profiles:r,customData:n}=e,{playerId:y,opponentId:f}=n;if(!y||!f)return null;let w=r[y],A=r[f];if(!w||!A)return null;let{photo:x,score:v=0}=w,{photo:D,score:I=0}=A;return await t.renderAsync("result-challenge",{playerId:y,playerPhoto:x,playerScore:v,opponentId:f,opponentPhoto:D,opponentScore:I,isPlayerFinished:!0,isOpponentFinished:!0})}catch{return null}}async createWideframesBestScoreAsync(e){try{let{player:t,frameCapture:r}=this.codex,{playerId:n}=e.customData,{playerId:y,photo:f,data:w}=t.getPlayer();if(n!==y)return null;let{score:A}=w||{};return await r.renderAsync("share-score",{playerId:y,playerPhoto:f,playerScore:A})}catch{return null}}async progressSendGroupMessage(e){let{profiles:t,customData:r}=e,{playerId:n,opponentId:y}=r;if(y&&typeof y=="string"){if(!n||typeof n!="string")throw new G;let w=t[n],A=t[y];if(!w||!A)return;let{score:x=0}=w,{score:v=0}=A;if(x>v){let D=await this.createWideframesResultGroupAsync(e);if(!D)return;this.sendBestScoreMessageAsync(e,D);return}}let f=await this.createWideframesBestScoreAsync(e);f&&this.sendChallengeMessageAsync(e,f)}async sendBestScoreMessageAsync(e,t){let{profiles:r,customData:n}=e,{playerId:y}=n;if(!y||typeof y!="string")throw new G;if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");let f=r[y];if(!f)throw new V;let{name:w,score:A}=f,x={data:{type:this.codex.context.getSessionContextTypes().MATCHING_GROUP,playerId:y,playerName:w,playerScore:A},action:"CUSTOM",template:"play_turn",cta:{default:"Play",localizations:{vi_VN:"Ch\u01A1i"}},text:{default:`${w} beats your high score. Their score: ${A}.`,localizations:{vi_VN:`${w} v\u1EEBa v\u01B0\u1EE3t \u0111i\u1EC3m s\u1ED1 cao nh\u1EA5t c\u1EE7a b\u1EA1n! Ch\u01A1i l\u1EA7n n\u1EEFa ch\u1EE9?`}},image:t,strategy:"IMMEDIATE",notification:"PUSH"};if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");await GameSDK.extra.updateAsync(x)}async sendChallengeMessageAsync(e,t){let{profiles:r,customData:n}=e,{playerId:y}=n;if(!y||typeof y!="string")throw new G;let f=r[y];if(!f)throw new V;let{name:w,score:A}=f,x={data:{type:this.codex.context.getSessionContextTypes().MATCHING_GROUP,playerId:y,playerName:w,playerScore:A},action:"CUSTOM",template:"play_turn",cta:{default:"Play",localizations:{vi_VN:"Ch\u01A1i ngay"}},text:{default:`${w} got ${A} scores. So easy! Can you?`,localizations:{vi_VN:`${w} \u0111\xE3 \u0111\u1EA1t ${A} \u0111i\u1EC3m! Qu\xE1 d\u1EC5 lu\xF4n. Ch\u01A1i l\u1EA1i n\xE0o!`}},image:t,strategy:"IMMEDIATE",notification:"PUSH"};if(!("updateAsync"in GameSDK.extra))throw new B("updateAsync");await GameSDK.extra.updateAsync(x)}},np=no,so=class extends N{async processAsync(){try{this.startLog();let e=new k(this),t=new Me(this,{useAPI:!1});e.setNext(t);let r=new np(this);t.setNext(r);let n=new Ee(this);r.setNext(n);let y=new Te(this);n.setNext(y);let f=new At(this);y.setNext(f);let w=new $(this);f.setNext(w);let A=this.match.getMatchState();await e.processAsync(A)}finally{this.endLog()}}},sp=so;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Dtos:_P}=Ludex,oo=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),this.updateProfileMatchData(e),await this.nextAsync(e)}updateProfileMatchData(e){let{id:t}=this.payload,{profiles:r}=e;if(!r[t])throw new V;let n=S(S({},r[t]),this.payload),y=new _P.Match.Profile(n).toObject();r[y.id]=y}},Ke=oo,io=class extends N{async processAsync(e){try{this.startLog(e);let{playerId:t,opponentId:r,opponentScore:n}=e,y=new k(this),f=new q(this,{id:"7749",mode:j.MATCHING_GROUP,customData:{playerId:t,opponentId:r}});y.setNext(f);let w=new le(this);f.setNext(w);let A=new Ke(this,{id:t,score:n});w.setNext(A);let x=new J(this);A.setNext(x);let v=new Y(this);x.setNext(v);let D=new $(this);v.setNext(D);let I=this.match.getMatchState();await y.processAsync(I)}finally{this.endLog()}}},op=io;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var co=class extends Error{constructor(e){super(e),this.name="MatchGroupNotSupported",this.message=e??"Match group is not supported"}},lo=co,uo=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),await this.checkMatchGroupSupported();let t=await this.matchingGroup();e.customData.contextId=t,await this.nextAsync(e)}async checkMatchGroupSupported(){if(!("getSupportedAPIs"in GameSDK))throw new B("getSupportedAPIs");if(!("checkCanPlayerMatchAsync"in GameSDK.extra))throw new B("checkCanPlayerMatchAsync");if(!(GameSDK.getSupportedAPIs().indexOf("checkCanPlayerMatchAsync")>-1))throw new lo;if(!await GameSDK.extra.checkCanPlayerMatchAsync())throw new lo}async matchingGroup(){if(!("matchPlayerAsync"in GameSDK.extra))throw new B("matchPlayerAsync");let{matchTag:e,autoSwitch:t=!1,onlyExisting:r=!1}=this.payload;await GameSDK.extra.matchPlayerAsync(e,t,r);let n=GameSDK.context.getID();if(typeof n!="string")throw new xt;return n}},ip=uo,po=class extends N{async processAsync(e){try{this.startLog(e);let{matchTag:t,playerId:r,options:n}=e,y=new k(this),f=new ip(this,S({matchTag:t},n));y.setNext(f);let w=new q(this,{id:"7749",mode:j.MATCHING_GROUP,customData:{playerId:r}});f.setNext(w);let A=new ta(this,{ignoreId:r});w.setNext(A);let x=new J(this);A.setNext(x);let v=new le(this);x.setNext(v);let D=new Y(this);v.setNext(D);let I=new $(this);D.setNext(I);let E=this.match.getMatchState();await y.processAsync(E)}finally{this.endLog()}}},cp=po;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var mo=class extends N{async processAsync(){try{this.startLog();let e=new k(this),t=new Me(this,{useAPI:!1});e.setNext(t);let r=new Ee(this);t.setNext(r);let n=new Te(this);r.setNext(n);let y=new He(this);n.setNext(y);let f=new $(this);y.setNext(f);let w=this.match.getMatchState();await e.processAsync(w)}finally{this.endLog()}}},lp=mo;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var ho=class extends Error{constructor(e){super(e),this.name="ProfileIdNotDefined",this.message=e??"Profile id is not defined"}},dp=ho,{Dtos:NP}=Ludex,fo=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e);let{profileId:t}=this.payload;if(!t)throw new dp;let{player:r}=this.codex,n=r.getPlayerId(),y;if(t===n)y=this.getPlayerProfile();else if(y=await this.getProfileAsync(t),!y)throw new V;this.updateMatchData(y,e),await this.nextAsync(e)}getPlayerProfile(){let{player:e}=this.codex,{playerId:t,name:r,photo:n,locale:y}=e.getPlayer();return{playerId:t,name:r,photo:n,locale:y}}async getProfileAsync(e){let{profile:t}=this.codex;return await t.requestProfiles([e]),t.getProfiles()[e]}updateMatchData(e,t){let{playerId:r,name:n,photo:y}=e,f=new NP.Match.Profile({id:r,name:n,photo:y}).toObject();t.profiles[r]=f}},_e=fo,yo=class extends N{async processAsync(e){try{this.startLog(e);let{playerId:t}=e,r=new k(this),n=new Ue(this,{contextId:"SOLO"});r.setNext(n);let y=new q(this,{id:"123456",mode:j.SINGLE,customData:{playerId:t}});n.setNext(y);let f=new J(this);y.setNext(f);let w=new _e(this,{profileId:t});f.setNext(w);let A=new Y(this);w.setNext(A);let x=new $(this);A.setNext(x);let v=this.match.getMatchState();await r.processAsync(v)}finally{this.endLog()}}},up=yo;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var go=class extends N{async processAsync(e){try{this.startLog(e);let{setPlayerBestScore:t=!1,postGlobalLeaderboard:r=!1}=e??{},n=new k(this),y=new Me(this,{useAPI:!1});n.setNext(y);let f=new Ee(this);y.setNext(f);let w=new Te(this,{ignore:!t});f.setNext(w);let A=new He(this,{ignore:!r});w.setNext(A);let x=new $(this);A.setNext(x);let v=this.match.getMatchState();await n.processAsync(v)}finally{this.endLog()}}},pp=go;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Po=class extends N{async processAsync(e){try{this.startLog(e);let{matchId:t,playerId:r,gameMode:n,extraData:y={}}=e,f=new k(this),w=new Ue(this,{contextId:"SOLO"});f.setNext(w);let A=new q(this,{id:t,mode:n,customData:S({playerId:r},y)});w.setNext(A);let x=new J(this);A.setNext(x);let v=new _e(this,{profileId:r});x.setNext(v);let D=new Y(this);v.setNext(D);let I=new $(this);D.setNext(I);let E=this.match.getMatchState();await f.processAsync(E)}finally{this.endLog()}}},mp=Po;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Plugins:RP,Utils:kP}=Ludex,{Analytics:GP}=RP,{String:$P,Valid:FP}=kP,xo=class extends C{async processAsync(e){super.processAsync(e);let{mode:t,customData:r}=e;this.validateMode(t);let{analytics:n}=this.codex,{tournamentId:y,leaderboardId:f}=r;n.event(GP.Events.TOURNAMENT_START,{success:!0,game_mode:$P.toUpperCamelCase(t),tournament_id:y,leaderboard_id:f}),await this.nextAsync(e)}validateMode(e){if(!FP.isString(e))throw new ft}},na=xo;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var wo=class extends Error{constructor(e){super(e),this.name="TournamentIdNotValid",this.message=e??"Tournament id is not valid"}},sa=wo,{Valid:Ao}=Ludex.Utils,bo=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e);let{contextId:t}=this.payload;this.validateContextId(t);let r=await GameSDK.getTournamentAsync(),n=r.getID().toString(),y=r.getTournamentType();if(this.validateTournamentId(n),e.customData.contextId=t,e.customData.tournamentId=n,y!=="DAILY"){let f=JSON.parse(r.getPayload()||"{}"),{leaderboardId:w}=f;this.validateLeaderboardId(w),e.customData.leaderboardId=w}await this.nextAsync(e)}validateContextId(e){if(!Ao.isString(e))throw new Q}validateTournamentId(e){if(!Ao.isString(e))throw new sa}validateLeaderboardId(e){if(!Ao.isString(e)||e==="")throw new Oe}},hp=bo,vo=class extends N{async processAsync(e){try{this.startLog(e);let{playerId:t,contextId:r}=e,n=new k(this),y=new hp(this,{contextId:r});n.setNext(y);let f=new q(this,{id:"1997",mode:j.TOURNAMENT,customData:{playerId:t}});y.setNext(f);let w=new J(this);f.setNext(w);let A=new _e(this,{profileId:t});w.setNext(A);let x=new Y(this);A.setNext(x);let v=new na(this);x.setNext(v);let D=new $(this);x.setNext(D);let I=this.match.getMatchState();await n.processAsync(I)}finally{this.endLog()}}},fp=vo;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Plugins:BP}=Ludex,{Analytics:VP}=BP,Do=class extends C{async processAsync(e){super.processAsync(e);let{customData:t}=e,{analytics:r}=this.codex,{tournamentId:n,leaderboardId:y}=t;r.event(VP.Events.TOURNAMENT_CREATE,{success:!0,tournament_id:n,leaderboard_id:y}),await this.nextAsync(e)}},yp=Do;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var So=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),await this.createTournamentAsync(),await this.updateMatchStateAsync(e),await this.nextAsync(e)}async createTournamentAsync(){let{name:e,score:t,customData:r}=this.payload;await GameSDK.tournament.createAsync({initialScore:t,config:{title:e,tournamentTitle:e},data:r})}async updateMatchStateAsync(e){try{if(!("getTournamentAsync"in GameSDK))throw new B("getTournamentAsync");let t=await GameSDK.getTournamentAsync(),r=t.getContextID(),n=t.getID().toString(),{playerId:y}=this.payload;e.customData.playerId=y,e.customData.contextId=r,e.customData.tournamentId=n}catch(t){if(t instanceof B)return}}},gp=So;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Valid:Pp}=Ludex.Utils,Io=class extends C{payload;leaderboardPayload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),this.validatePayload(),await this.setupCreatePayload(e),await this.createLeaderboardAsync(e),await this.nextAsync(e)}validatePayload(){let{leaderboardId:e}=this.payload;if(!Pp.isString(e))throw new Oe}validatePlayerId(e){if(!Pp.isString(e))throw new G}async setupCreatePayload(e){let{playerId:t}=e.customData;this.validatePlayerId(t);let{name:r,leaderboardId:n,customData:y}=this.payload;this.leaderboardPayload={_id:n,name:r??"",createdBy:t,description:JSON.stringify(y)}}async createLeaderboardAsync(e){let t=await this.codex.leaderboard.createLeaderboardAsync(this.leaderboardPayload);e.customData.leaderboardId=t}},xp=Io,Lo=class extends N{async processAsync(e){try{this.startLog(e);let{playerId:t,name:r,score:n,leaderboardId:y,payload:f}=e,w=new k(this),A=new Ue(this,{contextId:"SOLO"});w.setNext(A);let x=new gp(this,{name:r,score:n,playerId:t,customData:f});A.setNext(x);let v=new _e(this,{profileId:t});x.setNext(v);let D=new Ke(this,{id:t,score:n});v.setNext(D);let I=new xp(this,{name:r,customData:f,leaderboardId:y});D.setNext(I);let E=new At(this);I.setNext(E);let b=new yp(this);E.setNext(b);let T=this.match.getMatchState();await w.processAsync(T)}finally{this.endLog()}}},wp=Lo;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Plugins:{Analytics:Ap},Utils:{Valid:UP}}=Ludex,Co=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),this.validateData(e),await this.postScoreTournamentAsync(e),await this.nextAsync(e)}validateData(e){let{profiles:t,customData:r}=e,{playerId:n}=r;if(this.validatePlayerId(n),!t[n])throw new V}validatePlayerId(e){if(!UP.isString(e))throw new G}getPlayerProfile(e){let{profiles:t,customData:r}=e,{playerId:n}=r;return this.validatePlayerId(n),t[n]}isNewBestScore(e){let t=this.getPlayerProfile(e),{score:r=0,bestScore:n=0}=t;return r>n}async postScoreTournamentAsync(e){let{analytics:t}=codex,r=this.getPlayerProfile(e),{score:n=0}=r,y=null,f=!1,{checkBestScore:w}=this.payload,A=this.isNewBestScore(e);try{if(!("getTournamentAsync"in GameSDK))throw new B("getTournamentAsync");await GameSDK.getTournamentAsync(),!w||A?(y=Ap.Events.TOURNAMENT_SHARE,await GameSDK.tournament.shareAsync({score:n})):(y=Ap.Events.TOURNAMENT_POST_SCORE,await GameSDK.tournament.postScoreAsync(n)),f=!0}catch{}finally{y&&t.event(y,{success:f})}}},bp=Co,Eo=class extends N{async processAsync(e){try{this.startLog(e);let{playerId:t,bestScore:r,checkBestScore:n=!1}=e,y=new k(this),f=new Me(this,{useAPI:!1});y.setNext(f);let w=new Ke(this,{id:t,bestScore:r});f.setNext(w);let A=new bp(this,{checkBestScore:n});w.setNext(A);let x=new Ee(this);A.setNext(x);let v=new Te(this);x.setNext(v);let D=new At(this);v.setNext(D);let I=new He(this);D.setNext(I);let E=new $(this);I.setNext(E);let b=this.match.getMatchState();await y.processAsync(b)}finally{this.endLog()}}},vp=Eo;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Valid:Mo,Object:HP}=Ludex.Utils,To=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e);let{tournamentId:t}=this.payload;this.validateTournamentId(t),await this.joinTournamentAsync(t);let r=await GameSDK.getTournamentAsync(),n=r.getContextID();this.validateContextId(n);let y=JSON.parse(r.getPayload()||"{}"),{leaderboardId:f}=y;this.validateLeaderboardId(f),e.customData.contextId=n,e.customData.tournamentId=t,e.customData.leaderboardId=f,await this.nextAsync(e)}validateTournamentId(e){if(!Mo.isString(e))throw new sa}validateContextId(e){if(!Mo.isString(e))throw new Q}validateLeaderboardId(e){if(!Mo.isString(e)||e==="")throw new Oe}async joinTournamentAsync(e){if(!("tournament"in GameSDK))throw new B("tournament");try{await GameSDK.tournament.joinAsync(e)}catch(t){if(!HP.hasOwn(t,"code")||t.code!=="SAME_CONTEXT")throw t}}},Dp=To,Oo=class extends N{async processAsync(e){try{this.startLog(e);let{playerId:t,tournamentId:r}=e,n=new k(this),y=new Dp(this,{tournamentId:r});n.setNext(y);let f=new q(this,{id:"1997",mode:j.TOURNAMENT,customData:{playerId:t}});y.setNext(f);let w=new J(this);f.setNext(w);let A=new _e(this,{profileId:t});w.setNext(A);let x=new Y(this);A.setNext(x);let v=new na(this);x.setNext(v);let D=new $(this);v.setNext(D);let I=this.match.getMatchState();await n.processAsync(I)}finally{this.endLog()}}},Sp=Oo;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Dtos:KP,Utils:jP}=Ludex,{Object:WP}=jP,_o=class extends C{async processAsync(e){super.processAsync(e);let t=await this.getMatchCustomData(e);this.updateMatchCustomData(e,t),await this.nextAsync(e)}async getMatchCustomData(e){let{id:t}=e;return t?(await this.match.api.getMatchAPI().getMatchDetailByIdAsync(t))?.extraData??{}:{}}updateMatchCustomData(e,t){let r=WP.merge(e.customData,t),n=new KP.Match.CustomData(r).toObject();e.customData=n}},Ip=_o;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Dtos:qP,Utils:zP}=Ludex,{Object:YP}=zP,No=class extends C{payload;constructor(e,t){super(e),this.payload=t}async processAsync(e){super.processAsync(e),this.updateMatchCustomData(e),await this.nextAsync(e)}updateMatchCustomData(e){let t=YP.merge(e.customData,this.payload),r=new qP.Match.CustomData(t).toObject();e.customData=r}},Lp=No;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var QP={id:null,mode:null,status:null,startAt:0,finishAt:0,profiles:{},customData:S({},Pt)},Cp=QP,{Configs:Ep}=Ludex,Ro=class extends Ludex.Plugins.BasePlugin{base;group;single;context;strategy;challenge;tournament;api;handler;useCPUProfile;init(){this.createMatchData(),this.createAPIHandler(),this.createBaseConcrete(),this.createConcreteFlows(),this.createConcreteHandlers()}setUseCPUProfile(e){this.useCPUProfile=e}createMatchData(){let{storage:e}=this.codex;e.addStorage("match",Cp)}getMatchState(){let{storage:e}=this.codex;return e.getStorage("match")}createBaseConcrete(){this.base=new N(this.codex,this)}createConcreteFlows(){this.createGroupFlows(),this.createSingleFlows(),this.createContextFlows(),this.createStrategyFlows(),this.createChallengeFlows(),this.createTournamentFlows()}createConcreteHandlers(){this.handler={setProfileData:async e=>{let t=new Ke(this.base,e);await this.processHandlerAsync(t)},setMatchCustomData:async e=>{let t=new Lp(this.base,e);await this.processHandlerAsync(t)},getMatchCustomData:async()=>{let e=new Ip(this.base);await this.processHandlerAsync(e)},setLeaderboardScore:async e=>{let t=new aa(this.base,e);await this.processHandlerAsync(t)}}}createAPIHandler(){let e={appId:Ep.AppId,matchAPIHost:Ep.ApiHost};this.api=new Au(e)}createGroupFlows(){this.group={join:new op(this.codex,this),start:new cp(this.codex,this),finish:new sp(this.codex,this)}}createSingleFlows(){this.single={start:new up(this.codex,this),finish:new lp(this.codex,this)}}createStrategyFlows(){this.strategy={start:new mp(this.codex,this),finish:new pp(this.codex,this)}}createContextFlows(){this.context={choose:new rp(this.codex,this)}}createChallengeFlows(){this.challenge={invite:new Ku(this.codex,this),friend:new Tu(this.codex,this),join:new Qu(this.codex,this),await:new Lu(this.codex,this),result:new tp(this.codex,this),finish:new Fu(this.codex,this),continue:new Ru(this.codex,this)}}createTournamentFlows(){this.tournament={join:new Sp(this.codex,this),create:new wp(this.codex,this),finish:new vp(this.codex,this),continue:new fp(this.codex,this)}}processHandlerAsync(e){let t=this.getMatchState();return e.processAsync(t)}},Mp=Ro;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Valid:Je}=Ludex.Utils,Xe="is invalid",qt=class extends ee{setupData(e){this.f(e)}d(e){this.p(e)}h(e){this.g(e)}validateLevel(e){(!Je.isNumber(e)||e<0)&&this.e("level",Xe)}validateRescued(e){(!Je.isNumber(e)||e<0)&&this.e("rescued",Xe)}validateContextId(e){Je.isString(e)||this.e("contextId",Xe)}validatePlayerId(e){Je.isString(e)||this.e("playerId",Xe)}validateOpponentId(e){!Je.isString(e)&&e!==null&&this.e("opponentId",Xe)}validateTournamentId(e){!Je.isString(e)&&e!==null&&this.e("tournamentId",Xe)}validateLeaderboardId(e){!Je.isString(e)&&e!==null&&this.e("leaderboardId",Xe)}toObject(){return super.toObject()}};qt.makeStrict(),qt.addDefaultData(Pt);var Tp=qt;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Valid:bt}=Ludex.Utils,vt="is invalid",oa=class extends ee{setupData(e){this.f(e)}d(e){this.p(e)}h(e){this.g(e)}validateId(e){(!bt.isString(e)||!e)&&this.e("id",vt)}validateName(e){(!bt.isString(e)||!e)&&this.e("name",vt)}validatePhoto(e){bt.isString(e)||this.e("photo",vt)}validateScore(e){(!bt.isNumber(e)||e<0)&&this.e("score",vt)}validateBestScore(e){(!bt.isNumber(e)||e<0)&&this.e("bestScore",vt)}validateFinished(e){bt.isBoolean(e)||this.e("finished",vt)}toObject(){return super.toObject()}};oa.addDefaultData({id:"",name:"Your Friend",photo:"./assets/images/others/avatar.png",score:0,bestScore:0,finished:!1});var Op=oa;Ludex.Dtos.Match={Data:ra,Profile:Op,CustomData:Tp};var _p=Mp;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Np=[{id:"finish-level",title:"Finish 1 level",require:{level:1},reward:{coin:300},duration:1e3*60*60*24}],ko=class{async getMissionsAsync(){return[...Np]}},Rp=ko;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var JP={tasks:[],process:{}},kp=JP,{Utils:{Json:Gp,Valid:$p,Object:ia}}=Ludex,Go=class extends Ludex.Plugins.BasePlugin{api;init(){let{storage:e}=this.codex;e.addStorage("missions",kp,!0),this.api=new Rp}async requestMissions(){let e=await this.api.getMissionsAsync(),t=Date.now();for(let r of e)r.expirationTime=t+r.duration;this.receivePlayerMissionData(e)}addMission(e){let{storage:t}=this.codex,{id:r,duration:n,expirationTime:y}=e;y||(e.expirationTime=Date.now()+n);let f=t.getStorageData("missions","tasks")??[],w=f.findIndex(x=>x.id===r);if(w!==-1){let x=ia.merge(f[w],e);f[w]=x}else f.push(e);let A=[...f];t.setStorageData("missions","tasks",A),this.addProcessLog(e),this.updatePlayerMissionProcess(),t.updateToWebStorage("missions")}addProcessLog(e){let{storage:t}=this.codex,{id:r,require:n}=e,y={},f=Object.keys(n);for(let A of f)y[A]=0;let w=t.getStorageData("missions","process")??{};w[r]={require:y,rewarded:!1},t.setStorageData("missions","process",w)}removeMission(e){let{storage:t}=this.codex,r=t.getStorageData("missions","tasks");if(!r)return;let n=r.filter(y=>y.id!==e);t.setStorageData("missions","tasks",n),this.removeProcessLog(e),t.updateToWebStorage("missions")}removeProcessLog(e){let{storage:t}=this.codex,r=t.getStorageData("missions","process")??{};if(r[e]){let{require:n}=r[e],y=Object.keys(n);for(let f of y)n[f]=0;r[e]={require:n,rewarded:!1}}t.setStorageData("missions","process",r)}receivePlayerMissionData(e){let{storage:t}=this.codex,r=t.getStorageData("missions","tasks")??[],n=this.filterMissionByExpirationTime(r),y=this.combineMissions(e,n);t.setStorageData("missions","tasks",y);let f=this.filterExistingSavedProcess(n);this.receiveProcessLogs(y,f),this.updatePlayerMissionProcess(),t.updateToWebStorage("missions")}filterExistingSavedProcess(e){let{player:t}=this.codex,r=t.getPlayerDataByKey("missionsData"),{process:n={}}=r||{},y=e.map(A=>A.id),f=Object.keys(n).filter(A=>!y.includes(A)),w={};for(let A of f)w[A]=n[A];return w}filterMissionByExpirationTime(e){let t=Date.now();return e.filter(r=>{let{expirationTime:n}=r;return n?t<n:!1})}combineMissions(e,t){let r=t.map(y=>y.id),n=e.filter(y=>{let{id:f}=y;return!r.includes(f)});return[...t,...n]}receiveProcessLogs(e,t){let r={};for(let n of e){let{id:y,require:f}=n;if(ia.hasOwn(t,y)){r[y]=Gp.clone(t[y]);return}let w={},A=Object.keys(f);for(let x of A)w[x]=0;r[y]={require:w,rewarded:!1}}this.updateMissionProcess(r)}updateMissionProcess(e){let{storage:t}=this.codex;t.setStorageData("missions","process",e),t.updateToWebStorage("missions")}getPlayerMissionProcess(){let{player:e}=this.codex,t=e.getPlayerDataByKey("missionsData"),{process:r}=t||{};return Gp.clone(r)}addMissionValue(e){let{id:t,type:r,value:n}=e,y=this.getPlayerMissionProcess();if(!$p.isObject(y))return;let f=y,w=Object.keys(f).filter(A=>A.includes(t));for(let A of w){let x=f[A];!x||x.rewarded||(x.require[r]+=n)}this.updateMissionProcess(f),this.updatePlayerMissionProcess()}setMissionRewardClaimed(e){let t=this.getPlayerMissionProcess();if(!$p.isObject(t))return;let r=t;ia.hasOwn(r,e)&&(r[e].rewarded=!0,this.updateMissionProcess(r),this.updatePlayerMissionProcess())}updatePlayerMissionProcess(){let{player:e}=this.codex,t=this.codex.storage.getStorageData("missions","process"),r=this.getPlayerMissionProcess(),n=ia.merge(r,t);e.setPlayerDataByName("missionsData",{process:n})}},Fp=Go,Bp=Fp;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Utils:{Object:XP},Configs:{ApiHost:Vp}}=Ludex,ZP=()=>{let e=GameSDK.getSDKName(),t="players";switch(e){case"MsGames":t+="?platform=ms-games";break;case"Yandex":t+="?platform=yandex";break;default:break}return t},Up=async e=>{if(!Vp)return{};let t=ZP(),r=await he(t,e,{},Vp,10);return XP.hasOwn(r,"data")?r.data||{}:{}},{Utils:{Array:ex,Object:ca,Valid:tx,Function:rx},Configs:{AppId:ax}}=Ludex,$o=class extends Ludex.Plugins.BasePlugin{isLoggedIn=!1;init(){let{storage:e}=this.codex;e.addStorage("player",Pe)}receiveData(e,t){let{storage:r}=this.codex,{playerId:n,name:y,photo:f,locale:w}=e;r.setStorageData("player","playerId",n),r.setStorageData("player","name",y),r.setStorageData("player","photo",f),r.setStorageData("player","locale",w),t&&(this.setPlayerData(t),this.isLoggedIn=!t.isFirstLogin)}async syncDataToSDK(){try{let e=this.getPlayerData();await GameSDK.player.setDataAsync(e)}catch{}}async syncProfileToServer(){if(GameSDK.extra.isGuest)throw new Error("Guest player cannot sync profile to server");let{storage:e}=this.codex,t=this.getPlayer(),{playerId:r,name:n,photo:y,locale:f}=t,w=this.getPlayerASID();if(!tx.isString(w)&&"getASIDAsync"in GameSDK.player){let[A,x]=await rx.handleAsync(GameSDK.player.getASIDAsync(),1e4);!x&&A&&(w=A,e.setStorageData("player","ASID",w))}await Up({appId:ax,ASID:w,playerId:r,name:n,photo:y,locale:f})}setPlayerDataByName(e,t){this.setPlayerData({[e]:t})}setPlayerData(e){let{storage:t}=this.codex;t.setStorageData("player","data",e),this.syncDataToSDK()}setBestScore(e){this.setPlayerDataByName("score",e)}setSetting(e,t){this.setPlayerDataByName("settings",{[e]:t})}setGameData(e){let t=this.getGameData()??{},r=ca.merge(t,e);this.setPlayerDataByName("gameData",r)}async requestConnectedPlayers(){let{storage:e}=this.codex,t=(await GameSDK.player.getConnectedPlayersAsync()).map(y=>{let f=y.getID(),w=y.getName(),A=y.getPhoto();return!f||!w||!A?null:new ut({playerId:f,name:w,photo:A}).toObject()}),r=ex.unique(t);if(r.length<1)return;let n=ca.keyBy(r,"playerId");e.setStorageData("player","connectedPlayers",n)}getPlayer(){let{storage:e}=this.codex;return e.getStorage("player")}getPlayerId(){let{storage:e}=this.codex;return e.getStorageData("player","playerId")??""}getPlayerASID(){let{storage:e}=this.codex;return e.getStorageData("player","ASID")??null}getPlayerLocale(){let{storage:e}=this.codex;return e.getStorageData("player","locale")??""}getPlayerData(){let{storage:e}=this.codex;return e.getStorageData("player","data")??Pe.data}getPlayerDataByKey(e){let t=this.getPlayerData();return ca.hasOwn(t,e)?t[e]:null}getGameData(){return this.getPlayerDataByKey("gameData")}getPlayerSetting(e){let t=this.getPlayerSettings();return ca.hasOwn(t,e)?t[e]:null}getPlayerSettings(){let{settings:e}=this.getPlayerData();return e}isFirstLogin(){return this.getPlayerDataByKey("isFirstLogin")??Pe.data.isFirstLogin}isFirstSession(){return!this.isLoggedIn}loggedIn(){this.setPlayerDataByName("isFirstLogin",!1)}getBestScore(){let{score:e}=this.getPlayerData();return e}getConnectedPlayers(){let{storage:e}=this.codex;return e.getStorageData("player","connectedPlayers")??{}}getConnectedPlayerIds(e,t){let r=this.getConnectedPlayers();return Object.keys(r).slice(t,t+e)}getNotificationData(){return this.getPlayerDataByKey("notificationData")??Pe.data.notificationData}},Hp=$o;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Dtos:Kp,Utils:{Valid:de}}=Ludex,{score:nx,settings:sx,gameData:ox,isFirstLogin:ix,missionsData:cx,notificationData:lx,dailyRewardedData:dx,lastCallSwitchGame:ux}=Pe.data,ne="is invalid",la=class extends ee{processData(e){this.d(e),e.settings=new Kp.Player.Settings(e.settings).toObject(),e.gameData=new Kp.Player.GameData(e.gameData).toObject(),this.h(e),this.setupData(e)}setupData(e){this.f(e)}d(e){this.p(e)}h(e){this.g(e)}validateScore(e){(!de.isNumber(e)||e<0)&&this.e("score",ne)}validateSettings(e){de.isObject(e)||this.e("settings",ne)}validateMissionsData(e){de.isObject(e)||this.e("missionsData",ne),(!("process"in e)||!de.isObject(e.process))&&this.e("missionsData.process",ne)}validateNotificationData(e){de.isObject(e)||this.e("notificationData",ne),(!("D1"in e)||!de.isObject(e.D1))&&this.e("notificationData.D1",ne),(!("D2"in e)||!de.isObject(e.D2))&&this.e("notificationData.D2",ne),(!("D3"in e)||!de.isObject(e.D3))&&this.e("notificationData.D3",ne),(!("D4"in e)||!de.isObject(e.D4))&&this.e("notificationData.D4",ne),(!("D5"in e)||!de.isObject(e.D5))&&this.e("notificationData.D5",ne),(!("D6"in e)||!de.isObject(e.D6))&&this.e("notificationData.D6",ne),(!("D7"in e)||!de.isObject(e.D7))&&this.e("notificationData.D7",ne)}validateGameData(e){de.isObject(e)||this.e("gameData",ne)}validateIsFirstLogin(e){de.isBoolean(e)||this.e("isFirstLogin",ne)}validateDailyRewardedData(e){de.isObject(e)||this.e("dailyRewardedData",ne)}validateLastCallSwitchGame(e){de.isNumber(e)||this.e("lastCallSwitchGame",ne),e<0&&this.e("lastCallSwitchGame",ne)}toObject(){return super.toObject()}};la.addDefaultData({score:nx,settings:sx,gameData:ox,isFirstLogin:ix,missionsData:cx,notificationData:lx,dailyRewardedData:dx,lastCallSwitchGame:ux});var jp=la;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Valid:Wp}=Ludex.Utils,{level:px,coins:mx}=Pe.data.gameData,da=class extends ee{setupData(e){this.f(e)}d(e){this.p(e)}h(e){this.g(e)}validateLevel(e){(!Wp.isNumber(e)||e<0)&&this.e("level","is invalid")}validateCoins(e){(!Wp.isNumber(e)||e<0)&&this.e("coins","is invalid")}toObject(){return super.toObject()}};da.addDefaultData({level:px,coins:mx});var qp=da;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Valid:ua}=Ludex.Utils,{sound:hx,music:fx,vibrate:yx,language:gx}=Pe.data.settings,pa="is invalid",ma=class extends ee{setupData(e){this.f(e)}d(e){this.p(e)}h(e){this.g(e)}validateSound(e){ua.isBoolean(e)||this.e("sound",pa)}validateMusic(e){ua.isBoolean(e)||this.e("music",pa)}validateVibrate(e){ua.isBoolean(e)||this.e("vibrate",pa)}validateLanguage(e){(!ua.isString(e)||!e)&&this.e("language",pa)}toObject(){return super.toObject()}};ma.addDefaultData({sound:hx,music:fx,vibrate:yx,language:gx});var zp=ma;Ludex.Dtos.Player={Info:ut,Data:jp,Settings:zp,GameData:qp};var Yp=Hp;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Configs:{ApiHost:Qp,Mockup:Px},Utils:{Object:xx,String:wx}}=Ludex,Fo=class{mockAPI;async initMockAPI(){if(this.mockAPI)return;let e=(await Promise.resolve().then(()=>(O(),Z))).default;if(typeof e!="function")throw new Error("Cannot load ProfileAPIMock");this.mockAPI=new e}async getPlayersAsync(e){let t=wx.params(e),r;if(Px.Profile.Enabled)await this.initMockAPI(),r=await this.mockAPI.getPlayersAsync(e);else{if(!Qp)return[];r=await Re(`players?${t}`,{},Qp)}return!xx.hasOwn(r,"data")||!Array.isArray(r.data)?[]:r.data}},Jp=Fo;s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ax={profiles:{},profileIds:[]},Bo=Ax,{Utils:bx,Dtos:vx}=Ludex,{Array:Xp,Valid:Dx,Object:Sx,Function:Ix}=bx,Vo=class extends Ludex.Plugins.BasePlugin{profileAPI=new Jp;init(){let{storage:e}=this.codex;e.addStorage("profile",Bo)}async requestProfiles(e){let t=this.getProfileIds(),r=Xp.difference(e,t);if(r.length<1)return;let n=Xp.chunk(r,400).map(w=>this.profileAPI.getPlayersAsync({playerIds:w})),y=(await Ix.allSettled(n)).reduce((w,A)=>A.status==="fulfilled"?w.concat(A.value):w,[]);if(!this.validateProfilesResponse(y))return;let f=this.convertToProfiles(y);this.setProfiles(f)}getProfile(e){return this.getProfiles()[e]??null}getProfiles(){let{storage:e}=this.codex;return e.getStorageData("profile","profiles")??Bo.profiles}setProfiles(e){let{storage:t}=this.codex;t.setStorageData("profile","profiles",e),t.setStorageData("profile","profileIds",Object.keys(e))}getProfileIds(){let{storage:e}=this.codex;return e.getStorageData("profile","profileIds")??[]}validateProfilesResponse(e){return!(!Array.isArray(e)||e.length<1)}convertToProfiles(e){let t={};for(let r of e)Sx.hasOwn(r,"playerId")&&Dx.isString(r.playerId)&&(t[r.playerId]=new vx.Player.Info(r).toObject());return t}},Zp=Vo,em=Zp;O(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var tm="Dinosaurs Merge Master",{Utils:{Object:rm,Valid:am,Browser:nm}}=Ludex,Uo=class extends Ludex.Plugins.BasePlugin{storages;storageLocalKeys={};constructor(e){super(e),this.storages={}}async addStorage(e,t,r=!1){this.storages[e]=t,r&&await this.initFromWebStorage(e,t)}async initFromWebStorage(e,t){this.storageLocalKeys[e]=!0;let r=await nm.getIndexedDB(`${tm}_S_${e}`);if(!am.isObject(r))return;let n=Object.keys(t);for(let y of n)rm.hasOwn(r,y)&&typeof t[y]==typeof r[y]&&this.setStorageData(e,y,r[y])}initStorageData(e,t,r){this.storages[e][t]=r}setStorageData(e,t,r){let n;if(am.isObject(r)){let y=this.getStorageData(e,t);n=rm.merge(y,r)}else n=r;this.storages[e][t]=n}getStorageData(e,t){return this.getStorage(e)[t]}getStorage(e){return this.storages[e]}async updateToWebStorage(e){if(this.storageLocalKeys[e])return this.saveToWebStorage(e)}async saveToWebStorage(e){let t=this.getStorage(e);return nm.setIndexedDB(`${tm}_S_${e}`,t)}},sm=Uo,om=sm;s(),o(),i(),c(),l(),d(),u(),p(),m(),h(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var Ho=class extends Ludex.Plugins.BasePlugin{isVisible=!0;browserPrefixes=["moz","ms","o","","webkit"];init(){let e=this.getBrowserPrefix(),t=[this.getVisibilityEvent(e),"focus","blur"];for(let r of t)this.registerEvent(window,r),this.registerEvent(document,r);GameSDK.extra&&("onPause"in GameSDK.extra&&GameSDK.extra.onPause(()=>this.handleVisibilityChange("blur")),"onResume"in GameSDK.extra&&GameSDK.extra.onResume(()=>this.handleVisibilityChange("focus"))),this.registerEvent(window,"pageshow"),this.registerEvent(window,"pagehide"),window.addEventListener("message",r=>{(r.data==="nativePause"||r.data==="nativeResume")&&this.handleVisibilityChange(r.data)},!1)}isGameVisible(){return this.isVisible}getHiddenPropertyName(e){return e?`${e}Hidden`:"hidden"}getVisibilityEvent(e){return`${e||""}visibilitychange`}getBrowserPrefix(){for(let e of this.browserPrefixes)if(this.getHiddenPropertyName(e)in document)return e;return""}onVisibleEvent(){this.isVisible||(this.isVisible=!0,this.codex.event.emit(Ludex.Events.VISIBILITY_VISIBLE))}onHiddenEvent(){this.isVisible&&(this.isVisible=!1,this.codex.event.emit(Ludex.Events.VISIBILITY_HIDDEN))}registerEvent(e,t){e.addEventListener(t,()=>{this.handleVisibilityChange(t)},!1)}handleVisibilityChange=e=>{let t={focus:this.onVisibleEvent.bind(this),pageshow:this.onVisibleEvent.bind(this),nativeResume:this.onVisibleEvent.bind(this),blur:this.onHiddenEvent.bind(this),pagehide:this.onHiddenEvent.bind(this),nativePause:this.onHiddenEvent.bind(this)};if(t[e]){t[e]();return}if(document.visibilityState){document.visibilityState==="hidden"?this.onHiddenEvent():this.onVisibleEvent();return}let r=this.getBrowserPrefix(),n=this.getHiddenPropertyName(r);n in document&&(document[n]?this.onHiddenEvent():this.onVisibleEvent())}},im=Ho,cm=im;rr(),O(),O(),O(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{Utils:{Object:lm},Plugins:{Ads:{Status:Ae,Types:Ge,AdError:ha,AdInstance:Lx}}}=Ludex,Ko=class extends Lx{service;instance;instanceQueue=[];constructor(e,t){super(e,t),this.service=GameSDK.getSDKName(),this.instance=null}async loadAsync(){if(!(this.instance&&this.status===Ae.FILLED)){if(this.status!==Ae.IDLE)throw new ha("AD_NOT_READY","Ad is not ready.");try{if(this.instance=await this.createInstanceByType(this.type),this.instance===null)throw new ha("AD_INSTANCE_NOT_INITIATED","Ad instance didn't initiated.");this.setStatus(Ae.LOADING),await this.instance.loadAsync(),this.setStatus(Ae.FILLED),this.logAdLoad()}catch(e){throw this.setStatus(Ae.IDLE),e instanceof Object&&"code"in e&&e.code==="INVALID_PARAM"&&(this.instance=null),this.instance&&this.pushInstanceToQueue(this.instance),self.codex.analytics.loadAdFail({type:this.type,service:this.service}),e}}}async showAsync(){if(this.status!==Ae.FILLED)throw new ha("AD_NOT_FILLED","Ad is not filled.");if(this.instance===null)throw new ha("AD_INSTANCE_NOT_INITIATED","Ad instance didn't initiated.");let e=!1;try{this.setStatus(Ae.SHOWING),self.codex.analytics.showingAd({type:this.type,service:this.service}),await this.instance.showAsync(),e=!0,this.setStatus(Ae.IDLE),this.instance=null}catch(t){throw lm.hasOwn(t,"code")&&(t.code==="AD_NOT_LOADED"&&this.setStatus(Ae.IDLE),["INVALID_PARAM","INVALID_OPERATION","USER_INPUT"].indexOf(`${t.code}`)>-1&&(this.setStatus(Ae.IDLE),this.instance=null),t.code==="USER_INPUT"&&(e=!0)),this.status===Ae.SHOWING&&(this.setStatus(Ae.IDLE),this.instance=null),t}finally{e?this.logAdShown():self.codex.analytics.showAdFail({type:this.type,service:this.service})}}async createInstanceByType(e){try{return await this.getAdInstanceByType(e)}catch(t){return lm.hasOwn(t,"code")&&t.code==="ADS_TOO_MANY_INSTANCES"?this.getAdInstanceFailed():null}}async getAdInstanceByType(e){switch(e){case Ge.REWARDED_VIDEO:return await GameSDK.getRewardedVideoAsync(this.placementId);case Ge.INTERSTITIAL:return await GameSDK.getInterstitialAdAsync(this.placementId);case Ge.REWARDED_INTERSTITIAL:return await GameSDK.getRewardedInterstitialAsync(this.placementId);default:return null}}getAdInstanceFailed(){if("canLoadAd"in GameSDK.extra){for(let e of this.instanceQueue)if(GameSDK.extra.canLoadAd(e))return this.instanceQueue.splice(this.instanceQueue.indexOf(e),1),e}else return this.instanceQueue.shift()||null;return null}logAdLoad(){switch(this.type){case Ge.INTERSTITIAL:self.codex.analytics.loadInterstitialAd({service:this.service});break;case Ge.REWARDED_VIDEO:self.codex.analytics.loadRewardedVideoAd({service:this.service});break;case Ge.REWARDED_INTERSTITIAL:self.codex.analytics.loadRewardedInterstitialAd({service:this.service});break}}logAdShown(){switch(this.type){case Ge.INTERSTITIAL:self.codex.analytics.showInterstitialAd({service:this.service});break;case Ge.REWARDED_VIDEO:self.codex.analytics.showRewardedVideoAd({service:this.service});break;case Ge.REWARDED_INTERSTITIAL:self.codex.analytics.showRewardedInterstitialAd({service:this.service});break}}pushInstanceToQueue(e){this.instanceQueue.push(e)}},dm=Ko;O(),O(),O(),O(),O(),s(),o(),i(),c(),l(),d(),u(),p(),m(),h();var{BaseAnalytics:Cx,Events:Dt}=Ludex.Plugins.Analytics,Ex=[Dt.SCREEN_OPEN],{Utils:{Array:Mx}}=Ludex,jo=class extends Cx{constructor(e,t){super(e,"GoogleAnalytics",R(S({},t),{color:"#E35335"}))}processEvent(e,t){Mx.has(Ex,e)||(this.customEvent(e,t),gtag("event",e,t))}customEvent(e,t){switch(e){case Dt.AD_SHOW:case Dt.AD_SHOW_FAILED:case Dt.AD_SHOWING:case Dt.USE_ITEM:case Dt.EARN_ITEM:this.addLevelName(t);break;default:break}}addLevelName(e){if(!e||!this.codex?.match)return;let t=this.codex.match.getMatchState().customData.level;!t||t<0||(e.level_name=this.getLevelName(t))}},fa=jo;O(),O(),O();var gm="production",zo=null,{Dtos:_x,Events:je,Configs:{AppId:Nx,Ads:Ie,Analytics:ya,Debugger:Ne,Firebase:Pm,Notification:Rx,RemoteConfig:xm,PerformanceMonitor:kx,AdaptivePerformance:wm},Plugins:{Ads:{Types:ga}},Utils:{Device:Gx,Object:Am,Json:zt,String:bm,Valid:$x,Time:Fx,Function:Bx,Mark:X}}=Ludex,Yo=class extends od{markName="Core Initialize";modulePlugins=[];getBuildVersion(){return parseInt(`${zo}`)||0}async boot(){super.boot(),this.addPlugins(),this.initEventPlugin(),this.event.emit(je.CORE_BOOTING),this.Ue(),this.initFirebasePlugin(),this.initMarkCoreInitialize(),X.putAttr(this.markName,"Step","Init Analytics"),this.initGoogleAnalytics(),this.initClarityAnalytics(),this.initFirebaseAnalytics(),this.initYandexAnalytics(),this.initXiaomiAnalytics(),this.initFacebookAnalytics(),this.initTranssionH5Analytics(),X.putAttr(this.markName,"Step","Init Plugins"),this.initAds(),this.initMatchPlugin(),this.initRemoteConfig(),X.putAttr(this.markName,"Step","Load Lazy Plugins"),$x.isDebugger()||this.event.on(je.MODULE_PLUGIN_READY,this.handleProtectGameInstance),this.addMonitorPlugin().then(this.initMonitorErrorPlugin),this.addCanvasRecorderPlugin().then(this.initCanvasRecorderPlugin),this.addAdaptivePerformancePlugin().then(this.initAdaptivePerformancePlugin),this.addInputRecorderPlugin().then(this.initInputRecorderPlugin),X.putAttr(this.markName,"Step","Load Dev Plugins"),this.event.catchUp(je.GAME_SDK_READY,this.addDevPlugins)}async Ue(){await Fx.sleepAsync(5e3),this.event.getEventListeners(je.CORE_BOOTING).length}async start(){super.start(),X.putAttr(this.markName,"Step","Core Start"),this.event.emit(je.CORE_STARTING),X.putAttr(this.markName,"Step","Request Token"),await this.auth.requestToken(),X.putAttr(this.markName,"Step","Init States"),await this.initState(),X.putAttr(this.markName,"Step","Process Player Profile"),this.processPlayerProfile(),GameSDK.getSDKName()==="FacebookInstant"&&Gx.isIOS()?this.event.catchUp(je.GAME_SDK_STARTED,this.processContextSession):await this.processContextSession(),X.putAttr(this.markName,"Step","Core Ready"),X.putAttr(this.markName,"Success","true"),this.event.emit(je.CORE_READY)}processContextSession=async()=>{X.putAttr(this.markName,"Step","Process Context Payload"),await this.context.detectContextSessionType(),this.context.detectContextGameMode();let e=this.context.getSessionContextType();X.putAttr(this.markName,"Context Mode",e),X.stop(this.markName)};addPlugins(){this.installPlugin("Storage",om),this.installPlugin("Event",nu),this.installPlugin("Ads",xd),this.installPlugin("Auth",Rd),this.installPlugin("Audio",Od),this.installPlugin("Match",_p),this.installPlugin("Player",Yp),this.installPlugin("Profile",em),this.installPlugin("Context",Hd),this.installPlugin("Language",iu),this.installPlugin("Missions",Bp),this.installPlugin("Analytics",Id),this.installPlugin("Visibility",cm),this.installPlugin("Leaderboard",gu),this.installPlugin("DailyRewards",Jd),this.installPlugin("FrameCapture",M),this.installPlugin("RemoteConfig",M),"Proxy"in window&&this.installPlugin("Firebase",M)}installPlugin(e,t,r=!1){let n=bm.toCamelCase(bm.capitalize(e));this.plugins.install(e,t,!0,n),e!=="Storage"&&(r?this.emitModulePluginReady(e):this.emitCorePluginReady(e))}async addMonitorPlugin(){try{let{MonitorError:e}=Ne;if(!e.Enabled)return;this.modulePlugins.push("MonitorError");let t=(await Promise.resolve().then(()=>(O(),Z))).default;if(typeof t!="function")return;this.installPlugin("MonitorError",t,!0)}catch{}}async addCanvasRecorderPlugin(){try{let{CanvasRecorder:e}=Ne;if(!e.Enabled)return;this.modulePlugins.push("CanvasRecorder");let t=(await Promise.resolve().then(()=>(O(),Z))).default;if(typeof t!="function")throw new Error("CanvasRecorderPlugin is not a function");this.installPlugin("CanvasRecorder",t,!0)}catch{}}async addAdaptivePerformancePlugin(){try{if(!wm.Enabled)return;this.modulePlugins.push("AdaptivePerformance");let e=(await Promise.resolve().then(()=>(ym(),fm))).default;if(typeof e!="function")return;this.installPlugin("AdaptivePerformance",e,!0)}catch{}}async addInputRecorderPlugin(){try{let{InputRecorder:e}=Ne;if(!e.Enabled)return;this.modulePlugins.push("InputRecorder");let t=(await Promise.resolve().then(()=>(O(),Z))).default;if(typeof t!="function")return;this.installPlugin("InputRecorder",t,!0)}catch{}}addDevPlugins=()=>{let{ListPlayerDevIds:e}=Ne,t=this.player.getPlayerId();gm!=="development"&&(!t||e.indexOf(t)<0)||(this.addConsolePlugin(),this.addProfilerPlugin())};async addConsolePlugin(){try{let{Console:e}=Ne;if(!e.Enabled)return;this.modulePlugins.push("Console");let t=(await Promise.resolve().then(()=>(O(),Z))).default;if(typeof t!="function")throw new Error("ConsolePlugin is not a function");this.installPlugin("Console",t,!0),this.initConsolePlugin()}catch{}}async addProfilerPlugin(){try{let{Profiler:e}=Ne;if(!e.Enabled)return;this.modulePlugins.push("Profiler");let t=(await Promise.resolve().then(()=>(O(),Z))).default;if(typeof t!="function")throw new Error("ProfilerPlugin is not a function");this.installPlugin("Profiler",t,!0),this.initProfilerPlugin()}catch{}}emitCorePluginReady(e){this.event.emit(pe.CORE_PLUGIN_READY,{name:e})}emitModulePluginReady(e){this.event.emit(pe.MODULE_PLUGIN_READY,{name:e})}handleProtectGameInstance=()=>{let e=this.event.getEventEmitCount(pe.MODULE_PLUGIN_READY),t=this.modulePlugins.length;e<t||(window.codex=Object.freeze(window.codex),tt(window,"codex"))};initEventPlugin(){let{EventLogging:e}=Ne;e.Enabled&&this.event.enableLogEvent()}initMatchPlugin(){this.match.setUseCPUProfile(!1)}initAds(){this.ads.configure(Ie),this.initGoogleAds(),this.initTranssionH5Ads(),this.initAdInstance(),Ie.Enabled&&this.analytics.initAdEvent({adService:"platform",state:"loaded"})}async initGoogleAds(){try{if(!Ie.Enabled)return;let{AdSense:e}=Ie.AdServiceConfigs;if(!e.Enabled)return;let t=new M(this);await t.initAsync({usePreload:e.UsePreload,dataAdHost:e.DataAdHost,dataAdClient:e.DataAdClient,dataAdChannel:e.DataAdChannel,dataAdBreakTest:e.DataAdBreakTest,dataAdFrequencyHint:e.DataAdFrequencyHint}),window.GoogleAds=t}catch{}}async initTranssionH5Ads(){try{if(!Ie.Enabled)return;let{Savana:e}=Ie.AdServiceConfigs;if(!e.Enabled)return;let t=new M(this);await t.initAsync({usePreload:e.UsePreload,dataAdHost:e.DataAdHost,dataAdClient:e.DataAdClient,dataAdChannel:e.DataAdChannel,dataAdBreakTest:e.DataAdBreakTest,dataAdFrequencyHint:e.DataAdFrequencyHint}),window.TranssionH5Ads=t}catch{}}getAdInstanceByService(e,t=!1){let{AdSense:r,AppLovin:n,Savana:y}=Ie.AdServiceConfigs;switch(e){case"adsense":if(r.Enabled)return M;break;case"applovin":n.Enabled;break;case"savana":if(y.Enabled)return M;break;default:return t?M:dm}return null}initAdInstance(){for(let t of Ie.InterstitialAdOptions){let r=this.getAdInstanceByService(t.AdService);r&&this.ads.setAdInstance(ga.INTERSTITIAL,t.PlacementId,r)}for(let t of Ie.RewardedVideoAdOptions){let r=this.getAdInstanceByService(t.AdService);r&&this.ads.setAdInstance(ga.REWARDED_VIDEO,t.PlacementId,r)}for(let t of Ie.RewardedInterstitialAdOptions){let r=this.getAdInstanceByService(t.AdService);r&&this.ads.setAdInstance(ga.REWARDED_INTERSTITIAL,t.PlacementId,r)}let e=!0;for(let t of Ie.BannerDisplayAdOptions){let r=this.getAdInstanceByService(t.AdService,e);r&&this.ads.setAdInstance(ga.BANNER,t.PlacementId,r)}}async initState(){try{let e=new pd(this);e.initContext(),await e.initPlayer()}catch{}}initConsolePlugin(){this.console&&this.console.configure()}initProfilerPlugin(){this.profiler&&this.profiler.configure()}initCanvasRecorderPlugin=()=>{if(!this.canvasRecorder)return;let{CanvasRecorder:e}=Ne,{Type:t,Quality:r,RecordFps:n,SyncFps:y}=e.Options;this.canvasRecorder.configure({type:t,quality:r,syncFps:y,recordFps:n}),this.canvasRecorder.setPanelExpanded(e.PanelExpanded);let f=document.querySelector("canvas");f&&this.canvasRecorder.setCanvas(f)};initMonitorErrorPlugin=()=>{if(!this.monitorError)return;let{MonitorError:e,ListPlayerDevIds:t}=Ne,{ApiKey:r,Service:n,Feedback:y,TrackUser:f,FilterErrors:w}=e,{playerId:A,name:x}=this.player.getPlayer();A&&t.indexOf(A)>=0||(window.disableSimpleTrackErrors?.(),this.monitorError.configure({apiKey:r,service:n,feedback:y,trackUser:f,releaseStage:gm,buildVersion:`${zo??1}`}),this.monitorError.setUser({id:A,name:x}),this.monitorError.addFilterErrors(w),this.monitorError.initFeedbackTrackErrors(),this.updateMonitorErrorUserAndMetadata(),this.processErrorsQueue())};updateMonitorErrorUserAndMetadata=()=>{this.event.catchUp(je.PLAYER_INFO_LOADED,this.processWhenPlayerInfoLoaded)};processErrorsQueue=()=>{if(this.monitorError&&Array.isArray(window.__errorQueue)){for(let e of window.__errorQueue)if(e instanceof Error)this.monitorError.sendException(e);else{let t=Bx.toError(e);this.monitorError.sendException(t)}window.__errorQueue=null}};processWhenPlayerInfoLoaded=()=>{if(!this.monitorError)return;let{playerId:e,name:t}=this.player.getPlayer();this.monitorError.setUser({id:e,name:t}),this.monitorError.addMetadata({isFirstSession:this.player.isFirstSession()})};initRemoteConfig(){if(!xm.Enabled)return;let e=zt.clone(xm);this.remoteConfig.configure(e),this.event.on(pe.REQUEST_SAVE_CONFIG,this.handleSaveRemoteConfig),this.event.on(pe.REQUEST_UPDATE_CONFIG,this.handleUpdateLudexConfig),this.event.catchUp(pe.PLAYER_INFO_LOADED,this.handleStorageCurrentRemoteConfig)}handleSaveRemoteConfig=e=>{try{let t={[e.type]:e};this.player.setPlayerDataByName("remoteConfig",t)}catch{}};handleUpdateLudexConfig=e=>{try{let{id:t,type:r}=e;if(r!=="Ludex")return;Ludex.Configs=Am.merge(Ludex.Configs,e.config);let{Ads:n}=Ludex.Configs;this.ads.configure(n),this.event.emit(pe.REMOTE_CONFIG_UPDATED,{id:t,type:r})}catch{}};handleStorageCurrentRemoteConfig=()=>{let e=this.player.getPlayerDataByKey("remoteConfig");if(e){for(let t in e)if(Am.hasOwn(e,t)){let r=e[t],n=zt.clone(r),y=new _x.RemoteConfig.Data(n).toObject();this.remoteConfig.setRemoteConfig(y),this.remoteConfig.processUpdateConfig(y.id,y.type)}}};initFirebasePlugin(){if(!Pm.Enabled||!this.firebase)return;let e=zt.clone(Pm);this.firebase.configure(e),X.setService(this.firebase.services.performance)}initMarkCoreInitialize(){kx.CoreFlows&&(X.measure(this.markName),X.putAttr(this.markName,"Build",`${zo}`),X.putAttr(this.markName,"GameSDK",GameSDK.getSDKName()),X.putAttr(this.markName,"Platform",GameSDK.getPlatform()),X.putAttr(this.markName,"Success","false"),X.start(this.markName))}initAdaptivePerformancePlugin=()=>{if(!this.adaptivePerformance)return;let e=zt.clone(wm);this.adaptivePerformance.configure(e)};initInputRecorderPlugin=()=>{if(!this.inputRecorder)return;let{InputRecorder:e}=Ne,t=zt.clone(e);t&&this.inputRecorder.configure(t)};async processPlayerProfile(){try{await this.player.syncProfileToServer(),this.processAfterSyncProfile()}catch{}}processAfterSyncProfile=()=>{Rx.Enabled&&this.updatePlayerProfileToNotificationService()};async updatePlayerProfileToNotificationService(){try{let e=this.player.getPlayer(),{ASID:t,playerId:r,name:n,photo:y,locale:f}=e;await dd({appId:Nx,ASID:t,playerId:r,name:n,photo:y,locale:f})}catch{}}initGoogleAnalytics(){let{Enabled:e,ConsoleLog:t}=ya.GoogleAnalytics??{};e&&(typeof fa!="function"||!(fa.prototype instanceof Object)||this.analytics.add(new fa(this.codex,{log:!!t})))}initClarityAnalytics(){let{Enabled:e,ConsoleLog:t}=ya.ClarityAnalytics??{};if(!e||typeof M!="function"||!(M.prototype instanceof Object))return;let r=new M(this.codex,{log:!!t}),n=this.player.getPlayer(),{playerId:y}=n;r.setUser(y,GameSDK.extra?.isGuest??!0),this.analytics.add(r)}initFirebaseAnalytics(){let{Enabled:e,ConsoleLog:t}=ya.FirebaseAnalytics??{};if(!e||typeof M!="function"||!(M.prototype instanceof Object))return;let r=new M(this.codex,{log:!!t});this.analytics.add(r);let n="no_entry";GameSDK.getEntryPointAsync().then(y=>{n=y}).catch(y=>{}).finally(()=>{let y=this.player.getPlayer(),{playerId:f,locale:w}=y,{fbig_ad_id:A,fbig_adset_id:x,fbig_campaign_id:v,fb_instant_game_adset_id:D,fb_instant_game_ad_id:I,fb_instant_game_campaign_id:E}=GameSDK.getEntryPointData()||{},b=A||I,T=x||D,U=v||E;r.setUser(f,{locale:w,ad_id:b,adset_id:T,campaign_id:U,traffic_source:n})})}initYandexAnalytics(){GameSDK.getSDKName()==="Yandex"&&this.analytics.add(new M(this.codex))}initXiaomiAnalytics(){GameSDK.getSDKName()==="Xiaomi"&&this.analytics.add(new M(this.codex))}initFacebookAnalytics(){let e=GameSDK.getSDKName(),{Enabled:t,Prefix:r,ConsoleLog:n}=ya.FacebookAnalytics??{};!t||e!=="FacebookInstant"||typeof r=="string"&&this.analytics.add(new M(this.codex,{prefix:r,log:!!n}))}initTranssionH5Analytics(){GameSDK.getSDKName()==="TranssionH5"&&this.analytics.add(new M(this.codex))}},vm=Yo,{Configs:{GameEngine:{ForceDesktopDPR:Pa}},Utils:{Device:Vx},Events:Qo}=Ludex,Ux=async()=>{let e=new vm;window.codex=e,typeof globalThis<"u"&&(globalThis.codex=e);let t=20;window.__sdkLoadingCount<t&&(window.__sdkLoadingCount=t),await e.boot(),e.event.catchUp(Qo.REQUEST_CORE_START,Sm)},Dm=!1,Sm=()=>{if(Dm)return;if(codex.event.getEventEmitCount(Qo.GAME_SDK_READY)<1){codex.event.catchUp(Qo.GAME_SDK_READY,Sm);return}codex.start(),Dm=!0;let e=25;window.__sdkLoadingCount<e&&(window.__sdkLoadingCount=e)};Pa!==!1&&Vx.isDesktop()&&typeof Pa=="number"&&Pa>0&&(window.devicePixelRatio=Pa),window.originalRequestAnimationFrame=window.requestAnimationFrame,window.isCustomRequestAnimationFrame=window.isCustomRequestAnimationFrame??!0,window.isCustomRequestAnimationFrame&&(window.requestAnimationFrame=e=>window.isCustomRequestAnimationFrame?(setTimeout(e,1e3/60),0):window.originalRequestAnimationFrame(e)),Ux();
+"use strict";
+var __create = Object.create;
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __getProtoOf = Object.getPrototypeOf;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __pow = Math.pow;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true,
+writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b ||= {})
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+var __objRest = (source, exclude) => {
+  var target = {};
+  for (var prop in source)
+    if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+      target[prop] = source[prop];
+  if (source != null && __getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(source)) {
+      if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+        target[prop] = source[prop];
+    }
+  return target;
+};
+var __esm = (fn2, res) => function __init() {
+  return fn2 && (res = (0, fn2[__getOwnPropNames(fn2)[0]])(fn2 = 0)), res;
+};
+var __commonJS = (cb, mod) => function __require() {
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+};
+var __export = (target, all) => {
+  for (var name2 in all)
+    __defProp(target, name2, { get: all[name2], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) ||
+        desc.enumerable });
+  }
+  return to;
+};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {},
+__copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) :
+  target,
+  mod
+));
+var __decorateClass = (decorators, target, key, kind) => {
+  var result3 = kind > 1 ? void 0 : kind ? __getOwnPropDesc(target, key) : target;
+  for (var i = decorators.length - 1, decorator; i >= 0; i--)
+    if (decorator = decorators[i])
+      result3 = (kind ? decorator(target, key, result3) : decorator(result3)) || result3;
+  if (kind && result3) __defProp(target, key, result3);
+  return result3;
+};
+
+// <define:__GAME_CONFIG__>
+var define_GAME_CONFIG_default;
+var init_define_GAME_CONFIG = __esm({
+  "<define:__GAME_CONFIG__>"() {
+    define_GAME_CONFIG_default = { AppId: "dinosaurs-merge-master", AppDescription: "", ApiHost: "ht\
+tps://fbig-singleplay-apps.citigo.site", OtherHost: "https://fbig-leaderboards.citigo.site", Ads: { Enabled: false,
+    PreloadAds: true, NotifyPlayerBeforeShow: false, ShowAdOnLoad: { Enabled: false, DelaySeconds: 0,
+    PlacementId: "interstitial_demo" }, DegradationTracking: { ResetTimeMinutes: 5, MaxFailedAttempts: 8 },
+    AdServiceConfigs: { AdSense: { Enabled: false, UsePreload: false, DataAdClient: "ca-pub-12345678\
+90", DataAdChannel: "1234567890", DataAdBreakTest: false, DataAdFrequencyHint: 30 }, Savana: { Enabled: false,
+    UsePreload: false, DataAdClient: "ca-pub-1234567890", DataAdChannel: "1234567890", DataAdBreakTest: false,
+    DataAdFrequencyHint: 45, BannerAdSlotId: "1234567890" }, AppLovin: { Enabled: false, UsePreload: false } },
+    InterstitialAdOptions: [{ AdService: "platform", PlacementId: "interstitial_demo", SecondsFirstTime: 30,
+    SecondsBetweenAds: 45 }, { AdService: "adsense", PlacementId: "interstitial_adsense", SecondsFirstTime: 30,
+    SecondsBetweenAds: 45 }], RewardedVideoAdOptions: [{ AdService: "platform", PlacementId: "reward\
+ed_video_demo", SecondsFirstTime: 0, SecondsBetweenAds: 0 }, { AdService: "adsense", PlacementId: "r\
+ewarded_video_adsense", SecondsFirstTime: 0, SecondsBetweenAds: 0 }], RewardedInterstitialAdOptions: [
+    { AdService: "platform", PlacementId: "rewarded_interstitial_demo", SecondsFirstTime: 0, SecondsBetweenAds: 0 },
+    { AdService: "adsense", PlacementId: "rewarded_interstitial_adsense", SecondsFirstTime: 0, SecondsBetweenAds: 0 }],
+    BannerDisplayAdOptions: [{ AdService: "platform", PlacementId: "banner_demo", Position: "bottom",
+    BannerHeight: 50, SecondsReload: 60, Platform: "ALL" }] }, Languages: { DetectPlayerLocale: true },
+    GameSDKOptions: { AllowWithoutSDK: true, UseNameGenerator: true, MSGames: { LoginOnStart: false,
+    MaxLoginAttemptsPerDay: 1 }, Yandex: { LoginOnStart: false, MaxLoginAttemptsPerDay: 1 }, TranssionH5: {
+    GaId: "G-XXXXXXXXXX" } }, Core: { InitAsync: false, AverageLoadTime: 3, StartSDKAfterLoadGame: true,
+    FastCheckTournamentContext: true }, GameEngine: { ForceDesktopDPR: 2, AutoResizeCanvas: true, PreferredFPS: {
+    Mobile: 60, Desktop: 60 }, DynamicAtlas: { IOS: { Enabled: true, AutoAtlasSize: false, MaxAtlasCount: 2,
+    MaxAtlasSize: 4096, MaxFrameSize: 2048 }, Android: { Enabled: true, AutoAtlasSize: false, MaxAtlasCount: 2,
+    MaxAtlasSize: 4096, MaxFrameSize: 2048 }, Desktop: { Enabled: true, AutoAtlasSize: false, MaxAtlasCount: 2,
+    MaxAtlasSize: 4096, MaxFrameSize: 2048 }, UsePowerOfTwo: false, TextureBleeding: true, AllowNonePackable: false,
+    TextureAtlasOptimize: true, OnlyOptimizeWhenRenderTooLong: true }, DynamicAssets: { Enabled: true,
+    Debug: false, Resolution: { Adjust: 2, Original: 2 }, Compression: { PNG: { colors: 256, quality: 50,
+    dither: 0.6, palette: true, compressionLevel: 8 }, JPEG: { quality: 50, mozjpeg: true }, WEBP: {
+    quality: 35, lossless: false, alphaQuality: 40, smartSubsample: true, preset: "drawing" } }, IgnoreFiles: [] },
+    HybridFileCache: { Enabled: true, BuildMode: { Enabled: true, InvalidateMode: "version", SupportedExtensions: [
+    ".json", ".cconb"] }, PreviewMode: { Enabled: false, CacheScene: false, CachePrefab: false, CacheUuidExtension: false,
+    InvalidateMode: "commitId", SupportedExtensions: [".json", ".cconb"] } } }, Gameplay: { StartAdAtLevel: 1,
+    MaxRescueCount: 1, Tutorial: { Enabled: true, ForceUseTutorial: false } }, Firebase: { Enabled: false,
+    Options: { AppId: "", ApiKey: "", ProjectId: "", AuthDomain: "", StorageBucket: "", MeasurementId: "",
+    MessagingSenderId: "" }, Services: { Analytics: { Enabled: false }, Performance: { Enabled: false },
+    RemoteConfig: { Enabled: false } } }, Analytics: { GoogleAnalytics: { Enabled: true, ConsoleLog: false },
+    ClarityAnalytics: { Enabled: false, ConsoleLog: false, ScreenshotCanvas: { Interval: 1500, ByEvent: [
+    "APP_READY", "PAGE_VIEW", "BUTTON_CLICK", "AD_SHOWING", "LEVEL_START", "LEVEL_END"] } }, FirebaseAnalytics: {
+    Enabled: false, ConsoleLog: false }, FacebookAnalytics: { Prefix: "fba", Enabled: false, ConsoleLog: false } },
+    PerformanceMonitor: { CoreFlows: true, EngineFlows: true, FpsTracking: { Enabled: true, TrackingDuration: 60,
+    TrackingInterval: 10 }, LoadResources: true }, RemoteConfig: { Enabled: false, Options: { ForceReloadGame: false,
+    FetchIntervalInSeconds: 300 }, ServiceType: "mockup", DefaultConfigId: "default", SupportedDataTypes: [
+    "Ludex", "Gameplay"], MockupConfig: { Enabled: true }, SelfHostedConfig: { Enabled: false, AppId: "",
+    ApiKey: "", ApiUrl: "" } }, Network: { MaximumRequest: 6, Timeout: 15e3, Retries: 3 }, Leaderboards: {
+    LeaderboardList: [] }, Notification: { Enabled: false, ApiUrl: "https://notifications.sunstudio.\
+io" }, DailyRewards: { MaxDays: 7, MockTime: 0, CheckInterrupt: false }, Mockup: { Ads: { Enabled: false,
+    ErrorRate: 5, GiphyApiKey: "VmjHIRsfrwCAssDS4mDo9DoImxJm1lLM", SafeAreaBottom: 0 }, Match: { Enabled: false,
+    ErrorRate: 5, PlayerInfo: { Id: "player-mock", Name: "Player Mock", Photo: "", Signature: "" }, OpponentInfo: {
+    Id: "opponent-mock", Name: "Opponent Mock", Photo: "", Signature: "" } }, GameSDK: { SlowAPI: { Enabled: false,
+    ErrorRate: 5, StartDelay: 1e3, InitialDelay: 1e3, PlayerDataDelay: 1e3 }, Context: { Enabled: false },
+    Player: { SubscribeBot: { Enabled: false, CanSubscribeBot: true }, ConnectedPlayers: { Enabled: false,
+    ErrorRate: 5, RandomDelayMs: 1e3, NumOfPlayers: 3 } }, AddShortcut: { Enabled: false }, Tournament: {
+    Enabled: false, ErrorRates: 5, RandomDelayMs: 1e3, NumOfTournament: { Normal: 10, HostPage: 2 } },
+    Payments: { Enabled: false, ErrorRates: 5, RandomDelayMs: 1e3, Products: [] } }, Profile: { Enabled: false,
+    ErrorRate: 5, RandomDelayMs: 1e3, AvatarUrl: "https://picsum.photos/seed/%1/300/300", RandomNameApiKey: "\
+a1f7164dc9d2468b953aef67b0a19355" }, Leaderboards: { Enabled: true, MinScore: 10, MaxScore: 100, ErrorRate: 5,
+    NumOfLeaders: { Min: 10, Max: 50 }, DefaultLimit: 60, RandomDelayMs: 1e3 }, LoadingScreen: { Enabled: false } },
+    Debugger: { Console: { Enabled: false }, Profiler: { Enabled: false }, EventLogging: { Enabled: false },
+    CanvasRecorder: { Enabled: false, OnlyCore: false, PanelExpanded: false, Options: { Type: "png",
+    Quality: 0.85, RecordFps: 60, SyncFps: true } }, MonitorError: { Enabled: false, ApiKey: "", Service: "\
+BugSnag", TrackUser: false, TrackPerformance: false, FilterErrors: { Codes: { Accepted: [], Ignored: [
+    "USER_INPUT", "NETWORK_FAILURE"] }, Messages: { Accepted: [], Ignored: ["Load image failed"] } },
+    Feedback: false }, ListPlayerDevIds: ["guest-007"], InputRecorder: { Enabled: false, Logging: true,
+    PlaybackDelay: 0, TimeScale: 1, UseVisualizer: true, SkipInactivity: { Enabled: true, MinTime: 3e3 },
+    MouseEvents: { mousedown: true, mouseup: true, mousemove: true, mouseenter: true, mouseleave: true,
+    mouseout: true, mouseover: true } } }, AdaptivePerformance: { Enabled: true, Quality: { Min: 1, Max: 2,
+    AdjustStep: 0.1 }, Options: { FpsThreshold: 48, CheckInterval: 2e3, AutoUpgradeQuality: true, OnlyUpdateWhenSwitchScene: false },
+    TrackingSceneNames: ["GameScene"] }, FrameCapture: { Enabled: false, Options: { Quality: 0.85, RenderType: "\
+jpeg", UseBlobIfPossible: true, FallbackWithWideframe: "Default" } } };
+  }
+});
+
+// <define:__GAME_SDK_CONFIG__>
+var define_GAME_SDK_CONFIG_default;
+var init_define_GAME_SDK_CONFIG = __esm({
+  "<define:__GAME_SDK_CONFIG__>"() {
+    define_GAME_SDK_CONFIG_default = { AllowWithoutSDK: true, UseNameGenerator: true };
+  }
+});
+
+// extensions/ludex/src/libs/common/track-events.ts
+var listeners, originalAddEventListener;
+var init_track_events = __esm({
+  "extensions/ludex/src/libs/common/track-events.ts"() {
+    "use strict";
+    listeners = {};
+    window.__listeners = listeners;
+    originalAddEventListener = window.addEventListener.bind(window);
+    window.addEventListener = (name2, listener, options) => {
+      if (!listeners[name2]) {
+        listeners[name2] = [];
+      }
+      listeners[name2].push(listener);
+      originalAddEventListener(name2, listener, options);
+    };
+  }
+});
+
+// extensions/ludex/src/libs/common/track-errors.ts
+function disableSimpleTrackErrors() {
+  const list = ["error", "unhandledrejection"];
+  const listeners2 = window.__listeners ?? [];
+  for (const name2 of list) {
+    if (!listeners2[name2]?.[0]) continue;
+    window.removeEventListener(name2, listeners2[name2].shift());
+  }
+}
+function errorHandler(error) {
+  if (!window.__errorQueue) return;
+  window.__errorQueue.push(typeof error === "string" ? new Error(error) : error);
+}
+function init() {
+  window.addEventListener("error", (event) => {
+    errorHandler(event.error);
+  });
+  window.addEventListener("unhandledrejection", (event) => {
+    errorHandler(event.reason);
+  });
+}
+var init_track_errors = __esm({
+  "extensions/ludex/src/libs/common/track-errors.ts"() {
+    "use strict";
+    window.__errorQueue = [];
+    window.addEventListener("load", () => {
+      disableSimpleTrackErrors();
+      init();
+    });
+  }
+});
+
+// extensions/ludex/src/libs/init-core.ts
+var AVG_LOAD_TIME_MS, MAX_RETRY_COUNT, RETRY_DELAY_MS, PROGRESS_CHECK_INTERVAL_MS, SLOW_LOADING_THRESHOLD_MS,
+GA_SCRIPT_LOAD_TIMEOUT_MS, INITIAL_SDK_LOADING_PERCENT, TARGET_SDK_LOADING_PERCENT, SDK_WAIT_INTERVAL_MS,
+SDK_MAX_WAIT_MS, logError, logAnalyticsEvent, progressIntervalTimer, lastProgressValue, stopProgressTimers,
+startProgressTimers, slowLoadingTimer, startSlowLoadingCheck, clearSlowLoadingCheck, loadGAScript, initGoogleAnalytics,
+processGoogleAnalytics, updateUserProperties, finalizeAnalyticsInitialization, initGameSDK, waitForGameSDKAndInitialize;
+var init_init_core = __esm({
+  "extensions/ludex/src/libs/init-core.ts"() {
+    "use strict";
+    AVG_LOAD_TIME_MS = 3 * 1e3;
+    MAX_RETRY_COUNT = 5;
+    RETRY_DELAY_MS = 2e3;
+    PROGRESS_CHECK_INTERVAL_MS = 500;
+    SLOW_LOADING_THRESHOLD_MS = 8e3;
+    GA_SCRIPT_LOAD_TIMEOUT_MS = 1e4;
+    INITIAL_SDK_LOADING_PERCENT = 1;
+    TARGET_SDK_LOADING_PERCENT = 70;
+    SDK_WAIT_INTERVAL_MS = 50;
+    SDK_MAX_WAIT_MS = 1e4;
+    window.__sdkLoadingCount = window.__sdkLoadingCount ?? 0;
+    window.__errorQueue = window.__errorQueue ?? [];
+    logError = (error) => {
+      const errorInfo = Ludex?.Utils.Function.toError(error);
+      if (!errorInfo?.message) return;
+      logAnalyticsEvent("app_crash_handle", { error: errorInfo.message });
+      window.__errorQueue?.push(errorInfo);
+      codex?.monitorError?.sendException(errorInfo);
+    };
+    logAnalyticsEvent = (eventName, eventData) => {
+      codex?.analytics?.event(eventName, eventData);
+    };
+    progressIntervalTimer = null;
+    lastProgressValue = 0;
+    stopProgressTimers = () => {
+      if (!progressIntervalTimer) return;
+      clearInterval(progressIntervalTimer);
+      progressIntervalTimer = null;
+    };
+    startProgressTimers = () => {
+      stopProgressTimers();
+      if (window.__sdkLoadingCount >= TARGET_SDK_LOADING_PERCENT) {
+        return;
+      }
+      if (true) {
+        lastProgressValue = window.__sdkLoadingCount;
+        progressIntervalTimer = setInterval(() => {
+          if (window.__sdkLoadingCount >= TARGET_SDK_LOADING_PERCENT) {
+            stopProgressTimers();
+            return;
+          }
+          if (lastProgressValue !== window.__sdkLoadingCount) {
+            lastProgressValue = window.__sdkLoadingCount;
+            window.GameSDK?.setLoadingProgress(window.__sdkLoadingCount);
+          }
+        }, PROGRESS_CHECK_INTERVAL_MS);
+      } else {
+        const remainingProgress = TARGET_SDK_LOADING_PERCENT - window.__sdkLoadingCount;
+        const interval = remainingProgress > 0 ? AVG_LOAD_TIME_MS / remainingProgress : AVG_LOAD_TIME_MS;
+        progressIntervalTimer = setInterval(() => {
+          if (window.__sdkLoadingCount >= TARGET_SDK_LOADING_PERCENT) {
+            stopProgressTimers();
+            return;
+          }
+          window.__sdkLoadingCount++;
+          window.GameSDK?.setLoadingProgress(window.__sdkLoadingCount);
+        }, interval);
+      }
+    };
+    slowLoadingTimer = null;
+    startSlowLoadingCheck = () => {
+      clearSlowLoadingCheck();
+      slowLoadingTimer = setTimeout(() => {
+        if (window.__sdkLoadingCount <= INITIAL_SDK_LOADING_PERCENT) {
+          window.GameSDK?.extra?.displayWarnLoading?.(true);
+        }
+      }, SLOW_LOADING_THRESHOLD_MS);
+    };
+    clearSlowLoadingCheck = () => {
+      if (slowLoadingTimer !== null) {
+        clearTimeout(slowLoadingTimer);
+        slowLoadingTimer = null;
+      }
+      window.GameSDK?.extra?.displayWarnLoading?.(false);
+    };
+    loadGAScript = async (tagId) => {
+      const gaScript = document.createElement("script");
+      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${tagId}`;
+      gaScript.async = true;
+      return new Promise((resolve, reject) => {
+        let isHandled = false;
+        let timeout = null;
+        let loadHandler = null;
+        let errorHandler2 = null;
+        const cleanup = () => {
+          if (timeout !== null) clearTimeout(timeout);
+          if (loadHandler) gaScript.removeEventListener("load", loadHandler);
+          if (errorHandler2) gaScript.removeEventListener("error", errorHandler2);
+        };
+        timeout = setTimeout(() => {
+          if (isHandled) return;
+          isHandled = true;
+          cleanup();
+          reject(new Error(`Timeout loading GA script after ${GA_SCRIPT_LOAD_TIMEOUT_MS / 1e3}s`));
+        }, GA_SCRIPT_LOAD_TIMEOUT_MS);
+        loadHandler = () => {
+          if (isHandled) return;
+          isHandled = true;
+          cleanup();
+          resolve();
+        };
+        errorHandler2 = () => {
+          if (isHandled) return;
+          isHandled = true;
+          cleanup();
+          reject(new Error("Failed to load GA script"));
+        };
+        gaScript.addEventListener("load", loadHandler);
+        gaScript.addEventListener("error", errorHandler2);
+        document.head.appendChild(gaScript);
+      });
+    };
+    initGoogleAnalytics = (userId, entryPoint, tagIds) => {
+      try {
+        if (typeof window.gtag !== "function") {
+          throw new Error("window.gtag function not found after loading script.");
+        }
+        const entryPointData2 = window.GameSDK?.getEntryPointData() || {};
+        const {
+          fbig_ad_id,
+          fbig_adset_id,
+          fbig_campaign_id,
+          fb_instant_game_adset_id,
+          fb_instant_game_ad_id,
+          fb_instant_game_campaign_id
+        } = entryPointData2;
+        const ad_id = fbig_ad_id ?? fb_instant_game_ad_id ?? void 0;
+        const adset_id = fbig_adset_id ?? fb_instant_game_adset_id ?? void 0;
+        const campaign_id = fbig_campaign_id ?? fb_instant_game_campaign_id ?? void 0;
+        window.dataLayer = window.dataLayer || [];
+        window.gtag("js", /* @__PURE__ */ new Date());
+        window.gtag("set", {
+          client_id: `100.${userId}`,
+          user_id: userId,
+          send_page_view: false
+        });
+        const buildVersion = "0";
+        for (const tagId of tagIds) {
+          window.gtag("config", tagId, {
+            cookie_flags: "SameSite=None;Secure",
+            build: buildVersion,
+            medium: entryPoint,
+            campaign: campaign_id,
+            groups: "GA"
+          });
+        }
+        const params = Ludex?.Utils?.Browser?.getQueryParams() || {};
+        const trafficSourceDetail = params.entry_point || entryPoint;
+        const initialUserProperties = {
+          user_id: userId,
+          player_id: userId,
+          app_version: buildVersion,
+          traffic_source: entryPoint,
+          traffic_source_detail: trafficSourceDetail,
+          ad_id,
+          adset_id,
+          campaign_id,
+          new_user: void 0,
+          coins: void 0,
+          score: void 0
+        };
+        window.gtag("set", "user_properties", initialUserProperties);
+      } catch (error) {
+        logError(error);
+      }
+    };
+    processGoogleAnalytics = async () => {
+      const tagIdsRaw = null;
+      let tagList = [];
+      let primaryTagId;
+      try {
+        if (!tagIdsRaw) {
+          console.warn("GA_TAGS_IDS not defined, skipping GA initialization.");
+          return;
+        }
+        tagList = tagIdsRaw.split(" ").filter(Boolean);
+        if (tagList.length === 0) {
+          tagList.push("G-3ZG4F3ZNXH");
+        }
+        primaryTagId = tagList[0];
+        if (!primaryTagId || primaryTagId === "null") {
+          throw new Error("Primary GA Tag ID is invalid.");
+        }
+        await loadGAScript(primaryTagId);
+        const userId = window.GameSDK?.player?.getID();
+        if (!userId) {
+          console.warn("User ID not available from GameSDK when initializing GA.");
+        }
+        let entryPoint = "no_entry";
+        if (window.GameSDK) {
+          try {
+            entryPoint = await window.GameSDK.getEntryPointAsync() ?? entryPoint;
+          } catch (error) {
+            console.warn("Failed to get entry point asynchronously.", error);
+          }
+        } else {
+          console.warn("GameSDK not available to get entry point.");
+        }
+        initGoogleAnalytics(userId || "unknown_user", entryPoint, tagList);
+      } catch (error) {
+        logError(error);
+      } finally {
+        finalizeAnalyticsInitialization();
+      }
+    };
+    updateUserProperties = () => {
+      try {
+        if (!codex?.player || typeof window.gtag !== "function") {
+          console.warn("Cannot update user properties: codex.player or gtag not available.");
+          return;
+        }
+        const score2 = codex.player.getBestScore() ?? 0;
+        const coins2 = codex.player.getGameData()?.coins ?? 0;
+        const isNewUser = codex.player.isFirstSession() ?? void 0;
+        const entryPointData2 = window.GameSDK?.getEntryPointData() || {};
+        const { content, notif_id } = entryPointData2;
+        const propertiesToUpdate = {
+          new_user: isNewUser,
+          coins: coins2,
+          score: score2
+        };
+        if (content || notif_id) {
+          propertiesToUpdate.traffic_source_detail = content ?? `notif_${notif_id}`;
+        }
+        const filteredProps = Object.entries(propertiesToUpdate).filter(([_, value]) => value !== void 0).
+        reduce(
+          (obj, [key, value]) => {
+            obj[key] = value;
+            return obj;
+          },
+          {}
+        );
+        if (Object.keys(filteredProps).length > 0) {
+          window.gtag("set", "user_properties", filteredProps);
+        }
+      } catch (error) {
+        logError(error);
+      }
+    };
+    finalizeAnalyticsInitialization = () => {
+      try {
+        const {
+          Events: Events7,
+          Plugins: {
+            Analytics: { Events: AnalyticsEvents2 }
+          }
+        } = Ludex;
+        logAnalyticsEvent(AnalyticsEvents2.APP_LAUNCH);
+        codex.event.catchUp(Events7.GAME_SDK_READY, () => {
+          logAnalyticsEvent(AnalyticsEvents2.APP_INITIALIZED);
+        });
+        codex.event.catchUp(Ludex.Events.PLAYER_INFO_LOADED, updateUserProperties);
+      } catch (error) {
+        logError(error);
+      }
+    };
+    initGameSDK = async (retryCount = 0) => {
+      try {
+        startSlowLoadingCheck();
+        await window.GameSDK.initializeAsync();
+        console.info("GameSDK initialized successfully.");
+        clearSlowLoadingCheck();
+        window.__sdkLoadingCount = INITIAL_SDK_LOADING_PERCENT;
+        window.GameSDK.setLoadingProgress(window.__sdkLoadingCount);
+        startProgressTimers();
+        const gaPromise = processGoogleAnalytics();
+        if (true) {
+          await gaPromise;
+        }
+        codex.event.emit(Ludex.Events.GAME_SDK_READY);
+      } catch (error) {
+        clearSlowLoadingCheck();
+        stopProgressTimers();
+        if (retryCount >= MAX_RETRY_COUNT) {
+          logError(error);
+          return;
+        }
+        console.warn(`GameSDK initialize failed (Attempt ${retryCount + 1}), retrying in ${RETRY_DELAY_MS /
+        1e3}s...`);
+        setTimeout(() => initGameSDK(retryCount + 1), RETRY_DELAY_MS);
+      }
+    };
+    waitForGameSDKAndInitialize = () => {
+      let elapsedTime = 0;
+      const check = () => {
+        if (window.GameSDK) {
+          initGameSDK();
+        } else if (elapsedTime < SDK_MAX_WAIT_MS) {
+          elapsedTime += SDK_WAIT_INTERVAL_MS;
+          setTimeout(check, SDK_WAIT_INTERVAL_MS);
+        } else {
+          logError(new Error(`GameSDK not found after ${SDK_MAX_WAIT_MS / 1e3}s`));
+        }
+      };
+      check();
+    };
+    waitForGameSDKAndInitialize();
+  }
+});
+
+// extensions/ludex/src/libs/platforms/google-fonts.ts
+function addDivRenderFont(font) {
+  const div = document.createElement("div");
+  div.innerHTML = ".";
+  div.style.fontFamily = `'${font}'`;
+  div.style.position = "absolute";
+  div.style.left = "-100px";
+  div.style.top = "-100px";
+  document.body.appendChild(div);
+}
+function addGoogleFontsScript() {
+  const fontNames = "Lilita One, M PLUS 1p, Baloo 2";
+  if (!fontNames) return;
+  const fonts = fontNames.split(",").map((font) => font.trim());
+  for (const font of fonts) {
+    addDivRenderFont(font);
+  }
+  setTimeout(() => {
+    const family = fonts.join("&family=");
+    const link = document.createElement("link");
+    link.href = `https://fonts.googleapis.com/css2?family=${family}&display=swap`;
+    link.rel = "stylesheet";
+    link.as = "style";
+    document.head.appendChild(link);
+  }, 200);
+}
+var init_google_fonts = __esm({
+  "extensions/ludex/src/libs/platforms/google-fonts.ts"() {
+    "use strict";
+    document.addEventListener("DOMContentLoaded", addGoogleFontsScript, { once: true });
+  }
+});
+
+// extensions/ludex/src/libs/platforms/google-analytics.ts
+function trace() {
+  const args = arguments;
+  if (args[0] === "event") {
+    if (typeof args[2] !== "object") {
+      args[2] = {};
+    }
+    args[2].build = "0";
+    args[2].send_to = "GA";
+    args[2].extend_session = 1;
+  }
+  window.dataLayer.push(args);
+}
+function addGoogleAnalyticsScript() {
+  try {
+    const tagIds = null;
+    if (!tagIds) return;
+    const GA = tagIds.split(" ")[0];
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.href = `https://www.googletagmanager.com/gtag/js?id=${GA}`;
+    link.as = "script";
+    document.head.appendChild(link);
+  } catch (error) {
+    console.warn("Error adding preload google analytics script", error);
+  }
+}
+var init_google_analytics = __esm({
+  "extensions/ludex/src/libs/platforms/google-analytics.ts"() {
+    "use strict";
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = trace;
+    addGoogleAnalyticsScript();
+  }
+});
+
+// extensions/ludex/src/libs/polyfill/navigator.ts
+var getGamepads;
+var init_navigator = __esm({
+  "extensions/ludex/src/libs/polyfill/navigator.ts"() {
+    "use strict";
+    getGamepads = window.navigator.getGamepads;
+    window.navigator.getGamepads = () => {
+      try {
+        return getGamepads();
+      } catch (error) {
+        return [];
+      }
+    };
+  }
+});
+
+// extensions/ludex/src/libs/polyfill/performance.ts
+var _perf;
+var init_performance = __esm({
+  "extensions/ludex/src/libs/polyfill/performance.ts"() {
+    "use strict";
+    _perf = window.performance || {};
+    if (typeof _perf.mark !== "function" || typeof _perf.measure !== "function") {
+      _perf = {
+        // @ts-expect-error - Provide empty implementations for mark
+        mark: () => {
+        },
+        // @ts-expect-error - Provide empty implementations for measure
+        measure: () => {
+        }
+      };
+    }
+    _perf.mark("load-start");
+    window.__perf = _perf;
+  }
+});
+
+// extensions/ludex/src/libs/empty-script.ts
+var empty_script_exports = {};
+__export(empty_script_exports, {
+  default: () => empty_script_default
+});
+var empty_script_default;
+var init_empty_script = __esm({
+  "extensions/ludex/src/libs/empty-script.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    empty_script_default = null;
+  }
+});
+
+// extensions/ludex/src/game-sdk/sdk/Context.ts
+var Context, Context_default;
+var init_Context = __esm({
+  "extensions/ludex/src/game-sdk/sdk/Context.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    Context = class {
+      adapter;
+      extra;
+      currentContextID = null;
+      currentContextType = "SOLO";
+      currentContextPlayers = [];
+      chooseAsyncPopup$ = null;
+      createAsyncPopup$ = null;
+      switchAsyncPopup$ = null;
+      contextIdsByCreate$;
+      contextIdsByChoose$ = [];
+      playerIdsInContexts$;
+      constructor(adapter) {
+        this.adapter = adapter;
+        this.extra = adapter.extra;
+      }
+      setCurrentContextId(contextId2) {
+        this.checkSameContext$(contextId2);
+        this.currentContextID = contextId2;
+        this.currentContextType = "THREAD";
+      }
+      initContextInfo(contextId2, contextType2) {
+        const { Array: A10, String: S9 } = Ludex.Utils;
+        this.contextIdsByCreate$ = {};
+        this.playerIdsInContexts$ = {};
+        this.contextIdsByChoose$ = A10.fillWith(10, () => S9.generateObjectId());
+        if (!contextId2 || !contextType2) return;
+        if (["SOLO", "THREAD", "POST", "GROUP"].indexOf(contextType2) < 0) {
+          console.warn(`Invalid context type: ${contextType2}`);
+          return;
+        }
+        this.currentContextID = contextId2;
+        this.currentContextType = contextType2;
+      }
+      getID() {
+        return this.currentContextID;
+      }
+      getType() {
+        return this.currentContextType;
+      }
+      async loadSwitchAsyncPopup$() {
+        if (this.switchAsyncPopup$) return;
+        const SwitchAsyncPopup = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+        default;
+        if (typeof SwitchAsyncPopup !== "function") return;
+        this.switchAsyncPopup$ = new SwitchAsyncPopup();
+        await this.switchAsyncPopup$.setupTemplate();
+      }
+      async loadChooseAsyncPopup$() {
+        if (this.chooseAsyncPopup$) return;
+        const ChooseAsyncPopup = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+        default;
+        if (typeof ChooseAsyncPopup !== "function") return;
+        this.chooseAsyncPopup$ = new ChooseAsyncPopup();
+        await this.chooseAsyncPopup$.setupTemplate();
+      }
+      async loadCreateAsyncPopup$() {
+        if (this.createAsyncPopup$) return;
+        const CreateAsyncPopup = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+        default;
+        if (typeof CreateAsyncPopup !== "function") return;
+        this.createAsyncPopup$ = new CreateAsyncPopup();
+        await this.createAsyncPopup$.setupTemplate();
+      }
+      async switchAsync(contextId2, switchSilentlyIfSolo = false) {
+        this.extra.checkPopupShown();
+        await this.extra.awaitRandomDelay();
+        this.validateSwitchAsyncContextId(contextId2);
+        if (contextId2 === "SOLO" && switchSilentlyIfSolo) {
+          this.currentContextID = null;
+          this.currentContextType = "SOLO";
+          this.updatePlayers$([]);
+          return;
+        }
+        await this.loadSwitchAsyncPopup$();
+        await new Promise((resolve, reject) => {
+          if (!this.switchAsyncPopup$) {
+            this.adapter.extra.exceptionUnsupported();
+          }
+          this.switchAsyncPopup$.onYes(this.handleOnYes$(resolve));
+          this.switchAsyncPopup$.onNo(this.handleOnNo$(reject));
+          this.switchAsyncPopup$.show(contextId2);
+          this.extra.isPopupShown = true;
+        });
+        this.currentContextID = contextId2;
+        this.currentContextType = "THREAD";
+        this.createPlayerIdsInContext$(contextId2, 10);
+        const playerIds = this.playerIdsInContexts$[contextId2];
+        const players = playerIds.map((playerId2) => this.createPlayerInfo$(playerId2));
+        this.updatePlayers$(players);
+      }
+      async chooseAsync(_options) {
+        this.extra.checkPopupShown();
+        await this.extra.awaitRandomDelay();
+        await this.loadChooseAsyncPopup$();
+        await new Promise((resolve, reject) => {
+          if (!this.chooseAsyncPopup$) {
+            this.adapter.extra.exceptionUnsupported();
+          }
+          this.chooseAsyncPopup$.onYes(this.handleOnYes$(resolve));
+          this.chooseAsyncPopup$.onNo(this.handleOnNo$(reject));
+          this.chooseAsyncPopup$.show();
+          this.extra.isPopupShown = true;
+        });
+        const rand = Math.floor(Math.random() * this.contextIdsByChoose$.length);
+        const contextId2 = this.contextIdsByChoose$[rand];
+        this.checkSameContext$(contextId2);
+        this.currentContextID = contextId2;
+        this.currentContextType = "THREAD";
+        this.createPlayerIdsInContext$(contextId2, 2);
+        const playerIds = this.playerIdsInContexts$[contextId2];
+        const players = playerIds.map((playerId2) => this.createPlayerInfo$(playerId2));
+        this.updatePlayers$(players);
+      }
+      async createAsync(playerId2) {
+        this.extra.checkPopupShown();
+        await this.extra.awaitRandomDelay();
+        await this.validateCreateAsyncPlayerId$(playerId2);
+        await this.loadCreateAsyncPopup$();
+        await new Promise((resolve, reject) => {
+          if (!this.createAsyncPopup$) {
+            this.adapter.extra.exceptionUnsupported();
+          }
+          this.createAsyncPopup$.onYes(this.handleOnYes$(resolve));
+          this.createAsyncPopup$.onNo(this.handleOnNo$(reject));
+          this.createAsyncPopup$.show(playerId2);
+          this.extra.isPopupShown = true;
+        });
+        if (!this.contextIdsByCreate$[playerId2]) {
+          const {
+            Utils: { String: S9 }
+          } = Ludex;
+          this.contextIdsByCreate$[playerId2] = S9.generateObjectId();
+        }
+        const contextId2 = this.contextIdsByCreate$[playerId2];
+        this.checkSameContext$(contextId2);
+        this.currentContextID = contextId2;
+        this.currentContextType = "THREAD";
+        const player = this.createPlayerInfo$(playerId2);
+        this.updatePlayers$([player]);
+      }
+      handleOnYes$ = (resolve) => () => {
+        this.extra.isPopupShown = false;
+        resolve(true);
+      };
+      handleOnNo$ = (reject) => () => {
+        this.extra.isPopupShown = false;
+        try {
+          this.extra.exceptionUserInput("Player closed the context menu");
+        } catch (error) {
+          reject(error);
+        }
+      };
+      async getPlayersAsync() {
+        await this.extra.awaitRandomDelay();
+        return this.currentContextPlayers;
+      }
+      createPlayerIdsInContext$(contextId2, maxPlayers) {
+        if (!this.playerIdsInContexts$[contextId2]) {
+          const { Array: A10, String: S9 } = Ludex.Utils;
+          const rand = Math.floor(Math.random() * maxPlayers);
+          const playerIds = A10.fillWith(rand, () => S9.generateObjectId());
+          this.playerIdsInContexts$[contextId2] = playerIds;
+        }
+        return this.playerIdsInContexts$[contextId2];
+      }
+      createPlayerInfo$(playerId2) {
+        return {
+          getID: () => playerId2,
+          getName: () => `Player ${playerId2}`,
+          getPhoto: () => ""
+        };
+      }
+      updatePlayers$(players) {
+        if (this.currentContextType === "SOLO") {
+          this.currentContextPlayers = [];
+          return;
+        }
+        this.currentContextPlayers = players;
+      }
+      checkSameContext$(contextId2) {
+        if (this.currentContextID === contextId2) {
+          this.extra.exceptionSameContext();
+        }
+      }
+      async validateCreateAsyncPlayerId$(playerId2) {
+        if (!playerId2 || Array.isArray(playerId2)) {
+          const message2 = "Client does not support no player IDS or multiple player IDs yet" /* NOT_NO_OR_MULTIPLE_IDS */;
+          this.extra.exceptionClientUnsupportedOperation(message2);
+        }
+        if (!Ludex.Utils.Valid.isString(playerId2)) {
+          const message2 = `Array of type String contained a value of another type: ${playerId2}`;
+          this.extra.exceptionInvalidParam(message2);
+        }
+        if (playerId2 === GameSDK.player.getID()) {
+          const message2 = "At least one player id besides the current player must be provided." /* ONE_BESIDES_CURRENT_PLAYER_ID */;
+          this.extra.exceptionInvalidParam(message2);
+        }
+        const connectedPlayers = await GameSDK.player.getConnectedPlayersAsync();
+        const providedIdInConnectedPlayers = connectedPlayers.some(
+          (connectedPlayer) => connectedPlayer.getID() === playerId2
+        );
+        if (providedIdInConnectedPlayers) return;
+        const message = `Provided ID ${playerId2} is not a connected player of the current player.`;
+        this.extra.exceptionInvalidParam(message);
+      }
+      validateSwitchAsyncContextId(contextId2) {
+        this.checkSameContext$(contextId2);
+        if (Ludex.Utils.Valid.isString(contextId2)) return;
+        const message = "Client requires update to support this operation" /* REQUIRE_UPDATE */;
+        this.extra.exceptionClientUnsupportedOperation(message);
+      }
+    };
+    Context_default = Context;
+  }
+});
+
+// extensions/ludex/src/game-sdk/elements/async-popup.html
+var async_popup_default;
+var init_async_popup = __esm({
+  "extensions/ludex/src/game-sdk/elements/async-popup.html"() {
+    async_popup_default = "./assets/async-popup.html";
+  }
+});
+
+// extensions/ludex/src/game-sdk/elements/loading.html
+var loading_default;
+var init_loading = __esm({
+  "extensions/ludex/src/game-sdk/elements/loading.html"() {
+    loading_default = "./assets/loading.html";
+  }
+});
+
+// extensions/ludex/src/game-sdk/elements/TemplateManager.ts
+var isTemplateExist, prompts, addTemplate, addAsyncPopupTemplate, addLoadingTemplate;
+var init_TemplateManager = __esm({
+  "extensions/ludex/src/game-sdk/elements/TemplateManager.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    init_async_popup();
+    init_loading();
+    isTemplateExist = (selector) => {
+      return !!document.querySelector(selector);
+    };
+    prompts = {};
+    addTemplate = async (config) => {
+      const { template, selector } = config;
+      if (template in prompts) {
+        await prompts[template];
+        return document.querySelector(selector);
+      }
+      const prompt = (await fetch(template)).text();
+      prompts[template] = prompt;
+      const templateContent = await prompts[template];
+      if (!isTemplateExist(selector)) {
+        document.body.insertAdjacentHTML("beforeend", templateContent);
+      }
+      return document.querySelector(selector);
+    };
+    addAsyncPopupTemplate = async () => {
+      return addTemplate({
+        template: async_popup_default,
+        selector: "#async-popup-container"
+      });
+    };
+    addLoadingTemplate = async () => {
+      return addTemplate({
+        template: loading_default,
+        selector: "#loading-screen"
+      });
+    };
+  }
+});
+
+// extensions/ludex/src/game-sdk/common/LoadingScreenElement.ts
+var displayWarnTimer, LoadingScreenElement, LoadingScreenElement_default;
+var init_LoadingScreenElement = __esm({
+  "extensions/ludex/src/game-sdk/common/LoadingScreenElement.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    init_TemplateManager();
+    LoadingScreenElement = class {
+      percentage$ = 0;
+      loadingElement$ = null;
+      constructor() {
+        this.setupTemplate$();
+      }
+      async setupTemplate$() {
+        this.loadingElement$ = await addLoadingTemplate();
+        if (!this.loadingElement$) return;
+        this.loadingElement$.setAttribute("data-clarity-unmask", "true");
+        this.updateLoadingStyle$();
+      }
+      updateLoadingStyle$() {
+        if (!this.loadingElement$) return;
+        const logoUrl = "logo-128x128.png";
+        const gameIcon = this.loadingElement$.querySelector("#lds-game-icon");
+        if (gameIcon && gameIcon instanceof HTMLElement) {
+          gameIcon.style.backgroundImage = `url(${logoUrl})`;
+          gameIcon.style.backgroundColor = "transparent";
+        }
+        const gameIconBlur = this.loadingElement$.querySelector("#lds-game-icon-blur");
+        if (gameIconBlur && gameIconBlur instanceof HTMLElement) {
+          gameIconBlur.style.backgroundImage = `url(${logoUrl})`;
+          gameIconBlur.style.backgroundColor = "transparent";
+        }
+      }
+      setLoadingProgress(percentage) {
+        if (this.percentage$ >= percentage) return;
+        this.percentage$ = percentage;
+        if (this.percentage$ >= 100) {
+          this.percentage$ = 100;
+        }
+        const loadingPercent = document.getElementById("lds-percent");
+        if (!loadingPercent) return;
+        loadingPercent.innerHTML = `${percentage}`;
+      }
+      displayWarnLoading(enable) {
+        const warnText = document.getElementById("lds-warn-text");
+        if (!warnText) return;
+        clearTimeout(displayWarnTimer);
+        if (enable) {
+          warnText.style.display = "block";
+          void warnText.offsetWidth;
+          warnText.style.opacity = "0.8";
+        } else {
+          warnText.style.opacity = "0";
+          displayWarnTimer = setTimeout(() => {
+            warnText.style.display = "none";
+          }, 300);
+        }
+      }
+      removeLoadingElement() {
+        if (!this.loadingElement$) return;
+        this.loadingElement$.style.opacity = "0";
+        setTimeout(() => {
+          this.loadingElement$?.remove();
+        }, 300);
+      }
+    };
+    LoadingScreenElement_default = LoadingScreenElement;
+  }
+});
+
+// extensions/ludex/src/game-sdk/exceptions/SDKCommonError.ts
+var SDKCommonError, SDKCommonError_default;
+var init_SDKCommonError = __esm({
+  "extensions/ludex/src/game-sdk/exceptions/SDKCommonError.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    SDKCommonError = class extends Error {
+      code;
+      constructor(code, message) {
+        super(message);
+        this.code = code;
+      }
+    };
+    SDKCommonError_default = SDKCommonError;
+  }
+});
+
+// extensions/ludex/src/game-sdk/sdk/Extra.ts
+var MAX_WAIT_LUDEX_READY_TIME, Extra, Extra_default;
+var init_Extra = __esm({
+  "extensions/ludex/src/game-sdk/sdk/Extra.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    init_LoadingScreenElement();
+    init_SDKCommonError();
+    MAX_WAIT_LUDEX_READY_TIME = 1e4;
+    Extra = class {
+      adapter;
+      isGuest = false;
+      isPopupShown = false;
+      loadingElement = null;
+      constructor(adapter) {
+        this.adapter = adapter;
+      }
+      async subscribeBotAsync() {
+        const canSubscribeBot = await this.adapter.player.canSubscribeBotAsync();
+        if (!canSubscribeBot) return false;
+        const { analytics } = codex;
+        const {
+          Plugins: {
+            Analytics: {
+              Events: { BOT_SUBSCRIBE, BOT_SUBSCRIBE_POPUP }
+            }
+          }
+        } = Ludex;
+        analytics.event(BOT_SUBSCRIBE_POPUP);
+        try {
+          await this.waitSDKInitiatedAsync();
+          await this.adapter.player.subscribeBotAsync();
+          analytics.event(BOT_SUBSCRIBE, { success: true });
+          return true;
+        } catch (error) {
+          analytics.event(BOT_SUBSCRIBE, { success: false });
+          return false;
+        }
+      }
+      async checkAndCreateShortcutAsync() {
+        const canCreateShortcut = await this.adapter.canCreateShortcutAsync();
+        if (!canCreateShortcut) return;
+        const { analytics } = codex;
+        const {
+          Plugins: {
+            Analytics: {
+              Events: { SHORTCUT_CREATE, SHORTCUT_CREATE_POPUP }
+            }
+          }
+        } = Ludex;
+        analytics.event(SHORTCUT_CREATE_POPUP);
+        try {
+          await this.waitSDKInitiatedAsync();
+          await this.adapter.createShortcutAsync();
+          analytics.event(SHORTCUT_CREATE, { success: true });
+        } catch (error) {
+          analytics.event(SHORTCUT_CREATE, { success: false });
+        }
+      }
+      waitSDKInitiatedAsync() {
+        const {
+          Events: { GAME_SDK_READY }
+        } = Ludex;
+        return new Promise((resolve) => {
+          codex.event.catchUp(GAME_SDK_READY, resolve);
+        });
+      }
+      async waitLudexReadyAsync() {
+        let waitTime = 0;
+        return new Promise((resolve) => {
+          const waitInterval = setInterval(() => {
+            if ("Ludex" in window) {
+              clearInterval(waitInterval);
+              resolve();
+              return;
+            }
+            waitTime += 10;
+            if (waitTime > MAX_WAIT_LUDEX_READY_TIME) {
+              waitTime = 0;
+              console.warn("Ludex is slow to load, please check your network connection.");
+            }
+          }, 10);
+        });
+      }
+      createLoadingElement() {
+        if (this.loadingElement) return;
+        this.loadingElement = new LoadingScreenElement_default();
+      }
+      setLoadingElementProgress(progress) {
+        if (!this.loadingElement) return;
+        this.loadingElement.setLoadingProgress(progress);
+      }
+      displayWarnLoading(enable) {
+        if (!this.loadingElement) return;
+        this.loadingElement.displayWarnLoading(enable);
+      }
+      destroyLoadingElement() {
+        if (!this.loadingElement) return;
+        this.loadingElement.removeLoadingElement();
+      }
+      checkPopupShown() {
+        if (!this.isPopupShown) return;
+        this.exceptionPendingRequest("Please wait for the popup to close");
+      }
+      async delayInitialAsync() {
+        const {
+          Utils: { Time: T4 },
+          Configs: {
+            Mockup: {
+              GameSDK: { SlowAPI }
+            }
+          }
+        } = Ludex;
+        if (!SlowAPI.Enabled || SlowAPI.InitialDelay <= 0) return;
+        await T4.sleepAsync(SlowAPI.InitialDelay);
+      }
+      async delayStartAsync() {
+        const {
+          Configs: {
+            Mockup: {
+              GameSDK: { SlowAPI }
+            }
+          },
+          Utils: { Time: T4 }
+        } = Ludex;
+        if (!SlowAPI.Enabled || SlowAPI.StartDelay <= 0) return;
+        await T4.sleepAsync(SlowAPI.StartDelay);
+      }
+      async delayPlayerDataAsync() {
+        const {
+          Configs: {
+            Mockup: {
+              GameSDK: { SlowAPI }
+            }
+          },
+          Utils: { Time: T4 }
+        } = Ludex;
+        if (!SlowAPI.Enabled || SlowAPI.PlayerDataDelay <= 0) return;
+        await T4.sleepAsync(SlowAPI.PlayerDataDelay);
+      }
+      awaitRandomDelay(randomDelayMs = 1e3) {
+        const {
+          Utils: { Time: T4 }
+        } = Ludex;
+        return T4.sleepAsync(Math.random() * randomDelayMs);
+      }
+      randomException(exceptions) {
+        const rand = Math.floor(Math.random() * exceptions.length);
+        const exception = exceptions[rand];
+        console.warn("Random exception", exception);
+        this[`exception${exception}`]();
+      }
+      // ? Why is this method here?
+      // * Make reduce code size and make it easier to read
+      getErrorMessage(error) {
+        const { Valid: V37, Object: O32 } = Ludex.Utils;
+        if (!O32.hasOwn(error, "message") || !V37.isString(error.message)) return null;
+        return error.message;
+      }
+      throwNewCommonError$(code, message) {
+        throw new SDKCommonError_default(code, message);
+      }
+      exceptionUserInput(message) {
+        this.throwNewCommonError$("USER_INPUT" /* USER_INPUT */, message);
+      }
+      exceptionUnsupported() {
+        this.throwNewCommonError$("UNSUPPORTED" /* UNSUPPORTED */, "Unsupported method");
+      }
+      exceptionInvalidParam(message) {
+        this.throwNewCommonError$("INVALID_PARAM" /* INVALID_PARAM */, message);
+      }
+      exceptionPendingRequest(message) {
+        this.throwNewCommonError$("PENDING_REQUEST" /* PENDING_REQUEST */, message);
+      }
+      exceptionMethodNotImplemented() {
+        this.throwNewCommonError$("METHOD_NOT_IMPLEMENTED" /* METHOD_NOT_IMPLEMENTED */, "Method not\
+ implemented");
+      }
+      exceptionTournamentNotFound(message) {
+        this.throwNewCommonError$("TOURNAMENT_NOT_FOUND" /* TOURNAMENT_NOT_FOUND */, message);
+      }
+      exceptionSameContext() {
+        this.throwNewCommonError$("SAME_CONTEXT" /* SAME_CONTEXT */, "Must specify a context other t\
+han the current one.");
+      }
+      exceptionInvalidOperation(message) {
+        this.throwNewCommonError$("INVALID_OPERATION" /* INVALID_OPERATION */, message);
+      }
+      exceptionNetworkFailure(message = "Request failed to be processed") {
+        this.throwNewCommonError$("NETWORK_FAILURE" /* NETWORK_FAILURE */, message);
+      }
+      exceptionUnknown(message) {
+        this.throwNewCommonError$("UNKNOWN" /* UNKNOWN */, message);
+      }
+      exceptionClientUnsupportedOperation(message) {
+        this.throwNewCommonError$("CLIENT_UNSUPPORTED_OPERATION" /* CLIENT_UNSUPPORTED_OPERATION */,
+        message);
+      }
+      exceptionRateLimited(message) {
+        this.throwNewCommonError$("RATE_LIMITED" /* RATE_LIMITED */, message);
+      }
+    };
+    Extra_default = Extra;
+  }
+});
+
+// extensions/ludex/src/game-sdk/common/BaseAsyncPopup.ts
+var BaseAsyncPopup, BaseAsyncPopup_default;
+var init_BaseAsyncPopup = __esm({
+  "extensions/ludex/src/game-sdk/common/BaseAsyncPopup.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    init_TemplateManager();
+    BaseAsyncPopup = class {
+      popup;
+      title;
+      content;
+      okButton;
+      noButton;
+      okCallback$;
+      noCallback$;
+      async setupTemplate() {
+        const popupElement = await addAsyncPopupTemplate();
+        if (!popupElement) return;
+        this.popup = popupElement;
+        this.title = popupElement.querySelector("#title");
+        this.content = popupElement.querySelector("#content");
+        this.okButton = popupElement.querySelector("#ok");
+        this.noButton = popupElement.querySelector("#no");
+        this.hide();
+      }
+      onYes = (callback) => {
+        if (!this.okButton) return;
+        this.okButton.removeEventListener("click", this.okCallback$);
+        this.okCallback$ = this.handleCallback$(callback);
+        this.okButton.addEventListener("click", this.okCallback$, { once: true });
+      };
+      onNo = (callback) => {
+        if (!this.noButton) return;
+        this.noButton.removeEventListener("click", this.noCallback$);
+        this.noCallback$ = this.handleCallback$(callback);
+        this.noButton.addEventListener("click", this.noCallback$, { once: true });
+      };
+      handleCallback$ = (callback) => (e) => {
+        e.stopImmediatePropagation();
+        this.hide();
+        callback();
+      };
+      show(content) {
+        this.content.textContent = `${content}`;
+        this.popup.style.display = "flex";
+      }
+      hide() {
+        this.popup.style.display = "none";
+      }
+    };
+    BaseAsyncPopup_default = BaseAsyncPopup;
+  }
+});
+
+// extensions/ludex/src/game-sdk/common/PurchaseAsyncPopup.ts
+var PurchaseAsyncPopup_exports = {};
+__export(PurchaseAsyncPopup_exports, {
+  default: () => PurchaseAsyncPopup_default
+});
+var PurchaseAsyncPopup, PurchaseAsyncPopup_default;
+var init_PurchaseAsyncPopup = __esm({
+  "extensions/ludex/src/game-sdk/common/PurchaseAsyncPopup.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    init_BaseAsyncPopup();
+    PurchaseAsyncPopup = class extends BaseAsyncPopup_default {
+      show(payload) {
+        this.title.textContent = "Purchase";
+        this.okButton.textContent = "Purchase";
+        this.noButton.textContent = "Cancel";
+        const payloadPretty = JSON.stringify(payload, null, 2);
+        super.show(`Do you want to purchase?
+Payload: ${payloadPretty}`);
+      }
+    };
+    PurchaseAsyncPopup_default = PurchaseAsyncPopup;
+  }
+});
+
+// extensions/ludex/src/game-sdk/sdk/Payments.ts
+var CommonErrorList, GetCatalogErrorList, PurchaseErrorList, GetPurchasesErrorList, ConsumePurchaseErrorList,
+PRODUCTS_DATA_MOCK_KEY, PURCHASES_DATA_MOCK_KEY, Payments, Payments_default;
+var init_Payments = __esm({
+  "extensions/ludex/src/game-sdk/sdk/Payments.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    CommonErrorList = ["Unsupported", "NetworkFailure", "PendingRequest", "ClientUnsupportedOperatio\
+n"];
+    GetCatalogErrorList = [...CommonErrorList, "InvalidParam"];
+    PurchaseErrorList = [...CommonErrorList, "InvalidParam", "UserInput"];
+    GetPurchasesErrorList = [...CommonErrorList, "NetworkFailure"];
+    ConsumePurchaseErrorList = [...CommonErrorList, "InvalidParam", "UserInput"];
+    PRODUCTS_DATA_MOCK_KEY = "ProductsDataMockKey";
+    PURCHASES_DATA_MOCK_KEY = "PurchasesDataMockKey";
+    Payments = class {
+      adapter;
+      extra;
+      context;
+      purchaseAsyncPopup$ = null;
+      constructor(adapter) {
+        this.adapter = adapter;
+        this.extra = adapter.extra;
+        this.context = adapter.context;
+      }
+      async initPaymentInfoAsync() {
+        const {
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Payments: { Enabled }
+              }
+            }
+          }
+        } = Ludex;
+        if (!Enabled) return;
+        await this.createMockProductsData();
+      }
+      async getCatalogAsync() {
+        await this.awaitRandomDelay$();
+        this.randomError(GetCatalogErrorList);
+        const productsData = this.getProductsData$();
+        const products = Object.values(productsData);
+        return products;
+      }
+      async loadPurchasePopupAsync$() {
+        if (this.purchaseAsyncPopup$) return;
+        const PurchaseAsyncPopup2 = (await Promise.resolve().then(() => (init_PurchaseAsyncPopup(), PurchaseAsyncPopup_exports))).
+        default;
+        if (typeof PurchaseAsyncPopup2 !== "function") return;
+        this.purchaseAsyncPopup$ = new PurchaseAsyncPopup2();
+        await this.purchaseAsyncPopup$.setupTemplate();
+      }
+      async purchaseAsync(purchaseConfig) {
+        this.extra.checkPopupShown();
+        await this.awaitRandomDelay$();
+        this.validatePurchaseConfig$(purchaseConfig);
+        this.randomError(PurchaseErrorList);
+        await this.loadPurchasePopupAsync$();
+        await new Promise((resolve, reject) => {
+          if (!this.purchaseAsyncPopup$) {
+            this.adapter.extra.exceptionUnsupported();
+          }
+          this.purchaseAsyncPopup$.onYes(this.handleOnYes$(resolve));
+          this.purchaseAsyncPopup$.onNo(this.handleOnNo$(reject));
+          this.purchaseAsyncPopup$.show(purchaseConfig);
+          this.extra.isPopupShown = true;
+        });
+        const purchase = this.createMockPurchaseAsync$(purchaseConfig);
+        return purchase;
+      }
+      async getPurchasesAsync() {
+        await this.awaitRandomDelay$();
+        this.randomError(GetPurchasesErrorList);
+        const playerId2 = this.adapter.player.getID();
+        if (!playerId2) return [];
+        const purchasesData = this.getPurchasesData$();
+        const playerPurchases = purchasesData[playerId2] || [];
+        return playerPurchases;
+      }
+      async consumePurchaseAsync(purchaseToken) {
+        await this.awaitRandomDelay$();
+        this.validatePurchaseToken$(purchaseToken);
+        this.randomError(ConsumePurchaseErrorList);
+        const playerId2 = this.adapter.player.getID();
+        if (!playerId2) return;
+        const purchasesData = this.getPurchasesData$();
+        const playerPurchases = purchasesData[playerId2] || [];
+        const updatedPurchases = playerPurchases.filter((purchase) => purchase.purchaseToken !== purchaseToken);
+        this.writePurchasesData$(playerId2, updatedPurchases);
+      }
+      onReady(callback) {
+        callback();
+      }
+      async awaitRandomDelay$() {
+        const {
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Payments: { RandomDelayMs: RandomDelayMs2 }
+              }
+            }
+          }
+        } = Ludex;
+        return this.extra.awaitRandomDelay(RandomDelayMs2);
+      }
+      randomError(errors) {
+        const {
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Payments: { ErrorRates }
+              }
+            }
+          }
+        } = Ludex;
+        const isError = Math.random() * 100 < ErrorRates;
+        if (!isError) return;
+        this.extra.randomException(errors);
+      }
+      validatePurchaseConfig$(config) {
+        const {
+          Utils: { Object: O32, Valid: V37 }
+        } = Ludex;
+        if (!V37.isObject(config)) {
+          this.extra.exceptionInvalidParam("Config must be an object");
+        }
+        if (!O32.hasOwn(config, "productID")) {
+          this.extra.exceptionInvalidParam("Config must have productID");
+        }
+        const { productID } = config;
+        if (!V37.isString(productID)) {
+          this.extra.exceptionInvalidParam("productID must be a string");
+        }
+        if (O32.hasOwn(config, "developerPayload") && !V37.isString(config.developerPayload)) {
+          this.extra.exceptionInvalidParam("developerPayload must be a string");
+        }
+      }
+      validatePurchaseToken$(token) {
+        const {
+          Utils: { Valid: V37 }
+        } = Ludex;
+        if (!V37.isString(token)) {
+          this.extra.exceptionInvalidParam("Purchase token must be a string");
+        }
+      }
+      createMockPurchaseAsync$(config) {
+        const {
+          Utils: { String: S9 }
+        } = Ludex;
+        const purchase = {
+          productID: config.productID,
+          paymentID: S9.generateObjectId(),
+          purchaseToken: S9.generateObjectId(),
+          purchaseTime: (/* @__PURE__ */ new Date()).toISOString(),
+          developerPayload: config.developerPayload,
+          signedRequest: S9.generateObjectId()
+        };
+        const playerId2 = this.adapter.player.getID();
+        if (playerId2) {
+          const purchasesData = this.getPurchasesData$();
+          const playerPurchases = purchasesData[playerId2] || [];
+          playerPurchases.push(purchase);
+          this.writePurchasesData$(playerId2, playerPurchases);
+        }
+        return purchase;
+      }
+      async createMockProductsData() {
+        const {
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Payments: { Enabled, Products }
+              }
+            }
+          }
+        } = Ludex;
+        if (!Enabled) return;
+        const productsData = this.getProductsData$();
+        const allProducts = Object.values(productsData);
+        if (allProducts.length >= Products.length) return;
+        const newProducts = this.createDefaultProducts$();
+        await Promise.all(newProducts);
+      }
+      createDefaultProducts$() {
+        const {
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Payments: { Products }
+              }
+            }
+          }
+        } = Ludex;
+        return Products.map((product) => {
+          const mockProduct = {
+            productID: product.id,
+            title: `Product ${product.id}`,
+            description: `Description for ${product.id}`,
+            price: product.price.toString(),
+            priceCurrencyCode: "USD",
+            priceAmount: product.price
+          };
+          this.writeProductData$(product.id, mockProduct);
+          return mockProduct;
+        });
+      }
+      getProductsData$() {
+        const {
+          Utils: { Browser: B5, Valid: V37 }
+        } = Ludex;
+        const data = B5.getLocalStorage(PRODUCTS_DATA_MOCK_KEY);
+        if (!V37.isObject(data)) return {};
+        return data;
+      }
+      writeProductData$(id, data) {
+        const products = this.getProductsData$();
+        products[id] = data;
+        this.writeProductsData$(products);
+      }
+      writeProductsData$(products) {
+        const {
+          Utils: { Browser: B5, Valid: V37 }
+        } = Ludex;
+        if (!V37.isObject(products)) return;
+        B5.writeLocalStorage(PRODUCTS_DATA_MOCK_KEY, products);
+      }
+      getPurchasesData$() {
+        const {
+          Utils: { Browser: B5, Valid: V37 }
+        } = Ludex;
+        const data = B5.getLocalStorage(PURCHASES_DATA_MOCK_KEY);
+        if (!V37.isObject(data)) return {};
+        return data;
+      }
+      writePurchasesData$(playerId2, purchases) {
+        const {
+          Utils: { Browser: B5 }
+        } = Ludex;
+        if (!Array.isArray(purchases)) return;
+        const data = B5.getLocalStorage(PURCHASES_DATA_MOCK_KEY) ?? {};
+        data[playerId2] = purchases;
+        B5.writeLocalStorage(PURCHASES_DATA_MOCK_KEY, data);
+      }
+      handleOnYes$ = (resolve) => () => {
+        this.extra.isPopupShown = false;
+        resolve(true);
+      };
+      handleOnNo$ = (reject) => () => {
+        this.extra.isPopupShown = false;
+        try {
+          this.extra.exceptionUserInput("Player closed the context menu");
+        } catch (error) {
+          reject(error);
+        }
+      };
+    };
+    Payments_default = Payments;
+  }
+});
+
+// extensions/ludex/src/game-sdk/sdk/Player.ts
+var GameName, avatarUrl, Player, Player_default;
+var init_Player = __esm({
+  "extensions/ludex/src/game-sdk/sdk/Player.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    GameName = "Dinosaurs Merge Master".replace(/ /g, "-");
+    avatarUrl = "https://picsum.photos/seed/%1/300/300";
+    Player = class {
+      adapter;
+      extra;
+      defaultPlayerInfo;
+      currentPlayerInfo;
+      infoKey = `${GameName}_PlayerInfo`;
+      dataKey = `${GameName}_PlayerData`;
+      subscribeBot$ = null;
+      connectedPlayers$ = null;
+      constructor(adapter) {
+        this.adapter = adapter;
+        this.extra = adapter.extra;
+        this.initDefaultPlayerInfo();
+      }
+      initDefaultPlayerInfo() {
+        const playerId2 = "guest-007";
+        this.defaultPlayerInfo = {
+          playerId: playerId2,
+          playerName: "Guest",
+          playerPhoto: avatarUrl.replace("%1", playerId2)
+        };
+        this.extra.isGuest = true;
+        this.currentPlayerInfo = __spreadValues({}, this.defaultPlayerInfo);
+      }
+      initPlayerInfo(playerId2) {
+        this.updateCurrentPlayerInfo(playerId2);
+        const {
+          Utils: { Browser: B5 }
+        } = Ludex;
+        B5.writeLocalStorage(this.infoKey, this.currentPlayerInfo);
+      }
+      async canSubscribeBotAsync() {
+        await this.loadMockSubscribeBot$();
+        if (!this.subscribeBot$) {
+          this.extra.exceptionUnsupported();
+        }
+        return this.subscribeBot$.canSubscribeBotAsync();
+      }
+      async subscribeBotAsync() {
+        await this.loadMockSubscribeBot$();
+        if (!this.subscribeBot$) {
+          this.extra.exceptionUnsupported();
+        }
+        return this.subscribeBot$.subscribeBotAsync();
+      }
+      getID() {
+        return this.currentPlayerInfo.playerId;
+      }
+      getName() {
+        return this.currentPlayerInfo.playerName;
+      }
+      getPhoto() {
+        return this.currentPlayerInfo.playerPhoto;
+      }
+      async getDataAsync(keys) {
+        if (keys.length < 1) return {};
+        await this.extra.delayPlayerDataAsync();
+        const {
+          Utils: { Browser: B5, Valid: V37, Object: O32 }
+        } = Ludex;
+        const data = B5.getLocalStorage(this.dataKey);
+        if (!V37.isObject(data)) return {};
+        const dataObject = {};
+        for (const key of keys) {
+          if (O32.hasOwn(data, key)) {
+            dataObject[key] = data[key];
+          }
+        }
+        return dataObject;
+      }
+      async setDataAsync(data) {
+        await this.extra.delayPlayerDataAsync();
+        const {
+          Utils: { Browser: B5 }
+        } = Ludex;
+        B5.writeLocalStorage(this.dataKey, data);
+      }
+      async getSignedPlayerInfoAsync() {
+        return {
+          getPlayerID: () => {
+            return this.getID() ?? "";
+          },
+          getSignature: this.getSignature$
+        };
+      }
+      async getConnectedPlayersAsync() {
+        await this.loadMockConnectedPlayers$();
+        if (!this.connectedPlayers$) {
+          this.extra.exceptionUnsupported();
+        }
+        return this.connectedPlayers$.getConnectedPlayersAsync();
+      }
+      updateCurrentPlayerInfo(playerId2) {
+        const {
+          Utils: { Browser: B5, Valid: V37, Object: O32, String: S9 }
+        } = Ludex;
+        let currentId = playerId2 ?? "";
+        let currentName = "Nameless";
+        if (this.extra.isGuest) {
+          const data = B5.getLocalStorage(this.infoKey);
+          if (V37.isObject(data) && O32.hasOwn(data, "playerId") && V37.isString(data.playerId)) {
+            currentId = data.playerId;
+          }
+          if (V37.isObject(data) && O32.hasOwn(data, "playerName") && V37.isString(data.playerName)) {
+            currentName = data.playerName;
+          }
+        }
+        if (V37.isEmpty(currentId)) {
+          currentId = S9.generateObjectId();
+        }
+        if (currentName === "Nameless" && this.isUseNameGenerator$()) {
+          currentName = S9.generateNameUsingString(currentId);
+        }
+        this.currentPlayerInfo.playerId = currentId;
+        this.currentPlayerInfo.playerName = currentName;
+        this.currentPlayerInfo.playerPhoto = avatarUrl.replace("%1", currentId);
+        this.updateMockupPlayerInfo$(currentId);
+      }
+      isUseNameGenerator$() {
+        const gameConfig = define_GAME_SDK_CONFIG_default;
+        return gameConfig?.UseNameGenerator === true;
+      }
+      getMockPlayerInfo$() {
+        const { Match } = Ludex.Configs.Mockup;
+        if (!Match.Enabled) return null;
+        return Match.PlayerInfo;
+      }
+      getMockOpponentInfo$() {
+        const { Match } = Ludex.Configs.Mockup;
+        if (!Match.Enabled) return null;
+        return Match.OpponentInfo;
+      }
+      // ! Only work with playerId url param
+      updateMockupPlayerInfo$(playerId2) {
+        let info = this.getMockOpponentInfo$();
+        if (playerId2 !== info?.Id) {
+          info = this.getMockPlayerInfo$();
+        }
+        if (!info) return;
+        this.currentPlayerInfo.playerId = info.Id;
+        if (info.Name) {
+          this.currentPlayerInfo.playerName = info.Name;
+        }
+        if (info.Photo) {
+          this.currentPlayerInfo.playerPhoto = info.Photo;
+        }
+      }
+      getSignature$ = () => {
+        const token = this.getSignatureFormMockup$();
+        if (Ludex.Utils.Valid.isString(token)) return token;
+        return "default_token";
+      };
+      getSignatureFormMockup$() {
+        const {
+          Configs: {
+            Mockup: { Match }
+          }
+        } = Ludex;
+        const isPlayer = Match.PlayerInfo.Id === this.getID();
+        const isOpponent = Match.OpponentInfo.Id === this.getID();
+        if (isPlayer) return Match.PlayerInfo.Signature;
+        if (isOpponent) return Match.OpponentInfo.Signature;
+        return null;
+      }
+      async loadMockSubscribeBot$() {
+        if (this.subscribeBot$) return;
+        const MockSubscribeBot = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+        default;
+        if (typeof MockSubscribeBot !== "function") return;
+        this.subscribeBot$ = new MockSubscribeBot(this.adapter);
+      }
+      async loadMockConnectedPlayers$() {
+        if (this.connectedPlayers$) return;
+        const MockConnectedPlayers = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+        default;
+        if (typeof MockConnectedPlayers !== "function") return;
+        this.connectedPlayers$ = new MockConnectedPlayers(this.extra);
+      }
+    };
+    Player_default = Player;
+  }
+});
+
+// extensions/ludex/src/game-sdk/sdk/TournamentInstance.ts
+var TournamentInstance, TournamentInstance_default;
+var init_TournamentInstance = __esm({
+  "extensions/ludex/src/game-sdk/sdk/TournamentInstance.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    TournamentInstance = class {
+      id;
+      title$;
+      contextId$;
+      payload$;
+      endTime$;
+      tournamentType$;
+      constructor(id, payload, isPageHosted = false) {
+        const { config, data } = payload;
+        this.id = id;
+        this.title$ = config.title;
+        this.contextId$ = `0123${this.id}`;
+        this.payload$ = JSON.stringify(data ?? {});
+        this.endTime$ = config.endTime ?? this.defaultEndTime$();
+        this.tournamentType$ = isPageHosted ? "PAGE_HOSTED" : "DEFAULT";
+      }
+      defaultEndTime$() {
+        return Math.round((Date.now() + 1e3 * 60 * 60 * 24 * 7) / 1e3);
+      }
+      getID() {
+        return this.id;
+      }
+      getTitle() {
+        return this.title$;
+      }
+      getPayload() {
+        return this.payload$;
+      }
+      getEndTime() {
+        return this.endTime$;
+      }
+      getContextID() {
+        return this.contextId$;
+      }
+      getTournamentType() {
+        return this.tournamentType$;
+      }
+      // ! Use for process data in mock
+      toObject() {
+        return {
+          id: this.id,
+          title: this.title$,
+          payload: this.payload$,
+          endTime: this.endTime$,
+          contextId: this.contextId$,
+          tournamentType: this.tournamentType$
+        };
+      }
+    };
+    TournamentInstance_default = TournamentInstance;
+  }
+});
+
+// extensions/ludex/src/game-sdk/sdk/Tournament.ts
+var CommonErrorList2, CreateErrorList, JoinErrorList, ShareErrorList, PostScoreErrorList, GetTournamentsErrorList,
+TOURNAMENTS_DATA_MOCK_KEY, TOURNAMENT_LEADERS_MOCK_KEY, Tournament, Tournament_default;
+var init_Tournament = __esm({
+  "extensions/ludex/src/game-sdk/sdk/Tournament.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    init_Context();
+    init_TournamentInstance();
+    CommonErrorList2 = ["Unsupported", "NetworkFailure", "PendingRequest", "ClientUnsupportedOperati\
+on"];
+    CreateErrorList = [...CommonErrorList2, "InvalidParam", "UserInput"];
+    JoinErrorList = [...CommonErrorList2, "InvalidOperation", "UserInput"];
+    ShareErrorList = [...CommonErrorList2, "InvalidParam", "UserInput"];
+    PostScoreErrorList = [...CommonErrorList2, "InvalidParam", "UserInput"];
+    GetTournamentsErrorList = [...CommonErrorList2, "NetworkFailure"];
+    TOURNAMENTS_DATA_MOCK_KEY = "TournamentsDataMockKey";
+    TOURNAMENT_LEADERS_MOCK_KEY = "TournamentLeadersMockKey";
+    Tournament = class {
+      adapter;
+      extra;
+      context;
+      shareAsyncPopup$ = null;
+      createAsyncPopup$ = null;
+      constructor(adapter) {
+        this.adapter = adapter;
+        this.extra = adapter.extra;
+        this.context = adapter.context;
+      }
+      async initTournamentInfoAsync(tournamentId) {
+        const {
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Tournament: { Enabled }
+              }
+            }
+          }
+        } = Ludex;
+        if (!Enabled) return;
+        await this.createMockTournamentsData();
+        if (tournamentId) {
+          await this.processEnterTournament$(tournamentId);
+        }
+      }
+      processEnterTournament$ = async (tournamentId) => {
+        const tournamentData = this.getTournamentData$(tournamentId);
+        if (!tournamentData) return;
+        await this.joinAsync(tournamentId);
+      };
+      /**
+       * @deprecated Only for testing
+       */
+      async createMockTournamentsData() {
+        const {
+          Utils: { Object: O32 },
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Tournament: { Enabled, NumOfTournament }
+              }
+            }
+          }
+        } = Ludex;
+        const { Normal: NumOfNormal, HostPage: NumOfHostPaged } = NumOfTournament;
+        if (!Enabled) return;
+        const tournamentsData = this.getTournamentsData$();
+        const allTournaments = O32.vals(tournamentsData);
+        const tournaments = this.filterExpiredTournaments$(allTournaments);
+        const currentDefaultTournaments = tournaments.filter((tournament) => tournament.tournamentType ===
+        "DEFAULT");
+        const currentHostPageTournaments = tournaments.filter(
+          (tournament) => tournament.tournamentType === "PAGE_HOSTED"
+        );
+        const { length: defaultTournamentsLength } = currentDefaultTournaments;
+        const { length: hostPageTournamentsLength } = currentHostPageTournaments;
+        const remainingDefaultTournaments = NumOfNormal - defaultTournamentsLength;
+        const remainingHostPageTournaments = NumOfHostPaged - hostPageTournamentsLength;
+        const defaultTournaments = this.createDefaultTournaments$(remainingDefaultTournaments);
+        const hostPageTournaments = this.createGlobalTournaments$(remainingHostPageTournaments);
+        await Promise.all([...defaultTournaments, ...hostPageTournaments]);
+      }
+      filterExpiredTournaments$(tournaments) {
+        const now = Date.now() / 1e3;
+        const validTournaments = tournaments.filter((tournament) => tournament.endTime > now);
+        const newTournamentData = {};
+        for (const tournament of validTournaments) {
+          newTournamentData[tournament.id] = tournament;
+        }
+        this.writeTournamentsData$(newTournamentData);
+        return validTournaments;
+      }
+      createDefaultTournaments$(length) {
+        const {
+          Utils: { String: S9, Array: A10, Number: N2 },
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Tournament: { ExtraPlayerTournamentPayload }
+              }
+            }
+          }
+        } = Ludex;
+        const { leaderboard } = codex;
+        const playerId2 = GameSDK.player.getID();
+        const playerName = GameSDK.player.getName();
+        return A10.length(length).map(async () => {
+          const title = `${playerName}'s Tournament ${S9.generateObjectId()}`;
+          const leaderboardId = await leaderboard.createLeaderboardAsync({
+            name: title
+          });
+          const tournament = this.createMockTournamentAsync$({
+            initialScore: 0,
+            config: {
+              title,
+              tournamentTitle: title
+            },
+            data: __spreadValues({
+              playerId: playerId2,
+              playerName,
+              leaderboardId
+            }, ExtraPlayerTournamentPayload)
+          });
+          const tournamentId = tournament.getID().toString();
+          if (this.getTournamentLeadersData$(tournamentId)) return;
+          const playerLimit = N2.random(2);
+          const connectedPlayerIds = codex.player.getConnectedPlayerIds(playerLimit, 0);
+          const leaders = connectedPlayerIds.map((playerId3) => {
+            return {
+              playerId: playerId3,
+              score: N2.random(4)
+            };
+          });
+          leaders.sort((a, b) => a.score - b.score);
+          this.writeTournamentLeadersData$(tournamentId, leaders);
+        });
+      }
+      createGlobalTournaments$(length) {
+        const {
+          Utils: { String: S9, Array: A10, Number: N2 },
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Tournament: { ExtraGlobalTournamentPayload }
+              }
+            }
+          }
+        } = Ludex;
+        const { leaderboard } = codex;
+        return A10.length(length).map(async () => {
+          const id = S9.generateObjectId();
+          const payload = __spreadValues({
+            leaderboardId: id,
+            playerId: "global"
+          }, ExtraGlobalTournamentPayload);
+          const title = `Global Tournament ${id}`;
+          await leaderboard.createLeaderboardAsync({
+            name: title,
+            _id: id,
+            type: "world_tournament_leaderboard",
+            description: JSON.stringify(payload)
+          });
+          const tournament = this.createMockTournamentAsync$(
+            {
+              initialScore: 0,
+              config: {
+                title,
+                tournamentTitle: title
+              },
+              data: payload
+            },
+            true
+          );
+          const tournamentId = tournament.getID().toString();
+          if (this.getTournamentLeadersData$(tournamentId)) return;
+          const leaderLength = N2.random(2);
+          const leaders = A10.length(leaderLength).map(() => {
+            return {
+              playerId: S9.generateObjectId(),
+              score: N2.random(4)
+            };
+          });
+          leaders.sort((a, b) => a.score - b.score);
+          this.writeTournamentLeadersData$(tournamentId, leaders);
+        });
+      }
+      async awaitRandomDelay$() {
+        const {
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Tournament: { RandomDelayMs: RandomDelayMs2 }
+              }
+            }
+          }
+        } = Ludex;
+        return this.extra.awaitRandomDelay(RandomDelayMs2);
+      }
+      randomError(errors) {
+        const {
+          Configs: {
+            Mockup: {
+              GameSDK: {
+                Tournament: { ErrorRates }
+              }
+            }
+          }
+        } = Ludex;
+        const isError = Math.random() * 100 < ErrorRates;
+        if (!isError) return;
+        this.extra.randomException(errors);
+      }
+      async loadCreateTournamentPopupAsync$() {
+        if (this.createAsyncPopup$) return;
+        const CreateAsyncPopup = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+        default;
+        if (typeof CreateAsyncPopup !== "function") return;
+        this.createAsyncPopup$ = new CreateAsyncPopup();
+        await this.createAsyncPopup$.setupTemplate();
+      }
+      async loadSharePopupAsync$() {
+        if (this.shareAsyncPopup$) return;
+        const ShareAsyncPopup = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+        default;
+        if (typeof ShareAsyncPopup !== "function") return;
+        this.shareAsyncPopup$ = new ShareAsyncPopup();
+        await this.shareAsyncPopup$.setupTemplate();
+      }
+      async createAsync(payload) {
+        this.extra.checkPopupShown();
+        await this.awaitRandomDelay$();
+        if (this.context.getID() !== null) {
+          this.extra.exceptionInvalidOperation("Cannot create tournament while in a context");
+        }
+        this.validateCreatePayload$(payload);
+        this.randomError(CreateErrorList);
+        await this.loadCreateTournamentPopupAsync$();
+        await new Promise((resolve, reject) => {
+          if (!this.createAsyncPopup$) {
+            this.adapter.extra.exceptionUnsupported();
+          }
+          this.createAsyncPopup$.onYes(this.handleOnYes$(resolve));
+          this.createAsyncPopup$.onNo(this.handleOnNo$(reject));
+          this.createAsyncPopup$.show(payload);
+          this.extra.isPopupShown = true;
+        });
+        const tournament = this.createMockTournamentAsync$(payload);
+        const contextId2 = tournament.getContextID();
+        this.setCurrentContextID$(contextId2);
+        return tournament;
+      }
+      createMockTournamentAsync$(payload, isPageHosted = false) {
+        const {
+          Utils: { String: S9 }
+        } = Ludex;
+        const id = S9.generateObjectId();
+        const tournament = new TournamentInstance_default(id, payload, isPageHosted);
+        const tournamentData = tournament.toObject();
+        this.writeTournamentData$(id, tournamentData);
+        return tournament;
+      }
+      async postScoreAsync(score2) {
+        await this.awaitRandomDelay$();
+        this.validateAvailableTournament$();
+        if (score2 < 0) {
+          this.extra.exceptionInvalidParam("Score must be a positive number");
+        }
+        this.randomError(PostScoreErrorList);
+        const playerId2 = codex.player.getPlayerId();
+        this.updateBestScore$(playerId2, score2);
+      }
+      // ? shareAsync always show if score is less than best score
+      async shareAsync(payload) {
+        this.extra.checkPopupShown();
+        await this.awaitRandomDelay$();
+        this.validateAvailableTournament$();
+        this.validateSharePayload$(payload);
+        this.randomError(ShareErrorList);
+        await this.loadSharePopupAsync$();
+        const { score: score2 } = payload;
+        let bestScore = score2;
+        const tournament = this.getCurrentTournament$();
+        if (tournament) {
+          const playerId3 = codex.player.getPlayerId();
+          const tournamentId = tournament.getID().toString();
+          const lastBestScore = this.getBestScore$(tournamentId, playerId3);
+          if (lastBestScore && lastBestScore < score2) {
+            bestScore = lastBestScore;
+          }
+        }
+        await new Promise((resolve, reject) => {
+          if (!this.shareAsyncPopup$) {
+            this.adapter.extra.exceptionUnsupported();
+          }
+          this.shareAsyncPopup$.onYes(this.handleOnYes$(resolve));
+          this.shareAsyncPopup$.onNo(this.handleOnNo$(reject));
+          this.shareAsyncPopup$.show(bestScore);
+          this.extra.isPopupShown = true;
+        });
+        const playerId2 = codex.player.getPlayerId();
+        this.updateBestScore$(playerId2, score2);
+      }
+      async getTournamentsAsync() {
+        await this.awaitRandomDelay$();
+        this.randomError(GetTournamentsErrorList);
+        const tournamentsData = this.getTournamentsData$();
+        const {
+          Utils: { Object: O32 }
+        } = Ludex;
+        const tournaments = O32.vals(tournamentsData);
+        const tournamentInstances = tournaments.map((tournament) => this.getTournamentInstance$(tournament.
+        id));
+        return tournamentInstances.filter((tournament) => tournament !== null);
+      }
+      async joinAsync(tournamentId) {
+        await this.awaitRandomDelay$();
+        const {
+          Utils: { Valid: V37 }
+        } = Ludex;
+        if (!V37.isString(tournamentId)) {
+          this.extra.exceptionInvalidParam("Tournament ID must be a string");
+        }
+        const tournament = this.getTournamentInstance$(tournamentId);
+        if (!tournament) {
+          this.extra.exceptionTournamentNotFound("Tournament could not be found.");
+        }
+        this.randomError(JoinErrorList);
+        const tournamentContextId = tournament.getContextID();
+        await GameSDK.context.switchAsync(tournamentContextId);
+      }
+      setCurrentContextID$(contextId2) {
+        if (this.context instanceof Context_default) {
+          this.context.setCurrentContextId(contextId2);
+        }
+      }
+      handleOnYes$ = (resolve) => () => {
+        this.extra.isPopupShown = false;
+        resolve(true);
+      };
+      handleOnNo$ = (reject) => () => {
+        this.extra.isPopupShown = false;
+        try {
+          this.extra.exceptionUserInput("Player closed the context menu");
+        } catch (error) {
+          reject(error);
+        }
+      };
+      getCurrentTournament$() {
+        const contextId2 = this.context.getID();
+        if (!contextId2) return null;
+        const tournamentsData = this.getTournamentsData$();
+        for (const tournamentId in tournamentsData) {
+          if (Object.hasOwn(tournamentsData, tournamentId)) {
+            const tournament = tournamentsData[tournamentId];
+            if (tournament.contextId === contextId2) {
+              return this.getTournamentInstance$(tournamentId);
+            }
+          }
+        }
+        return null;
+      }
+      validateCreatePayload$(payload) {
+        const {
+          Utils: { Object: O32, Valid: V37 }
+        } = Ludex;
+        if (!V37.isObject(payload)) {
+          this.extra.exceptionInvalidParam("Payload must be an object");
+        }
+        if (!O32.hasOwn(payload, "initialScore")) {
+          this.extra.exceptionInvalidParam("Payload must have initialScore");
+        }
+        if (!O32.hasOwn(payload, "config")) {
+          this.extra.exceptionInvalidParam("Payload must have config");
+        }
+        const { initialScore, config } = payload;
+        if (!V37.isNumber(initialScore)) {
+          this.extra.exceptionInvalidParam("initialScore must be a number");
+        }
+        if (!V37.isObject(config)) {
+          this.extra.exceptionInvalidParam("Config must be an object");
+        }
+        if (!O32.hasOwn(config, "title")) {
+          this.extra.exceptionInvalidParam("Config must have title");
+        }
+        if (!O32.hasOwn(config, "tournamentTitle")) {
+          this.extra.exceptionInvalidParam("Config must have tournamentTitle");
+        }
+        if (O32.hasOwn(payload, "data") && !V37.isObject(payload.data)) {
+          this.extra.exceptionInvalidParam("Data must be an object");
+        }
+      }
+      validateSharePayload$(payload) {
+        const {
+          Utils: { Object: O32, Valid: V37 }
+        } = Ludex;
+        if (!V37.isObject(payload)) {
+          this.extra.exceptionInvalidParam("Payload must be an object");
+        }
+        if (!O32.hasOwn(payload, "score")) {
+          this.extra.exceptionInvalidParam("Payload must have score");
+        }
+        const { score: score2 } = payload;
+        if (!V37.isNumber(score2)) {
+          this.extra.exceptionInvalidParam("Score must be a number");
+        }
+        if (O32.hasOwn(payload, "data") && !V37.isObject(payload.data)) {
+          this.extra.exceptionInvalidParam("Data must be an object");
+        }
+      }
+      validateAvailableTournament$() {
+        const tournament = this.getCurrentTournament$();
+        if (tournament) return;
+        this.extra.exceptionTournamentNotFound("There is no tournament for this context.");
+      }
+      getTournamentInstance$(id) {
+        const tournamentData = this.getTournamentData$(id);
+        if (!tournamentData) return null;
+        return {
+          getID: () => tournamentData.id,
+          getTitle: () => tournamentData.title,
+          getPayload: () => tournamentData.payload,
+          getEndTime: () => tournamentData.endTime,
+          getContextID: () => tournamentData.contextId,
+          getTournamentType: () => tournamentData.tournamentType
+        };
+      }
+      getTournamentData$(id) {
+        const tournaments = this.getTournamentsData$();
+        if (!tournaments[id]) return null;
+        return tournaments[id];
+      }
+      writeTournamentData$(id, data) {
+        const tournaments = this.getTournamentsData$();
+        tournaments[id] = data;
+        this.writeTournamentsData$(tournaments);
+      }
+      getTournamentsData$() {
+        const {
+          Utils: { Browser: B5, Valid: V37 }
+        } = Ludex;
+        const data = B5.getLocalStorage(TOURNAMENTS_DATA_MOCK_KEY);
+        if (!V37.isObject(data)) return {};
+        return data;
+      }
+      writeTournamentsData$(tournaments) {
+        const {
+          Utils: { Browser: B5, Valid: V37 }
+        } = Ludex;
+        if (!V37.isObject(tournaments)) return;
+        B5.writeLocalStorage(TOURNAMENTS_DATA_MOCK_KEY, tournaments);
+      }
+      getBestScore$(tournamentId, playerId2) {
+        const leader = this.getTournamentLeader$(tournamentId, playerId2);
+        if (!leader) return null;
+        return leader.score ?? null;
+      }
+      updateBestScore$(playerId2, score2) {
+        const tournament = this.getCurrentTournament$();
+        if (!tournament) return;
+        const tournamentId = tournament.getID().toString();
+        if (!tournamentId) return;
+        const leader = this.getTournamentLeader$(tournamentId, playerId2);
+        if (!leader) {
+          this.writeTournamentLeader$(tournamentId, {
+            playerId: playerId2,
+            score: score2
+          });
+          return;
+        }
+        if (leader.score < score2) {
+          leader.score = score2;
+          this.writeTournamentLeader$(tournamentId, leader);
+        }
+      }
+      getTournamentLeader$(tournamentId, playerId2) {
+        const tournamentLeaders = this.getTournamentLeadersData$(tournamentId);
+        if (!tournamentLeaders.length) return null;
+        const {
+          Utils: { Array: A10 }
+        } = Ludex;
+        return A10.search(tournamentLeaders, (leader) => leader.playerId === playerId2) ?? null;
+      }
+      getTournamentLeadersData$(tournamentId) {
+        const {
+          Utils: { Browser: B5, Object: O32 }
+        } = Ludex;
+        const data = B5.getLocalStorage(TOURNAMENT_LEADERS_MOCK_KEY);
+        if (!O32.hasOwn(data, tournamentId)) return [];
+        const tournamentLeaders = data[tournamentId];
+        if (!Array.isArray(tournamentLeaders)) return [];
+        tournamentLeaders.sort((a, b) => b.score - a.score);
+        return tournamentLeaders;
+      }
+      writeTournamentLeader$(tournamentId, leader) {
+        const {
+          Utils: { Array: A10 }
+        } = Ludex;
+        const tournamentLeaders = this.getTournamentLeadersData$(tournamentId);
+        const leaderIndex = A10.searchIndex(
+          tournamentLeaders,
+          (tournamentLeader) => tournamentLeader.playerId === leader.playerId
+        );
+        if (leaderIndex === -1) {
+          tournamentLeaders.push(leader);
+        } else {
+          tournamentLeaders[leaderIndex] = leader;
+        }
+        this.writeTournamentLeadersData$(tournamentId, tournamentLeaders);
+      }
+      writeTournamentLeadersData$(tournamentId, tournamentLeaders) {
+        const {
+          Utils: { Browser: B5, Object: O32 }
+        } = Ludex;
+        if (!Array.isArray(tournamentLeaders)) return;
+        const data = B5.getLocalStorage(TOURNAMENT_LEADERS_MOCK_KEY) ?? {};
+        O32.assign(data, { [tournamentId]: tournamentLeaders });
+        B5.writeLocalStorage(TOURNAMENT_LEADERS_MOCK_KEY, data);
+      }
+    };
+    Tournament_default = Tournament;
+  }
+});
+
+// extensions/ludex/src/game-sdk/sdk/GameSDK.ts
+var GameSDK2, GameSDK_default2;
+var init_GameSDK = __esm({
+  "extensions/ludex/src/game-sdk/sdk/GameSDK.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    init_Context();
+    init_Extra();
+    init_Payments();
+    init_Player();
+    init_Tournament();
+    GameSDK2 = class {
+      extra;
+      player;
+      context;
+      tournament;
+      payments;
+      shortcut$ = null;
+      isInitialized = false;
+      bannerAdInstances = {};
+      rewardedVideoInstance = null;
+      interstitialAdInstance = null;
+      rewardedInterstitialInstance = null;
+      initialize() {
+        this.extra = new Extra_default(this);
+        this.player = new Player_default(this);
+        this.context = new Context_default(this);
+        this.tournament = new Tournament_default(this);
+        this.payments = new Payments_default(this);
+      }
+      isNeedSDK() {
+        const gameConfig = define_GAME_SDK_CONFIG_default;
+        return gameConfig?.AllowWithoutSDK !== true;
+      }
+      getLocale() {
+        return Ludex.Utils.Browser.getLocale();
+      }
+      getPlatform() {
+        const { Device: D4 } = Ludex.Utils;
+        if (D4.isAndroid()) return "ANDROID";
+        if (D4.isIOS()) return "IOS";
+        if (D4.isDesktop()) return "WEB";
+        if (D4.isMobile()) return "MOBILE_WEB";
+        return null;
+      }
+      getSDKName() {
+        return "Ludex";
+      }
+      getSDKVersion() {
+        return "1.0.0";
+      }
+      async initializeAsync() {
+        if (this.isInitialized) return;
+        this.initialize();
+        this.extra.createLoadingElement();
+        if (this.isNeedSDK()) {
+          await this.checkSDKInitialized();
+        }
+        await this.extra.waitLudexReadyAsync();
+        await this.extra.delayInitialAsync();
+        const params = Ludex.Utils.Browser.getQueryParams();
+        console.info("Browser params:", params);
+        const splashPreview = params.splashPreview;
+        if (splashPreview) {
+          this.extra.destroyLoadingElement();
+          return;
+        }
+        const playerIdInQuery = params.playerId;
+        this.player.initPlayerInfo(playerIdInQuery);
+        const contextIdInQuery = params.context_source_id;
+        const contextTypeInQuery = params.context_type;
+        this.context.initContextInfo(contextIdInQuery, contextTypeInQuery);
+        this.isInitialized = true;
+      }
+      async checkSDKInitialized() {
+        this.extra.exceptionInvalidOperation("GameSDK requires AllowWithoutSDK=true in game config");
+      }
+      async startGameAsync(withEvent = true) {
+        if (!this.isInitialized) {
+          this.extra.exceptionInvalidOperation("GameSDK is not initialized");
+        }
+        await this.extra.delayStartAsync();
+        const initPercent = 90;
+        window.__sdkLoadingCount = initPercent;
+        this.setLoadingProgress(initPercent);
+        this.extra.destroyLoadingElement();
+        const {
+          Events: Events7,
+          Utils: {
+            Browser: { getQueryParams }
+          }
+        } = Ludex;
+        const params = getQueryParams();
+        const tournamentIdInQuery = params.tournament_id;
+        await this.tournament.initTournamentInfoAsync(tournamentIdInQuery);
+        await this.payments.initPaymentInfoAsync();
+        if (withEvent) {
+          codex.event.emit(Events7.GAME_SDK_STARTED);
+        }
+      }
+      setLoadingProgress(percentage) {
+        this.extra.setLoadingElementProgress(percentage);
+      }
+      getEntryPointData() {
+        const {
+          Utils: { Browser: B5, Json: J7 }
+        } = Ludex;
+        const { payload = "{}" } = B5.getQueryParams();
+        if (typeof payload !== "string") return {};
+        return J7.decode(payload);
+      }
+      async getEntryPointAsync() {
+        return "no_entry";
+      }
+      async loadBannerAdAsync(placementId) {
+        if (!placementId) return;
+        if (!this.bannerAdInstances[placementId]) {
+          const MockBannerInstance = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+          default;
+          if (typeof MockBannerInstance !== "function") {
+            this.extra.exceptionInvalidOperation("Banner ads mock is not enabled");
+          }
+          this.bannerAdInstances[placementId] = new MockBannerInstance("banner", placementId);
+        }
+        await this.bannerAdInstances[placementId].loadAsync();
+        await this.bannerAdInstances[placementId].showAsync();
+      }
+      async hideBannerAdAsync(placementId) {
+        if (!this.bannerAdInstances[placementId]) return;
+        await this.bannerAdInstances[placementId].hideAsync();
+      }
+      getBannerHeight(bannerConfig) {
+        return bannerConfig.BannerHeight;
+      }
+      async getInterstitialAdAsync(placementId) {
+        if (!this.interstitialAdInstance) {
+          const MockAdInstance = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+          default;
+          if (typeof MockAdInstance !== "function") {
+            this.extra.exceptionInvalidOperation("Interstitial ads mock is not enabled");
+          }
+          this.interstitialAdInstance = new MockAdInstance("interstitial", placementId);
+        }
+        return this.interstitialAdInstance;
+      }
+      async getRewardedVideoAsync(placementId) {
+        if (!this.rewardedVideoInstance) {
+          const MockAdInstance = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+          default;
+          if (typeof MockAdInstance !== "function") {
+            this.extra.exceptionInvalidOperation("Rewarded video ads mock is not enabled");
+          }
+          this.rewardedVideoInstance = new MockAdInstance("rewarded", placementId);
+        }
+        return this.rewardedVideoInstance;
+      }
+      async getRewardedInterstitialAsync(placementId) {
+        if (!this.rewardedInterstitialInstance) {
+          const MockAdInstance = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+          default;
+          if (typeof MockAdInstance !== "function") {
+            this.extra.exceptionInvalidOperation("Rewarded interstitial ads mock is not enabled");
+          }
+          this.rewardedInterstitialInstance = new MockAdInstance("rewarded_interstitial", placementId);
+        }
+        return this.rewardedInterstitialInstance;
+      }
+      async getTournamentAsync() {
+        this.tournament.randomError(["Unsupported", "NetworkFailure"]);
+        const currentContextID = this.context.getID();
+        const { Array: A10, Valid: V37 } = Ludex.Utils;
+        if (!V37.isString(currentContextID)) {
+          this.extra.exceptionInvalidOperation("Not in a context");
+        }
+        const tournaments = await this.tournament.getTournamentsAsync();
+        const wantedTournament = A10.search(tournaments, (tournament) => {
+          return tournament.getContextID() === currentContextID;
+        });
+        if (!wantedTournament) {
+          this.extra.exceptionTournamentNotFound("A Tournament with current context was not found");
+        }
+        return wantedTournament;
+      }
+      getSupportedAPIs() {
+        const { CanSubscribeBot } = Ludex.Configs.Mockup.GameSDK.Player.SubscribeBot;
+        if (CanSubscribeBot) {
+          return ["player.canSubscribeBotAsync"];
+        }
+        return [];
+      }
+      async canCreateShortcutAsync() {
+        await this.loadMockAddShortcut$();
+        if (!this.shortcut$) {
+          this.extra.exceptionUnsupported();
+        }
+        return this.shortcut$.canCreateShortcutAsync();
+      }
+      async createShortcutAsync() {
+        await this.loadMockAddShortcut$();
+        if (!this.shortcut$) {
+          this.extra.exceptionUnsupported();
+        }
+        return this.shortcut$.createShortcutAsync();
+      }
+      async loadMockAddShortcut$() {
+        if (this.shortcut$) return;
+        const MockAddShortcut = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+        default;
+        if (typeof MockAddShortcut !== "function") return;
+        this.shortcut$ = new MockAddShortcut(this);
+      }
+    };
+    GameSDK_default2 = GameSDK2;
+  }
+});
+
+// extensions/ludex/src/utils/function/accessBlocker.ts
+var AccessBlocker, accessBlocker, wrapGetterToBlockObjectAccess, accessBlocker_default;
+var init_accessBlocker = __esm({
+  "extensions/ludex/src/utils/function/accessBlocker.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    AccessBlocker = class {
+      usedCallLocations;
+      constructor() {
+        this.usedCallLocations = /* @__PURE__ */ Object.create(null);
+      }
+      getCallerLine() {
+        const error = new Error();
+        if (!error.stack) return null;
+        const stackLines = error.stack.split("\n");
+        const callerLine = stackLines[4];
+        const trimmedCallerLine = callerLine ? callerLine.trim() : null;
+        return trimmedCallerLine;
+      }
+      blockAccess() {
+        try {
+          const callerLine = this.getCallerLine();
+          if (!callerLine) return false;
+          if (this.usedCallLocations[callerLine]) return false;
+          const blockedKeywords = ["eval", "at <", "(<"];
+          if (blockedKeywords.some((keyword) => callerLine.includes(keyword))) {
+            throw new Error(`Access blocked for the caller: ${callerLine}`);
+          }
+          this.usedCallLocations[callerLine] = true;
+          return false;
+        } catch (error) {
+          console.warn("Block access encountered an error:", error);
+          return true;
+        }
+      }
+    };
+    accessBlocker = new AccessBlocker();
+    wrapGetterToBlockObjectAccess = (source, key) => {
+      if (true) return;
+      if (false) return;
+      const propertyDescriptor = Object.getOwnPropertyDescriptor(source, key);
+      if (!propertyDescriptor) {
+        console.debug(`Property descriptor not found for key: ${key}`);
+        return;
+      }
+      const { value, get: get2, initializer } = propertyDescriptor;
+      if (value && typeof value !== "object") {
+        console.debug(`Property value is not an object for key: ${key}`);
+        return;
+      }
+      if (get2 && typeof get2 !== "function") {
+        console.debug(`Getter is not a function for key: ${key}`);
+        return;
+      }
+      if (initializer && typeof initializer !== "function") {
+        console.debug(`Initializer is not a function for key: ${key}`);
+        return;
+      }
+      Object.defineProperty(source, key, {
+        enumerable: false,
+        get() {
+          if (accessBlocker.blockAccess()) return;
+          return value ?? initializer?.call(this) ?? get2?.call(this);
+        },
+        set() {
+          console.debug(`Setter called for key: ${key}, modification is blocked.`);
+        }
+      });
+    };
+    accessBlocker_default = wrapGetterToBlockObjectAccess;
+  }
+});
+
+// extensions/ludex/src/GameSDK.ts
+function autoDetectAndInitializeSDKAdapter() {
+  let sdkAdapter;
+  const w = window;
+  let sdkName = "GameSDK";
+  if ("FBInstant" in w) {
+    sdkName = "FBInstant";
+    sdkAdapter = new empty_script_default(window.FBInstant);
+  } else if ("YaGames" in w) {
+    sdkName = "Yandex";
+    sdkAdapter = new empty_script_default(window.YaGames);
+  } else if ("funmax" in w) {
+    sdkName = "Xiaomi";
+    sdkAdapter = new empty_script_default(window.funmax);
+  } else if ("$msstart" in w) {
+    sdkName = "MsGames";
+    sdkAdapter = new empty_script_default(window.$msstart);
+  } else if ("gdsdk" in w) {
+    sdkName = "GameDistribution";
+    sdkAdapter = new empty_script_default(window.gdsdk);
+  } else if ("h5sdk" in w) {
+    sdkName = "TranssionH5";
+    sdkAdapter = new empty_script_default(window.h5sdk);
+  } else if ("CrazyGames" in w) {
+    sdkName = "CrazyGames";
+    sdkAdapter = new empty_script_default(window.CrazyGames.SDK);
+  } else if ("GlanceGamingAdInterface" in w) {
+    sdkName = "Glance";
+    sdkAdapter = new empty_script_default(window.GlanceGamingAdInterface);
+  } else if (false) {
+    sdkName = "AndroidNative";
+    sdkAdapter = new ANAdapter();
+  } else {
+    sdkAdapter = new GameSDK_default2();
+  }
+  console.info(`GameSDK loaded (${sdkName})`);
+  console.groupEnd();
+  return sdkAdapter;
+}
+var init_GameSDK2 = __esm({
+  "extensions/ludex/src/GameSDK.ts"() {
+    "use strict";
+    init_empty_script();
+    init_empty_script();
+    init_empty_script();
+    init_empty_script();
+    init_empty_script();
+    init_empty_script();
+    init_empty_script();
+    init_empty_script();
+    init_empty_script();
+    init_GameSDK();
+    init_accessBlocker();
+    console.groupCollapsed("\u26A1\uFE0F Ludex initialized");
+    console.groupCollapsed("\u{1F579}\uFE0F GameSDK");
+    window.GameSDK = Object.seal(autoDetectAndInitializeSDKAdapter());
+    accessBlocker_default(window, "GameSDK");
+  }
+});
+
+// extensions/ludex/src/constants/CoreEvents.ts
+var CoreEvents, CoreEvents_default;
+var init_CoreEvents = __esm({
+  "extensions/ludex/src/constants/CoreEvents.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    CoreEvents = /* @__PURE__ */ ((CoreEvents2) => {
+      CoreEvents2["CORE_BOOTING"] = "core-booting";
+      CoreEvents2["REQUEST_CORE_START"] = "core-start";
+      CoreEvents2["CORE_STARTING"] = "core-starting";
+      CoreEvents2["CORE_READY"] = "core-ready";
+      CoreEvents2["GAME_SDK_READY"] = "game-sdk-ready";
+      CoreEvents2["GAME_SDK_STARTED"] = "game-sdk-started";
+      CoreEvents2["CONTEXT_DATA_PROCESSED"] = "context-data-processed";
+      CoreEvents2["CONTEXT_SESSION_TYPE_DETECTED"] = "context-session-type-detected";
+      CoreEvents2["GAME_READY"] = "game-ready";
+      CoreEvents2["BUNDLE_READY"] = "bundle-ready";
+      CoreEvents2["PLAYER_INFO_LOADED"] = "player-info-loaded";
+      CoreEvents2["REQUEST_SHOW_BANNER_ADS"] = "request-show-banner-ads";
+      CoreEvents2["SWITCH_SCENE"] = "switch-scene";
+      CoreEvents2["SCENE_LOADED"] = "scene-loaded";
+      CoreEvents2["PRELOAD_SCENE"] = "preload-scene";
+      CoreEvents2["SCENE_PROGRESS"] = "scene-progress";
+      CoreEvents2["SCENE_LAUNCHED"] = "scene-launched";
+      CoreEvents2["SCENE_RENDERED"] = "scene-rendered";
+      CoreEvents2["SCENE_BEFORE_RENDERED"] = "scene-before-rendered";
+      CoreEvents2["MARK_IS_TEST_SCENE"] = "mark-is-test-scene";
+      CoreEvents2["PRELOAD_SCREENS"] = "preload-screens";
+      CoreEvents2["OPENING_SCREEN"] = "opening-screen";
+      CoreEvents2["OPEN_SCREEN"] = "open-screen";
+      CoreEvents2["OPENED_SCREEN"] = "opened-screen";
+      CoreEvents2["CLOSING_SCREEN"] = "closing-screen";
+      CoreEvents2["CLOSE_SCREEN"] = "close-screen";
+      CoreEvents2["CLOSED_SCREEN"] = "closed-screen";
+      CoreEvents2["CORE_PLUGIN_READY"] = "core-plugin-ready";
+      CoreEvents2["MODULE_PLUGIN_READY"] = "module-plugin-ready";
+      CoreEvents2["AD_SHOWING"] = "ad-showing";
+      CoreEvents2["AD_CLOSED"] = "ad-closed";
+      CoreEvents2["AD_FAILED"] = "ad-failed";
+      CoreEvents2["LANGUAGE_CHANGED"] = "language-changed";
+      CoreEvents2["REQUEST_LANGUAGE"] = "request-language";
+      CoreEvents2["REQUEST_HOT_RELOAD"] = "request-hot-reload";
+      CoreEvents2["REQUEST_SAVE_CONFIG"] = "request-save-config";
+      CoreEvents2["REQUEST_UPDATE_CONFIG"] = "request-update-config";
+      CoreEvents2["REMOTE_CONFIG_UPDATED"] = "remote-config-updated";
+      CoreEvents2["VISIBILITY_HIDDEN"] = "visibility-hidden";
+      CoreEvents2["VISIBILITY_VISIBLE"] = "visibility-visible";
+      CoreEvents2["REQUEST_RESIZE_GAME"] = "request-resize-game";
+      CoreEvents2["REQUEST_QUALITY_UPGRADED"] = "request-quality-upgraded";
+      CoreEvents2["REQUEST_QUALITY_DOWNGRADED"] = "request-quality-downgraded";
+      return CoreEvents2;
+    })(CoreEvents || {});
+    CoreEvents_default = CoreEvents;
+  }
+});
+
+// node_modules/eventemitter3/index.js
+var require_eventemitter3 = __commonJS({
+  "node_modules/eventemitter3/index.js"(exports, module2) {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    var has = Object.prototype.hasOwnProperty;
+    var prefix = "~";
+    function Events7() {
+    }
+    if (Object.create) {
+      Events7.prototype = /* @__PURE__ */ Object.create(null);
+      if (!new Events7().__proto__) prefix = false;
+    }
+    function EE(fn2, context, once) {
+      this.fn = fn2;
+      this.context = context;
+      this.once = once || false;
+    }
+    function addListener(emitter, event, fn2, context, once) {
+      if (typeof fn2 !== "function") {
+        throw new TypeError("The listener must be a function");
+      }
+      var listener = new EE(fn2, context || emitter, once), evt = prefix ? prefix + event : event;
+      if (!emitter._events[evt]) emitter._events[evt] = listener, emitter._eventsCount++;
+      else if (!emitter._events[evt].fn) emitter._events[evt].push(listener);
+      else emitter._events[evt] = [emitter._events[evt], listener];
+      return emitter;
+    }
+    function clearEvent(emitter, evt) {
+      if (--emitter._eventsCount === 0) emitter._events = new Events7();
+      else delete emitter._events[evt];
+    }
+    function EventEmitter2() {
+      this._events = new Events7();
+      this._eventsCount = 0;
+    }
+    EventEmitter2.prototype.eventNames = function eventNames() {
+      var names2 = [], events, name2;
+      if (this._eventsCount === 0) return names2;
+      for (name2 in events = this._events) {
+        if (has.call(events, name2)) names2.push(prefix ? name2.slice(1) : name2);
+      }
+      if (Object.getOwnPropertySymbols) {
+        return names2.concat(Object.getOwnPropertySymbols(events));
+      }
+      return names2;
+    };
+    EventEmitter2.prototype.listeners = function listeners2(event) {
+      var evt = prefix ? prefix + event : event, handlers = this._events[evt];
+      if (!handlers) return [];
+      if (handlers.fn) return [handlers.fn];
+      for (var i = 0, l = handlers.length, ee = new Array(l); i < l; i++) {
+        ee[i] = handlers[i].fn;
+      }
+      return ee;
+    };
+    EventEmitter2.prototype.listenerCount = function listenerCount(event) {
+      var evt = prefix ? prefix + event : event, listeners2 = this._events[evt];
+      if (!listeners2) return 0;
+      if (listeners2.fn) return 1;
+      return listeners2.length;
+    };
+    EventEmitter2.prototype.emit = function emit(event, a1, a2, a3, a4, a5) {
+      var evt = prefix ? prefix + event : event;
+      if (!this._events[evt]) return false;
+      var listeners2 = this._events[evt], len = arguments.length, args, i;
+      if (listeners2.fn) {
+        if (listeners2.once) this.removeListener(event, listeners2.fn, void 0, true);
+        switch (len) {
+          case 1:
+            return listeners2.fn.call(listeners2.context), true;
+          case 2:
+            return listeners2.fn.call(listeners2.context, a1), true;
+          case 3:
+            return listeners2.fn.call(listeners2.context, a1, a2), true;
+          case 4:
+            return listeners2.fn.call(listeners2.context, a1, a2, a3), true;
+          case 5:
+            return listeners2.fn.call(listeners2.context, a1, a2, a3, a4), true;
+          case 6:
+            return listeners2.fn.call(listeners2.context, a1, a2, a3, a4, a5), true;
+        }
+        for (i = 1, args = new Array(len - 1); i < len; i++) {
+          args[i - 1] = arguments[i];
+        }
+        listeners2.fn.apply(listeners2.context, args);
+      } else {
+        var length = listeners2.length, j;
+        for (i = 0; i < length; i++) {
+          if (listeners2[i].once) this.removeListener(event, listeners2[i].fn, void 0, true);
+          switch (len) {
+            case 1:
+              listeners2[i].fn.call(listeners2[i].context);
+              break;
+            case 2:
+              listeners2[i].fn.call(listeners2[i].context, a1);
+              break;
+            case 3:
+              listeners2[i].fn.call(listeners2[i].context, a1, a2);
+              break;
+            case 4:
+              listeners2[i].fn.call(listeners2[i].context, a1, a2, a3);
+              break;
+            default:
+              if (!args) for (j = 1, args = new Array(len - 1); j < len; j++) {
+                args[j - 1] = arguments[j];
+              }
+              listeners2[i].fn.apply(listeners2[i].context, args);
+          }
+        }
+      }
+      return true;
+    };
+    EventEmitter2.prototype.on = function on(event, fn2, context) {
+      return addListener(this, event, fn2, context, false);
+    };
+    EventEmitter2.prototype.once = function once(event, fn2, context) {
+      return addListener(this, event, fn2, context, true);
+    };
+    EventEmitter2.prototype.removeListener = function removeListener(event, fn2, context, once) {
+      var evt = prefix ? prefix + event : event;
+      if (!this._events[evt]) return this;
+      if (!fn2) {
+        clearEvent(this, evt);
+        return this;
+      }
+      var listeners2 = this._events[evt];
+      if (listeners2.fn) {
+        if (listeners2.fn === fn2 && (!once || listeners2.once) && (!context || listeners2.context ===
+        context)) {
+          clearEvent(this, evt);
+        }
+      } else {
+        for (var i = 0, events = [], length = listeners2.length; i < length; i++) {
+          if (listeners2[i].fn !== fn2 || once && !listeners2[i].once || context && listeners2[i].context !==
+          context) {
+            events.push(listeners2[i]);
+          }
+        }
+        if (events.length) this._events[evt] = events.length === 1 ? events[0] : events;
+        else clearEvent(this, evt);
+      }
+      return this;
+    };
+    EventEmitter2.prototype.removeAllListeners = function removeAllListeners(event) {
+      var evt;
+      if (event) {
+        evt = prefix ? prefix + event : event;
+        if (this._events[evt]) clearEvent(this, evt);
+      } else {
+        this._events = new Events7();
+        this._eventsCount = 0;
+      }
+      return this;
+    };
+    EventEmitter2.prototype.off = EventEmitter2.prototype.removeListener;
+    EventEmitter2.prototype.addListener = EventEmitter2.prototype.on;
+    EventEmitter2.prefixed = prefix;
+    EventEmitter2.EventEmitter = EventEmitter2;
+    if ("undefined" !== typeof module2) {
+      module2.exports = EventEmitter2;
+    }
+  }
+});
+
+// extensions/ludex/src/plugins/leaderboards/constants/ResponseLeaderboard.ts
+var DefaultResponseLeaderboard, ResponseLeaderboard_default;
+var init_ResponseLeaderboard = __esm({
+  "extensions/ludex/src/plugins/leaderboards/constants/ResponseLeaderboard.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    DefaultResponseLeaderboard = {
+      _id: "",
+      name: "",
+      createdBy: "",
+      description: "",
+      expireTime: 7 * 24 * 60 * 60 * 1e3,
+      type: "app_leaderboard",
+      timezone: "utc+0",
+      createdAt: "2024-01-01T09:00:00.000Z",
+      sortOrder: "desc",
+      statistics: "max",
+      resettable: "manually",
+      resetScore: 0,
+      numberOfLeaders: 15,
+      amountPlayer: 15
+    };
+    ResponseLeaderboard_default = DefaultResponseLeaderboard;
+  }
+});
+
+// extensions/ludex/src/plugins/leaderboards/api/LeaderboardAPIMock.ts
+var LeaderboardAPIMock_exports = {};
+__export(LeaderboardAPIMock_exports, {
+  default: () => LeaderboardAPIMock_default
+});
+var MinScore, MaxScore, NumOfLeaders, ErrorRate, DefaultLimit, RandomDelayMs, V10, B3, T2, O8, N, LeadersMockKey,
+LeaderboardsMockKey, LeaderboardAPIMock, LeaderboardAPIMock_default;
+var init_LeaderboardAPIMock = __esm({
+  "extensions/ludex/src/plugins/leaderboards/api/LeaderboardAPIMock.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    init_ResponseLeaderboard();
+    ({
+      Configs: {
+        Mockup: {
+          Leaderboards: { MinScore, MaxScore, NumOfLeaders, ErrorRate, DefaultLimit, RandomDelayMs }
+        }
+      },
+      Utils: { Valid: V10, Browser: B3, Time: T2, Object: O8, Number: N }
+    } = Ludex);
+    LeadersMockKey = "LeadersMockKey";
+    LeaderboardsMockKey = "LeaderboardsMockKey";
+    LeaderboardAPIMock = class {
+      async getPlayers(leaderboardId, payload) {
+        await this.awaitRandomDelay();
+        if (this.randomResponseError("Get players error")) return { data: [] };
+        const { playerIds } = payload;
+        const leaders = [];
+        if (playerIds && playerIds.length > 0) {
+          const leadersData = this.getLeadersData(leaderboardId);
+          for (const playerId2 of playerIds) {
+            const player = leadersData[playerId2];
+            if (player) leaders.push(player);
+          }
+        }
+        return { data: leaders };
+      }
+      async getLeaders(leaderboardId, payload) {
+        await this.awaitRandomDelay();
+        if (this.randomResponseError("Get leaders error")) return { data: [] };
+        const { limit, offset } = payload;
+        const leadersData = this.getLeadersData(leaderboardId);
+        const leadersSort = O8.vals(leadersData);
+        this.sortLeadersRank(leadersSort);
+        const leaders = [];
+        const start = offset;
+        const end = limit === 0 ? DefaultLimit : offset + limit;
+        for (let i = start; i < end; i++) {
+          const leader = leadersSort[i];
+          if (leader) leaders.push(leader);
+        }
+        this.sortLeadersRank(leaders);
+        return { data: leaders };
+      }
+      async getLeaderboardAsync(id) {
+        await this.awaitRandomDelay();
+        if (this.randomResponseError("Get leaderboard error")) return null;
+        const leaderBoard = this.getLeaderBoard(id);
+        if (!leaderBoard) {
+          console.warn(`[LeaderboardAPIMock] Leaderboard ${id} not found`);
+          return null;
+        }
+        return leaderBoard;
+      }
+      async getLeaderboardsAsync(options) {
+        await this.awaitRandomDelay();
+        if (this.randomResponseError("Get leaderboards error")) return [];
+        const { limit = 9999, type } = options;
+        if (limit <= 0) return [];
+        const leaderBoards = this.getLeaderBoardsData();
+        const leaderBoardsSort = O8.vals(leaderBoards);
+        if (type === void 0) {
+          return leaderBoardsSort.slice(0, limit);
+        }
+        const targetLeaderboards = leaderBoardsSort.filter((leaderboard) => {
+          return leaderboard.type === type;
+        });
+        return targetLeaderboards.slice(0, limit);
+      }
+      getLeadersData(leaderboardId) {
+        const players = this.getPlayersData();
+        const playerIds = Object.keys(players[leaderboardId]);
+        const leaders = {};
+        for (const playerId2 of playerIds) {
+          const player = players[leaderboardId][playerId2];
+          if (V10.isObject(player)) {
+            leaders[playerId2] = player;
+          }
+        }
+        return leaders;
+      }
+      sortLeadersRank(leaders) {
+        leaders.sort((a, b) => {
+          return parseInt(b.score, 10) - parseInt(a.score, 10);
+        });
+        leaders.forEach((leader, index) => {
+          leader.rank = index + 1;
+        });
+      }
+      async setScoreAsync(id, playerId2, score2) {
+        await this.awaitRandomDelay();
+        if (this.randomResponseError("Set score error")) return null;
+        const response = { success: false };
+        const lbData = this.getLeaderBoard(id);
+        if (!lbData) {
+          console.warn(`[LeaderboardAPIMock] Leaderboard ${id} not found`);
+          return response;
+        }
+        const players = this.getPlayersData();
+        let player = players[id][playerId2];
+        if (!player) {
+          player = this.createPlayerData(playerId2);
+          lbData.amountPlayer += 1;
+          lbData.numberOfLeaders += 1;
+          this.writeLeaderBoard(id, lbData);
+        }
+        player.score = score2.toString();
+        players[id][playerId2] = player;
+        const leaders = O8.vals(players[id]);
+        this.sortLeadersRank(leaders);
+        leaders.forEach((leader, _) => {
+          players[id][leader.playerId] = leader;
+        });
+        this.writePlayersData(id, players);
+        response.success = true;
+        return response;
+      }
+      async createLeaderboard(payload) {
+        await this.awaitRandomDelay();
+        if (this.randomResponseError("Create leaderboard error")) return null;
+        const { _id } = payload;
+        const lbData = this.getLeaderBoardsData();
+        if (lbData[_id]) {
+          return lbData[_id];
+        }
+        let { numberOfLeaders } = payload;
+        numberOfLeaders = numberOfLeaders ?? N.random(NumOfLeaders.Max - NumOfLeaders.Min) + NumOfLeaders.
+        Min;
+        this.createPlayersData(payload, numberOfLeaders);
+        return this.createLeaderboardData(payload, numberOfLeaders);
+      }
+      createLeaderboardData(payload, numberOfLeaders) {
+        const { _id: id } = payload;
+        const data = __spreadProps(__spreadValues(__spreadValues({}, ResponseLeaderboard_default), payload),
+        {
+          createdAt: (/* @__PURE__ */ new Date()).toISOString(),
+          createdBy: "mock",
+          numberOfLeaders,
+          amountPlayer: numberOfLeaders
+        });
+        this.writeLeaderBoard(id, data);
+        return data;
+      }
+      createPlayersData(payload, numberOfLeaders) {
+        const { _id: id, name: name2 } = payload;
+        const isFriendLeaderboard = name2 === "friends-leaderboard-key";
+        const players = {
+          [id]: {}
+        };
+        const leaders = [];
+        for (let i = 0; i < numberOfLeaders; i++) {
+          const leaderName = isFriendLeaderboard ? `connected-player-${i}` : i.toString();
+          const leader = this.createPlayerData(leaderName);
+          leaders.push(leader);
+        }
+        this.sortLeadersRank(leaders);
+        leaders.forEach((leader, _) => {
+          players[id][leader.playerId] = leader;
+        });
+        this.writePlayersData(id, players);
+        return players;
+      }
+      createPlayerData(playerId2) {
+        const player = {
+          playerId: playerId2,
+          score: this.randomScore(),
+          rank: 0
+        };
+        return player;
+      }
+      randomScore() {
+        return Math.floor(Math.random() * (MaxScore - MinScore) + MinScore).toString();
+      }
+      getLeaderBoardsData() {
+        const data = B3.getLocalStorage(LeaderboardsMockKey);
+        if (!V10.isObject(data)) return {};
+        return data;
+      }
+      writeLeaderBoardsData(data) {
+        if (!V10.isObject(data)) return;
+        B3.writeLocalStorage(LeaderboardsMockKey, data);
+      }
+      getLeaderBoard(id) {
+        const leaderBoards = this.getLeaderBoardsData();
+        if (!leaderBoards[id]) return null;
+        return leaderBoards[id];
+      }
+      writeLeaderBoard(id, data) {
+        const leaderBoards = this.getLeaderBoardsData();
+        leaderBoards[id] = data;
+        this.writeLeaderBoardsData(leaderBoards);
+      }
+      getPlayersData() {
+        const data = B3.getLocalStorage(LeadersMockKey);
+        if (!V10.isObject(data)) return {};
+        return data;
+      }
+      writePlayersData(id, data) {
+        const players = this.getPlayersData();
+        if (!players[id]) players[id] = {};
+        O8.assign(players[id], data[id]);
+        B3.writeLocalStorage(LeadersMockKey, players);
+      }
+      randomResponseError(message) {
+        const isError = Math.random() * 100 < ErrorRate;
+        if (!isError) return false;
+        console.warn("[LeaderboardAPIMock]", message);
+        return true;
+      }
+      async awaitRandomDelay() {
+        await T2.sleepAsync(Math.random() * RandomDelayMs);
+      }
+    };
+    LeaderboardAPIMock_default = LeaderboardAPIMock;
+  }
+});
+
+// extensions/ludex/src/plugins/adaptive-performance/components/FPSTracker.ts
+var FpsTracker, FPSTracker_default;
+var init_FPSTracker = __esm({
+  "extensions/ludex/src/plugins/adaptive-performance/components/FPSTracker.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    FpsTracker = class {
+      options;
+      performance;
+      isRunning = false;
+      checkTimer;
+      fpsHistory;
+      actualFPS = 0;
+      constructor(performance, options) {
+        this.options = options;
+        this.performance = performance;
+      }
+      start = () => {
+        if (this.isRunning) return;
+        this.isRunning = true;
+        this.checkTimer = this.options.CheckInterval;
+        this.fpsHistory = [];
+      };
+      stop = () => {
+        if (!this.isRunning) return;
+        this.isRunning = false;
+        if (this.options.OnlyUpdateWhenSwitchScene) {
+          this.checkFps();
+        }
+      };
+      postStep = (deltaTime) => {
+        if (!this.isRunning) return;
+        this.checkTimer -= deltaTime;
+        if (this.checkTimer > 0) return;
+        this.checkTimer += this.options.CheckInterval;
+        this.fpsHistory.push(this.actualFPS);
+        if (!this.options.OnlyUpdateWhenSwitchScene) {
+          this.fpsHistory.length >= 5 && this.checkFps();
+        }
+      };
+      checkFps() {
+        const { ads } = this.performance.codex;
+        if (ads.isAdFullSizeShowing()) return;
+        if (this.fpsHistory.length === 0) return;
+        let success2 = false;
+        if (this.options.AutoUpgradeQuality && this.isHighFps()) {
+          success2 = this.performance.upgradeGraphicsQuality();
+        }
+        if (this.isLowFps()) {
+          success2 = this.performance.downgradeGraphicsQuality();
+        }
+        if (success2) {
+          this.fpsHistory = [];
+        }
+      }
+      getFpsMedian() {
+        return this.getMedian(this.fpsHistory);
+      }
+      getMedian(numbers) {
+        if (numbers.length === 0) return Number.NaN;
+        const sorted = numbers.sort((a, b) => a - b);
+        const middle = Math.floor(sorted.length / 2);
+        if (sorted.length % 2 === 0) {
+          return (sorted[middle - 1] + sorted[middle]) / 2;
+        }
+        return sorted[middle];
+      }
+      isLowFps() {
+        const fpsMedian = this.getFpsMedian();
+        return fpsMedian < this.options.FpsThreshold;
+      }
+      isHighFps() {
+        const fpsMedian = this.getFpsMedian();
+        return fpsMedian > this.options.FpsThreshold * 1.2;
+      }
+    };
+    FPSTracker_default = FpsTracker;
+  }
+});
+
+// extensions/ludex/src/plugins/adaptive-performance/AdaptivePerformancePlugin.ts
+var D, AdaptivePerformancePlugin, AdaptivePerformancePlugin_default;
+var init_AdaptivePerformancePlugin = __esm({
+  "extensions/ludex/src/plugins/adaptive-performance/AdaptivePerformancePlugin.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    init_CoreEvents();
+    init_FPSTracker();
+    ({
+      Utils: { Device: D }
+    } = Ludex);
+    AdaptivePerformancePlugin = class extends Ludex.Plugins.BasePlugin {
+      enabled = false;
+      quality;
+      fpsTracker;
+      pixelRatio;
+      trackingSceneNames = [];
+      configure(option) {
+        const { Enabled, Quality, Options, TrackingSceneNames } = option;
+        this.enabled = Enabled;
+        this.quality = Quality;
+        this.pixelRatio = D.pixelRatio();
+        this.trackingSceneNames = TrackingSceneNames;
+        this.createFPSTracker(Options);
+      }
+      trackingScene = (sceneName) => {
+        if (this.trackingSceneNames.indexOf(sceneName) < 0) {
+          console.warn(`\u{1F6AB} Adaptive performance: ${sceneName} is not configured`);
+          return;
+        }
+        this.stopFPSTracker();
+        this.startFPSTracker();
+        console.info(`\u{1F4C8} Adaptive performance: tracking ${sceneName}`);
+      };
+      getCurrentQuality() {
+        return this.pixelRatio;
+      }
+      downgradeGraphicsQuality() {
+        this.event.emit(CoreEvents_default.REQUEST_QUALITY_DOWNGRADED);
+        const { Min, AdjustStep } = this.quality;
+        const currentQuality = this.pixelRatio;
+        if (currentQuality <= Min) return false;
+        const lowerQuality = +(currentQuality - AdjustStep).toFixed(2);
+        if (lowerQuality < Min) return false;
+        this.pixelRatio = lowerQuality;
+        this.resizeGameWorld(this.pixelRatio);
+        console.warn(`\u{1F4AB} Graphics quality was downgraded! (${currentQuality} -> ${lowerQuality}\
+)`);
+        return true;
+      }
+      upgradeGraphicsQuality() {
+        this.event.emit(CoreEvents_default.REQUEST_QUALITY_UPGRADED);
+        const { Max, AdjustStep } = this.quality;
+        const currentQuality = this.pixelRatio;
+        if (currentQuality >= Max) return false;
+        const higherQuality = +(currentQuality + AdjustStep).toFixed(2);
+        if (higherQuality > Max) return false;
+        this.pixelRatio = higherQuality;
+        this.resizeGameWorld(this.pixelRatio);
+        console.warn(`\u{1F680} Graphics quality was upgraded! (${currentQuality} -> ${higherQuality}\
+)`);
+        return true;
+      }
+      createFPSTracker(options) {
+        this.fpsTracker = new FPSTracker_default(this, options);
+      }
+      get event() {
+        return this.codex.event;
+      }
+      startFPSTracker = () => {
+        this.fpsTracker.start();
+      };
+      stopFPSTracker = () => {
+        this.fpsTracker.stop();
+      };
+      resizeGameWorld(forcePixelRatio) {
+        const payload = {
+          forcePixelRatio
+        };
+        this.event.emit(CoreEvents_default.REQUEST_RESIZE_GAME, payload);
+      }
+      updatePostStepDeltaTime(deltaTime) {
+        this.fpsTracker.postStep(deltaTime);
+      }
+      updateActualFPS(actualFPS) {
+        this.fpsTracker.actualFPS = actualFPS;
+      }
+    };
+    AdaptivePerformancePlugin_default = AdaptivePerformancePlugin;
+  }
+});
+
+// extensions/ludex/src/plugins/adaptive-performance/index.ts
+var adaptive_performance_exports = {};
+__export(adaptive_performance_exports, {
+  default: () => adaptive_performance_default
+});
+var adaptive_performance_default;
+var init_adaptive_performance = __esm({
+  "extensions/ludex/src/plugins/adaptive-performance/index.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_track_events();
+    init_track_errors();
+    init_init_core();
+    init_google_fonts();
+    init_google_analytics();
+    init_navigator();
+    init_performance();
+    init_GameSDK2();
+    init_AdaptivePerformancePlugin();
+    adaptive_performance_default = AdaptivePerformancePlugin_default;
+  }
+});
+
+// extensions/ludex/src/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/Ludex.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+init_CoreEvents();
+
+// extensions/ludex/src/constants/MatchModes.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/constants/MatchModes.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var MatchModes = /* @__PURE__ */ ((MatchModes3) => {
+  MatchModes3["DRAFT"] = "draft";
+  MatchModes3["SINGLE"] = "single";
+  MatchModes3["TOURNAMENT"] = "tournament";
+  MatchModes3["MATCHING_GROUP"] = "matching-group";
+  MatchModes3["CHALLENGE_FRIEND"] = "challenge-friend";
+  return MatchModes3;
+})(MatchModes || {});
+var MatchModes_default = MatchModes;
+
+// extensions/ludex/src/constants/MatchModes.ts
+var MatchModes2 = MatchModes_default;
+var MatchModes_default2 = MatchModes2;
+
+// extensions/ludex/src/type-guard/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/type-guard/common/asConst.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func = (data) => data;
+var asConst_default = func;
+
+// extensions/ludex/src/type-guard/common/noop.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func2 = () => {
+};
+var noop_default = func2;
+
+// extensions/ludex/src/type-guard/index.ts
+var type_guard_default = { asConst: asConst_default, noop: noop_default };
+
+// extensions/ludex/src/utils/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/array/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/array/at.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var at = (arr, idx) => {
+  if (!arr) return void 0;
+  if (idx < 0) {
+    return arr[arr.length + idx];
+  }
+  return arr[idx];
+};
+var at_default = at;
+
+// extensions/ludex/src/utils/array/chunk.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/array/length.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/array/fillWith.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func3 = (size, mapFn) => {
+  const result3 = [];
+  for (let i = 0; i < size; i++) {
+    result3.push(mapFn(i));
+  }
+  return result3;
+};
+var fillWith_default = func3;
+
+// extensions/ludex/src/utils/array/length.ts
+var func4 = (length) => {
+  return fillWith_default(length, () => void 0);
+};
+var length_default = func4;
+
+// extensions/ludex/src/utils/array/chunk.ts
+var func5 = (array, size) => {
+  const calc = Math.ceil(array.length / size);
+  return length_default(calc).map((_v, i) => {
+    return array.slice(i * size, i * size + size);
+  });
+};
+var chunk_default = func5;
+
+// extensions/ludex/src/utils/array/difference.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func6 = (source, target) => {
+  return source.filter((x) => target.indexOf(x) < 0);
+};
+var difference_default = func6;
+
+// extensions/ludex/src/utils/array/flatten.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func7 = (array) => {
+  return array.reduce((acc, val) => acc.concat(val), []);
+};
+var flatten_default = func7;
+
+// extensions/ludex/src/utils/array/has.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func8 = (array, target) => {
+  return array.indexOf(target) >= 0;
+};
+var has_default = func8;
+
+// extensions/ludex/src/utils/array/limit.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func9 = (array, limit) => {
+  return array.slice(0, limit);
+};
+var limit_default = func9;
+
+// extensions/ludex/src/utils/array/search.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func10 = (array, predicate) => {
+  for (let i = 0; i < array.length; i++) {
+    if (predicate(array[i], i)) {
+      return array[i];
+    }
+  }
+  return void 0;
+};
+var search_default = func10;
+
+// extensions/ludex/src/utils/array/searchIndex.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func11 = (array, predicate) => {
+  for (let i = 0; i < array.length; i++) {
+    if (predicate(array[i], i)) {
+      return i;
+    }
+  }
+  return -1;
+};
+var searchIndex_default = func11;
+
+// extensions/ludex/src/utils/array/shuffle.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func12 = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+};
+var shuffle_default = func12;
+
+// extensions/ludex/src/utils/array/toShuffled.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func13 = (array) => {
+  const copy = [...array];
+  shuffle_default(copy);
+  return copy;
+};
+var toShuffled_default = func13;
+
+// extensions/ludex/src/utils/array/unique.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var unique = (value, index, self2) => {
+  return self2.indexOf(value) === index && value !== null && value !== void 0;
+};
+var func14 = (array) => {
+  return array.filter(unique);
+};
+var unique_default = func14;
+
+// extensions/ludex/src/utils/array/index.ts
+var array_default = {
+  at: at_default,
+  chunk: chunk_default,
+  difference: difference_default,
+  fillWith: fillWith_default,
+  length: length_default,
+  limit: limit_default,
+  search: search_default,
+  searchIndex: searchIndex_default,
+  has: has_default,
+  shuffle: shuffle_default,
+  toShuffled: toShuffled_default,
+  unique: unique_default,
+  flatten: flatten_default
+};
+
+// extensions/ludex/src/utils/browser/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/browser/createCanvas.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var isOffscreenCanvasSupported = () => "OffscreenCanvas" in window && typeof OffscreenCanvas !== "un\
+defined";
+var createOffscreenCanvas = (contextType2, contextAttributes) => {
+  const canvas = new OffscreenCanvas(0, 0);
+  const context = canvas.getContext(contextType2, contextAttributes);
+  if (!context) {
+    console.warn(`Failed to get ${contextType2} context from OffscreenCanvas`);
+    return null;
+  }
+  return { canvas, context };
+};
+var createHTMLCanvas = (contextType2, contextAttributes) => {
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext(contextType2, contextAttributes);
+  if (!context) {
+    console.warn(`Failed to get ${contextType2} context from HTMLCanvas`);
+    return null;
+  }
+  return { canvas, context };
+};
+var func15 = (options) => {
+  const { contextType: contextType2 = "2d", contextAttributes = {}, type = "auto" } = options;
+  let result3 = null;
+  if (type !== "canvas" && isOffscreenCanvasSupported()) {
+    result3 = createOffscreenCanvas(contextType2, contextAttributes);
+  }
+  if (!result3 && type !== "offscreen") {
+    result3 = createHTMLCanvas(contextType2, contextAttributes);
+  }
+  return result3;
+};
+var createCanvas_default = func15;
+
+// extensions/ludex/src/utils/browser/getIndexedDB.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/browser/openIndexedDB.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/valid/isEmpty.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/valid/isFalsy.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func16 = (value) => {
+  return !value || value === "" || value === 0 || typeof value === "number" && isNaN(value);
+};
+var isFalsy_default = func16;
+
+// extensions/ludex/src/utils/valid/isEmpty.ts
+var func17 = (value) => {
+  if (isFalsy_default(value)) {
+    return value !== false && value !== 0;
+  }
+  if (typeof value === "string" || Array.isArray(value)) {
+    return value.length === 0;
+  }
+  if (typeof value === "object" && value !== null) {
+    return Object.keys(value).length === 0;
+  }
+  return false;
+};
+var isEmpty_default = func17;
+
+// extensions/ludex/src/utils/browser/openIndexedDB.ts
+var gameName = "Dinosaurs Merge Master";
+var dbInstances = {};
+var getDBName = (dbName) => {
+  if (isEmpty_default(dbName)) {
+    return GameSDK.getSDKName() ?? "Storage";
+  }
+  return dbName ?? "Storage";
+};
+var openIndexedDB = (dbName) => {
+  const fullDBName = `${gameName}_${dbName}`;
+  if (dbInstances[fullDBName]) {
+    return Promise.resolve(dbInstances[fullDBName]);
+  }
+  return new Promise((resolve, reject) => {
+    let latestVersion = 1;
+    let request;
+    const tryOpen = (version) => {
+      request = indexedDB.open(gameName, version);
+      request.onerror = (event) => {
+        const error = event.target.error;
+        if (error?.name === "VersionError") {
+          latestVersion++;
+          tryOpen(latestVersion);
+        } else {
+          reject(error);
+        }
+      };
+      request.onsuccess = (_event) => {
+        const db = request.result;
+        if (!db.objectStoreNames.contains(dbName)) {
+          latestVersion++;
+          tryOpen(latestVersion);
+          return;
+        }
+        dbInstances[fullDBName] = db;
+        resolve(db);
+      };
+      request.onupgradeneeded = (event) => {
+        const db = event.target.result;
+        latestVersion = db.version;
+        if (!db.objectStoreNames.contains(dbName)) {
+          db.createObjectStore(dbName);
+        }
+      };
+    };
+    tryOpen(latestVersion);
+  });
+};
+var openIndexedDB_default = openIndexedDB;
+
+// extensions/ludex/src/utils/browser/getIndexedDB.ts
+var func18 = async (key, dbName) => {
+  try {
+    const correctDbName = getDBName(dbName);
+    const db = await openIndexedDB_default(correctDbName);
+    if (!db.objectStoreNames.contains(correctDbName)) return {};
+    const transaction = db.transaction(correctDbName, "readonly");
+    const store = transaction.objectStore(correctDbName);
+    return new Promise((resolve, reject) => {
+      const getRequest = store.get(key);
+      getRequest.onerror = () => reject(getRequest.error);
+      getRequest.onsuccess = () => resolve(getRequest.result);
+    });
+  } catch (error) {
+    console.error(error);
+    return {};
+  }
+};
+var getIndexedDB_default = func18;
+
+// extensions/ludex/src/utils/browser/getLocalStorage.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/json/decode.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func19 = (string) => {
+  try {
+    return JSON.parse(string);
+  } catch (error) {
+    return null;
+  }
+};
+var decode_default = func19;
+
+// extensions/ludex/src/utils/browser/getLocalStorage.ts
+var func20 = (key) => {
+  try {
+    const data = localStorage.getItem(key);
+    if (data === null) return null;
+    return decode_default(data);
+  } catch (error) {
+    console.error("getLocalStorage error", error);
+    return null;
+  }
+};
+var getLocalStorage_default = func20;
+
+// extensions/ludex/src/utils/browser/getLocale.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/json/clone.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/json/encode.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func21 = (data) => {
+  try {
+    return JSON.stringify(data, null, 0);
+  } catch (error) {
+    return "";
+  }
+};
+var encode_default = func21;
+
+// extensions/ludex/src/utils/json/clone.ts
+var func22 = (object) => {
+  return decode_default(encode_default(object));
+};
+var clone_default = func22;
+
+// extensions/ludex/src/utils/browser/getLocale.ts
+var func23 = () => {
+  const defaultLocale = "en_US";
+  const languages = clone_default(window.navigator.languages) || [];
+  const locale2 = search_default(languages, (lang) => lang.indexOf("-") > -1);
+  if (!locale2) return defaultLocale;
+  if (locale2.indexOf("-") === -1) {
+    return defaultLocale;
+  }
+  return locale2.replace("-", "_");
+};
+var getLocale_default = func23;
+
+// extensions/ludex/src/utils/browser/getQueryParams.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func24 = () => {
+  const query = window.location.search.substring(1);
+  if (!query) return {};
+  const vars = query.split("&");
+  const result3 = {};
+  for (const element of vars) {
+    const pair = element.split("=");
+    result3[pair[0]] = decodeURIComponent(pair[1]);
+  }
+  return result3;
+};
+var getQueryParams_default = func24;
+
+// extensions/ludex/src/utils/browser/getScreenHeight.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func25 = () => {
+  const { body, documentElement } = document;
+  const { clientHeight: bodyClientHeight } = body;
+  const { clientHeight: docClientHeight } = documentElement;
+  return Math.max(docClientHeight, bodyClientHeight) || 0;
+};
+var getScreenHeight_default = func25;
+
+// extensions/ludex/src/utils/browser/getScreenWidth.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func26 = () => {
+  const { body, documentElement } = document;
+  const { clientWidth: bodyClientWidth } = body;
+  const { clientWidth: docClientWidth } = documentElement;
+  return Math.max(docClientWidth, bodyClientWidth) || 0;
+};
+var getScreenWidth_default = func26;
+
+// extensions/ludex/src/utils/browser/removeKeyLocalStorage.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func27 = (key) => {
+  localStorage.removeItem(key);
+};
+var removeKeyLocalStorage_default = func27;
+
+// extensions/ludex/src/utils/browser/setIndexedDB.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func28 = async (key, data, dbName) => {
+  try {
+    if (isEmpty_default(data)) return;
+    const correctDbName = getDBName(dbName);
+    const db = await openIndexedDB_default(correctDbName);
+    if (!db.objectStoreNames.contains(correctDbName)) {
+      console.warn("SetIndexedDB: db not found", correctDbName);
+      return;
+    }
+    const transaction = db.transaction(correctDbName, "readwrite");
+    const store = transaction.objectStore(correctDbName);
+    return new Promise((resolve, reject) => {
+      try {
+        const request = store.put(data, key);
+        request.onsuccess = () => resolve();
+        request.onerror = () => reject(request.error);
+      } catch (error) {
+        reject(error);
+      }
+    });
+  } catch (error) {
+    console.warn("SetIndexedDB", error);
+  }
+};
+var setIndexedDB_default = func28;
+
+// extensions/ludex/src/utils/browser/vibrate.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var isSupportVibrateApi = () => {
+  const hasAPI = "vibrate" in window.navigator;
+  if (hasAPI) {
+    try {
+      window.navigator.vibrate(0);
+    } catch (e) {
+      return false;
+    }
+  }
+  return hasAPI;
+};
+var func29 = (value) => {
+  try {
+    if (!isSupportVibrateApi()) return false;
+    window.navigator.vibrate(0);
+    window.navigator.vibrate(value);
+    return true;
+  } catch (error) {
+    return false;
+  }
+};
+var vibrate_default = func29;
+
+// extensions/ludex/src/utils/browser/webWorker.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/decorator/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/function/debounce.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func30 = (method, delay, firstCall) => {
+  let timer;
+  let isCalled = false;
+  return function(...args) {
+    if (firstCall && !isCalled) {
+      isCalled = true;
+      method.apply(this, args);
+      return;
+    }
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      method.apply(this, args);
+    }, delay);
+  };
+};
+var debounce_default = func30;
+
+// extensions/ludex/src/utils/function/memoize.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func31 = (fn2) => {
+  const cache = /* @__PURE__ */ Object.create(null);
+  return function(...args) {
+    const key = `__memoize__${JSON.stringify(args)}`;
+    if (key in cache) {
+      return cache[key];
+    }
+    const result3 = fn2.apply(this, args);
+    cache[key] = result3;
+    return result3;
+  };
+};
+var memoize_default = func31;
+
+// extensions/ludex/src/utils/function/throttle.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func32 = (method, interval, firstCall) => {
+  let timer;
+  let shouldFire = false;
+  let isCalled = false;
+  return function(...args) {
+    if (firstCall && !isCalled) {
+      isCalled = true;
+      method.apply(this, args);
+      return;
+    }
+    if (shouldFire) {
+      shouldFire = false;
+      method.apply(this, args);
+    }
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      shouldFire = true;
+    }, interval);
+  };
+};
+var throttle_default = func32;
+
+// extensions/ludex/src/utils/decorator/preStart.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func33 = (descriptor, startFn) => {
+  const method = descriptor.value;
+  descriptor.value = async function(...args) {
+    await startFn.apply(this, args);
+    const result3 = method.apply(this, args);
+    if (result3 instanceof Promise) {
+      return await result3;
+    }
+    return result3;
+  };
+  return descriptor;
+};
+var preStart_default = func33;
+
+// extensions/ludex/src/utils/decorator/tryCatch.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/function/toError.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func34 = (value) => {
+  if (value instanceof Error) {
+    return value;
+  }
+  if (value !== null && typeof value === "object" && "message" in value && typeof value.message === "\
+string") {
+    const error = new Error(value.message);
+    if ("stack" in value && typeof value.stack === "string") {
+      error.stack = value.stack;
+    }
+    if ("name" in value && typeof value.name === "string") {
+      error.name = value.name;
+    }
+    if ("code" in value && typeof value.code === "string") {
+      Object.assign(error, { code: value.code });
+    }
+    return error;
+  }
+  if (value !== null && typeof value === "object") {
+    try {
+      return new Error(JSON.stringify(value, null, 2));
+    } catch (e) {
+      return new Error(`[Object conversion failed] ${String(value)}`);
+    }
+  }
+  return new Error(String(value));
+};
+var toError_default = func34;
+
+// extensions/ludex/src/utils/decorator/tryCatch.ts
+var func35 = (descriptor, finallyFn) => {
+  const method = descriptor.value;
+  descriptor.value = async function(...args) {
+    let error;
+    try {
+      const result3 = method.apply(this, args);
+      if (result3 instanceof Promise) {
+        return await result3;
+      }
+      return result3;
+    } catch (err) {
+      error = toError_default(err);
+      console.warn("[Decorator:tryCatch]", error.message);
+    } finally {
+      finallyFn?.(error);
+    }
+  };
+  return descriptor;
+};
+var tryCatch_default = func35;
+
+// extensions/ludex/src/utils/decorator/validateParams.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/decorator/validateProperty.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/valid/isObject.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func36 = (input) => {
+  const isValidObject = typeof input === "object" || typeof input === "function";
+  const isArray = Array.isArray(input);
+  return input !== null && isValidObject && !isArray;
+};
+var isObject_default = func36;
+
+// extensions/ludex/src/utils/decorator/validateProperty.ts
+var checkType = (target, type) => {
+  if (typeof target !== type) {
+    throw new Error(`Value ${target} is not type of ${type} (${typeof target})`);
+  }
+};
+var func37 = (target, type, propertyKey) => {
+  let value;
+  if (!propertyKey) {
+    checkType(target, type);
+  }
+  if (!isObject_default(target) || !propertyKey) {
+    return target;
+  }
+  return Object.defineProperty(target, propertyKey, {
+    get() {
+      return value;
+    },
+    set(newValue) {
+      checkType(newValue, type);
+      value = newValue;
+    }
+  });
+};
+var validateProperty_default = func37;
+
+// extensions/ludex/src/utils/decorator/validateParams.ts
+var func38 = (descriptor, types) => {
+  const method = descriptor.value;
+  descriptor.value = function(...args) {
+    types.forEach((type, index) => {
+      try {
+        validateProperty_default(args[index], type);
+      } catch (error) {
+        const message = "[Decorator:validateParams]";
+        if (error instanceof Error) {
+          error.message = `${message}: ${error.message}`;
+          throw error;
+        }
+        throw new Error(`${message}: ${error}`);
+      }
+    });
+    return method.apply(this, args);
+  };
+  return descriptor;
+};
+var validateParams_default = func38;
+
+// extensions/ludex/src/utils/decorator/validateReturn.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var isInvalidReturnType = (result3, types) => {
+  for (const type of types) {
+    try {
+      validateProperty_default(result3, type);
+      return false;
+    } catch (error) {
+    }
+  }
+  return true;
+};
+var func39 = (descriptor, types) => {
+  const method = descriptor.value;
+  descriptor.value = function(...args) {
+    const result3 = method.apply(this, args);
+    if (isInvalidReturnType(result3, types)) {
+      throw new Error(
+        `[Decorator:validateReturn] ${result3} (${typeof result3}) is not type of ${types.join(" | ")}`
+      );
+    }
+    return result3;
+  };
+  return descriptor;
+};
+var validateReturn_default = func39;
+
+// extensions/ludex/src/utils/decorator/index.ts
+var DecoratorUtils = class _DecoratorUtils {
+  static isProperty(name2, propertyKey, descriptor) {
+    if (descriptor) {
+      if (typeof descriptor.value !== "undefined") {
+        return true;
+      }
+      if (descriptor.get || descriptor.set) {
+        return true;
+      }
+    }
+    console.warn(`[Decorator:${name2}] Unsupported decorator ${propertyKey}`, descriptor);
+    return false;
+  }
+  static isFunction(name2, propertyKey, descriptor) {
+    if (descriptor) {
+      if (typeof descriptor.value === "function") {
+        return true;
+      }
+      if (typeof descriptor.initializer === "function") {
+        return true;
+      }
+    }
+    console.warn(`[Decorator:${name2}] Unsupported decorator ${propertyKey}`, descriptor);
+    return false;
+  }
+  static trace = (target, propertyKey, descriptor) => {
+    try {
+      const { value, initializer, get: get2, set } = descriptor ?? {};
+      try {
+        if (get2 || set) {
+          console.warn("[Decorator:trace:accessor]", {
+            getter: get2,
+            setter: set
+          });
+        } else if (typeof value === "function") {
+          console.warn("[Decorator:trace:method]", {
+            method: value,
+            params: value.length
+          });
+        } else if (typeof initializer === "function") {
+          const initialValue = initializer?.();
+          if (typeof initialValue === "function") {
+            console.warn("[Decorator:trace:arrow]", {
+              initializer,
+              initialValue
+            });
+          } else if (typeof initialValue !== "undefined") {
+            console.warn("[Decorator:trace:property]", {
+              initializer,
+              initialValue
+            });
+          } else {
+            throw new Error("Initializer returned undefined");
+          }
+        } else if (value) {
+          const type = typeof value;
+          console.warn("[Decorator:trace:field]", {
+            type,
+            value
+          });
+        } else {
+          throw new Error("Unsupported decorator");
+        }
+      } catch (error) {
+        console.warn("[Decorator:trace:unknown]", {
+          propertyKey,
+          descriptor,
+          reason: error instanceof Error ? error.message : error
+        });
+      }
+    } catch (error) {
+      console.error("[Decorator:trace] Fatal error:", error);
+    } finally {
+      console.debug("[Decorator:trace:info]", {
+        target,
+        propertyKey,
+        value: descriptor?.value,
+        type: typeof descriptor?.value,
+        instanceProps: Object.getOwnPropertyNames(target)
+      });
+    }
+    return descriptor;
+  };
+  static locked(_target, _propertyKey, descriptor) {
+    return __spreadProps(__spreadValues({}, descriptor), {
+      value: () => {
+        throw new Error("Method is locked");
+      }
+    });
+  }
+  static preStart(startFn) {
+    return (_target, propertyKey, descriptor) => {
+      if (!_DecoratorUtils.isFunction("preStart", propertyKey, descriptor)) {
+        return descriptor;
+      }
+      return preStart_default(descriptor, startFn);
+    };
+  }
+  static tryCatch(finallyFn) {
+    return (_target, propertyKey, descriptor) => {
+      if (!_DecoratorUtils.isFunction("tryCatch", propertyKey, descriptor)) {
+        return descriptor;
+      }
+      return tryCatch_default(descriptor, finallyFn);
+    };
+  }
+  static debounce(wait) {
+    return (_target, propertyKey, descriptor) => {
+      if (!_DecoratorUtils.isFunction("debounce", propertyKey, descriptor)) {
+        return descriptor;
+      }
+      let fn2 = descriptor.value;
+      if (fn2) {
+        descriptor.value = debounce_default(fn2, wait);
+      } else if (descriptor.initializer) {
+        fn2 = descriptor.initializer;
+        descriptor.initializer = function() {
+          return debounce_default(fn2.call(this), wait);
+        };
+      }
+      return descriptor;
+    };
+  }
+  static throttle(wait) {
+    return (_target, propertyKey, descriptor) => {
+      if (!_DecoratorUtils.isFunction("throttle", propertyKey, descriptor)) {
+        return descriptor;
+      }
+      let fn2 = descriptor.value;
+      if (fn2) {
+        descriptor.value = throttle_default(fn2, wait);
+      } else if (descriptor.initializer) {
+        fn2 = descriptor.initializer;
+        descriptor.initializer = function() {
+          return throttle_default(fn2.call(this), wait, true);
+        };
+      }
+      return descriptor;
+    };
+  }
+  static memoize(_target, propertyKey, descriptor) {
+    if (!_DecoratorUtils.isFunction("memoize", propertyKey, descriptor)) {
+      return descriptor;
+    }
+    let fn2 = descriptor.value;
+    if (fn2) {
+      descriptor.value = memoize_default(fn2);
+    } else if (descriptor.initializer) {
+      fn2 = descriptor.initializer;
+      descriptor.initializer = function() {
+        return memoize_default(fn2.call(this));
+      };
+    }
+    return descriptor;
+  }
+  static validateValue(type) {
+    return (target, propertyKey, descriptor) => {
+      if (!_DecoratorUtils.isProperty("validateValue", propertyKey, descriptor)) {
+        return descriptor;
+      }
+      try {
+        return validateProperty_default(target, type, propertyKey);
+      } catch (error) {
+        if (error instanceof Error) {
+          console.warn(`[Decorator:validateValue] ${error.message}`);
+        } else {
+          console.warn("[Decorator:validateValue] unknown error", { cause: error });
+        }
+        return descriptor;
+      }
+    };
+  }
+  static validateReturn = (...types) => {
+    return (_target, propertyKey, descriptor) => {
+      if (!_DecoratorUtils.isFunction("validateReturn", propertyKey, descriptor)) {
+        return descriptor;
+      }
+      return validateReturn_default(descriptor, types);
+    };
+  };
+  static validateParams = (...types) => {
+    return (_target, propertyKey, descriptor) => {
+      if (!_DecoratorUtils.isFunction("validateParams", propertyKey, descriptor)) {
+        return descriptor;
+      }
+      return validateParams_default(descriptor, types);
+    };
+  };
+};
+var decorator_default = DecoratorUtils;
+
+// extensions/ludex/src/utils/browser/webWorker.ts
+var workerCode = () => {
+  self.onmessage = (event) => {
+    const { action, payload } = event.data;
+    switch (action) {
+      case "drawImage":
+        drawImage(payload);
+        break;
+      case "saveData":
+        saveData(payload);
+        break;
+      case "getData":
+        getData(payload);
+        break;
+      default:
+        console.error("Unknown action:", action);
+    }
+  };
+  function drawImage(data) {
+    console.log("Drawing image with data:", data);
+  }
+  function saveData(data) {
+    console.log("Saving data:", data);
+  }
+  function getData(data) {
+    console.log("Getting data:", data);
+  }
+};
+var _WebWorker = class _WebWorker {
+  worker = null;
+  static _instance;
+  constructor() {
+    this.init();
+  }
+  static get inst() {
+    if (!this._instance) {
+      this._instance = new _WebWorker();
+    }
+    return this._instance;
+  }
+  init() {
+    const blob = new Blob([`(${workerCode.toString()})()`], { type: "application/javascript" });
+    this.worker = new Worker(URL.createObjectURL(blob));
+  }
+  static postMessage(action, payload) {
+    if (!this.inst.worker) {
+      throw new Error("Worker is not initialized");
+    }
+    this.inst.worker.postMessage({ action, payload });
+  }
+};
+__decorateClass([
+  decorator_default.tryCatch()
+], _WebWorker.prototype, "init", 1);
+__decorateClass([
+  decorator_default.tryCatch()
+], _WebWorker, "postMessage", 1);
+var WebWorker = _WebWorker;
+var webWorker_default = WebWorker;
+
+// extensions/ludex/src/utils/browser/writeLocalStorage.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/object/clear.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var isNotClear = (value) => value === void 0 || value === null;
+var func40 = (object) => {
+  if (!isObject_default(object)) return object;
+  for (const key in object) {
+    if (isNotClear(object[key])) {
+      delete object[key];
+    } else {
+      const value = object[key];
+      if (isObject_default(value)) {
+        object[key] = func40(value);
+      }
+    }
+  }
+  return object;
+};
+var clear_default = func40;
+
+// extensions/ludex/src/utils/object/clone.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/object/assign.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var o = Object;
+var func41 = (target, data) => {
+  if ("assign" in o) {
+    return o.assign(target, data);
+  }
+  const obj = target;
+  for (const key in data) {
+    obj[key] = data[key];
+  }
+  return obj;
+};
+var assign_default = func41;
+
+// extensions/ludex/src/utils/object/clone.ts
+var func42 = (data) => {
+  if (typeof data !== "object" || data === null) return null;
+  return assign_default(data, {});
+};
+var clone_default2 = func42;
+
+// extensions/ludex/src/utils/object/merge.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func43 = (source, target) => {
+  for (const key in target) {
+    if (isObject_default(source[key]) && isObject_default(target[key])) {
+      func43(source[key], target[key]);
+    } else {
+      assign_default(source, { [key]: target[key] });
+    }
+  }
+  return source;
+};
+var merge_default = func43;
+
+// extensions/ludex/src/utils/browser/writeLocalStorage.ts
+var func44 = (key, data) => {
+  try {
+    const currentData = getLocalStorage_default(key);
+    let correctData = {};
+    if (isObject_default(currentData)) {
+      correctData = currentData;
+    }
+    const cloneData = clone_default2(data);
+    if (!isObject_default(cloneData)) return false;
+    const cleanData = clear_default(cloneData);
+    const newData = merge_default(correctData, cleanData);
+    const dataEncoded = encode_default(newData);
+    localStorage.setItem(key, dataEncoded);
+    return true;
+  } catch (error) {
+    console.debug("writeLocalStorage error", error);
+    return false;
+  }
+};
+var writeLocalStorage_default = func44;
+
+// extensions/ludex/src/utils/browser/index.ts
+var browser_default = {
+  createCanvas: createCanvas_default,
+  getLocale: getLocale_default,
+  getLocalStorage: getLocalStorage_default,
+  getQueryParams: getQueryParams_default,
+  getScreenHeight: getScreenHeight_default,
+  getScreenWidth: getScreenWidth_default,
+  writeLocalStorage: writeLocalStorage_default,
+  vibrate: vibrate_default,
+  getIndexedDB: getIndexedDB_default,
+  WebWorker: webWorker_default,
+  setIndexedDB: setIndexedDB_default,
+  removeKeyLocalStorage: removeKeyLocalStorage_default
+};
+
+// extensions/ludex/src/utils/device/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/device/getPhysicPixels.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/device/pixelRatio.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func45 = () => {
+  return window.devicePixelRatio ?? 1;
+};
+var pixelRatio_default = func45;
+
+// extensions/ludex/src/utils/device/getPhysicPixels.ts
+var func46 = (value) => {
+  return value * pixelRatio_default();
+};
+var getPhysicPixels_default = func46;
+
+// extensions/ludex/src/utils/device/isAndroid.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func47 = () => {
+  return /Android/i.test(navigator.userAgent);
+};
+var isAndroid_default = func47;
+
+// extensions/ludex/src/utils/device/isDesktop.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func48 = () => {
+  return !/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+};
+var isDesktop_default = func48;
+
+// extensions/ludex/src/utils/device/isIOS.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func49 = () => {
+  return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+};
+var isIOS_default = func49;
+
+// extensions/ludex/src/utils/device/isMobile.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func50 = () => {
+  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+};
+var isMobile_default = func50;
+
+// extensions/ludex/src/utils/device/index.ts
+var device_default = { getPhysicPixels: getPhysicPixels_default, isDesktop: isDesktop_default, isMobile: isMobile_default,
+isAndroid: isAndroid_default, isIOS: isIOS_default, pixelRatio: pixelRatio_default };
+
+// extensions/ludex/src/utils/error/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/error/apply.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/error/failure.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var failure = (error) => [null, error];
+var failure_default = failure;
+
+// extensions/ludex/src/utils/error/isFailure.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var isFailure = (value) => value[1] !== null;
+var isFailure_default = isFailure;
+
+// extensions/ludex/src/utils/error/success.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var success = (value) => [value, null];
+var success_default = success;
+
+// extensions/ludex/src/utils/error/apply.ts
+var apply = (fn2) => (value) => {
+  if (isFailure_default(value)) {
+    return value;
+  }
+  try {
+    return success_default(fn2(value[0]));
+  } catch (error) {
+    return failure_default(toError_default(error));
+  }
+};
+var apply_default = apply;
+
+// extensions/ludex/src/utils/error/applyAsync.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var applyAsync = (fn2) => async (value) => {
+  if (isFailure_default(value)) {
+    return value;
+  }
+  try {
+    return success_default(await fn2(value[0]));
+  } catch (error) {
+    return failure_default(toError_default(error));
+  }
+};
+var applyAsync_default = applyAsync;
+
+// extensions/ludex/src/utils/error/applyImmediate.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var applyImmediate = (fn2) => {
+  try {
+    return success_default(fn2());
+  } catch (error) {
+    return failure_default(toError_default(error));
+  }
+};
+var applyImmediate_default = applyImmediate;
+
+// extensions/ludex/src/utils/error/applyImmediateAsync.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var applyImmediateAsync = async (fn2) => {
+  try {
+    return success_default(await fn2());
+  } catch (error) {
+    return failure_default(toError_default(error));
+  }
+};
+var applyImmediateAsync_default = applyImmediateAsync;
+
+// extensions/ludex/src/utils/error/extractFailure.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var extractFailure = (result3) => result3[1];
+var extractFailure_default = extractFailure;
+
+// extensions/ludex/src/utils/error/extractSuccess.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var extractSuccess = (result3) => result3[0];
+var extractSuccess_default = extractSuccess;
+
+// extensions/ludex/src/utils/error/isSuccess.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var isSuccess = (value) => value[1] === null;
+var isSuccess_default = isSuccess;
+
+// extensions/ludex/src/utils/error/lift.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var lift = success_default;
+var lift_default = lift;
+
+// extensions/ludex/src/utils/error/pipe.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var pipe = (...fns) => (value) => fns.reduce((acc, fn2) => apply_default(fn2)(acc), value);
+var pipe_default = pipe;
+
+// extensions/ludex/src/utils/error/pipeAsync.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var pipeAsync = (...fns) => async (value) => {
+  let result3 = value;
+  for (const fn2 of fns) {
+    result3 = await applyAsync_default(fn2)(result3);
+  }
+  return result3;
+};
+var pipeAsync_default = pipeAsync;
+
+// extensions/ludex/src/utils/error/index.ts
+var error_default = {
+  apply: apply_default,
+  applyAsync: applyAsync_default,
+  applyImmediate: applyImmediate_default,
+  applyImmediateAsync: applyImmediateAsync_default,
+  lift: lift_default,
+  success: success_default,
+  pipe: pipe_default,
+  pipeAsync: pipeAsync_default,
+  extractSuccess: extractSuccess_default,
+  extractFailure: extractFailure_default,
+  isFailure: isFailure_default,
+  isSuccess: isSuccess_default
+};
+
+// extensions/ludex/src/utils/function/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+init_accessBlocker();
+
+// extensions/ludex/src/utils/function/allSettled.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func51 = (promises) => {
+  const wrappedPromises = promises.map(
+    (p) => Promise.resolve(p).then(
+      (value) => ({ status: "fulfilled", value }),
+      (reason) => ({ status: "rejected", reason })
+    )
+  );
+  return Promise.all(wrappedPromises);
+};
+var allSettled_default = func51;
+
+// extensions/ludex/src/utils/function/any.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func52 = (promises) => {
+  if (typeof Promise.any === "function") {
+    return Promise.any(promises);
+  }
+  return new Promise((resolve, reject) => {
+    const results = [];
+    let resolved = 0;
+    const check = (idx) => {
+      if (idx < promises.length) return;
+      if (results.length > 0) {
+        resolve(results[0]);
+      } else {
+        const error = new Error("All promises were rejected");
+        error.errors = results;
+        reject(error);
+      }
+    };
+    promises.forEach((promise, index) => {
+      promise.then((value) => {
+        results[index] = value;
+        resolved++;
+        check(resolved);
+      }).catch((error) => {
+        results[index] = error;
+        resolved++;
+        check(resolved);
+      });
+    });
+  });
+};
+var any_default = func52;
+
+// extensions/ludex/src/utils/function/handleAsync.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func53 = async (promise, timeout) => {
+  try {
+    if (timeout) {
+      const timeoutPromise = new Promise(
+        (_, reject) => setTimeout(() => reject(new Error("Timeout")), timeout)
+      );
+      const data2 = await Promise.race([promise, timeoutPromise]);
+      return [data2, null];
+    }
+    const data = await promise;
+    return [data, null];
+  } catch (error) {
+    const err = toError_default(error);
+    return [null, err];
+  }
+};
+var handleAsync_default = func53;
+
+// extensions/ludex/src/utils/function/mutex.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+function mutex() {
+  const queue = {};
+  const use = (key) => {
+    let unlocked = false;
+    const lock = {
+      release: () => {
+        if (unlocked) return;
+        unlocked = true;
+        releaseKey(key);
+      }
+    };
+    if (!queue[key]) {
+      queue[key] = [];
+      return Promise.resolve(lock);
+    }
+    return new Promise((resolve) => {
+      queue[key].push(() => resolve(lock));
+    });
+  };
+  const releaseKey = (key) => {
+    const next = queue[key].shift();
+    if (next) {
+      next();
+    } else {
+      delete queue[key];
+    }
+  };
+  return { use };
+}
+
+// extensions/ludex/src/utils/function/retry.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func54 = (firstTry, secondTry) => {
+  try {
+    return firstTry();
+  } catch (firstError) {
+    try {
+      return secondTry();
+    } catch (secondError) {
+      throw firstError;
+    }
+  }
+};
+var retry_default = func54;
+
+// extensions/ludex/src/utils/function/retryAsync.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func55 = async (firstTry, secondTry) => {
+  try {
+    return await firstTry();
+  } catch (firstError) {
+    try {
+      return await secondTry();
+    } catch (secondError) {
+      throw firstError;
+    }
+  }
+};
+var retryAsync_default = func55;
+
+// extensions/ludex/src/utils/function/rng.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func56 = (config) => {
+  const { generate, generateSeed = () => Math.random() * 1e6, seed: startingSeed = Date.now() } = config;
+  let seed = startingSeed;
+  return (...args) => {
+    seed = generateSeed(seed);
+    return generate(seed, ...args);
+  };
+};
+var rng_default = func56;
+
+// extensions/ludex/src/utils/function/syncVarsFromSource.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var makeMutableTrick = (target, value) => {
+  target.__proto__.valueOf = () => value;
+  target.__proto__.toString = () => `${value}`;
+};
+var makeTypeTrick = (target) => {
+  return target.constructor(__spreadProps(__spreadValues({}, target), {
+    // @ts-expect-error - this is a trick
+    __proto__: target.__proto__
+  }));
+};
+var func57 = (source) => {
+  const keys = Object.keys(source);
+  for (const key of keys) {
+    const origin = Object.getOwnPropertyDescriptor(source, key)?.value;
+    if (isObject_default(origin)) {
+      func57(origin);
+      continue;
+    }
+    try {
+      const draft = origin;
+      makeMutableTrick(draft, origin);
+      Object.defineProperty(source, key, {
+        enumerable: false,
+        configurable: true,
+        get() {
+          return makeTypeTrick(draft);
+        },
+        set(value) {
+          assign_default(draft, value);
+          makeMutableTrick(draft, value);
+        }
+      });
+    } catch (error) {
+    }
+  }
+};
+var syncVarsFromSource_default = func57;
+
+// extensions/ludex/src/utils/function/timeOut.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func58 = (promise, duration, customSetTimeout = setTimeout) => {
+  if (duration <= 0) {
+    return Promise.resolve(promise).then((value) => ({ status: "fulfilled", value }));
+  }
+  return Promise.race([
+    Promise.resolve(promise).then((value) => ({ status: "fulfilled", value })),
+    new Promise(
+      (resolve) => customSetTimeout(() => resolve({ status: "timeout", duration, promise }), duration)
+    )
+  ]);
+};
+var timeOut_default = func58;
+
+// extensions/ludex/src/utils/function/index.ts
+var function_default = {
+  debounce: debounce_default,
+  throttle: throttle_default,
+  syncVars: syncVarsFromSource_default,
+  memoize: memoize_default,
+  retry: retry_default,
+  retryAsync: retryAsync_default,
+  allSettled: allSettled_default,
+  timeOut: timeOut_default,
+  any: any_default,
+  accessBlocker: accessBlocker_default,
+  rng: rng_default,
+  handleAsync: handleAsync_default,
+  toError: toError_default,
+  mutex
+};
+
+// extensions/ludex/src/utils/hash/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/hash/decodeMap.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/object/invert.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func59 = (data) => {
+  const inverse = {};
+  for (const key in data) {
+    const value = data[key];
+    inverse[value] = key;
+  }
+  return inverse;
+};
+var invert_default = func59;
+
+// extensions/ludex/src/utils/hash/decodeMap.ts
+var getValue = memoize_default((code, valueMap) => {
+  const codeKey = code.toLowerCase();
+  if (typeof code === "string") {
+    const data = valueMap[codeKey];
+    if (typeof data === "string") return data;
+  }
+  return "?";
+});
+var findGroups = memoize_default((str) => {
+  const groups = [];
+  const findGroup = /:([A-Z0-9?]+)/gm;
+  let group = null;
+  while (true) {
+    group = findGroup.exec(str);
+    if (group === null) break;
+    groups.push(group[1]);
+  }
+  return groups;
+});
+var findHash = memoize_default((str) => {
+  const hash = [];
+  const findHash2 = /(\d+[A-Z?]|[A-Z?])/gm;
+  let codes = null;
+  while (true) {
+    codes = findHash2.exec(str);
+    if (codes === null) break;
+    const code = codes[0];
+    if (code.length >= 2) {
+      const { length } = code;
+      const loop = code.slice(0, length - 1);
+      const key = code[length - 1];
+      const list = length_default(+loop).map(() => key);
+      hash.push(...list);
+      continue;
+    }
+    hash.push(code);
+  }
+  return hash;
+});
+var func60 = (hash, codeMap) => {
+  const str = hash;
+  const valueMap = invert_default(codeMap);
+  const data = {};
+  let codeIndex = 0;
+  let groupIndex = 0;
+  const groups = findGroups(str);
+  for (const hashList of groups) {
+    codeIndex = 0;
+    groupIndex++;
+    if (!data[groupIndex]) data[groupIndex] = {};
+    const hash2 = findHash(hashList);
+    for (const code of hash2) {
+      codeIndex++;
+      const value = getValue(code, valueMap);
+      data[groupIndex][codeIndex] = value;
+    }
+  }
+  return data;
+};
+var decodeMap_default = func60;
+
+// extensions/ludex/src/utils/hash/encodeMap.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/object/hasOwn.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func61 = (obj, key) => {
+  if (!isObject_default(obj)) return false;
+  if (typeof Object.hasOwn === "function") {
+    return Object.hasOwn(obj, key);
+  }
+  return Object.prototype.hasOwnProperty.call(obj, key);
+};
+var hasOwn_default = func61;
+
+// extensions/ludex/src/utils/valid/isString.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func62 = (data) => typeof data === "string";
+var isString_default = func62;
+
+// extensions/ludex/src/utils/hash/encodeMap.ts
+var getCode = memoize_default((value, codeMap) => {
+  if (!isObject_default(codeMap)) return "?";
+  if (!hasOwn_default(codeMap, value)) return "?";
+  const code = codeMap[value];
+  if (typeof code === "string") {
+    return `${code.toUpperCase()}`;
+  }
+  return "?";
+});
+var func63 = (data, codeMap, isRecursive = false) => {
+  let str = "";
+  if (!isObject_default(data)) return str;
+  let lastCode = "";
+  let lastIndex = 1;
+  for (const key in data) {
+    if (!hasOwn_default(data, key)) continue;
+    const value = data[key];
+    if (isObject_default(value)) {
+      str += `:${func63(value, codeMap, true)}`;
+      continue;
+    }
+    if (!isString_default(value)) continue;
+    const code = getCode(value, codeMap);
+    if (code === lastCode) {
+      lastIndex++;
+      str = str.slice(0, -2);
+    } else {
+      lastIndex = 1;
+    }
+    str += `${lastIndex}${code}`;
+    lastCode = code;
+  }
+  str = str.replace(/1([A-Z])/g, "$1");
+  if (isRecursive) return str;
+  return str;
+};
+var encodeMap_default = func63;
+
+// extensions/ludex/src/utils/hash/hashToString.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func64 = (hash, token) => {
+  try {
+    if (!hash) return "";
+    if (token) {
+      let hashString = atob(hash);
+      const hashToken = btoa(token);
+      hashString = hashString.replace(hashToken, "=");
+      return atob(hashString);
+    }
+    return atob(hash);
+  } catch (error) {
+    console.warn("Error in hashToString", error);
+    return "";
+  }
+};
+var hashToString_default = func64;
+
+// extensions/ludex/src/utils/hash/lzwCompress.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var createCompressDict = () => {
+  const dict = {};
+  return dict;
+};
+var compressDicts = {};
+var getCompressionDict = (level2) => {
+  if (!compressDicts[level2]) {
+    compressDicts[level2] = createCompressDict();
+  }
+  return compressDicts[level2];
+};
+var setCompressionDict = (word, level2) => {
+  const compressDict = getCompressionDict(level2);
+  const dictSize = Object.keys(compressDict).length;
+  compressDict[word] = dictSize + 1;
+};
+var func65 = (str, customDict, level2 = 1) => {
+  let word = str[0];
+  const result3 = [];
+  let dict = getCompressionDict(level2);
+  if (customDict) {
+    for (const key in customDict) {
+      setCompressionDict(key, level2);
+    }
+  }
+  for (let i2 = 1; i2 < str.length; i2++) {
+    const char = str[i2];
+    const candidate = `${word}${char}`;
+    i2++;
+    word = str[i2];
+    if (dict[candidate] === void 0) {
+      setCompressionDict(candidate, level2);
+      dict = getCompressionDict(level2);
+    }
+  }
+  word = str[0];
+  let i = 1;
+  let wordIdx = 0;
+  while (i < str.length) {
+    const char = str[i];
+    const candidate = `${word}${char}`;
+    const potentialCandidate = getLongestAvailableKeyInCompressDict(str.slice(wordIdx), dict);
+    if (potentialCandidate !== null) {
+      result3.push(dict[potentialCandidate]);
+      i += potentialCandidate.length - candidate.length;
+      word = "";
+      wordIdx = i + 1;
+      i++;
+      continue;
+    }
+    if (dict[candidate] === void 0) {
+      word = candidate;
+    } else {
+      result3.push(dict[candidate]);
+      word = "";
+      wordIdx = i + 1;
+    }
+    i++;
+  }
+  console.debug("dict", dict, Object.keys(dict).length);
+  return result3;
+};
+var getLongestAvailableKeyInCompressDict = (substring, dict) => {
+  let keys = Object.keys(dict);
+  keys = keys.filter((key) => {
+    return substring.indexOf(key) > -1 && substring !== key;
+  });
+  if (keys.length === 0) return null;
+  return keys.sort((a, b) => b.length - a.length)[0];
+};
+var lzwCompress_default = func65;
+
+// extensions/ludex/src/utils/hash/lzwDecompress.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var createDecompressDict = (compressDict) => {
+  const dict = {};
+  for (const key in compressDict) {
+    dict[compressDict[key]] = key;
+  }
+  return dict;
+};
+var func66 = (hash, customDict, level2 = 1) => {
+  let entry = "";
+  let result3 = "";
+  let compressDict = getCompressionDict(level2);
+  if (customDict) {
+    compressDict = __spreadValues(__spreadValues({}, customDict), compressDict);
+  }
+  console.debug("compressDict", compressDict);
+  const dict = createDecompressDict(compressDict);
+  for (const i in hash) {
+    const code = hash[i];
+    if (dict[code] !== void 0) {
+      entry = dict[code];
+    } else {
+      entry = "?";
+    }
+    result3 += entry;
+  }
+  return result3;
+};
+var lzwDecompress_default = func66;
+
+// extensions/ludex/src/utils/hash/stringToHash.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func67 = (str, token) => {
+  try {
+    if (!str) return "";
+    if (token) {
+      let hashString = btoa(str);
+      const hashToken = btoa(token);
+      hashString = hashString.replace("=", hashToken);
+      return btoa(hashString);
+    }
+    return btoa(str);
+  } catch (error) {
+    console.warn("Error in stringToHash", error);
+    return "";
+  }
+};
+var stringToHash_default = func67;
+
+// extensions/ludex/src/utils/hash/index.ts
+var hash_default = { decodeMap: decodeMap_default, encodeMap: encodeMap_default, hashToString: hashToString_default,
+stringToHash: stringToHash_default, lwzCompress: lzwCompress_default, lwzDecompress: lzwDecompress_default };
+
+// extensions/ludex/src/utils/image/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/image/base64ToFile.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var base64ToFile = (base64, filename) => {
+  const arr = base64.split(",");
+  const regex = arr[0].match(/:(.*?);/);
+  if (!regex) return null;
+  const mime = regex[1];
+  const bstr = atob(arr[arr.length - 1]);
+  let n = bstr.length;
+  const u8arr = new Uint8Array(n);
+  while (n--) {
+    u8arr[n] = bstr.charCodeAt(n);
+  }
+  return new File([u8arr], filename, { type: mime });
+};
+var base64ToFile_default = base64ToFile;
+
+// extensions/ludex/src/utils/image/blobToDataImage.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func68 = (blob) => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
+};
+var blobToDataImage_default = func68;
+
+// extensions/ludex/src/utils/image/blobToHtmlImage.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var img = new Image();
+var func69 = (blob, forceNew = true, autoRevoke = true) => {
+  return new Promise((resolve) => {
+    if (forceNew) img = new Image();
+    img.onload = () => {
+      resolve(img);
+      if (autoRevoke) {
+        URL.revokeObjectURL(img.src);
+      }
+    };
+    img.onerror = () => {
+      resolve(null);
+    };
+    img.src = URL.createObjectURL(blob);
+  });
+};
+var blobToHtmlImage_default = func69;
+
+// extensions/ludex/src/utils/image/blobUrlToFile.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func70 = async (blobUrl, fileName) => {
+  const blob = await fetch(blobUrl).then((r) => r.blob()).catch(() => null);
+  if (!blob) return null;
+  return new File([blob], fileName);
+};
+var blobUrlToFile_default = func70;
+
+// extensions/ludex/src/utils/image/elementToBase64.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var result = createCanvas_default({
+  contextType: "2d",
+  contextAttributes: { willReadFrequently: true }
+});
+var convertBlobToBase64 = async (blob) => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
+};
+var func71 = async (element, type = "png") => {
+  const { width, height } = element;
+  if (!width || !height) throw new Error("Element has no width or height");
+  if (!result) throw new Error("Failed to create canvas");
+  result.canvas.width = width;
+  result.canvas.height = height;
+  result.context.drawImage(element, 0, 0, width, height);
+  if (result.canvas instanceof HTMLCanvasElement) {
+    return result.canvas.toDataURL(`image/${type}`, 0.85);
+  }
+  const blob = await result.canvas.convertToBlob({ type: `image/${type}` });
+  return convertBlobToBase64(blob);
+};
+var elementToBase64_default = func71;
+
+// extensions/ludex/src/utils/image/elementToBlob.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var result2 = createCanvas_default({
+  contextType: "2d",
+  contextAttributes: { willReadFrequently: true }
+});
+var func72 = async (element, type = "png") => {
+  try {
+    if (!result2) {
+      throw new Error("Failed to create canvas");
+    }
+    const { canvas, context } = result2;
+    canvas.width = element.width;
+    canvas.height = element.height;
+    context.drawImage(element, 0, 0, element.width, element.height);
+    if (canvas instanceof HTMLCanvasElement) {
+      return new Promise((resolve) => {
+        canvas.toBlob((blob) => resolve(blob), `image/${type}`, 0.9);
+      });
+    }
+    return canvas.convertToBlob({
+      type: `image/${type}`,
+      quality: 0.9
+    });
+  } catch (error) {
+    console.warn("elementToBlob error:", error);
+    return null;
+  }
+};
+var elementToBlob_default = func72;
+
+// extensions/ludex/src/utils/image/fetchImage.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func73 = async (url) => {
+  if (!url) throw new Error("url is empty");
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Network response was not ok");
+    return await response.blob();
+  } catch (error) {
+    throw error instanceof Error ? error : new Error("Failed to fetch image");
+  }
+};
+var fetchImage_default = func73;
+
+// extensions/ludex/src/utils/image/loadImage.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func74 = async (url) => {
+  return new Promise((resolve, reject) => {
+    if (!url) reject(new Error("url is empty"));
+    const elementImage = new Image();
+    elementImage.crossOrigin = "anonymous";
+    elementImage.onload = () => {
+      resolve(elementImage);
+    };
+    elementImage.onerror = (error) => {
+      reject(error);
+    };
+    elementImage.src = url;
+  });
+};
+var loadImage_default = func74;
+
+// extensions/ludex/src/utils/image/logImage.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var getBox = (width, height) => {
+  if (isNaN(width) || isNaN(height)) {
+    throw new Error("width and height must be numbers");
+  }
+  return {
+    string: "+",
+    style: `font-size: 1px; padding: ${Math.floor(height / 2)}px ${Math.floor(width / 2)}px;`
+  };
+};
+var func75 = (url, scale = 1) => {
+  const img2 = new Image();
+  img2.onload = function() {
+    const self2 = this;
+    const width = self2.width * scale;
+    const height = self2.height * scale;
+    const dim = getBox(width, height);
+    console.info(
+      `%c ${dim.string}`,
+      `${dim.style} background: transparent url(${url}) no-repeat center center; background-size: ${width}\
+px ${height}px;`
+    );
+  };
+  img2.src = url;
+};
+var logImage_default = func75;
+
+// extensions/ludex/src/utils/image/index.ts
+var image_default = {
+  base64ToFile: base64ToFile_default,
+  blobToDataImage: blobToDataImage_default,
+  blobToHtmlImage: blobToHtmlImage_default,
+  blobUrlToFile: blobUrlToFile_default,
+  elementToBase64: elementToBase64_default,
+  elementToBlob: elementToBlob_default,
+  fetchImage: fetchImage_default,
+  loadImage: loadImage_default,
+  logImage: logImage_default
+};
+
+// extensions/ludex/src/utils/json/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var json_default = { clone: clone_default, decode: decode_default, encode: encode_default };
+
+// extensions/ludex/src/utils/mark/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/mark/Mark.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var Mark = class _Mark {
+  perf = null;
+  static _inst;
+  static get inst() {
+    if (!this._inst) {
+      this._inst = new _Mark();
+    }
+    return this._inst;
+  }
+  static setService(service) {
+    this.inst.perf = service ?? null;
+  }
+  static measure(name2) {
+    this.inst.perf?.measure(name2);
+  }
+  static start(name2) {
+    this.inst.perf?.start(name2);
+  }
+  static stop(name2) {
+    try {
+      this.inst.perf?.stop(name2);
+    } catch (error) {
+      console.warn(error);
+    }
+  }
+  static putMetric(name2, key, value = Date.now()) {
+    this.inst.perf?.putMetric(name2, key, value);
+  }
+  static incMetric(name2, key, value = 1) {
+    this.inst.perf?.incrementMetric(name2, key, value);
+  }
+  static putAttr(name2, key, value) {
+    const correctValue = value.slice(0, 100);
+    this.inst.perf?.putAttr(name2, key, correctValue);
+  }
+  static rmAttr(name2, key) {
+    this.inst.perf?.removeAttr(name2, key);
+  }
+};
+var Mark_default = Mark;
+
+// extensions/ludex/src/utils/mark/index.ts
+var mark_default = { Mark: Mark_default };
+
+// extensions/ludex/src/utils/number/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/number/getShortNumber.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func76 = (value, maxLength) => {
+  if (typeof value !== "number") {
+    return "0";
+  }
+  const maxNumber = __pow(10, maxLength);
+  let shortened = value;
+  let numberSuffixCount = 0;
+  while (shortened >= maxNumber) {
+    shortened = Math.floor(shortened / 1e3);
+    numberSuffixCount++;
+  }
+  const numberPrefix = shortened.toString();
+  const SUFFIXES = [
+    "",
+    "K",
+    "M",
+    "B",
+    "T",
+    "Qa",
+    "Qi",
+    "Sx",
+    "Sp",
+    "Oc",
+    "No",
+    "Dc",
+    "Ud",
+    "Dd",
+    "Td",
+    "Qad",
+    "Qid",
+    "Sxd",
+    "Spd"
+  ];
+  const numberSuffix = SUFFIXES[numberSuffixCount];
+  return `${numberPrefix}${numberSuffix}`;
+};
+var getShortNumber_default = func76;
+
+// extensions/ludex/src/utils/number/padEnd.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var padEnd = (value, maxLength, fillChar = "0") => {
+  let res = value.toString();
+  const valueLength = res.length;
+  for (let i = 0; i < maxLength - valueLength; i++) {
+    res = res + fillChar;
+  }
+  return res;
+};
+var padEnd_default = padEnd;
+
+// extensions/ludex/src/utils/number/padStart.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var padStart = (value, maxLength, fillChar = "0") => {
+  let res = value.toString();
+  const valueLength = res.length;
+  for (let i = 0; i < maxLength - valueLength; i++) {
+    res = fillChar + res;
+  }
+  return res;
+};
+var padStart_default = padStart;
+
+// extensions/ludex/src/utils/number/random.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func77 = (length, useNegative) => {
+  const negative = useNegative ? Math.random() > 0.5 ? 1 : -1 : 1;
+  return Math.floor(Math.random() * length) * negative;
+};
+var random_default = func77;
+
+// extensions/ludex/src/utils/number/sign.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func78 = (num) => {
+  if (num > 0) return 1;
+  if (num < 0) return -1;
+  if (num === 0) return 0;
+  return Number.NaN;
+};
+var sign_default = func78;
+
+// extensions/ludex/src/utils/number/toAbbreviatedString.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var toAbbreviatedString = (value, config) => {
+  const {
+    fractionalDigits = 0,
+    startAbbreviate = 1e3,
+    abbreviateStep = 3,
+    maxLength = -1,
+    removeLastZero = true,
+    suffixes = ["", "k", "m", "b", "t", "q"]
+  } = config || {};
+  const correctMaxLength = maxLength === -1 ? 99999999 : maxLength;
+  if (value >= startAbbreviate) {
+    const temp = Math.floor(value / __pow(10, abbreviateStep));
+    const suffixNum = Math.floor((temp.toString().length - 1) / abbreviateStep) + 1;
+    const shortValue = value / __pow(__pow(10, abbreviateStep), suffixNum);
+    const fractionalString2 = shortValue.toFixed(fractionalDigits);
+    const numberLength2 = correctMaxLength - suffixes[suffixNum].length;
+    const numberString2 = fractionalString2.substring(0, numberLength2);
+    return (removeLastZero ? removeZero(numberString2) : numberString2) + suffixes[suffixNum];
+  }
+  const fractionalString = value.toFixed(fractionalDigits);
+  const numberLength = correctMaxLength - suffixes[0].length;
+  const numberString = fractionalString.substring(0, numberLength);
+  return removeLastZero ? removeZero(numberString) : numberString + suffixes[0];
+};
+var removeZero = (value) => {
+  if (value.indexOf(".") < 0) return value;
+  for (let i = value.length - 1; i >= 0; i--) {
+    if (value[i] === ".") return value.substring(0, i);
+    if (value[i] !== "0") return value.substring(0, i + 1);
+  }
+  return value;
+};
+var toAbbreviatedString_default = toAbbreviatedString;
+
+// extensions/ludex/src/utils/number/index.ts
+var number_default = { getShortNumber: getShortNumber_default, sign: sign_default, padEnd: padEnd_default,
+padStart: padStart_default, random: random_default, toAbbreviatedString: toAbbreviatedString_default };
+
+// extensions/ludex/src/utils/object/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/object/camelCaseKeys.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/string/camelize.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var toUpperCamelCase = (str) => {
+  const text = str.replace(/[-_\s.]+(.)?/g, (_, c) => c ? c.toUpperCase() : "");
+  return text.substring(0, 1).toUpperCase() + text.substring(1);
+};
+var toCamelCase = (str) => {
+  const text = str.replace(/[-_\s.]+(.)?/g, (_, c) => c ? c.toUpperCase() : "");
+  return text.substring(0, 1).toLowerCase() + text.substring(1);
+};
+
+// extensions/ludex/src/utils/object/camelCaseKeys.ts
+var func79 = (obj) => {
+  const newObj = {};
+  for (const key in obj) {
+    const value = obj[key];
+    const newKey = toCamelCase(key);
+    if (Array.isArray(value)) {
+      newObj[newKey] = value.map((item) => {
+        if (typeof item === "object") {
+          return func79(item);
+        }
+        return item;
+      });
+    } else if (typeof value === "object") {
+      newObj[newKey] = func79(value);
+    } else {
+      newObj[newKey] = obj[key];
+    }
+  }
+  return newObj;
+};
+var camelCaseKeys_default = func79;
+
+// extensions/ludex/src/utils/object/diff.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func80 = (source, target) => {
+  const result3 = {};
+  for (const key in target) {
+    if (hasOwn_default(target, key)) {
+      if (hasOwn_default(source, key)) {
+        const sourceValue = source[key];
+        const targetValue = target[key];
+        if (isObject_default(sourceValue) && isObject_default(targetValue) && sourceValue !== null &&
+        targetValue !== null && typeof sourceValue !== "function" && typeof targetValue !== "functio\
+n") {
+          const diffResult = func80(sourceValue, targetValue);
+          if (Object.keys(diffResult).length > 0) {
+            result3[key] = diffResult;
+          }
+        } else if (!Object.is(sourceValue, targetValue)) {
+          result3[key] = targetValue;
+        }
+      } else {
+        result3[key] = target[key];
+      }
+    }
+  }
+  for (const key in source) {
+    if (hasOwn_default(source, key) && !hasOwn_default(target, key)) {
+      result3[key] = void 0;
+    }
+  }
+  return result3;
+};
+var diff_default = func80;
+
+// extensions/ludex/src/utils/object/filterDeep.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func81 = (source, input) => {
+  const result3 = {};
+  for (const key in input) {
+    if (hasOwn_default(input, key)) {
+      if (isObject_default(input[key]) && input[key] !== null) {
+        if (isObject_default(source[key]) && source[key] !== null) {
+          if (typeof input[key] === "function") continue;
+          const filteredSubObject = func81(source[key], input[key]);
+          if (Object.keys(filteredSubObject).length > 0) {
+            result3[key] = filteredSubObject;
+          }
+        } else if (!hasOwn_default(source, key)) {
+          result3[key] = assign_default({}, input[key]);
+        }
+      } else if (!hasOwn_default(source, key)) {
+        result3[key] = input[key];
+      }
+    }
+  }
+  return result3;
+};
+var filterDeep_default = func81;
+
+// extensions/ludex/src/utils/object/keyBy.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/valid/isPropertyKey.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func82 = (key) => {
+  return ["string", "number", "symbol"].indexOf(typeof key) > -1;
+};
+var isPropertyKey_default = func82;
+
+// extensions/ludex/src/utils/object/keyBy.ts
+var func83 = (array, key) => {
+  const result3 = {};
+  for (const item of array) {
+    const value = item[key];
+    if (!isPropertyKey_default(value)) continue;
+    result3[value] = item;
+  }
+  return result3;
+};
+var keyBy_default = func83;
+
+// extensions/ludex/src/utils/object/snakeCaseKeys.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/string/snake.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var toSnakeCase = (str) => {
+  return str.replace(/([a-z])([A-Z])/g, "$1_$2").replace(/\s+/g, "_").toLowerCase();
+};
+
+// extensions/ludex/src/utils/object/snakeCaseKeys.ts
+var func84 = (obj) => {
+  const newObj = {};
+  for (const key in obj) {
+    const value = obj[key];
+    const newKey = toSnakeCase(key);
+    if (Array.isArray(value)) {
+      newObj[newKey] = value.map((item) => {
+        if (typeof item === "object") {
+          return func84(item);
+        }
+        return item;
+      });
+    } else if (typeof value === "object") {
+      newObj[newKey] = func84(value);
+    } else {
+      newObj[newKey] = obj[key];
+    }
+  }
+  return newObj;
+};
+var snakeCaseKeys_default = func84;
+
+// extensions/ludex/src/utils/object/vals.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func85 = (object) => {
+  return Object.keys(object).map((key) => {
+    return object[key];
+  });
+};
+var vals_default = func85;
+
+// extensions/ludex/src/utils/object/index.ts
+var object_default = {
+  assign: assign_default,
+  camelCaseKeys: camelCaseKeys_default,
+  clone: clone_default2,
+  clear: clear_default,
+  diff: diff_default,
+  hasOwn: hasOwn_default,
+  invert: invert_default,
+  keyBy: keyBy_default,
+  merge: merge_default,
+  snakeCaseKeys: snakeCaseKeys_default,
+  vals: vals_default,
+  filterDeep: filterDeep_default
+};
+
+// extensions/ludex/src/utils/signal/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/signal/Signal.ts
+var Signal_exports = {};
+__export(Signal_exports, {
+  Signal: () => Signal,
+  SignalAbortedError: () => SignalAbortedError,
+  SignalController: () => SignalController
+});
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var SignalAbortedError = class extends Error {
+  constructor(reason = "Signal aborted with no reason") {
+    super(reason);
+    this.name = "SignalAbortedStopped";
+  }
+};
+var Signal = class _Signal {
+  state = { type: "running" };
+  callbacks = [];
+  /**
+   * Register a callback to be called when the signal is aborted.
+   * If the signal is already aborted, the callback will be called immediately
+   * and only once.
+   *
+   * @param callback The callback to be called.
+   */
+  once(callback) {
+    this.callbacks.push(callback);
+  }
+  /**
+   * Remove a callback from the list of callbacks to be called when the signal is aborted.
+   * @param callback The callback to be removed.
+   */
+  off(callback) {
+    this.callbacks = this.callbacks.filter((cb) => cb !== callback);
+  }
+  abort(reasonOrMessage) {
+    const realReason = this.constructReason(reasonOrMessage);
+    this.state = {
+      type: "stopped",
+      reason: realReason
+    };
+    for (const cb of this.callbacks) {
+      cb(realReason);
+    }
+    this.callbacks = [];
+  }
+  /**
+   * Check if the signal has been aborted.
+   */
+  get aborted() {
+    return this.state.type === "stopped";
+  }
+  /**
+   * Get the reason for the signal being aborted.
+   * If the signal is not aborted, `undefined` is returned.
+   */
+  get reason() {
+    if (this.state.type === "stopped") {
+      return this.state.reason;
+    }
+    return void 0;
+  }
+  /**
+   * Wrap a callback in a new function if the signal has not been aborted.
+   * If the signal has been aborted, `undefined` is returned.
+   *
+   * @example
+   * ```typescript
+   * // step by step
+   * const signal = new Signal()
+   * const fn = (name: string) => `Hello, ${name}!`
+   * const wrapped = signal.wrap(fn)
+   * const output = wrapped?.('world') // output is 'Hello, world!' | undefined
+   *
+   * // in one line
+   * const signal = new Signal()
+   * const output = signal.wrap((name: string) => `Hello, ${name}!`)?.('world') // output is 'Hello, world!' | undefined
+   * ```
+   *
+   * @param callback The callback to be wrapped.
+   * @returns The wrapped callback or `undefined` if the signal has been aborted.
+   */
+  wrap(callback) {
+    if (this.aborted) return void 0;
+    return callback;
+  }
+  /**
+   * Let another signal abort this signal.
+   *
+   * @param signal The signal to chain to.
+   */
+  chain(signal) {
+    if (signal instanceof _Signal) {
+      signal.once((reason) => this.abort(reason));
+    } else {
+      signal.addEventListener("abort", () => this.abort(signal.reason), {
+        once: true
+      });
+    }
+  }
+  /**
+   * Wait for the signal to be aborted.
+   * @returns A promise that resolves when the signal is aborted.
+   */
+  promise() {
+    if (this.aborted) {
+      return Promise.resolve(this.reason);
+    }
+    return new Promise((resolve) => {
+      this.once((reason) => resolve(reason));
+    });
+  }
+  constructReason(reason) {
+    if (reason instanceof Error) {
+      return reason;
+    }
+    if (typeof reason === "string") {
+      return new SignalAbortedError(reason);
+    }
+    return new SignalAbortedError();
+  }
+};
+var SignalController = class {
+  signal;
+  /**
+   * Abort an existing signal and create a new one.
+   * Using this is preferred over creating a new signal manually.
+   *
+   * @returns A new signal
+   */
+  renew() {
+    this.signal?.abort();
+    const signal = new Signal();
+    this.signal = signal;
+    return signal;
+  }
+  /**
+   * Abort the current signal if it exists.
+   * If the signal does not exist, this method does nothing.
+   */
+  abort() {
+    this.signal?.abort();
+  }
+  /**
+   * Create a promise that resolves when the signal is aborted.
+   * If the signal does not exist, the promise resolves immediately.
+   * @returns A promise that resolves when the signal is aborted
+   * or immediately if the signal does not exist.
+   */
+  promise() {
+    if (this.signal === void 0) {
+      return Promise.resolve(void 0);
+    }
+    return this.signal.promise();
+  }
+};
+
+// extensions/ludex/src/utils/signal/index.ts
+var signal_default = Signal_exports;
+
+// extensions/ludex/src/utils/string/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/string/capitalize.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func86 = (str) => {
+  if (!str) return str;
+  return str[0].toUpperCase() + str.slice(1);
+};
+var capitalize_default = func86;
+
+// extensions/ludex/src/utils/string/findDuplicateSubstrings.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+function fun(input, minLength = 2) {
+  const result3 = [];
+  const words = input.split(" ");
+  const n = words.length;
+  for (let len = n; len >= 1; len--) {
+    for (let i = 0; i <= n - len; i++) {
+      const substrWords = words.slice(i, i + len);
+      const substr = substrWords.join(" ");
+      if (input.split(substr).length - 1 >= minLength && result3.indexOf(substr) < 0 && substr.length >
+      1) {
+        result3.push(substr);
+      }
+    }
+  }
+  return result3.sort((a, b) => a.length - b.length);
+}
+var findDuplicateSubstrings_default = fun;
+
+// extensions/ludex/src/utils/string/generateNameAsync.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var names = null;
+var defaultName = "Anonymous";
+var fetchNames = async () => {
+  const endpoint = "https://randommer.io/api/Name";
+  const { RandomNameApiKey } = Ludex.Configs.Mockup.Profile;
+  const payload = {
+    nameType: "surname",
+    quantity: 1e3
+  };
+  const response = await fetch(endpoint, {
+    method: "GET",
+    headers: {
+      "X-Api-Key": RandomNameApiKey,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+  });
+  if (!response.ok) {
+    throw new Error("Can't fetch names");
+  }
+  const data = await response.json();
+  if (!isObject_default(data) || !hasOwn_default(data, "data") || !Array.isArray(data.data)) {
+    throw new Error("Invalid names response");
+  }
+  return data.data;
+};
+var func87 = async () => {
+  try {
+    if (!names) {
+      names = await fetchNames();
+      if (!names) {
+        throw new Error("Cannot fetch names");
+      }
+    }
+    const firstName = names[random_default(names.length)];
+    const lastName = names[random_default(names.length)];
+    return `${firstName} ${lastName}`;
+  } catch (_) {
+    return defaultName;
+  }
+};
+var generateNameAsync_default = func87;
+
+// extensions/ludex/src/utils/string/generateObjectId.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func88 = (radix = 16) => {
+  const s = (i) => Math.floor(i).toString(radix);
+  const time = s(Date.now() / 1e3);
+  const str = Array(radix + 1).join(" ");
+  return time + str.replace(/./g, () => s(Math.random() * radix));
+};
+var generateObjectId_default = func88;
+
+// extensions/ludex/src/utils/string/getLanguageCode.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func89 = (locale2) => {
+  const parts = locale2 ? locale2.split("_") : [];
+  let code = parts.length > 0 ? parts[0] : "en_US";
+  switch (code) {
+    case "id":
+    case "in":
+      code = "id";
+      break;
+  }
+  return code;
+};
+var getLanguageCode_default = func89;
+
+// extensions/ludex/src/utils/string/getShortName.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func90 = (name2, length) => {
+  const nameArr = name2.split(" ");
+  const firstLastNameArr = nameArr.length <= 1 ? [...nameArr] : [nameArr[0], nameArr.pop()];
+  const firstLastName = firstLastNameArr.join(" ");
+  const lastIndexOfSpace = firstLastName.lastIndexOf(" ") || 0;
+  const lastIndex = lastIndexOfSpace >= 0 ? lastIndexOfSpace : length;
+  const shortName = firstLastName.length > length ? firstLastName.substring(0, lastIndex) : firstLastName;
+  return shortName.substring(0, length);
+};
+var getShortName_default = func90;
+
+// extensions/ludex/src/utils/string/hashCode.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func91 = (str) => {
+  let hash = 0;
+  if (str.length === 0) return hash;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = (hash << 5) - hash + char;
+    hash = hash & hash;
+  }
+  return hash;
+};
+var hashCode_default = func91;
+
+// extensions/ludex/src/utils/string/matchStart.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var fn = (str, searchString) => {
+  for (let i = 0; i < searchString.length; i++) {
+    if (str[i] !== searchString[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+var matchStart_default = fn;
+
+// extensions/ludex/src/utils/string/padStart.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func92 = (value, length, pad = " ") => {
+  const count = Math.floor(length);
+  if (value.length >= count) return value;
+  const paddingLength = count - value.length;
+  let repeatedPadString = "";
+  for (let i = 0; i < paddingLength; i++) {
+    repeatedPadString += pad;
+  }
+  return repeatedPadString.slice(0, paddingLength) + value;
+};
+var padStart_default2 = func92;
+
+// extensions/ludex/src/utils/string/params.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func93 = (payload) => {
+  const params = Object.keys(payload).reduce((accumulator, key) => {
+    const value = payload[key];
+    if (value !== void 0) {
+      accumulator.push(`${key}=${value}`);
+    }
+    return accumulator;
+  }, []);
+  return params.join("&");
+};
+var params_default = func93;
+
+// extensions/ludex/src/utils/string/random.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func94 = (len, startWith) => {
+  const letters2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789*#%&!";
+  let word = "";
+  let wordLen = len;
+  if (startWith !== void 0) {
+    wordLen -= startWith.length;
+    word += startWith;
+  }
+  for (let i = 0; i < wordLen; i++) {
+    const index = Math.floor(Math.random() * letters2.length);
+    word += letters2.charAt(index);
+  }
+  return word;
+};
+var random_default2 = func94;
+
+// extensions/ludex/src/utils/string/randomColor.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var letters = "0123456789ABCDEF";
+var func95 = (prefix = "0x") => {
+  let color = prefix;
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+var randomColor_default = func95;
+
+// extensions/ludex/src/utils/string/removeDiacritics.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func96 = (str) => {
+  const result3 = str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[đĐ]/g, (m) => m ===
+  "\u0111" ? "d" : "D");
+  return result3;
+};
+var removeDiacritics_default = func96;
+
+// extensions/ludex/src/utils/string/generateNameUsingString.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+function generateNameUsingString(seed) {
+  const hash = createHash(seed);
+  const firstNameIndex = hash % firstNames.length;
+  const lastNameIndex = (hash >> 8) % lastNames.length;
+  const numberValue = (hash >> 16) % 1e4;
+  return `${firstNames[firstNameIndex]}${lastNames[lastNameIndex]}${numberValue}`;
+}
+var createHash = (seed) => {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) {
+    const char = seed.charCodeAt(i);
+    hash = (hash << 5) - hash + char;
+    hash = hash | 0;
+  }
+  hash = Math.abs(hash);
+  return hash;
+};
+var firstNames = [
+  "James",
+  "Mary",
+  "John",
+  "Patricia",
+  "Robert",
+  "Jennifer",
+  "Michael",
+  "Linda",
+  "William",
+  "Elizabeth",
+  "David",
+  "Susan",
+  "Richard",
+  "Jessica",
+  "Joseph",
+  "Sarah",
+  "Thomas",
+  "Karen",
+  "Charles",
+  "Nancy",
+  "Christopher",
+  "Lisa",
+  "Daniel",
+  "Margaret",
+  "Matthew",
+  "Betty",
+  "Anthony",
+  "Sandra",
+  "Mark",
+  "Ashley",
+  "Donald",
+  "Dorothy",
+  "Steven",
+  "Kimberly",
+  "Paul",
+  "Emily",
+  "Andrew",
+  "Donna",
+  "Joshua",
+  "Michelle",
+  "Kenneth",
+  "Carol",
+  "Kevin",
+  "Amanda",
+  "Brian",
+  "Melissa",
+  "George",
+  "Deborah"
+];
+var lastNames = [
+  "Smith",
+  "Johnson",
+  "Williams",
+  "Jones",
+  "Brown",
+  "Davis",
+  "Miller",
+  "Wilson",
+  "Moore",
+  "Taylor",
+  "Anderson",
+  "Thomas",
+  "Jackson",
+  "White",
+  "Harris",
+  "Martin",
+  "Thompson",
+  "Garcia",
+  "Martinez",
+  "Robinson",
+  "Clark",
+  "Rodriguez",
+  "Lewis",
+  "Lee",
+  "Walker",
+  "Hall",
+  "Allen",
+  "Young",
+  "Hernandez",
+  "King",
+  "Wright",
+  "Lopez",
+  "Hill",
+  "Scott",
+  "Green",
+  "Adams",
+  "Baker",
+  "Gonzalez",
+  "Nelson",
+  "Carter",
+  "Mitchell",
+  "Perez",
+  "Roberts",
+  "Turner",
+  "Phillips",
+  "Campbell",
+  "Parker",
+  "Evans"
+];
+
+// extensions/ludex/src/utils/string/index.ts
+var string_default = {
+  toCamelCase,
+  toUpperCamelCase,
+  capitalize: capitalize_default,
+  generateObjectId: generateObjectId_default,
+  getLanguageCode: getLanguageCode_default,
+  getShortName: getShortName_default,
+  hashCode: hashCode_default,
+  matchStart: matchStart_default,
+  padStart: padStart_default2,
+  params: params_default,
+  random: random_default2,
+  randomColor: randomColor_default,
+  removeDiacritics: removeDiacritics_default,
+  findDuplicateSubstrings: findDuplicateSubstrings_default,
+  generateNameAsync: generateNameAsync_default,
+  toSnakeCase,
+  generateNameUsingString
+};
+
+// extensions/ludex/src/utils/time/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/time/getRelativeTime.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var cutoffs = [60, 3600, 86400, 86400 * 7, 86400 * 30, 86400 * 365, Number.POSITIVE_INFINITY];
+var units = ["second", "minute", "hour", "day", "week", "month", "year"];
+var func97 = (timestamp, locales, options, fallbackMessage = "Soon") => {
+  try {
+    const realLocales = locales ?? "en";
+    const realOptions = options ?? { numeric: "auto" };
+    const deltaSeconds = Math.round((timestamp * 1e3 - Date.now()) / 1e3);
+    const positivedeltaSeconds = Math.abs(Math.round((timestamp * 1e3 - Date.now()) / 1e3));
+    const unitIndex = searchIndex_default(cutoffs, (cutoff) => cutoff > positivedeltaSeconds);
+    const divisor = unitIndex ? cutoffs[unitIndex - 1] : 1;
+    const rtf = new Intl.RelativeTimeFormat(realLocales, realOptions);
+    return rtf.format(Math.floor(deltaSeconds / divisor), units[unitIndex]);
+  } catch (error) {
+    if (fallbackMessage !== void 0) {
+      return "Soon";
+    }
+    throw error;
+  }
+};
+var getRelativeTime_default = func97;
+
+// extensions/ludex/src/utils/time/getTimeString.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func98 = (timestamp) => {
+  const date = new Date(timestamp);
+  const hours = date.getUTCHours();
+  const minutes = date.getUTCMinutes();
+  const seconds = date.getUTCSeconds();
+  const milliseconds = date.getUTCMilliseconds();
+  const hoursString = hours < 10 ? `0${hours}` : `${hours}`;
+  const minutesString = minutes < 10 ? `0${minutes}` : `${minutes}`;
+  const secondsString = seconds < 10 ? `0${seconds}` : `${seconds}`;
+  let millisecondsString = `${milliseconds}`;
+  if (milliseconds < 10) {
+    millisecondsString = `00${milliseconds}`;
+  } else if (milliseconds < 100) {
+    millisecondsString = `0${milliseconds}`;
+  }
+  return `${hoursString}:${minutesString}:${secondsString}:${millisecondsString}`;
+};
+var getTimeString_default = func98;
+
+// extensions/ludex/src/utils/time/isToday.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func99 = (timestamp) => {
+  const last = new Date(timestamp);
+  const today = /* @__PURE__ */ new Date();
+  return last.getDate() === today.getDate() && last.getMonth() === today.getMonth() && last.getFullYear() ===
+  today.getFullYear();
+};
+var isToday_default = func99;
+
+// extensions/ludex/src/utils/time/sleepAsync.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func100 = (milliseconds) => {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
+};
+var sleepAsync_default = func100;
+
+// extensions/ludex/src/utils/time/index.ts
+var time_default = { isToday: isToday_default, sleepAsync: sleepAsync_default, getRelativeTime: getRelativeTime_default,
+getTimeString: getTimeString_default };
+
+// extensions/ludex/src/utils/valid/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/utils/valid/isBoolean.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func101 = (data) => typeof data === "boolean";
+var isBoolean_default = func101;
+
+// extensions/ludex/src/utils/valid/isDebugger.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func102 = () => {
+  if (true) return true;
+  return !!codex?.player?.getPlayerDataByKey("debug");
+};
+var isDebugger_default = func102;
+
+// extensions/ludex/src/utils/valid/isFunction.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func103 = (input) => typeof input === "function";
+var isFunction_default = func103;
+
+// extensions/ludex/src/utils/valid/isNumber.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func104 = (data) => typeof data === "number";
+var isNumber_default = func104;
+
+// extensions/ludex/src/utils/valid/isPromise.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func105 = (input) => {
+  if (!isFunction_default(input)) return false;
+  if (input instanceof Promise || "then" in input && typeof input.then === "function") {
+    return true;
+  }
+  return input.constructor.name === "AsyncFunction";
+};
+var isPromise_default = func105;
+
+// extensions/ludex/src/utils/valid/isValueChangeAsync.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var func106 = (from, to, options) => {
+  const { timeout = 1e3, checkInterval = 16 } = options ?? {};
+  let waitTimeout;
+  let waitInterval;
+  return new Promise((resolve, reject) => {
+    if (typeof from !== "function") throw new Error("Input from must be a function");
+    waitInterval = setInterval(() => {
+      const aFrom = from();
+      const aTo = typeof to === "function" ? to() : to;
+      if (aFrom !== aTo) return;
+      clearTimeout(waitTimeout);
+      clearInterval(waitInterval);
+      resolve(true);
+    }, checkInterval);
+    if (timeout > 0) {
+      clearTimeout(waitTimeout);
+      waitTimeout = setTimeout(() => {
+        clearInterval(waitInterval);
+        reject(new Error("Timeout"));
+      }, timeout);
+    }
+  });
+};
+var isValueChangeAsync_default = func106;
+
+// extensions/ludex/src/utils/valid/index.ts
+var valid_default = {
+  isBoolean: isBoolean_default,
+  isDebugger: isDebugger_default,
+  isEmpty: isEmpty_default,
+  isFalsy: isFalsy_default,
+  isFunction: isFunction_default,
+  isNumber: isNumber_default,
+  isObject: isObject_default,
+  isPromise: isPromise_default,
+  isPropertyKey: isPropertyKey_default,
+  isString: isString_default,
+  isValueChangeAsync: isValueChangeAsync_default
+};
+
+// extensions/ludex/src/utils/index.ts
+var Utils = {
+  Array: array_default,
+  Browser: browser_default,
+  Decorator: decorator_default,
+  Device: device_default,
+  Function: function_default,
+  Hash: hash_default,
+  Image: image_default,
+  Json: json_default,
+  Mark: mark_default.Mark,
+  Object: object_default,
+  Signal: signal_default,
+  String: string_default,
+  Number: number_default,
+  Time: time_default,
+  Valid: valid_default,
+  Error: error_default
+};
+var utils_default = Utils;
+
+// extensions/ludex/src/Ludex.ts
+console.groupCollapsed("\u{1F9EC} Ludex initiation");
+var Ludex2 = Object.preventExtensions({
+  Dtos: {},
+  Utils: Object.freeze(utils_default),
+  Match: Object.freeze({
+    Modes: Object.freeze(MatchModes_default2)
+  }),
+  Events: Object.freeze(CoreEvents_default),
+  Configs: Object.seal(define_GAME_CONFIG_default),
+  Plugins: Object.seal({
+    Ads: null,
+    Audio: null,
+    Analytics: null
+  })
+});
+window.Ludex = Ludex2;
+window.TypeGuard = type_guard_default;
+window.GameName = "Dinosaurs Merge Master";
+window.CommitId = "3c67b3d4";
+window.BuildVersion = "0";
+console.warn("Env mode:", "development");
+console.warn("Debugger:", Ludex2.Utils.Valid.isDebugger());
+console.warn("DevIds:", Ludex2.Configs.Debugger.ListPlayerDevIds);
+
+// extensions/ludex/src/dtos/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/dtos/BaseDtos.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Valid: V, Object: O, String: S, Json: J } = Ludex.Utils;
+var MESSAGE_INVALID = "is invalid";
+var BaseDtos = class _BaseDtos {
+  static strict = {};
+  static data = {};
+  static addDefaultData(data) {
+    if (!V.isObject(data)) {
+      this.prototype.exception$("default data", MESSAGE_INVALID);
+    }
+    data = J.clone(data);
+    const { name: name2 } = this;
+    if (!V.isObject(_BaseDtos.data[name2])) {
+      _BaseDtos.data[name2] = {};
+    }
+    _BaseDtos.data[name2] = O.merge(_BaseDtos.data[name2], data);
+    console.debug(`${name2} default data:`, _BaseDtos.data[name2]);
+  }
+  static getDefaultData() {
+    const { name: name2 } = this;
+    return J.clone(_BaseDtos.data[name2]);
+  }
+  static addValidateFunction(key, func107) {
+    if (!V.isString(key)) {
+      this.prototype.exception$("validate key", MESSAGE_INVALID);
+    }
+    if (typeof func107 !== "function") {
+      this.prototype.exception$("validate function", MESSAGE_INVALID);
+    }
+    const funcName = `validate${S.capitalize(key)}`;
+    O.assign(this.prototype, { [funcName]: func107 });
+  }
+  constructor(data) {
+    this.defaultData$();
+    this.processData(data);
+  }
+  static makeStrict() {
+    _BaseDtos.strict[this.name] = true;
+  }
+  static makeLoose() {
+    _BaseDtos.strict[this.name] = false;
+  }
+  processData(data) {
+    this.validateStructure$(data);
+    this.validateData$(data);
+    this.setupData(data);
+  }
+  defaultData$() {
+    const { name: name2 } = this.constructor;
+    this.lazyDefaultData$(_BaseDtos.data[name2]);
+  }
+  lazyDefaultData$(data) {
+    if (!V.isObject(data)) {
+      this.exception$("data", MESSAGE_INVALID);
+    }
+    for (const key in data) {
+      if (O.hasOwn(data, key)) {
+        const value = data[key];
+        O.assign(this, { [key]: value });
+      }
+    }
+  }
+  lazyValidateStructure$(data) {
+    if (!V.isObject(data)) {
+      this.exception$("structure", "is not object");
+    }
+    const keys = this.getKeys();
+    for (const key of keys) {
+      const current = this[key];
+      if (current === void 0) {
+        this.exception$("structure", `has no key ${key}`);
+      }
+      const isOwn = O.hasOwn(data, key);
+      if (!isOwn && current !== void 0) {
+        this.setDefaultData$(key, data);
+      }
+    }
+  }
+  setDefaultData$(key, data) {
+    if (!V.isObject(data)) {
+      this.exception$("data", MESSAGE_INVALID);
+    }
+    const value = this[key];
+    if (value === void 0) {
+      this.exception$("default", `has no key ${key}`);
+    }
+    O.assign(data, { [key]: value });
+  }
+  lazyValidateData$(data) {
+    const keys = this.getKeys();
+    for (const key of keys) {
+      const value = data[key];
+      const corrKey = S.removeDiacritics(key).replace(/[^a-zA-Z0-9]/g, "");
+      const funcName = `validate${S.capitalize(corrKey)}`;
+      const validate = this[funcName];
+      if (typeof validate === "function") {
+        try {
+          validate.call(this, value);
+        } catch (error) {
+          if (_BaseDtos.strict[this.constructor.name]) throw error;
+          console.warn(error);
+          this.setDefaultData$(key, data);
+        }
+      } else {
+        this.exception$("validate", `has no function ${funcName}`);
+      }
+    }
+  }
+  lazySetupData$(data) {
+    const keys = this.getKeys();
+    for (const key of keys) {
+      const value = data[key];
+      O.assign(this, { [key]: value });
+    }
+  }
+  exception$(key, message) {
+    throw new Error(`${this.constructor.name}: ${key} ${message}`);
+  }
+  toObject() {
+    const result3 = {};
+    const keys = Object.keys(this);
+    let i;
+    let key;
+    for (i = 0; i < keys.length; i++) {
+      key = keys[i];
+      if (key !== "toObject") {
+        result3[key] = this[key];
+      }
+    }
+    return result3;
+  }
+  getKeys() {
+    return Object.keys(this).filter((key) => key !== "toObject" && key !== "strict");
+  }
+};
+var BaseDtos_default = BaseDtos;
+
+// extensions/ludex/src/dtos/index.ts
+Ludex.Dtos = { Base: BaseDtos_default };
+
+// extensions/ludex/src/codex/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/codex/codex.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/codex/plugins/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var Plugins = class {
+  codex;
+  plugins;
+  constructor(codex2) {
+    this.codex = codex2;
+    this.plugins = {};
+  }
+  install(name2, plugin, mapping, property) {
+    if (typeof plugin !== "function") {
+      if (GameSDK.getSDKName() !== "Ludex") {
+        console.error("Plugin install:", `${name2} plugin must be a class (${property})`);
+      } else {
+        console.warn("Plugin install:", `${name2} plugin may be disabled (${property})`);
+      }
+      return;
+    }
+    const pluginInstance = new plugin(this.codex);
+    this.plugins[name2] = pluginInstance;
+    if (mapping) {
+      Object.defineProperty(this.codex, property, {
+        get: () => pluginInstance
+      });
+    }
+    pluginInstance.init();
+  }
+  get(name2) {
+    return this.plugins[name2];
+  }
+};
+var plugins_default = Plugins;
+
+// extensions/ludex/src/codex/plugins/base.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var BasePlugin = class {
+  codex;
+  constructor(codex2) {
+    this.codex = codex2;
+  }
+  init() {
+  }
+};
+var base_default = BasePlugin;
+
+// extensions/ludex/src/codex/codex.ts
+var Game = class {
+  codex;
+  plugins;
+  ads;
+  auth;
+  audio;
+  event;
+  match;
+  player;
+  profile;
+  context;
+  storage;
+  language;
+  missions;
+  analytics;
+  visibility;
+  leaderboard;
+  dailyRewards;
+  remoteConfig;
+  frameCapture;
+  // Lazy plugins
+  firebase;
+  monitorError;
+  adaptivePerformance;
+  inputRecorder;
+  // Dev plugins
+  console;
+  profiler;
+  canvasRecorder;
+  constructor() {
+    this.codex = this;
+    this.plugins = new plugins_default(this.codex);
+  }
+  async boot() {
+  }
+  async start() {
+  }
+  getBuildVersion() {
+    return 0;
+  }
+};
+window.Ludex.Plugins = { BasePlugin: base_default };
+var codex_default = Game;
+
+// extensions/ludex/src/api/notification.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/api/clients/instance.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/exceptions/BadRequest.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var BadRequest = class extends Error {
+  payload;
+  constructor(message, payload) {
+    super(message);
+    this.name = "BadRequest";
+    this.message = message ?? "This request is bad";
+    this.payload = payload;
+  }
+};
+var BadRequest_default = BadRequest;
+
+// extensions/ludex/src/exceptions/RequestTimeout.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var RequestTimeout = class extends Error {
+  payload;
+  constructor(message, payload) {
+    super(message);
+    this.name = "RequestTimeout";
+    this.message = message ?? "This request is timeout";
+    this.payload = payload;
+  }
+};
+var RequestTimeout_default = RequestTimeout;
+
+// extensions/ludex/src/api/clients/instance.ts
+var {
+  Utils: { Valid: V2, Time: T },
+  Configs: { AppId, Network }
+} = Ludex;
+var validateResponse = (response) => {
+  if (response.ok) return;
+  throw new BadRequest_default(void 0, { response });
+};
+var defaultConfig = () => {
+  const token = codex.auth.getToken();
+  return {
+    token,
+    timeout: Network.Timeout,
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json"
+    }
+  };
+};
+var requester = (host, url, config, data) => async () => {
+  try {
+    if (!AppId) throw new BadRequest_default("AppId is not defined");
+    const fullUrl = `${host}/apps/${AppId}/${url}`;
+    const controller = new AbortController();
+    config.signal = controller.signal;
+    const timeout = setTimeout(() => {
+      controller.abort();
+    }, config.timeout);
+    if (V2.isObject(data)) {
+      config.body = JSON.stringify(data);
+    }
+    const response = await fetch(fullUrl, config);
+    clearTimeout(timeout);
+    validateResponse(response);
+    const json = await response.json() || {};
+    return json;
+  } catch (error) {
+    if (error instanceof BadRequest_default) return null;
+    if (error instanceof Object && "name" in error) {
+      if (error.name === "AbortError") {
+        throw new RequestTimeout_default();
+      }
+    }
+    throw error;
+  }
+};
+var handleRequest = async (asyncFunc, retry) => {
+  try {
+    return asyncFunc();
+  } catch (error) {
+    if (error instanceof RequestTimeout_default && retry > 0) {
+      try {
+        await T.sleepAsync(600);
+        return await handleRequest(asyncFunc, retry - 1);
+      } catch (error2) {
+        return {};
+      }
+    }
+    if (error instanceof RequestTimeout_default) return {};
+    console.warn("Request error", error);
+    return {};
+  }
+};
+var get = async (url, configs, host, retry = Network.Retries) => {
+  try {
+    const config = __spreadProps(__spreadValues(__spreadValues({}, defaultConfig()), configs), {
+      method: "GET"
+    });
+    const request = requester(host, url, config);
+    return await handleRequest(request, retry);
+  } catch (error) {
+    console.warn("Get error", error);
+    return {};
+  }
+};
+var post = async (url, data, configs, host, retry = Network.Retries) => {
+  try {
+    const config = __spreadProps(__spreadValues(__spreadValues({}, defaultConfig()), configs), {
+      method: "POST"
+    });
+    const request = requester(host, url, config, data);
+    return await handleRequest(request, retry);
+  } catch (error) {
+    console.warn("Post error", error);
+    return {};
+  }
+};
+
+// extensions/ludex/src/api/notification.ts
+var {
+  Configs: {
+    Notification: { ApiUrl }
+  },
+  Utils: { Object: O2 }
+} = Ludex;
+var updatePlayerProfileNotificationAsync = async (payload) => {
+  if (!O2.hasOwn(payload, "playerId")) {
+    throw new Error("Missing playerId");
+  }
+  const { playerId: playerId2 } = payload;
+  await post(`players/${playerId2}`, payload, {}, ApiUrl, 10);
+};
+
+// extensions/ludex/src/codex/StateInitiator.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/constants/PlayerDataKeys.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var PlayerDataKeys = {
+  score: "score",
+  settings: "settings",
+  isFirstLogin: "isFirstLogin",
+  gameData: "gameData",
+  missionsData: "missionsData",
+  notificationData: "notificationData",
+  dailyRewardedData: "dailyRewardedData",
+  lastCallSwitchGame: "lastCallSwitchGame",
+  remoteConfig: "remoteConfig"
+};
+var PlayerDataKeys_default = PlayerDataKeys;
+
+// extensions/ludex/src/constants/SampleOpponent.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/player/dtos/PlayerInfo.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/player/state.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var initState = {
+  ASID: null,
+  playerId: "0000",
+  name: "Guest",
+  photo: "",
+  locale: "en_US",
+  connectedPlayers: {},
+  data: {
+    score: 0,
+    isFirstLogin: true,
+    settings: {
+      sound: true,
+      music: true,
+      vibrate: true,
+      language: "en"
+    },
+    gameData: {
+      coins: 0,
+      level: 1
+    },
+    notificationData: {
+      D1: {
+        arrivalDate: 0
+      },
+      D2: {
+        arrivalDate: 0
+      },
+      D3: {
+        arrivalDate: 0
+      },
+      D4: {
+        arrivalDate: 0
+      },
+      D5: {
+        arrivalDate: 0
+      },
+      D6: {
+        arrivalDate: 0
+      },
+      D7: {
+        arrivalDate: 0
+      }
+    },
+    missionsData: {
+      process: {}
+    },
+    lastCallSwitchGame: 0
+  }
+};
+var state_default = initState;
+
+// extensions/ludex/src/plugins/player/dtos/PlayerInfo.ts
+var { Valid: V3 } = Ludex.Utils;
+var { playerId, name, photo, locale } = state_default;
+var MESSAGE_INVALID2 = "is invalid";
+var PlayerInfoDtos = class extends BaseDtos_default {
+  setupData(data) {
+    this.lazySetupData$(data);
+  }
+  validateStructure$(data) {
+    this.lazyValidateStructure$(data);
+  }
+  validateData$(data) {
+    this.lazyValidateData$(data);
+  }
+  validateId(_id) {
+    if (!V3.isString(_id) || !_id) {
+      this.exception$("_id", MESSAGE_INVALID2);
+    }
+  }
+  validatePlayerId(playerId2) {
+    if (!V3.isString(playerId2) || !playerId2) {
+      this.exception$("playerId", MESSAGE_INVALID2);
+    }
+  }
+  validateName(name2) {
+    if (!V3.isString(name2) || !name2) {
+      this.exception$("name", MESSAGE_INVALID2);
+    }
+  }
+  validatePhoto(photo2) {
+    if (!V3.isString(photo2)) {
+      this.exception$("photo", MESSAGE_INVALID2);
+    }
+  }
+  validateLocale(locale2) {
+    if (!V3.isString(locale2) || !locale2) {
+      this.exception$("locale", MESSAGE_INVALID2);
+    }
+  }
+  toObject() {
+    return super.toObject();
+  }
+};
+PlayerInfoDtos.addDefaultData({
+  playerId,
+  name,
+  photo,
+  locale
+});
+var PlayerInfo_default = PlayerInfoDtos;
+
+// extensions/ludex/src/constants/SampleOpponent.ts
+var SampleOpponent = new PlayerInfo_default({
+  playerId: "10",
+  name: "Your Friend"
+}).toObject();
+var SampleOpponent_default = SampleOpponent;
+
+// extensions/ludex/src/plugins/match/exceptions/PlayerIdNotValid.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/abstract/ACreateMatchFailed.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ACreateMatchFailed = class extends Error {
+  code;
+  constructor(message) {
+    super(message);
+    this.code = "CREATE_MATCH_FAILED";
+  }
+};
+var ACreateMatchFailed_default = ACreateMatchFailed;
+
+// extensions/ludex/src/plugins/match/exceptions/PlayerIdNotValid.ts
+var PlayerIdNotValid = class extends ACreateMatchFailed_default {
+  constructor(message) {
+    super(message);
+    this.name = "PlayerIdNotValid";
+    this.message = message ?? "Player id is not valid";
+  }
+};
+var PlayerIdNotValid_default = PlayerIdNotValid;
+
+// extensions/ludex/src/codex/StateInitiator.ts
+var {
+  Dtos,
+  Utils: { Array: A, Object: O3, Json: J2, Valid: V4 },
+  Events
+} = Ludex;
+var StateInitiator = class {
+  codex;
+  constructor(codex2) {
+    this.codex = codex2;
+  }
+  initContext = () => {
+    const rawData = {
+      contextId: GameSDK.context.getID() ?? "",
+      contextType: GameSDK.context.getType(),
+      entryPointData: GameSDK.getEntryPointData()
+    };
+    const context = new Dtos.Context.Info(rawData);
+    const { contextId: contextId2, contextType: contextType2, entryPointData: entryPointData2 } = context.
+    toObject();
+    this.codex.context.receiveContext(contextId2, contextType2, entryPointData2);
+  };
+  initPlayer = async () => {
+    try {
+      const { player } = this.codex;
+      const playerInfo = this.getPlayerInfo();
+      console.info("playerInfo", J2.clone(playerInfo));
+      const dataKeys = A.unique(O3.vals(PlayerDataKeys_default));
+      console.debug("dataKeys", dataKeys);
+      const rawData = await GameSDK.player.getDataAsync(dataKeys);
+      console.debug("rawData", J2.clone(rawData));
+      const playerData = new Dtos.Player.Data(rawData).toObject();
+      console.info("playerData", J2.clone(playerData));
+      player.receiveData(playerInfo, playerData);
+    } catch (error) {
+      console.warn("StateInitiator.initPlayer", error);
+    } finally {
+      this.codex.event.emit(Events.PLAYER_INFO_LOADED);
+    }
+  };
+  getPlayerInfo = () => {
+    try {
+      const playerId2 = GameSDK.player.getID();
+      let playerName = GameSDK.player.getName();
+      const playerPhoto = GameSDK.player.getPhoto();
+      let playerLocale = GameSDK.getLocale();
+      if (!V4.isString(playerId2)) {
+        throw new PlayerIdNotValid_default();
+      }
+      if (!V4.isString(playerName)) {
+        playerName = "You";
+      }
+      if (!V4.isString(playerLocale) || !playerLocale) {
+        playerLocale = "en";
+      }
+      return new Dtos.Player.Info({
+        playerId: playerId2,
+        name: playerName,
+        photo: playerPhoto,
+        locale: playerLocale
+      }).toObject();
+    } catch (error) {
+      console.warn("StateInitiator.getPlayerInfo", error);
+      return SampleOpponent_default;
+    }
+  };
+};
+var StateInitiator_default = StateInitiator;
+
+// extensions/ludex/src/codex/index.ts
+init_CoreEvents();
+
+// extensions/ludex/src/plugins/ads/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/ads/AdsPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/ads/constants/AdsStatus.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var AdStatus = /* @__PURE__ */ ((AdStatus2) => {
+  AdStatus2["IDLE"] = "idle";
+  AdStatus2["LOADING"] = "loading";
+  AdStatus2["FILLED"] = "filled";
+  AdStatus2["SHOWING"] = "showing";
+  return AdStatus2;
+})(AdStatus || {});
+var AdsStatus_default = AdStatus;
+
+// extensions/ludex/src/plugins/ads/constants/AdsTypes.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var Types = /* @__PURE__ */ ((Types3) => {
+  Types3["BANNER"] = "banner";
+  Types3["INTERSTITIAL"] = "interstitial";
+  Types3["REWARDED_VIDEO"] = "rewarded_video";
+  Types3["REWARDED_INTERSTITIAL"] = "rewarded_interstitial";
+  return Types3;
+})(Types || {});
+var AdsTypes_default = Types;
+
+// extensions/ludex/src/plugins/ads/exceptions/AdError.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var AdError = class extends Error {
+  code;
+  constructor(code, message) {
+    super(message);
+    this.code = code;
+    this.message = message;
+  }
+};
+var AdError_default = AdError;
+
+// extensions/ludex/src/plugins/ads/instances/AdInstance.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/ads/instances/BaseInstance.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var BaseInstance = class {
+  type;
+  service;
+  placementId;
+  _status;
+  constructor(type, placementId) {
+    this.type = type;
+    this._status = AdsStatus_default.IDLE;
+    this.placementId = placementId;
+  }
+  setStatus(status) {
+    if (this._status === status) return;
+    this._status = status;
+  }
+  get status() {
+    return this._status;
+  }
+  exception$(message) {
+    throw new AdError_default("AD_INSTANCE_ERROR", message);
+  }
+};
+var BaseInstance_default = BaseInstance;
+
+// extensions/ludex/src/plugins/ads/instances/AdInstance.ts
+var AdInstance = class extends BaseInstance_default {
+  loadAsync() {
+    this.exception$("This method is not implemented");
+  }
+  showAsync() {
+    this.exception$("This method is not implemented");
+  }
+  hideAsync() {
+    this.exception$("Unsupported method");
+  }
+};
+var AdInstance_default = AdInstance;
+
+// extensions/ludex/src/plugins/ads/AdsPlugin.ts
+Ludex.Plugins.Ads = {
+  Types: AdsTypes_default,
+  Status: AdsStatus_default,
+  AdError: AdError_default,
+  AdInstance: AdInstance_default
+};
+var {
+  Utils: { Array: A2, Object: O4, Function: F }
+} = Ludex;
+var AdsPlugin = class extends Ludex.Plugins.BasePlugin {
+  enabled;
+  config;
+  // ? That mean the last time an ad full size was shown
+  lastCallAdShownTime;
+  isAdFullSizeShowed;
+  ads = {};
+  safeAreaBottom;
+  degradationTracking = {
+    failedAttempts: 0,
+    lastSuccessTime: 0
+  };
+  init() {
+    const now = Date.now() / 1e3;
+    this.lastCallAdShownTime = {
+      [AdsTypes_default.BANNER]: now,
+      [AdsTypes_default.INTERSTITIAL]: now,
+      [AdsTypes_default.REWARDED_VIDEO]: now,
+      [AdsTypes_default.REWARDED_INTERSTITIAL]: now
+    };
+    this.isAdFullSizeShowed = false;
+    this.calculateSafeAreaBottom();
+    this.resetDegradationTracking();
+  }
+  calculateSafeAreaBottom() {
+    try {
+      const sab = getComputedStyle(document.documentElement).getPropertyValue("--sab");
+      this.safeAreaBottom = parseInt(sab, 10);
+      if (isNaN(this.safeAreaBottom)) {
+        this.safeAreaBottom = 0;
+      }
+    } catch (e) {
+      this.safeAreaBottom = 0;
+    }
+  }
+  configure(config) {
+    this.config = config;
+    this.enabled = this.config.Enabled;
+  }
+  checkEnabled() {
+    if (!this.enabled) {
+      throw new AdError_default("ADS_NOT_ENABLED", "Ads is't enabled");
+    }
+  }
+  isAdFullSizeShowing() {
+    return this.isAdFullSizeShowed;
+  }
+  setAdInstance(type, placementId, adInstance) {
+    const id = `${type}-${placementId}`;
+    if (this.ads[id]) {
+      console.warn(`AdsPlugin: Ad instance with placementId ${placementId} already exists`);
+      return;
+    }
+    this.ads[id] = {
+      type,
+      placementId,
+      interval: null,
+      instance: new adInstance(type, placementId)
+    };
+  }
+  async loadAdAsync(type, placementId) {
+    this.checkEnabled();
+    try {
+      const ad = this.getAd(type, placementId);
+      await ad.instance.loadAsync();
+    } catch (error) {
+      this.degradationTracking.failedAttempts++;
+      throw error;
+    }
+  }
+  async showAdAsync(type, placementId) {
+    this.checkEnabled();
+    if (!this.canShowAd(type, placementId)) {
+      console.warn(`AdsPlugin: This ad ${type} is not ready to be shown`);
+      return;
+    }
+    const { event } = this.codex;
+    const ad = this.getAd(type, placementId);
+    try {
+      event.emit(Ludex.Events.AD_SHOWING, { type, placementId });
+      this.isAdFullSizeShowed = true;
+      await ad.instance.showAsync();
+      this.resetDegradationTracking();
+      this.lastCallAdShownTime[type] = Date.now() / 1e3;
+    } catch (error) {
+      this.degradationTracking.failedAttempts++;
+      throw error;
+    } finally {
+      event.emit(Ludex.Events.AD_CLOSED, { type, placementId });
+      this.isAdFullSizeShowed = false;
+    }
+  }
+  getAdStatus(type, placementId) {
+    this.checkEnabled();
+    const ad = this.getAd(type, placementId);
+    return ad.instance.status;
+  }
+  getAd(type, placementId) {
+    let ad = null;
+    if (placementId) {
+      ad = this.getAdByPlacementId(placementId, type);
+    } else {
+      ad = this.getPriorityAdByType(type);
+    }
+    if (!ad) {
+      throw new AdError_default("AD_INSTANCE_NOT_INITIATED", "The instance ads not yet initiated");
+    }
+    return ad;
+  }
+  getAdsByType(type) {
+    return O4.vals(this.ads).filter((ad) => ad.type === type);
+  }
+  getAdByPlacementId(placementId, type) {
+    const ads = O4.vals(this.ads);
+    const ad = A2.search(ads, (ad2) => ad2.placementId === placementId && (!type || ad2.type === type));
+    if (!ad) return null;
+    return ad;
+  }
+  getPriorityAdByType(type) {
+    const ads = this.getAdsByType(type);
+    if (!ads.length) return null;
+    const ad = A2.search(ads, (ad2) => ad2.type === type);
+    if (!ad) return null;
+    return ad;
+  }
+  canShowAd(type, placementId) {
+    return this.canShowAdByTime(type, placementId);
+  }
+  canShowAdByTime(type, placementId) {
+    try {
+      const now = Date.now() / 1e3;
+      let adConfig;
+      if (!placementId) {
+        const ad = this.getPriorityAdByType(type);
+        if (!ad) return false;
+        adConfig = this.getCommonAdConfig(ad.placementId);
+      } else {
+        adConfig = this.getCommonAdConfig(placementId);
+      }
+      const { SecondsBetweenAds, SecondsFirstTime } = adConfig;
+      const period = now - this.lastCallAdShownTime[type];
+      const canShowByTime = period > SecondsBetweenAds;
+      const canShowFirstTime = period > SecondsFirstTime;
+      console.debug("[AdsPlugin] canShowAdByTime", {
+        type,
+        now,
+        lastShownTime: this.lastCallAdShownTime[type],
+        period,
+        adConfig,
+        canShowByTime,
+        canShowFirstTime
+      });
+      if (this.lastCallAdShownTime[type] > 0) {
+        return canShowByTime;
+      }
+      return canShowFirstTime;
+    } catch (error) {
+      console.warn(`Error while checking can show ${type} ad by time`, error);
+      return false;
+    }
+  }
+  canShowBannerAd(placementId) {
+    try {
+      const bannerConfig = this.getBannerConfig(placementId);
+      const { Platform } = bannerConfig;
+      if (Platform === "ALL") return true;
+      const currentPlatform = GameSDK.getPlatform();
+      if (!currentPlatform) return false;
+      return currentPlatform === Platform;
+    } catch (error) {
+      console.warn("Error while checking canShowBannerAd", error);
+      return false;
+    }
+  }
+  async showBannerAdAsync(placementId, autoRefresh = true) {
+    this.checkEnabled();
+    const ad = this.getAd(AdsTypes_default.BANNER, placementId);
+    if (!this.canShowBannerAd(ad.placementId)) {
+      throw new Error("Banner ad can not be shown");
+    }
+    this.cleanBannerReloadTimer(ad);
+    if (autoRefresh) {
+      await this.showBannerAdWithSchedule(ad);
+    } else {
+      await this.showBannerAdOnce(ad);
+    }
+  }
+  async showBannerAdOnce(ad) {
+    const { event } = this.codex;
+    if (this.isAdFullSizeShowing()) {
+      console.warn("Show banner ad skipped because ad full size is showing");
+      return;
+    }
+    try {
+      await ad.instance.loadAsync();
+      await ad.instance.showAsync();
+      event.emit(Ludex.Events.AD_SHOWING, {
+        type: AdsTypes_default.BANNER,
+        placementId: ad.placementId
+      });
+    } catch (error) {
+      const err = F.toError(error);
+      if (err.code !== "AD_NOT_FILLED") {
+        try {
+          await ad.instance.hideAsync();
+        } catch (error2) {
+          console.warn("Failed to call ad.instance.hideAsync after show banner ad failed", error2);
+        }
+      }
+      event.emit(Ludex.Events.AD_FAILED, {
+        type: AdsTypes_default.BANNER,
+        placementId: ad.placementId,
+        error: err
+      });
+    }
+  }
+  async showBannerAdWithSchedule(ad) {
+    await this.showBannerAdOnce(ad);
+    const bannerConfig = this.getBannerConfig(ad.placementId);
+    const { SecondsReload } = bannerConfig;
+    if (SecondsReload <= 0 || !SecondsReload) {
+      console.warn("Banner ad reload time is less than 0");
+      return;
+    }
+    const cb = () => this.showBannerAdWithSchedule(ad);
+    ad.interval = setTimeout(cb, SecondsReload * 1e3);
+  }
+  async hideBannerAdAsync(placementId) {
+    this.checkEnabled();
+    const ad = this.getAd(AdsTypes_default.BANNER, placementId);
+    this.cleanBannerReloadTimer(ad);
+    await ad.instance.hideAsync();
+    const { event } = this.codex;
+    event.emit(Ludex.Events.AD_CLOSED, { type: AdsTypes_default.BANNER, placementId });
+  }
+  cleanBannerReloadTimer(ad) {
+    try {
+      const { interval } = ad;
+      if (!interval) return;
+      clearInterval(interval);
+    } catch (error) {
+      console.warn("Error while cleaning banner reload timer", error);
+    }
+  }
+  getCommonAdConfig(placementId) {
+    const configs = [
+      ...this.config.InterstitialAdOptions,
+      ...this.config.RewardedVideoAdOptions,
+      ...this.config.RewardedInterstitialAdOptions
+    ];
+    const adConfig = A2.search(configs, (config) => config.PlacementId === placementId);
+    if (!adConfig) {
+      throw new Error(`Ad config with placementId ${placementId} not found`);
+    }
+    return adConfig;
+  }
+  getBannerConfig(placementId) {
+    const bannerConfig = A2.search(
+      this.config.BannerDisplayAdOptions,
+      (config) => config.PlacementId === placementId
+    );
+    if (!bannerConfig) {
+      throw new Error(`Banner config with placementId ${placementId} not found`);
+    }
+    return bannerConfig;
+  }
+  getBannerHeight(placementId, gameZoom, includeSAB = true) {
+    this.checkEnabled();
+    const bannerConfig = this.getBannerConfig(placementId);
+    const bannerHeight = GameSDK.getBannerHeight(bannerConfig);
+    if (includeSAB) {
+      if (this.safeAreaBottom <= 0) {
+        this.calculateSafeAreaBottom();
+      }
+      return (bannerHeight + this.safeAreaBottom) * gameZoom;
+    }
+    return bannerHeight * gameZoom;
+  }
+  getSafeAreaBottom(gameZoom) {
+    if (this.safeAreaBottom <= 0) {
+      this.calculateSafeAreaBottom();
+    }
+    return this.safeAreaBottom * gameZoom;
+  }
+  resetDegradationTracking() {
+    this.degradationTracking = {
+      failedAttempts: 0,
+      lastSuccessTime: Date.now()
+    };
+  }
+  isServiceDegraded() {
+    const now = Date.now();
+    const { MaxFailedAttempts, ResetTimeMinutes } = this.config.DegradationTracking;
+    const { lastSuccessTime, failedAttempts } = this.degradationTracking;
+    if (now - lastSuccessTime > ResetTimeMinutes * 60 * 1e3) {
+      this.resetDegradationTracking();
+    }
+    return failedAttempts >= MaxFailedAttempts;
+  }
+};
+var AdsPlugin_default = AdsPlugin;
+
+// extensions/ludex/src/plugins/ads/index.ts
+var ads_default = AdsPlugin_default;
+
+// extensions/ludex/src/plugins/analytics/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/analytics/AnalyticsPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/analytics/constants/Events.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var AnalyticsEvents = {
+  // Core Events
+  APP_LAUNCH: "app_launch",
+  APP_INITIALIZED: "app_initialized",
+  // Engine Events
+  ENGINE_READY: "engine_ready",
+  LOAD_START: "load_start",
+  LOAD_COMPLETE: "load_complete",
+  APP_READY: "app_ready",
+  // Game Events
+  PAGE_VIEW: "page_view",
+  SCREEN_OPEN: "screen_open",
+  BUTTON_CLICK: "button_click",
+  // Tutorial Events
+  TUTORIAL_BEGIN: "tutorial_begin",
+  TUTORIAL_STEP: "tutorial_step",
+  TUTORIAL_COMPLETE: "tutorial_complete",
+  // Match Events
+  MATCH_START: "match_start",
+  MATCH_RESCUE: "match_rescue",
+  MATCH_END: "match_end",
+  // Level Events
+  LEVEL_START: "level_start",
+  LEVEL_RESCUE: "level_rescue",
+  LEVEL_END: "level_end",
+  // Item Events
+  USE_ITEM: "use_item",
+  EARN_ITEM: "earn_item",
+  GET_FREE_ITEM: "get_free_item",
+  // Share Events
+  SHARE: "share",
+  INVITE: "invite",
+  MESSAGE: "message",
+  // Shortcut Events
+  SHORTCUT_CREATE: "shortcut_create",
+  SHORTCUT_CREATE_POPUP: "shortcut_create_popup",
+  // Bot Events
+  BOT_SUBSCRIBE: "bot_subscribe",
+  BOT_SUBSCRIBE_POPUP: "bot_subscribe_popup",
+  // Ads Events
+  AD_INIT: "ad_init",
+  AD_LOAD: "ad_load",
+  AD_LOAD_FAILED: "ad_load_failed",
+  AD_SHOWING: "ad_showing",
+  AD_SHOW: "ad_show",
+  AD_SHOW_FAILED: "ad_show_failed",
+  AD_REWARD: "ad_reward",
+  // User Events
+  NEW_USER: "new_user",
+  RETURNING_USER: "returning_user",
+  // Group Events
+  JOIN_GROUP: "join_group",
+  // Tournaments
+  TOURNAMENT_START: "tournament_start",
+  TOURNAMENT_SHARE: "tournament_share",
+  TOURNAMENT_CREATE: "tournament_create",
+  TOURNAMENT_POST_SCORE: "tournament_post_score",
+  // MSN Switch Game
+  SWITCH_GAME_POPUP: "switch_game_popup",
+  SWITCH_GAME: "switch_game"
+};
+var Events_default = AnalyticsEvents;
+
+// extensions/ludex/src/plugins/analytics/funnels/AdsenseFunnel.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/analytics/funnels/BaseFunnel.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var BaseFunnel = class {
+  history = [];
+  missing = [];
+  outOfOrder = [];
+  completed = false;
+  failed = false;
+  warned = [];
+  debug = false;
+  // ? Whether the funnel will be stopped at any point
+  restrict = false;
+  addEvent(event, _payload) {
+    if (this.completed || this.failed) {
+      this.debugLog("Skip event:", event);
+      return;
+    }
+    this.history.push(event);
+    this.validateAndUpdate(event);
+  }
+  validateAndUpdate(event) {
+    const validationResult = this.validateFunnelState();
+    if (validationResult.hasFailed) {
+      this.failed = true;
+      this.logValidationError();
+      return;
+    }
+    if (validationResult.hasWarnings) {
+      this.handleWarnings(validationResult.warnings);
+    }
+    this.checkFunnelCompletion(event);
+  }
+  validateFunnelState() {
+    const result3 = {
+      hasFailed: false,
+      hasWarnings: false,
+      warnings: []
+    };
+    const currentSteps = this.getCurrentSteps();
+    const requiredSteps = currentSteps.filter((step) => step.required$);
+    for (let i = 0; i < requiredSteps.length; i++) {
+      const step = requiredSteps[i];
+      const stepIndex = this.history.indexOf(step.name);
+      if (stepIndex === -1) {
+        this.missing = [step.name];
+        result3.hasFailed = true;
+        return result3;
+      }
+      if (i > 0) {
+        const prevStep = requiredSteps[i - 1];
+        const prevIndex = this.history.indexOf(prevStep.name);
+        if (prevIndex > stepIndex) {
+          this.missing = [prevStep.name];
+          result3.hasFailed = true;
+          return result3;
+        }
+      }
+    }
+    const outOfOrderEvents = this.validateDependencies();
+    if (outOfOrderEvents.length > 0) {
+      result3.hasWarnings = true;
+      result3.warnings = outOfOrderEvents;
+      this.outOfOrder = outOfOrderEvents;
+    }
+    return result3;
+  }
+  getCurrentSteps() {
+    const lastEvent = this.history[this.history.length - 1];
+    const currentIdx = this.funnelSteps.findIndex((step) => step.name === lastEvent);
+    return this.funnelSteps.slice(0, currentIdx + 1);
+  }
+  validateDependencies() {
+    const outOfOrder = [];
+    this.history.forEach((event, index) => {
+      const step = this.funnelSteps.find((s) => s.name === event);
+      if (!step?.dependencies$?.length) return;
+      const missingDep = step.dependencies$.find(
+        (dep) => !this.history.includes(dep) || this.history.indexOf(dep) > index
+      );
+      if (missingDep && !this.warned.includes(event)) {
+        outOfOrder.push({ event, missingDependency: missingDep });
+        this.warned.push(event);
+      }
+    });
+    return outOfOrder;
+  }
+  checkFunnelCompletion(event) {
+    const lastStep = this.funnelSteps[this.funnelSteps.length - 1];
+    if (event !== lastStep.name) return;
+    const allRequired = this.funnelSteps.filter((step) => step.required$).every((step) => this.history.
+    includes(step.name));
+    if (allRequired) {
+      this.completed = true;
+      this.logCompletion();
+    }
+  }
+  handleWarnings(warnings) {
+    for (const warning of warnings) {
+      console.warn(
+        `\u26A0\uFE0F [${this.constructor.name}] Event ${warning.event} is out of order. Missing: ${warning.
+        missingDependency}`
+      );
+    }
+  }
+  logValidationError() {
+    const name2 = this.constructor.name;
+    if (this.missing.length) {
+      console.error(`\u26A0\uFE0F [${name2}] Missing required: ${this.missing.join(", ")}`);
+    }
+    console.debug(`\u2139\uFE0F [${name2}] History:`, this.history);
+    if (this.restrict) {
+      throw new Error(`[${name2}] Funnel is required to be completed ! (missing: ${this.missing.join(
+      ", ")})`);
+    }
+  }
+  logCompletion() {
+    const name2 = this.constructor.name;
+    const hasWrongOrder = this.outOfOrder.length > 0;
+    if (hasWrongOrder) {
+      console.warn(`\u26A0\uFE0F [${name2}] Completed with out of order events:`, {
+        history: this.history,
+        outOfOrder: this.outOfOrder
+      });
+    } else {
+      console.info(`\u{1F3AF} [${name2}] Completed`, { history: this.history });
+    }
+  }
+  debugLog(...args) {
+    if (this.debug) {
+      console.debug(`\u{1F50D} [${this.constructor.name}]`, ...args);
+    }
+  }
+  // Public getters
+  isFunnelCompleted() {
+    return this.completed;
+  }
+  isFunnelFailed() {
+    return this.failed;
+  }
+  getEventHistory() {
+    return [...this.history];
+  }
+  getMissingEvents() {
+    return [...this.missing];
+  }
+  getOutOfOrderEvents() {
+    return [...this.outOfOrder];
+  }
+};
+var BaseFunnel_default = BaseFunnel;
+
+// extensions/ludex/src/plugins/analytics/funnels/AdsenseFunnel.ts
+var AdsenseFunnel = class extends BaseFunnel_default {
+  debug = false;
+  funnelSteps = [
+    {
+      name: Events_default.AD_INIT,
+      required$: true,
+      payload$: { service: "adsense" },
+      description$: "Init adsense ad"
+    },
+    {
+      name: Events_default.AD_LOAD_FAILED,
+      required$: false,
+      payload$: { service: this.service },
+      description$: "Platform ad load failed (trigger for adsense)"
+    },
+    {
+      name: Events_default.AD_LOAD,
+      required$: true,
+      payload$: { service: "adsense" },
+      description$: "Start loading adsense ad"
+    },
+    {
+      name: Events_default.AD_LOAD_FAILED,
+      required$: false,
+      dependencies$: [Events_default.AD_LOAD],
+      payload$: { service: "adsense" },
+      description$: "Adsense ad load failed"
+    },
+    {
+      name: Events_default.AD_SHOWING,
+      required$: true,
+      dependencies$: [Events_default.AD_LOAD],
+      payload$: { service: "adsense" },
+      description$: "Adsense ad is showing"
+    },
+    {
+      name: Events_default.AD_SHOW,
+      required$: false,
+      dependencies$: [Events_default.AD_SHOWING],
+      payload$: { service: "adsense" },
+      description$: "Adsense ad shown successfully"
+    },
+    {
+      name: Events_default.AD_SHOW_FAILED,
+      required$: false,
+      dependencies$: [Events_default.AD_SHOWING],
+      payload$: { service: "adsense" },
+      description$: "Adsense ad show failed"
+    },
+    {
+      name: Events_default.AD_LOAD,
+      required$: false,
+      payload$: { service: "adsense" },
+      description$: "Preload adsense ad"
+    }
+  ];
+  get service() {
+    return GameSDK?.getSDKName() ?? "Ludex";
+  }
+  addEvent(event, payload) {
+    const { service } = payload ?? {};
+    if (!service) return;
+    const isRelevantEvent = service === "adsense" || event === Events_default.AD_LOAD_FAILED && service ===
+    "platform";
+    if (!isRelevantEvent) return;
+    super.addEvent(event, payload);
+  }
+};
+var AdsenseFunnel_default = AdsenseFunnel;
+
+// extensions/ludex/src/plugins/analytics/funnels/LudexFunnel.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var LudexFunnel = class extends BaseFunnel_default {
+  debug = false;
+  restrict = false;
+  funnelSteps = [
+    {
+      name: Events_default.ENGINE_READY,
+      required$: false,
+      description$: "Game engine initialized"
+    },
+    {
+      name: Events_default.APP_LAUNCH,
+      required$: true,
+      description$: "Application launched"
+    },
+    {
+      name: Events_default.APP_INITIALIZED,
+      required$: true,
+      dependencies$: [Events_default.APP_LAUNCH],
+      description$: "Application initialized"
+    },
+    {
+      name: Events_default.LOAD_START,
+      required$: true,
+      dependencies$: [Events_default.APP_INITIALIZED],
+      description$: "Start loading game assets"
+    },
+    {
+      name: Events_default.LOAD_COMPLETE,
+      required$: true,
+      dependencies$: [Events_default.LOAD_START],
+      description$: "Game assets loaded completely"
+    },
+    {
+      name: Events_default.APP_READY,
+      required$: true,
+      dependencies$: [Events_default.LOAD_COMPLETE],
+      description$: "Game is ready to play"
+    }
+  ];
+};
+var LudexFunnel_default = LudexFunnel;
+
+// extensions/ludex/src/plugins/analytics/funnels/SingleMatchFunnel.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var {
+  Match: { Modes }
+} = Ludex;
+var SingleMatchFunnel = class extends BaseFunnel_default {
+  debug = false;
+  funnelSteps = [
+    {
+      name: Events_default.MATCH_START,
+      required$: true,
+      payload$: {
+        game_mode: Modes.SINGLE
+      },
+      description$: "Match started"
+    },
+    {
+      name: Events_default.LEVEL_START,
+      required$: true,
+      dependencies$: [Events_default.MATCH_START],
+      payload$: {
+        game_mode: Modes.SINGLE
+      },
+      description$: "Level started"
+    },
+    {
+      name: Events_default.LEVEL_RESCUE,
+      required$: false,
+      dependencies$: [Events_default.LEVEL_START],
+      payload$: {
+        game_mode: Modes.SINGLE
+      },
+      description$: "User was rescued"
+    },
+    {
+      name: Events_default.LEVEL_END,
+      required$: true,
+      dependencies$: [Events_default.LEVEL_START],
+      payload$: {
+        game_mode: Modes.SINGLE
+      },
+      description$: "Level ended"
+    },
+    {
+      name: Events_default.MATCH_END,
+      required$: true,
+      dependencies$: [Events_default.LEVEL_START],
+      payload$: {
+        game_mode: Modes.SINGLE
+      },
+      description$: "Match ended"
+    }
+  ];
+  addEvent(event, payload) {
+    const { game_mode } = payload ?? {};
+    if (!game_mode) return;
+    const isRelevantEvent = game_mode.toLowerCase() === Modes.SINGLE;
+    if (!isRelevantEvent) return;
+    super.addEvent(event, payload);
+  }
+};
+var SingleMatchFunnel_default = SingleMatchFunnel;
+
+// extensions/ludex/src/plugins/analytics/funnels/PlatformAdsFunnel.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var PlatformAdsFunnel = class extends BaseFunnel_default {
+  debug = false;
+  funnelSteps = [
+    {
+      name: Events_default.AD_INIT,
+      required$: true,
+      payload$: { service: this.service },
+      description$: "Init platform ad"
+    },
+    {
+      name: Events_default.AD_LOAD,
+      required$: true,
+      payload$: { service: this.service },
+      description$: "Start loading platform ad"
+    },
+    {
+      name: Events_default.AD_LOAD_FAILED,
+      required$: false,
+      dependencies$: [Events_default.AD_LOAD],
+      payload$: { service: this.service },
+      description$: "Platform ad load failed"
+    },
+    {
+      name: Events_default.AD_SHOWING,
+      required$: true,
+      dependencies$: [Events_default.AD_LOAD],
+      payload$: { service: this.service },
+      description$: "Platform ad is showing"
+    },
+    {
+      name: Events_default.AD_SHOW,
+      required$: false,
+      dependencies$: [Events_default.AD_SHOWING],
+      payload$: { service: this.service },
+      description$: "Platform ad shown successfully"
+    },
+    {
+      name: Events_default.AD_SHOW_FAILED,
+      required$: false,
+      dependencies$: [Events_default.AD_SHOWING],
+      payload$: { service: this.service },
+      description$: "Platform ad show failed"
+    },
+    {
+      name: Events_default.AD_LOAD,
+      required$: false,
+      payload$: { service: this.service },
+      description$: "Preload platform ad"
+    }
+  ];
+  get service() {
+    return "platform";
+  }
+  addEvent(event, payload) {
+    if (payload?.service !== this.service) return;
+    super.addEvent(event, payload);
+  }
+};
+var PlatformAdsFunnel_default = PlatformAdsFunnel;
+
+// extensions/ludex/src/plugins/analytics/template/Analytics.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var {
+  Utils: { String: S2, Valid: V5 }
+} = Ludex;
+var BaseAnalytics = class {
+  codex;
+  name;
+  color;
+  options;
+  selfLog;
+  currentPath;
+  constructor(codex2, name2, options) {
+    this.codex = codex2;
+    this.name = name2;
+    this.options = options;
+    this.color = options.color || "#FFF";
+    this.selfLog = options.log;
+    this.currentPath = "/";
+    console.info(`%c${this.name}: init`, `color: ${this.color}`, this.options);
+  }
+  event(name2, payload) {
+    this.logInfo("event", { name: name2, payload });
+    const event = this.formatEventName(name2);
+    this.processEvent(event, payload);
+  }
+  logInfo(message, payload) {
+    if (!this.selfLog) return;
+    console.info(`%c${this.name}: ${message}`, `color: ${this.color}`, payload);
+  }
+  pageview(pagePath) {
+    let pageTitle = this.getPageTitle(pagePath);
+    pageTitle = this.addGameModeToPageTitle(pageTitle);
+    document.title = pageTitle;
+    this.event(Events_default.PAGE_VIEW, {
+      page_path: pagePath,
+      page_title: pageTitle
+    });
+  }
+  levelStart(level2, score2, mode) {
+    this.event(Events_default.LEVEL_START, {
+      level: level2,
+      score: score2,
+      level_name: this.getLevelName(level2),
+      game_mode: mode ? S2.toUpperCamelCase(mode) : void 0
+    });
+  }
+  levelFail(level2, score2, mode) {
+    this.event(Events_default.LEVEL_END, {
+      level: level2,
+      score: score2,
+      success: false,
+      level_name: this.getLevelName(level2),
+      game_mode: mode ? S2.toUpperCamelCase(mode) : void 0
+    });
+  }
+  levelRescue(level2, score2, mode) {
+    this.event(Events_default.LEVEL_RESCUE, {
+      level: level2,
+      score: score2,
+      level_name: this.getLevelName(level2),
+      game_mode: mode ? S2.toUpperCamelCase(mode) : void 0
+    });
+  }
+  levelComplete(level2, score2, mode) {
+    this.event(Events_default.LEVEL_END, {
+      level: level2,
+      score: score2,
+      success: true,
+      level_name: this.getLevelName(level2),
+      game_mode: mode ? S2.toUpperCamelCase(mode) : void 0
+    });
+  }
+  initAdEvent(payload) {
+    const { adService, state } = payload;
+    this.event(Events_default.AD_INIT, {
+      ad_service: adService,
+      state
+    });
+  }
+  loadAdEvent(payload) {
+    const { type, placement, service: adService } = payload;
+    this.event(Events_default.AD_LOAD, {
+      ad_type: type,
+      screen_name: placement,
+      ad_service: adService
+    });
+  }
+  showAdEvent(payload) {
+    const { type, placement, service: adService } = payload;
+    this.event(Events_default.AD_SHOW, {
+      ad_type: type,
+      screen_name: placement,
+      ad_service: adService
+    });
+  }
+  loadInterstitialAd(payload) {
+    const { placement, service: adService } = payload;
+    this.loadAdEvent({
+      type: "interstitial",
+      placement,
+      service: adService
+    });
+  }
+  showInterstitialAd(payload) {
+    const { placement, service: adService } = payload;
+    this.showAdEvent({
+      type: "interstitial",
+      placement,
+      service: adService
+    });
+  }
+  loadRewardedVideoAd(payload) {
+    const { placement, service: adService } = payload;
+    this.loadAdEvent({
+      type: "rewarded_video",
+      placement,
+      service: adService
+    });
+  }
+  showRewardedVideoAd(payload) {
+    const { placement, service: adService } = payload;
+    this.showAdEvent({
+      type: "rewarded_video",
+      placement,
+      service: adService
+    });
+  }
+  receiveVideoReward(payload) {
+    const { placement, service: adService } = payload;
+    this.event(Events_default.AD_REWARD, {
+      screen_name: placement,
+      ad_service: adService
+    });
+  }
+  loadRewardedInterstitialAd(payload) {
+    const { placement, service: adService } = payload;
+    this.loadAdEvent({
+      type: "rewarded_interstitial",
+      placement,
+      service: adService
+    });
+  }
+  showRewardedInterstitialAd(payload) {
+    const { placement, service: adService } = payload;
+    this.showAdEvent({
+      type: "rewarded_interstitial",
+      placement,
+      service: adService
+    });
+  }
+  receiveInterstitialReward(payload) {
+    const { placement, service: adService } = payload;
+    this.event(Events_default.AD_REWARD, {
+      screen_name: placement,
+      ad_service: adService
+    });
+  }
+  loadAdFail(payload) {
+    const { type, placement, service: adService } = payload;
+    this.event(Events_default.AD_LOAD_FAILED, {
+      ad_type: type,
+      screen_name: placement,
+      ad_service: adService
+    });
+  }
+  showAdFail(payload) {
+    const { type, placement, service: adService } = payload;
+    this.event(Events_default.AD_SHOW_FAILED, {
+      ad_type: type,
+      screen_name: placement,
+      ad_service: adService
+    });
+  }
+  showingAd(payload) {
+    const { type, placement, service: adService } = payload;
+    this.event(Events_default.AD_SHOWING, {
+      ad_type: type,
+      screen_name: placement,
+      ad_service: adService
+    });
+  }
+  formatEventName(rawName) {
+    return rawName.toLowerCase().replace(/:/g, "_");
+  }
+  getLevelName(level2) {
+    return `Level ${S2.padStart(level2.toString(), 5, "0")}`;
+  }
+  getPageTitle(pagePath) {
+    const pageName = pagePath.split("/").pop();
+    if (!V5.isString(pageName)) return pagePath;
+    const pageTitle = pageName.replace(/([-_\s.])/g, " $1");
+    return S2.toUpperCamelCase(pageTitle);
+  }
+  addGameModeToPageTitle(pageTitle) {
+    const { match } = this.codex;
+    const matchState = match.getMatchState();
+    let { mode } = matchState;
+    if (!mode) {
+      mode = "Normal";
+    }
+    const modeTitle = S2.toUpperCamelCase(mode);
+    return `${modeTitle}::${pageTitle}`;
+  }
+};
+var Analytics_default = BaseAnalytics;
+
+// extensions/ludex/src/plugins/analytics/AnalyticsPlugin.ts
+Ludex.Plugins.Analytics = {
+  Events: Events_default,
+  BaseFunnel: BaseFunnel_default,
+  BaseAnalytics: Analytics_default
+};
+var AnalyticsPlugin = class extends Ludex.Plugins.BasePlugin {
+  analytics = [];
+  placement = "unknown";
+  funnels = [];
+  constructor(codex2) {
+    super(codex2);
+    this.initFunnels();
+  }
+  add(analytic) {
+    const index = this.analytics.findIndex((item) => item.name === analytic.name);
+    if (index !== -1) {
+      this.analytics[index] = analytic;
+    } else {
+      this.analytics.push(analytic);
+    }
+  }
+  isActive() {
+    return this.analytics.length >= 1;
+  }
+  initFunnels() {
+    this.addFunnel(new LudexFunnel_default());
+    this.addFunnel(new AdsenseFunnel_default());
+    this.addFunnel(new PlatformAdsFunnel_default());
+    this.addFunnel(new SingleMatchFunnel_default());
+  }
+  addFunnel(funnel) {
+    this.funnels.push(funnel);
+  }
+  logFunnelEvent$(name2, payload) {
+    for (const funnel of this.funnels) {
+      funnel.addEvent(name2, payload);
+    }
+  }
+  pageview = (key) => {
+    if (!this.isActive()) return;
+    this.placement = key;
+    const path = this.getPageByKey(key);
+    for (const analytic of this.analytics) {
+      analytic.pageview(path);
+    }
+    this.logFunnelEvent$(Events_default.PAGE_VIEW);
+  };
+  event(name2, payload) {
+    if (!this.isActive()) return;
+    for (const analytic of this.analytics) {
+      analytic.event(name2, payload);
+    }
+    this.logFunnelEvent$(name2, payload);
+  }
+  levelStart(level2, score2, mode) {
+    if (!this.isActive()) return;
+    for (const analytic of this.analytics) {
+      analytic.levelStart(level2, score2, mode);
+    }
+    this.logFunnelEvent$(Events_default.LEVEL_START, { score: score2, game_mode: mode });
+  }
+  levelRescue(level2, score2, mode) {
+    if (!this.isActive()) return;
+    for (const analytic of this.analytics) {
+      analytic.levelRescue(level2, score2, mode);
+    }
+    this.logFunnelEvent$(Events_default.LEVEL_RESCUE, { score: score2, game_mode: mode });
+  }
+  levelFail(level2, score2, mode) {
+    if (!this.isActive()) return;
+    for (const analytic of this.analytics) {
+      analytic.levelFail(level2, score2, mode);
+    }
+    this.logFunnelEvent$(Events_default.LEVEL_END, { score: score2, game_mode: mode });
+  }
+  levelComplete(level2, score2, mode) {
+    if (!this.isActive()) return;
+    for (const analytic of this.analytics) {
+      analytic.levelComplete(level2, score2, mode);
+    }
+    this.logFunnelEvent$(Events_default.LEVEL_END, { score: score2, game_mode: mode });
+  }
+  async initAdEvent(payload) {
+    if (!this.isActive()) return;
+    await new Promise((resolve) => {
+      const { Events: Events7 } = Ludex;
+      this.codex.event.catchUp(Events7.GAME_READY, resolve);
+    });
+    for (const analytic of this.analytics) {
+      analytic.initAdEvent(payload);
+    }
+  }
+  loadInterstitialAd(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.loadInterstitialAd(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_LOAD, payloadWithPage);
+  }
+  showInterstitialAd(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.showInterstitialAd(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_SHOW, payloadWithPage);
+  }
+  loadRewardedVideoAd(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.loadRewardedVideoAd(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_LOAD, payloadWithPage);
+  }
+  showRewardedVideoAd(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.showRewardedVideoAd(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_SHOW, payloadWithPage);
+  }
+  receiveVideoReward(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.receiveVideoReward(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_REWARD, payloadWithPage);
+  }
+  loadRewardedInterstitialAd(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.loadRewardedInterstitialAd(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_LOAD, payloadWithPage);
+  }
+  showRewardedInterstitialAd(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.showRewardedInterstitialAd(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_SHOW, payloadWithPage);
+  }
+  receiveInterstitialReward(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.receiveInterstitialReward(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_REWARD, payloadWithPage);
+  }
+  loadAdFail(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.loadAdFail(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_LOAD_FAILED, payloadWithPage);
+  }
+  showAdFail(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.showAdFail(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_SHOW_FAILED, payloadWithPage);
+  }
+  showingAd(payload) {
+    if (!this.isActive()) return;
+    const payloadWithPage = __spreadProps(__spreadValues({}, payload), { placement: this.placement });
+    for (const analytic of this.analytics) {
+      analytic.showingAd(payloadWithPage);
+    }
+    this.logFunnelEvent$(Events_default.AD_SHOWING, payloadWithPage);
+  }
+  getPageByKey(key) {
+    let page = key;
+    if (page.indexOf("_") > -1) {
+      let path = page.replace(/_/g, "-");
+      path = path.toLowerCase();
+      return path;
+    }
+    let i = page.length - 1;
+    let character = "";
+    while (i > 0) {
+      character = page.charAt(i);
+      const isNaNumber = isNaN(parseInt(character, 10));
+      const isUpperCase = character === character.toUpperCase();
+      if (isNaNumber && isUpperCase) {
+        page = `${page.slice(0, i)}-${page.slice(i)}`;
+      }
+      i--;
+    }
+    return page.toLowerCase();
+  }
+};
+var AnalyticsPlugin_default = AnalyticsPlugin;
+
+// extensions/ludex/src/plugins/analytics/index.ts
+var analytics_default = AnalyticsPlugin_default;
+
+// extensions/ludex/src/plugins/audio/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/audio/AudioPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/audio/template/AudioPlayer.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var BaseAudioPlayer = class {
+  key;
+  constructor(key) {
+    this.key = key;
+  }
+  getKey() {
+    return this.key;
+  }
+};
+var AudioPlayer_default = BaseAudioPlayer;
+
+// extensions/ludex/src/plugins/audio/template/ChannelManager.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Decorator } = Ludex.Utils;
+var BaseChannelManager = class {
+  id;
+  isMuteAll;
+  masterVolume;
+  audioClips;
+  constructor(channelId) {
+    this.id = channelId;
+    this.masterVolume = 1;
+    this.isMuteAll = false;
+    this.audioClips = {};
+  }
+  getId() {
+    return this.id;
+  }
+  getAudioClip(key) {
+    const clip = this.audioClips[key];
+    if (!clip) return null;
+    return this.audioClips[key];
+  }
+  setAudioClip(key, audioClip) {
+    this.audioClips[key] = __spreadValues(__spreadValues({}, this.audioClips[key]), audioClip);
+  }
+  async play(key, config) {
+    const audioClip = this.getAudioClip(key);
+    if (audioClip) {
+      const { audioPlayer } = audioClip;
+      this.playWithRealConfig(audioPlayer, config);
+    } else {
+      await this.loadAndPlay(key, config);
+    }
+  }
+  async loadAndPlay(key, config) {
+    const audioPlayer = await this.onLoadAudio(key, config);
+    if (!audioPlayer) return;
+    const { volume = 1 } = config || {};
+    this.setAudioClip(key, {
+      volume,
+      audioPlayer
+    });
+    this.playWithRealConfig(audioPlayer, config);
+  }
+  playWithRealConfig(audioPlayer, config) {
+    if (config) {
+      const { volume = 1 } = config;
+      config.volume = this.masterVolume * volume;
+    }
+    audioPlayer.play(config);
+  }
+  pause(key) {
+    const audioClip = this.getAudioClip(key);
+    if (!audioClip) return false;
+    const { audioPlayer } = audioClip;
+    audioPlayer.pause();
+    return true;
+  }
+  resume(key) {
+    const audioClip = this.getAudioClip(key);
+    if (!audioClip) return false;
+    const { audioPlayer } = audioClip;
+    audioPlayer.resume();
+    return true;
+  }
+  stop(key) {
+    const audioClip = this.getAudioClip(key);
+    if (!audioClip) return false;
+    const { audioPlayer } = audioClip;
+    audioPlayer.stop();
+    return true;
+  }
+  stopAll() {
+    this.callAudioPlayers("stop");
+  }
+  muteAll() {
+    if (this.isMuteAll) return;
+    this.isMuteAll = true;
+    this.callAudioPlayers("mute");
+  }
+  unmuteAll() {
+    if (!this.isMuteAll) return;
+    this.isMuteAll = false;
+    this.callAudioPlayers("unmute");
+  }
+  setVolume(value) {
+    this.masterVolume = value;
+    this.callAudioPlayers("setVolume");
+  }
+  getVolume() {
+    return this.masterVolume;
+  }
+  queueAudioPlayer(clip, funcName) {
+    try {
+      const { audioPlayer, volume = 1 } = clip;
+      switch (funcName) {
+        case "play":
+          audioPlayer.play();
+          break;
+        case "pause":
+          audioPlayer.pause();
+          break;
+        case "resume":
+          audioPlayer.resume();
+          break;
+        case "stop":
+          audioPlayer.stop();
+          break;
+        case "mute":
+          audioPlayer.setVolume(0);
+          break;
+        case "unmute":
+        case "setVolume":
+          audioPlayer.setVolume(this.masterVolume * volume);
+          break;
+        default:
+          throw new Error(`Unsupported function: ${funcName}`);
+      }
+    } catch (error) {
+      console.warn("queueAudioPlayer", error);
+    }
+  }
+  callAudioPlayers(funcName) {
+    const { Object: O32 } = Ludex.Utils;
+    const audioClips = O32.vals(this.audioClips);
+    for (const audioClip of audioClips) {
+      this.queueAudioPlayer(audioClip, funcName);
+    }
+  }
+};
+__decorateClass([
+  Decorator.tryCatch(),
+  Decorator.validateParams("string")
+], BaseChannelManager.prototype, "loadAndPlay", 1);
+var ChannelManager_default = BaseChannelManager;
+
+// extensions/ludex/src/plugins/audio/AudioPlugin.ts
+Ludex.Plugins.Audio = {
+  BaseAudioPlayer: AudioPlayer_default,
+  // @ts-expect-error - pass for protected abstract class
+  BaseChannelManager: ChannelManager_default
+};
+var { Decorator: Decorator2 } = Ludex.Utils;
+var AudioPlugin = class extends Ludex.Plugins.BasePlugin {
+  firstChannelId;
+  channels = {};
+  addChannel(channel) {
+    const id = channel.getId();
+    this.channels[id] = channel;
+    if (!this.firstChannelId) {
+      this.firstChannelId = id;
+    }
+  }
+  getChannel(channelId) {
+    if (channelId === void 0) {
+      return this.channels[this.firstChannelId];
+    }
+    const channel = this.channels[channelId];
+    if (!channel) {
+      throw new Error(`Channel ${channelId} not found`);
+    }
+    return channel;
+  }
+  async play(key, config, channelId) {
+    const channel = this.getChannel(channelId);
+    await channel.play(key, config);
+  }
+  pause(key, channelId) {
+    try {
+      const channel = this.getChannel(channelId);
+      channel.pause(key);
+    } catch (error) {
+      console.warn("pauseSound", error);
+    }
+  }
+  resume(key, channelId) {
+    try {
+      const channel = this.getChannel(channelId);
+      channel.resume(key);
+    } catch (error) {
+      console.warn("resumeSound", error);
+    }
+  }
+  stop(key, channelId) {
+    try {
+      const channel = this.getChannel(channelId);
+      channel.stop(key);
+    } catch (error) {
+      console.warn("stopSound", error);
+    }
+  }
+  stopAll(channelId) {
+    try {
+      const channel = this.getChannel(channelId);
+      channel.stopAll();
+    } catch (error) {
+      console.warn("stopAllSounds", error);
+    }
+  }
+  mute(channelId) {
+    try {
+      const channel = this.getChannel(channelId);
+      channel.muteAll();
+    } catch (error) {
+      console.warn("mute", error);
+    }
+  }
+  unmute(channelId) {
+    try {
+      const channel = this.getChannel(channelId);
+      channel.unmuteAll();
+    } catch (error) {
+      console.warn("unmute", error);
+    }
+  }
+  setVolume(volume, channelId) {
+    try {
+      const channel = this.getChannel(channelId);
+      channel.setVolume(volume);
+    } catch (error) {
+      console.warn("setSoundVolume", error);
+    }
+  }
+  getVolume(channelId) {
+    try {
+      const channel = this.getChannel(channelId);
+      return channel.getVolume();
+    } catch (error) {
+      console.warn("getSoundVolume", error);
+      return -1;
+    }
+  }
+};
+__decorateClass([
+  Decorator2.tryCatch(),
+  Decorator2.validateParams("string")
+], AudioPlugin.prototype, "play", 1);
+var AudioPlugin_default = AudioPlugin;
+
+// extensions/ludex/src/plugins/audio/index.ts
+var audio_default = AudioPlugin_default;
+
+// extensions/ludex/src/plugins/auth/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/auth/AuthPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/auth/state.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var initState2 = {
+  token: "",
+  isRequesting: false
+};
+var state_default2 = initState2;
+
+// extensions/ludex/src/plugins/auth/AuthPlugin.ts
+var {
+  Utils: { Object: O5 }
+} = Ludex;
+var AuthPlugin = class extends Ludex.Plugins.BasePlugin {
+  init() {
+    const { storage } = this.codex;
+    storage.addStorage("auth", state_default2);
+  }
+  async requestToken() {
+    const { storage } = this.codex;
+    try {
+      const isRequesting = storage.getStorageData("auth", "isRequesting");
+      if (isRequesting) return;
+      const token = storage.getStorageData("auth", "token");
+      if (token !== "") return;
+      storage.setStorageData("auth", "isRequesting", true);
+      const signedPlayerInfo = await GameSDK.player.getSignedPlayerInfoAsync();
+      const signedPlayer = signedPlayerInfo.getSignature();
+      storage.setStorageData("auth", "token", signedPlayer);
+    } catch (error) {
+      if (O5.hasOwn(error, "code")) {
+        if (error.code === "PENDING_REQUEST") return;
+      }
+      storage.setStorageData("auth", "token", "");
+    } finally {
+      storage.setStorageData("auth", "isRequesting", false);
+    }
+  }
+  getToken() {
+    const { storage } = this.codex;
+    return storage.getStorageData("auth", "token") ?? "";
+  }
+};
+var AuthPlugin_default = AuthPlugin;
+
+// extensions/ludex/src/plugins/auth/index.ts
+var auth_default = AuthPlugin_default;
+
+// extensions/ludex/src/plugins/context/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/context/ContextPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/context/constants/ContextTypes.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ContextGameTypes = /* @__PURE__ */ ((ContextGameTypes2) => {
+  ContextGameTypes2["SOLO"] = "solo";
+  ContextGameTypes2["TOURNAMENT"] = "tournament";
+  ContextGameTypes2["SHARE_INVITE"] = "share_invite";
+  ContextGameTypes2["MATCHING_GROUP"] = "matching_group_match";
+  ContextGameTypes2["CHALLENGE_FRIEND"] = "challenge_friend_match";
+  return ContextGameTypes2;
+})(ContextGameTypes || {});
+var ContextTypes_default = ContextGameTypes;
+
+// extensions/ludex/src/plugins/context/context.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/context/constants/ContextModes.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ContextGameModes = MatchModes_default2;
+var ContextModes_default = ContextGameModes;
+
+// extensions/ludex/src/plugins/context/context.ts
+var {
+  Configs,
+  Utils: { Array: A3, Valid: V6, Browser: B }
+} = Ludex;
+var Context2 = class {
+  codex;
+  constructor(codex2) {
+    this.codex = codex2;
+  }
+  isValidContextType(contextType2) {
+    return ["THREAD", "POST", "SOLO", "GROUP"].indexOf(contextType2) >= 0;
+  }
+  isValidEntryPointData(entryPointData2) {
+    return V6.isObject(entryPointData2);
+  }
+  isTournamentEntryPoint(entryPoint) {
+    return A3.has(
+      ["facebook~game_list~tournaments", "fb_feed_tournament_unit", "messenger~bot_thread~tournament\
+s"],
+      entryPoint
+    );
+  }
+  receiveContext(contextId2, contextType2, entryPointData2) {
+    const { storage } = this.codex;
+    storage.setStorageData("context", "contextId", contextId2);
+    if (this.isValidEntryPointData(entryPointData2)) {
+      storage.setStorageData("context", "entryPointData", entryPointData2);
+    } else {
+      console.warn(`Invalid context type: ${contextType2}`);
+    }
+    if (this.isValidContextType(contextType2)) {
+      storage.setStorageData("context", "contextType", contextType2);
+    } else {
+      console.warn(`Invalid context type: ${contextType2}`);
+    }
+  }
+  getContextId() {
+    const { storage } = this.codex;
+    return storage.getStorageData("context", "contextId") ?? "";
+  }
+  getContextType() {
+    const { storage } = this.codex;
+    return storage.getStorageData("context", "contextType") ?? "SOLO";
+  }
+  getContextData() {
+    const { storage } = this.codex;
+    return storage.getStorageData("context", "entryPointData") ?? {};
+  }
+  getSessionContextType() {
+    const { storage } = this.codex;
+    return storage.getStorageData("context", "sessionContextType") ?? "unknown";
+  }
+  async detectContextSessionType() {
+    const { storage } = this.codex;
+    const entryPointData2 = this.getContextData();
+    const { type } = entryPointData2 ?? {};
+    const { SOLO, TOURNAMENT, MATCHING_GROUP, SHARE_INVITE, CHALLENGE_FRIEND } = ContextTypes_default;
+    let sessionContextType = SOLO;
+    if (type === TOURNAMENT) {
+      sessionContextType = TOURNAMENT;
+    }
+    if (type === MATCHING_GROUP) {
+      sessionContextType = MATCHING_GROUP;
+    }
+    if (type === CHALLENGE_FRIEND || type === SHARE_INVITE) {
+      sessionContextType = CHALLENGE_FRIEND;
+    }
+    if (sessionContextType === SOLO) {
+      if (Configs.Core.FastCheckTournamentContext) {
+        sessionContextType = this.fastCheckTournamentContext() || sessionContextType;
+      } else {
+        sessionContextType = await this.outdatedCheckTournamentContext() || sessionContextType;
+      }
+    }
+    storage.setStorageData("context", "sessionContextType", sessionContextType);
+  }
+  // ? This is a trick to detect if the user is in a tournament
+  fastCheckTournamentContext() {
+    const params = B.getQueryParams();
+    const entryPoint = params.entry_point;
+    if (typeof entryPoint !== "string") return false;
+    if (!this.isTournamentEntryPoint(entryPoint)) return false;
+    return ContextTypes_default.TOURNAMENT;
+  }
+  async outdatedCheckTournamentContext() {
+    const { storage } = this.codex;
+    if (!("getTournamentAsync" in GameSDK)) return false;
+    try {
+      const tournament = await GameSDK.getTournamentAsync();
+      storage.setStorageData("context", "contextId", tournament.getContextID());
+      if (tournament.getEndTime() > Date.now() / 1e3) {
+        return ContextTypes_default.TOURNAMENT;
+      }
+      return false;
+    } catch (error) {
+      return false;
+    }
+  }
+  detectContextGameMode() {
+    const { player, storage } = this.codex;
+    const entryPointData2 = this.getContextData();
+    const contextSessionType = this.getSessionContextType();
+    const currentPlayerId = player.getPlayerId();
+    const { matchId, playerId: playerId2, opponentId = SampleOpponent_default.playerId } = entryPointData2 ??
+    {};
+    const isPlayer = currentPlayerId === playerId2;
+    const isNewOpponent = opponentId === SampleOpponent_default.playerId;
+    const isOwnerContext = isNewOpponent || [opponentId, playerId2].indexOf(currentPlayerId) >= 0;
+    const { TOURNAMENT, MATCHING_GROUP, SHARE_INVITE, CHALLENGE_FRIEND } = ContextTypes_default;
+    let contextGameMode = ContextModes_default.SINGLE;
+    if (contextSessionType === TOURNAMENT) {
+      contextGameMode = ContextModes_default.TOURNAMENT;
+    }
+    if (contextSessionType === SHARE_INVITE && !isPlayer) {
+      contextGameMode = ContextModes_default.CHALLENGE_FRIEND;
+    }
+    if (contextSessionType === CHALLENGE_FRIEND && matchId && isOwnerContext) {
+      contextGameMode = ContextModes_default.CHALLENGE_FRIEND;
+    }
+    if (contextSessionType === MATCHING_GROUP) {
+      contextGameMode = ContextModes_default.MATCHING_GROUP;
+    }
+    storage.setStorageData("context", "contextGameMode", contextGameMode);
+  }
+};
+var context_default = Context2;
+
+// extensions/ludex/src/plugins/context/loader.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/PlayerHasFinishedMatch.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var PlayerHasFinishedMatch = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "PlayerHasFinishedMatch";
+    this.message = message ?? "Player has finished match";
+  }
+};
+var PlayerHasFinishedMatch_default = PlayerHasFinishedMatch;
+
+// extensions/ludex/src/plugins/match/exceptions/PlayerNotJoinInMatch.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var PlayerNotJoinInMatch = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "PlayerNotJoinInMatch";
+    this.message = message || "Player is not join in match";
+  }
+};
+var PlayerNotJoinInMatch_default = PlayerNotJoinInMatch;
+
+// extensions/ludex/src/plugins/context/loader.ts
+var {
+  Events: Events2,
+  Plugins: { Analytics },
+  Utils: { Valid: V7 }
+} = Ludex;
+var Loader = class {
+  codex;
+  constructor(codex2) {
+    this.codex = codex2;
+  }
+  async processContextData() {
+    const { player, context } = this.codex;
+    const contextId2 = context.getContextId();
+    const contextData = context.getContextData();
+    const contextSessionType = context.getSessionContextType();
+    const { type, matchId, playerId: playerId2, opponentId, playerScore, action } = contextData;
+    if (action) {
+      await this.processEntryPointAction(action);
+    }
+    const isFirstSession = player.isFirstSession();
+    setTimeout(() => {
+      this.logUserAnalytics(isFirstSession);
+    }, 1e3);
+    const { TOURNAMENT, SHARE_INVITE, MATCHING_GROUP, CHALLENGE_FRIEND } = ContextTypes_default;
+    if (contextSessionType === TOURNAMENT) {
+      try {
+        await this.processTournamentModeAsync(contextId2);
+        return;
+      } catch (error) {
+      }
+    }
+    if (contextSessionType === CHALLENGE_FRIEND) {
+      if (type === SHARE_INVITE && typeof playerId2 === "string") {
+        await this.processChallengeFromPostAsync(playerId2);
+        return;
+      }
+      if (type === CHALLENGE_FRIEND && typeof matchId === "string" && typeof playerId2 === "string" &&
+      typeof opponentId === "string") {
+        await this.processChallengeFromMessageAsync({
+          contextId: contextId2,
+          matchId,
+          playerId: playerId2,
+          opponentId
+        });
+        return;
+      }
+    }
+    if (contextSessionType === MATCHING_GROUP && typeof playerId2 === "string" && typeof playerScore ===
+    "number") {
+      await this.processMatchingGroupModeAsync(playerId2, playerScore);
+      return;
+    }
+    if (isFirstSession) {
+      await this.processSingleModeAsync(true);
+      player.loggedIn();
+      return;
+    }
+    this.switchToDashboardScene();
+  }
+  logUserAnalytics(isFirstSession) {
+    try {
+      const { player, analytics } = this.codex;
+      if (isFirstSession) {
+        analytics.event(Analytics.Events.NEW_USER);
+      } else {
+        const { coins: coins2 } = player.getPlayerData().gameData;
+        analytics.event(Analytics.Events.RETURNING_USER, { coins: coins2 });
+      }
+    } catch (_) {
+    }
+  }
+  async processEntryPointAction(action) {
+    try {
+      const { player } = this.codex;
+      switch (action) {
+        case "reset_data":
+          player.setPlayerDataByName("score", 0);
+          player.setGameData({
+            coins: 0,
+            level: 1
+          });
+          await player.syncProfileToServer();
+          break;
+        case "enable_debug":
+          player.setPlayerDataByName("debug", true);
+          break;
+        case "set_locale_en":
+          this.requestSetLocale("en");
+          break;
+        case "set_locale_ru":
+          this.requestSetLocale("ru");
+          break;
+      }
+    } catch (error) {
+      console.warn("processEntryPointAction", error);
+    }
+  }
+  requestSetLocale(locale2) {
+    const { event } = this.codex;
+    event.emit(Events2.REQUEST_LANGUAGE, {
+      locale: locale2
+    });
+  }
+  async processTournamentModeAsync(contextId2) {
+    const { match, player } = this.codex;
+    const playerId2 = player.getPlayerId();
+    if (V7.isEmpty(contextId2)) {
+      throw new Error("Cannot get contextId");
+    }
+    await match.tournament.continue.processAsync({ playerId: playerId2, contextId: contextId2 });
+    this.switchToGameScene();
+  }
+  async processChallengeFromPostAsync(opponentId) {
+    const { match, player } = this.codex;
+    const playerId2 = player.getPlayerId();
+    const isCurrentPlayer = playerId2 === opponentId;
+    if (isCurrentPlayer) {
+      await match.single.start.processAsync({ playerId: playerId2 });
+    } else {
+      try {
+        await match.challenge.friend.processAsync({ playerId: playerId2, opponentId });
+      } catch (error) {
+        console.warn("processChallengeFromPostAsync", error);
+        await match.single.start.processAsync({ playerId: playerId2 });
+      }
+    }
+    this.switchToGameScene();
+  }
+  async processChallengeFromMessageAsync(payload) {
+    try {
+      await this.processContinueChallengeFromMessageAsync(payload);
+    } catch (error) {
+      console.warn("processContinueChallengeFromMessageAsync", error);
+      if (error instanceof PlayerHasFinishedMatch_default) {
+        await this.processAwaitChallengeFromMessageAsync(payload);
+        return;
+      }
+      if (error instanceof PlayerNotJoinInMatch_default) {
+        await this.processJoinChallengeFromMessageAsync(payload);
+        return;
+      }
+      this.switchToDashboardScene();
+    }
+  }
+  async processContinueChallengeFromMessageAsync(payload) {
+    const { contextId: contextId2, matchId, playerId: inviterId, opponentId: receiverId } = payload;
+    const { match, player } = this.codex;
+    const curPlayerId = player.getPlayerId();
+    const isInviterPlayer = inviterId === curPlayerId;
+    if (isInviterPlayer) {
+      await match.challenge.continue.processAsync({
+        contextId: contextId2,
+        matchId,
+        playerId: curPlayerId,
+        opponentId: receiverId
+      });
+    } else {
+      const isSampleOpponent = receiverId === SampleOpponent_default.playerId;
+      await match.challenge.continue.processAsync({
+        contextId: contextId2,
+        matchId,
+        playerId: curPlayerId,
+        // ? If SampleOpponent and not challenger, inviterId will be opponentId
+        opponentId: isSampleOpponent ? receiverId : inviterId
+      });
+    }
+    this.switchToGameScene();
+  }
+  async processJoinChallengeFromMessageAsync(payload) {
+    const { contextId: contextId2, matchId, playerId: inviterId } = payload;
+    const { match, player } = this.codex;
+    const curPlayerId = player.getPlayerId();
+    await match.challenge.join.processAsync({
+      contextId: contextId2,
+      matchId,
+      playerId: curPlayerId,
+      opponentId: inviterId
+    });
+    this.switchToGameScene();
+  }
+  async processAwaitChallengeFromMessageAsync(payload) {
+    const { contextId: contextId2, matchId, playerId: inviterId } = payload;
+    const { match, player } = this.codex;
+    const curPlayerId = player.getPlayerId();
+    try {
+      await match.challenge.await.processAsync({
+        contextId: contextId2,
+        matchId,
+        playerId: curPlayerId,
+        opponentId: inviterId
+      });
+      this.switchToChallengeResultScene();
+    } catch (error) {
+      console.warn("processAwaitChallengeFromMessageAsync", error);
+      await this.processResultChallengeFromMessageAsync(payload);
+    }
+  }
+  async processResultChallengeFromMessageAsync(payload) {
+    const { contextId: contextId2, matchId, playerId: inviterId } = payload;
+    const { match, player } = this.codex;
+    const curPlayerId = player.getPlayerId();
+    try {
+      await match.challenge.result.processAsync({
+        contextId: contextId2,
+        matchId,
+        playerId: curPlayerId,
+        opponentId: inviterId
+      });
+      this.switchToChallengeResultScene();
+    } catch (error) {
+      this.switchToDashboardScene();
+    }
+  }
+  async processMatchingGroupModeAsync(opponentId, opponentScore) {
+    const { match, player } = this.codex;
+    await match.group.join.processAsync({
+      playerId: player.getPlayerId(),
+      opponentId,
+      opponentScore
+    });
+    this.switchToGameScene();
+  }
+  async processSingleModeAsync(isFirstSession) {
+    const { match, player } = this.codex;
+    const playerId2 = player.getPlayerId();
+    if (isFirstSession) {
+      await match.handler.setMatchCustomData({ playerId: playerId2, contextId: "SOLO" });
+    }
+    await match.single.start.processAsync({ playerId: playerId2 });
+    this.switchToGameScene();
+  }
+  switchToDashboardScene() {
+    const { event } = this.codex;
+    event.emit(Events2.SWITCH_SCENE, {
+      sceneName: "DashboardScene",
+      sceneData: {
+        isFromLoader: true
+      }
+    });
+  }
+  switchToGameScene() {
+    const { event } = this.codex;
+    event.emit(Events2.SWITCH_SCENE, {
+      sceneName: "GameScene",
+      sceneData: {
+        isFromLoader: true
+      }
+    });
+  }
+  switchToChallengeResultScene() {
+    const { event } = this.codex;
+    event.emit(Events2.SWITCH_SCENE, {
+      sceneName: "ChallengeResultScene",
+      sceneData: {
+        isFromLoader: true
+      }
+    });
+  }
+};
+var loader_default = Loader;
+
+// extensions/ludex/src/plugins/context/state.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var initState3 = {
+  processed: false,
+  contextId: "",
+  contextType: "SOLO",
+  entryPointData: {},
+  contextGameMode: "",
+  sessionContextType: ""
+};
+var state_default3 = initState3;
+
+// extensions/ludex/src/plugins/context/ContextPlugin.ts
+var {
+  Events: Events3,
+  Utils: { Function: F2 }
+} = Ludex;
+var ContextPlugin = class extends Ludex.Plugins.BasePlugin {
+  context;
+  loader;
+  constructor(game) {
+    super(game);
+    this.loader = new loader_default(game);
+    this.context = new context_default(game);
+  }
+  init() {
+    const { storage } = this.codex;
+    storage.addStorage("context", state_default3);
+  }
+  getSessionContextTypes() {
+    return ContextTypes_default;
+  }
+  async processContextData() {
+    const { event, monitorError } = this.codex;
+    event.catchUp(Events3.CONTEXT_SESSION_TYPE_DETECTED, async () => {
+      try {
+        await this.loader.processContextData();
+        event.emit(Events3.CONTEXT_DATA_PROCESSED);
+      } catch (error) {
+        console.debug("processContextData", error);
+        this.switchToDashboardScene();
+        monitorError?.sendException(F2.toError(error));
+      }
+    });
+  }
+  async detectContextSessionType() {
+    const { event, monitorError } = this.codex;
+    try {
+      await this.context.detectContextSessionType();
+    } catch (error) {
+      console.debug("detectContextSessionType", error);
+      monitorError?.sendException(F2.toError(error));
+    } finally {
+      event.emit(Events3.CONTEXT_SESSION_TYPE_DETECTED);
+    }
+  }
+  detectContextGameMode() {
+    this.context.detectContextGameMode();
+  }
+  receiveContext(contextId2, contextType2, entryPointData2) {
+    this.context.receiveContext(contextId2, contextType2, entryPointData2);
+  }
+  getContextId() {
+    return this.context.getContextId();
+  }
+  getContextType() {
+    return this.context.getContextType();
+  }
+  getContextData() {
+    return this.context.getContextData();
+  }
+  getSessionContextType() {
+    return this.context.getSessionContextType();
+  }
+  switchToDashboardScene() {
+    const { event } = this.codex;
+    event.emit(Events3.SWITCH_SCENE, { sceneName: "DashboardScene" });
+  }
+};
+var ContextPlugin_default = ContextPlugin;
+
+// extensions/ludex/src/plugins/context/dtos/ContextInfo.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Valid: V8 } = Ludex.Utils;
+var { contextId, contextType, entryPointData } = state_default3;
+var MESSAGE_INVALID3 = "is invalid";
+var ContextInfoDtos = class extends BaseDtos_default {
+  data;
+  setupData(data) {
+    this.lazySetupData$(data);
+  }
+  validateStructure$(data) {
+    this.lazyValidateStructure$(data);
+  }
+  validateData$(data) {
+    this.lazyValidateData$(data);
+  }
+  validateContextId(contextId2) {
+    if (!V8.isString(contextId2)) {
+      this.exception$("contextId", MESSAGE_INVALID3);
+    }
+  }
+  validateContextType(contextType2) {
+    if (!V8.isString(contextType2) || !contextType2) {
+      this.exception$("contextType", MESSAGE_INVALID3);
+    }
+  }
+  validateEntryPointData(entryPointData2) {
+    if (!V8.isObject(entryPointData2)) {
+      this.exception$("entryPointData", MESSAGE_INVALID3);
+    }
+  }
+  toObject() {
+    return super.toObject();
+  }
+};
+ContextInfoDtos.addDefaultData({
+  contextId,
+  contextType,
+  entryPointData
+});
+var ContextInfo_default = ContextInfoDtos;
+
+// extensions/ludex/src/plugins/context/index.ts
+Ludex.Dtos.Context = {
+  Info: ContextInfo_default
+};
+var context_default2 = ContextPlugin_default;
+
+// extensions/ludex/src/plugins/daily-rewards/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/daily-rewards/DailyRewardsPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/daily-rewards/api/DailyRewardsAPI.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/daily-rewards/constants/DefaultDailyRewards.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var DefaultDailyRewards = {
+  0: {
+    id: 1,
+    type: "coin",
+    value: 300
+  },
+  1: {
+    id: 2,
+    type: "coin",
+    value: 500
+  },
+  2: {
+    id: 3,
+    type: "coin",
+    value: 1e3
+  },
+  3: {
+    id: 4,
+    type: "coin",
+    value: 2e3
+  },
+  4: {
+    id: 5,
+    type: "coin",
+    value: 3e3
+  },
+  5: {
+    id: 6,
+    type: "coin",
+    value: 5e3
+  },
+  6: {
+    id: 7,
+    type: "coin",
+    value: 1e3
+  }
+};
+var DefaultDailyRewards_default = DefaultDailyRewards;
+
+// extensions/ludex/src/plugins/daily-rewards/api/DailyRewardsAPI.ts
+var { Object: O6 } = Ludex.Utils;
+var DailyRewardsAPI = class {
+  async getDailyRewardsAsync() {
+    const result3 = O6.vals(DefaultDailyRewards_default);
+    return result3;
+  }
+};
+var DailyRewardsAPI_default = DailyRewardsAPI;
+
+// extensions/ludex/src/plugins/daily-rewards/constants/DailyRewardsStatus.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var DAY_STATUS = {
+  REWARDED: "rewarded",
+  SKIPPED: "skipped",
+  READY: "ready",
+  WAITING: "waiting"
+};
+var DailyRewardsStatus_default = DAY_STATUS;
+
+// extensions/ludex/src/plugins/daily-rewards/state.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var initState4 = {
+  dailyRewards: {}
+};
+var state_default4 = initState4;
+
+// extensions/ludex/src/plugins/daily-rewards/DailyRewardsPlugin.ts
+var {
+  Configs: {
+    DailyRewards: { CheckInterrupt, MaxDays, MockTime }
+  },
+  Utils: { Array: A4, Valid: V9 }
+} = Ludex;
+var DAY_LENGTH = MockTime > 0 ? MockTime : 864e5;
+var DailyRewardsPlugin = class extends Ludex.Plugins.BasePlugin {
+  dailyRewardsApi = new DailyRewardsAPI_default();
+  init() {
+    const { storage } = this.codex;
+    storage.addStorage("dailyRewards", state_default4);
+  }
+  async requestDailyRewardsAsync() {
+    const rewardsFromApi = await this.dailyRewardsApi.getDailyRewardsAsync();
+    const { logs, rewards } = this.parseDailyRewards(rewardsFromApi);
+    this.setRewardsLog(logs);
+    this.setDailyRewards(rewards);
+  }
+  getDailyRewards() {
+    const { storage } = this.codex;
+    const dailyRewards = storage.getStorageData("dailyRewards", "dailyRewards");
+    if (!dailyRewards) return null;
+    return dailyRewards;
+  }
+  logLoginReward() {
+    if (CheckInterrupt) {
+      this.logFromFirstReward();
+    } else {
+      this.logFromLastReward();
+    }
+  }
+  logFromFirstReward() {
+    const { player } = this.codex;
+    const { dailyRewardedData: dailyRewardedData2 } = player.getPlayerData();
+    if (!V9.isObject(dailyRewardedData2)) return;
+    const { logDays, firstReward } = dailyRewardedData2;
+    const now = /* @__PURE__ */ new Date();
+    const correctLogDays = [...logDays];
+    if (firstReward === 0) {
+      correctLogDays[0] = true;
+      if (!V9.isDebugger()) now.setHours(0, 0, 0, 0);
+      this.setRewardsLog({
+        logDays: correctLogDays,
+        firstReward: now.valueOf(),
+        lastReward: now.valueOf()
+      });
+      return;
+    }
+    const timePassed = now.valueOf() - firstReward;
+    const daysPassed = Math.floor(timePassed / DAY_LENGTH);
+    if (daysPassed >= MaxDays || daysPassed >= logDays.length) return;
+    correctLogDays[daysPassed] = true;
+    if (!V9.isDebugger()) now.setHours(0, 0, 0, 0);
+    this.setRewardsLog({ logDays: correctLogDays, lastReward: now.valueOf() });
+  }
+  logFromLastReward() {
+    const { player } = this.codex;
+    const { dailyRewardedData: dailyRewardedData2 } = player.getPlayerData();
+    if (!V9.isObject(dailyRewardedData2)) return;
+    const { logDays, lastReward } = dailyRewardedData2;
+    const now = /* @__PURE__ */ new Date();
+    const correctLogDays = [...logDays];
+    if (lastReward === 0) {
+      correctLogDays[0] = true;
+      if (!V9.isDebugger()) now.setHours(0, 0, 0, 0);
+      this.setRewardsLog({
+        logDays: correctLogDays,
+        firstReward: now.valueOf(),
+        lastReward: now.valueOf()
+      });
+      return;
+    }
+    const timePassed = now.valueOf() - lastReward;
+    const daysPassed = Math.floor(timePassed / DAY_LENGTH);
+    if (daysPassed < 1) return;
+    const firstWaitingReward = A4.searchIndex(correctLogDays, (i) => i === false);
+    if (firstWaitingReward === void 0) return;
+    correctLogDays[firstWaitingReward] = true;
+    if (!V9.isDebugger()) now.setHours(0, 0, 0, 0);
+    this.setRewardsLog({ logDays: correctLogDays, lastReward: now.valueOf() });
+  }
+  setRewardsLog(config) {
+    const { logDays, firstReward, lastReward } = config;
+    const { player } = this.codex;
+    const { dailyRewardedData: dailyRewardedData2 } = player.getPlayerData();
+    if (!V9.isObject(dailyRewardedData2)) return;
+    if (this.isSameLog(dailyRewardedData2, config)) return;
+    player.setPlayerDataByName("dailyRewardedData", {
+      logDays: logDays !== void 0 ? [...logDays] : [...dailyRewardedData2.logDays],
+      firstReward: firstReward ?? dailyRewardedData2.firstReward,
+      lastReward: lastReward ?? dailyRewardedData2.lastReward
+    });
+  }
+  isSameLog(oldConfig, config) {
+    if (config.firstReward !== void 0 && oldConfig.firstReward !== config.firstReward) return false;
+    if (config.lastReward !== void 0 && oldConfig.lastReward !== config.lastReward) return false;
+    if (config.logDays !== void 0) {
+      if (oldConfig.logDays.length !== config.logDays.length) return false;
+      for (let index = 0; index < config.logDays.length; index++) {
+        if (oldConfig.logDays[index] !== config.logDays[index]) return false;
+      }
+    }
+    return true;
+  }
+  parseDailyRewards(rewardsData) {
+    const { player } = this.codex;
+    const { dailyRewardedData: dailyRewardedData2 } = player.getPlayerData();
+    const { logDays, firstReward, lastReward } = dailyRewardedData2 ?? {};
+    if (logDays === void 0 || firstReward === void 0 || firstReward === 0 || lastReward === void 0 ||
+    lastReward === 0 || logDays.length !== rewardsData.length) {
+      const defaultData = this.getDefaultDailyRewards(rewardsData);
+      return {
+        logs: {
+          logDays: defaultData.logDays,
+          firstReward: 0,
+          lastReward: 0
+        },
+        rewards: defaultData.rewards
+      };
+    }
+    if (CheckInterrupt) {
+      return this.parseFromFirstReward(rewardsData, logDays, firstReward, lastReward);
+    }
+    return this.parseFromLastReward(rewardsData, logDays, firstReward, lastReward);
+  }
+  parseFromFirstReward(rewardsData, logDays, firstReward, lastReward) {
+    const now = Date.now();
+    const timePassed = now - firstReward;
+    if (timePassed < 0) {
+      const defaultData = this.getDefaultDailyRewards(rewardsData);
+      return {
+        logs: {
+          logDays: defaultData.logDays,
+          firstReward: 0,
+          lastReward: 0
+        },
+        rewards: defaultData.rewards
+      };
+    }
+    const daysPassed = Math.floor(timePassed / DAY_LENGTH);
+    const isOverMaxDays = daysPassed >= MaxDays || daysPassed >= logDays.length;
+    const hasSkippedDays = A4.search(logDays.slice(0, daysPassed), (i) => i === false) !== void 0;
+    const isReset = isOverMaxDays || hasSkippedDays;
+    if (isReset) {
+      const defaultData = this.getDefaultDailyRewards(rewardsData);
+      return {
+        logs: {
+          logDays: defaultData.logDays,
+          firstReward: 0,
+          lastReward
+        },
+        rewards: defaultData.rewards
+      };
+    }
+    const parsedLogDays = [];
+    const rewards = {};
+    for (let index = 0; index < rewardsData.length; index++) {
+      const reward = rewardsData[index];
+      const isInTheFuture = parsedLogDays.length > daysPassed;
+      const isToday = parsedLogDays.length === daysPassed;
+      const logged = logDays[index];
+      if (isInTheFuture) {
+        parsedLogDays.push(false);
+        rewards[reward.id] = __spreadProps(__spreadValues({}, reward), {
+          status: DailyRewardsStatus_default.WAITING
+        });
+        continue;
+      }
+      parsedLogDays.push(logged);
+      if (isToday) {
+        rewards[reward.id] = __spreadProps(__spreadValues({}, reward), {
+          status: logged ? DailyRewardsStatus_default.REWARDED : DailyRewardsStatus_default.READY
+        });
+        continue;
+      }
+      rewards[reward.id] = __spreadProps(__spreadValues({}, reward), {
+        status: logged ? DailyRewardsStatus_default.REWARDED : DailyRewardsStatus_default.SKIPPED
+      });
+    }
+    return {
+      logs: {
+        logDays: parsedLogDays,
+        firstReward,
+        lastReward
+      },
+      rewards
+    };
+  }
+  parseFromLastReward(rewardsData, logDays, firstReward, lastReward) {
+    const now = Date.now();
+    const timePassed = now - lastReward;
+    if (timePassed < 0) {
+      const defaultData = this.getDefaultDailyRewards(rewardsData);
+      return {
+        logs: {
+          logDays: defaultData.logDays,
+          firstReward: 0,
+          lastReward: 0
+        },
+        rewards: defaultData.rewards
+      };
+    }
+    const daysPassed = Math.floor(timePassed / DAY_LENGTH);
+    const passedAtLeastOneDay = daysPassed >= 1;
+    const firstWaitingReward = A4.searchIndex(logDays, (i) => i === false);
+    const isReset = firstWaitingReward === -1 && passedAtLeastOneDay;
+    if (isReset) {
+      const defaultData = this.getDefaultDailyRewards(rewardsData);
+      defaultData.rewards[rewardsData[0].id].status = passedAtLeastOneDay ? DailyRewardsStatus_default.
+      READY : DailyRewardsStatus_default.WAITING;
+      return {
+        logs: {
+          logDays: defaultData.logDays,
+          firstReward: 0,
+          lastReward
+        },
+        rewards: defaultData.rewards
+      };
+    }
+    const parsedLogDays = [];
+    const rewards = {};
+    for (let index = 0, len = rewardsData.length; index < len; index++) {
+      const reward = rewardsData[index];
+      const isInTheFuture = firstWaitingReward !== -1 && index > firstWaitingReward;
+      const isToday = index === firstWaitingReward;
+      if (isInTheFuture) {
+        parsedLogDays.push(false);
+        rewards[reward.id] = __spreadProps(__spreadValues({}, reward), {
+          status: DailyRewardsStatus_default.WAITING
+        });
+        continue;
+      }
+      if (isToday) {
+        parsedLogDays.push(false);
+        rewards[reward.id] = __spreadProps(__spreadValues({}, reward), {
+          status: passedAtLeastOneDay ? DailyRewardsStatus_default.READY : DailyRewardsStatus_default.
+          WAITING
+        });
+        continue;
+      }
+      parsedLogDays.push(true);
+      rewards[reward.id] = __spreadProps(__spreadValues({}, reward), {
+        status: DailyRewardsStatus_default.REWARDED
+      });
+    }
+    return {
+      logs: {
+        logDays: parsedLogDays,
+        firstReward,
+        lastReward
+      },
+      rewards
+    };
+  }
+  getDefaultDailyRewards(rewardsData) {
+    const logDays = [];
+    const rewards = {};
+    for (const reward of rewardsData) {
+      logDays.push(false);
+      rewards[reward.id] = __spreadProps(__spreadValues({}, reward), {
+        status: DailyRewardsStatus_default.WAITING
+      });
+    }
+    rewards[rewardsData[0].id].status = DailyRewardsStatus_default.READY;
+    return {
+      logDays,
+      rewards
+    };
+  }
+  setDailyRewards(data) {
+    const { storage } = this.codex;
+    storage.setStorageData("dailyRewards", "dailyRewards", data);
+  }
+};
+var DailyRewardsPlugin_default = DailyRewardsPlugin;
+
+// extensions/ludex/src/plugins/daily-rewards/index.ts
+var daily_rewards_default = DailyRewardsPlugin_default;
+
+// extensions/ludex/src/plugins/event/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/event/EventPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/event/emitter.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// node_modules/eventemitter3/index.mjs
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var import_index = __toESM(require_eventemitter3(), 1);
+var eventemitter3_default = import_index.default;
+
+// extensions/ludex/src/plugins/event/emitter.ts
+var Emitter = new eventemitter3_default();
+var emitter_default = Emitter;
+
+// extensions/ludex/src/plugins/event/state.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var initState5 = {
+  names: [],
+  history: []
+};
+var state_default5 = initState5;
+
+// extensions/ludex/src/plugins/event/EventPlugin.ts
+var {
+  Utils: { Decorator: Decorator3 }
+} = Ludex;
+var EventPlugin = class extends Ludex.Plugins.BasePlugin {
+  enableLog = false;
+  muteEvents = [];
+  init() {
+    const { storage } = this.codex;
+    storage.addStorage("event", state_default5);
+  }
+  enableLogEvent() {
+    this.enableLog = true;
+  }
+  on(event, callback) {
+    this.addEventName(event);
+    this.addHistory(event, "on", "listening");
+    emitter_default.on(event, callback);
+  }
+  once(event, callback) {
+    this.addEventName(event);
+    this.addHistory(event, "once", "listening");
+    emitter_default.once(event, callback);
+  }
+  waitTo(event, timeout) {
+    return new Promise((resolve, reject) => {
+      let timeoutId;
+      const callback = (payload) => {
+        clearTimeout(timeoutId);
+        resolve(payload);
+      };
+      this.once(event, callback);
+      if (timeout && timeout > 0) {
+        timeoutId = setTimeout(() => {
+          this.off(event, callback);
+          reject(new Error(`Event ${event} timeout`));
+        }, timeout);
+      }
+    });
+  }
+  catchUp(event, callback) {
+    this.once(event, callback);
+    const isCalled = this.getEventEmitCount(event) > 0;
+    if (!isCalled) return;
+    const { payload } = this.getLastEventInfo(event) ?? {};
+    this.emit(event, payload);
+  }
+  off(event, callback) {
+    emitter_default.off(event, callback);
+    this.addHistory(event, "action", "removed");
+  }
+  mute(event) {
+    if (this.muteEvents.indexOf(event) > -1) return;
+    this.muteEvents.push(event);
+  }
+  clear(event) {
+    emitter_default.removeAllListeners(event);
+    this.addHistory(event, "action", "removed");
+  }
+  emit(event, payload) {
+    if (this.muteEvents.indexOf(event) > -1) return;
+    let args = [];
+    if (payload) {
+      args = [payload];
+    }
+    this.addHistory(event, "action", "called", payload);
+    emitter_default.emit(event, ...args);
+  }
+  addEventName(event) {
+    const { storage } = this.codex;
+    const names2 = storage.getStorageData("event", "names");
+    if (!names2) return;
+    if (names2.indexOf(event) < 0) {
+      names2.push(event);
+    }
+  }
+  limitHistory(history) {
+    const limit = 1e4;
+    if (history.length <= limit) return history;
+    const {
+      Utils: { Array: A10 }
+    } = Ludex;
+    return A10.limit(history, limit);
+  }
+  getEventListeners(event) {
+    const history = this.getHistory();
+    return history.filter((item) => {
+      return item.name === event && item.status === "listening";
+    }).map((item) => {
+      return item.name;
+    });
+  }
+  getHistory() {
+    const { storage } = this.codex;
+    const history = storage.getStorageData("event", "history") ?? [];
+    return this.limitHistory(history);
+  }
+  getEventEmitCount(event) {
+    const history = this.getHistory();
+    return history.filter((item) => {
+      return item.name === event && item.status === "called";
+    }).length;
+  }
+  getLastEventInfo(event) {
+    const history = this.getHistory();
+    let eventInfo = null;
+    for (let i = history.length - 1; i >= 0; i--) {
+      if (history[i].name === event) {
+        eventInfo = history[i];
+        break;
+      }
+    }
+    return eventInfo;
+  }
+  getTypeFromHistory(event) {
+    const lastEvent = this.getLastEventInfo(event);
+    return lastEvent?.type ?? null;
+  }
+  getCallsFromHistory(event) {
+    const lastEvent = this.getLastEventInfo(event);
+    return lastEvent?.called ?? 0;
+  }
+  addHistory(event, type, status, payload) {
+    const typeFromHistory = this.getTypeFromHistory(event);
+    const correctType = typeFromHistory ?? type;
+    const currentCalled = this.getCallsFromHistory(event);
+    const correctCalled = status === "called" ? currentCalled + 1 : currentCalled;
+    const history = this.getHistory();
+    history.push({
+      type: correctType,
+      status,
+      name: event,
+      called: correctCalled,
+      payload: payload ?? {}
+    });
+    this.logEventInfo(event, correctType, status, correctCalled);
+  }
+  logEventInfo(event, type, status, called) {
+    if (!this.enableLog) return;
+    if (status === "listening") {
+      console.debug(`Event (${type}) ${event}: ${status}`);
+      const listenerCount = emitter_default.listenerCount(event);
+      if (listenerCount > 1) {
+        console.warn(`Event ${event} has ${listenerCount} listener`);
+      }
+    } else if (type !== "action") {
+      console.debug(`Event (${type}) ${event}: ${status} (${called} times)`);
+    }
+    if (status === "called") {
+      const listenerCount = emitter_default.listenerCount(event);
+      if (listenerCount <= 0) {
+        console.warn(`Event ${event} is called but not listening`);
+      }
+    }
+  }
+};
+__decorateClass([
+  Decorator3.validateParams("string", "function")
+], EventPlugin.prototype, "on", 1);
+__decorateClass([
+  Decorator3.validateParams("string", "function")
+], EventPlugin.prototype, "once", 1);
+__decorateClass([
+  Decorator3.validateParams("string")
+], EventPlugin.prototype, "waitTo", 1);
+__decorateClass([
+  Decorator3.validateParams("string", "function")
+], EventPlugin.prototype, "catchUp", 1);
+__decorateClass([
+  Decorator3.validateParams("string", "function")
+], EventPlugin.prototype, "off", 1);
+__decorateClass([
+  Decorator3.validateParams("string")
+], EventPlugin.prototype, "mute", 1);
+__decorateClass([
+  Decorator3.validateParams("string")
+], EventPlugin.prototype, "clear", 1);
+__decorateClass([
+  Decorator3.validateParams("string")
+], EventPlugin.prototype, "emit", 1);
+var EventPlugin_default = EventPlugin;
+
+// extensions/ludex/src/plugins/event/index.ts
+var event_default = EventPlugin_default;
+
+// extensions/ludex/src/codex/index.ts
+init_empty_script();
+init_empty_script();
+
+// extensions/ludex/src/plugins/language/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/language/LanguagePlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/language/exceptions/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/language/exceptions/LocaleNotFoundError.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var LocaleNotFoundError = class extends Error {
+  locale;
+  constructor(locale2) {
+    super(`Locale "${locale2}" not found`);
+    this.name = "LocaleNotFoundError";
+    this.locale = locale2;
+  }
+};
+var LocaleNotFoundError_default = LocaleNotFoundError;
+
+// extensions/ludex/src/plugins/language/exceptions/MissingKeyInLocaleError.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var MissingKeyInLocaleError = class extends Error {
+  key;
+  locale;
+  constructor(key, locale2) {
+    const keyString = String(key);
+    super(`Text with key "${keyString}" not found in locale "${locale2}"`);
+    this.name = "MissingKeyInLocaleError";
+    this.key = keyString;
+    this.locale = locale2;
+  }
+};
+var MissingKeyInLocaleError_default = MissingKeyInLocaleError;
+
+// extensions/ludex/src/plugins/language/LanguagePlugin.ts
+var {
+  Utils: { Object: O7, Function: F3, Browser: B2 },
+  Configs: {
+    Languages: { DetectPlayerLocale }
+  }
+} = Ludex;
+var LanguagePlugin = class extends Ludex.Plugins.BasePlugin {
+  locale;
+  fallbackLocale;
+  data = {};
+  setFallbackLocale(locale2) {
+    this.fallbackLocale = locale2;
+  }
+  hasTextKey(key, locale2) {
+    const l = locale2 ?? this.getCurrentLocale();
+    const { text } = this.getLocaleData(l);
+    return O7.hasOwn(text, key);
+  }
+  hasTextureKey(key, locale2) {
+    const l = locale2 ?? this.getCurrentLocale();
+    const { texture } = this.getLocaleData(l);
+    return O7.hasOwn(texture, key);
+  }
+  add(locale2, data, setAsFallback = false) {
+    this.data[locale2] = data;
+    if (setAsFallback) {
+      this.setFallbackLocale(locale2);
+    }
+  }
+  choose(locale2) {
+    this.locale = locale2;
+    const { event } = this.codex;
+    event.emit(Ludex.Events.LANGUAGE_CHANGED, { locale: locale2 });
+  }
+  getText(key, variables, locale2, disableFallback = false) {
+    try {
+      return this.uncaughtGetText(key, variables, locale2, !disableFallback);
+    } catch (error) {
+      if (error instanceof MissingKeyInLocaleError_default || error instanceof LocaleNotFoundError_default) {
+        console.warn(error.message);
+      } else {
+        console.error(error);
+      }
+      return String(key);
+    }
+  }
+  getTexture(key, locale2, disableFallback = false) {
+    return this.uncaughtGetTexture(key, locale2, !disableFallback);
+  }
+  uncaughtGetText(key, variables = [], locale2, enableFallback = true) {
+    if (!enableFallback || this.fallbackLocale === void 0) {
+      const text2 = this.getRawText(key, locale2 ?? this.getCurrentLocale());
+      return this.replaceVariables(text2, variables);
+    }
+    const fallbackLocale = this.fallbackLocale;
+    const text = F3.retry(
+      () => this.getRawText(key, locale2 ?? this.getCurrentLocale()),
+      () => this.getRawText(key, fallbackLocale)
+    );
+    return this.replaceVariables(text, variables);
+  }
+  getRawText(key, locale2) {
+    if (!this.hasTextKey(key, locale2)) {
+      throw new MissingKeyInLocaleError_default(key, locale2);
+    }
+    const { text } = this.getLocaleData(locale2);
+    return text[key];
+  }
+  uncaughtGetTexture(key, locale2, enableFallback = true) {
+    if (!enableFallback || this.fallbackLocale === void 0) {
+      return this.getRawTexture(key, locale2 ?? this.getCurrentLocale());
+    }
+    const fallbackLocale = this.fallbackLocale;
+    return F3.retry(
+      () => this.getRawTexture(key, locale2 ?? this.getCurrentLocale()),
+      () => this.getRawTexture(key, fallbackLocale)
+    );
+  }
+  getRawTexture(key, locale2) {
+    if (!this.hasTextureKey(key, locale2)) {
+      throw new MissingKeyInLocaleError_default(key, locale2);
+    }
+    const { texture } = this.getLocaleData(locale2);
+    return texture[key];
+  }
+  getCurrentLocale() {
+    return this.locale ?? "en";
+  }
+  getLocaleData(locale2) {
+    const correctLocale = locale2 ?? this.getCurrentLocale();
+    if (!O7.hasOwn(this.data, correctLocale)) {
+      throw new LocaleNotFoundError_default(correctLocale);
+    }
+    return this.data[correctLocale];
+  }
+  replaceVariables(text, variables) {
+    const length = variables.length;
+    if (length === 0) return text;
+    let result3 = text;
+    for (let i = 0; i < length; i++) {
+      const variable = variables[i];
+      const key = `%{${i}}`;
+      result3 = result3.replace(key, variable);
+    }
+    return result3;
+  }
+  getPlayerLanguage() {
+    const { player } = this.codex;
+    const localeStringBySDK = GameSDK.getLocale();
+    const localeBySDK = localeStringBySDK?.trim().split(/[-_]/)[0];
+    const currentLocale = this.getBrowserLanguage();
+    if (localeBySDK !== currentLocale) {
+      return localeBySDK ?? currentLocale;
+    }
+    if (player.isFirstSession()) {
+      return currentLocale;
+    }
+    return player.getPlayerSetting("language") ?? currentLocale;
+  }
+  getBrowserLanguage() {
+    if (DetectPlayerLocale === false) {
+      return "en";
+    }
+    const locale2 = B2.getLocale();
+    const language2 = locale2?.trim()?.split(/[-_]/)[0];
+    return language2;
+  }
+};
+var LanguagePlugin_default = LanguagePlugin;
+
+// extensions/ludex/src/plugins/language/index.ts
+var language_default = LanguagePlugin_default;
+
+// extensions/ludex/src/plugins/leaderboards/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/leaderboards/LeaderboardPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/leaderboards/api/LeaderboardAPI.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+init_ResponseLeaderboard();
+var {
+  Configs: { OtherHost, Mockup, AppId: AppId2 },
+  Utils: { Object: O9, String: S3, Valid: V11 }
+} = Ludex;
+var LeaderboardAPI = class {
+  mockAPI;
+  async initMockAPI() {
+    if (this.mockAPI) return;
+    const LeaderboardAPIMock2 = (await Promise.resolve().then(() => (init_LeaderboardAPIMock(), LeaderboardAPIMock_exports))).
+    default;
+    if (typeof LeaderboardAPIMock2 !== "function") {
+      throw new Error("Cannot load LeaderboardAPIMock");
+    }
+    this.mockAPI = new LeaderboardAPIMock2();
+  }
+  async getLeadersAsync(id, url, payload) {
+    const params = S3.params(payload);
+    let result3;
+    if (Mockup.Leaderboards.Enabled) {
+      await this.initMockAPI();
+      if ("playerIds" in payload) {
+        result3 = await this.mockAPI.getPlayers(id, payload);
+      } else {
+        result3 = await this.mockAPI.getLeaders(id, payload);
+      }
+    } else {
+      result3 = await get(`${url}?${params}`, {}, OtherHost);
+    }
+    if (!O9.hasOwn(result3, "data") || !Array.isArray(result3.data)) return [];
+    return result3.data;
+  }
+  async getLeaderboardAsync(id) {
+    let result3;
+    const url = `leaderboards/${id}`;
+    if (Mockup.Leaderboards.Enabled) {
+      await this.initMockAPI();
+      result3 = await this.mockAPI.getLeaderboardAsync(id);
+    } else {
+      result3 = await get(url, {}, OtherHost);
+      if (O9.hasOwn(result3, "data") && typeof result3.data === "object") {
+        result3 = result3.data;
+      }
+    }
+    return result3;
+  }
+  async getLeaderboardsAsync(options) {
+    let result3;
+    const params = S3.params(options);
+    const url = "leaderboards";
+    if (Mockup.Leaderboards.Enabled) {
+      await this.initMockAPI();
+      result3 = await this.mockAPI.getLeaderboardsAsync(options);
+    } else {
+      result3 = await get(`${url}?${params}`, {}, OtherHost);
+      if (O9.hasOwn(result3, "data") && Array.isArray(result3.data)) {
+        result3 = result3.data;
+      } else {
+        result3 = [];
+      }
+    }
+    return result3;
+  }
+  async setLeaderboardScoreAsync(payload) {
+    const { leaderboardId, playerId: playerId2, score: score2 } = payload;
+    if (Mockup.Leaderboards.Enabled) {
+      await this.initMockAPI();
+      await this.mockAPI.setScoreAsync(leaderboardId, playerId2, score2);
+    } else {
+      await post(`leaderboards/${leaderboardId}/players/${playerId2}`, { score: score2 }, {}, OtherHost);
+    }
+  }
+  async createLeaderboardAsync(payload) {
+    const id = payload._id ?? S3.generateObjectId();
+    const numberOfLeaders = payload.numberOfLeaders;
+    const leaderboardPayload = __spreadProps(__spreadValues(__spreadValues({}, ResponseLeaderboard_default),
+    payload), {
+      _id: id,
+      appId: AppId2,
+      numberOfLeaders
+    });
+    const url = "leaderboards";
+    let result3;
+    if (Mockup.Leaderboards.Enabled) {
+      await this.initMockAPI();
+      result3 = await this.mockAPI.createLeaderboard(leaderboardPayload);
+    } else {
+      result3 = await post(url, leaderboardPayload, {}, OtherHost);
+      if (O9.hasOwn(result3, "data") && V11.isObject(result3.data)) {
+        result3 = result3.data;
+      }
+    }
+    if (!O9.hasOwn(result3, "_id") || result3._id !== id) {
+      throw new Error("Create leaderboard failed");
+    }
+    return id;
+  }
+};
+var LeaderboardAPI_default = LeaderboardAPI;
+
+// extensions/ludex/src/plugins/leaderboards/constants/DefaultLeaderboard.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var DefaultLeaderboard = {
+  limit: 0,
+  offset: 0,
+  leaders: {},
+  isRequesting: false,
+  amountPlayer: 0
+};
+var DefaultLeaderboard_default = DefaultLeaderboard;
+
+// extensions/ludex/src/plugins/leaderboards/state.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var initState6 = {
+  leaderboards: {}
+};
+var state_default6 = initState6;
+
+// extensions/ludex/src/plugins/leaderboards/LeaderboardPlugin.ts
+var {
+  Utils: { Array: A5, Valid: V12, Json: J3, Object: O10 }
+} = Ludex;
+var LeaderboardPlugin = class extends Ludex.Plugins.BasePlugin {
+  lbAPI = new LeaderboardAPI_default();
+  configs;
+  init() {
+    const { storage } = this.codex;
+    storage.addStorage("leaderboard", state_default6);
+    this.configs = {};
+  }
+  addLeaderboard(options) {
+    const { name: name2, type, leaderboardId, autoSortRank } = options;
+    const leaderboard = this.getLeaderboard(name2);
+    if (leaderboard) {
+      console.warn(`Leaderboard with name ${name2} already exists`);
+      return;
+    }
+    let host = `leaderboards/${leaderboardId}/`;
+    if (type === "global" || type === "tournament") {
+      host += "leaders";
+    }
+    if (type === "friends") {
+      host += "players";
+    }
+    this.configs[name2] = { id: leaderboardId, name: name2, type, host, autoSortRank };
+    const defaultData = J3.clone(DefaultLeaderboard_default);
+    this.setLeaderboard(name2, __spreadValues({}, defaultData));
+  }
+  async requestLeaderboardsAsync(options) {
+    try {
+      const result3 = await this.lbAPI.getLeaderboardsAsync(options);
+      return result3;
+    } catch (error) {
+      console.warn("requestGlobalLeaderboardsAsync", error);
+      return [];
+    }
+  }
+  async requestLeaderboardAsync(name2, limit) {
+    try {
+      this.validateLeaderboard(name2);
+      this.clearLeaderboard(name2);
+      this.setLeaderboard(name2, { isRequesting: true });
+      const { id, type, host } = this.configs[name2];
+      let leaders = [];
+      if (type === "friends") {
+        const { player } = this.codex;
+        const playerId2 = player.getPlayerId();
+        const playerIds = player.getConnectedPlayerIds(limit, 0);
+        const paramsPlayerIds = [playerId2, ...playerIds];
+        this.configs[name2].playerIds = [...paramsPlayerIds];
+        leaders = await this.lbAPI.getLeadersAsync(id, host, {
+          playerIds: paramsPlayerIds
+        });
+      } else {
+        leaders = await this.lbAPI.getLeadersAsync(id, host, {
+          limit,
+          offset: 0
+        });
+      }
+      if (leaders.length === 0) return;
+      await this.receiveLeaderboardAsync(name2, leaders);
+      this.setLeaderboard(name2, { limit, offset: 0 });
+    } finally {
+      const res = await this.lbAPI.getLeaderboardAsync(this.configs[name2].id);
+      const resettable = res ? res.resettable : "";
+      const amountPlayer = res ? res.amountPlayer : 0;
+      this.setLeaderboard(name2, { isRequesting: false, resettable, amountPlayer });
+    }
+  }
+  async loadMoreLeaderboardAsync(name2, limit) {
+    const leaderboard = this.getLeaderboard(name2);
+    if (!leaderboard) return;
+    if (this.configs[name2].type === "friends") {
+      console.warn("Cannot load more leaderboard with type friend");
+      return;
+    }
+    try {
+      this.setLeaderboard(name2, { isRequesting: true });
+      const { id, host } = this.configs[name2];
+      const { offset: oldOffset, limit: oldLimit } = leaderboard;
+      const newOffset = oldOffset + oldLimit;
+      const leaders = await this.lbAPI.getLeadersAsync(id, host, {
+        limit,
+        offset: newOffset
+      });
+      if (leaders.length === 0) return;
+      this.receiveLeaderboardAsync(name2, leaders);
+      this.setLeaderboard(name2, { limit, offset: newOffset });
+    } finally {
+      this.setLeaderboard(name2, { isRequesting: false });
+    }
+  }
+  getLeaderboard(name2) {
+    const { storage } = this.codex;
+    const leaderboards = storage.getStorageData("leaderboard", "leaderboards");
+    if (!leaderboards) return null;
+    if (!leaderboards[name2]) return null;
+    return leaderboards[name2];
+  }
+  async getLeadersByPlayerIdsAsync(name2, playerIds) {
+    try {
+      this.validateLeaderboard(name2);
+      const { id } = this.configs[name2];
+      const host = `leaderboards/${id}/players`;
+      const res = await this.lbAPI.getLeadersAsync(id, host, { playerIds });
+      if (res.length === 0) return [];
+      return this.toLeaders(res);
+    } catch (error) {
+      console.warn(error);
+      return [];
+    }
+  }
+  async getLeaderboardResponseAsync(id) {
+    return this.lbAPI.getLeaderboardAsync(id);
+  }
+  clearLeaderboard(name2) {
+    try {
+      this.validateLeaderboard(name2);
+      const defaultData = J3.clone(DefaultLeaderboard_default);
+      this.setLeaderboard(name2, null);
+      this.setLeaderboard(name2, __spreadValues({}, defaultData));
+    } catch (error) {
+      console.warn(error);
+    }
+  }
+  isLeaderboardEmpty(name2) {
+    const leaderboard = this.getLeaderboard(name2);
+    if (!leaderboard) return true;
+    const { leaders } = leaderboard;
+    return Object.keys(leaders).length === 0;
+  }
+  isExistLeaderboardId(leaderboardId) {
+    const { configs } = this;
+    return O10.vals(configs).some((config) => config.id === leaderboardId);
+  }
+  getLeaderboardName(leaderboardId) {
+    const { configs } = this;
+    const config = A5.search(O10.vals(configs), (config2) => config2.id === leaderboardId);
+    if (!config) return null;
+    return config.name;
+  }
+  async setLeaderboardScoreAsync(name2, playerId2, score2) {
+    try {
+      if (GameSDK.extra.isGuest) return;
+      this.validateLeaderboard(name2);
+      const { id } = this.configs[name2];
+      const previousScore = await this.getLastScoreOnLeaderboard(name2, playerId2);
+      if (previousScore && score2 <= previousScore) return;
+      await this.lbAPI.setLeaderboardScoreAsync({
+        leaderboardId: id,
+        playerId: playerId2,
+        score: score2
+      });
+    } catch (error) {
+      console.warn(error);
+    }
+  }
+  async getLastScoreOnLeaderboard(name2, playerId2) {
+    const playerLeaders = await this.getLeadersByPlayerIdsAsync(name2, [playerId2]);
+    if (playerLeaders.length === 0) return null;
+    return playerLeaders[0].score;
+  }
+  async createLeaderboardAsync(payload) {
+    return this.lbAPI.createLeaderboardAsync(payload);
+  }
+  validateLeaderboard(name2) {
+    const leaderboard = this.getLeaderboard(name2);
+    if (!V12.isObject(leaderboard)) {
+      throw new Error(`Leaderboard with name ${name2} not found`);
+    }
+  }
+  setLeaderboard(name2, leaderboard) {
+    if (!leaderboard) return;
+    const { storage } = this.codex;
+    storage.setStorageData("leaderboard", "leaderboards", { [name2]: leaderboard });
+  }
+  async receiveLeaderboardAsync(name2, responses) {
+    this.validateLeaderboard(name2);
+    const leaders = await this.toLeaders(responses);
+    const cleanLeaders = leaders.filter((leader) => leader.name && leader.photo);
+    const { leaders: currentLeaders = {} } = this.getLeaderboard(name2) ?? {};
+    const uniqueLeaders = cleanLeaders.filter((leader) => {
+      if (currentLeaders[leader.playerId]) {
+        currentLeaders[leader.playerId] = leader;
+        return false;
+      }
+      return true;
+    });
+    const rawLeaders = O10.vals(currentLeaders);
+    if (uniqueLeaders.length > 0) {
+      rawLeaders.unshift(...uniqueLeaders);
+    }
+    let sortedLeaders = rawLeaders.sort((a, b) => b.score - a.score);
+    if (this.configs[name2].autoSortRank) {
+      sortedLeaders = sortedLeaders.map((leader, index) => __spreadProps(__spreadValues({}, leader),
+      { rank: index + 1 }));
+    }
+    const keyedLeaders = O10.keyBy(sortedLeaders, "playerId");
+    this.setLeaderboard(name2, { leaders: keyedLeaders });
+  }
+  async toLeaders(leaders) {
+    const { profile } = this.codex;
+    const leaderIds = leaders.map((leader) => leader.playerId);
+    await profile.requestProfiles(leaderIds);
+    const profiles = profile.getProfiles();
+    const leadersWithProfile = leaders.map((leader) => {
+      const { playerId: playerId2 } = leader;
+      const profile2 = profiles[playerId2];
+      if (!profile2) {
+        const { language: language2 } = this.codex;
+        const name2 = language2.getText("core.nameless") ?? "Nameless";
+        return __spreadProps(__spreadValues({}, leader), { name: name2, photo: "default" });
+      }
+      return __spreadProps(__spreadValues({}, leader), {
+        name: profile2.name,
+        photo: profile2.photo
+      });
+    });
+    const leadersWithScore = leadersWithProfile.map((leader) => __spreadProps(__spreadValues({}, leader),
+    {
+      score: parseInt(leader.score, 10)
+    }));
+    return leadersWithScore;
+  }
+};
+var LeaderboardPlugin_default = LeaderboardPlugin;
+
+// extensions/ludex/src/plugins/leaderboards/index.ts
+var leaderboards_default = LeaderboardPlugin_default;
+
+// extensions/ludex/src/plugins/match/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/MatchPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/api/APIHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/api/MatchAPI.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/api/BaseAPI.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var BaseAPI = class {
+  APIHost;
+  setAPIHost(host) {
+    this.APIHost = host;
+  }
+  getAPIHost() {
+    return this.APIHost;
+  }
+};
+var BaseAPI_default = BaseAPI;
+
+// extensions/ludex/src/plugins/match/api/MatchAPI.ts
+var { Utils: Utils2 } = Ludex;
+var MatchAPI = class extends BaseAPI_default {
+  // Single mode
+  async createSingleMatchAsync(payload) {
+    const url = "single-matches";
+    const result3 = await post(url, payload, {}, this.getAPIHost());
+    return this.returnValidMatchData(result3);
+  }
+  async getSingleMatchDetailAsync() {
+    const url = "single-matches/active";
+    const result3 = await get(url, {}, this.getAPIHost());
+    return this.returnValidMatchData(result3);
+  }
+  async updateSingleMatchMoveAsync(matchId, payload) {
+    const url = `single-matches/${matchId}/move`;
+    const result3 = await post(url, payload, {}, this.getAPIHost());
+    return this.returnValidMatchData(result3);
+  }
+  async finishSingleMatchAsync(matchId) {
+    const url = `single-matches/${matchId}/finish`;
+    const result3 = await post(url, {}, {}, this.getAPIHost());
+    return this.returnValidMatchData(result3);
+  }
+  // Context mode
+  async createMatchAsync(payload) {
+    const url = "matches";
+    const result3 = await post(url, payload, {}, this.getAPIHost());
+    return this.returnValidMatchData(result3);
+  }
+  async joinMatchAsync(matchId) {
+    const url = `matches/${matchId}/join`;
+    const result3 = await post(url, {}, {}, this.getAPIHost());
+    return this.returnValidMatchData(result3);
+  }
+  async getMatchDetailByIdAsync(matchId) {
+    const url = `matches/${matchId}`;
+    const result3 = await get(url, {}, this.getAPIHost());
+    return this.returnValidMatchData(result3);
+  }
+  async finishMatchAsync(payload) {
+    const { matchId = "", score: score2 = 0, level: level2 = 0, extraData = {} } = payload;
+    const url = `matches/${matchId}/finish`;
+    const result3 = await post(url, { matchId, score: score2, level: level2, extraData }, {}, this.getAPIHost());
+    return this.returnValidMatchData(result3);
+  }
+  returnValidMatchData(result3) {
+    if (!Utils2.Valid.isObject(result3)) return {};
+    if (!Utils2.Object.hasOwn(result3, "data")) return {};
+    return result3.data ?? {};
+  }
+};
+var MatchAPI_default = MatchAPI;
+
+// extensions/ludex/src/plugins/match/api/APIHandler.ts
+var APIHandler = class {
+  matchAPI;
+  constructor(apiConfig) {
+    this.createAPI();
+    this.setAPIConfig(apiConfig);
+  }
+  createAPI() {
+    this.matchAPI = new MatchAPI_default();
+  }
+  setAPIConfig(apiConfig) {
+    if (apiConfig.matchAPIHost) {
+      this.matchAPI.setAPIHost(apiConfig.matchAPIHost);
+    }
+  }
+  setMatchAPIInstance(matchAPI) {
+    this.matchAPI = matchAPI;
+  }
+  getMatchAPI() {
+    return this.matchAPI;
+  }
+};
+var APIHandler_default = APIHandler;
+
+// extensions/ludex/src/plugins/match/concretes/BaseConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var BaseConcrete = class {
+  codex;
+  match;
+  constructor(codex2, match) {
+    this.codex = codex2;
+    this.match = match;
+  }
+  startLog(payload) {
+    if (this.match.useCPUProfile) {
+      console.profile(this.constructor.name);
+    }
+    console.group(`\u{1F680} ${this.constructor.name}`);
+    if (payload) {
+      console.log("\u{1F4E6} ? Payload:", payload);
+    }
+  }
+  endLog() {
+    console.groupEnd();
+    if (this.match.useCPUProfile) {
+      console.profileEnd();
+    }
+  }
+  async processAsync(_payload) {
+    throw new Error("Not implemented");
+  }
+};
+var BaseConcrete_default = BaseConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/AwaitChallengeMatchConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/NothingHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/BaseHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Object: O11, Valid: V13, Json: J4 } = Ludex.Utils;
+var BaseHandler = class {
+  codex;
+  match;
+  nextHandler;
+  stateData;
+  constructor(concrete) {
+    this.codex = concrete.codex;
+    this.match = concrete.match;
+    this.nextHandler = null;
+    this.stateData = {
+      Before: null,
+      After: null
+    };
+  }
+  setNext(handler) {
+    this.nextHandler = handler;
+    return handler;
+  }
+  async processAsync(matchState) {
+    console.groupCollapsed(`\u27A1\uFE0F ${this.constructor.name}`);
+    this.logData$("Before", matchState);
+  }
+  async nextAsync(matchState) {
+    this.logData$("After", matchState);
+    this.logDiff$();
+    console.groupEnd();
+    if (!this.nextHandler) return;
+    await this.nextHandler.processAsync(matchState);
+  }
+  logData$(name2, matchState) {
+    if (!V13.isDebugger()) return;
+    console.groupCollapsed(`\u{1F4E6} MatchState: ${name2}`);
+    this.stateData[name2] = J4.clone(matchState);
+    const _a = matchState, { profiles, customData } = _a, base = __objRest(_a, ["profiles", "customD\
+ata"]);
+    console.info("\u{1F4BE} Base");
+    console.table(O11.clone(base));
+    console.info("\u{1F4BE} Profile");
+    console.table(O11.clone(profiles));
+    console.info("\u{1F4BE} Custom");
+    console.table(O11.clone(customData));
+    console.groupEnd();
+  }
+  logDiff$() {
+    const { After, Before } = this.stateData;
+    if (!After || !Before) return;
+    const diff = O11.diff(Before, After);
+    if (!V13.isEmpty(diff)) {
+      const _a = diff, { profiles = {}, customData = {} } = _a, base = __objRest(_a, ["profiles", "c\
+ustomData"]);
+      console.group("\u{1F4E6} MatchState: Diff");
+      if (!V13.isEmpty(base)) {
+        console.info("\u{1F4BE} Base");
+        console.table(O11.clone(base));
+      }
+      if (!V13.isEmpty(profiles)) {
+        console.info("\u{1F4BE} Profile");
+        console.table(O11.clone(profiles));
+      }
+      if (!V13.isEmpty(customData)) {
+        console.info("\u{1F4BE} Custom");
+        console.table(O11.clone(customData));
+      }
+      console.groupEnd();
+    }
+    this.stateData.After = null;
+    this.stateData.Before = null;
+  }
+};
+var BaseHandler_default = BaseHandler;
+
+// extensions/ludex/src/plugins/match/handlers/NothingHandler.ts
+var NothingHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    await this.nextAsync(matchState);
+  }
+  async nextAsync(matchState) {
+    if (!this.nextHandler) return;
+    await this.nextHandler.processAsync(matchState);
+  }
+};
+var NothingHandler_default = NothingHandler;
+
+// extensions/ludex/src/plugins/match/handlers/analytic/LogMatchStartHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/LevelNotDefined.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var LevelNotDefined = class extends ACreateMatchFailed_default {
+  constructor(message) {
+    super(message);
+    this.name = "LevelNotDefined";
+    this.message = message ?? "Level is not defined";
+  }
+};
+var LevelNotDefined_default = LevelNotDefined;
+
+// extensions/ludex/src/plugins/match/exceptions/MatchModeNotDefined.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var MatchModeNotDefined = class extends ACreateMatchFailed_default {
+  constructor(message) {
+    super(message);
+    this.name = "MatchModeNotDefined";
+    this.message = message ?? "Match id is not defined";
+  }
+};
+var MatchModeNotDefined_default = MatchModeNotDefined;
+
+// extensions/ludex/src/plugins/match/handlers/analytic/LogMatchStartHandler.ts
+var { Plugins: Plugins2, Utils: Utils3 } = Ludex;
+var { Analytics: Analytics2 } = Plugins2;
+var { String: S4, Valid: V14 } = Utils3;
+var LogMatchStartHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const { mode, customData } = matchState;
+    const { level: level2 } = customData;
+    this.validateMode(mode);
+    this.validateLevel(level2);
+    const { analytics } = this.codex;
+    analytics.event(Analytics2.Events.MATCH_START, {
+      level: level2,
+      game_mode: S4.toUpperCamelCase(mode),
+      level_name: this.getLevelName(level2)
+    });
+    await this.nextAsync(matchState);
+  }
+  validateMode(mode) {
+    if (!V14.isString(mode)) {
+      throw new MatchModeNotDefined_default();
+    }
+  }
+  validateLevel(level2) {
+    if (!V14.isNumber(level2)) {
+      throw new LevelNotDefined_default();
+    }
+  }
+  getLevelName(level2) {
+    return `Level ${S4.padStart(level2.toString(), 5, "0")}`;
+  }
+};
+var LogMatchStartHandler_default = LogMatchStartHandler;
+
+// extensions/ludex/src/plugins/match/handlers/context/ContextGameModeHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/constants/MatchStatus.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var MatchStatus = {
+  OPEN: "open",
+  ACTIVE: "active",
+  FINISHED: "finished"
+};
+var MatchStatus_default = MatchStatus;
+
+// extensions/ludex/src/plugins/match/handlers/context/ContextGameModeHandler.ts
+var ContextGameModeHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const { mode, status } = matchState;
+    let gameMode = mode ?? ContextModes_default.SINGLE;
+    if (status === MatchStatus_default.FINISHED) {
+      gameMode = ContextModes_default.SINGLE;
+    }
+    this.contextGameModeDetected(gameMode);
+    await this.nextAsync(matchState);
+  }
+  // TODO: implement this
+  contextGameModeDetected(gameMode) {
+    const { storage } = this.codex;
+    storage.setStorageData("context", "contextGameMode", gameMode);
+  }
+};
+var ContextGameModeHandler_default = ContextGameModeHandler;
+
+// extensions/ludex/src/plugins/match/handlers/match/AwaitMatchHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/GetMatchDetailFailed.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var GetMatchDetailFailed = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "GetMatchDetailFailed";
+    this.message = message ?? "Get match detail failed";
+  }
+};
+var GetMatchDetailFailed_default = GetMatchDetailFailed;
+
+// extensions/ludex/src/plugins/match/exceptions/MatchAreNotActive.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var MatchAreNotActive = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "MatchAreNotActive";
+    this.message = message ?? "Match are not active";
+  }
+};
+var MatchAreNotActive_default = MatchAreNotActive;
+
+// extensions/ludex/src/plugins/match/exceptions/MatchIdNotValid.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var MatchIdNotValid = class extends ACreateMatchFailed_default {
+  constructor(message) {
+    super(message);
+    this.name = "MatchIdNotValid";
+    this.message = message ?? "Match id is not valid";
+  }
+};
+var MatchIdNotValid_default = MatchIdNotValid;
+
+// extensions/ludex/src/plugins/match/exceptions/OpponentHasFinishedMatch.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var OpponentHasFinishedMatch = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "OpponentHasFinishedMatch";
+    this.message = message || "Opponent has finished match";
+  }
+};
+var OpponentHasFinishedMatch_default = OpponentHasFinishedMatch;
+
+// extensions/ludex/src/plugins/match/exceptions/OpponentIdNotValid.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var OpponentIdNotValid = class extends ACreateMatchFailed_default {
+  constructor(message) {
+    super(message);
+    this.name = "OpponentIdNotValid";
+    this.message = message ?? "Opponent id is not valid";
+  }
+};
+var OpponentIdNotValid_default = OpponentIdNotValid;
+
+// extensions/ludex/src/plugins/match/exceptions/PlayerNotCurrentInMatch.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var PlayerNotCurrentInMatch = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "PlayerNotCurrentInMatch";
+    this.message = message ?? "The player is not currently in this match";
+  }
+};
+var PlayerNotCurrentInMatch_default = PlayerNotCurrentInMatch;
+
+// extensions/ludex/src/plugins/match/exceptions/PlayerNotFinishedMatch.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var PlayerNotFinishedMatch = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "PlayerNotFinishedMatch";
+    this.message = message || "Player not finished match";
+  }
+};
+var PlayerNotFinishedMatch_default = PlayerNotFinishedMatch;
+
+// extensions/ludex/src/plugins/match/handlers/match/AwaitMatchHandler.ts
+var {
+  Dtos: Dtos2,
+  Utils: { Object: O12 }
+} = Ludex;
+var AwaitMatchHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateMatchData(matchState);
+    const respMatchData = await this.getMatchAsync(matchState);
+    const respMatchDataValidated = new Dtos2.Match.Data(respMatchData).toObject();
+    this.validateAwaitMatchData(matchState, respMatchDataValidated);
+    this.updateMatchData(matchState, respMatchDataValidated);
+    this.validateMatchStatus(matchState);
+    this.validatePlayerTurn(matchState);
+    this.validateOpponentTurn(matchState);
+    await this.nextAsync(matchState);
+  }
+  validateMatchData(matchState) {
+    const { id } = matchState;
+    if (typeof id !== "string") {
+      throw new MatchIdNotValid_default();
+    }
+  }
+  validateMatchStatus(matchState) {
+    const { status } = matchState;
+    if (status !== MatchStatus_default.ACTIVE) {
+      throw new MatchAreNotActive_default();
+    }
+  }
+  validateAwaitMatchData(matchState, matchData) {
+    const { id, customData } = matchState;
+    const { _id, whitePlayerId, blackPlayerId } = matchData;
+    if (typeof _id !== "string" || _id !== id) {
+      throw new GetMatchDetailFailed_default();
+    }
+    const { playerId: playerId2 } = customData;
+    const isPlayerWhite = whitePlayerId === playerId2;
+    const isPlayerBlack = blackPlayerId === playerId2;
+    if (!isPlayerWhite && blackPlayerId === SampleOpponent_default.playerId) {
+      throw new PlayerNotJoinInMatch_default();
+    }
+    if (!isPlayerWhite && !isPlayerBlack) {
+      throw new PlayerNotCurrentInMatch_default();
+    }
+  }
+  validatePlayerTurn(matchState) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2 } = customData;
+    if (typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    const { finished } = profiles[playerId2];
+    if (!finished) {
+      throw new PlayerNotFinishedMatch_default();
+    }
+  }
+  validateOpponentTurn(matchState) {
+    const { profiles, customData } = matchState;
+    const { opponentId } = customData;
+    if (typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+    const { finished } = profiles[opponentId];
+    if (finished) {
+      throw new OpponentHasFinishedMatch_default();
+    }
+  }
+  async getMatchAsync(matchState) {
+    const { id } = matchState;
+    if (!id) return {};
+    const matchAPI = this.match.api.getMatchAPI();
+    return matchAPI.getMatchDetailByIdAsync(id);
+  }
+  updateMatchData(matchState, matchData) {
+    this.updateMatchGeneral(matchState, matchData);
+    this.updatePlayerIds(matchState, matchData);
+    this.initializeProfiles(matchState);
+    this.updateScoresAndStatus(matchState, matchData);
+  }
+  updateMatchGeneral(matchState, matchData) {
+    const { status, extraData } = matchData;
+    matchState.status = status;
+    matchState.customData = O12.merge(matchState.customData, extraData);
+  }
+  updatePlayerIds(matchState, matchData) {
+    const { whitePlayerId, blackPlayerId } = matchData;
+    const isPlayerWhite = whitePlayerId === matchState.customData.playerId;
+    matchState.customData.playerId = isPlayerWhite ? whitePlayerId : blackPlayerId;
+    matchState.customData.opponentId = isPlayerWhite ? blackPlayerId : whitePlayerId;
+  }
+  initializeProfiles(matchState) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!playerId2 || !opponentId) return;
+    const defaultProfile = {
+      name: "",
+      photo: "",
+      finished: false
+    };
+    if (!matchState.profiles[playerId2]) {
+      matchState.profiles[playerId2] = __spreadValues({ id: playerId2 }, defaultProfile);
+    }
+    if (!matchState.profiles[opponentId]) {
+      matchState.profiles[opponentId] = __spreadValues({ id: opponentId }, defaultProfile);
+    }
+  }
+  updateScoresAndStatus(matchState, matchData) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!playerId2 || !opponentId) return;
+    const { whitePlayerId, whitePlayerScore, whitePlayerFinish, blackPlayerScore, blackPlayerFinish } = matchData;
+    const isPlayerWhite = whitePlayerId === playerId2;
+    matchState.profiles[playerId2].score = isPlayerWhite ? whitePlayerScore : blackPlayerScore;
+    matchState.profiles[opponentId].score = isPlayerWhite ? blackPlayerScore : whitePlayerScore;
+    matchState.profiles[playerId2].finished = isPlayerWhite ? whitePlayerFinish : blackPlayerFinish;
+    matchState.profiles[opponentId].finished = isPlayerWhite ? blackPlayerFinish : whitePlayerFinish;
+  }
+};
+var AwaitMatchHandler_default = AwaitMatchHandler;
+
+// extensions/ludex/src/plugins/match/handlers/match/PrepareMatchHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/data/DefaultCustomData.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var DefaultCustomData = {
+  level: 1,
+  rescued: 0,
+  contextId: null,
+  playerId: null,
+  opponentId: null,
+  tournamentId: null,
+  leaderboardId: null
+};
+var DefaultCustomData_default = DefaultCustomData;
+
+// extensions/ludex/src/plugins/match/handlers/match/PrepareMatchHandler.ts
+var PrepareMatchHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.initializeMatch(matchState);
+    await this.nextAsync(matchState);
+  }
+  initializeMatch(matchState) {
+    const { id, mode, customData } = this.payload;
+    matchState.id = id ?? null;
+    matchState.mode = mode || null;
+    matchState.status = MatchStatus_default.OPEN;
+    matchState.startAt = 0;
+    matchState.finishAt = 0;
+    matchState.profiles = {};
+    matchState.customData = __spreadValues(__spreadValues(__spreadValues({}, DefaultCustomData_default),
+    matchState.customData), customData);
+  }
+};
+var PrepareMatchHandler_default = PrepareMatchHandler;
+
+// extensions/ludex/src/plugins/match/handlers/message/SendAwaitingMessageHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/constants/ContextTypes.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ContextTypes = ContextTypes_default;
+var ContextTypes_default2 = ContextTypes;
+
+// extensions/ludex/src/exceptions/UnavailableFeature.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var UnavailableFeature = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "UnavailableFeature";
+    this.message = `Unavailable feature: ${message}`;
+  }
+};
+var UnavailableFeature_default = UnavailableFeature;
+
+// extensions/ludex/src/plugins/match/exceptions/ContextIdNotValid.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ContextIdNotValid = class extends ACreateMatchFailed_default {
+  constructor(message) {
+    super(message);
+    this.name = "ContextIdNotValid";
+    this.message = message ?? "Context id is not valid";
+  }
+};
+var ContextIdNotValid_default = ContextIdNotValid;
+
+// extensions/ludex/src/plugins/match/exceptions/ProfileNotFound.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ProfileNotFound = class extends ACreateMatchFailed_default {
+  constructor(message) {
+    super(message);
+    this.name = "ProfileNotFound";
+    this.message = message ?? "Profile not found";
+  }
+};
+var ProfileNotFound_default = ProfileNotFound;
+
+// extensions/ludex/src/plugins/match/handlers/message/SendAwaitingMessageHandler.ts
+var SendAwaitingMessageHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateData(matchState);
+    const imageResult = await this.createWideframesAwaitingAsync(matchState);
+    if (imageResult) {
+      this.sendMessageAsync(matchState, imageResult);
+    }
+    await this.nextAsync(matchState);
+  }
+  validateData(matchState) {
+    const { id, customData } = matchState;
+    const { contextId: contextId2, opponentId } = customData;
+    if (!id || typeof id !== "string") {
+      throw new MatchIdNotValid_default();
+    }
+    if (!contextId2 || typeof contextId2 !== "string") {
+      throw new ContextIdNotValid_default();
+    }
+    if (!opponentId || typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+  }
+  // TODO: use other wideframe for awaiting message
+  async createWideframesAwaitingAsync(matchState) {
+    try {
+      const { frameCapture } = this.codex;
+      const { profiles, customData } = matchState;
+      const { playerId: playerId2, opponentId } = customData;
+      if (!playerId2 || !opponentId) return null;
+      const playerProfile = profiles[playerId2];
+      const opponentProfile = profiles[opponentId];
+      if (!playerProfile || !opponentProfile) return null;
+      const { photo: playerPhoto, score: playerScore = 0, finished: playerFinished } = playerProfile;
+      if (!playerFinished) return null;
+      const { photo: opponentPhoto, score: opponentScore = 0, finished: opponentFinished } = opponentProfile;
+      if (opponentFinished) return null;
+      return await frameCapture.renderAsync("result-challenge", {
+        playerId: playerId2,
+        playerPhoto,
+        playerScore,
+        opponentId,
+        opponentPhoto,
+        opponentScore,
+        isPlayerFinished: true,
+        isOpponentFinished: false
+      });
+    } catch (error) {
+      console.warn("createWideframesAwaitingAsync", error);
+      return null;
+    }
+  }
+  async sendMessageAsync(matchState, wideframes) {
+    const { id, profiles, customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    const playerProfile = profiles[playerId2];
+    if (!playerProfile) {
+      throw new ProfileNotFound_default();
+    }
+    const { name: playerName } = playerProfile;
+    const message = {
+      data: {
+        type: ContextTypes_default2.CHALLENGE_FRIEND,
+        matchId: id,
+        playerId: playerId2,
+        opponentId
+      },
+      action: "CUSTOM",
+      template: "challenge",
+      cta: {
+        default: "Play",
+        localizations: {
+          vi_VN: "Ch\u01A1i ngay"
+        }
+      },
+      text: {
+        default: `${playerName} is waiting for you to finish this game. Play now!`,
+        localizations: {
+          vi_VN: `${playerName} \u0111ang ch\u1EDD b\u1EA1n k\u1EBFt th\xFAc tr\u1EADn \u0111\u1EA5u. Ch\u01A1i ngay!`
+        }
+      },
+      image: wideframes,
+      // ? LAST is mean a message draft will be replaced by the latest message
+      strategy: "LAST",
+      notification: "PUSH"
+    };
+    await GameSDK.extra.updateAsync(message);
+  }
+};
+var SendAwaitingMessageHandler_default = SendAwaitingMessageHandler;
+
+// extensions/ludex/src/plugins/match/handlers/profile/GetMatchProfilesHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Dtos: Dtos3 } = Ludex;
+var GetMatchProfilesHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateData(matchState);
+    const { customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    let profileId = playerId2;
+    const playerProfile = await this.getProfile(profileId);
+    if (!playerProfile) {
+      throw new ProfileNotFound_default();
+    }
+    this.updateMatchProfile(matchState, profileId, playerProfile);
+    profileId = opponentId;
+    if (profileId !== SampleOpponent_default.playerId) {
+      const opponentProfile = await this.getProfile(profileId);
+      if (!opponentProfile) {
+        throw new ProfileNotFound_default();
+      }
+      this.updateMatchProfile(matchState, profileId, opponentProfile);
+    } else {
+      this.updateMatchProfile(matchState, profileId);
+    }
+    await this.nextAsync(matchState);
+  }
+  validateData(matchState) {
+    const { customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    if (!opponentId || typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+  }
+  async getProfile(profileId) {
+    const { profile } = this.codex;
+    await profile.requestProfiles([profileId]);
+    const profiles = profile.getProfiles();
+    return profiles[profileId];
+  }
+  updateMatchProfile(matchState, profileId, data) {
+    const { name: name2, photo: photo2 } = data ?? SampleOpponent_default;
+    const profile = new Dtos3.Match.Profile({ id: profileId, name: name2, photo: photo2 }).toObject();
+    if (matchState.profiles[profileId]) {
+      matchState.profiles[profileId].name = profile.name;
+      matchState.profiles[profileId].photo = profile.photo;
+    } else {
+      matchState.profiles[profileId] = profile;
+    }
+  }
+};
+var GetMatchProfilesHandler_default = GetMatchProfilesHandler;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/AwaitChallengeMatchConcrete.ts
+var AwaitChallengeMatchConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { matchId, playerId: playerId2, opponentId } = payload;
+      const flow = new NothingHandler_default(this);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        id: matchId,
+        mode: MatchModes_default.CHALLENGE_FRIEND,
+        customData: {
+          playerId: playerId2,
+          opponentId
+        }
+      });
+      flow.setNext(prepareMatch);
+      const getMatch = new AwaitMatchHandler_default(this);
+      prepareMatch.setNext(getMatch);
+      const getMatchProfiles = new GetMatchProfilesHandler_default(this);
+      getMatch.setNext(getMatchProfiles);
+      const sendMessage = new SendAwaitingMessageHandler_default(this);
+      getMatchProfiles.setNext(sendMessage);
+      const logStart = new LogMatchStartHandler_default(this);
+      sendMessage.setNext(logStart);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      logStart.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var AwaitChallengeMatchConcrete_default = AwaitChallengeMatchConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/ChallengeFriendConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/context/CreateContextHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/CreateContextFailed.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var CreateContextFailed = class extends ACreateMatchFailed_default {
+  constructor(message) {
+    super(message);
+    this.name = "CreateContextFailed";
+    this.message = message ?? "Create context failed";
+  }
+};
+var CreateContextFailed_default = CreateContextFailed;
+
+// extensions/ludex/src/plugins/match/handlers/context/CreateContextHandler.ts
+var { Valid: V15, Object: O13 } = Ludex.Utils;
+var CreateContextHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const { opponentId } = this.payload;
+    const contextId2 = await this.createAsync(opponentId);
+    matchState.customData.contextId = contextId2;
+    await this.nextAsync(matchState);
+  }
+  async createAsync(opponentId) {
+    try {
+      await GameSDK.context.createAsync(opponentId);
+    } catch (error) {
+      this.validateError(error);
+    }
+    const contextId2 = GameSDK.context.getID();
+    if (!V15.isString(contextId2)) {
+      throw new CreateContextFailed_default();
+    }
+    return contextId2;
+  }
+  validateError(error) {
+    if (!O13.hasOwn(error, "code")) throw error;
+    if (error.code === "SAME_CONTEXT") return;
+    if (error.code === "INVALID_PARAM") {
+      if (!this.isNotConnectedPlayerError(error)) {
+        throw error;
+      }
+      return;
+    }
+    throw error;
+  }
+  validateErrorMessage(error) {
+    if (!O13.hasOwn(error, "message")) throw error;
+    if (!V15.isString(error.message)) throw error;
+  }
+  isNotConnectedPlayerError(error) {
+    this.validateErrorMessage(error);
+    return error.message.indexOf("is not a connected player of the current player") > -1;
+  }
+};
+var CreateContextHandler_default = CreateContextHandler;
+
+// extensions/ludex/src/plugins/match/handlers/match/CreateMatchHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/MatchAreNotOpen.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var MatchAreNotOpen = class extends ACreateMatchFailed_default {
+  constructor(message) {
+    super(message);
+    this.name = "MatchAreNotOpen";
+    this.message = message ?? "Match are not open";
+  }
+};
+var MatchAreNotOpen_default = MatchAreNotOpen;
+
+// extensions/ludex/src/plugins/match/handlers/match/CreateMatchHandler.ts
+var {
+  Dtos: Dtos4,
+  Utils: { Object: O14 }
+} = Ludex;
+var CreateMatchHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateData(matchState);
+    const respMatchData = await this.createMatchAsync(matchState);
+    const respMatchDataValidated = new Dtos4.Match.Data(respMatchData).toObject();
+    this.updateMatchState(matchState, respMatchDataValidated);
+    await this.nextAsync(matchState);
+  }
+  validateData(matchState) {
+    const { status, customData } = matchState;
+    const { opponentId } = customData;
+    if (typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+    if (status !== MatchStatus_default.OPEN) {
+      throw new MatchAreNotOpen_default();
+    }
+  }
+  async createMatchAsync(matchState) {
+    const { opponentId } = matchState.customData;
+    const { extraData } = this.payload;
+    if (!opponentId) return {};
+    const payload = {
+      opponentPlayerId: opponentId,
+      extraData
+    };
+    const matchAPI = this.match.api.getMatchAPI();
+    return matchAPI.createMatchAsync(payload);
+  }
+  updateMatchState(matchState, matchData) {
+    this.updateMatchGeneral(matchState, matchData);
+    this.updatePlayerIds(matchState, matchData);
+    this.initializeProfiles(matchState);
+    this.updateFinishStatus(matchState, matchData);
+  }
+  updateMatchGeneral(matchState, matchData) {
+    const { _id, extraData } = matchData;
+    matchState.id = _id || null;
+    matchState.customData = O14.merge(matchState.customData, extraData);
+  }
+  updatePlayerIds(matchState, matchData) {
+    const { whitePlayerId, blackPlayerId } = matchData;
+    const { customData } = matchState;
+    const isOpponentWhite = whitePlayerId === customData.opponentId;
+    const playerId2 = isOpponentWhite ? blackPlayerId : whitePlayerId;
+    const opponentId = isOpponentWhite ? whitePlayerId : blackPlayerId;
+    matchState.customData.playerId = playerId2;
+    matchState.customData.opponentId = opponentId;
+  }
+  initializeProfiles(matchState) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!playerId2 || !opponentId) return;
+    const defaultProfile = {
+      name: "",
+      photo: "",
+      finished: false
+    };
+    if (!matchState.profiles[playerId2]) {
+      matchState.profiles[playerId2] = __spreadValues({ id: playerId2 }, defaultProfile);
+    }
+    if (!matchState.profiles[opponentId]) {
+      matchState.profiles[opponentId] = __spreadValues({ id: opponentId }, defaultProfile);
+    }
+  }
+  updateFinishStatus(matchState, matchData) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!playerId2 || !opponentId) return;
+    const { whitePlayerId, whitePlayerFinish, blackPlayerFinish } = matchData;
+    const isOpponentWhite = whitePlayerId === matchState.customData.opponentId;
+    const playerFinished = isOpponentWhite ? blackPlayerFinish : whitePlayerFinish;
+    const opponentFinished = isOpponentWhite ? whitePlayerFinish : blackPlayerFinish;
+    matchState.profiles[playerId2].finished = playerFinished;
+    matchState.profiles[opponentId].finished = opponentFinished;
+  }
+};
+var CreateMatchHandler_default = CreateMatchHandler;
+
+// extensions/ludex/src/plugins/match/handlers/match/StartMatchHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var StartMatchHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    if (matchState.status !== MatchStatus_default.OPEN) {
+      throw new MatchAreNotOpen_default();
+    }
+    this.startMatch(matchState);
+    await this.nextAsync(matchState);
+  }
+  startMatch(matchState) {
+    matchState.status = MatchStatus_default.ACTIVE;
+    matchState.startAt = Date.now();
+  }
+};
+var StartMatchHandler_default = StartMatchHandler;
+
+// extensions/ludex/src/plugins/match/handlers/message/SendChallengeMessageHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var SendChallengeMessageHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateData(matchState);
+    const imageResult = await this.createWideframesChallengeAsync(matchState);
+    if (imageResult) {
+      this.sendMessageAsync(matchState, imageResult);
+    }
+    await this.nextAsync(matchState);
+  }
+  validateData(matchState) {
+    const { id, customData } = matchState;
+    const { contextId: contextId2, opponentId } = customData;
+    if (!id || typeof id !== "string") {
+      throw new MatchIdNotValid_default();
+    }
+    if (!contextId2 || typeof contextId2 !== "string") {
+      throw new ContextIdNotValid_default();
+    }
+    if (!opponentId || typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+  }
+  async createWideframesChallengeAsync(matchState) {
+    try {
+      const { frameCapture } = this.codex;
+      const { profiles, customData } = matchState;
+      const { playerId: playerId2, opponentId } = customData;
+      if (!playerId2 || !opponentId) return null;
+      const playerProfile = profiles[playerId2];
+      const opponentProfile = profiles[opponentId];
+      if (!playerProfile || !opponentProfile) return null;
+      const { photo: playerPhoto, score: playerScore = 0 } = playerProfile;
+      const { photo: opponentPhoto, score: opponentScore = 0 } = opponentProfile;
+      return await frameCapture.renderAsync("result-challenge", {
+        playerId: playerId2,
+        playerPhoto,
+        playerScore,
+        opponentId,
+        opponentPhoto,
+        opponentScore,
+        isPlayerFinished: false,
+        isOpponentFinished: false
+      });
+    } catch (error) {
+      console.warn("createWideframesChallengeAsync", error);
+      return null;
+    }
+  }
+  async sendMessageAsync(matchState, wideframes) {
+    const { id, profiles, customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    const { name: playerName } = profiles[playerId2];
+    const message = {
+      data: {
+        type: ContextTypes_default2.CHALLENGE_FRIEND,
+        matchId: id,
+        playerId: playerId2,
+        opponentId
+      },
+      action: "CUSTOM",
+      template: "challenge",
+      cta: {
+        default: "Play",
+        localizations: {
+          vi_VN: "Ch\u01A1i ngay"
+        }
+      },
+      text: {
+        default: `${playerName} challenges you`,
+        localizations: {
+          vi_VN: `${playerName} th\u1EED th\xE1ch b\u1EA1n trong tr\u1EADn \u0111\u1EA5u n\xE0y. Ch\u01A1i ngay!`
+        }
+      },
+      image: wideframes,
+      strategy: "IMMEDIATE",
+      notification: "PUSH"
+    };
+    await GameSDK.extra.updateAsync(message);
+  }
+};
+var SendChallengeMessageHandler_default = SendChallengeMessageHandler;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/ChallengeFriendConcrete.ts
+var ChallengeFriendConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { playerId: playerId2, opponentId, extraData } = payload;
+      const flow = new NothingHandler_default(this);
+      const createContext = new CreateContextHandler_default(this, { opponentId });
+      flow.setNext(createContext);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        mode: MatchModes_default.CHALLENGE_FRIEND,
+        customData: {
+          playerId: playerId2,
+          opponentId
+        }
+      });
+      createContext.setNext(prepareMatch);
+      const createMatch = new CreateMatchHandler_default(this, { extraData });
+      prepareMatch.setNext(createMatch);
+      const getMatchProfiles = new GetMatchProfilesHandler_default(this);
+      createMatch.setNext(getMatchProfiles);
+      const startMatch = new StartMatchHandler_default(this);
+      getMatchProfiles.setNext(startMatch);
+      const logStart = new LogMatchStartHandler_default(this);
+      startMatch.setNext(logStart);
+      const sendMessage = new SendChallengeMessageHandler_default(this);
+      logStart.setNext(sendMessage);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      sendMessage.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var ChallengeFriendConcrete_default = ChallengeFriendConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/ContinueChallengeMatchConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/context/SwitchContextHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/SameContext.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var SameContext = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "SameContext";
+    this.message = message ?? "Same context";
+  }
+};
+var SameContext_default = SameContext;
+
+// extensions/ludex/src/plugins/match/handlers/context/SwitchContextHandler.ts
+var { Utils: Utils4 } = Ludex;
+var SwitchContextHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const { contextId: contextId2 } = this.payload;
+    await this.switchAsync(contextId2);
+    matchState.customData.contextId = contextId2;
+    await this.nextAsync(matchState);
+  }
+  checkSameContext(contextId2) {
+    const isSoloContext = contextId2 === "SOLO";
+    const currentContextId = GameSDK.context.getID();
+    if (currentContextId === contextId2) throw new SameContext_default();
+    if (isSoloContext && currentContextId === null) throw new SameContext_default();
+  }
+  async switchAsync(contextId2) {
+    const isSoloContext = contextId2 === "SOLO";
+    try {
+      this.checkSameContext(contextId2);
+      await GameSDK.context.switchAsync(contextId2, isSoloContext);
+    } catch (error) {
+      if (error instanceof SameContext_default) return;
+      if (!Utils4.Object.hasOwn(error, "code")) throw error;
+      const isAndroid = Utils4.Device.isAndroid();
+      if (isAndroid && isSoloContext && error.code === "INVALID_PARAM") return;
+      if (error.code !== "SAME_CONTEXT") throw error;
+    }
+  }
+};
+var SwitchContextHandler_default = SwitchContextHandler;
+
+// extensions/ludex/src/plugins/match/handlers/match/ContinueMatchHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var {
+  Dtos: Dtos5,
+  Utils: { Object: O15 }
+} = Ludex;
+var ContinueMatchHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateMatchData(matchState);
+    const respMatchData = await this.getMatchAsync(matchState);
+    const respMatchDataValidated = new Dtos5.Match.Data(respMatchData).toObject();
+    this.validateContinueMatchData(matchState, respMatchDataValidated);
+    this.updateMatchData(matchState, respMatchDataValidated);
+    this.validatePlayerTurn(matchState);
+    await this.nextAsync(matchState);
+  }
+  validateMatchData(matchState) {
+    const { id, status } = matchState;
+    if (typeof id !== "string") {
+      throw new MatchIdNotValid_default();
+    }
+    if (status !== MatchStatus_default.OPEN) {
+      throw new MatchAreNotOpen_default();
+    }
+  }
+  validateContinueMatchData(matchState, matchData) {
+    const { id, customData } = matchState;
+    const { _id, whitePlayerId, blackPlayerId } = matchData;
+    if (typeof _id !== "string" || _id !== id) {
+      console.warn("\u{1F916} ? respMatchDataValidated", matchData);
+      throw new GetMatchDetailFailed_default();
+    }
+    const { playerId: playerId2 } = customData;
+    const isPlayerWhite = whitePlayerId === playerId2;
+    const isPlayerBlack = blackPlayerId === playerId2;
+    if (!isPlayerWhite && blackPlayerId === SampleOpponent_default.playerId) {
+      throw new PlayerNotJoinInMatch_default();
+    }
+    if (!isPlayerWhite && !isPlayerBlack) {
+      throw new PlayerNotCurrentInMatch_default();
+    }
+  }
+  validatePlayerTurn(matchState) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2 } = customData;
+    if (typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    const { finished } = profiles[playerId2];
+    if (finished) {
+      throw new PlayerHasFinishedMatch_default();
+    }
+  }
+  async getMatchAsync(matchState) {
+    const { id } = matchState;
+    if (!id) return {};
+    const matchAPI = this.match.api.getMatchAPI();
+    return matchAPI.getMatchDetailByIdAsync(id);
+  }
+  updateMatchData(matchState, matchData) {
+    this.updateMatchGeneral(matchState, matchData);
+    this.updatePlayerIds(matchState, matchData);
+    this.initializeProfiles(matchState);
+    this.updateScoresAndStatus(matchState, matchData);
+  }
+  updateMatchGeneral(matchState, matchData) {
+    const { extraData } = matchData;
+    matchState.customData = O15.merge(matchState.customData, extraData);
+  }
+  updatePlayerIds(matchState, matchData) {
+    const { whitePlayerId, blackPlayerId } = matchData;
+    const isPlayerWhite = whitePlayerId === matchState.customData.playerId;
+    matchState.customData.playerId = isPlayerWhite ? whitePlayerId : blackPlayerId;
+    matchState.customData.opponentId = isPlayerWhite ? blackPlayerId : whitePlayerId;
+  }
+  initializeProfiles(matchState) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!playerId2 || !opponentId) return;
+    const defaultProfile = {
+      name: "",
+      photo: "",
+      finished: false
+    };
+    if (!matchState.profiles[playerId2]) {
+      matchState.profiles[playerId2] = __spreadValues({ id: playerId2 }, defaultProfile);
+    }
+    if (!matchState.profiles[opponentId]) {
+      matchState.profiles[opponentId] = __spreadValues({ id: opponentId }, defaultProfile);
+    }
+  }
+  updateScoresAndStatus(matchState, matchData) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!playerId2 || !opponentId) return;
+    const { whitePlayerId, whitePlayerScore, whitePlayerFinish, blackPlayerScore, blackPlayerFinish } = matchData;
+    const isPlayerWhite = whitePlayerId === playerId2;
+    matchState.profiles[playerId2].score = isPlayerWhite ? whitePlayerScore : blackPlayerScore;
+    matchState.profiles[opponentId].score = isPlayerWhite ? blackPlayerScore : whitePlayerScore;
+    matchState.profiles[playerId2].finished = isPlayerWhite ? whitePlayerFinish : blackPlayerFinish;
+    matchState.profiles[opponentId].finished = isPlayerWhite ? blackPlayerFinish : whitePlayerFinish;
+  }
+};
+var ContinueMatchHandler_default = ContinueMatchHandler;
+
+// extensions/ludex/src/plugins/match/handlers/message/SendUpdateMessageHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var SendUpdateMessageHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    if (this.payload.ignore) {
+      await this.nextAsync(matchState);
+      return;
+    }
+    this.validateData(matchState);
+    const imageResult = await this.createWideframesCurrentScoreAsync(matchState);
+    if (imageResult) {
+      this.sendMessageAsync(matchState, imageResult);
+    }
+    await this.nextAsync(matchState);
+  }
+  validateData(matchState) {
+    const { id, customData } = matchState;
+    const { contextId: contextId2, opponentId } = customData;
+    if (!id || typeof id !== "string") {
+      throw new MatchIdNotValid_default();
+    }
+    if (!contextId2 || typeof contextId2 !== "string") {
+      throw new ContextIdNotValid_default();
+    }
+    if (!opponentId || typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+  }
+  async createWideframesCurrentScoreAsync(matchState) {
+    try {
+      const { player, frameCapture } = this.codex;
+      const { playerId: playerId2, photo: playerPhoto } = player.getPlayer();
+      const { opponentId } = matchState.customData;
+      if (opponentId === null || opponentId === void 0) return null;
+      const opponentProfile = matchState.profiles[opponentId];
+      if (!opponentProfile) return null;
+      const opponentPhoto = opponentProfile.photo;
+      return await frameCapture.renderAsync("update-challenge", {
+        playerId: playerId2,
+        playerPhoto,
+        opponentId,
+        opponentPhoto
+      });
+    } catch (error) {
+      console.warn("createWideframesCurrentScoreAsync", error);
+      return null;
+    }
+  }
+  async sendMessageAsync(matchState, wideframes) {
+    const { id, profiles, customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    const playerProfile = profiles[playerId2];
+    if (!playerProfile) {
+      throw new ProfileNotFound_default();
+    }
+    const { name: playerName } = playerProfile;
+    const message = {
+      data: {
+        type: ContextTypes_default2.CHALLENGE_FRIEND,
+        matchId: id,
+        playerId: playerId2,
+        opponentId
+      },
+      action: "CUSTOM",
+      template: "challenge",
+      cta: {
+        default: "Play",
+        localizations: {
+          vi_VN: "Ch\u01A1i ngay"
+        }
+      },
+      text: {
+        default: `${playerName} made an update.`,
+        localizations: {
+          vi_VN: `${playerName} \u0111\xE3 c\u1EADp nh\u1EADt tr\u1EADn \u0111\u1EA5u. Ch\u01A1i ngay!`
+        }
+      },
+      image: wideframes,
+      // ? LAST is mean a message draft will be replaced by the latest message
+      strategy: "LAST",
+      notification: "PUSH"
+    };
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    await GameSDK.extra.updateAsync(message);
+  }
+};
+var SendUpdateMessageHandler_default = SendUpdateMessageHandler;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/ContinueChallengeMatchConcrete.ts
+var ContinueChallengeMatchConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { contextId: contextId2, matchId, playerId: playerId2, opponentId, sendUpdateMessage = true } = payload;
+      const flow = new NothingHandler_default(this);
+      const switchContext = new SwitchContextHandler_default(this, { contextId: contextId2 });
+      flow.setNext(switchContext);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        id: matchId,
+        mode: MatchModes_default.CHALLENGE_FRIEND,
+        customData: {
+          playerId: playerId2,
+          opponentId
+        }
+      });
+      switchContext.setNext(prepareMatch);
+      const continueMatch = new ContinueMatchHandler_default(this);
+      prepareMatch.setNext(continueMatch);
+      const getMatchProfiles = new GetMatchProfilesHandler_default(this);
+      continueMatch.setNext(getMatchProfiles);
+      const startMatch = new StartMatchHandler_default(this);
+      getMatchProfiles.setNext(startMatch);
+      const sendMessage = new SendUpdateMessageHandler_default(this, {
+        ignore: !sendUpdateMessage
+      });
+      startMatch.setNext(sendMessage);
+      const logStart = new LogMatchStartHandler_default(this);
+      sendMessage.setNext(logStart);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      logStart.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var ContinueChallengeMatchConcrete_default = ContinueChallengeMatchConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/FinishChallengeMatchConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/analytic/LogMatchFinishedHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Plugins: Plugins3, Utils: Utils5 } = Ludex;
+var { Analytics: Analytics3 } = Plugins3;
+var { String: S5, Valid: V16 } = Utils5;
+var LogMatchFinishedHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const { customData, mode, startAt, finishAt } = matchState;
+    const { level: level2 } = customData;
+    this.validateMode(mode);
+    this.validateLevel(level2);
+    const { analytics } = this.codex;
+    const seconds = Math.floor((finishAt - startAt) / 1e3);
+    analytics.event(Analytics3.Events.MATCH_END, {
+      level: level2,
+      game_mode: S5.toUpperCamelCase(mode),
+      level_name: this.getLevelName(level2),
+      time_played: seconds
+    });
+    await this.nextAsync(matchState);
+  }
+  validateMode(mode) {
+    if (!V16.isString(mode)) {
+      throw new MatchModeNotDefined_default();
+    }
+  }
+  validateLevel(level2) {
+    if (!V16.isNumber(level2)) {
+      throw new LevelNotDefined_default();
+    }
+  }
+  getLevelName(level2) {
+    return `Level ${S5.padStart(level2.toString(), 5, "0")}`;
+  }
+};
+var LogMatchFinishedHandler_default = LogMatchFinishedHandler;
+
+// extensions/ludex/src/plugins/match/handlers/leaderboard/PostGlobalLeaderboardsScoreHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/LeaderboardNotExist.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var LeaderboardNotExist = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "LeaderboardNotExist";
+    this.message = message ?? "Leaderboard not exist in game";
+  }
+};
+var LeaderboardNotExist_default = LeaderboardNotExist;
+
+// extensions/ludex/src/plugins/match/exceptions/ScoreNotValid.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ScoreNotValid = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "ScoreNotValid";
+    this.message = message ?? "Score is not valid";
+  }
+};
+var ScoreNotValid_default = ScoreNotValid;
+
+// extensions/ludex/src/plugins/match/handlers/leaderboard/PostGlobalLeaderboardsScoreHandler.ts
+var {
+  Utils: { Valid: V17 },
+  Configs: {
+    Leaderboards: { LeaderboardList }
+  }
+} = Ludex;
+var PostGlobalLeaderboardsScoreHandler = class extends BaseHandler_default {
+  payload;
+  skipPostScore;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = { score: 0, playerId: "" };
+    this.skipPostScore = !!payload?.ignore;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    if (this.skipPostScore) {
+      await this.nextAsync(matchState);
+      return;
+    }
+    this.setupSetScorePayload(matchState);
+    if ("submitGameResultsAsync" in GameSDK.extra) {
+      await GameSDK.extra.submitGameResultsAsync(this.payload.score);
+    }
+    for (const LeaderboardConfig of LeaderboardList) {
+      const { Id, Mode } = LeaderboardConfig;
+      if (!matchState.mode || !this.isValidMode(Mode, matchState.mode)) continue;
+      this.setLeaderboardScoreAsync(__spreadValues({
+        leaderboardId: Id
+      }, this.payload));
+    }
+    await this.nextAsync(matchState);
+  }
+  isValidMode(leaderboardMode, matchMode) {
+    return leaderboardMode === matchMode;
+  }
+  async setupSetScorePayload(matchState) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2 } = customData;
+    if (!playerId2 || !profiles[playerId2]) {
+      throw new ProfileNotFound_default();
+    }
+    const { score: score2 } = profiles[playerId2];
+    if (!V17.isNumber(score2)) {
+      throw new ScoreNotValid_default();
+    }
+    this.payload = {
+      score: score2,
+      playerId: playerId2
+    };
+  }
+  async setLeaderboardScoreAsync(payload) {
+    try {
+      const { playerId: playerId2, score: score2, leaderboardId } = payload;
+      const name2 = this.codex.leaderboard.getLeaderboardName(leaderboardId);
+      if (!name2) {
+        throw new LeaderboardNotExist_default();
+      }
+      await this.codex.leaderboard.setLeaderboardScoreAsync(name2, playerId2, score2);
+    } catch (error) {
+      console.warn("setLeaderboardScoreAsync", error);
+    }
+  }
+};
+var PostGlobalLeaderboardsScoreHandler_default = PostGlobalLeaderboardsScoreHandler;
+
+// extensions/ludex/src/plugins/match/handlers/match/FinishMatchHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Dtos: Dtos6, Utils: Utils6 } = Ludex;
+var { Valid: V18, Object: O16 } = Utils6;
+var FinishMatchHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateMatchData(matchState);
+    const { useAPI } = this.payload;
+    if (useAPI) {
+      const respMatchData = await this.finishMatchAsync(matchState);
+      const respMatchDataValidated = new Dtos6.Match.Data(respMatchData).toObject();
+      this.updateMatchFromAPI(matchState, respMatchDataValidated);
+    } else {
+      this.updateMatchData(matchState);
+    }
+    this.updateMatchState(matchState);
+    await this.nextAsync(matchState);
+  }
+  validateMatchData(matchState) {
+    const { status, profiles, customData } = matchState;
+    if (status !== MatchStatus_default.ACTIVE) {
+      throw new MatchAreNotActive_default();
+    }
+    const { playerId: playerId2 } = customData;
+    if (!playerId2 || !O16.hasOwn(profiles, playerId2)) {
+      throw new PlayerNotCurrentInMatch_default();
+    }
+  }
+  updateMatchData(matchState) {
+    const { playerId: playerId2 } = matchState.customData;
+    if (!V18.isString(playerId2)) {
+      throw new PlayerIdNotValid_default();
+    }
+    matchState.profiles[playerId2].finished = true;
+  }
+  updateMatchState(matchState) {
+    matchState.status = MatchStatus_default.FINISHED;
+    matchState.finishAt = Date.now();
+  }
+  async finishMatchAsync(matchState) {
+    const { id, profiles, customData } = matchState;
+    const { level: level2, playerId: playerId2 } = customData;
+    if (!V18.isString(playerId2)) {
+      throw new PlayerIdNotValid_default();
+    }
+    const { score: score2 } = profiles[playerId2];
+    const { extraData } = this.payload;
+    const payload = {
+      matchId: id ?? "",
+      score: score2,
+      level: level2,
+      extraData
+    };
+    const matchAPI = this.match.api.getMatchAPI();
+    return matchAPI.finishMatchAsync(payload);
+  }
+  updateMatchFromAPI(matchState, matchData) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!V18.isString(playerId2)) {
+      throw new PlayerIdNotValid_default();
+    }
+    if (!V18.isString(opponentId)) {
+      throw new OpponentIdNotValid_default();
+    }
+    const { whitePlayerId, whitePlayerScore, blackPlayerScore, whitePlayerFinish, blackPlayerFinish } = matchData;
+    const isPlayerWhite = playerId2 === whitePlayerId;
+    const playerScore = isPlayerWhite ? whitePlayerScore : blackPlayerScore;
+    const opponentScore = isPlayerWhite ? blackPlayerScore : whitePlayerScore;
+    const playerFinish = isPlayerWhite ? whitePlayerFinish : blackPlayerFinish;
+    const opponentFinish = isPlayerWhite ? blackPlayerFinish : whitePlayerFinish;
+    matchState.profiles[playerId2].score = playerScore;
+    matchState.profiles[opponentId].score = opponentScore;
+    matchState.profiles[playerId2].finished = playerFinish;
+    matchState.profiles[opponentId].finished = opponentFinish;
+  }
+};
+var FinishMatchHandler_default = FinishMatchHandler;
+
+// extensions/ludex/src/plugins/match/handlers/message/SendFinishedMessageHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var SendFinishedMessageHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateData(matchState);
+    const imageResult = await this.createWideframesResultAsync(matchState);
+    if (imageResult) {
+      this.progressSendFinishedMessage(matchState, imageResult);
+    }
+    await this.nextAsync(matchState);
+  }
+  validateData(matchState) {
+    const { id, customData } = matchState;
+    const { contextId: contextId2, opponentId } = customData;
+    if (!id || typeof id !== "string") {
+      throw new MatchIdNotValid_default();
+    }
+    if (!contextId2 || typeof contextId2 !== "string") {
+      throw new ContextIdNotValid_default();
+    }
+    if (!opponentId || typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+  }
+  async createWideframesResultAsync(matchState) {
+    try {
+      const { frameCapture } = this.codex;
+      const { profiles, customData } = matchState;
+      const { playerId: playerId2, opponentId } = customData;
+      if (!playerId2 || !opponentId) return null;
+      const playerProfile = profiles[playerId2];
+      const opponentProfile = profiles[opponentId];
+      if (!playerProfile || !opponentProfile) return null;
+      const { photo: playerPhoto, score: playerScore = 0, finished: playerFinished } = playerProfile;
+      const { photo: opponentPhoto, score: opponentScore = 0, finished: opponentFinished } = opponentProfile;
+      return await frameCapture.renderAsync("result-challenge", {
+        playerId: playerId2,
+        playerPhoto,
+        playerScore,
+        opponentId,
+        opponentPhoto,
+        opponentScore,
+        isPlayerFinished: !!playerFinished,
+        isOpponentFinished: !!opponentFinished
+      });
+    } catch (error) {
+      console.warn("createWideframesResultAsync", error);
+      return null;
+    }
+  }
+  progressSendFinishedMessage(matchState, wideframes) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    if (!opponentId || typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+    if (!profiles[playerId2] || !profiles[opponentId]) {
+      throw new ProfileNotFound_default();
+    }
+    const { score: playerScore = 0, finished: playerFinished } = profiles[playerId2];
+    const { score: opponentScore = 0, finished: opponentFinished } = profiles[opponentId];
+    if (playerFinished) {
+      this.sendFinishMessageAsync(matchState, wideframes);
+    } else if (opponentFinished && playerScore > opponentScore) {
+      this.sendBestScoreMessageAsync(matchState, wideframes);
+    } else {
+      this.sendPlayTurnMessageAsync(matchState, wideframes);
+    }
+  }
+  async sendFinishMessageAsync(matchState, wideframes) {
+    const { id, profiles, customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    const playerProfile = profiles[playerId2];
+    if (!playerProfile) {
+      throw new ProfileNotFound_default();
+    }
+    const { name: playerName } = playerProfile;
+    const message = {
+      data: {
+        type: ContextTypes_default2.CHALLENGE_FRIEND,
+        matchId: id,
+        playerId: playerId2,
+        opponentId,
+        status: MatchStatus_default.FINISHED
+      },
+      action: "CUSTOM",
+      template: "finished",
+      cta: {
+        default: "See result",
+        localizations: {
+          vi_VN: "Xem k\u1EBFt qu\u1EA3"
+        }
+      },
+      text: {
+        default: `${playerName} just finished. Check them now.`,
+        localizations: {
+          vi_VN: `${playerName} v\u1EEBa ho\xE0n th\xE0nh m\xE0n ch\u01A1i. Nh\u1EA5n \u0111\u1EC3 xem k\u1EBFt qu\u1EA3 tr\u1EADn \u0111\u1EA5u.`
+        }
+      },
+      image: wideframes,
+      strategy: "IMMEDIATE",
+      notification: "PUSH"
+    };
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    await GameSDK.extra.updateAsync(message);
+  }
+  async sendPlayTurnMessageAsync(matchState, wideframes) {
+    const { id, profiles, customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    const playerProfile = profiles[playerId2];
+    if (!playerProfile) {
+      throw new ProfileNotFound_default();
+    }
+    const { name: playerName, score: playerScore } = playerProfile;
+    const message = {
+      data: {
+        type: ContextTypes_default2.CHALLENGE_FRIEND,
+        matchId: id,
+        playerId: playerId2,
+        opponentId,
+        status: MatchStatus_default.ACTIVE
+      },
+      action: "CUSTOM",
+      template: "finished",
+      cta: {
+        default: "Play",
+        localizations: {
+          vi_VN: "Ch\u01A1i ngay"
+        }
+      },
+      text: {
+        default: `${playerName} got ${playerScore} scores. So easy! Can you?`,
+        localizations: {
+          vi_VN: `${playerName} \u0111\xE3 \u0111\u1EA1t ${playerScore} \u0111i\u1EC3m! Nh\u1EA5n Ch\u01A1i \u0111\u1EC3 so t\xE0i!`
+        }
+      },
+      image: wideframes,
+      strategy: "IMMEDIATE",
+      notification: "PUSH"
+    };
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    await GameSDK.extra.updateAsync(message);
+  }
+  async sendBestScoreMessageAsync(matchState, wideframes) {
+    const { id, profiles, customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    const playerProfile = profiles[playerId2];
+    if (!playerProfile) {
+      throw new ProfileNotFound_default();
+    }
+    const { name: playerName, score: playerScore } = playerProfile;
+    const message = {
+      data: {
+        type: ContextTypes_default2.CHALLENGE_FRIEND,
+        matchId: id,
+        playerId: playerId2,
+        opponentId,
+        status: MatchStatus_default.FINISHED
+      },
+      action: "CUSTOM",
+      template: "pass_score",
+      cta: {
+        default: "See result",
+        localizations: {
+          vi_VN: "Xem k\u1EBFt qu\u1EA3"
+        }
+      },
+      text: {
+        default: `${playerName} beat your high score. Their score: ${playerScore}`,
+        localizations: {
+          vi_VN: `${playerName} \u0111\xE3 v\u01B0\u1EE3t qua \u0111i\u1EC3m s\u1ED1 c\u1EE7a b\u1EA1n, v\u1EDBi ${playerScore}\
+ \u0111i\u1EC3m!`
+        }
+      },
+      image: wideframes,
+      strategy: "IMMEDIATE",
+      notification: "PUSH"
+    };
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    await GameSDK.extra.updateAsync(message);
+  }
+};
+var SendFinishedMessageHandler_default = SendFinishedMessageHandler;
+
+// extensions/ludex/src/plugins/match/handlers/player/SetPlayerBestScoreHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var SetPlayerBestScoreHandler = class extends BaseHandler_default {
+  ignore;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.ignore = !!payload?.ignore;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.setPlayerBestScore(matchState);
+    await this.nextAsync(matchState);
+  }
+  setPlayerBestScore(matchState) {
+    if (this.ignore) return;
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2 } = customData;
+    if (!playerId2 || !profiles[playerId2]) {
+      throw new ProfileNotFound_default();
+    }
+    const { player } = this.codex;
+    const bestScore = player.getBestScore() || 0;
+    const { score: score2 = 0 } = profiles[playerId2];
+    if (score2 <= bestScore) return;
+    player.setBestScore(score2);
+    profiles[playerId2].bestScore = score2;
+  }
+};
+var SetPlayerBestScoreHandler_default = SetPlayerBestScoreHandler;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/FinishChallengeMatchConcrete.ts
+var FinishChallengeMatchConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { extraData } = payload ?? {};
+      const flow = new NothingHandler_default(this);
+      const finishMatch = new FinishMatchHandler_default(this, { useAPI: true, extraData });
+      flow.setNext(finishMatch);
+      const sendMessage = new SendFinishedMessageHandler_default(this);
+      finishMatch.setNext(sendMessage);
+      const logFinish = new LogMatchFinishedHandler_default(this);
+      sendMessage.setNext(logFinish);
+      const setPlayerBestScore = new SetPlayerBestScoreHandler_default(this);
+      logFinish.setNext(setPlayerBestScore);
+      const postLeaderboardsScore = new PostGlobalLeaderboardsScoreHandler_default(this);
+      setPlayerBestScore.setNext(postLeaderboardsScore);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      postLeaderboardsScore.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var FinishChallengeMatchConcrete_default = FinishChallengeMatchConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/InviteFriendsConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/context/challenge/GetOpponentChallengeContextHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/ContextAreSolo.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ContextAreSolo = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "ContextAreSolo";
+    this.message = message ?? "Context are solo";
+  }
+};
+var ContextAreSolo_default = ContextAreSolo;
+
+// extensions/ludex/src/plugins/match/exceptions/ContextNotChallenge.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ContextNotChallenge = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "ContextNotChallenge";
+    this.message = message ?? "Context is not a challenge";
+  }
+};
+var ContextNotChallenge_default = ContextNotChallenge;
+
+// extensions/ludex/src/plugins/match/exceptions/NetworkFailure.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var NetworkFailure = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "NetworkFailure";
+    this.message = message ?? "Network failure";
+  }
+};
+var NetworkFailure_default = NetworkFailure;
+
+// extensions/ludex/src/plugins/match/handlers/context/challenge/GetOpponentChallengeContextHandler.ts
+var { Utils: Utils7, Dtos: Dtos7 } = Ludex;
+var { Array: A6, Object: O17 } = Utils7;
+var GetOpponentChallengeContextHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.checkCurrentContext();
+    const opponentId = await this.getOpponentIdFromContextAsync();
+    matchState.customData.opponentId = opponentId;
+    await this.nextAsync(matchState);
+  }
+  checkCurrentContext() {
+    const contextId2 = GameSDK.context.getID();
+    if (typeof contextId2 !== "string") {
+      throw new ContextIdNotValid_default();
+    }
+    if (contextId2 === "SOLO") {
+      throw new ContextAreSolo_default();
+    }
+  }
+  async getOpponentIdFromContextAsync() {
+    const { ignoreId } = this.payload;
+    const players = await this.getContextPlayers([ignoreId]);
+    if (players.length > 1) {
+      throw new ContextNotChallenge_default();
+    }
+    let opponent = SampleOpponent_default;
+    if (players.length === 1) {
+      opponent = players[0];
+    }
+    return opponent.playerId;
+  }
+  async getContextPlayers(ignorePlayers) {
+    try {
+      const playersData = await GameSDK.context.getPlayersAsync();
+      const players = [];
+      for (const player of playersData) {
+        const playerId2 = player.getID();
+        if (ignorePlayers.indexOf(playerId2) > -1) continue;
+        const name2 = player.getName();
+        if (!name2) continue;
+        const photo2 = player.getPhoto();
+        players.push(new Dtos7.Player.Info({ playerId: playerId2, name: name2, photo: photo2 }).toObject());
+      }
+      return A6.unique(players);
+    } catch (error) {
+      if (O17.hasOwn(error, "code") && error.code === "NETWORK_FAILURE") {
+        throw new NetworkFailure_default();
+      }
+      return [];
+    }
+  }
+};
+var GetOpponentChallengeContextHandler_default = GetOpponentChallengeContextHandler;
+
+// extensions/ludex/src/plugins/match/handlers/context/friend/ChooseContextHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/ContextIsTournament.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ContextIsTournament = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "ContextIsTournament";
+    this.message = message ?? "Context is a tournament";
+  }
+};
+var ContextIsTournament_default = ContextIsTournament;
+
+// extensions/ludex/src/plugins/match/handlers/context/friend/ChooseContextHandler.ts
+var { Object: O18 } = Ludex.Utils;
+var ChooseContextHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const contextId2 = await this.chooseAsync();
+    await this.checkContextTournament();
+    matchState.customData.contextId = contextId2;
+    await this.nextAsync(matchState);
+  }
+  async chooseAsync() {
+    try {
+      await GameSDK.context.chooseAsync({
+        filters: ["INCLUDE_EXISTING_CHALLENGES"],
+        minSize: 2,
+        maxSize: 2
+      });
+    } catch (error) {
+      if (!O18.hasOwn(error, "code")) throw error;
+      if (error.code !== "SAME_CONTEXT") throw error;
+    }
+    const contextId2 = GameSDK.context.getID();
+    if (typeof contextId2 !== "string") {
+      throw new CreateContextFailed_default();
+    }
+    return contextId2;
+  }
+  async checkContextTournament() {
+    try {
+      const contextId2 = GameSDK.context.getID();
+      if (!contextId2) return;
+      if (!("getTournamentAsync" in GameSDK)) {
+        throw new UnavailableFeature_default("getTournamentAsync");
+      }
+      await GameSDK.getTournamentAsync();
+      throw new ContextIsTournament_default();
+    } catch (error) {
+      if (error instanceof ContextIsTournament_default) throw error;
+    }
+  }
+};
+var ChooseContextHandler_default = ChooseContextHandler;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/InviteFriendsConcrete.ts
+var InviteFriendsConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { playerId: playerId2, extraData } = payload;
+      const flow = new NothingHandler_default(this);
+      const chooseContext = new ChooseContextHandler_default(this);
+      flow.setNext(chooseContext);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        mode: MatchModes_default.CHALLENGE_FRIEND,
+        customData: {
+          playerId: playerId2
+        }
+      });
+      chooseContext.setNext(prepareMatch);
+      const getOpponentId = new GetOpponentChallengeContextHandler_default(this, {
+        ignoreId: playerId2
+      });
+      prepareMatch.setNext(getOpponentId);
+      const createMatch = new CreateMatchHandler_default(this, { extraData });
+      getOpponentId.setNext(createMatch);
+      const getMatchProfiles = new GetMatchProfilesHandler_default(this);
+      createMatch.setNext(getMatchProfiles);
+      const startMatch = new StartMatchHandler_default(this);
+      getMatchProfiles.setNext(startMatch);
+      const logStart = new LogMatchStartHandler_default(this);
+      startMatch.setNext(logStart);
+      const sendMessage = new SendChallengeMessageHandler_default(this);
+      logStart.setNext(sendMessage);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      sendMessage.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var InviteFriendsConcrete_default = InviteFriendsConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/JoinChallengeMatchConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/match/JoinMatchHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/JoinMatchFailed.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var JoinMatchFailed = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "JoinMatchFailed";
+    this.message = message ?? "Join match failed";
+  }
+};
+var JoinMatchFailed_default = JoinMatchFailed;
+
+// extensions/ludex/src/plugins/match/exceptions/MatchAreFinished.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var MatchAreFinished = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "MatchAreFinished";
+    this.message = message ?? "Match are finished";
+  }
+};
+var MatchAreFinished_default = MatchAreFinished;
+
+// extensions/ludex/src/plugins/match/exceptions/OtherPlayerHasJoinedMatch.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var OtherPlayerHasJoinedMatch = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "OtherPlayerHasJoinedMatch";
+    this.message = message ?? "Other player has joined match";
+  }
+};
+var OtherPlayerHasJoinedMatch_default = OtherPlayerHasJoinedMatch;
+
+// extensions/ludex/src/plugins/match/handlers/match/JoinMatchHandler.ts
+var {
+  Dtos: Dtos8,
+  Utils: { Object: O19 }
+} = Ludex;
+var JoinMatchHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateMatchData(matchState);
+    const respMatchData = await this.joinMatchAsync(matchState);
+    const respMatchDataValidated = new Dtos8.Match.Data(respMatchData).toObject();
+    this.validateJoinMatchData(matchState, respMatchDataValidated);
+    this.updateMatchData(matchState, respMatchDataValidated);
+    await this.nextAsync(matchState);
+  }
+  validateMatchData(matchState) {
+    const { status } = matchState;
+    if (status !== MatchStatus_default.OPEN) {
+      throw new MatchAreNotOpen_default();
+    }
+  }
+  validateJoinMatchData(matchState, matchData) {
+    const { id, customData } = matchState;
+    const { _id, blackPlayerId, whitePlayerId, whitePlayerFinish, blackPlayerFinish } = matchData;
+    const isPlayerBlack = blackPlayerId === customData.playerId;
+    const isPlayerWhite = whitePlayerId === customData.opponentId;
+    if (typeof _id !== "string" || _id !== id || !isPlayerWhite) {
+      console.warn("\u{1F916} ? matchData", matchData);
+      throw new JoinMatchFailed_default();
+    }
+    const isMatchFinished = whitePlayerFinish && blackPlayerFinish;
+    if (isMatchFinished) {
+      throw new MatchAreFinished_default();
+    }
+    if (!isPlayerBlack) {
+      throw new OtherPlayerHasJoinedMatch_default();
+    }
+  }
+  async joinMatchAsync(matchState) {
+    const { id } = matchState;
+    if (!id) return {};
+    const matchAPI = this.match.api.getMatchAPI();
+    return matchAPI.joinMatchAsync(id);
+  }
+  updateMatchData(matchState, matchData) {
+    this.updateMatchGeneral(matchState, matchData);
+    this.updatePlayerIds(matchState, matchData);
+    this.initializeProfiles(matchState);
+    this.updateScoresAndStatus(matchState, matchData);
+  }
+  updateMatchGeneral(matchState, matchData) {
+    const { extraData } = matchData;
+    matchState.customData = O19.merge(matchState.customData, extraData);
+  }
+  updatePlayerIds(matchState, matchData) {
+    const { whitePlayerId, blackPlayerId } = matchData;
+    const { customData } = matchState;
+    const isPlayerWhite = whitePlayerId === customData.playerId;
+    const playerId2 = isPlayerWhite ? whitePlayerId : blackPlayerId;
+    const opponentId = isPlayerWhite ? blackPlayerId : whitePlayerId;
+    matchState.customData.playerId = playerId2;
+    matchState.customData.opponentId = opponentId;
+  }
+  initializeProfiles(matchState) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!playerId2 || !opponentId) return;
+    const defaultProfile = {
+      name: "",
+      photo: "",
+      finished: false
+    };
+    if (!matchState.profiles[playerId2]) {
+      matchState.profiles[playerId2] = __spreadValues({ id: playerId2 }, defaultProfile);
+    }
+    if (!matchState.profiles[opponentId]) {
+      matchState.profiles[opponentId] = __spreadValues({ id: opponentId }, defaultProfile);
+    }
+  }
+  updateScoresAndStatus(matchState, matchData) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!playerId2 || !opponentId) return;
+    const { whitePlayerId, whitePlayerScore, whitePlayerFinish, blackPlayerScore, blackPlayerFinish } = matchData;
+    const isPlayerWhite = whitePlayerId === matchState.customData.playerId;
+    matchState.profiles[playerId2].score = isPlayerWhite ? whitePlayerScore : blackPlayerScore;
+    matchState.profiles[opponentId].score = isPlayerWhite ? blackPlayerScore : whitePlayerScore;
+    matchState.profiles[playerId2].finished = isPlayerWhite ? whitePlayerFinish : blackPlayerFinish;
+    matchState.profiles[opponentId].finished = isPlayerWhite ? blackPlayerFinish : whitePlayerFinish;
+  }
+};
+var JoinMatchHandler_default = JoinMatchHandler;
+
+// extensions/ludex/src/plugins/match/handlers/message/SendAcceptedMessageHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var SendAcceptedMessageHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateData(matchState);
+    const imageResult = await this.createWideframesAcceptedAsync(matchState);
+    if (imageResult) {
+      this.sendMessageAsync(matchState, imageResult);
+    }
+    await this.nextAsync(matchState);
+  }
+  validateData(matchState) {
+    const { id, customData } = matchState;
+    const { contextId: contextId2, opponentId } = customData;
+    if (!id || typeof id !== "string") {
+      throw new MatchIdNotValid_default();
+    }
+    if (!contextId2 || typeof contextId2 !== "string") {
+      throw new ContextIdNotValid_default();
+    }
+    if (!opponentId || typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+  }
+  // TODO: use other wideframe for accepted message
+  async createWideframesAcceptedAsync(matchState) {
+    try {
+      const { frameCapture } = this.codex;
+      const { profiles, customData } = matchState;
+      const { playerId: playerId2, opponentId } = customData;
+      if (!playerId2 || !opponentId) return null;
+      const playerProfile = profiles[playerId2];
+      const opponentProfile = profiles[opponentId];
+      if (!playerProfile || !opponentProfile) return null;
+      const { photo: playerPhoto, score: playerScore = 0, finished: playerFinished } = playerProfile;
+      if (playerFinished) return null;
+      const { photo: opponentPhoto, score: opponentScore = 0, finished: opponentFinished } = opponentProfile;
+      if (!opponentFinished) return null;
+      return await frameCapture.renderAsync("result-challenge", {
+        playerId: playerId2,
+        playerPhoto,
+        playerScore,
+        opponentId,
+        opponentPhoto,
+        opponentScore,
+        isPlayerFinished: false,
+        isOpponentFinished: true
+      });
+    } catch (error) {
+      console.warn("createWideframesAcceptedAsync", error);
+      return null;
+    }
+  }
+  async sendMessageAsync(matchState, wideframes) {
+    const { id, profiles, customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    const playerProfile = profiles[playerId2];
+    if (!playerProfile) {
+      throw new ProfileNotFound_default();
+    }
+    const { name: playerName } = playerProfile;
+    const message = {
+      data: {
+        type: ContextTypes_default2.CHALLENGE_FRIEND,
+        matchId: id,
+        playerId: playerId2,
+        opponentId
+      },
+      action: "CUSTOM",
+      template: "challenge",
+      cta: {
+        default: "Play",
+        localizations: {
+          vi_VN: "Ch\u01A1i ngay"
+        }
+      },
+      text: {
+        default: `${playerName} accepted the challenge.`,
+        localizations: {
+          vi_VN: `${playerName} \u0111\xE3 ch\u1EA5p nh\u1EADn tham gia tr\u1EADn \u0111\u1EA5u.`
+        }
+      },
+      image: wideframes,
+      // ? LAST is mean a message draft will be replaced by the latest message
+      strategy: "LAST",
+      notification: "PUSH"
+    };
+    await GameSDK.extra.updateAsync(message);
+  }
+};
+var SendAcceptedMessageHandler_default = SendAcceptedMessageHandler;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/JoinChallengeMatchConcrete.ts
+var JoinChallengeMatchConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { matchId, playerId: playerId2, opponentId } = payload;
+      const flow = new NothingHandler_default(this);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        id: matchId,
+        mode: MatchModes_default.CHALLENGE_FRIEND,
+        customData: {
+          playerId: playerId2,
+          opponentId
+        }
+      });
+      flow.setNext(prepareMatch);
+      const getMatch = new JoinMatchHandler_default(this);
+      prepareMatch.setNext(getMatch);
+      const getMatchProfiles = new GetMatchProfilesHandler_default(this);
+      getMatch.setNext(getMatchProfiles);
+      const startMatch = new StartMatchHandler_default(this);
+      getMatchProfiles.setNext(startMatch);
+      const sendMessage = new SendAcceptedMessageHandler_default(this);
+      startMatch.setNext(sendMessage);
+      const logStart = new LogMatchStartHandler_default(this);
+      sendMessage.setNext(logStart);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      logStart.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var JoinChallengeMatchConcrete_default = JoinChallengeMatchConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/ResultChallengeMatchConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/match/ResultMatchHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/dtos/RespMatchDataDtos.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/data/DefaultRespMatchDataDtos.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var DefaultRespMatchDataDtos = {
+  _id: "",
+  status: "",
+  appId: "",
+  createdAt: "",
+  startedAt: null,
+  finishedAt: null,
+  winnerId: "",
+  whitePlayerId: "",
+  blackPlayerId: "",
+  whitePlayerScore: 0,
+  blackPlayerScore: 0,
+  whitePlayerFinish: false,
+  blackPlayerFinish: false,
+  extraData: {}
+};
+var DefaultRespMatchDataDtos_default = DefaultRespMatchDataDtos;
+
+// extensions/ludex/src/plugins/match/dtos/RespMatchDataDtos.ts
+var {
+  Configs: { AppId: AppId3 },
+  Utils: { Valid: V19 }
+} = Ludex;
+var MESSAGE_INVALID4 = "is invalid";
+var RespMatchDataDtos = class extends BaseDtos_default {
+  setupData(data) {
+    this.lazySetupData$(data);
+  }
+  validateStructure$(data) {
+    this.lazyValidateStructure$(data);
+  }
+  validateData$(data) {
+    this.lazyValidateData$(data);
+  }
+  // * Special validation
+  // ? Field names with special characters will be automatically removed.
+  // For example, _id becomes id => validateId.
+  validateId(_id) {
+    if (!V19.isString(_id) || !_id) {
+      this.exception$("_id", MESSAGE_INVALID4);
+    }
+  }
+  validateStatus(status) {
+    if (!V19.isString(status) || !status) {
+      this.exception$("status", MESSAGE_INVALID4);
+    }
+  }
+  validateAppId(appId) {
+    if (!V19.isString(appId) || appId !== AppId3) {
+      this.exception$("appId", MESSAGE_INVALID4);
+    }
+  }
+  validateCreatedAt(createdAt) {
+    if (!V19.isString(createdAt)) {
+      this.exception$("createdAt", MESSAGE_INVALID4);
+    }
+  }
+  validateStartedAt(startedAt) {
+    if (startedAt === null) return;
+    if (!V19.isString(startedAt)) {
+      this.exception$("startedAt", MESSAGE_INVALID4);
+    }
+  }
+  validateFinishedAt(finishedAt) {
+    if (finishedAt === null) return;
+    if (!V19.isString(finishedAt)) {
+      this.exception$("finishedAt", MESSAGE_INVALID4);
+    }
+  }
+  validateExtraData(extraData) {
+    if (extraData === null) return;
+    if (!V19.isObject(extraData)) {
+      this.exception$("extraData", MESSAGE_INVALID4);
+    }
+  }
+  validateWinnerId(winnerId) {
+    if (winnerId === null) return;
+    if (!V19.isString(winnerId) || !winnerId) {
+      this.exception$("winnerId", MESSAGE_INVALID4);
+    }
+  }
+  validateWhitePlayerId(whitePlayerId) {
+    if (!V19.isString(whitePlayerId) || !whitePlayerId) {
+      this.exception$("whitePlayerId", MESSAGE_INVALID4);
+    }
+  }
+  validateBlackPlayerId(blackPlayerId) {
+    if (!V19.isString(blackPlayerId) || !blackPlayerId) {
+      this.exception$("blackPlayerId", MESSAGE_INVALID4);
+    }
+  }
+  validateWhitePlayerScore(whitePlayerScore) {
+    if (!V19.isNumber(whitePlayerScore)) {
+      this.exception$("whitePlayerScore", MESSAGE_INVALID4);
+    }
+  }
+  validateBlackPlayerScore(blackPlayerScore) {
+    if (!V19.isNumber(blackPlayerScore)) {
+      this.exception$("blackPlayerScore", MESSAGE_INVALID4);
+    }
+  }
+  validateWhitePlayerFinish(whitePlayerFinish) {
+    if (!V19.isBoolean(whitePlayerFinish)) {
+      this.exception$("whitePlayerFinish", MESSAGE_INVALID4);
+    }
+  }
+  validateBlackPlayerFinish(blackPlayerFinish) {
+    if (!V19.isBoolean(blackPlayerFinish)) {
+      this.exception$("blackPlayerFinish", MESSAGE_INVALID4);
+    }
+  }
+  toObject() {
+    return super.toObject();
+  }
+};
+RespMatchDataDtos.makeStrict();
+RespMatchDataDtos.addDefaultData(DefaultRespMatchDataDtos_default);
+var RespMatchDataDtos_default = RespMatchDataDtos;
+
+// extensions/ludex/src/plugins/match/exceptions/MatchAreNotFinished.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var MatchAreNotFinished = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "MatchAreNotFinished";
+    this.message = message || "Match are not finished";
+  }
+};
+var MatchAreNotFinished_default = MatchAreNotFinished;
+
+// extensions/ludex/src/plugins/match/exceptions/OpponentNotFinishedMatch.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var OpponentNotFinishedMatch = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "OpponentNotFinishedMatch";
+    this.message = message || "Opponent not finished match";
+  }
+};
+var OpponentNotFinishedMatch_default = OpponentNotFinishedMatch;
+
+// extensions/ludex/src/plugins/match/handlers/match/ResultMatchHandler.ts
+var {
+  Utils: { Object: O20 }
+} = Ludex;
+var ResultMatchHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateMatchData(matchState);
+    const respMatchData = await this.getMatchAsync(matchState);
+    const respMatchDataValidated = new RespMatchDataDtos_default(respMatchData).toObject();
+    this.validateResultMatchData(matchState, respMatchDataValidated);
+    this.updateMatchData(matchState, respMatchDataValidated);
+    this.validatePlayerTurn(matchState);
+    this.validateOpponentTurn(matchState);
+    await this.nextAsync(matchState);
+  }
+  validateMatchData(matchState) {
+    const { id } = matchState;
+    if (typeof id !== "string") {
+      throw new MatchIdNotValid_default();
+    }
+  }
+  validateResultMatchData(matchState, matchData) {
+    const { id } = matchState;
+    const { _id, whitePlayerFinish, blackPlayerFinish } = matchData;
+    if (typeof _id !== "string" || _id !== id) {
+      throw new GetMatchDetailFailed_default();
+    }
+    if (!whitePlayerFinish && !blackPlayerFinish) {
+      throw new MatchAreNotFinished_default();
+    }
+  }
+  validatePlayerTurn(matchState) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2 } = customData;
+    if (typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    const { finished } = profiles[playerId2];
+    if (!finished) {
+      throw new PlayerNotFinishedMatch_default();
+    }
+  }
+  validateOpponentTurn(matchState) {
+    const { profiles, customData } = matchState;
+    const { opponentId } = customData;
+    if (typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+    const { finished } = profiles[opponentId];
+    if (!finished) {
+      throw new OpponentNotFinishedMatch_default();
+    }
+  }
+  async getMatchAsync(matchState) {
+    const { id } = matchState;
+    if (!id) return null;
+    const matchAPI = this.match.api.getMatchAPI();
+    return matchAPI.getMatchDetailByIdAsync(id);
+  }
+  updateMatchData(matchState, matchData) {
+    this.updateMatchGeneral(matchState, matchData);
+    this.updatePlayerIds(matchState, matchData);
+    this.initializeProfiles(matchState);
+    this.updateScoresAndStatus(matchState, matchData);
+  }
+  updateMatchGeneral(matchState, matchData) {
+    const { extraData } = matchData;
+    matchState.status = MatchStatus_default.FINISHED;
+    matchState.customData = O20.merge(matchState.customData, extraData);
+  }
+  updatePlayerIds(matchState, matchData) {
+    const { whitePlayerId, blackPlayerId } = matchData;
+    const { customData } = matchState;
+    const isPlayerWhite = whitePlayerId === customData.playerId;
+    const playerId2 = isPlayerWhite ? whitePlayerId : blackPlayerId;
+    const opponentId = isPlayerWhite ? blackPlayerId : whitePlayerId;
+    matchState.customData.playerId = playerId2;
+    matchState.customData.opponentId = opponentId;
+  }
+  initializeProfiles(matchState) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!playerId2 || !opponentId) return;
+    const defaultProfile = {
+      name: "",
+      photo: "",
+      finished: true
+    };
+    if (!matchState.profiles[playerId2]) {
+      matchState.profiles[playerId2] = __spreadValues({ id: playerId2 }, defaultProfile);
+    }
+    if (!matchState.profiles[opponentId]) {
+      matchState.profiles[opponentId] = __spreadValues({ id: opponentId }, defaultProfile);
+    }
+  }
+  updateScoresAndStatus(matchState, matchData) {
+    const { playerId: playerId2, opponentId } = matchState.customData;
+    if (!playerId2 || !opponentId) return;
+    const { whitePlayerId, whitePlayerScore, whitePlayerFinish, blackPlayerScore, blackPlayerFinish } = matchData;
+    const isPlayerWhite = whitePlayerId === matchState.customData.playerId;
+    matchState.profiles[playerId2].score = isPlayerWhite ? whitePlayerScore : blackPlayerScore;
+    matchState.profiles[opponentId].score = isPlayerWhite ? blackPlayerScore : whitePlayerScore;
+    matchState.profiles[playerId2].finished = isPlayerWhite ? whitePlayerFinish : blackPlayerFinish;
+    matchState.profiles[opponentId].finished = isPlayerWhite ? blackPlayerFinish : whitePlayerFinish;
+  }
+};
+var ResultMatchHandler_default = ResultMatchHandler;
+
+// extensions/ludex/src/plugins/match/concretes/challenge/ResultChallengeMatchConcrete.ts
+var ResultChallengeMatchConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { matchId, playerId: playerId2, opponentId } = payload;
+      const flow = new NothingHandler_default(this);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        id: matchId,
+        mode: MatchModes_default.CHALLENGE_FRIEND,
+        customData: {
+          playerId: playerId2,
+          opponentId
+        }
+      });
+      flow.setNext(prepareMatch);
+      const getMatch = new ResultMatchHandler_default(this);
+      prepareMatch.setNext(getMatch);
+      const getMatchProfiles = new GetMatchProfilesHandler_default(this);
+      getMatch.setNext(getMatchProfiles);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      getMatchProfiles.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var ResultChallengeMatchConcrete_default = ResultChallengeMatchConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/context/ChooseContextConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ChooseContextConcrete = class extends BaseConcrete_default {
+  fallbackSingleMode;
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { playerId: playerId2, extraData, fallbackSingleMode } = payload;
+      this.fallbackSingleMode = fallbackSingleMode;
+      const response = await this.startFLowChallengeFriend({
+        playerId: playerId2,
+        extraData
+      });
+      if (response === true) return;
+      if (response instanceof ContextIsTournament_default) {
+        await this.startFlowTournament(playerId2);
+      } else {
+        if (this.fallbackSingleMode) {
+          await this.startFlowSingle(playerId2);
+        } else {
+          throw response;
+        }
+      }
+    } finally {
+      this.endLog();
+    }
+  }
+  startFLowChallengeFriend = async (payload) => {
+    try {
+      await this.match.challenge.invite.processAsync(payload);
+      return true;
+    } catch (error) {
+      return error;
+    }
+  };
+  startFlowTournament = async (playerId2) => {
+    try {
+      const contextId2 = GameSDK.context.getID();
+      if (typeof contextId2 !== "string") {
+        throw new ContextIdNotValid_default();
+      }
+      await this.match.tournament.continue.processAsync({ playerId: playerId2, contextId: contextId2 });
+    } catch (error) {
+      await this.startFlowSingle(playerId2);
+    }
+  };
+  startFlowSingle = async (playerId2) => {
+    return this.match.single.start.processAsync({ playerId: playerId2 });
+  };
+};
+var ChooseContextConcrete_default = ChooseContextConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/group/FinishGroupConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/leaderboard/PostLeaderboardScoreHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/LeaderboardIdNotValid.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var LeaderboardIdNotValid = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "LeaderboardIdNotValid";
+    this.message = message ?? "Leaderboard id is not valid";
+  }
+};
+var LeaderboardIdNotValid_default = LeaderboardIdNotValid;
+
+// extensions/ludex/src/plugins/match/handlers/leaderboard/SetLeaderboardScoreHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Valid: V20 } = Ludex.Utils;
+var SetLeaderboardScoreHandler = class extends BaseHandler_default {
+  payload;
+  leaderboardPayload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.setupSetScorePayload(matchState);
+    if ("submitGameResultsAsync" in GameSDK.extra) {
+      await GameSDK.extra.submitGameResultsAsync(this.payload.score);
+    }
+    this.setLeaderboardScoreAsync();
+    await this.nextAsync(matchState);
+  }
+  async setupSetScorePayload(matchState) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2 } = customData;
+    if (!playerId2 || !profiles[playerId2]) {
+      throw new ProfileNotFound_default();
+    }
+    const { score: score2, leaderboardId } = this.payload;
+    if (!V20.isNumber(score2)) {
+      throw new ScoreNotValid_default();
+    }
+    if (!V20.isString(leaderboardId)) {
+      throw new LeaderboardIdNotValid_default();
+    }
+    this.leaderboardPayload = {
+      score: score2,
+      playerId: playerId2,
+      leaderboardId
+    };
+  }
+  async setLeaderboardScoreAsync() {
+    try {
+      const { playerId: playerId2, score: score2, leaderboardId } = this.leaderboardPayload;
+      const name2 = this.codex.leaderboard.getLeaderboardName(leaderboardId);
+      if (!name2) {
+        throw new LeaderboardNotExist_default();
+      }
+      await this.codex.leaderboard.setLeaderboardScoreAsync(name2, playerId2, score2);
+    } catch (error) {
+      console.warn("setLeaderboardScoreAsync", error);
+    }
+  }
+};
+var SetLeaderboardScoreHandler_default = SetLeaderboardScoreHandler;
+
+// extensions/ludex/src/plugins/match/handlers/leaderboard/PostLeaderboardScoreHandler.ts
+var {
+  Utils: { Valid: V21 }
+} = Ludex;
+var PostLeaderboardScoreHandler = class extends SetLeaderboardScoreHandler_default {
+  constructor(concrete) {
+    super(concrete, { score: 0, leaderboardId: "" });
+  }
+  async setupSetScorePayload(matchState) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2, leaderboardId } = customData;
+    if (!leaderboardId) {
+      throw new LeaderboardIdNotValid_default();
+    }
+    if (!playerId2 || !profiles[playerId2]) {
+      throw new ProfileNotFound_default();
+    }
+    const { score: score2 } = profiles[playerId2];
+    if (!V21.isNumber(score2)) {
+      throw new ScoreNotValid_default();
+    }
+    this.payload.score = score2;
+    this.payload.leaderboardId = leaderboardId;
+    super.setupSetScorePayload(matchState);
+  }
+};
+var PostLeaderboardScoreHandler_default = PostLeaderboardScoreHandler;
+
+// extensions/ludex/src/plugins/match/handlers/message/SendGroupMessageHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var SendGroupMessageHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateData(matchState);
+    this.progressSendGroupMessage(matchState);
+    await this.nextAsync(matchState);
+  }
+  validateData(matchState) {
+    const { id, customData } = matchState;
+    const { contextId: contextId2, opponentId } = customData;
+    if (!id || typeof id !== "string") {
+      throw new MatchIdNotValid_default();
+    }
+    if (!contextId2 || typeof contextId2 !== "string") {
+      throw new ContextIdNotValid_default();
+    }
+    if (!opponentId || typeof opponentId !== "string") {
+      throw new OpponentIdNotValid_default();
+    }
+  }
+  async createWideframesResultGroupAsync(matchState) {
+    try {
+      const { frameCapture } = this.codex;
+      const { profiles, customData } = matchState;
+      const { playerId: playerId2, opponentId } = customData;
+      if (!playerId2 || !opponentId) return null;
+      const playerProfile = profiles[playerId2];
+      const opponentProfile = profiles[opponentId];
+      if (!playerProfile || !opponentProfile) return null;
+      const { photo: playerPhoto, score: playerScore = 0 } = playerProfile;
+      const { photo: opponentPhoto, score: opponentScore = 0 } = opponentProfile;
+      return await frameCapture.renderAsync("result-challenge", {
+        playerId: playerId2,
+        playerPhoto,
+        playerScore,
+        opponentId,
+        opponentPhoto,
+        opponentScore,
+        isPlayerFinished: true,
+        isOpponentFinished: true
+      });
+    } catch (error) {
+      console.warn("createWideframesResultGroupAsync", error);
+      return null;
+    }
+  }
+  async createWideframesBestScoreAsync(matchState) {
+    try {
+      const { player, frameCapture } = this.codex;
+      const { playerId: matchPlayerId } = matchState.customData;
+      const { playerId: playerId2, photo: playerPhoto, data } = player.getPlayer();
+      if (matchPlayerId !== playerId2) return null;
+      const { score: playerScore } = data || {};
+      return await frameCapture.renderAsync("share-score", {
+        playerId: playerId2,
+        playerPhoto,
+        playerScore
+      });
+    } catch (error) {
+      console.warn("createWideframesBestScoreAsync", error);
+      return null;
+    }
+  }
+  async progressSendGroupMessage(matchState) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2, opponentId } = customData;
+    if (opponentId && typeof opponentId === "string") {
+      if (!playerId2 || typeof playerId2 !== "string") {
+        throw new PlayerIdNotValid_default();
+      }
+      const playerProfile = profiles[playerId2];
+      const opponentProfile = profiles[opponentId];
+      if (!playerProfile || !opponentProfile) return;
+      const { score: playerScore = 0 } = playerProfile;
+      const { score: opponentScore = 0 } = opponentProfile;
+      if (playerScore > opponentScore) {
+        const imageResult = await this.createWideframesResultGroupAsync(matchState);
+        if (!imageResult) return;
+        this.sendBestScoreMessageAsync(matchState, imageResult);
+        return;
+      }
+    }
+    const imageScore = await this.createWideframesBestScoreAsync(matchState);
+    if (!imageScore) return;
+    this.sendChallengeMessageAsync(matchState, imageScore);
+  }
+  async sendBestScoreMessageAsync(matchState, wideframes) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2 } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    const playerProfile = profiles[playerId2];
+    if (!playerProfile) {
+      throw new ProfileNotFound_default();
+    }
+    const { name: playerName, score: playerScore } = playerProfile;
+    const ContextGameTypes2 = this.codex.context.getSessionContextTypes();
+    const message = {
+      data: {
+        type: ContextGameTypes2.MATCHING_GROUP,
+        playerId: playerId2,
+        playerName,
+        playerScore
+      },
+      action: "CUSTOM",
+      template: "play_turn",
+      cta: {
+        default: "Play",
+        localizations: {
+          vi_VN: "Ch\u01A1i"
+        }
+      },
+      text: {
+        default: `${playerName} beats your high score. Their score: ${playerScore}.`,
+        localizations: {
+          vi_VN: `${playerName} v\u1EEBa v\u01B0\u1EE3t \u0111i\u1EC3m s\u1ED1 cao nh\u1EA5t c\u1EE7a b\u1EA1n! Ch\u01A1i l\u1EA7n n\u1EEFa ch\u1EE9?`
+        }
+      },
+      image: wideframes,
+      strategy: "IMMEDIATE",
+      notification: "PUSH"
+    };
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    await GameSDK.extra.updateAsync(message);
+  }
+  async sendChallengeMessageAsync(matchState, wideframes) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2 } = customData;
+    if (!playerId2 || typeof playerId2 !== "string") {
+      throw new PlayerIdNotValid_default();
+    }
+    const playerProfile = profiles[playerId2];
+    if (!playerProfile) {
+      throw new ProfileNotFound_default();
+    }
+    const { name: playerName, score: playerScore } = playerProfile;
+    const ContextGameTypes2 = this.codex.context.getSessionContextTypes();
+    const message = {
+      data: {
+        type: ContextGameTypes2.MATCHING_GROUP,
+        playerId: playerId2,
+        playerName,
+        playerScore
+      },
+      action: "CUSTOM",
+      template: "play_turn",
+      cta: {
+        default: "Play",
+        localizations: {
+          vi_VN: "Ch\u01A1i ngay"
+        }
+      },
+      text: {
+        default: `${playerName} got ${playerScore} scores. So easy! Can you?`,
+        localizations: {
+          vi_VN: `${playerName} \u0111\xE3 \u0111\u1EA1t ${playerScore} \u0111i\u1EC3m! Qu\xE1 d\u1EC5 lu\xF4n. Ch\u01A1i l\u1EA1i \
+n\xE0o!`
+        }
+      },
+      image: wideframes,
+      strategy: "IMMEDIATE",
+      notification: "PUSH"
+    };
+    if (!("updateAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("updateAsync");
+    }
+    await GameSDK.extra.updateAsync(message);
+  }
+};
+var SendGroupMessageHandler_default = SendGroupMessageHandler;
+
+// extensions/ludex/src/plugins/match/concretes/group/FinishGroupConcrete.ts
+var FinishGroupConcrete = class extends BaseConcrete_default {
+  async processAsync() {
+    try {
+      this.startLog();
+      const flow = new NothingHandler_default(this);
+      const finishMatch = new FinishMatchHandler_default(this, { useAPI: false });
+      flow.setNext(finishMatch);
+      const sendMessage = new SendGroupMessageHandler_default(this);
+      finishMatch.setNext(sendMessage);
+      const logFinish = new LogMatchFinishedHandler_default(this);
+      sendMessage.setNext(logFinish);
+      const setPlayerBestScore = new SetPlayerBestScoreHandler_default(this);
+      logFinish.setNext(setPlayerBestScore);
+      const postLeaderboardScore = new PostLeaderboardScoreHandler_default(this);
+      setPlayerBestScore.setNext(postLeaderboardScore);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      postLeaderboardScore.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var FinishGroupConcrete_default = FinishGroupConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/group/JoinGroupConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/profile/SetProfileDataHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Dtos: Dtos9 } = Ludex;
+var SetProfileDataHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.updateProfileMatchData(matchState);
+    await this.nextAsync(matchState);
+  }
+  updateProfileMatchData(matchState) {
+    const { id } = this.payload;
+    const { profiles } = matchState;
+    if (!profiles[id]) {
+      throw new ProfileNotFound_default();
+    }
+    const profileMerged = __spreadValues(__spreadValues({}, profiles[id]), this.payload);
+    const profile = new Dtos9.Match.Profile(profileMerged).toObject();
+    profiles[profile.id] = profile;
+  }
+};
+var SetProfileDataHandler_default = SetProfileDataHandler;
+
+// extensions/ludex/src/plugins/match/concretes/group/JoinGroupConcrete.ts
+var JoinGroupConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { playerId: playerId2, opponentId, opponentScore } = payload;
+      const flow = new NothingHandler_default(this);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        id: "7749",
+        mode: MatchModes_default.MATCHING_GROUP,
+        customData: {
+          playerId: playerId2,
+          opponentId
+        }
+      });
+      flow.setNext(prepareMatch);
+      const getMatchProfiles = new GetMatchProfilesHandler_default(this);
+      prepareMatch.setNext(getMatchProfiles);
+      const setProfileData = new SetProfileDataHandler_default(this, {
+        id: playerId2,
+        score: opponentScore
+      });
+      getMatchProfiles.setNext(setProfileData);
+      const startMatch = new StartMatchHandler_default(this);
+      setProfileData.setNext(startMatch);
+      const logStart = new LogMatchStartHandler_default(this);
+      startMatch.setNext(logStart);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      logStart.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var JoinGroupConcrete_default = JoinGroupConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/group/StartGroupConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/context/group/GroupContextHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/MatchGroupNotSupported.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var MatchGroupNotSupported = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "MatchGroupNotSupported";
+    this.message = message ?? "Match group is not supported";
+  }
+};
+var MatchGroupNotSupported_default = MatchGroupNotSupported;
+
+// extensions/ludex/src/plugins/match/handlers/context/group/GroupContextHandler.ts
+var GroupContextHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    await this.checkMatchGroupSupported();
+    const contextId2 = await this.matchingGroup();
+    matchState.customData.contextId = contextId2;
+    await this.nextAsync(matchState);
+  }
+  async checkMatchGroupSupported() {
+    if (!("getSupportedAPIs" in GameSDK)) {
+      throw new UnavailableFeature_default("getSupportedAPIs");
+    }
+    if (!("checkCanPlayerMatchAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("checkCanPlayerMatchAsync");
+    }
+    const isSupported = GameSDK.getSupportedAPIs().indexOf("checkCanPlayerMatchAsync") > -1;
+    if (!isSupported) throw new MatchGroupNotSupported_default();
+    const canPlayerMatch = await GameSDK.extra.checkCanPlayerMatchAsync();
+    if (!canPlayerMatch) throw new MatchGroupNotSupported_default();
+  }
+  async matchingGroup() {
+    if (!("matchPlayerAsync" in GameSDK.extra)) {
+      throw new UnavailableFeature_default("matchPlayerAsync");
+    }
+    const { matchTag, autoSwitch = false, onlyExisting = false } = this.payload;
+    await GameSDK.extra.matchPlayerAsync(matchTag, autoSwitch, onlyExisting);
+    const contextId2 = GameSDK.context.getID();
+    if (typeof contextId2 !== "string") {
+      throw new CreateContextFailed_default();
+    }
+    return contextId2;
+  }
+};
+var GroupContextHandler_default = GroupContextHandler;
+
+// extensions/ludex/src/plugins/match/concretes/group/StartGroupConcrete.ts
+var StartGroupConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { matchTag, playerId: playerId2, options } = payload;
+      const flow = new NothingHandler_default(this);
+      const groupContext = new GroupContextHandler_default(this, __spreadValues({ matchTag }, options));
+      flow.setNext(groupContext);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        id: "7749",
+        mode: MatchModes_default.MATCHING_GROUP,
+        customData: {
+          playerId: playerId2
+        }
+      });
+      groupContext.setNext(prepareMatch);
+      const getOpponentId = new GetOpponentChallengeContextHandler_default(this, {
+        ignoreId: playerId2
+      });
+      prepareMatch.setNext(getOpponentId);
+      const startMatch = new StartMatchHandler_default(this);
+      getOpponentId.setNext(startMatch);
+      const getMatchProfiles = new GetMatchProfilesHandler_default(this);
+      startMatch.setNext(getMatchProfiles);
+      const logStart = new LogMatchStartHandler_default(this);
+      getMatchProfiles.setNext(logStart);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      logStart.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var StartGroupConcrete_default = StartGroupConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/single/FinishSingleConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var FinishSingleConcrete = class extends BaseConcrete_default {
+  async processAsync() {
+    try {
+      this.startLog();
+      const flow = new NothingHandler_default(this);
+      const finishMatch = new FinishMatchHandler_default(this, { useAPI: false });
+      flow.setNext(finishMatch);
+      const logFinish = new LogMatchFinishedHandler_default(this);
+      finishMatch.setNext(logFinish);
+      const setPlayerBestScore = new SetPlayerBestScoreHandler_default(this);
+      logFinish.setNext(setPlayerBestScore);
+      const postGlobalLBScore = new PostGlobalLeaderboardsScoreHandler_default(this);
+      setPlayerBestScore.setNext(postGlobalLBScore);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      postGlobalLBScore.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var FinishSingleConcrete_default = FinishSingleConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/single/StartSingleConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/profile/GetProfileHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/ProfileIdNotDefined.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var ProfileIdNotDefined = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "ProfileIdNotDefined";
+    this.message = message ?? "Profile id is not defined";
+  }
+};
+var ProfileIdNotDefined_default = ProfileIdNotDefined;
+
+// extensions/ludex/src/plugins/match/handlers/profile/GetProfileHandler.ts
+var { Dtos: Dtos10 } = Ludex;
+var GetProfileHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const { profileId } = this.payload;
+    if (!profileId) {
+      throw new ProfileIdNotDefined_default();
+    }
+    const { player } = this.codex;
+    const playerId2 = player.getPlayerId();
+    let profile;
+    if (profileId === playerId2) {
+      profile = this.getPlayerProfile();
+    } else {
+      profile = await this.getProfileAsync(profileId);
+      if (!profile) {
+        throw new ProfileNotFound_default();
+      }
+    }
+    this.updateMatchData(profile, matchState);
+    await this.nextAsync(matchState);
+  }
+  getPlayerProfile() {
+    const { player } = this.codex;
+    const { playerId: playerId2, name: name2, photo: photo2, locale: locale2 } = player.getPlayer();
+    return { playerId: playerId2, name: name2, photo: photo2, locale: locale2 };
+  }
+  async getProfileAsync(profileId) {
+    const { profile } = this.codex;
+    await profile.requestProfiles([profileId]);
+    const profiles = profile.getProfiles();
+    return profiles[profileId];
+  }
+  updateMatchData(data, matchState) {
+    const { playerId: playerId2, name: name2, photo: photo2 } = data;
+    const profile = new Dtos10.Match.Profile({ id: playerId2, name: name2, photo: photo2 }).toObject();
+    matchState.profiles[playerId2] = profile;
+  }
+};
+var GetProfileHandler_default = GetProfileHandler;
+
+// extensions/ludex/src/plugins/match/concretes/single/StartSingleConcrete.ts
+var StartSingleConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { playerId: playerId2 } = payload;
+      const flow = new NothingHandler_default(this);
+      const switchContext = new SwitchContextHandler_default(this, { contextId: "SOLO" });
+      flow.setNext(switchContext);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        id: "123456",
+        mode: MatchModes_default.SINGLE,
+        customData: {
+          playerId: playerId2
+        }
+      });
+      switchContext.setNext(prepareMatch);
+      const startMatch = new StartMatchHandler_default(this);
+      prepareMatch.setNext(startMatch);
+      const getPlayerProfile = new GetProfileHandler_default(this, {
+        profileId: playerId2
+      });
+      startMatch.setNext(getPlayerProfile);
+      const logStart = new LogMatchStartHandler_default(this);
+      getPlayerProfile.setNext(logStart);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      logStart.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var StartSingleConcrete_default = StartSingleConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/strategy/FinishStrategyConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var FinishStrategyConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { setPlayerBestScore = false, postGlobalLeaderboard = false } = payload ?? {};
+      const flow = new NothingHandler_default(this);
+      const finishMatch = new FinishMatchHandler_default(this, { useAPI: false });
+      flow.setNext(finishMatch);
+      const logFinish = new LogMatchFinishedHandler_default(this);
+      finishMatch.setNext(logFinish);
+      const setPlayerBS = new SetPlayerBestScoreHandler_default(this, {
+        ignore: !setPlayerBestScore
+      });
+      logFinish.setNext(setPlayerBS);
+      const postGlobalLBScore = new PostGlobalLeaderboardsScoreHandler_default(this, {
+        ignore: !postGlobalLeaderboard
+      });
+      setPlayerBS.setNext(postGlobalLBScore);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      postGlobalLBScore.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var FinishStrategyConcrete_default = FinishStrategyConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/strategy/StartStrategyConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var StartStrategyConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { matchId, playerId: playerId2, gameMode, extraData = {} } = payload;
+      const flow = new NothingHandler_default(this);
+      const switchContext = new SwitchContextHandler_default(this, { contextId: "SOLO" });
+      flow.setNext(switchContext);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        id: matchId,
+        mode: gameMode,
+        customData: __spreadValues({
+          playerId: playerId2
+        }, extraData)
+      });
+      switchContext.setNext(prepareMatch);
+      const startMatch = new StartMatchHandler_default(this);
+      prepareMatch.setNext(startMatch);
+      const getPlayerProfile = new GetProfileHandler_default(this, {
+        profileId: playerId2
+      });
+      startMatch.setNext(getPlayerProfile);
+      const logStart = new LogMatchStartHandler_default(this);
+      getPlayerProfile.setNext(logStart);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      logStart.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var StartStrategyConcrete_default = StartStrategyConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/tournament/ContinueTournamentConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/analytic/LogTournamentStartHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Plugins: Plugins4, Utils: Utils8 } = Ludex;
+var { Analytics: Analytics4 } = Plugins4;
+var { String: S6, Valid: V22 } = Utils8;
+var LogTournamentStartHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const { mode, customData } = matchState;
+    this.validateMode(mode);
+    const { analytics } = this.codex;
+    const { tournamentId, leaderboardId } = customData;
+    analytics.event(Analytics4.Events.TOURNAMENT_START, {
+      success: true,
+      game_mode: S6.toUpperCamelCase(mode),
+      tournament_id: tournamentId,
+      leaderboard_id: leaderboardId
+    });
+    await this.nextAsync(matchState);
+  }
+  validateMode(mode) {
+    if (!V22.isString(mode)) {
+      throw new MatchModeNotDefined_default();
+    }
+  }
+};
+var LogTournamentStartHandler_default = LogTournamentStartHandler;
+
+// extensions/ludex/src/plugins/match/handlers/context/tournament/ContinueTournamentHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/exceptions/TournamentIdNotValid.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var TournamentIdNotValid = class extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "TournamentIdNotValid";
+    this.message = message ?? "Tournament id is not valid";
+  }
+};
+var TournamentIdNotValid_default = TournamentIdNotValid;
+
+// extensions/ludex/src/plugins/match/handlers/context/tournament/ContinueTournamentHandler.ts
+var { Valid: V23 } = Ludex.Utils;
+var ContinueTournamentHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const { contextId: contextId2 } = this.payload;
+    this.validateContextId(contextId2);
+    const tournament = await GameSDK.getTournamentAsync();
+    const tournamentId = tournament.getID().toString();
+    const tournamentType = tournament.getTournamentType();
+    this.validateTournamentId(tournamentId);
+    matchState.customData.contextId = contextId2;
+    matchState.customData.tournamentId = tournamentId;
+    if (tournamentType !== "DAILY") {
+      const tournamentPayload = JSON.parse(tournament.getPayload() || "{}");
+      const { leaderboardId } = tournamentPayload;
+      this.validateLeaderboardId(leaderboardId);
+      matchState.customData.leaderboardId = leaderboardId;
+    }
+    await this.nextAsync(matchState);
+  }
+  validateContextId(contextId2) {
+    if (!V23.isString(contextId2)) {
+      throw new ContextIdNotValid_default();
+    }
+  }
+  validateTournamentId(tournamentId) {
+    if (!V23.isString(tournamentId)) {
+      throw new TournamentIdNotValid_default();
+    }
+  }
+  validateLeaderboardId(leaderboardId) {
+    if (!V23.isString(leaderboardId) || leaderboardId === "") {
+      throw new LeaderboardIdNotValid_default();
+    }
+  }
+};
+var ContinueTournamentHandler_default = ContinueTournamentHandler;
+
+// extensions/ludex/src/plugins/match/concretes/tournament/ContinueTournamentConcrete.ts
+var ContinueTournamentConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { playerId: playerId2, contextId: contextId2 } = payload;
+      const flow = new NothingHandler_default(this);
+      const continueTournament = new ContinueTournamentHandler_default(this, { contextId: contextId2 });
+      flow.setNext(continueTournament);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        id: "1997",
+        mode: MatchModes_default.TOURNAMENT,
+        customData: {
+          playerId: playerId2
+        }
+      });
+      continueTournament.setNext(prepareMatch);
+      const startMatch = new StartMatchHandler_default(this);
+      prepareMatch.setNext(startMatch);
+      const getPlayerProfile = new GetProfileHandler_default(this, {
+        profileId: playerId2
+      });
+      startMatch.setNext(getPlayerProfile);
+      const logMatchStart = new LogMatchStartHandler_default(this);
+      getPlayerProfile.setNext(logMatchStart);
+      const logTournamentStart = new LogTournamentStartHandler_default(this);
+      logMatchStart.setNext(logTournamentStart);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      logMatchStart.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var ContinueTournamentConcrete_default = ContinueTournamentConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/tournament/CreateTournamentConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/analytic/LogTournamentCreateHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Plugins: Plugins5 } = Ludex;
+var { Analytics: Analytics5 } = Plugins5;
+var LogTournamentCreateHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const { customData } = matchState;
+    const { analytics } = this.codex;
+    const { tournamentId, leaderboardId } = customData;
+    analytics.event(Analytics5.Events.TOURNAMENT_CREATE, {
+      success: true,
+      tournament_id: tournamentId,
+      leaderboard_id: leaderboardId
+    });
+    await this.nextAsync(matchState);
+  }
+};
+var LogTournamentCreateHandler_default = LogTournamentCreateHandler;
+
+// extensions/ludex/src/plugins/match/handlers/context/tournament/CreateTournamentHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var CreateTournamentHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    await this.createTournamentAsync();
+    await this.updateMatchStateAsync(matchState);
+    await this.nextAsync(matchState);
+  }
+  async createTournamentAsync() {
+    const { name: name2, score: score2, customData } = this.payload;
+    await GameSDK.tournament.createAsync({
+      initialScore: score2,
+      config: {
+        title: name2,
+        tournamentTitle: name2
+      },
+      data: customData
+    });
+  }
+  async updateMatchStateAsync(matchState) {
+    try {
+      if (!("getTournamentAsync" in GameSDK)) {
+        throw new UnavailableFeature_default("getTournamentAsync");
+      }
+      const tournament = await GameSDK.getTournamentAsync();
+      const contextId2 = tournament.getContextID();
+      const tournamentId = tournament.getID().toString();
+      const { playerId: playerId2 } = this.payload;
+      matchState.customData.playerId = playerId2;
+      matchState.customData.contextId = contextId2;
+      matchState.customData.tournamentId = tournamentId;
+    } catch (error) {
+      if (error instanceof UnavailableFeature_default) return;
+    }
+  }
+};
+var CreateTournamentHandler_default = CreateTournamentHandler;
+
+// extensions/ludex/src/plugins/match/handlers/leaderboard/CreateLeaderboardHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Valid: V24 } = Ludex.Utils;
+var CreateLeaderboardHandler = class extends BaseHandler_default {
+  payload;
+  leaderboardPayload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validatePayload();
+    await this.setupCreatePayload(matchState);
+    await this.createLeaderboardAsync(matchState);
+    await this.nextAsync(matchState);
+  }
+  validatePayload() {
+    const { leaderboardId } = this.payload;
+    if (!V24.isString(leaderboardId)) {
+      throw new LeaderboardIdNotValid_default();
+    }
+  }
+  validatePlayerId(playerId2) {
+    if (!V24.isString(playerId2)) {
+      throw new PlayerIdNotValid_default();
+    }
+  }
+  async setupCreatePayload(matchState) {
+    const { playerId: playerId2 } = matchState.customData;
+    this.validatePlayerId(playerId2);
+    const { name: name2, leaderboardId, customData } = this.payload;
+    this.leaderboardPayload = {
+      _id: leaderboardId,
+      name: name2 ?? "",
+      createdBy: playerId2,
+      description: JSON.stringify(customData)
+    };
+  }
+  async createLeaderboardAsync(matchState) {
+    const leaderboardId = await this.codex.leaderboard.createLeaderboardAsync(this.leaderboardPayload);
+    matchState.customData.leaderboardId = leaderboardId;
+  }
+};
+var CreateLeaderboardHandler_default = CreateLeaderboardHandler;
+
+// extensions/ludex/src/plugins/match/concretes/tournament/CreateTournamentConcrete.ts
+var CreateTournamentConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { playerId: playerId2, name: name2, score: score2, leaderboardId, payload: customData } = payload;
+      const flow = new NothingHandler_default(this);
+      const switchContext = new SwitchContextHandler_default(this, { contextId: "SOLO" });
+      flow.setNext(switchContext);
+      const createTournament = new CreateTournamentHandler_default(this, {
+        name: name2,
+        score: score2,
+        playerId: playerId2,
+        customData
+      });
+      switchContext.setNext(createTournament);
+      const getPlayerProfile = new GetProfileHandler_default(this, {
+        profileId: playerId2
+      });
+      createTournament.setNext(getPlayerProfile);
+      const setProfileData = new SetProfileDataHandler_default(this, {
+        id: playerId2,
+        score: score2
+      });
+      getPlayerProfile.setNext(setProfileData);
+      const createLeaderboard = new CreateLeaderboardHandler_default(this, {
+        name: name2,
+        customData,
+        leaderboardId
+      });
+      setProfileData.setNext(createLeaderboard);
+      const postLeaderboardScore = new PostLeaderboardScoreHandler_default(this);
+      createLeaderboard.setNext(postLeaderboardScore);
+      const logCreate = new LogTournamentCreateHandler_default(this);
+      postLeaderboardScore.setNext(logCreate);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var CreateTournamentConcrete_default = CreateTournamentConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/tournament/FinishTournamentConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/context/tournament/PostScoreTournamentHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var {
+  Plugins: { Analytics: Analytics6 },
+  Utils: { Valid: V25 }
+} = Ludex;
+var PostScoreTournamentHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.validateData(matchState);
+    await this.postScoreTournamentAsync(matchState);
+    await this.nextAsync(matchState);
+  }
+  validateData(matchState) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2 } = customData;
+    this.validatePlayerId(playerId2);
+    if (!profiles[playerId2]) {
+      throw new ProfileNotFound_default();
+    }
+  }
+  validatePlayerId(playerId2) {
+    if (!V25.isString(playerId2)) {
+      throw new PlayerIdNotValid_default();
+    }
+  }
+  getPlayerProfile(matchState) {
+    const { profiles, customData } = matchState;
+    const { playerId: playerId2 } = customData;
+    this.validatePlayerId(playerId2);
+    return profiles[playerId2];
+  }
+  isNewBestScore(matchState) {
+    const profile = this.getPlayerProfile(matchState);
+    const { score: score2 = 0, bestScore = 0 } = profile;
+    return score2 > bestScore;
+  }
+  async postScoreTournamentAsync(matchState) {
+    const { analytics } = codex;
+    const profile = this.getPlayerProfile(matchState);
+    const { score: score2 = 0 } = profile;
+    let eventName = null;
+    let postSuccess = false;
+    const { checkBestScore } = this.payload;
+    const isBestScore = this.isNewBestScore(matchState);
+    try {
+      if (!("getTournamentAsync" in GameSDK)) {
+        throw new UnavailableFeature_default("getTournamentAsync");
+      }
+      await GameSDK.getTournamentAsync();
+      if (!checkBestScore || isBestScore) {
+        eventName = Analytics6.Events.TOURNAMENT_SHARE;
+        await GameSDK.tournament.shareAsync({ score: score2 });
+      } else {
+        eventName = Analytics6.Events.TOURNAMENT_POST_SCORE;
+        await GameSDK.tournament.postScoreAsync(score2);
+      }
+      postSuccess = true;
+    } catch (error) {
+      console.warn("Post Score Tournament", error);
+    } finally {
+      eventName && analytics.event(eventName, { success: postSuccess });
+    }
+  }
+};
+var PostScoreTournamentHandler_default = PostScoreTournamentHandler;
+
+// extensions/ludex/src/plugins/match/concretes/tournament/FinishTournamentConcrete.ts
+var FinishTournamentConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { playerId: playerId2, bestScore, checkBestScore = false } = payload;
+      const flow = new NothingHandler_default(this);
+      const finishMatch = new FinishMatchHandler_default(this, { useAPI: false });
+      flow.setNext(finishMatch);
+      const setProfileData = new SetProfileDataHandler_default(this, {
+        id: playerId2,
+        bestScore
+      });
+      finishMatch.setNext(setProfileData);
+      const postTournament = new PostScoreTournamentHandler_default(this, { checkBestScore });
+      setProfileData.setNext(postTournament);
+      const logFinish = new LogMatchFinishedHandler_default(this);
+      postTournament.setNext(logFinish);
+      const setPlayerBestScore = new SetPlayerBestScoreHandler_default(this);
+      logFinish.setNext(setPlayerBestScore);
+      const postLeaderboardScore = new PostLeaderboardScoreHandler_default(this);
+      setPlayerBestScore.setNext(postLeaderboardScore);
+      const setGlobalLBScore = new PostGlobalLeaderboardsScoreHandler_default(this);
+      postLeaderboardScore.setNext(setGlobalLBScore);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      setGlobalLBScore.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var FinishTournamentConcrete_default = FinishTournamentConcrete;
+
+// extensions/ludex/src/plugins/match/concretes/tournament/JoinTournamentConcrete.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/match/handlers/context/tournament/JoinTournamentHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Valid: V26, Object: O21 } = Ludex.Utils;
+var JoinTournamentHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const { tournamentId } = this.payload;
+    this.validateTournamentId(tournamentId);
+    await this.joinTournamentAsync(tournamentId);
+    const tournament = await GameSDK.getTournamentAsync();
+    const contextId2 = tournament.getContextID();
+    this.validateContextId(contextId2);
+    const tournamentPayload = JSON.parse(tournament.getPayload() || "{}");
+    const { leaderboardId } = tournamentPayload;
+    this.validateLeaderboardId(leaderboardId);
+    matchState.customData.contextId = contextId2;
+    matchState.customData.tournamentId = tournamentId;
+    matchState.customData.leaderboardId = leaderboardId;
+    await this.nextAsync(matchState);
+  }
+  validateTournamentId(tournamentId) {
+    if (!V26.isString(tournamentId)) {
+      throw new TournamentIdNotValid_default();
+    }
+  }
+  validateContextId(contextId2) {
+    if (!V26.isString(contextId2)) {
+      throw new ContextIdNotValid_default();
+    }
+  }
+  validateLeaderboardId(leaderboardId) {
+    if (!V26.isString(leaderboardId) || leaderboardId === "") {
+      throw new LeaderboardIdNotValid_default();
+    }
+  }
+  async joinTournamentAsync(tournamentId) {
+    if (!("tournament" in GameSDK)) {
+      throw new UnavailableFeature_default("tournament");
+    }
+    try {
+      await GameSDK.tournament.joinAsync(tournamentId);
+    } catch (error) {
+      if (!O21.hasOwn(error, "code")) throw error;
+      if (error.code !== "SAME_CONTEXT") throw error;
+    }
+  }
+};
+var JoinTournamentHandler_default = JoinTournamentHandler;
+
+// extensions/ludex/src/plugins/match/concretes/tournament/JoinTournamentConcrete.ts
+var JoinTournamentConcrete = class extends BaseConcrete_default {
+  async processAsync(payload) {
+    try {
+      this.startLog(payload);
+      const { playerId: playerId2, tournamentId } = payload;
+      const flow = new NothingHandler_default(this);
+      const joinTournament = new JoinTournamentHandler_default(this, { tournamentId });
+      flow.setNext(joinTournament);
+      const prepareMatch = new PrepareMatchHandler_default(this, {
+        id: "1997",
+        mode: MatchModes_default.TOURNAMENT,
+        customData: {
+          playerId: playerId2
+        }
+      });
+      joinTournament.setNext(prepareMatch);
+      const startMatch = new StartMatchHandler_default(this);
+      prepareMatch.setNext(startMatch);
+      const getPlayerProfile = new GetProfileHandler_default(this, {
+        profileId: playerId2
+      });
+      startMatch.setNext(getPlayerProfile);
+      const logMatchStart = new LogMatchStartHandler_default(this);
+      getPlayerProfile.setNext(logMatchStart);
+      const logTournamentStart = new LogTournamentStartHandler_default(this);
+      logMatchStart.setNext(logTournamentStart);
+      const detectGameMode = new ContextGameModeHandler_default(this);
+      logTournamentStart.setNext(detectGameMode);
+      const matchState = this.match.getMatchState();
+      await flow.processAsync(matchState);
+    } finally {
+      this.endLog();
+    }
+  }
+};
+var JoinTournamentConcrete_default = JoinTournamentConcrete;
+
+// extensions/ludex/src/plugins/match/handlers/match/GetMatchCustomDataHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Dtos: Dtos11, Utils: Utils9 } = Ludex;
+var { Object: O22 } = Utils9;
+var GetMatchCustomDataHandler = class extends BaseHandler_default {
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    const extraData = await this.getMatchCustomData(matchState);
+    this.updateMatchCustomData(matchState, extraData);
+    await this.nextAsync(matchState);
+  }
+  async getMatchCustomData(matchState) {
+    const { id } = matchState;
+    if (!id) return {};
+    const matchAPI = this.match.api.getMatchAPI();
+    const matchData = await matchAPI.getMatchDetailByIdAsync(id);
+    return matchData?.extraData ?? {};
+  }
+  updateMatchCustomData(matchState, extraData) {
+    const dataMerged = O22.merge(matchState.customData, extraData);
+    const customData = new Dtos11.Match.CustomData(dataMerged).toObject();
+    matchState.customData = customData;
+  }
+};
+var GetMatchCustomDataHandler_default = GetMatchCustomDataHandler;
+
+// extensions/ludex/src/plugins/match/handlers/match/SetMatchCustomDataHandler.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Dtos: Dtos12, Utils: Utils10 } = Ludex;
+var { Object: O23 } = Utils10;
+var SetMatchCustomDataHandler = class extends BaseHandler_default {
+  payload;
+  constructor(concrete, payload) {
+    super(concrete);
+    this.payload = payload;
+  }
+  async processAsync(matchState) {
+    super.processAsync(matchState);
+    this.updateMatchCustomData(matchState);
+    await this.nextAsync(matchState);
+  }
+  updateMatchCustomData(matchState) {
+    const customDataMerged = O23.merge(matchState.customData, this.payload);
+    const customData = new Dtos12.Match.CustomData(customDataMerged).toObject();
+    matchState.customData = customData;
+  }
+};
+var SetMatchCustomDataHandler_default = SetMatchCustomDataHandler;
+
+// extensions/ludex/src/plugins/match/state.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var initState7 = {
+  id: null,
+  mode: null,
+  status: null,
+  startAt: 0,
+  finishAt: 0,
+  profiles: {},
+  customData: __spreadValues({}, DefaultCustomData_default)
+};
+var state_default7 = initState7;
+
+// extensions/ludex/src/plugins/match/MatchPlugin.ts
+var { Configs: Configs2 } = Ludex;
+var MatchPlugin = class extends Ludex.Plugins.BasePlugin {
+  base;
+  group;
+  single;
+  context;
+  strategy;
+  challenge;
+  tournament;
+  api;
+  handler;
+  useCPUProfile;
+  init() {
+    this.createMatchData();
+    this.createAPIHandler();
+    this.createBaseConcrete();
+    this.createConcreteFlows();
+    this.createConcreteHandlers();
+  }
+  setUseCPUProfile(enable) {
+    this.useCPUProfile = enable;
+  }
+  createMatchData() {
+    const { storage } = this.codex;
+    storage.addStorage("match", state_default7);
+  }
+  getMatchState() {
+    const { storage } = this.codex;
+    return storage.getStorage("match");
+  }
+  createBaseConcrete() {
+    this.base = new BaseConcrete_default(this.codex, this);
+  }
+  createConcreteFlows() {
+    this.createGroupFlows();
+    this.createSingleFlows();
+    this.createContextFlows();
+    this.createStrategyFlows();
+    this.createChallengeFlows();
+    this.createTournamentFlows();
+  }
+  createConcreteHandlers() {
+    this.handler = {
+      setProfileData: async (payload) => {
+        const handler = new SetProfileDataHandler_default(this.base, payload);
+        await this.processHandlerAsync(handler);
+      },
+      setMatchCustomData: async (payload) => {
+        const handler = new SetMatchCustomDataHandler_default(this.base, payload);
+        await this.processHandlerAsync(handler);
+      },
+      getMatchCustomData: async () => {
+        const handler = new GetMatchCustomDataHandler_default(this.base);
+        await this.processHandlerAsync(handler);
+      },
+      setLeaderboardScore: async (payload) => {
+        const handler = new SetLeaderboardScoreHandler_default(this.base, payload);
+        await this.processHandlerAsync(handler);
+      }
+    };
+  }
+  createAPIHandler() {
+    const APIConfig = {
+      appId: Configs2.AppId,
+      matchAPIHost: Configs2.ApiHost
+    };
+    this.api = new APIHandler_default(APIConfig);
+  }
+  createGroupFlows() {
+    this.group = {
+      join: new JoinGroupConcrete_default(this.codex, this),
+      start: new StartGroupConcrete_default(this.codex, this),
+      finish: new FinishGroupConcrete_default(this.codex, this)
+    };
+  }
+  createSingleFlows() {
+    this.single = {
+      start: new StartSingleConcrete_default(this.codex, this),
+      finish: new FinishSingleConcrete_default(this.codex, this)
+    };
+  }
+  createStrategyFlows() {
+    this.strategy = {
+      start: new StartStrategyConcrete_default(this.codex, this),
+      finish: new FinishStrategyConcrete_default(this.codex, this)
+    };
+  }
+  createContextFlows() {
+    this.context = {
+      choose: new ChooseContextConcrete_default(this.codex, this)
+    };
+  }
+  createChallengeFlows() {
+    this.challenge = {
+      invite: new InviteFriendsConcrete_default(this.codex, this),
+      friend: new ChallengeFriendConcrete_default(this.codex, this),
+      join: new JoinChallengeMatchConcrete_default(this.codex, this),
+      await: new AwaitChallengeMatchConcrete_default(this.codex, this),
+      result: new ResultChallengeMatchConcrete_default(this.codex, this),
+      finish: new FinishChallengeMatchConcrete_default(this.codex, this),
+      continue: new ContinueChallengeMatchConcrete_default(this.codex, this)
+    };
+  }
+  createTournamentFlows() {
+    this.tournament = {
+      join: new JoinTournamentConcrete_default(this.codex, this),
+      create: new CreateTournamentConcrete_default(this.codex, this),
+      finish: new FinishTournamentConcrete_default(this.codex, this),
+      continue: new ContinueTournamentConcrete_default(this.codex, this)
+    };
+  }
+  processHandlerAsync(handler) {
+    const matchState = this.getMatchState();
+    return handler.processAsync(matchState);
+  }
+};
+var MatchPlugin_default = MatchPlugin;
+
+// extensions/ludex/src/plugins/match/dtos/MatchCustomDataDtos.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Valid: V27 } = Ludex.Utils;
+var MESSAGE_INVALID5 = "is invalid";
+var MatchCustomDataDtos = class extends BaseDtos_default {
+  setupData(data) {
+    this.lazySetupData$(data);
+  }
+  validateStructure$(data) {
+    this.lazyValidateStructure$(data);
+  }
+  validateData$(data) {
+    this.lazyValidateData$(data);
+  }
+  validateLevel(level2) {
+    if (!V27.isNumber(level2) || level2 < 0) {
+      this.exception$("level", MESSAGE_INVALID5);
+    }
+  }
+  validateRescued(rescued) {
+    if (!V27.isNumber(rescued) || rescued < 0) {
+      this.exception$("rescued", MESSAGE_INVALID5);
+    }
+  }
+  validateContextId(contextId2) {
+    if (!V27.isString(contextId2)) {
+      this.exception$("contextId", MESSAGE_INVALID5);
+    }
+  }
+  validatePlayerId(playerId2) {
+    if (!V27.isString(playerId2)) {
+      this.exception$("playerId", MESSAGE_INVALID5);
+    }
+  }
+  validateOpponentId(opponentId) {
+    if (!V27.isString(opponentId) && opponentId !== null) {
+      this.exception$("opponentId", MESSAGE_INVALID5);
+    }
+  }
+  validateTournamentId(tournamentId) {
+    if (!V27.isString(tournamentId) && tournamentId !== null) {
+      this.exception$("tournamentId", MESSAGE_INVALID5);
+    }
+  }
+  validateLeaderboardId(leaderboardId) {
+    if (!V27.isString(leaderboardId) && leaderboardId !== null) {
+      this.exception$("leaderboardId", MESSAGE_INVALID5);
+    }
+  }
+  toObject() {
+    return super.toObject();
+  }
+};
+MatchCustomDataDtos.makeStrict();
+MatchCustomDataDtos.addDefaultData(DefaultCustomData_default);
+var MatchCustomDataDtos_default = MatchCustomDataDtos;
+
+// extensions/ludex/src/plugins/match/dtos/MatchProfileDtos.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Valid: V28 } = Ludex.Utils;
+var MESSAGE_INVALID6 = "is invalid";
+var MatchProfileDtos = class extends BaseDtos_default {
+  setupData(data) {
+    this.lazySetupData$(data);
+  }
+  validateStructure$(data) {
+    this.lazyValidateStructure$(data);
+  }
+  validateData$(data) {
+    this.lazyValidateData$(data);
+  }
+  validateId(id) {
+    if (!V28.isString(id) || !id) {
+      this.exception$("id", MESSAGE_INVALID6);
+    }
+  }
+  validateName(name2) {
+    if (!V28.isString(name2) || !name2) {
+      this.exception$("name", MESSAGE_INVALID6);
+    }
+  }
+  validatePhoto(photo2) {
+    if (!V28.isString(photo2)) {
+      this.exception$("photo", MESSAGE_INVALID6);
+    }
+  }
+  validateScore(score2) {
+    if (!V28.isNumber(score2) || score2 < 0) {
+      this.exception$("score", MESSAGE_INVALID6);
+    }
+  }
+  validateBestScore(bestScore) {
+    if (!V28.isNumber(bestScore) || bestScore < 0) {
+      this.exception$("bestScore", MESSAGE_INVALID6);
+    }
+  }
+  validateFinished(finished) {
+    if (!V28.isBoolean(finished)) {
+      this.exception$("finished", MESSAGE_INVALID6);
+    }
+  }
+  toObject() {
+    return super.toObject();
+  }
+};
+MatchProfileDtos.addDefaultData({
+  id: "",
+  name: "Your Friend",
+  photo: "./assets/images/others/avatar.png",
+  score: 0,
+  bestScore: 0,
+  finished: false
+});
+var MatchProfileDtos_default = MatchProfileDtos;
+
+// extensions/ludex/src/plugins/match/index.ts
+Ludex.Dtos.Match = {
+  Data: RespMatchDataDtos_default,
+  Profile: MatchProfileDtos_default,
+  CustomData: MatchCustomDataDtos_default
+};
+var match_default = MatchPlugin_default;
+
+// extensions/ludex/src/plugins/missions/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/missions/MissionsPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/missions/api/MissionsAPI.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/missions/data/DefaultMissions.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var DefaultMissions_default = [
+  {
+    id: "finish-level",
+    title: "Finish 1 level",
+    require: {
+      level: 1
+    },
+    reward: {
+      coin: 300
+    },
+    duration: 1e3 * 60 * 60 * 24
+  }
+];
+
+// extensions/ludex/src/plugins/missions/api/MissionsAPI.ts
+var MissionsAPI = class {
+  async getMissionsAsync() {
+    const result3 = [...DefaultMissions_default];
+    return result3;
+  }
+};
+var MissionsAPI_default = MissionsAPI;
+
+// extensions/ludex/src/plugins/missions/state.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var initState8 = {
+  tasks: [],
+  process: {}
+};
+var state_default8 = initState8;
+
+// extensions/ludex/src/plugins/missions/MissionsPlugin.ts
+var {
+  Utils: { Json: J5, Valid: V29, Object: O24 }
+} = Ludex;
+var MissionsPlugin = class extends Ludex.Plugins.BasePlugin {
+  api;
+  init() {
+    const { storage } = this.codex;
+    const useWebStorage = true;
+    storage.addStorage("missions", state_default8, useWebStorage);
+    this.api = new MissionsAPI_default();
+  }
+  async requestMissions() {
+    const tasks = await this.api.getMissionsAsync();
+    const currentTime = Date.now();
+    for (const task of tasks) {
+      task.expirationTime = currentTime + task.duration;
+    }
+    this.receivePlayerMissionData(tasks);
+  }
+  addMission(payload) {
+    const { storage } = this.codex;
+    const { id, duration, expirationTime } = payload;
+    if (!expirationTime) {
+      payload.expirationTime = Date.now() + duration;
+    }
+    const currentTasks = storage.getStorageData("missions", "tasks") ?? [];
+    const existingTaskIndex = currentTasks.findIndex((task) => task.id === id);
+    if (existingTaskIndex !== -1) {
+      const newTask = O24.merge(currentTasks[existingTaskIndex], payload);
+      currentTasks[existingTaskIndex] = newTask;
+    } else {
+      currentTasks.push(payload);
+    }
+    const newTasks = [...currentTasks];
+    storage.setStorageData("missions", "tasks", newTasks);
+    this.addProcessLog(payload);
+    this.updatePlayerMissionProcess();
+    storage.updateToWebStorage("missions");
+  }
+  addProcessLog(payload) {
+    const { storage } = this.codex;
+    const { id, require: require2 } = payload;
+    const requiredParams = {};
+    const keys = Object.keys(require2);
+    for (const type of keys) {
+      requiredParams[type] = 0;
+    }
+    const currentProcessLogs = storage.getStorageData("missions", "process") ?? {};
+    currentProcessLogs[id] = { require: requiredParams, rewarded: false };
+    storage.setStorageData("missions", "process", currentProcessLogs);
+  }
+  removeMission(id) {
+    const { storage } = this.codex;
+    const currentTasks = storage.getStorageData("missions", "tasks");
+    if (!currentTasks) return;
+    const newTasks = currentTasks.filter((task) => task.id !== id);
+    storage.setStorageData("missions", "tasks", newTasks);
+    this.removeProcessLog(id);
+    storage.updateToWebStorage("missions");
+  }
+  removeProcessLog(id) {
+    const { storage } = this.codex;
+    const currentProcessLogs = storage.getStorageData("missions", "process") ?? {};
+    if (currentProcessLogs[id]) {
+      const { require: require2 } = currentProcessLogs[id];
+      const keys = Object.keys(require2);
+      for (const key of keys) {
+        require2[key] = 0;
+      }
+      currentProcessLogs[id] = { require: require2, rewarded: false };
+    }
+    storage.setStorageData("missions", "process", currentProcessLogs);
+  }
+  receivePlayerMissionData(tasks) {
+    const { storage } = this.codex;
+    const savedTasks = storage.getStorageData("missions", "tasks") ?? [];
+    const existingSavedTasks = this.filterMissionByExpirationTime(savedTasks);
+    const resultTasks = this.combineMissions(tasks, existingSavedTasks);
+    storage.setStorageData("missions", "tasks", resultTasks);
+    const existingSavedTasksProcess = this.filterExistingSavedProcess(existingSavedTasks);
+    this.receiveProcessLogs(resultTasks, existingSavedTasksProcess);
+    this.updatePlayerMissionProcess();
+    storage.updateToWebStorage("missions");
+  }
+  filterExistingSavedProcess(existingSavedMissions) {
+    const { player } = this.codex;
+    const playerMissions = player.getPlayerDataByKey("missionsData");
+    const { process: logTasks = {} } = playerMissions || {};
+    const existingMissionIds = existingSavedMissions.map((task) => task.id);
+    const filteredMissions = Object.keys(logTasks).filter((key) => {
+      return !existingMissionIds.includes(key);
+    });
+    const filteredProcess = {};
+    for (const key of filteredMissions) {
+      filteredProcess[key] = logTasks[key];
+    }
+    return filteredProcess;
+  }
+  filterMissionByExpirationTime(missions) {
+    const currentTime = Date.now();
+    return missions.filter((mission) => {
+      const { expirationTime } = mission;
+      if (!expirationTime) return false;
+      return currentTime < expirationTime;
+    });
+  }
+  combineMissions(missions, existingMissions) {
+    const existingMissionsIds = existingMissions.map((mission) => mission.id);
+    const filteredMissions = missions.filter((mission) => {
+      const { id } = mission;
+      return !existingMissionsIds.includes(id);
+    });
+    return [...existingMissions, ...filteredMissions];
+  }
+  receiveProcessLogs(missions, existingProcessLogs) {
+    const process = {};
+    for (const mission of missions) {
+      const { id, require: require2 } = mission;
+      if (O24.hasOwn(existingProcessLogs, id)) {
+        process[id] = J5.clone(existingProcessLogs[id]);
+        return;
+      }
+      const requiredParams = {};
+      const keys = Object.keys(require2);
+      for (const type of keys) {
+        requiredParams[type] = 0;
+      }
+      process[id] = { require: requiredParams, rewarded: false };
+    }
+    this.updateMissionProcess(process);
+  }
+  updateMissionProcess(process) {
+    const { storage } = this.codex;
+    storage.setStorageData("missions", "process", process);
+    storage.updateToWebStorage("missions");
+  }
+  getPlayerMissionProcess() {
+    const { player } = this.codex;
+    const dailyTasks = player.getPlayerDataByKey("missionsData");
+    const { process: logTasks } = dailyTasks || {};
+    return J5.clone(logTasks);
+  }
+  addMissionValue(payload) {
+    const { id, type, value } = payload;
+    const playerMissionProcess = this.getPlayerMissionProcess();
+    if (!V29.isObject(playerMissionProcess)) return;
+    const log = playerMissionProcess;
+    const keys = Object.keys(log);
+    const sameMissionKeys = keys.filter((key) => key.includes(id));
+    for (const key of sameMissionKeys) {
+      const mission = log[key];
+      if (!mission || mission.rewarded) continue;
+      mission.require[type] += value;
+    }
+    this.updateMissionProcess(log);
+    this.updatePlayerMissionProcess();
+  }
+  setMissionRewardClaimed(id) {
+    const playerMissionProcess = this.getPlayerMissionProcess();
+    if (!V29.isObject(playerMissionProcess)) return;
+    const log = playerMissionProcess;
+    if (!O24.hasOwn(log, id)) return;
+    log[id].rewarded = true;
+    this.updateMissionProcess(log);
+    this.updatePlayerMissionProcess();
+  }
+  updatePlayerMissionProcess() {
+    const { player } = this.codex;
+    const playerMissionProcess = this.codex.storage.getStorageData("missions", "process");
+    const currentPlayerData = this.getPlayerMissionProcess();
+    const newPlayerData = O24.merge(currentPlayerData, playerMissionProcess);
+    player.setPlayerDataByName("missionsData", {
+      process: newPlayerData
+    });
+  }
+};
+var MissionsPlugin_default = MissionsPlugin;
+
+// extensions/ludex/src/plugins/missions/index.ts
+var missions_default = MissionsPlugin_default;
+
+// extensions/ludex/src/plugins/player/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/player/PlayerPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/player/api/player.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var {
+  Utils: { Object: O25 },
+  Configs: { ApiHost }
+} = Ludex;
+var getUrl = () => {
+  const sdkName = GameSDK.getSDKName();
+  let url = "players";
+  switch (sdkName) {
+    case "MsGames":
+      url += "?platform=ms-games";
+      break;
+    case "Yandex":
+      url += "?platform=yandex";
+      break;
+    default:
+      break;
+  }
+  return url;
+};
+var updatePlayerProfileAsync = async (payload) => {
+  if (!ApiHost) return {};
+  const url = getUrl();
+  const result3 = await post(url, payload, {}, ApiHost, 10);
+  if (!O25.hasOwn(result3, "data")) return {};
+  return result3.data || {};
+};
+
+// extensions/ludex/src/plugins/player/PlayerPlugin.ts
+var {
+  Utils: { Array: A7, Object: O26, Valid: V30, Function: F4 },
+  Configs: { AppId: AppId4 }
+} = Ludex;
+var PlayerPlugin = class extends Ludex.Plugins.BasePlugin {
+  isLoggedIn = false;
+  init() {
+    const { storage } = this.codex;
+    storage.addStorage("player", state_default);
+  }
+  receiveData(playerInfo, playerData) {
+    const { storage } = this.codex;
+    const { playerId: playerId2, name: name2, photo: photo2, locale: locale2 } = playerInfo;
+    storage.setStorageData("player", "playerId", playerId2);
+    storage.setStorageData("player", "name", name2);
+    storage.setStorageData("player", "photo", photo2);
+    storage.setStorageData("player", "locale", locale2);
+    if (playerData) {
+      this.setPlayerData(playerData);
+      this.isLoggedIn = !playerData.isFirstLogin;
+    }
+  }
+  async syncDataToSDK() {
+    try {
+      const playerData = this.getPlayerData();
+      await GameSDK.player.setDataAsync(playerData);
+    } catch (error) {
+      console.warn(error);
+    }
+  }
+  async syncProfileToServer() {
+    if (GameSDK.extra.isGuest) {
+      throw new Error("Guest player cannot sync profile to server");
+    }
+    const { storage } = this.codex;
+    const player = this.getPlayer();
+    const { playerId: playerId2, name: name2, photo: photo2, locale: locale2 } = player;
+    let ASID = this.getPlayerASID();
+    if (!V30.isString(ASID) && "getASIDAsync" in GameSDK.player) {
+      const [id, error] = await F4.handleAsync(GameSDK.player.getASIDAsync(), 1e4);
+      if (!error && id) {
+        ASID = id;
+        storage.setStorageData("player", "ASID", ASID);
+      }
+    }
+    const profile = {
+      appId: AppId4,
+      ASID,
+      playerId: playerId2,
+      name: name2,
+      photo: photo2,
+      locale: locale2
+    };
+    await updatePlayerProfileAsync(profile);
+  }
+  setPlayerDataByName(name2, data) {
+    this.setPlayerData({ [name2]: data });
+  }
+  setPlayerData(data) {
+    const { storage } = this.codex;
+    storage.setStorageData("player", "data", data);
+    this.syncDataToSDK();
+  }
+  setBestScore(score2) {
+    this.setPlayerDataByName("score", score2);
+  }
+  setSetting(name2, value) {
+    this.setPlayerDataByName("settings", { [name2]: value });
+  }
+  setGameData(data) {
+    const currentData = this.getGameData() ?? {};
+    const newData = O26.merge(currentData, data);
+    this.setPlayerDataByName("gameData", newData);
+  }
+  async requestConnectedPlayers() {
+    const { storage } = this.codex;
+    const players = await GameSDK.player.getConnectedPlayersAsync();
+    const connectedPlayers = players.map((player) => {
+      const playerId2 = player.getID();
+      const name2 = player.getName();
+      const photo2 = player.getPhoto();
+      if (!playerId2 || !name2 || !photo2) return null;
+      return new PlayerInfo_default({ playerId: playerId2, name: name2, photo: photo2 }).toObject();
+    });
+    const connectedPlayersUnique = A7.unique(connectedPlayers);
+    if (connectedPlayersUnique.length < 1) return;
+    const connectedPlayersKeyed = O26.keyBy(connectedPlayersUnique, "playerId");
+    storage.setStorageData("player", "connectedPlayers", connectedPlayersKeyed);
+  }
+  getPlayer() {
+    const { storage } = this.codex;
+    return storage.getStorage("player");
+  }
+  getPlayerId() {
+    const { storage } = this.codex;
+    return storage.getStorageData("player", "playerId") ?? "";
+  }
+  getPlayerASID() {
+    const { storage } = this.codex;
+    return storage.getStorageData("player", "ASID") ?? null;
+  }
+  getPlayerLocale() {
+    const { storage } = this.codex;
+    return storage.getStorageData("player", "locale") ?? "";
+  }
+  getPlayerData() {
+    const { storage } = this.codex;
+    return storage.getStorageData("player", "data") ?? state_default.data;
+  }
+  getPlayerDataByKey(name2) {
+    const data = this.getPlayerData();
+    if (O26.hasOwn(data, name2)) {
+      return data[name2];
+    }
+    return null;
+  }
+  getGameData() {
+    return this.getPlayerDataByKey("gameData");
+  }
+  getPlayerSetting(name2) {
+    const settings2 = this.getPlayerSettings();
+    if (O26.hasOwn(settings2, name2)) {
+      return settings2[name2];
+    }
+    return null;
+  }
+  getPlayerSettings() {
+    const { settings: settings2 } = this.getPlayerData();
+    return settings2;
+  }
+  isFirstLogin() {
+    return this.getPlayerDataByKey("isFirstLogin") ?? state_default.data.isFirstLogin;
+  }
+  isFirstSession() {
+    return !this.isLoggedIn;
+  }
+  loggedIn() {
+    this.setPlayerDataByName("isFirstLogin", false);
+  }
+  getBestScore() {
+    const { score: score2 } = this.getPlayerData();
+    return score2;
+  }
+  getConnectedPlayers() {
+    const { storage } = this.codex;
+    return storage.getStorageData("player", "connectedPlayers") ?? {};
+  }
+  getConnectedPlayerIds(limit, offset) {
+    const connectedPlayers = this.getConnectedPlayers();
+    return Object.keys(connectedPlayers).slice(offset, offset + limit);
+  }
+  getNotificationData() {
+    return this.getPlayerDataByKey("notificationData") ?? state_default.data.notificationData;
+  }
+};
+var PlayerPlugin_default = PlayerPlugin;
+
+// extensions/ludex/src/plugins/player/dtos/PlayerData.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var {
+  Dtos: Dtos13,
+  Utils: { Valid: V31 }
+} = Ludex;
+var {
+  score,
+  settings,
+  gameData,
+  isFirstLogin,
+  missionsData,
+  notificationData,
+  dailyRewardedData,
+  lastCallSwitchGame
+} = state_default.data;
+var MESSAGE_INVALID7 = "is invalid";
+var PlayerDataDtos = class extends BaseDtos_default {
+  processData(data) {
+    this.validateStructure$(data);
+    data.settings = new Dtos13.Player.Settings(data.settings).toObject();
+    data.gameData = new Dtos13.Player.GameData(data.gameData).toObject();
+    this.validateData$(data);
+    this.setupData(data);
+  }
+  setupData(data) {
+    this.lazySetupData$(data);
+  }
+  validateStructure$(data) {
+    this.lazyValidateStructure$(data);
+  }
+  validateData$(data) {
+    this.lazyValidateData$(data);
+  }
+  validateScore(score2) {
+    if (!V31.isNumber(score2) || score2 < 0) {
+      this.exception$("score", MESSAGE_INVALID7);
+    }
+  }
+  validateSettings(settings2) {
+    if (!V31.isObject(settings2)) {
+      this.exception$("settings", MESSAGE_INVALID7);
+    }
+  }
+  validateMissionsData(missionsData2) {
+    if (!V31.isObject(missionsData2)) {
+      this.exception$("missionsData", MESSAGE_INVALID7);
+    }
+    if (!("process" in missionsData2) || !V31.isObject(missionsData2.process)) {
+      this.exception$("missionsData.process", MESSAGE_INVALID7);
+    }
+  }
+  validateNotificationData(notificationData2) {
+    if (!V31.isObject(notificationData2)) {
+      this.exception$("notificationData", MESSAGE_INVALID7);
+    }
+    if (!("D1" in notificationData2) || !V31.isObject(notificationData2.D1)) {
+      this.exception$("notificationData.D1", MESSAGE_INVALID7);
+    }
+    if (!("D2" in notificationData2) || !V31.isObject(notificationData2.D2)) {
+      this.exception$("notificationData.D2", MESSAGE_INVALID7);
+    }
+    if (!("D3" in notificationData2) || !V31.isObject(notificationData2.D3)) {
+      this.exception$("notificationData.D3", MESSAGE_INVALID7);
+    }
+    if (!("D4" in notificationData2) || !V31.isObject(notificationData2.D4)) {
+      this.exception$("notificationData.D4", MESSAGE_INVALID7);
+    }
+    if (!("D5" in notificationData2) || !V31.isObject(notificationData2.D5)) {
+      this.exception$("notificationData.D5", MESSAGE_INVALID7);
+    }
+    if (!("D6" in notificationData2) || !V31.isObject(notificationData2.D6)) {
+      this.exception$("notificationData.D6", MESSAGE_INVALID7);
+    }
+    if (!("D7" in notificationData2) || !V31.isObject(notificationData2.D7)) {
+      this.exception$("notificationData.D7", MESSAGE_INVALID7);
+    }
+  }
+  validateGameData(gameData2) {
+    if (!V31.isObject(gameData2)) {
+      this.exception$("gameData", MESSAGE_INVALID7);
+    }
+  }
+  validateIsFirstLogin(isFirstLogin2) {
+    if (!V31.isBoolean(isFirstLogin2)) {
+      this.exception$("isFirstLogin", MESSAGE_INVALID7);
+    }
+  }
+  validateDailyRewardedData(dailyRewardedData2) {
+    if (!V31.isObject(dailyRewardedData2)) {
+      this.exception$("dailyRewardedData", MESSAGE_INVALID7);
+    }
+  }
+  validateLastCallSwitchGame(lastCallSwitchGame2) {
+    if (!V31.isNumber(lastCallSwitchGame2)) {
+      this.exception$("lastCallSwitchGame", MESSAGE_INVALID7);
+    }
+    if (lastCallSwitchGame2 < 0) {
+      this.exception$("lastCallSwitchGame", MESSAGE_INVALID7);
+    }
+  }
+  toObject() {
+    return super.toObject();
+  }
+};
+PlayerDataDtos.addDefaultData({
+  score,
+  settings,
+  gameData,
+  isFirstLogin,
+  missionsData,
+  notificationData,
+  dailyRewardedData,
+  lastCallSwitchGame
+});
+var PlayerData_default = PlayerDataDtos;
+
+// extensions/ludex/src/plugins/player/dtos/PlayerGameData.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Valid: V32 } = Ludex.Utils;
+var { level, coins } = state_default.data.gameData;
+var PlayerGameDataDtos = class extends BaseDtos_default {
+  setupData(data) {
+    this.lazySetupData$(data);
+  }
+  validateStructure$(data) {
+    this.lazyValidateStructure$(data);
+  }
+  validateData$(data) {
+    this.lazyValidateData$(data);
+  }
+  validateLevel(level2) {
+    if (!V32.isNumber(level2) || level2 < 0) {
+      this.exception$("level", "is invalid");
+    }
+  }
+  validateCoins(coins2) {
+    if (!V32.isNumber(coins2) || coins2 < 0) {
+      this.exception$("coins", "is invalid");
+    }
+  }
+  toObject() {
+    return super.toObject();
+  }
+};
+PlayerGameDataDtos.addDefaultData({
+  level,
+  coins
+});
+var PlayerGameData_default = PlayerGameDataDtos;
+
+// extensions/ludex/src/plugins/player/dtos/PlayerSettings.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { Valid: V33 } = Ludex.Utils;
+var { sound, music, vibrate, language } = state_default.data.settings;
+var MESSAGE_INVALID8 = "is invalid";
+var PlayerSettingsDtos = class extends BaseDtos_default {
+  setupData(data) {
+    this.lazySetupData$(data);
+  }
+  validateStructure$(data) {
+    this.lazyValidateStructure$(data);
+  }
+  validateData$(data) {
+    this.lazyValidateData$(data);
+  }
+  validateSound(sound2) {
+    if (!V33.isBoolean(sound2)) {
+      this.exception$("sound", MESSAGE_INVALID8);
+    }
+  }
+  validateMusic(music2) {
+    if (!V33.isBoolean(music2)) {
+      this.exception$("music", MESSAGE_INVALID8);
+    }
+  }
+  validateVibrate(vibrate2) {
+    if (!V33.isBoolean(vibrate2)) {
+      this.exception$("vibrate", MESSAGE_INVALID8);
+    }
+  }
+  validateLanguage(language2) {
+    if (!V33.isString(language2) || !language2) {
+      this.exception$("language", MESSAGE_INVALID8);
+    }
+  }
+  toObject() {
+    return super.toObject();
+  }
+};
+PlayerSettingsDtos.addDefaultData({
+  sound,
+  music,
+  vibrate,
+  language
+});
+var PlayerSettings_default = PlayerSettingsDtos;
+
+// extensions/ludex/src/plugins/player/index.ts
+Ludex.Dtos.Player = {
+  Info: PlayerInfo_default,
+  Data: PlayerData_default,
+  Settings: PlayerSettings_default,
+  GameData: PlayerGameData_default
+};
+var player_default = PlayerPlugin_default;
+
+// extensions/ludex/src/plugins/profile/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/profile/ProfilePlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/profile/api/ProfileAPI.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var {
+  Configs: { ApiHost: ApiHost2, Mockup: Mockup2 },
+  Utils: { Object: O27, String: S7 }
+} = Ludex;
+var ProfileAPI = class {
+  mockAPI;
+  async initMockAPI() {
+    if (this.mockAPI) return;
+    const ProfileAPIMock = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+    default;
+    if (typeof ProfileAPIMock !== "function") {
+      throw new Error("Cannot load ProfileAPIMock");
+    }
+    this.mockAPI = new ProfileAPIMock();
+  }
+  async getPlayersAsync(payload) {
+    const params = S7.params(payload);
+    let result3;
+    if (Mockup2.Profile.Enabled) {
+      await this.initMockAPI();
+      result3 = await this.mockAPI.getPlayersAsync(payload);
+    } else {
+      if (!ApiHost2) return [];
+      result3 = await get(`players?${params}`, {}, ApiHost2);
+    }
+    if (!O27.hasOwn(result3, "data") || !Array.isArray(result3.data)) return [];
+    return result3.data;
+  }
+};
+var ProfileAPI_default = ProfileAPI;
+
+// extensions/ludex/src/plugins/profile/state.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var initState9 = {
+  profiles: {},
+  profileIds: []
+};
+var state_default9 = initState9;
+
+// extensions/ludex/src/plugins/profile/ProfilePlugin.ts
+var { Utils: Utils11, Dtos: Dtos14 } = Ludex;
+var { Array: A8, Valid: V34, Object: O28, Function: F5 } = Utils11;
+var ProfilePlugin = class extends Ludex.Plugins.BasePlugin {
+  profileAPI = new ProfileAPI_default();
+  init() {
+    const { storage } = this.codex;
+    storage.addStorage("profile", state_default9);
+  }
+  async requestProfiles(playerIds) {
+    const profileIds = this.getProfileIds();
+    const needPlayerIds = A8.difference(playerIds, profileIds);
+    if (needPlayerIds.length < 1) return;
+    const playerIdsChunks = A8.chunk(needPlayerIds, 400);
+    const profilePromises = playerIdsChunks.map((playerIds2) => this.profileAPI.getPlayersAsync({ playerIds: playerIds2 }));
+    const profilesResponses = await F5.allSettled(profilePromises);
+    const result3 = profilesResponses.reduce((acc, response) => {
+      if (response.status === "fulfilled") {
+        return acc.concat(response.value);
+      }
+      return acc;
+    }, []);
+    if (!this.validateProfilesResponse(result3)) return;
+    const profiles = this.convertToProfiles(result3);
+    this.setProfiles(profiles);
+  }
+  getProfile(playerId2) {
+    const profiles = this.getProfiles();
+    const profile = profiles[playerId2];
+    return profile ?? null;
+  }
+  getProfiles() {
+    const { storage } = this.codex;
+    return storage.getStorageData("profile", "profiles") ?? state_default9.profiles;
+  }
+  setProfiles(profiles) {
+    const { storage } = this.codex;
+    storage.setStorageData("profile", "profiles", profiles);
+    storage.setStorageData("profile", "profileIds", Object.keys(profiles));
+  }
+  getProfileIds() {
+    const { storage } = this.codex;
+    return storage.getStorageData("profile", "profileIds") ?? [];
+  }
+  validateProfilesResponse(profiles) {
+    if (!Array.isArray(profiles)) return false;
+    if (profiles.length < 1) return false;
+    return true;
+  }
+  convertToProfiles(result3) {
+    const profiles = {};
+    for (const data of result3) {
+      if (!O28.hasOwn(data, "playerId")) continue;
+      if (!V34.isString(data.playerId)) continue;
+      profiles[data.playerId] = new Dtos14.Player.Info(data).toObject();
+    }
+    return profiles;
+  }
+};
+var ProfilePlugin_default = ProfilePlugin;
+
+// extensions/ludex/src/plugins/profile/index.ts
+var profile_default = ProfilePlugin_default;
+
+// extensions/ludex/src/codex/index.ts
+init_empty_script();
+
+// extensions/ludex/src/plugins/storage/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/storage/StoragePlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var gameName2 = "Dinosaurs Merge Master";
+var {
+  Utils: { Object: O29, Valid: V35, Browser: B4 }
+} = Ludex;
+var StoragePlugin = class extends Ludex.Plugins.BasePlugin {
+  storages;
+  storageLocalKeys = {};
+  constructor(game) {
+    super(game);
+    this.storages = {};
+  }
+  async addStorage(name2, initState10, useWebStorage = false) {
+    this.storages[name2] = initState10;
+    if (useWebStorage) {
+      await this.initFromWebStorage(name2, initState10);
+    }
+    console.debug("addStorage", name2, initState10);
+  }
+  async initFromWebStorage(name2, initState10) {
+    this.storageLocalKeys[name2] = true;
+    const data = await B4.getIndexedDB(`${gameName2}_S_${name2}`);
+    if (!V35.isObject(data)) return;
+    const keys = Object.keys(initState10);
+    for (const key of keys) {
+      if (!O29.hasOwn(data, key)) continue;
+      if (typeof initState10[key] !== typeof data[key]) continue;
+      this.setStorageData(name2, key, data[key]);
+    }
+  }
+  initStorageData(storage, field, initData) {
+    this.storages[storage][field] = initData;
+  }
+  setStorageData(storage, field, data) {
+    let nextData;
+    if (V35.isObject(data)) {
+      const currentData = this.getStorageData(storage, field);
+      nextData = O29.merge(currentData, data);
+    } else {
+      nextData = data;
+    }
+    this.storages[storage][field] = nextData;
+  }
+  getStorageData(storage, field) {
+    const data = this.getStorage(storage);
+    return data[field];
+  }
+  getStorage(storage) {
+    return this.storages[storage];
+  }
+  async updateToWebStorage(storage) {
+    if (!this.storageLocalKeys[storage]) return;
+    return this.saveToWebStorage(storage);
+  }
+  async saveToWebStorage(storage) {
+    const data = this.getStorage(storage);
+    return B4.setIndexedDB(`${gameName2}_S_${storage}`, data);
+  }
+};
+var StoragePlugin_default = StoragePlugin;
+
+// extensions/ludex/src/plugins/storage/index.ts
+var storage_default = StoragePlugin_default;
+
+// extensions/ludex/src/plugins/visibility/index.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+
+// extensions/ludex/src/plugins/visibility/VisibilityPlugin.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var VisibilityPlugin = class extends Ludex.Plugins.BasePlugin {
+  isVisible = true;
+  browserPrefixes = ["moz", "ms", "o", "", "webkit"];
+  init() {
+    const browserPrefix = this.getBrowserPrefix();
+    const visibilityEventName = this.getVisibilityEvent(browserPrefix);
+    const basicEvents = [visibilityEventName, "focus", "blur"];
+    for (const event of basicEvents) {
+      this.registerEvent(window, event);
+      this.registerEvent(document, event);
+    }
+    if (GameSDK.extra) {
+      if ("onPause" in GameSDK.extra) {
+        GameSDK.extra.onPause(() => this.handleVisibilityChange("blur"));
+      }
+      if ("onResume" in GameSDK.extra) {
+        GameSDK.extra.onResume(() => this.handleVisibilityChange("focus"));
+      }
+    }
+    this.registerEvent(window, "pageshow");
+    this.registerEvent(window, "pagehide");
+    window.addEventListener(
+      "message",
+      (event) => {
+        if (event.data === "nativePause" || event.data === "nativeResume") {
+          this.handleVisibilityChange(event.data);
+        }
+      },
+      false
+    );
+  }
+  isGameVisible() {
+    return this.isVisible;
+  }
+  getHiddenPropertyName(prefix) {
+    return prefix ? `${prefix}Hidden` : "hidden";
+  }
+  getVisibilityEvent(prefix) {
+    return `${prefix || ""}visibilitychange`;
+  }
+  getBrowserPrefix() {
+    for (const element of this.browserPrefixes) {
+      if (this.getHiddenPropertyName(element) in document) {
+        return element;
+      }
+    }
+    return "";
+  }
+  onVisibleEvent() {
+    if (this.isVisible) return;
+    this.isVisible = true;
+    this.codex.event.emit(Ludex.Events.VISIBILITY_VISIBLE);
+  }
+  onHiddenEvent() {
+    if (!this.isVisible) return;
+    this.isVisible = false;
+    this.codex.event.emit(Ludex.Events.VISIBILITY_HIDDEN);
+  }
+  /**
+   * Registers an event listener on the given target for visibility changes.
+   * @param target - The event target (window or document).
+   * @param eventName - The event name to listen for.
+   */
+  registerEvent(target, eventName) {
+    target.addEventListener(
+      eventName,
+      () => {
+        this.handleVisibilityChange(eventName);
+      },
+      false
+    );
+  }
+  handleVisibilityChange = (event) => {
+    const eventHandlerMap = {
+      focus: this.onVisibleEvent.bind(this),
+      pageshow: this.onVisibleEvent.bind(this),
+      nativeResume: this.onVisibleEvent.bind(this),
+      blur: this.onHiddenEvent.bind(this),
+      pagehide: this.onHiddenEvent.bind(this),
+      nativePause: this.onHiddenEvent.bind(this)
+    };
+    if (eventHandlerMap[event]) {
+      eventHandlerMap[event]();
+      return;
+    }
+    if (document.visibilityState) {
+      if (document.visibilityState === "hidden") {
+        this.onHiddenEvent();
+      } else {
+        this.onVisibleEvent();
+      }
+      return;
+    }
+    const browserPrefix = this.getBrowserPrefix();
+    const hiddenPropertyName = this.getHiddenPropertyName(browserPrefix);
+    if (hiddenPropertyName in document) {
+      const isHidden = document[hiddenPropertyName];
+      if (isHidden) {
+        this.onHiddenEvent();
+      } else {
+        this.onVisibleEvent();
+      }
+    }
+  };
+};
+var VisibilityPlugin_default = VisibilityPlugin;
+
+// extensions/ludex/src/plugins/visibility/index.ts
+var visibility_default = VisibilityPlugin_default;
+
+// extensions/ludex/src/codex/index.ts
+init_accessBlocker();
+init_empty_script();
+init_empty_script();
+init_empty_script();
+
+// extensions/ludex/src/ads/NormalAdInstance.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var {
+  Utils: { Object: O30 },
+  Plugins: {
+    Ads: { Status, Types: Types2, AdError: AdError2, AdInstance: AdInstance2 }
+  }
+} = Ludex;
+var NormalAdInstance = class extends AdInstance2 {
+  service;
+  instance;
+  instanceQueue = [];
+  constructor(type, placementId) {
+    super(type, placementId);
+    this.service = GameSDK.getSDKName();
+    this.instance = null;
+  }
+  async loadAsync() {
+    console.debug("AdInstance", "loadAsync called", {
+      type: this.type,
+      status: this.status,
+      service: this.service,
+      placementId: this.placementId
+    });
+    if (this.instance && this.status === Status.FILLED) return;
+    if (this.status !== Status.IDLE) {
+      throw new AdError2("AD_NOT_READY", "Ad is not ready.");
+    }
+    try {
+      this.instance = await this.createInstanceByType(this.type);
+      if (this.instance === null) {
+        throw new AdError2("AD_INSTANCE_NOT_INITIATED", `Ad instance didn't initiated.`);
+      }
+      this.setStatus(Status.LOADING);
+      await this.instance.loadAsync();
+      this.setStatus(Status.FILLED);
+      console.debug("AdInstance", "loadAsync success", {
+        type: this.type,
+        status: this.status,
+        service: this.service
+      });
+      this.logAdLoad();
+    } catch (error) {
+      console.warn("AdInstance", "loadAsync failed", {
+        type: this.type,
+        status: this.status,
+        service: this.service
+      });
+      console.warn(error);
+      this.setStatus(Status.IDLE);
+      if (error instanceof Object && "code" in error) {
+        if (error.code === "INVALID_PARAM") {
+          this.instance = null;
+        }
+      }
+      if (this.instance) {
+        this.pushInstanceToQueue(this.instance);
+      }
+      self.codex.analytics.loadAdFail({
+        type: this.type,
+        service: this.service
+      });
+      throw error;
+    }
+  }
+  async showAsync() {
+    console.debug("AdInstance", "showAsync called", {
+      type: this.type,
+      status: this.status,
+      service: this.service
+    });
+    if (this.status !== Status.FILLED) {
+      throw new AdError2("AD_NOT_FILLED", "Ad is not filled.");
+    }
+    if (this.instance === null) {
+      throw new AdError2("AD_INSTANCE_NOT_INITIATED", `Ad instance didn't initiated.`);
+    }
+    let logShowed = false;
+    try {
+      this.setStatus(Status.SHOWING);
+      self.codex.analytics.showingAd({
+        type: this.type,
+        service: this.service
+      });
+      await this.instance.showAsync();
+      logShowed = true;
+      this.setStatus(Status.IDLE);
+      this.instance = null;
+      console.debug("AdInstance", "showAsync success", {
+        type: this.type,
+        status: this.status,
+        service: this.service
+      });
+    } catch (error) {
+      console.warn("AdInstance", "showAsync failed", {
+        type: this.type,
+        status: this.status,
+        service: this.service,
+        error
+      });
+      if (O30.hasOwn(error, "code")) {
+        if (error.code === "AD_NOT_LOADED") {
+          this.setStatus(Status.IDLE);
+        }
+        const codeList = ["INVALID_PARAM", "INVALID_OPERATION", "USER_INPUT"];
+        if (codeList.indexOf(`${error.code}`) > -1) {
+          this.setStatus(Status.IDLE);
+          this.instance = null;
+        }
+        if (error.code === "USER_INPUT") {
+          logShowed = true;
+        }
+      }
+      if (this.status === Status.SHOWING) {
+        this.setStatus(Status.IDLE);
+        this.instance = null;
+      }
+      throw error;
+    } finally {
+      if (logShowed) {
+        this.logAdShown();
+      } else {
+        self.codex.analytics.showAdFail({
+          type: this.type,
+          service: this.service
+        });
+      }
+    }
+  }
+  async createInstanceByType(type) {
+    try {
+      return await this.getAdInstanceByType(type);
+    } catch (error) {
+      if (!O30.hasOwn(error, "code")) return null;
+      if (error.code === "ADS_TOO_MANY_INSTANCES") {
+        return this.getAdInstanceFailed();
+      }
+      return null;
+    }
+  }
+  async getAdInstanceByType(type) {
+    switch (type) {
+      case Types2.REWARDED_VIDEO:
+        return await GameSDK.getRewardedVideoAsync(this.placementId);
+      case Types2.INTERSTITIAL:
+        return await GameSDK.getInterstitialAdAsync(this.placementId);
+      case Types2.REWARDED_INTERSTITIAL:
+        return await GameSDK.getRewardedInterstitialAsync(this.placementId);
+      default:
+        return null;
+    }
+  }
+  getAdInstanceFailed() {
+    if ("canLoadAd" in GameSDK.extra) {
+      for (const instance of this.instanceQueue) {
+        if (GameSDK.extra.canLoadAd(instance)) {
+          this.instanceQueue.splice(this.instanceQueue.indexOf(instance), 1);
+          return instance;
+        }
+      }
+    } else {
+      return this.instanceQueue.shift() || null;
+    }
+    return null;
+  }
+  logAdLoad() {
+    switch (this.type) {
+      case Types2.INTERSTITIAL:
+        self.codex.analytics.loadInterstitialAd({
+          service: this.service
+        });
+        break;
+      case Types2.REWARDED_VIDEO:
+        self.codex.analytics.loadRewardedVideoAd({
+          service: this.service
+        });
+        break;
+      case Types2.REWARDED_INTERSTITIAL:
+        self.codex.analytics.loadRewardedInterstitialAd({
+          service: this.service
+        });
+        break;
+    }
+  }
+  logAdShown() {
+    switch (this.type) {
+      case Types2.INTERSTITIAL:
+        self.codex.analytics.showInterstitialAd({
+          service: this.service
+        });
+        break;
+      case Types2.REWARDED_VIDEO:
+        self.codex.analytics.showRewardedVideoAd({
+          service: this.service
+        });
+        break;
+      case Types2.REWARDED_INTERSTITIAL:
+        self.codex.analytics.showRewardedInterstitialAd({
+          service: this.service
+        });
+        break;
+    }
+  }
+  pushInstanceToQueue(instance) {
+    this.instanceQueue.push(instance);
+  }
+};
+var NormalAdInstance_default = NormalAdInstance;
+
+// extensions/ludex/src/codex/index.ts
+init_empty_script();
+init_empty_script();
+init_empty_script();
+init_empty_script();
+init_empty_script();
+
+// extensions/ludex/src/analytics/GoogleAnalytics.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_fonts();
+init_google_analytics();
+init_navigator();
+init_performance();
+init_GameSDK2();
+var { BaseAnalytics: BaseAnalytics2, Events: Events4 } = Ludex.Plugins.Analytics;
+var excludeEvents = [Events4.SCREEN_OPEN];
+var {
+  Utils: { Array: A9 }
+} = Ludex;
+var GoogleAnalytics = class extends BaseAnalytics2 {
+  constructor(ld, options) {
+    super(ld, "GoogleAnalytics", __spreadProps(__spreadValues({}, options), { color: "#E35335" }));
+  }
+  processEvent(event, payload) {
+    if (A9.has(excludeEvents, event)) return;
+    this.customEvent(event, payload);
+    gtag("event", event, payload);
+  }
+  customEvent(event, payload) {
+    switch (event) {
+      case Events4.AD_SHOW:
+      case Events4.AD_SHOW_FAILED:
+      case Events4.AD_SHOWING:
+      case Events4.USE_ITEM:
+      case Events4.EARN_ITEM:
+        this.addLevelName(payload);
+        break;
+      default:
+        break;
+    }
+  }
+  addLevelName(payload) {
+    if (!payload) return;
+    if (!this.codex?.match) return;
+    const matchState = this.codex.match.getMatchState();
+    const level2 = matchState.customData.level;
+    if (!level2 || level2 < 0) return;
+    payload.level_name = this.getLevelName(level2);
+  }
+};
+var GoogleAnalytics_default = GoogleAnalytics;
+
+// extensions/ludex/src/codex/index.ts
+init_empty_script();
+init_empty_script();
+init_empty_script();
+var NODE_ENV = "development";
+var BUILD_VERSION = null;
+var {
+  Dtos: Dtos15,
+  Events: Events5,
+  Configs: {
+    AppId: AppId5,
+    Ads,
+    Analytics: Analytics7,
+    Debugger,
+    Firebase,
+    Notification,
+    RemoteConfig,
+    PerformanceMonitor,
+    AdaptivePerformance
+  },
+  Plugins: {
+    Ads: { Types: AdsTypes }
+  },
+  Utils: { Device: D2, Object: O31, Json: J6, String: S8, Valid: V36, Time: T3, Function: F6, Mark: Mark2 }
+} = Ludex;
+var MagicCodex = class extends codex_default {
+  markName = "Core Initialize";
+  modulePlugins = [];
+  // ? Use in production mode, console
+  getBuildVersion() {
+    return parseInt(`${BUILD_VERSION}`) || 0;
+  }
+  async boot() {
+    console.groupEnd();
+    console.groupCollapsed("\u{1F9EC} Ludex Boot");
+    super.boot();
+    this.addPlugins();
+    this.initEventPlugin();
+    this.event.emit(Events5.CORE_BOOTING);
+    this.validateCoreFlow$();
+    this.initFirebasePlugin();
+    this.initMarkCoreInitialize();
+    Mark2.putAttr(this.markName, "Step", "Init Analytics");
+    this.initGoogleAnalytics();
+    this.initClarityAnalytics();
+    this.initFirebaseAnalytics();
+    this.initYandexAnalytics();
+    this.initXiaomiAnalytics();
+    this.initFacebookAnalytics();
+    this.initTranssionH5Analytics();
+    Mark2.putAttr(this.markName, "Step", "Init Plugins");
+    this.initAds();
+    this.initMatchPlugin();
+    this.initRemoteConfig();
+    Mark2.putAttr(this.markName, "Step", "Load Lazy Plugins");
+    if (!V36.isDebugger()) {
+      this.event.on(Events5.MODULE_PLUGIN_READY, this.handleProtectGameInstance);
+    }
+    this.addMonitorPlugin().then(this.initMonitorErrorPlugin);
+    this.addCanvasRecorderPlugin().then(this.initCanvasRecorderPlugin);
+    this.addAdaptivePerformancePlugin().then(this.initAdaptivePerformancePlugin);
+    this.addInputRecorderPlugin().then(this.initInputRecorderPlugin);
+    Mark2.putAttr(this.markName, "Step", "Load Dev Plugins");
+    this.event.catchUp(Events5.GAME_SDK_READY, this.addDevPlugins);
+    console.groupEnd();
+  }
+  async validateCoreFlow$() {
+    if (false) return;
+    await T3.sleepAsync(5e3);
+    const eventInfo = this.event.getEventListeners(Events5.CORE_BOOTING);
+    if (eventInfo.length === 0) {
+      console.groupEnd();
+      console.groupEnd();
+      console.log(
+        "%c Your game is not listening CORE_BOOTING event!!",
+        "color: #f17f4a; font-size: 14px; font-weight: bold;"
+      );
+      console.log("%c Or init flow is slower!", "color: #26a0f0; font-weight: bold;");
+    }
+  }
+  async start() {
+    console.groupEnd();
+    console.groupCollapsed("\u{1F9EC} Ludex Start");
+    super.start();
+    Mark2.putAttr(this.markName, "Step", "Core Start");
+    this.event.emit(Events5.CORE_STARTING);
+    Mark2.putAttr(this.markName, "Step", "Request Token");
+    await this.auth.requestToken();
+    Mark2.putAttr(this.markName, "Step", "Init States");
+    await this.initState();
+    Mark2.putAttr(this.markName, "Step", "Process Player Profile");
+    this.processPlayerProfile();
+    if (GameSDK.getSDKName() === "FacebookInstant" && D2.isIOS()) {
+      this.event.catchUp(Events5.GAME_SDK_STARTED, this.processContextSession);
+    } else {
+      await this.processContextSession();
+    }
+    if (false) {
+      console.info("Ludex start completed");
+      console.info("Your game is ready to load!");
+    }
+    Mark2.putAttr(this.markName, "Step", "Core Ready");
+    Mark2.putAttr(this.markName, "Success", "true");
+    this.event.emit(Events5.CORE_READY);
+  }
+  processContextSession = async () => {
+    Mark2.putAttr(this.markName, "Step", "Process Context Payload");
+    await this.context.detectContextSessionType();
+    this.context.detectContextGameMode();
+    const contextSessionType = this.context.getSessionContextType();
+    Mark2.putAttr(this.markName, "Context Mode", contextSessionType);
+    console.debug("Ludex start completed", contextSessionType);
+    Mark2.stop(this.markName);
+  };
+  /* private testLWZUtils(): void {
+          const { Hash, String } = Ludex.Utils
+  
+          const str = 'abracadabra'
+          
+          console.info('str', str, str.length)
+  
+          const doubleStr = String.findDuplicateSubstrings(str)
+          console.info('doubleStr', doubleStr)
+  
+          const customDict: Ludex.Utils.Hash.CompressDict = {}
+          for (const subStr of doubleStr) {
+              const size = Object.keys(customDict).length
+              customDict[subStr] = size + 1
+          }
+  
+          console.info('customDict', customDict, Object.keys(customDict).length)
+  
+          let compressed = Hash.lwzCompress(str, customDict)
+          console.info('compressed', compressed, compressed.toString().length)
+  
+          let decompressed = Hash.lwzDecompress(compressed, customDict)
+          console.info('decompressed', decompressed, decompressed.length)
+  
+          const str2 = compressed.join(' ')
+          console.info('str2', str2, str2.length)
+  
+          const doubleStr2 = String.findDuplicateSubstrings(str2)
+          console.info('doubleStr2', doubleStr2)
+  
+          const customDict2: Ludex.Utils.Hash.CompressDict = {}
+          for (const subStr of doubleStr2) {
+              const size = Object.keys(customDict2).length
+              customDict2[subStr] = size + 1
+          }
+  
+          console.info('customDict2', customDict2, Object.keys(customDict2).length)
+  
+          compressed = Hash.lwzCompress(str2, customDict2, 2)
+          console.info('compressed2', compressed, compressed.length)
+  
+          decompressed = Hash.lwzDecompress(compressed, customDict2, 2)
+          console.info('decompressed2', decompressed, decompressed.length)
+  
+          compressed = decompressed.split(' ').map((str) => parseInt(str))
+          console.info('compressed', compressed)
+  
+          decompressed = Hash.lwzDecompress(compressed, customDict)
+          console.info('decompressed', decompressed, decompressed.length)
+      } */
+  addPlugins() {
+    this.installPlugin("Storage", storage_default);
+    this.installPlugin("Event", event_default);
+    this.installPlugin("Ads", ads_default);
+    this.installPlugin("Auth", auth_default);
+    this.installPlugin("Audio", audio_default);
+    this.installPlugin("Match", match_default);
+    this.installPlugin("Player", player_default);
+    this.installPlugin("Profile", profile_default);
+    this.installPlugin("Context", context_default2);
+    this.installPlugin("Language", language_default);
+    this.installPlugin("Missions", missions_default);
+    this.installPlugin("Analytics", analytics_default);
+    this.installPlugin("Visibility", visibility_default);
+    this.installPlugin("Leaderboard", leaderboards_default);
+    this.installPlugin("DailyRewards", daily_rewards_default);
+    this.installPlugin("FrameCapture", empty_script_default);
+    this.installPlugin("RemoteConfig", empty_script_default);
+    if ("Proxy" in window) {
+      this.installPlugin("Firebase", empty_script_default);
+    }
+  }
+  installPlugin(name2, plugin, isModule = false) {
+    const property = S8.toCamelCase(S8.capitalize(name2));
+    this.plugins.install(name2, plugin, true, property);
+    if (name2 === "Storage") return;
+    if (!isModule) {
+      this.emitCorePluginReady(name2);
+    } else {
+      this.emitModulePluginReady(name2);
+    }
+  }
+  async addMonitorPlugin() {
+    try {
+      const { MonitorError } = Debugger;
+      if (!MonitorError.Enabled) return;
+      this.modulePlugins.push("MonitorError");
+      const MonitorErrorPlugin = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+      default;
+      if (typeof MonitorErrorPlugin !== "function") return;
+      this.installPlugin("MonitorError", MonitorErrorPlugin, true);
+    } catch (error) {
+      console.error("Error importing Monitor Error plugin:", error);
+    }
+  }
+  async addCanvasRecorderPlugin() {
+    try {
+      const { CanvasRecorder } = Debugger;
+      if (!CanvasRecorder.Enabled) return;
+      this.modulePlugins.push("CanvasRecorder");
+      const CanvasRecorderPlugin = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+      default;
+      if (typeof CanvasRecorderPlugin !== "function") {
+        throw new Error("CanvasRecorderPlugin is not a function");
+      }
+      this.installPlugin("CanvasRecorder", CanvasRecorderPlugin, true);
+    } catch (error) {
+      console.error("Error importing Canvas Recorder plugin:", error);
+    }
+  }
+  async addAdaptivePerformancePlugin() {
+    try {
+      if (!AdaptivePerformance.Enabled) return;
+      this.modulePlugins.push("AdaptivePerformance");
+      const AdaptivePerformancePlugin2 = (await Promise.resolve().then(() => (init_adaptive_performance(), adaptive_performance_exports))).
+      default;
+      if (typeof AdaptivePerformancePlugin2 !== "function") return;
+      this.installPlugin("AdaptivePerformance", AdaptivePerformancePlugin2, true);
+    } catch (error) {
+      console.error("Error importing Adaptive Performance plugin:", error);
+    }
+  }
+  async addInputRecorderPlugin() {
+    try {
+      const { InputRecorder } = Debugger;
+      if (!InputRecorder.Enabled) return;
+      this.modulePlugins.push("InputRecorder");
+      const InputRecorderPlugin = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+      default;
+      if (typeof InputRecorderPlugin !== "function") return;
+      this.installPlugin("InputRecorder", InputRecorderPlugin, true);
+    } catch (error) {
+      console.error("Error importing Input Recorder plugin:", error);
+    }
+  }
+  addDevPlugins = () => {
+    const { ListPlayerDevIds } = Debugger;
+    const playerId2 = this.player.getPlayerId();
+    if (NODE_ENV !== "development" && (!playerId2 || ListPlayerDevIds.indexOf(playerId2) < 0)) {
+      console.warn("PlayerId is not in the list of dev IDs", playerId2);
+      return;
+    }
+    this.addConsolePlugin();
+    this.addProfilerPlugin();
+  };
+  async addConsolePlugin() {
+    try {
+      const { Console } = Debugger;
+      if (!Console.Enabled) return;
+      this.modulePlugins.push("Console");
+      const ConsolePlugin = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+      default;
+      if (typeof ConsolePlugin !== "function") {
+        throw new Error("ConsolePlugin is not a function");
+      }
+      this.installPlugin("Console", ConsolePlugin, true);
+      this.initConsolePlugin();
+    } catch (error) {
+      console.error("Error importing Console plugin:", error);
+    }
+  }
+  async addProfilerPlugin() {
+    try {
+      const { Profiler } = Debugger;
+      if (!Profiler.Enabled) return;
+      this.modulePlugins.push("Profiler");
+      const ProfilerPlugin = (await Promise.resolve().then(() => (init_empty_script(), empty_script_exports))).
+      default;
+      if (typeof ProfilerPlugin !== "function") {
+        throw new Error("ProfilerPlugin is not a function");
+      }
+      this.installPlugin("Profiler", ProfilerPlugin, true);
+      this.initProfilerPlugin();
+    } catch (error) {
+      console.error("Error importing Profiler plugin:", error);
+    }
+  }
+  emitCorePluginReady(name2) {
+    this.event.emit(CoreEvents_default.CORE_PLUGIN_READY, { name: name2 });
+  }
+  emitModulePluginReady(name2) {
+    this.event.emit(CoreEvents_default.MODULE_PLUGIN_READY, { name: name2 });
+  }
+  handleProtectGameInstance = () => {
+    const eventCount = this.event.getEventEmitCount(CoreEvents_default.MODULE_PLUGIN_READY);
+    const moduleCount = this.modulePlugins.length;
+    if (eventCount < moduleCount) return;
+    window.codex = Object.freeze(window.codex);
+    console.warn("window.codex", window.codex);
+    accessBlocker_default(window, "codex");
+  };
+  initEventPlugin() {
+    const { EventLogging } = Debugger;
+    if (!EventLogging.Enabled) return;
+    this.event.enableLogEvent();
+  }
+  initMatchPlugin() {
+    this.match.setUseCPUProfile(false);
+  }
+  initAds() {
+    this.ads.configure(Ads);
+    this.initGoogleAds();
+    this.initTranssionH5Ads();
+    this.initAdInstance();
+    if (!Ads.Enabled) return;
+    this.analytics.initAdEvent({
+      adService: "platform",
+      state: "loaded"
+    });
+  }
+  async initGoogleAds() {
+    try {
+      if (!Ads.Enabled) return;
+      const { AdSense } = Ads.AdServiceConfigs;
+      if (!AdSense.Enabled) return;
+      const googleAds = new empty_script_default(this);
+      await googleAds.initAsync({
+        usePreload: AdSense.UsePreload,
+        dataAdHost: AdSense.DataAdHost,
+        dataAdClient: AdSense.DataAdClient,
+        dataAdChannel: AdSense.DataAdChannel,
+        dataAdBreakTest: AdSense.DataAdBreakTest,
+        dataAdFrequencyHint: AdSense.DataAdFrequencyHint
+      });
+      window.GoogleAds = googleAds;
+    } catch (error) {
+      console.warn("initGoogleAds", error);
+    }
+  }
+  async initTranssionH5Ads() {
+    try {
+      if (!Ads.Enabled) return;
+      const { Savana } = Ads.AdServiceConfigs;
+      if (!Savana.Enabled) return;
+      const transsionH5Ads = new empty_script_default(this);
+      await transsionH5Ads.initAsync({
+        usePreload: Savana.UsePreload,
+        dataAdHost: Savana.DataAdHost,
+        dataAdClient: Savana.DataAdClient,
+        dataAdChannel: Savana.DataAdChannel,
+        dataAdBreakTest: Savana.DataAdBreakTest,
+        dataAdFrequencyHint: Savana.DataAdFrequencyHint
+      });
+      window.TranssionH5Ads = transsionH5Ads;
+    } catch (error) {
+      console.warn("initTranssionH5Ads", error);
+    }
+  }
+  getAdInstanceByService(service, isBanner = false) {
+    const { AdSense, AppLovin, Savana } = Ads.AdServiceConfigs;
+    switch (service) {
+      case "adsense":
+        if (AdSense.Enabled) {
+          return empty_script_default;
+        }
+        break;
+      case "applovin":
+        if (AppLovin.Enabled) {
+        }
+        break;
+      case "savana":
+        if (Savana.Enabled) {
+          return empty_script_default;
+        }
+        break;
+      default:
+        if (isBanner) return empty_script_default;
+        return NormalAdInstance_default;
+    }
+    return null;
+  }
+  initAdInstance() {
+    for (const option of Ads.InterstitialAdOptions) {
+      const instance = this.getAdInstanceByService(option.AdService);
+      if (!instance) continue;
+      this.ads.setAdInstance(AdsTypes.INTERSTITIAL, option.PlacementId, instance);
+    }
+    for (const option of Ads.RewardedVideoAdOptions) {
+      const instance = this.getAdInstanceByService(option.AdService);
+      if (!instance) continue;
+      this.ads.setAdInstance(AdsTypes.REWARDED_VIDEO, option.PlacementId, instance);
+    }
+    for (const option of Ads.RewardedInterstitialAdOptions) {
+      const instance = this.getAdInstanceByService(option.AdService);
+      if (!instance) continue;
+      this.ads.setAdInstance(AdsTypes.REWARDED_INTERSTITIAL, option.PlacementId, instance);
+    }
+    const isBanner = true;
+    for (const option of Ads.BannerDisplayAdOptions) {
+      const instance = this.getAdInstanceByService(option.AdService, isBanner);
+      if (!instance) continue;
+      this.ads.setAdInstance(AdsTypes.BANNER, option.PlacementId, instance);
+    }
+  }
+  async initState() {
+    try {
+      const initiator = new StateInitiator_default(this);
+      initiator.initContext();
+      await initiator.initPlayer();
+    } catch (error) {
+      console.error("StateInitiator", error);
+    }
+  }
+  initConsolePlugin() {
+    if (!this.console) return;
+    this.console.configure();
+  }
+  initProfilerPlugin() {
+    if (!this.profiler) return;
+    this.profiler.configure();
+  }
+  initCanvasRecorderPlugin = () => {
+    if (!this.canvasRecorder) return;
+    const { CanvasRecorder } = Debugger;
+    const { Type, Quality, RecordFps, SyncFps } = CanvasRecorder.Options;
+    this.canvasRecorder.configure({
+      type: Type,
+      quality: Quality,
+      syncFps: SyncFps,
+      recordFps: RecordFps
+    });
+    this.canvasRecorder.setPanelExpanded(CanvasRecorder.PanelExpanded);
+    const canvas = document.querySelector("canvas");
+    if (!canvas) {
+      console.error("Canvas not found");
+      return;
+    }
+    this.canvasRecorder.setCanvas(canvas);
+  };
+  initMonitorErrorPlugin = () => {
+    if (!this.monitorError) return;
+    const { MonitorError, ListPlayerDevIds } = Debugger;
+    const { ApiKey, Service, Feedback, TrackUser, FilterErrors } = MonitorError;
+    const { playerId: playerId2, name: name2 } = this.player.getPlayer();
+    if (playerId2 && ListPlayerDevIds.indexOf(playerId2) >= 0) return;
+    window.disableSimpleTrackErrors?.();
+    this.monitorError.configure({
+      apiKey: ApiKey,
+      service: Service,
+      feedback: Feedback,
+      trackUser: TrackUser,
+      releaseStage: NODE_ENV,
+      buildVersion: `${BUILD_VERSION ?? 1}`
+    });
+    this.monitorError.setUser({ id: playerId2, name: name2 });
+    this.monitorError.addFilterErrors(FilterErrors);
+    this.monitorError.initFeedbackTrackErrors();
+    this.updateMonitorErrorUserAndMetadata();
+    this.processErrorsQueue();
+  };
+  updateMonitorErrorUserAndMetadata = () => {
+    this.event.catchUp(Events5.PLAYER_INFO_LOADED, this.processWhenPlayerInfoLoaded);
+  };
+  processErrorsQueue = () => {
+    if (!this.monitorError) return;
+    if (!Array.isArray(window.__errorQueue)) return;
+    for (const error of window.__errorQueue) {
+      if (error instanceof Error) {
+        this.monitorError.sendException(error);
+      } else {
+        const errorObj = F6.toError(error);
+        this.monitorError.sendException(errorObj);
+      }
+    }
+    window.__errorQueue = null;
+  };
+  processWhenPlayerInfoLoaded = () => {
+    if (!this.monitorError) return;
+    const { playerId: playerId2, name: name2 } = this.player.getPlayer();
+    this.monitorError.setUser({
+      id: playerId2,
+      name: name2
+    });
+    this.monitorError.addMetadata({
+      isFirstSession: this.player.isFirstSession()
+    });
+  };
+  initRemoteConfig() {
+    if (!RemoteConfig.Enabled) return;
+    const config = J6.clone(RemoteConfig);
+    this.remoteConfig.configure(config);
+    this.event.on(CoreEvents_default.REQUEST_SAVE_CONFIG, this.handleSaveRemoteConfig);
+    this.event.on(CoreEvents_default.REQUEST_UPDATE_CONFIG, this.handleUpdateLudexConfig);
+    this.event.catchUp(CoreEvents_default.PLAYER_INFO_LOADED, this.handleStorageCurrentRemoteConfig);
+  }
+  handleSaveRemoteConfig = (data) => {
+    try {
+      const config = {
+        [data.type]: data
+      };
+      this.player.setPlayerDataByName("remoteConfig", config);
+    } catch (error) {
+      console.warn("handleSaveLudexConfig", error);
+    }
+  };
+  handleUpdateLudexConfig = (data) => {
+    try {
+      const { id, type } = data;
+      if (type !== "Ludex") return;
+      Ludex.Configs = O31.merge(Ludex.Configs, data.config);
+      const { Ads: Ads2 } = Ludex.Configs;
+      this.ads.configure(Ads2);
+      this.event.emit(CoreEvents_default.REMOTE_CONFIG_UPDATED, { id, type });
+    } catch (error) {
+      console.warn("handleUpdateLudexConfig", error);
+    }
+  };
+  handleStorageCurrentRemoteConfig = () => {
+    const playerRemoteConfig = this.player.getPlayerDataByKey("remoteConfig");
+    console.debug("playerRemoteConfig", J6.clone(playerRemoteConfig));
+    if (!playerRemoteConfig) return;
+    for (const key in playerRemoteConfig) {
+      if (O31.hasOwn(playerRemoteConfig, key)) {
+        const remoteConfig = playerRemoteConfig[key];
+        const newRemoteConfig = J6.clone(remoteConfig);
+        console.log("newRemoteConfig", newRemoteConfig);
+        const remoteConfigValid = new Dtos15.RemoteConfig.Data(newRemoteConfig).toObject();
+        console.debug("remoteConfigValid", remoteConfigValid);
+        this.remoteConfig.setRemoteConfig(remoteConfigValid);
+        this.remoteConfig.processUpdateConfig(remoteConfigValid.id, remoteConfigValid.type);
+      }
+    }
+  };
+  initFirebasePlugin() {
+    if (!Firebase.Enabled) return;
+    if (!this.firebase) return;
+    const config = J6.clone(Firebase);
+    this.firebase.configure(config);
+    Mark2.setService(this.firebase.services.performance);
+  }
+  initMarkCoreInitialize() {
+    if (!PerformanceMonitor.CoreFlows) return;
+    Mark2.measure(this.markName);
+    Mark2.putAttr(this.markName, "Build", `${BUILD_VERSION}`);
+    Mark2.putAttr(this.markName, "GameSDK", GameSDK.getSDKName());
+    Mark2.putAttr(this.markName, "Platform", GameSDK.getPlatform());
+    Mark2.putAttr(this.markName, "Success", "false");
+    Mark2.start(this.markName);
+  }
+  initAdaptivePerformancePlugin = () => {
+    if (!this.adaptivePerformance) return;
+    const config = J6.clone(AdaptivePerformance);
+    this.adaptivePerformance.configure(config);
+  };
+  initInputRecorderPlugin = () => {
+    if (!this.inputRecorder) return;
+    const { InputRecorder } = Debugger;
+    const config = J6.clone(InputRecorder);
+    if (!config) {
+      console.warn("Input Recorder is not configured");
+      return;
+    }
+    this.inputRecorder.configure(config);
+  };
+  async processPlayerProfile() {
+    try {
+      await this.player.syncProfileToServer();
+      this.processAfterSyncProfile();
+    } catch (error) {
+      console.warn("processPlayerProfile fail", error);
+    }
+  }
+  processAfterSyncProfile = () => {
+    if (!Notification.Enabled) return;
+    this.updatePlayerProfileToNotificationService();
+  };
+  async updatePlayerProfileToNotificationService() {
+    try {
+      const player = this.player.getPlayer();
+      const { ASID, playerId: playerId2, name: name2, photo: photo2, locale: locale2 } = player;
+      const profileData = {
+        appId: AppId5,
+        ASID,
+        playerId: playerId2,
+        name: name2,
+        photo: photo2,
+        locale: locale2
+      };
+      await updatePlayerProfileNotificationAsync(profileData);
+    } catch (error) {
+      console.warn("updatePlayerProfileToNotificationService", error);
+    }
+  }
+  initGoogleAnalytics() {
+    const { Enabled, ConsoleLog } = Analytics7.GoogleAnalytics ?? {};
+    if (!Enabled) return;
+    if (typeof GoogleAnalytics_default !== "function" || !(GoogleAnalytics_default.prototype instanceof
+    Object)) {
+      console.warn("GoogleAnalytics is not a constructor");
+      return;
+    }
+    this.analytics.add(
+      new GoogleAnalytics_default(this.codex, {
+        log: !!ConsoleLog
+      })
+    );
+  }
+  initClarityAnalytics() {
+    const { Enabled, ConsoleLog } = Analytics7.ClarityAnalytics ?? {};
+    if (!Enabled) return;
+    if (typeof empty_script_default !== "function" || !(empty_script_default.prototype instanceof Object)) {
+      console.warn("ClarityAnalytics is not a constructor");
+      return;
+    }
+    const instance = new empty_script_default(this.codex, {
+      log: !!ConsoleLog
+    });
+    const player = this.player.getPlayer();
+    const { playerId: playerId2 } = player;
+    instance.setUser(playerId2, GameSDK.extra?.isGuest ?? true);
+    this.analytics.add(instance);
+  }
+  initFirebaseAnalytics() {
+    const { Enabled, ConsoleLog } = Analytics7.FirebaseAnalytics ?? {};
+    if (!Enabled) return;
+    if (typeof empty_script_default !== "function" || !(empty_script_default.prototype instanceof Object)) {
+      console.warn("FirebaseAnalytics is not a constructor");
+      return;
+    }
+    const instance = new empty_script_default(this.codex, {
+      log: !!ConsoleLog
+    });
+    this.analytics.add(instance);
+    let entryPoint = "no_entry";
+    GameSDK.getEntryPointAsync().then((entry) => {
+      entryPoint = entry;
+    }).catch((error) => {
+      console.warn(error);
+    }).finally(() => {
+      const player = this.player.getPlayer();
+      const { playerId: playerId2, locale: locale2 } = player;
+      const {
+        // ? Old fields
+        fbig_ad_id,
+        fbig_adset_id,
+        fbig_campaign_id,
+        // ? New fields
+        fb_instant_game_adset_id,
+        fb_instant_game_ad_id,
+        fb_instant_game_campaign_id
+      } = GameSDK.getEntryPointData() || {};
+      const ad_id = fbig_ad_id || fb_instant_game_ad_id;
+      const adset_id = fbig_adset_id || fb_instant_game_adset_id;
+      const campaign_id = fbig_campaign_id || fb_instant_game_campaign_id;
+      instance.setUser(playerId2, {
+        locale: locale2,
+        ad_id,
+        adset_id,
+        campaign_id,
+        traffic_source: entryPoint
+      });
+    });
+  }
+  initYandexAnalytics() {
+    const sdkName = GameSDK.getSDKName();
+    if (sdkName !== "Yandex") return;
+    this.analytics.add(new empty_script_default(this.codex));
+  }
+  initXiaomiAnalytics() {
+    const sdkName = GameSDK.getSDKName();
+    if (sdkName !== "Xiaomi") return;
+    this.analytics.add(new empty_script_default(this.codex));
+  }
+  initFacebookAnalytics() {
+    const sdkName = GameSDK.getSDKName();
+    const { Enabled, Prefix, ConsoleLog } = Analytics7.FacebookAnalytics ?? {};
+    if (!Enabled || sdkName !== "FacebookInstant") return;
+    if (typeof Prefix !== "string") {
+      console.warn("Facebook Analytics is not configured");
+      return;
+    }
+    this.analytics.add(
+      new empty_script_default(this.codex, {
+        prefix: Prefix,
+        log: !!ConsoleLog
+      })
+    );
+  }
+  initTranssionH5Analytics() {
+    const sdkName = GameSDK.getSDKName();
+    if (sdkName !== "TranssionH5") return;
+    this.analytics.add(new empty_script_default(this.codex));
+  }
+};
+var codex_default2 = MagicCodex;
+
+// extensions/ludex/src/index.ts
+var {
+  Configs: {
+    GameEngine: { ForceDesktopDPR }
+  },
+  Utils: { Device: D3 },
+  Events: Events6
+} = Ludex;
+var initGame = async () => {
+  const codex2 = new codex_default2();
+  window.codex = codex2;
+  if (typeof globalThis !== "undefined") {
+    globalThis.codex = codex2;
+  }
+  const initPercent = 20;
+  if (window.__sdkLoadingCount < initPercent) {
+    window.__sdkLoadingCount = initPercent;
+  }
+  await codex2.boot();
+  codex2.event.catchUp(Events6.REQUEST_CORE_START, startGame);
+};
+var isGameStarted = false;
+var startGame = () => {
+  if (isGameStarted) return;
+  if (codex.event.getEventEmitCount(Events6.GAME_SDK_READY) < 1) {
+    codex.event.catchUp(Events6.GAME_SDK_READY, startGame);
+    return;
+  }
+  codex.start();
+  isGameStarted = true;
+  const startPercent = 25;
+  if (window.__sdkLoadingCount < startPercent) {
+    window.__sdkLoadingCount = startPercent;
+  }
+};
+if (ForceDesktopDPR !== false && D3.isDesktop()) {
+  if (typeof ForceDesktopDPR === "number" && ForceDesktopDPR > 0) {
+    window.devicePixelRatio = ForceDesktopDPR;
+  }
+}
+window.originalRequestAnimationFrame = window.requestAnimationFrame;
+window.isCustomRequestAnimationFrame = window.isCustomRequestAnimationFrame ?? true;
+if (window.isCustomRequestAnimationFrame) {
+  window.requestAnimationFrame = (callback) => {
+    if (window.isCustomRequestAnimationFrame) {
+      setTimeout(callback, 1e3 / 60);
+      return 0;
+    }
+    return window.originalRequestAnimationFrame(callback);
+  };
+}
+initGame();
