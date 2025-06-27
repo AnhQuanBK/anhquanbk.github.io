@@ -93922,9 +93922,8 @@ ${"_".repeat(requiredUnderscoreCount)}`);
       if (this.objects === null) return;
       const { fieldManager } = this.scene;
       const { totalHpBar } = this.objects;
-      const { y } = fieldManager.fieldBackground;
-      const { height: worldHeight } = WorldUtils_default.getWorldSize();
-      const fieldBgCenter = y - worldHeight / 2;
+      const { y, displayHeight: fieldBgHeight } = fieldManager.fieldBackground;
+      const fieldBgCenter = y - fieldBgHeight / 2;
       totalHpBar.setPosition(0, fieldBgCenter);
     }
     alignStartButton() {

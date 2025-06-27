@@ -7914,7 +7914,7 @@ var Ludex2 = Object.preventExtensions({
 window.Ludex = Ludex2;
 window.TypeGuard = type_guard_default;
 window.GameName = "Dinosaurs Merge Master";
-window.CommitId = "2b5e984a-1c0cdc27";
+window.CommitId = "9e936f85";
 window.BuildVersion = "0";
 console.warn("Env mode:", "development");
 console.warn("Debugger:", Ludex2.Utils.Valid.isDebugger());
