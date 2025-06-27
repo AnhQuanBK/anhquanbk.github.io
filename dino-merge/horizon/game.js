@@ -78263,7 +78263,6 @@ errupted")) {
       this.inst.game = game;
       game.canvas.id = "GameCanvas";
       this.inst.listenEvents();
-      this.handleGameCanvasStyling();
       event.emit(GameEvents_default.REQUEST_VIEW_RESIZE);
     }
     listenEvents() {
@@ -78459,13 +78458,6 @@ errupted")) {
     static isUsingLandscapeBackground() {
       const { width, height } = this.getWorldSize();
       return width / height > 0.796;
-    }
-    static handleGameCanvasStyling() {
-      const canvas = document.getElementById("GameCanvas");
-      if (!canvas) return;
-      canvas.style.maxWidth = "100%";
-      canvas.style.maxHeight = "100%";
-      canvas.style.objectFit = "contain";
     }
   };
   var WorldUtils_default = WorldUtils;
@@ -84877,12 +84869,10 @@ ${"_".repeat(requiredUnderscoreCount)}`);
     static loadAllUnits() {
       const scene = SceneUtils_default.getGlobalScene();
       if (!scene) return;
-      const highestMeleeLevel = PlayerUtils_default.getPlayerUnlockedMeleeLevel();
-      const highestRangedLevel = PlayerUtils_default.getPlayerUnlockedRangedLevel();
-      for (let i = highestMeleeLevel; i <= MaximumMeleeLevel2; i++) {
+      for (let i = 1; i <= MaximumMeleeLevel2; i++) {
         this.loadUnit(i, MELEE_UNIT_TYPE2);
       }
-      for (let i = highestRangedLevel; i <= MaximumRangedLevel2; i++) {
+      for (let i = 1; i <= MaximumRangedLevel2; i++) {
         this.loadUnit(i, RANGED_UNIT_TYPE2);
       }
     }
@@ -91742,6 +91732,9 @@ ${"_".repeat(requiredUnderscoreCount)}`);
     isUsePixelPerfect = false;
     hitArea;
     hitZone;
+    hitZoneDebug;
+    // ! For debugging button hit zone only
+    isDebugHitZone = false;
     hitSoundEffectKey = soundEffects_default.BUTTON_CLICK;
     scaleDownPress;
     constructor(scene, key, frame, width, height, usePixelPerfect = false) {
@@ -91854,6 +91847,11 @@ ${"_".repeat(requiredUnderscoreCount)}`);
         height: displayHeight
       });
       this.add([this.button, this.hitZone]);
+      if (this.isDebugHitZone) {
+        this.hitZoneDebug = this.scene.add.rectangle(0, 0, this.hitZone.width, this.hitZone.height, 16711680,
+        0.5);
+        this.add(this.hitZoneDebug);
+      }
     }
     // This method can be change on child classes for specific buttons
     updateSize() {
@@ -91865,6 +91863,12 @@ ${"_".repeat(requiredUnderscoreCount)}`);
       const bounceHeight = padHeight < padMax ? padHeight : padMax;
       this.setSize(width + bounceWidth, height + bounceHeight);
       this.hitZone.setSize(width + bounceWidth, height + bounceHeight);
+      this.hitZoneDebug?.setSize(this.hitZone.width, this.hitZone.height);
+      this.hitZoneDebug?.setPosition(this.hitZone.x, this.hitZone.y);
+      this.hitZoneDebug?.setOrigin(this.hitZone.originX, this.hitZone.originY);
+      if (this.hitZoneDebug) {
+        this.bringToTop(this.hitZoneDebug);
+      }
     }
     runDownAnimation() {
       if (this.useSound) {
@@ -92038,7 +92042,13 @@ ${"_".repeat(requiredUnderscoreCount)}`);
       const finalWidth = (width + bounceWidth) / dpr;
       const finalHeight = (height + bounceHeight) / dpr;
       this.setWorldSize(finalWidth, finalHeight);
-      this.hitZone.setWorldSize(finalWidth, finalHeight);
+      this.hitZone.setWorldSize(width + bounceWidth, height + bounceHeight);
+      this.hitZoneDebug?.setSize(this.hitZone.width, this.hitZone.height);
+      this.hitZoneDebug?.setPosition(this.hitZone.x, this.hitZone.y);
+      this.hitZoneDebug?.setOrigin(this.hitZone.originX, this.hitZone.originY);
+      if (this.hitZoneDebug) {
+        this.bringToTop(this.hitZoneDebug);
+      }
     }
   };
   var StartButton_default = StartButton;
@@ -93177,11 +93187,12 @@ ${"_".repeat(requiredUnderscoreCount)}`);
     }
     createZone() {
       const width = this.block.displayWidth;
+      const dpr = WorldUtils_default.getPixelRatio();
       const stampGap = 39 / 1.7;
       const offsetY = WorldUtils_default.isLandscape() ? 0 : stampGap;
       const height = this.block.displayHeight + offsetY;
       const originY = 0.5 - offsetY / height / 2;
-      this.clickZone = this.scene.add.zone(0, 0, width, height);
+      this.clickZone = this.scene.add.zone(0, 0, width * dpr, height * dpr);
       this.clickZone.setOrigin(0.5, originY);
       this.add(this.clickZone);
     }
@@ -93432,15 +93443,8 @@ ${"_".repeat(requiredUnderscoreCount)}`);
     }
     isUnitBarBgHigherThanBottom() {
       const { height } = WorldUtils_default.getWorldSize();
-      return this.bg.getWorldPosition().y + this.bg.displayHeight / 2 < height / 2;
-    }
-    getGapFromButtonSpaceToBottom() {
-      const { height } = WorldUtils_default.getWorldSize();
-      return this.bg.getWorldPosition().y + 70 - height / 2;
-    }
-    isButtonSpaceBelowBottom() {
-      const { height } = WorldUtils_default.getWorldSize();
-      return this.bg.getWorldPosition().y + 70 > height / 2;
+      const { y } = this.bg.getWorldPosition();
+      return y + this.bg.displayHeight / 2 < height / 2;
     }
     createMeleeBlock() {
       this.meleeBlock = new UnitPriceBlock_default(this.scene, UnitConstants_default.MELEE_UNIT_TYPE,
@@ -93935,6 +93939,7 @@ ${"_".repeat(requiredUnderscoreCount)}`);
       if (this.objects === null) return;
       const { fieldManager } = this.scene;
       const { unitBar } = this.objects;
+      const { displayHeight: fieldBgHeight } = fieldManager.fieldBackground;
       const { height: worldHeight } = WorldUtils_default.getWorldSize();
       const { y, scaleY } = fieldManager.fieldBackground;
       const pixelRatio = WorldUtils_default.getPixelRatio();
@@ -93942,16 +93947,11 @@ ${"_".repeat(requiredUnderscoreCount)}`);
       if (!isLandscape) {
         unitBar.createStampsBanner();
       }
-      const fieldBgCenter = y - worldHeight / 2;
+      const fieldBgCenter = y - fieldBgHeight / 2;
       const marginUnitBar = 255;
       unitBar.reviveBg();
       const unitBarCenterY = fieldBgCenter + marginUnitBar * scaleY * pixelRatio;
       unitBar.setPosition(0, unitBarCenterY);
-      if (unitBar.isButtonSpaceBelowBottom()) {
-        const distance = unitBar.getGapFromButtonSpaceToBottom();
-        const bannerHeight = AdsUtils_default.getBannerHeight();
-        unitBar.y = worldHeight / 2 - distance - bannerHeight;
-      }
       if (unitBar.isUnitBarBgHigherThanBottom()) {
         const distance = unitBar.getGapFromContainerCenterToBottomBg();
         unitBar.y = worldHeight / 2 - distance;
