@@ -1,0 +1,208 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"/><title>FreeCell - Classic Solitaire</title><link rel="manifest" href="manifest.json"/><style>:root {
+                --sat: env(safe-area-inset-top);
+                --sar: env(safe-area-inset-right);
+                --sab: env(safe-area-inset-bottom);
+                --sal: env(safe-area-inset-left);
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+            }
+
+            html {
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                scroll-behavior: smooth;
+                font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+                background-color: #191919;
+            }
+
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                color: white;
+                background: transparent;
+                overflow: hidden;
+            }
+
+            #app {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            #app-bg {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: #181818;
+                /* background-image: url(./assets/images/2x/bg-desktop-0.jpg); */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            @media (min-aspect-ratio: 16/9) {
+                #app-bg {
+                    background-size: contain;
+                }
+            }
+
+            #app-mask-left {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                user-select: none;
+                background: rgb(29 29 29 / 0);
+            }
+
+            #app-mask-right {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                user-select: none;
+                background: rgb(29 29 29 / 0);
+                right: 0px;
+            }
+
+            canvas {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                position: relative;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                /* box-shadow: rgb(0 0 0 / 10%) 0px 0px 16px 16px; */
+                touch-action: none;
+            }
+
+            #capture {
+                display: none;
+            }
+
+            #lds-dual-ring,
+            #wait-ads-dual-ring {
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 0px auto;
+                border-radius: 50%;
+                border: 6px solid #fff;
+                border-color: #fff transparent #fff transparent;
+                animation: lds-dual-ring 1.2s linear infinite;
+                -webkit-animation: lds-dual-ring 1.2s linear infinite;
+            }
+
+            #loading-game-icon-blur,
+            #loading-game-icon {
+                display: block;
+                background-image: url('icon-512x512.png');
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+            }
+
+            #loading-game-icon-blur {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                filter: blur(30px);
+                -webkit-filter: blur(30px);
+            }
+
+            #loading-game-icon {
+                width: 75px;
+                height: 75px;
+                margin: 0 auto;
+                animation: icon-fade-in 0.4s ease-in, icon-bubble 1.5s ease-in-out infinite;
+            }
+
+            #lds-text,
+            #wait-ads-text {
+                text-align: center;
+                -webkit-text-align: center;
+                margin-top: 30px;
+                font-size: 1.2rem;
+            }
+
+            #lds-content,
+            #wait-ads-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+            }
+
+            #wait-ads-mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: #191919;
+            }
+
+            @keyframes lds-dual-ring {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes icon-fade-in {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes icon-bubble {
+                0%,
+                100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.05);
+                }
+            }
+
+            div[hidden] {
+                display: none !important;
+            }</style><link href="sdk.140d03addb1c18943702.bundle.js" rel="preload" as="script"/><link href="vendors.5a480c99ed76f179905c.bundle.js" rel="preload" as="script"/><link href="engine.37dfa3f3d7a9d1b1fcff.bundle.js" rel="preload" as="script"/><link href="game.ca9c215624d9c3d0165f.bundle.js" rel="preload" as="script"/><script defer="defer" src="libs/sentry.min.js"></script><script>"use strict"
+
+    var waitSentryTimer = setInterval(function () {
+    if (!window.hasOwnProperty('Sentry')) return
+    clearInterval(waitSentryTimer)
+    var dns = "null"
+    if(dns === "null" || !dns) return
+    
+    Sentry.init({
+        dsn: dns,
+        environment: 'production',
+        release: '10',
+        tracesSampleRate: '1.0',
+    })
+    }, 100)</script><script>window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }</script><link href="https://www.googletagmanager.com/gtag/js?id=G-6GQF9WK23J" rel="preload" as="script"/><script>window.dataLayer = window.dataLayer || [];
+        window.__GA_CONFIG = {
+            GAME_NAME: 'FreeCell - Classic Solitaire',
+            GA_MEASUREMENT_ID: 'G-6GQF9WK23J',
+            BUILD_VERSION: '10',
+        }</script><script src="https://assets.msn.com/staticsb/statics/latest/msstart-games-sdk/msstart-v1.0.0-rc.13.min.js"></script></head><body oncontextmenu="event.preventDefault()"><div id="app"><div id="app-bg"></div><div id="app-mask-left"></div><div id="app-mask-right"></div></div><div id="lds-content" hidden><div id="lds-dual-ring"></div><div id="lds-text"><span id="lds-percent">0</span>%</div></div><script src="sdk.140d03addb1c18943702.bundle.js"></script><script>"use strict";function initFbInstant(){var t=1,n=setInterval((function(){"FBInstant"in window&&(clearInterval(n),FBInstant.initializeAsync().then((function(){window.focus();var n=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(t){initGoogleAnalytics(n,t)})).catch((function(){initGoogleAnalytics(n,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(t++),t>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(t,n){if(window.__GA_CONFIG){var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=FBInstant.getEntryPointData()||{},s=e.fbig_ad_id,o=e.fbig_adset_id,c=e.fbig_campaign_id,_=n;!!e.notificationPayload&&(_="msn_notification");var g=document.createElement("script");g.async=!0,g.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(g),gtag("set","client_storage","none"),gtag("set","client_id","100."+t),gtag("set","user_id",t),gtag("set","send_page_view",!1),gtag("js",new Date),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,medium:_,campaign:c,groups:"GA"}),gtag("set","user_properties",{user_id:t,traffic_source:_,campaign_id:c,adset_id:o,ad_id:s});try{FBInstant.getTournamentAsync().then((function(t){var n=t.getID();gtag("set","user_properties",{tournament_id:n})})).catch((function(t){}))}catch(d){}gtag("event","app_launch",{send_to:"GA"}),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.5a480c99ed76f179905c.bundle.js"></script><script defer="defer" src="engine.37dfa3f3d7a9d1b1fcff.bundle.js"></script><script defer="defer" src="game.ca9c215624d9c3d0165f.bundle.js"></script></body></html>

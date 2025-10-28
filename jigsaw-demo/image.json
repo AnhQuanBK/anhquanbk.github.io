@@ -1,7 +1,0 @@
-{
-    "puzzles": [
-        {"_id":"demo-vertical-1","type":"vertical","category":"classic","image":"demo-vertical-1.png","hasThumbnail":false,"renderOptions":[]},
-        {"_id":"demo-vertical-2","type":"vertical","category":"classic","image":"demo-vertical-2.png","hasThumbnail":false,"renderOptions":[]},
-        {"_id":"demo-horizontal-1","type":"horizontal","category":"classic","image":"demo-horizontal-1.png","hasThumbnail":false,"renderOptions":[]}
-    ]
-}
