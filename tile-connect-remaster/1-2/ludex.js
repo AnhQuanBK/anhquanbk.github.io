@@ -444,7 +444,7 @@ var init_init_core = __esm({
           user_id: userId,
           send_page_view: false
         });
-        const buildVersion = 2;
+        const buildVersion = 3;
         for (const tagId of tagIds) {
           window.gtag("config", tagId, {
             cookie_flags: "SameSite=None;Secure",
@@ -797,7 +797,7 @@ function trace() {
     if (typeof args[2] !== "object") {
       args[2] = {};
     }
-    args[2].build = 2;
+    args[2].build = 3;
     args[2].send_to = "GA";
     args[2].extend_session = 1;
   }
@@ -3079,83 +3079,6 @@ var init_MSContext = __esm({
   }
 });
 
-// extensions/ludex/src/game-sdk/adapters/msgames/functions/MSCloudSave.ts
-var _MSCloudSave, MSCloudSave, MSCloudSave_default;
-var init_MSCloudSave = __esm({
-  "extensions/ludex/src/game-sdk/adapters/msgames/functions/MSCloudSave.ts"() {
-    "use strict";
-    init_define_GAME_CONFIG();
-    init_define_GAME_SDK_CONFIG();
-    init_console();
-    init_track_events();
-    init_track_errors();
-    init_GameSDK2();
-    init_progress();
-    init_init_core();
-    init_navigator();
-    init_performance();
-    init_browser();
-    init_init();
-    init_google_analytics();
-    _MSCloudSave = class _MSCloudSave {
-      sdk$;
-      constructor(sdk2) {
-        this.sdk$ = sdk2;
-      }
-      async getDataAsync(gameId) {
-        try {
-          let response = {};
-          if (gameId) {
-            response = await this.sdk$.cloudSave.getDataAsync({ gameId });
-          } else {
-            response = await this.sdk$.cloudSave.getDataAsync();
-          }
-          if ("code" in response) {
-            const errorCode = response.code;
-            throw new Error(errorCode);
-          }
-          return this.parseCloudSaveResponse$(response);
-        } catch (error) {
-          console.error("Error getting cloud save data", error);
-          return {};
-        }
-      }
-      async saveDataAsync(data, gameId) {
-        try {
-          const config = {
-            gameId,
-            data: {
-              stringContent: JSON.stringify(data)
-            }
-          };
-          const response = await this.sdk$.cloudSave.saveDataAsync(config);
-          if ("code" in response) {
-            const errorCode = response.code;
-            throw new Error(errorCode);
-          }
-          return;
-        } catch (error) {
-          console.error("Error setting cloud save data", error);
-        }
-      }
-      parseCloudSaveResponse$(response) {
-        try {
-          if ("stringContent" in response && typeof response.stringContent === "string") {
-            return JSON.parse(response.stringContent);
-          }
-          return {};
-        } catch (error) {
-          console.error("Error parsing cloud save response", error);
-          return {};
-        }
-      }
-    };
-    __name(_MSCloudSave, "MSCloudSave");
-    MSCloudSave = _MSCloudSave;
-    MSCloudSave_default = MSCloudSave;
-  }
-});
-
 // extensions/ludex/src/game-sdk/adapters/msgames/functions/MSDailyNotification.ts
 var DEFAULT_MESSAGE, _MSDailyNotification, MSDailyNotification, MSDailyNotification_default;
 var init_MSDailyNotification = __esm({
@@ -3297,204 +3220,6 @@ var init_MSDailyNotification = __esm({
   }
 });
 
-// extensions/ludex/src/game-sdk/adapters/msgames/functions/MSInAppPurchase.ts
-var PUBLIC_KEY, _MSInAppPurchase, MSInAppPurchase, MSInAppPurchase_default;
-var init_MSInAppPurchase = __esm({
-  "extensions/ludex/src/game-sdk/adapters/msgames/functions/MSInAppPurchase.ts"() {
-    "use strict";
-    init_define_GAME_CONFIG();
-    init_define_GAME_SDK_CONFIG();
-    init_console();
-    init_track_events();
-    init_track_errors();
-    init_GameSDK2();
-    init_progress();
-    init_init_core();
-    init_navigator();
-    init_performance();
-    init_browser();
-    init_init();
-    init_google_analytics();
-    PUBLIC_KEY = "<RSAKeyValue><Modulus>0hFO5sN1aB78G7NxMCdgAnHga8CmptR1Gq5WQ0L3OmkIU+XEQT0bq9JgzSIf\
-W0K3pYkkO1dmDYoVmHWF13GCqPQYVENhRRA5jGKRpo+efXJ/dkodB3D8rsAOPN0BUjvYZxf2FgfWHkrblpkWZ6iTpZ5LobSeTTW9\
-7ZURGsdpolGQLSp8xsap38tBk0db0Pn1nn9It5vun/nJxthccM2rerc1rVI0inLVID/qvwBUM/iXBt4uwnOqIg/egLDewaySg2+S\
-Vt4SWTaGHB+qYoSrcceO1eHVGjRUemX6/dsAcVSOZDiszEEcDxY3EwhcPbKU762SX9jUQIeFi4UB+9ckMQ==</Modulus><Expon\
-ent>AQAB</Exponent></RSAKeyValue>";
-    _MSInAppPurchase = class _MSInAppPurchase {
-      sdk$;
-      publicKey$ = null;
-      constructor(sdk2) {
-        this.sdk$ = sdk2;
-      }
-      base64ToArrayBuffer$(base64) {
-        const binaryString = atob(base64);
-        const bytes = new Uint8Array(binaryString.length);
-        for (let i = 0; i < binaryString.length; i++) {
-          bytes[i] = binaryString.charCodeAt(i);
-        }
-        return bytes.buffer;
-      }
-      async getRSAKeyFromXML$(xmlString) {
-        if (this.publicKey$) {
-          return this.publicKey$;
-        }
-        const modulusMatch = xmlString.match(/<Modulus>([^<]+)<\/Modulus>/);
-        const exponentMatch = xmlString.match(/<Exponent>([^<]+)<\/Exponent>/);
-        if (!modulusMatch || !exponentMatch) {
-          throw new Error("Invalid XML format: Missing Modulus or Exponent");
-        }
-        const jwk = {
-          kty: "RSA",
-          n: modulusMatch[1].replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, ""),
-          e: exponentMatch[1].replace(/\+/g, "-").replace(/\//g, "_").replace(/=/g, ""),
-          alg: "RS256",
-          ext: true
-        };
-        this.publicKey$ = await crypto.subtle.importKey(
-          "jwk",
-          jwk,
-          {
-            name: "RSASSA-PKCS1-v1_5",
-            hash: "SHA-256"
-          },
-          true,
-          ["verify"]
-        );
-        return this.publicKey$;
-      }
-      async verifySignature$(data, signature) {
-        try {
-          const encoder = new TextEncoder();
-          const dataBuffer = encoder.encode(data);
-          const signatureBuffer = this.base64ToArrayBuffer$(signature);
-          const rsaPublicKey = await this.getRSAKeyFromXML$(PUBLIC_KEY);
-          return await crypto.subtle.verify("RSASSA-PKCS1-v1_5", rsaPublicKey, signatureBuffer, dataBuffer);
-        } catch (error) {
-          console.error("Signature verification error:", error);
-          return false;
-        }
-      }
-      async verifyPurchaseSuccessResponse$(response) {
-        const receiptString = JSON.stringify(response.receipt);
-        return await this.verifySignature$(receiptString, response.receiptSignature);
-      }
-      async verifyConsumeSuccessResponse$(response) {
-        const consumptionString = JSON.stringify(response.consumptionResult);
-        return await this.verifySignature$(consumptionString, response.consumptionSignature);
-      }
-      async verifyReceiptListResponse$(response) {
-        const receiptString = JSON.stringify(response.receipts);
-        return await this.verifySignature$(receiptString, response.receiptSignature);
-      }
-      async purchaseAsync(productId) {
-        try {
-          const response = await this.sdk$.iap.purchaseAsync({
-            productId
-          });
-          if ("code" in response) {
-            return response;
-          }
-          const isValid = await this.verifyPurchaseSuccessResponse$(response);
-          if (!isValid) {
-            throw new Error("Signature verification failed");
-          }
-          return response;
-        } catch (error) {
-          console.warn("purchaseAsync", error);
-          return this.logBaseAddOnError$(error);
-        }
-      }
-      async consumeAsync(productId) {
-        try {
-          const response = await this.sdk$.iap.consumeAsync({
-            productId
-          });
-          if ("code" in response) {
-            return response;
-          }
-          const isValid = await this.verifyConsumeSuccessResponse$(response);
-          if (!isValid) {
-            throw new Error("Signature verification failed");
-          }
-          return response;
-        } catch (error) {
-          console.warn("consumeAsync", error);
-          return this.logBaseAddOnError$(error);
-        }
-      }
-      async getAddOnAsync(productId) {
-        try {
-          const response = await this.sdk$.iap.getAddOnAsync({
-            productId
-          });
-          return response;
-        } catch (error) {
-          console.warn("getAddOnAsync", error);
-          return this.logBaseAddOnError$(error);
-        }
-      }
-      async getAllAddOnsAsync() {
-        try {
-          const response = await this.sdk$.iap.getAllAddOnsAsync();
-          return response;
-        } catch (error) {
-          console.warn("getAllAddOnsAsync", error);
-          return this.logBaseAddOnError$(error);
-        }
-      }
-      async getPurchasesAsync(productId) {
-        try {
-          const response = await this.sdk$.iap.getPurchasesAsync({
-            productId
-          });
-          if ("code" in response) {
-            return response;
-          }
-          const isValid = await this.verifyPurchaseSuccessResponse$(response);
-          if (!isValid) {
-            throw new Error("Signature verification failed");
-          }
-          return response;
-        } catch (error) {
-          console.warn("getPurchasesAsync", error);
-          return this.logBaseAddOnError$(error);
-        }
-      }
-      async getAllPurchasesAsync() {
-        try {
-          const response = await this.sdk$.iap.getAllPurchasesAsync();
-          if ("code" in response) {
-            return response;
-          }
-          const isValid = await this.verifyReceiptListResponse$(response);
-          if (!isValid) {
-            throw new Error("Signature verification failed");
-          }
-          return response;
-        } catch (error) {
-          console.warn("getAllPurchasesAsync", error);
-          return this.logBaseAddOnError$(error);
-        }
-      }
-      logBaseAddOnError$(error) {
-        if (error instanceof Error) {
-          return {
-            code: "ERROR",
-            description: error.message
-          };
-        }
-        return {
-          code: "ERROR",
-          description: "An unknown error occurred"
-        };
-      }
-    };
-    __name(_MSInAppPurchase, "MSInAppPurchase");
-    MSInAppPurchase = _MSInAppPurchase;
-    MSInAppPurchase_default = MSInAppPurchase;
-  }
-});
-
 // extensions/ludex/src/game-sdk/adapters/msgames/MSExtra.ts
 var GameName2, _MSExtra, MSExtra, MSExtra_default;
 var init_MSExtra = __esm({
@@ -3514,24 +3239,18 @@ var init_MSExtra = __esm({
     init_init();
     init_google_analytics();
     init_Extra();
-    init_MSCloudSave();
     init_MSDailyNotification();
-    init_MSInAppPurchase();
     GameName2 = "Tile Connect Remaster";
     _MSExtra = class _MSExtra extends Extra_default {
       sdk$;
-      iap$;
       dailyNotification$;
-      cloudSave$;
       shareImageBase64$ = void 0;
       notificationImageBase64$ = void 0;
       constructor(adapter) {
         super(adapter);
         this.sdk$ = adapter.sdk;
         this.adapter$ = adapter;
-        this.iap$ = new MSInAppPurchase_default(this.sdk$);
         this.dailyNotification$ = new MSDailyNotification_default();
-        this.cloudSave$ = new MSCloudSave_default(this.sdk$);
       }
       async shareAsync() {
         try {
@@ -3628,30 +3347,6 @@ var init_MSExtra = __esm({
         const base64 = await blobToDataImage(blob);
         return base64;
       }
-      async purchaseAsync(productId) {
-        return this.iap$.purchaseAsync(productId);
-      }
-      async consumeAsync(productId) {
-        return this.iap$.consumeAsync(productId);
-      }
-      async getAddOnAsync(productId) {
-        return this.iap$.getAddOnAsync(productId);
-      }
-      async getAllAddOnsAsync() {
-        return this.iap$.getAllAddOnsAsync();
-      }
-      async getPurchasesAsync(productId) {
-        return this.iap$.getPurchasesAsync(productId);
-      }
-      async getAllPurchasesAsync() {
-        return this.iap$.getAllPurchasesAsync();
-      }
-      async getDataAsync(gameId) {
-        return this.cloudSave$.getDataAsync(gameId);
-      }
-      async saveDataAsync(data, gameId) {
-        return this.cloudSave$.saveDataAsync(data, gameId);
-      }
       notifyGameMuted() {
         this.sdk$.notifyGameMuted();
       }
@@ -3662,6 +3357,254 @@ var init_MSExtra = __esm({
     __name(_MSExtra, "MSExtra");
     MSExtra = _MSExtra;
     MSExtra_default = MSExtra;
+  }
+});
+
+// extensions/ludex/src/game-sdk/adapters/msgames/MSPayments.ts
+var PUBLIC_KEY, _MSPayments, MSPayments, MSPayments_default;
+var init_MSPayments = __esm({
+  "extensions/ludex/src/game-sdk/adapters/msgames/MSPayments.ts"() {
+    "use strict";
+    init_define_GAME_CONFIG();
+    init_define_GAME_SDK_CONFIG();
+    init_console();
+    init_track_events();
+    init_track_errors();
+    init_GameSDK2();
+    init_progress();
+    init_init_core();
+    init_navigator();
+    init_performance();
+    init_browser();
+    init_init();
+    init_google_analytics();
+    init_Payments();
+    PUBLIC_KEY = "<RSAKeyValue><Modulus>0hFO5sN1aB78G7NxMCdgAnHga8CmptR1Gq5WQ0L3OmkIU+XEQT0bq9JgzSIf\
+W0K3pYkkO1dmDYoVmHWF13GCqPQYVENhRRA5jGKRpo+efXJ/dkodB3D8rsAOPN0BUjvYZxf2FgfWHkrblpkWZ6iTpZ5LobSeTTW9\
+7ZURGsdpolGQLSp8xsap38tBk0db0Pn1nn9It5vun/nJxthccM2rerc1rVI0inLVID/qvwBUM/iXBt4uwnOqIg/egLDewaySg2+S\
+Vt4SWTaGHB+qYoSrcceO1eHVGjRUemX6/dsAcVSOZDiszEEcDxY3EwhcPbKU762SX9jUQIeFi4UB+9ckMQ==</Modulus><Expon\
+ent>AQAB</Exponent></RSAKeyValue>";
+    _MSPayments = class _MSPayments extends Payments_default {
+      sdk$;
+      publicKey$ = null;
+      constructor(adapter) {
+        super(adapter);
+        this.sdk$ = adapter.sdk;
+      }
+      base64ToArrayBuffer$(base64) {
+        const binaryString = atob(base64);
+        const bytes = new Uint8Array(binaryString.length);
+        for (let i = 0; i < binaryString.length; i++) {
+          bytes[i] = binaryString.charCodeAt(i);
+        }
+        return bytes.buffer;
+      }
+      async getRSAKeyFromXML$(xmlString) {
+        if (this.publicKey$) {
+          return this.publicKey$;
+        }
+        const modulusMatch = xmlString.match(/<Modulus>([^<]+)<\/Modulus>/);
+        const exponentMatch = xmlString.match(/<Exponent>([^<]+)<\/Exponent>/);
+        if (!modulusMatch || !exponentMatch) {
+          throw new Error("Invalid XML format: Missing Modulus or Exponent");
+        }
+        const convertToUrl = /* @__PURE__ */ __name((base64) => base64.replace(/\+/g, "-").replace(/\//g,
+        "_").replace(/=/g, ""), "convertToUrl");
+        const jwk = {
+          kty: "RSA",
+          n: convertToUrl(modulusMatch[1]),
+          e: convertToUrl(exponentMatch[1]),
+          alg: "RS256",
+          ext: true
+        };
+        this.publicKey$ = await crypto.subtle.importKey(
+          "jwk",
+          jwk,
+          {
+            name: "RSASSA-PKCS1-v1_5",
+            hash: "SHA-256"
+          },
+          true,
+          ["verify"]
+        );
+        return this.publicKey$;
+      }
+      async verifySignature$(data, signature) {
+        try {
+          const encoder = new TextEncoder();
+          const dataBuffer = encoder.encode(data);
+          const signatureBuffer = this.base64ToArrayBuffer$(signature);
+          const rsaPublicKey = await this.getRSAKeyFromXML$(PUBLIC_KEY);
+          return await crypto.subtle.verify("RSASSA-PKCS1-v1_5", rsaPublicKey, signatureBuffer, dataBuffer);
+        } catch (error) {
+          console.error("Signature verification error:", error);
+          return false;
+        }
+      }
+      async verifyPurchaseSuccessResponse$(response) {
+        const receiptString = JSON.stringify(response.receipt);
+        return await this.verifySignature$(receiptString, response.receiptSignature);
+      }
+      async verifyConsumeSuccessResponse$(response) {
+        const consumptionString = JSON.stringify(response.consumptionResult);
+        return await this.verifySignature$(consumptionString, response.consumptionSignature);
+      }
+      async verifyReceiptListResponse$(response) {
+        const receiptString = JSON.stringify(response.receipts);
+        return await this.verifySignature$(receiptString, response.receiptSignature);
+      }
+      async purchaseAsync(purchaseConfig) {
+        const { productID } = purchaseConfig;
+        const result3 = await this.handleMSPurchaseAsync(productID);
+        return {
+          productID,
+          purchaseToken: "",
+          paymentID: "",
+          purchaseTime: "",
+          signedRequest: "",
+          developerPayload: "",
+          platformSpecificPayload: result3
+        };
+      }
+      async handleMSPurchaseAsync(productId) {
+        try {
+          const response = await this.sdk$.iap.purchaseAsync({
+            productId
+          });
+          if ("code" in response) {
+            return response;
+          }
+          const isValid = await this.verifyPurchaseSuccessResponse$(response);
+          if (!isValid) {
+            throw new Error("Signature verification failed");
+          }
+          return response;
+        } catch (error) {
+          console.warn("purchaseAsync", error);
+          return this.logBaseAddOnError$(error);
+        }
+      }
+      async consumePurchaseAsync(productId) {
+        try {
+          const response = await this.sdk$.iap.consumeAsync({
+            productId
+          });
+          if ("code" in response) {
+            return Promise.reject(response.code);
+          }
+          const isValid = await this.verifyConsumeSuccessResponse$(response);
+          if (!isValid) {
+            throw new Error("Signature verification failed");
+          }
+          return Promise.resolve();
+        } catch (error) {
+          console.warn("consumeAsync", error);
+          return Promise.reject(error);
+        }
+      }
+      async getAddOnAsync(productId) {
+        try {
+          const response = await this.sdk$.iap.getAddOnAsync({
+            productId
+          });
+          return response;
+        } catch (error) {
+          console.warn("getAddOnAsync", error);
+          return this.logBaseAddOnError$(error);
+        }
+      }
+      async getCatalogAsync() {
+        const allProducts = await this.getAllAddOnsAsync$();
+        if ("code" in allProducts) {
+          return [];
+        }
+        return allProducts.map((product) => ({
+          productID: product.productId,
+          title: product.title,
+          price: product.price.listPrice.toString(),
+          priceCurrencyCode: product.price.currencyCode,
+          priceAmount: product.price.listPrice,
+          platformSpecificPayload: product
+        }));
+      }
+      async getAllAddOnsAsync$() {
+        try {
+          const response = await this.sdk$.iap.getAllAddOnsAsync();
+          return response;
+        } catch (error) {
+          console.warn("getAllAddOnsAsync", error);
+          return this.logBaseAddOnError$(error);
+        }
+      }
+      async getPreviousPurchaseAsync(productId) {
+        try {
+          const response = await this.sdk$.iap.getPurchasesAsync({
+            productId
+          });
+          if ("code" in response) {
+            return response;
+          }
+          const isValid = await this.verifyPurchaseSuccessResponse$(response);
+          if (!isValid) {
+            throw new Error("Signature verification failed");
+          }
+          return response;
+        } catch (error) {
+          console.warn("getPurchasesAsync", error);
+          return this.logBaseAddOnError$(error);
+        }
+      }
+      async getPurchasesAsync() {
+        const result3 = await this.getAllPurchasesAsync$();
+        const basePurchaseData = [];
+        if ("code" in result3) {
+          return basePurchaseData;
+        }
+        for (const receipt of result3.receipts) {
+          basePurchaseData.push({
+            productID: receipt.productId,
+            purchaseToken: "",
+            paymentID: "",
+            purchaseTime: "",
+            signedRequest: "",
+            developerPayload: "",
+            platformSpecificPayload: receipt
+          });
+        }
+        return basePurchaseData;
+      }
+      async getAllPurchasesAsync$() {
+        try {
+          const response = await this.sdk$.iap.getAllPurchasesAsync();
+          if ("code" in response) {
+            return response;
+          }
+          const isValid = await this.verifyReceiptListResponse$(response);
+          if (!isValid) {
+            throw new Error("Signature verification failed");
+          }
+          return response;
+        } catch (error) {
+          console.warn("getAllPurchasesAsync", error);
+          return this.logBaseAddOnError$(error);
+        }
+      }
+      logBaseAddOnError$(error) {
+        if (error instanceof Error) {
+          return {
+            code: "ERROR",
+            description: error.message
+          };
+        }
+        return {
+          code: "ERROR",
+          description: "An unknown error occurred"
+        };
+      }
+    };
+    __name(_MSPayments, "MSPayments");
+    MSPayments = _MSPayments;
+    MSPayments_default = MSPayments;
   }
 });
 
@@ -3687,6 +3630,7 @@ var init_MSPlayer = __esm({
     LOCAL_STORE_KEY = "MSPlayer";
     _MSPlayer = class _MSPlayer extends Player_default {
       personalInfo$;
+      cloudSave$;
       signature$ = "";
       canLogin$ = false;
       maxLoginAttempts$ = 0;
@@ -3848,6 +3792,20 @@ var init_MSPlayer = __esm({
       getConnectedPlayersAsync() {
         this.adapter$.extra.exceptionUnsupported();
       }
+      async getDataAsync(keys) {
+        const data = await this.cloudSave$.getDataAsync();
+        const { Object: O32 } = Ludex.Utils;
+        const requiredData = {};
+        for (const key of keys) {
+          if (O32.hasOwn(data, key)) {
+            requiredData[key] = data[key];
+          }
+        }
+        return requiredData;
+      }
+      async setDataAsync(data) {
+        await this.cloudSave$.saveDataAsync(data);
+      }
     };
     __name(_MSPlayer, "MSPlayer");
     MSPlayer = _MSPlayer;
@@ -3994,6 +3952,7 @@ var init_MSAdapter = __esm({
     init_MSAdInstance();
     init_MSContext();
     init_MSExtra();
+    init_MSPayments();
     init_MSPlayer();
     init_MSTournament();
     _MSAdapter = class _MSAdapter extends GameSDK_default2 {
@@ -4009,6 +3968,7 @@ var init_MSAdapter = __esm({
         this.player = new MSPlayer_default(this);
         this.context = new MSContext_default(this);
         this.tournament = new MSTournament_default(this);
+        this.payments = new MSPayments_default(this);
         this.rewardedVideoInstance$ = new MSAdInstance_default("rewarded", this.sdk);
         this.interstitialAdInstance$ = new MSAdInstance_default("interstitial", this.sdk);
       }
@@ -10221,8 +10181,8 @@ var Ludex2 = Object.preventExtensions({
 window.Ludex = Ludex2;
 window.TypeGuard = type_guard_default;
 window.GameName = "Tile Connect Remaster";
-window.CommitId = "f74f5c41-2b84ac36";
-window.BuildVersion = 2;
+window.CommitId = "f74f5c41-88c6cfbc";
+window.BuildVersion = 3;
 console.warn("Env mode:", "development");
 console.warn("Debugger:", Ludex2.Utils.Valid.isDebugger());
 console.warn("DevIds:", Ludex2.Configs.Debugger.ListPlayerDevIds);
@@ -21889,7 +21849,7 @@ init_empty_script();
 init_empty_script();
 init_accessBlocker();
 var NODE_ENV = "development";
-var BUILD_VERSION = 2;
+var BUILD_VERSION = 3;
 var {
   Dtos: Dtos15,
   Events: Events9,
