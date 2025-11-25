@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Mikado Bold";
+    src: url("../common/mikado-bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Main Tournament Container */
+.tournament-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+    gap: 10%;
+    box-sizing: border-box;
+    background: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Position 1 - Center, Tallest */
+.podium-position-1 {
+    width: 20%;
+    display: block;
+    align-items: start;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Position 2 - Left, Medium Height */
+.podium-position-2 {
+    width: 20%;
+    display: block;
+    align-items: start;
+    position: absolute;
+    top: 33%;
+    left: 17%;
+    transform: translateX(-50%);
+}
+
+/* Position 3 - Right, Shortest */
+.podium-position-3 {
+    width: 20%;
+    display: block;
+    align-items: start;
+    position: absolute;
+    top: 33%;
+    left: 83%;
+    transform: translateX(-50%);
+}
+
+/* Rank Badge Container */
+.rank-badge-container {
+    position: absolute;
+    width: 50%;
+    aspect-ratio: 1;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 106%;
+}
+
+.rank-badge {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.rank-number-2 {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: "Mikado Bold", sans-serif;
+    font-size: calc(4.9cqw);
+    font-weight: bold;
+    text-shadow: rgba(61, 81, 114, 1) 2px 2px 4px;
+    transform: translate(-50%, -50%);
+    top: 1%;
+    left: 51%;
+}
+
+.rank-number-3 {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: "Mikado Bold", sans-serif;
+    font-size: calc(4.9cqw);
+    font-weight: bold;
+    text-shadow: rgba(146, 32, 12, 1) 2px 2px 4px;
+    transform: translate(-50%, -50%);
+    top: 1%;
+    left: 51%;
+}
+
+/* Position 1 larger badge */
+.rank-badge-container-1 {
+    position: absolute;
+    width: 60%;
+    aspect-ratio: 1;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 106%;
+}
+
+.rank-number-1 {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: "Mikado Bold", sans-serif;
+    font-size: calc(5.4cqw);
+    font-weight: bold;
+    text-shadow: rgb(174, 66, 18) 0px 2px 4px;
+    transform: translate(-50%, -50%);
+    top: 6%;
+    left: 49%;
+}
+
+/* Avatar Section */
+.avatar-section {
+    width: 100%;
+    aspect-ratio: 1;
+    margin-bottom: 0px;
+}
+
+.avatar-container {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-background {
+    position: absolute;
+    width: 111%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.player-avatar {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 19%;
+    border: 4px solid rgba(226, 200, 180, 1);
+    object-fit: cover;
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Player Info */
+.player-info {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 106%;
+}
+
+.player-name {
+    font-family: "Mikado Bold", sans-serif;
+    font-size: calc(3.9cqw);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 1px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+}
+
+.player-score {
+    font-family: "Mikado Bold", sans-serif;
+    font-size: calc(5.2cqw);
+    margin-bottom: -25%;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 1px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.4px;
+}
