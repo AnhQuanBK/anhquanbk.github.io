@@ -1,0 +1,3 @@
+<View className="avatar-container">
+    <Image src="{{FBInstant.players[{{playerId}}].photo}}" className="avatar-frame-img" />
+</View>
