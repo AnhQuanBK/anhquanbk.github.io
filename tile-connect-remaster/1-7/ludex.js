@@ -445,7 +445,7 @@ var init_init_core = __esm({
           user_id: userId,
           send_page_view: false
         });
-        const buildVersion = 6;
+        const buildVersion = 10;
         for (const tagId of tagIds) {
           window.gtag("config", tagId, {
             cookie_flags: "SameSite=None;Secure",
@@ -798,7 +798,7 @@ function trace() {
     if (typeof args[2] !== "object") {
       args[2] = {};
     }
-    args[2].build = 6;
+    args[2].build = 10;
     args[2].send_to = "GA";
     args[2].extend_session = 1;
   }
@@ -1776,7 +1776,7 @@ var init_Player = __esm({
     init_browser();
     init_init();
     init_google_analytics();
-    GameName = "Tile Connect Remaster".replace(/ /g, "-");
+    GameName = "Tile-Connect-Deluxe".replace(/ /g, "-");
     avatarUrl = "https://picsum.photos/seed/%1/300/300";
     _Player = class _Player {
       adapter$;
@@ -3242,7 +3242,7 @@ var init_MSExtra = __esm({
     init_SDKCommonError();
     init_Extra();
     init_MSDailyNotification();
-    GameName2 = "Tile Connect Remaster";
+    GameName2 = "Tile-Connect-Deluxe";
     _MSExtra = class _MSExtra extends Extra_default {
       sdk$;
       dailyNotification$;
@@ -5435,7 +5435,7 @@ var func19 = /* @__PURE__ */ __name((value) => {
 var isEmpty_default = func19;
 
 // extensions/ludex/src/utils/browser/openIndexedDB.ts
-var gameName = "Tile Connect Remaster";
+var gameName = "Tile-Connect-Deluxe";
 var dbInstances = {};
 var getDBName = /* @__PURE__ */ __name((dbName) => {
   if (isEmpty_default(dbName)) {
@@ -10249,9 +10249,9 @@ var Ludex2 = Object.preventExtensions({
 });
 window.Ludex = Ludex2;
 window.TypeGuard = type_guard_default;
-window.GameName = "Tile Connect Remaster";
-window.CommitId = "f74f5c41-a0c5d88a";
-window.BuildVersion = 6;
+window.GameName = "Tile-Connect-Deluxe";
+window.CommitId = "f74f5c41-1519fee7";
+window.BuildVersion = 10;
 console.warn("Env mode:", "development");
 console.warn("Debugger:", Ludex2.Utils.Valid.isDebugger());
 console.warn("DevIds:", Ludex2.Configs.Debugger.ListPlayerDevIds);
@@ -21343,7 +21343,7 @@ init_performance();
 init_browser();
 init_init();
 init_google_analytics();
-var gameName2 = "Tile Connect Remaster";
+var gameName2 = "Tile-Connect-Deluxe";
 var {
   Utils: { Object: O29, Valid: V34, Browser: B4 }
 } = Ludex;
@@ -21918,7 +21918,7 @@ init_empty_script();
 init_empty_script();
 init_accessBlocker();
 var NODE_ENV = "development";
-var BUILD_VERSION = 6;
+var BUILD_VERSION = 10;
 var {
   Dtos: Dtos15,
   Events: Events9,
