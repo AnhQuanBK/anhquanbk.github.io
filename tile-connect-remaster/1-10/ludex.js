@@ -445,7 +445,7 @@ var init_init_core = __esm({
           user_id: userId,
           send_page_view: false
         });
-        const buildVersion = 13;
+        const buildVersion = 14;
         for (const tagId of tagIds) {
           window.gtag("config", tagId, {
             cookie_flags: "SameSite=None;Secure",
@@ -798,7 +798,7 @@ function trace() {
     if (typeof args[2] !== "object") {
       args[2] = {};
     }
-    args[2].build = 13;
+    args[2].build = 14;
     args[2].send_to = "GA";
     args[2].extend_session = 1;
   }
@@ -10250,8 +10250,8 @@ var Ludex2 = Object.preventExtensions({
 window.Ludex = Ludex2;
 window.TypeGuard = type_guard_default;
 window.GameName = "Tile-Connect-Deluxe";
-window.CommitId = "f74f5c41-87497fa4";
-window.BuildVersion = 13;
+window.CommitId = "f74f5c41-ea3f0a6f";
+window.BuildVersion = 14;
 console.warn("Env mode:", "development");
 console.warn("Debugger:", Ludex2.Utils.Valid.isDebugger());
 console.warn("DevIds:", Ludex2.Configs.Debugger.ListPlayerDevIds);
@@ -21918,7 +21918,7 @@ init_empty_script();
 init_empty_script();
 init_accessBlocker();
 var NODE_ENV = "development";
-var BUILD_VERSION = 13;
+var BUILD_VERSION = 14;
 var {
   Dtos: Dtos15,
   Events: Events9,
