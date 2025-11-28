@@ -1,0 +1,59 @@
+<View className="leaderboard-container">
+  <For source="{{leaderboardPlayers}}" itemName="i">
+        <View className="player-row">
+          <!-- Row Frame Background -->
+          <If>
+            <Condition lhs="{{i.playerId}}" operator="EQUALS" rhs="{{currentPlayerId}}" />
+            <View><Image className="leader-bar-frame" src="leader_bar_green.png" /></View>
+            <Else>
+              <View><Image className="leader-bar-frame" src="leader_bar.png" /></View>
+            </Else>
+          </If>
+          
+          <!-- Rank with Background -->
+          <View className="rank-container">
+            <If>
+              <Condition lhs="{{i.rank}}" operator="EQUALS" rhs="1"/>
+              <View><Image className="rank-background" src="../common/medal_gold.png" /></View>
+            <ElseIf>
+                <Condition lhs="{{i.rank}}" operator="EQUALS" rhs="2" />
+                <View><Image className="rank-background" src="../common/medal_silver.png" /></View>
+            </ElseIf>
+            <ElseIf>
+                <Condition lhs="{{i.rank}}" operator="EQUALS" rhs="3" />
+                <View><Image className="rank-background" src="../common/medal_bronze.png" /></View>
+              </ElseIf>
+                <Else>
+                  <View><Image className="rank-background" src="../common/bg_rank.png" /></View>
+                </Else>
+            </If>
+
+            <Text className="rank-number" content="{{i.rank}}" />
+          </View>
+          
+          <!-- Player Avatar -->
+          <View className="avatar-container">
+            <Image className="avatar-background" src="avatar-bg.png" />
+            <Image className="player-avatar" src="{{FBInstant.players[{{i.playerId}}].photo}}" />
+          </View>
+          
+          <!-- Player Name -->
+          <View className="name-container">
+            <If>
+              <Condition lhs="{{i.playerId}}" operator="EQUALS" rhs="{{currentPlayerId}}" />
+                <View><Text className="player-name-green" content="{{FBInstant.players[{{i.playerId}}].name}}" /></View>
+              <Else>
+                <View><Text className="player-name" content="{{FBInstant.players[{{i.playerId}}].name}}" /></View>
+              </Else>
+            </If>
+          </View>
+          
+          <!-- Score with Background -->
+          <View className="score-container">
+            <Image className="score-background" src="../common/bg_score.png" />
+            <Image className="cup-icon" src="../common/ico_cup.png" />
+            <Text className="player-score" content="{{i.score}}" />
+          </View>
+        </View>
+      </For>
+</View> 
