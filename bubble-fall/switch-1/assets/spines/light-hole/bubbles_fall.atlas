@@ -1,0 +1,265 @@
+
+bubbles_fall.png
+size: 152,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+green-light
+  rotate: false
+  xy: 2, 346
+  size: 128, 161
+  orig: 128, 161
+  offset: 0, 0
+  index: -1
+orange-light
+  rotate: false
+  xy: 2, 183
+  size: 128, 161
+  orig: 128, 161
+  offset: 0, 0
+  index: -1
+pink-light
+  rotate: false
+  xy: 2, 20
+  size: 128, 161
+  orig: 128, 161
+  offset: 0, 0
+  index: -1
+sparkle-green
+  rotate: false
+  xy: 132, 451
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+sparkle-green copy
+  rotate: false
+  xy: 132, 108
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+sparkle-green copy 10
+  rotate: true
+  xy: 23, 2
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+sparkle-green copy 11
+  rotate: false
+  xy: 132, 226
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+sparkle-green copy 12
+  rotate: false
+  xy: 132, 92
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+sparkle-green copy 2
+  rotate: false
+  xy: 132, 398
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+sparkle-green copy 3
+  rotate: true
+  xy: 132, 489
+  size: 18, 15
+  orig: 18, 15
+  offset: 0, 0
+  index: -1
+sparkle-green copy 4
+  rotate: true
+  xy: 132, 469
+  size: 18, 15
+  orig: 18, 15
+  offset: 0, 0
+  index: -1
+sparkle-green copy 5
+  rotate: false
+  xy: 83, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+sparkle-green copy 6
+  rotate: true
+  xy: 132, 243
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+sparkle-green copy 7
+  rotate: false
+  xy: 132, 381
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+sparkle-green copy 8
+  rotate: false
+  xy: 132, 364
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+sparkle-green copy 9
+  rotate: false
+  xy: 132, 347
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+sparkle-orange
+  rotate: true
+  xy: 132, 209
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+sparkle-orange copy
+  rotate: false
+  xy: 132, 330
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+sparkle-orange copy 10
+  rotate: true
+  xy: 63, 2
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+sparkle-orange copy 11
+  rotate: true
+  xy: 132, 260
+  size: 17, 14
+  orig: 17, 14
+  offset: 0, 0
+  index: -1
+sparkle-orange copy 12
+  rotate: true
+  xy: 132, 175
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+sparkle-orange copy 2
+  rotate: false
+  xy: 43, 2
+  size: 18, 16
+  orig: 18, 16
+  offset: 0, 0
+  index: -1
+sparkle-orange copy 3
+  rotate: false
+  xy: 132, 76
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+sparkle-orange copy 4
+  rotate: false
+  xy: 132, 60
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+sparkle-orange copy 5
+  rotate: true
+  xy: 132, 433
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+sparkle-orange copy 7
+  rotate: true
+  xy: 132, 415
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+sparkle-orange copy 8
+  rotate: true
+  xy: 132, 192
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+sparkle-orange copy 9
+  rotate: false
+  xy: 132, 313
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+sparkle-pink
+  rotate: false
+  xy: 132, 296
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+sparkle-pink copy
+  rotate: false
+  xy: 101, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+sparkle-pink copy 2
+  rotate: false
+  xy: 132, 279
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+sparkle-pink copy 3
+  rotate: false
+  xy: 119, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+sparkle-pink copy 4
+  rotate: true
+  xy: 132, 158
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+sparkle-pink copy 5
+  rotate: false
+  xy: 132, 141
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+sparkle-pink copy 6
+  rotate: false
+  xy: 2, 2
+  size: 19, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1
+sparkle-pink copy 7
+  rotate: true
+  xy: 132, 124
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+sparkle-pink copy 8
+  rotate: false
+  xy: 132, 44
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
