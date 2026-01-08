@@ -1,0 +1,42 @@
+.share-async-overlay {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+}
+
+.wideframe-share-score {
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.player-photo {
+    width: 37.8%;
+    height: 28.35%;
+    z-index: -1;
+    left: 31.07%;
+    top: 18.75%;
+    position: absolute;
+}
+
+.player-score {
+    color: #f2a62e;
+    font-size: 21px;
+    font-weight: bold;
+    z-index: 2;
+    top: 47.5%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.share-score-text {
+    color: #8f5543;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+    top: 70%;
+    left: 51%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
