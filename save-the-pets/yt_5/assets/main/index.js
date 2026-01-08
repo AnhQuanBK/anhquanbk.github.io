@@ -105,7 +105,7 @@ function _ts_values(o) {
     throw TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
 }
 System.register("chunks:///main.js", [
-    "./TournamentUtils-ac3fab7d.js",
+    "./TournamentUtils-9f4fc570.js",
     "cc"
 ], function() {
     var e, t, n, i, a, o, r, s, l, u, c, h, d, p, y, v, f, m, g, b, S, k, C, w, E, A, T, R, P, L, _, B, D, O, I, N, F, z, x, G, M, U, H, j, W, V, $, q, K, Y, J, X, Z, Q, ee, te, ne, ie, ae, oe, re, se, le, ue, ce, he, de, pe, ye, ve, fe, me, ge, be, Se, ke, Ce, we, Ee, Ae, Te, Re, Pe, Le, _e, Be, De, Oe, Ie, Ne, Fe, ze, xe, Ge, Me, Ue, He, je, We, Ve, $e, qe, Ke, Ye, Je, Xe, Ze, Qe, et, tt, nt, it, at, ot, rt, st, lt;
@@ -19047,7 +19047,8 @@ System.register("chunks:///main.js", [
                         });
                     }), _$e.handlePauseAudio = function() {
                         GameSDK.isGameSDK("YoutubePlayables") ? GameSDK.extra.onAudioEnabledChange(function(e) {
-                            k.setMasterVolumeState(e);
+                            var t = A.isAdInProgress(), n = e && !t;
+                            k.muteAudio(!n), XR.setSetting("music", e), XR.setSetting("sound", e), n ? k.playMusic(w.BG_MUSIC) : (k.pauseMusic(), k.stopAllSounds());
                         }) : (ZR.on($R.VISIBILITY_HIDDEN, _$e.handleMuteAudio), ZR.on($R.VISIBILITY_VISIBLE, _$e.handleUnMuteAudio));
                     }, _$e.handleMuteAudio = function() {
                         console.debug("handleMuteAudio"), k.muteAudio(!0);
@@ -19133,7 +19134,10 @@ System.register("chunks:///main.js", [
                     {
                         key: "setupYoutubeAudioSync",
                         value: function value() {
-                            GameSDK.isGameSDK("YoutubePlayables") && k.syncYoutubePlayableAudio();
+                            if (GameSDK.isGameSDK("YoutubePlayables")) {
+                                var _$e = GameSDK.extra.isAudioEnabled();
+                                XR.setSetting("music", _$e), XR.setSetting("sound", _$e), k.muteAudio(!_$e);
+                            }
                         }
                     },
                     {

@@ -97,14 +97,14 @@ function _ts_generator(thisArg, body) {
 System.register([], function(_export, _context) {
     return {
         execute: function execute() {
-            System.register("chunks:///TournamentUtils-ac3fab7d.js", [
+            System.register("chunks:///TournamentUtils-9f4fc570.js", [
                 "cc"
             ], function(e) {
-                var t, n, r, i, a, o, s, u, l, c, d, f, y, h, v, p, m, S, g, E, A, T, N, I;
+                var t, n, r, i, a, o, s, u, l, c, d, f, y, h, v, p, m, g, S, E, A, T, N, I;
                 return {
                     setters: [
                         function(e) {
-                            t = e.cclegacy, n = e.JsonAsset, r = e.Prefab, i = e.AnimationClip, a = e.ImageAsset, o = e.SpriteFrame, s = e.Font, u = e.assetManager, l = e.AudioClip, c = e.sp, d = e.tween, f = e.Animation, y = e.UITransform, h = e.view, v = e.screen, p = e.math, m = e.ccenum, S = e.director, g = e.find, E = e.loadWasmModuleBullet, A = e.loadWasmModulePhysX, T = e.loadWasmModuleBox2D, N = e.loadWasmModuleSpine, I = e.game;
+                            t = e.cclegacy, n = e.JsonAsset, r = e.Prefab, i = e.AnimationClip, a = e.ImageAsset, o = e.SpriteFrame, s = e.Font, u = e.assetManager, l = e.AudioClip, c = e.sp, d = e.tween, f = e.Animation, y = e.UITransform, h = e.view, v = e.screen, p = e.math, m = e.ccenum, g = e.director, S = e.find, E = e.loadWasmModuleBullet, A = e.loadWasmModulePhysX, T = e.loadWasmModuleBox2D, N = e.loadWasmModuleSpine, I = e.game;
                         }
                     ],
                     execute: function execute() {
@@ -118,7 +118,7 @@ System.register([], function(_export, _context) {
                             }
                             return n;
                         }
-                        function R(e) {
+                        function w(e) {
                             for(var t = 1; t < arguments.length; t++){
                                 var n = null != arguments[t] ? arguments[t] : {};
                                 t % 2 ? b(Object(n), !0).forEach(function(t) {
@@ -129,8 +129,8 @@ System.register([], function(_export, _context) {
                             }
                             return e;
                         }
-                        function w(t) {
-                            return (w = e("_", "function" == typeof Symbol && "symbol" == _type_of(Symbol.iterator) ? function(e) {
+                        function R(t) {
+                            return (R = e("_", "function" == typeof Symbol && "symbol" == _type_of(Symbol.iterator) ? function(e) {
                                 return void 0 === e ? "undefined" : _type_of(e);
                             } : function(e) {
                                 return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : void 0 === e ? "undefined" : _type_of(e);
@@ -181,7 +181,7 @@ System.register([], function(_export, _context) {
                                 writable: !0
                             }) : e[t] = n, e;
                         }
-                        function $(e, t) {
+                        function P(e, t) {
                             if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function");
                             e.prototype = Object.create(t && t.prototype, {
                                 constructor: {
@@ -193,8 +193,8 @@ System.register([], function(_export, _context) {
                                 writable: !1
                             }), t && B(e, t);
                         }
-                        function P(t) {
-                            return (P = e("m", Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+                        function $(t) {
+                            return ($ = e("m", Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
                                 return e.__proto__ || Object.getPrototypeOf(e);
                             }))(t);
                         }
@@ -232,7 +232,7 @@ System.register([], function(_export, _context) {
                                     n.set(e, r);
                                 }
                                 function r() {
-                                    return x(e, arguments, P(this).constructor);
+                                    return x(e, arguments, $(this).constructor);
                                 }
                                 return r.prototype = Object.create(e.prototype, {
                                     constructor: {
@@ -253,43 +253,43 @@ System.register([], function(_export, _context) {
                             if (void 0 !== t) throw TypeError("Derived constructors may only return object or undefined");
                             return M(e);
                         }
-                        function W(e) {
+                        function H(e) {
                             var t = F();
                             return function() {
-                                var n, r = P(e);
-                                return n = t ? Reflect.construct(r, arguments, P(this).constructor) : r.apply(this, arguments), U(this, n);
+                                var n, r = $(e);
+                                return n = t ? Reflect.construct(r, arguments, $(this).constructor) : r.apply(this, arguments), U(this, n);
                             };
                         }
-                        function H(e, t) {
-                            for(; !Object.prototype.hasOwnProperty.call(e, t) && null !== (e = P(e)););
+                        function W(e, t) {
+                            for(; !Object.prototype.hasOwnProperty.call(e, t) && null !== (e = $(e)););
                             return e;
                         }
                         function j() {
                             return (j = "u" > typeof Reflect && Reflect.get ? e("l", Reflect.get.bind()) : e("l", function(e, t, n) {
-                                var r = H(e, t);
+                                var r = W(e, t);
                                 if (r) {
                                     var i = Object.getOwnPropertyDescriptor(r, t);
                                     return i.get ? i.get.call(arguments.length < 3 ? e : n) : i.value;
                                 }
                             })).apply(this, arguments);
                         }
-                        function V(e) {
+                        function K(e) {
                             return function(e) {
-                                if (Array.isArray(e)) return z(e);
+                                if (Array.isArray(e)) return V(e);
                             }(e) || function(e) {
                                 if ("u" > typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e);
-                            }(e) || K(e) || function() {
+                            }(e) || z(e) || function() {
                                 throw TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
                             }();
                         }
-                        function K(e, t) {
+                        function z(e, t) {
                             if (e) {
-                                if ("string" == typeof e) return z(e, t);
+                                if ("string" == typeof e) return V(e, t);
                                 var n = Object.prototype.toString.call(e).slice(8, -1);
-                                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(e) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? z(e, t) : void 0;
+                                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(e) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? V(e, t) : void 0;
                             }
                         }
-                        function z(e, t) {
+                        function V(e, t) {
                             (null == t || t > e.length) && (t = e.length);
                             for(var n = 0, r = Array(t); n < t; n++)r[n] = e[n];
                             return r;
@@ -297,7 +297,7 @@ System.register([], function(_export, _context) {
                         function Y(e, t) {
                             var n = "u" > typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
                             if (!n) {
-                                if (Array.isArray(e) || (n = K(e)) || t && e && "number" == typeof e.length) {
+                                if (Array.isArray(e) || (n = z(e)) || t && e && "number" == typeof e.length) {
                                     n && (e = n);
                                     var r = 0, i = function i() {};
                                     return {
@@ -353,10 +353,10 @@ System.register([], function(_export, _context) {
                             return "symbol" == (void 0 === t ? "undefined" : _type_of(t)) ? t : String(t);
                         }
                         e({
-                            _: w,
+                            _: R,
                             a: C,
-                            b: $,
-                            c: W,
+                            b: P,
+                            c: H,
                             d: D,
                             e: k,
                             f: G,
@@ -378,9 +378,9 @@ System.register([], function(_export, _context) {
                                 });
                             },
                             j: M,
-                            k: R,
+                            k: w,
                             l: j,
-                            m: P,
+                            m: $,
                             s: function s(e, t) {
                                 return function(e) {
                                     if (Array.isArray(e)) return e;
@@ -404,12 +404,12 @@ System.register([], function(_export, _context) {
                                         }
                                         return s;
                                     }
-                                }(e, t) || K(e, t) || function() {
+                                }(e, t) || z(e, t) || function() {
                                     throw TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
                                 }();
                             },
                             u: O,
-                            v: V
+                            v: K
                         }), e("E", !1), e("K", !0), t._RF.push({}, "725f8u/lDtFbY1DMY0uJSL9", "Locales", void 0), e("w", [
                             "en",
                             "ru"
@@ -462,7 +462,7 @@ System.register([], function(_export, _context) {
                         }), function() {
                             return _$e.apply(this, arguments);
                         }), ne = e("R", function() {
-                            var t, d, f, y, h, v, p, m, S, g, E, A, T, N, I, b, _$R;
+                            var t, d, f, y, h, v, p, m, g, S, E, A, T, N, I, b, _$w;
                             function e() {
                                 D(this, e), this.bundles = {
                                     loadable: null,
@@ -478,7 +478,7 @@ System.register([], function(_export, _context) {
                                 },
                                 {
                                     key: "loadBundleByType",
-                                    value: (_$R = C(function(t) {
+                                    value: (_$w = C(function(t) {
                                         var n;
                                         return _ts_generator(this, function(_state) {
                                             return n = this.getBundleNameByType(t), [
@@ -487,7 +487,7 @@ System.register([], function(_export, _context) {
                                             ];
                                         });
                                     }), function(e) {
-                                        return _$R.apply(this, arguments);
+                                        return _$w.apply(this, arguments);
                                     })
                                 },
                                 {
@@ -725,7 +725,7 @@ System.register([], function(_export, _context) {
                                 },
                                 {
                                     key: "loadBundle",
-                                    value: (g = C(function(e) {
+                                    value: (S = C(function(e) {
                                         var t;
                                         return _ts_generator(this, function(_state) {
                                             switch(_state.label){
@@ -754,12 +754,12 @@ System.register([], function(_export, _context) {
                                             }
                                         });
                                     }), function(e) {
-                                        return g.apply(this, arguments);
+                                        return S.apply(this, arguments);
                                     })
                                 },
                                 {
                                     key: "loadAudioAsync",
-                                    value: (S = C(function(e) {
+                                    value: (g = C(function(e) {
                                         return _ts_generator(this, function(_state) {
                                             return [
                                                 2,
@@ -767,7 +767,7 @@ System.register([], function(_export, _context) {
                                             ];
                                         });
                                     }), function(e) {
-                                        return S.apply(this, arguments);
+                                        return g.apply(this, arguments);
                                     })
                                 },
                                 {
@@ -1036,8 +1036,8 @@ System.register([], function(_export, _context) {
                             return _instanceof(e, ae.Signal) ? e : new ie(e);
                         }
                         var se = e("A", function(e) {
-                            $(n, e);
-                            var t = W(n);
+                            P(n, e);
+                            var t = H(n);
                             function n() {
                                 return D(this, n), t.apply(this, arguments);
                             }
@@ -1225,8 +1225,8 @@ System.register([], function(_export, _context) {
                         });
                         t._RF.pop(), t._RF.push({}, "05faedSJ2NHFqLe9b3g4RIl", "CocosUtils", void 0);
                         var ce = Ludex.Utils.Device, de = e("C", function(e) {
-                            $(n, e);
-                            var t = W(n);
+                            P(n, e);
+                            var t = H(n);
                             function n() {
                                 return D(this, n), t.apply(this, arguments);
                             }
@@ -1249,8 +1249,8 @@ System.register([], function(_export, _context) {
                                         for(v.s(); !(d = v.n()).done;){
                                             var m = d.value;
                                             if (null != m && m.active && m.getComponent(y)) {
-                                                var S = t.getBoundingBoxTo$(h, m);
-                                                S && p.Rect.union(l, l, S);
+                                                var g = t.getBoundingBoxTo$(h, m);
+                                                g && p.Rect.union(l, l, g);
                                             }
                                         }
                                     } catch (e) {
@@ -1344,12 +1344,12 @@ System.register([], function(_export, _context) {
                             return fe.assign(e, O({}, t, n));
                         }, {}));
                         m(pe), e("o", fe.invert(pe)), t._RF.pop(), t._RF.push({}, "7ca06lc4HNFbaPBFusdm7/G", "ScreenKeys", void 0);
-                        var ge = e("y", ((e1 = ge || {})[e1.LOADING_SCREEN = 1] = "LOADING_SCREEN", e1[e1.SETTINGS_SCREEN = 2] = "SETTINGS_SCREEN", e1[e1.NOTIFICATION_SCREEN = 3] = "NOTIFICATION_SCREEN", e1[e1.LOSE_SCREEN = 4] = "LOSE_SCREEN", e1[e1.WINNING_SCREEN = 5] = "WINNING_SCREEN", e1[e1.CONGRATULATION_SCREEN = 6] = "CONGRATULATION_SCREEN", e1)), Ee = e("F", (O(me = {}, ge.LOADING_SCREEN, "LoadingScreen"), O(me, ge.SETTINGS_SCREEN, "SettingsScreen"), O(me, ge.NOTIFICATION_SCREEN, "NotificationScreen"), O(me, ge.LOSE_SCREEN, "LoseScreen"), O(me, ge.WINNING_SCREEN, "WinningScreen"), O(me, ge.CONGRATULATION_SCREEN, "CongratulationScreen"), me)), Ae = (O(Se = {}, Ee[ge.LOADING_SCREEN], ge.LOADING_SCREEN), O(Se, Ee[ge.SETTINGS_SCREEN], ge.SETTINGS_SCREEN), O(Se, Ee[ge.NOTIFICATION_SCREEN], ge.NOTIFICATION_SCREEN), O(Se, Ee[ge.LOSE_SCREEN], ge.LOSE_SCREEN), O(Se, Ee[ge.WINNING_SCREEN], ge.WINNING_SCREEN), O(Se, Ee[ge.CONGRATULATION_SCREEN], ge.CONGRATULATION_SCREEN), [
-                            Ee[ge.NOTIFICATION_SCREEN],
-                            Ee[ge.LOADING_SCREEN]
+                        var Se = e("y", ((e1 = Se || {})[e1.LOADING_SCREEN = 1] = "LOADING_SCREEN", e1[e1.SETTINGS_SCREEN = 2] = "SETTINGS_SCREEN", e1[e1.NOTIFICATION_SCREEN = 3] = "NOTIFICATION_SCREEN", e1[e1.LOSE_SCREEN = 4] = "LOSE_SCREEN", e1[e1.WINNING_SCREEN = 5] = "WINNING_SCREEN", e1[e1.CONGRATULATION_SCREEN = 6] = "CONGRATULATION_SCREEN", e1)), Ee = e("F", (O(me = {}, Se.LOADING_SCREEN, "LoadingScreen"), O(me, Se.SETTINGS_SCREEN, "SettingsScreen"), O(me, Se.NOTIFICATION_SCREEN, "NotificationScreen"), O(me, Se.LOSE_SCREEN, "LoseScreen"), O(me, Se.WINNING_SCREEN, "WinningScreen"), O(me, Se.CONGRATULATION_SCREEN, "CongratulationScreen"), me)), Ae = (O(ge = {}, Ee[Se.LOADING_SCREEN], Se.LOADING_SCREEN), O(ge, Ee[Se.SETTINGS_SCREEN], Se.SETTINGS_SCREEN), O(ge, Ee[Se.NOTIFICATION_SCREEN], Se.NOTIFICATION_SCREEN), O(ge, Ee[Se.LOSE_SCREEN], Se.LOSE_SCREEN), O(ge, Ee[Se.WINNING_SCREEN], Se.WINNING_SCREEN), O(ge, Ee[Se.CONGRATULATION_SCREEN], Se.CONGRATULATION_SCREEN), [
+                            Ee[Se.NOTIFICATION_SCREEN],
+                            Ee[Se.LOADING_SCREEN]
                         ]);
                         t._RF.pop(), t._RF.push({}, "09bc071ZcpI978b1NdKUaqD", "AnalyticsUtils", void 0);
-                        var Te = Ludex, Ne = Te.Utils.Array, Ie = Te.Configs.Analytics, be = codex.analytics, Re = function() {
+                        var Te = Ludex, Ne = Te.Utils.Array, Ie = Te.Configs.Analytics, be = codex.analytics, we = function() {
                             function e() {
                                 D(this, e);
                             }
@@ -1386,7 +1386,7 @@ System.register([], function(_export, _context) {
                                     key: "getCurrentPage",
                                     value: function value() {
                                         var _$e, t;
-                                        return this.trackingPages$.length > 0 ? this.trackingPages$[this.trackingPages$.length - 1] || "Unknown Page" : null != (_$e = null == (t = S.getScene()) ? void 0 : t.name) ? _$e : "Unknown Scene";
+                                        return this.trackingPages$.length > 0 ? this.trackingPages$[this.trackingPages$.length - 1] || "Unknown Page" : null != (_$e = null == (t = g.getScene()) ? void 0 : t.name) ? _$e : "Unknown Scene";
                                     }
                                 },
                                 {
@@ -1397,711 +1397,39 @@ System.register([], function(_export, _context) {
                                 }
                             ]), e;
                         }();
-                        Re.trackingPages$ = [], e("q", function(e) {
-                            $(n, e);
-                            var t = W(n);
+                        we.trackingPages$ = [], e("q", function(e) {
+                            P(n, e);
+                            var t = H(n);
                             function n() {
                                 return D(this, n), t.apply(this, arguments);
                             }
                             return k(n);
-                        }(Re)), t._RF.pop(), t._RF.push({}, "358fdIqjFdNzZGa95REWt2F", "Ads", void 0);
-                        var we = e("D", {
-                            MAX_BOTTOM_BANNER_RATIO: 1 / 6,
-                            NUM_LEVEL_WITHOUT_BANNER_ADS: 0
-                        });
-                        t._RF.pop(), t._RF.push({}, "a0dcdDZxhZImZ8Cfg4Dc7SJ", "ScreenUtils", void 0);
-                        var _e = codex.event, Ce = Ludex, De = Ce.Events, Le = Ce.Utils.Array, ke = e("x", function(e) {
-                            $(n, e);
-                            var t = W(n);
+                        }(we)), t._RF.pop(), t._RF.push({}, "31871PLRYRJu7yCCX5F6lWK", "AudioUtils", void 0);
+                        var Re = Ludex.Utils.Signal, _e = e("p", function(e) {
+                            P(n, e);
+                            var t = H(n);
                             function n() {
                                 return D(this, n), t.apply(this, arguments);
                             }
                             return k(n);
-                        }(function() {
-                            var t, n, r;
-                            function e() {
-                                D(this, e), this.showedScreens$ = [];
-                            }
-                            return k(e, null, [
-                                {
-                                    key: "inst",
-                                    get: function get() {
-                                        return this.inst$ || (this.inst$ = new this), this.inst$;
-                                    }
-                                },
-                                {
-                                    key: "preloadScreen",
-                                    value: function value(e) {
-                                        var t = Ee[e];
-                                        t && _e.emit(De.PRELOAD_SCREEN, {
-                                            screenName: t
-                                        });
-                                    }
-                                },
-                                {
-                                    key: "preloadScreens",
-                                    value: function value() {
-                                        _e.emit(De.PRELOAD_SCREENS);
-                                    }
-                                },
-                                {
-                                    key: "openScreen",
-                                    value: function value(e, t) {
-                                        var n = Ee[e];
-                                        return _e.emit(De.OPEN_SCREEN, {
-                                            screenName: n,
-                                            screenData: t
-                                        }), new Promise(function(e) {
-                                            _e.on(De.OPENED_SCREEN, function t(r) {
-                                                r.screenName === n && (_e.off(De.OPENED_SCREEN, t), e());
-                                            });
-                                        });
-                                    }
-                                },
-                                {
-                                    key: "closeScreen",
-                                    value: function value(e) {
-                                        var t = Ee[e];
-                                        return _e.emit(De.CLOSE_SCREEN, {
-                                            screenName: t
-                                        }), new Promise(function(e) {
-                                            _e.on(De.CLOSED_SCREEN, function n(r) {
-                                                r.screenName === t && (_e.off(De.CLOSED_SCREEN, n), e());
-                                            });
-                                        });
-                                    }
-                                },
-                                {
-                                    key: "openScreenAndWaitForClose",
-                                    value: (r = C(function(e, t) {
-                                        return _ts_generator(this, function(_state) {
-                                            switch(_state.label){
-                                                case 0:
-                                                    return [
-                                                        4,
-                                                        this.openScreen(e, t)
-                                                    ];
-                                                case 1:
-                                                    return _state.sent(), [
-                                                        4,
-                                                        new Promise(function(t) {
-                                                            _e.on(De.CLOSE_SCREEN, function n(r) {
-                                                                r.screenName === Ee[e] && (_e.off(De.CLOSE_SCREEN, n), t(r));
-                                                            });
-                                                        })
-                                                    ];
-                                                case 2:
-                                                    return [
-                                                        2,
-                                                        _state.sent()
-                                                    ];
-                                            }
-                                        });
-                                    }), function(e, t) {
-                                        return r.apply(this, arguments);
-                                    })
-                                },
-                                {
-                                    key: "showLoadingScreen",
-                                    value: function value(e) {
-                                        return this.openScreen(ge.LOADING_SCREEN, {
-                                            duration: e
-                                        });
-                                    }
-                                },
-                                {
-                                    key: "closeLoadingScreen",
-                                    value: function value() {
-                                        return this.closeScreen(ge.LOADING_SCREEN);
-                                    }
-                                },
-                                {
-                                    key: "showNotificationScreen",
-                                    value: function value(e, t) {
-                                        return this.openScreen(ge.NOTIFICATION_SCREEN, {
-                                            message: e,
-                                            duration: t
-                                        });
-                                    }
-                                },
-                                {
-                                    key: "showNotificationScreenWithLocalizedKey",
-                                    value: function value(e, t) {
-                                        return this.openScreen(ge.NOTIFICATION_SCREEN, {
-                                            localizedMessageKey: e,
-                                            duration: t
-                                        });
-                                    }
-                                },
-                                {
-                                    key: "closeNotificationScreen",
-                                    value: function value() {
-                                        return this.closeScreen(ge.NOTIFICATION_SCREEN);
-                                    }
-                                },
-                                {
-                                    key: "addShowedScene",
-                                    value: function value(e) {
-                                        Le.has(this.inst.showedScreens$, e) || this.inst.showedScreens$.push(e);
-                                    }
-                                },
-                                {
-                                    key: "showLoadingFullScreen",
-                                    value: (n = C(function(e) {
-                                        var t;
-                                        return _ts_generator(this, function(_state) {
-                                            switch(_state.label){
-                                                case 0:
-                                                    if (Le.has(this.inst.showedScreens$, e) || (this.addShowedScene(e), !(t = g("Loading")))) return [
-                                                        3,
-                                                        2
-                                                    ];
-                                                    return [
-                                                        4,
-                                                        t.getComponent("Loading").show(e)
-                                                    ];
-                                                case 1:
-                                                    _state.sent(), _state.label = 2;
-                                                case 2:
-                                                    return [
-                                                        2
-                                                    ];
-                                            }
-                                        });
-                                    }), function(e) {
-                                        return n.apply(this, arguments);
-                                    })
-                                },
-                                {
-                                    key: "hideLoadingFullScreen",
-                                    value: (t = C(function(e) {
-                                        var t, n;
-                                        return _ts_generator(this, function(_state) {
-                                            switch(_state.label){
-                                                case 0:
-                                                    if (Le.has(this.inst.showedScreens$, e)) return [
-                                                        3,
-                                                        2
-                                                    ];
-                                                    return [
-                                                        4,
-                                                        null == (n = null == (t = g("Loading")) ? void 0 : t.getComponent("Loading")) ? void 0 : n.hide(e)
-                                                    ];
-                                                case 1:
-                                                    _state.sent(), _state.label = 2;
-                                                case 2:
-                                                    return [
-                                                        2
-                                                    ];
-                                            }
-                                        });
-                                    }), function(e) {
-                                        return t.apply(this, arguments);
-                                    })
-                                },
-                                {
-                                    key: "showLoadingNotificationScreen",
-                                    value: function value() {
-                                        return this.openScreen(ge.NOTIFICATION_SCREEN, {
-                                            message: "Loading",
-                                            enableCloseOnTouch: !1
-                                        });
-                                    }
-                                }
-                            ]), e;
-                        }()));
-                        t._RF.pop(), t._RF.push({}, "4a4bfX6KIJCcIozlNHuAwoi", "AdsUtils", void 0);
-                        var Oe = Ludex, $e = Oe.Events, Pe = Oe.Configs, Be = Pe.Ads.Enabled, Fe = Pe.Gameplay.StartAdAtLevel, xe = Oe.Plugins.Ads, Ge = void 0 === xe ? {} : xe, Me = Ge.Types, Ue = Ge.Status, We = Oe.Utils, He = We.Array, je = We.Function, Ve = We.Object, Ke = codex, ze = Ke.ads, Ye = Ke.event, qe = Ke.player, Je = function(e) {
-                            $(n, e);
-                            var t = W(n);
-                            function n(e) {
-                                return D(this, n), t.call(this, "AdsUtils.loadAdAsync: Timed out after ".concat(e, "ms"));
-                            }
-                            return k(n);
-                        }(G(Error)), Ze = e("t", function(e) {
-                            $(r, e);
-                            var t, n = W(r);
-                            function r() {
-                                return D(this, r), n.apply(this, arguments);
-                            }
-                            return k(r, null, [
-                                {
-                                    key: "preloadAds",
-                                    value: (t = C(function() {
-                                        return _ts_generator(this, function(_state) {
-                                            return Me && (this.preloadAdsByType(Me.INTERSTITIAL), this.preloadAdsByType(Me.REWARDED_VIDEO)), [
-                                                2
-                                            ];
-                                        });
-                                    }), function() {
-                                        return t.apply(this, arguments);
-                                    })
-                                },
-                                {
-                                    key: "applyRemoveAds",
-                                    value: function value() {
-                                        if (Me) {
-                                            var _$e = !this.isRemoveAdActive();
-                                            this.setAdEnable(Me.BANNER, _$e), this.setAdEnable(Me.INTERSTITIAL, _$e), this.refreshBannerAdVisibility();
-                                        }
-                                    }
-                                },
-                                {
-                                    key: "isRemoveAdActive",
-                                    value: function value() {
-                                        var _$e = (qe.getGameData() || {}).removeAdEndTime;
-                                        return !!_$e && _$e > Date.now();
-                                    }
-                                },
-                                {
-                                    key: "isAdInProgress",
-                                    value: function value() {
-                                        if (!Me || !Ue) return !1;
-                                        var _$e = ze.getAdsByType(Me.INTERSTITIAL), t = ze.getAdsByType(Me.REWARDED_VIDEO), n = ze.getAdsByType(Me.REWARDED_INTERSTITIAL), _$r = _$e.some(function(e) {
-                                            return e.instance.status === Ue.SHOWING;
-                                        }), i = t.some(function(e) {
-                                            return e.instance.status === Ue.SHOWING;
-                                        }), a = n.some(function(e) {
-                                            return e.instance.status === Ue.SHOWING;
-                                        });
-                                        return _$r || i || a;
-                                    }
-                                }
-                            ]), r;
-                        }(function() {
-                            var t, n, r, i;
-                            function e() {
-                                var _$e, t = this;
-                                D(this, e), this.adsEnable$ = {}, this.visibleBannerConfigs$ = [], this.invisibleBannerConfigs$ = [], this.updateBannerAdsConfigByLayout$ = function(e) {
-                                    if (Me) {
-                                        var n = h.getVisibleSize(), r = de.worldSizeToCssSize(n.height * we.MAX_BOTTOM_BANNER_RATIO), i = e === le.Layout.Landscape, a = ze.getAdsByType(Me.BANNER).map(function(e) {
-                                            return e.config;
-                                        }).filter(function(e) {
-                                            var t = e.Position, n = e.BannerHeight;
-                                            return !("bottom" === t && n > r);
-                                        });
-                                        t.visibleBannerConfigs$ = a.filter(function(e) {
-                                            var t = e.Position;
-                                            return i || "bottom" === t || "top" === t;
-                                        }), t.invisibleBannerConfigs$ = a.filter(function(e) {
-                                            return !t.visibleBannerConfigs$.includes(e);
-                                        });
-                                    }
-                                }, this.getAdReady$ = function(e, n) {
-                                    if (!Ue || !t.self.isAdEnabled(e)) return null;
-                                    if (n) return ze.getAdStatus(e, n) === Ue.FILLED ? n : null;
-                                    var r, i = ze.getAdsByType(e).find(function(t) {
-                                        return ze.getAdStatus(e, t.placementId) === Ue.FILLED;
-                                    });
-                                    return null != (r = null == i ? void 0 : i.placementId) ? r : null;
-                                }, this.getPlacementIdByService$ = function(e, t) {
-                                    if (!t || !Me) return !1;
-                                    var n, r = ze.getAdsByType(e), i = He.search(r, function(e) {
-                                        return e.config.AdService === t;
-                                    });
-                                    return null != (n = null == i ? void 0 : i.placementId) && n;
-                                }, this.getAdIdByPayload$ = function(e, n) {
-                                    var r = n || {}, i = r.adService, a = r.placementId;
-                                    return t.getPlacementIdByService$(e, i) || a;
-                                }, this.getAdErrorMessage$ = function(e, n) {
-                                    if (!Me) return null;
-                                    switch(e){
-                                        case Me.REWARDED_VIDEO:
-                                        case Me.REWARDED_INTERSTITIAL:
-                                            return t.isUserCancelledAdError$(n) ? "ads.cancelled" : "error.noAd";
-                                        default:
-                                            return null;
-                                    }
-                                }, this.showAdByType$ = (_$e = C(function(e, n) {
-                                    var r, i, a, o, s, u, l, c, d, f, y, h, v, p, m, e1, n1, S;
-                                    return _ts_generator(this, function(_state) {
-                                        switch(_state.label){
-                                            case 0:
-                                                if (!Me || !Ue || !t.self.isAdEnabled(e) || (i = (r = n || {}).placementId, a = r.includeSDK, o = r.excludeSDK, s = r.forceLoad, u = r.autoLoad, l = r.adService, d = void 0 === (c = r.timeout) ? 15e3 : c, f = r.showError, !t.canShowInSDK$(a, o))) return [
-                                                    2,
-                                                    !1
-                                                ];
-                                                y = t.getAdIdByPayload$(e, n), h = !1, v = !1, _state.label = 1;
-                                            case 1:
-                                                if (_state.trys.push([
-                                                    1,
-                                                    10,
-                                                    11,
-                                                    12
-                                                ]), p = ze.getAdStatus(e, i), !(s || u && p !== Ue.FILLED)) return [
-                                                    3,
-                                                    3
-                                                ];
-                                                return ke.showLoadingScreen(), [
-                                                    4,
-                                                    je.timeOut(ze.loadAdAsync(e, y), d)
-                                                ];
-                                            case 2:
-                                                _state.sent(), _state.label = 3;
-                                            case 3:
-                                                et.muteAudio(!0), _state.label = 4;
-                                            case 4:
-                                                if (h) return [
-                                                    3,
-                                                    9
-                                                ];
-                                                _state.label = 5;
-                                            case 5:
-                                                if (_state.trys.push([
-                                                    5,
-                                                    7,
-                                                    ,
-                                                    8
-                                                ]), !(m = t.getAdReady$(e, y))) return [
-                                                    2,
-                                                    !1
-                                                ];
-                                                return y = m, [
-                                                    4,
-                                                    ze.showAdAsync(e, y)
-                                                ];
-                                            case 6:
-                                                return _state.sent(), h = !0, [
-                                                    3,
-                                                    8
-                                                ];
-                                            case 7:
-                                                if (e1 = _state.sent(), l || t.isUserCancelledAdError$(e1) || t.isRequestAdTimeoutError$(e1)) throw e1;
-                                                return y = void 0, h = !1, v = !0, [
-                                                    3,
-                                                    8
-                                                ];
-                                            case 8:
-                                                return [
-                                                    3,
-                                                    4
-                                                ];
-                                            case 9:
-                                                return [
-                                                    2,
-                                                    !0
-                                                ];
-                                            case 10:
-                                                return n1 = _state.sent(), v = !0, [
-                                                    2,
-                                                    ((S = t.getAdErrorMessage$(e, n1)) && f && ke.showNotificationScreenWithLocalizedKey(S, 2), !1)
-                                                ];
-                                            case 11:
-                                                return et.muteAudio(!1), (s || u) && ke.closeLoadingScreen(), v && (y = i), t.self.preloadAdsByType(e, y), Ye.emit($e.REQUEST_RESIZE_GAME), [
-                                                    7
-                                                ];
-                                            case 12:
-                                                return [
-                                                    2
-                                                ];
-                                        }
-                                    });
-                                }), function(t, n) {
-                                    return _$e.apply(this, arguments);
-                                }), this.canShowInSDK$ = function() {
-                                    var _$e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [], t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [], n = GameSDK.getSDKName();
-                                    return (null == t || !t.length || !He.has(t, n)) && !(null != _$e && _$e.length && !He.has(_$e, n));
-                                }, this.isUserCancelledAdError$ = function(e) {
-                                    return Ve.hasOwn(e, "code") && "USER_INPUT" === e.code;
-                                }, this.isRequestAdTimeoutError$ = function(e) {
-                                    return _instanceof(e, Je) || !(!Ve.hasOwn(e, "code") || "SHOW_ADS_TIMEOUT" !== e.code);
-                                };
-                            }
-                            return k(e, [
-                                {
-                                    key: "self",
-                                    get: function get() {
-                                        return this.constructor;
-                                    }
-                                }
-                            ], [
-                                {
-                                    key: "inst",
-                                    get: function get() {
-                                        return this.inst$ || (this.inst$ = new this), this.inst$;
-                                    }
-                                },
-                                {
-                                    key: "setAdEnable",
-                                    value: function value(e, t) {
-                                        this.inst.adsEnable$[e] = t;
-                                    }
-                                },
-                                {
-                                    key: "isAdEnabled",
-                                    value: function value(e) {
-                                        return !!Be && !1 !== this.inst.adsEnable$[e];
-                                    }
-                                },
-                                {
-                                    key: "preloadAds",
-                                    value: (i = C(function() {
-                                        return _ts_generator(this, function(_state) {
-                                            return Me && (this.preloadAdsByType(Me.INTERSTITIAL), this.preloadAdsByType(Me.REWARDED_VIDEO), this.preloadAdsByType(Me.REWARDED_INTERSTITIAL)), [
-                                                2
-                                            ];
-                                        });
-                                    }), function() {
-                                        return i.apply(this, arguments);
-                                    })
-                                },
-                                {
-                                    key: "isServiceDegraded",
-                                    value: function value() {
-                                        return ze.isServiceDegraded();
-                                    }
-                                },
-                                {
-                                    key: "preloadAdsByType",
-                                    value: function value(e, t) {
-                                        if (this.isAdEnabled(e) && Ue) {
-                                            var n = ze.getAdsByType(e);
-                                            (t ? n.filter(function(e) {
-                                                return e.placementId === t;
-                                            }) : n).forEach(function(n) {
-                                                ze.getAdStatus(e, n.placementId) !== Ue.FILLED && ze.getAdStatus(e, t) !== Ue.FILLED && ze.loadAdAsync(e, n.placementId).catch(function() {});
-                                            });
-                                        }
-                                    }
-                                },
-                                {
-                                    key: "updateBannerAdsByLayout",
-                                    value: function value(e) {
-                                        this.inst.updateBannerAdsConfigByLayout$(e);
-                                    }
-                                },
-                                {
-                                    key: "refreshBannerAdVisibility",
-                                    value: function value() {
-                                        if (Me && Ue) if (this.isAdEnabled(Me.BANNER)) {
-                                            var _$e, t = Y(this.inst.invisibleBannerConfigs$);
-                                            try {
-                                                for(t.s(); !(_$e = t.n()).done;){
-                                                    var n = _$e.value.PlacementId;
-                                                    ze.getAdStatus(Me.BANNER, n) === Ue.SHOWING && this.hideBannerAd(n);
-                                                }
-                                            } catch (e) {
-                                                t.e(e);
-                                            } finally{
-                                                t.f();
-                                            }
-                                            var r, i = Y(this.inst.visibleBannerConfigs$);
-                                            try {
-                                                for(i.s(); !(r = i.n()).done;){
-                                                    var a = r.value.PlacementId, o = ze.getAdStatus(Me.BANNER, a);
-                                                    !1 !== o && o !== Ue.SHOWING && this.showBannerAd(a);
-                                                }
-                                            } catch (e) {
-                                                i.e(e);
-                                            } finally{
-                                                i.f();
-                                            }
-                                        } else this.hideBannerAds();
-                                    }
-                                },
-                                {
-                                    key: "getBannerAdHeight",
-                                    value: function value() {
-                                        try {
-                                            if (!Me) return 0;
-                                            var _$e = de.cssSizeToWorldSize(1), t = ze.getAd(Me.BANNER);
-                                            return Math.round(ze.getBannerHeight(t.placementId, _$e));
-                                        } catch (e) {
-                                            return console.warn("[AdsUtils] getBannerAdHeight error:", e), 0;
-                                        }
-                                    }
-                                },
-                                {
-                                    key: "showBannerAds",
-                                    value: function value() {
-                                        if (Me && Ue && this.isAdEnabled(Me.BANNER)) {
-                                            var _$e, t = Y(ze.getAdsByType(Me.BANNER));
-                                            try {
-                                                for(t.s(); !(_$e = t.n()).done;){
-                                                    var n = _$e.value;
-                                                    ze.getAdStatus(Me.BANNER, n.placementId) !== Ue.IDLE && this.showBannerAd(n.placementId);
-                                                }
-                                            } catch (e) {
-                                                t.e(e);
-                                            } finally{
-                                                t.f();
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    key: "hideBannerAds",
-                                    value: function value() {
-                                        if (Be && Me && Ue) {
-                                            var _$e, t = Y(ze.getAdsByType(Me.BANNER));
-                                            try {
-                                                for(t.s(); !(_$e = t.n()).done;){
-                                                    var n = _$e.value;
-                                                    ze.getAdStatus(Me.BANNER, n.placementId) !== Ue.IDLE && this.hideBannerAd(n.placementId);
-                                                }
-                                            } catch (e) {
-                                                t.e(e);
-                                            } finally{
-                                                t.f();
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    key: "showBannerAd",
-                                    value: function value(e) {
-                                        Me && this.isAdEnabled(Me.BANNER) && ze.showBannerAdAsync(e).catch(function() {});
-                                    }
-                                },
-                                {
-                                    key: "hideBannerAd",
-                                    value: function value(e) {
-                                        Be && ze.hideBannerAdAsync(e).catch(function() {});
-                                    }
-                                },
-                                {
-                                    key: "isReadyAdShowable",
-                                    value: function value(e, t) {
-                                        var n = this.inst.getAdReady$(e, t);
-                                        return !!n && ze.canShowAd(e, n);
-                                    }
-                                },
-                                {
-                                    key: "isBannerAdShowing",
-                                    value: function value() {
-                                        if (!Me || !Ue) return !1;
-                                        var _$e, t = Y(ze.getAdsByType(Me.BANNER));
-                                        try {
-                                            for(t.s(); !(_$e = t.n()).done;){
-                                                var n = _$e.value;
-                                                if (ze.getAdStatus(Me.BANNER, n.placementId) === Ue.SHOWING) return !0;
-                                            }
-                                        } catch (e) {
-                                            t.e(e);
-                                        } finally{
-                                            t.f();
-                                        }
-                                        return !1;
-                                    }
-                                },
-                                {
-                                    key: "showInterstitialAdAsync",
-                                    value: (r = C(function(e) {
-                                        var t, n, r, i, a, o, s;
-                                        return _ts_generator(this, function(_state) {
-                                            return Me ? (i = (r = null != e ? e : {}).forLevel, a = r.contextType, o = r.forceLoad, i && Fe >= i) ? [
-                                                2,
-                                                !1
-                                            ] : (a && (null == (t = window.GoogleAds) || t.setInterstitialType(a), null == (n = window.TranssionH5Ads) || n.setInterstitialType(a)), s = GameSDK.isGameSDK("MsGames"), [
-                                                2,
-                                                this.inst.showAdByType$(Me.INTERSTITIAL, R(R({}, e), {}, {
-                                                    forceLoad: o || s
-                                                }))
-                                            ]) : [
-                                                2,
-                                                !1
-                                            ];
-                                        });
-                                    }), function(e) {
-                                        return r.apply(this, arguments);
-                                    })
-                                },
-                                {
-                                    key: "showRewardVideoAdAsync",
-                                    value: (n = C(function(e) {
-                                        var t, n, r;
-                                        return _ts_generator(this, function(_state) {
-                                            return Me ? [
-                                                2,
-                                                ((r = (null != e ? e : {}).contextType) && (null == (t = window.GoogleAds) || t.setRewardType(r), null == (n = window.TranssionH5Ads) || n.setRewardType(r)), this.inst.showAdByType$(Me.REWARDED_VIDEO, R(R({
-                                                    showError: !0
-                                                }, e), {}, {
-                                                    autoLoad: !0
-                                                })))
-                                            ] : [
-                                                2,
-                                                !1
-                                            ];
-                                        });
-                                    }), function(e) {
-                                        return n.apply(this, arguments);
-                                    })
-                                },
-                                {
-                                    key: "showRewardedInterstitialAdAsync",
-                                    value: (t = C(function(e) {
-                                        var t, n, r;
-                                        return _ts_generator(this, function(_state) {
-                                            return Me ? [
-                                                2,
-                                                ((r = (null != e ? e : {}).contextType) && (null == (t = window.GoogleAds) || t.setRewardType(r), null == (n = window.TranssionH5Ads) || n.setRewardType(r)), this.inst.showAdByType$(Me.REWARDED_INTERSTITIAL, R(R({
-                                                    showError: !0
-                                                }, e), {}, {
-                                                    autoLoad: !0
-                                                })))
-                                            ] : [
-                                                2,
-                                                !1
-                                            ];
-                                        });
-                                    }), function(e) {
-                                        return t.apply(this, arguments);
-                                    })
-                                }
-                            ]), e;
-                        }()));
-                        t._RF.pop(), t._RF.push({}, "31871PLRYRJu7yCCX5F6lWK", "AudioUtils", void 0);
-                        var Xe = Ludex.Utils.Signal, Qe = codex.player, et = e("p", function(e) {
-                            $(n, e);
-                            var t = W(n);
-                            function n() {
-                                return D(this, n), t.apply(this, arguments);
-                            }
-                            return k(n, null, [
-                                {
-                                    key: "inst",
-                                    get: function get() {
-                                        return this.inst$ || (this.inst$ = new this), this.inst$;
-                                    }
-                                },
-                                {
-                                    key: "setMasterVolumeState",
-                                    value: function value(e) {
-                                        j(P(n), "setMasterVolumeState", this).call(this, e);
-                                        var t = Ze.isAdInProgress();
-                                        this.muteAudio(!e && !t);
-                                    }
-                                },
-                                {
-                                    key: "syncYoutubePlayableAudio",
-                                    value: function value() {
-                                        var _$e;
-                                        if (GameSDK.isGameSDK("YoutubePlayables")) {
-                                            null == (_$e = this.inst.music) || _$e.play(he.BG_MUSIC);
-                                            var t = GameSDK.extra.isAudioEnabled();
-                                            this.setMasterVolumeState(t);
-                                        }
-                                    }
-                                }
-                            ]), n;
                         }(function() {
                             var t, n, r, i, a;
                             function e() {
-                                D(this, e), this.signalController$ = new Xe.SignalController, this.masterVolumeState$ = !0;
+                                D(this, e), this.signalController$ = new Re.SignalController;
                             }
                             return k(e, [
                                 {
                                     key: "sound",
                                     get: function get() {
                                         var _$e;
-                                        return null == (_$e = g("Sound")) ? void 0 : _$e.getComponent("Sound");
+                                        return null == (_$e = S("Sound")) ? void 0 : _$e.getComponent("Sound");
                                     }
                                 },
                                 {
                                     key: "music",
                                     get: function get() {
                                         var _$e;
-                                        return null == (_$e = g("Music")) ? void 0 : _$e.getComponent("Music");
+                                        return null == (_$e = S("Music")) ? void 0 : _$e.getComponent("Music");
                                     }
                                 }
                             ], [
@@ -2112,15 +1440,9 @@ System.register([], function(_export, _context) {
                                     }
                                 },
                                 {
-                                    key: "setMasterVolumeState",
-                                    value: function value(e) {
-                                        this.inst.masterVolumeState$ = e, et.muteAudio(!e), e || et.stopAllSounds(), Qe.setSetting("sound", e), Qe.setSetting("music", e);
-                                    }
-                                },
-                                {
                                     key: "muteAudio",
                                     value: function value(e) {
-                                        (e || this.inst.masterVolumeState$) && (this.muteMusic(e), this.muteSound(e));
+                                        this.muteMusic(e), this.muteSound(e);
                                     }
                                 },
                                 {
@@ -2320,8 +1642,652 @@ System.register([], function(_export, _context) {
                                 }
                             ]), e;
                         }()));
-                        t._RF.pop(), t._RF.push({}, "f8533KH/fxOfYqya9sgLrSj", "GameData", void 0);
-                        var _$e, e1, me, Se, tt, nt = e("I", {
+                        t._RF.pop(), t._RF.push({}, "358fdIqjFdNzZGa95REWt2F", "Ads", void 0);
+                        var Ce = e("D", {
+                            MAX_BOTTOM_BANNER_RATIO: 1 / 6,
+                            NUM_LEVEL_WITHOUT_BANNER_ADS: 0
+                        });
+                        t._RF.pop(), t._RF.push({}, "a0dcdDZxhZImZ8Cfg4Dc7SJ", "ScreenUtils", void 0);
+                        var De = codex.event, Le = Ludex, ke = Le.Events, Oe = Le.Utils.Array, Pe = e("x", function(e) {
+                            P(n, e);
+                            var t = H(n);
+                            function n() {
+                                return D(this, n), t.apply(this, arguments);
+                            }
+                            return k(n);
+                        }(function() {
+                            var t, n, r;
+                            function e() {
+                                D(this, e), this.showedScreens$ = [];
+                            }
+                            return k(e, null, [
+                                {
+                                    key: "inst",
+                                    get: function get() {
+                                        return this.inst$ || (this.inst$ = new this), this.inst$;
+                                    }
+                                },
+                                {
+                                    key: "preloadScreen",
+                                    value: function value(e) {
+                                        var t = Ee[e];
+                                        t && De.emit(ke.PRELOAD_SCREEN, {
+                                            screenName: t
+                                        });
+                                    }
+                                },
+                                {
+                                    key: "preloadScreens",
+                                    value: function value() {
+                                        De.emit(ke.PRELOAD_SCREENS);
+                                    }
+                                },
+                                {
+                                    key: "openScreen",
+                                    value: function value(e, t) {
+                                        var n = Ee[e];
+                                        return De.emit(ke.OPEN_SCREEN, {
+                                            screenName: n,
+                                            screenData: t
+                                        }), new Promise(function(e) {
+                                            De.on(ke.OPENED_SCREEN, function t(r) {
+                                                r.screenName === n && (De.off(ke.OPENED_SCREEN, t), e());
+                                            });
+                                        });
+                                    }
+                                },
+                                {
+                                    key: "closeScreen",
+                                    value: function value(e) {
+                                        var t = Ee[e];
+                                        return De.emit(ke.CLOSE_SCREEN, {
+                                            screenName: t
+                                        }), new Promise(function(e) {
+                                            De.on(ke.CLOSED_SCREEN, function n(r) {
+                                                r.screenName === t && (De.off(ke.CLOSED_SCREEN, n), e());
+                                            });
+                                        });
+                                    }
+                                },
+                                {
+                                    key: "openScreenAndWaitForClose",
+                                    value: (r = C(function(e, t) {
+                                        return _ts_generator(this, function(_state) {
+                                            switch(_state.label){
+                                                case 0:
+                                                    return [
+                                                        4,
+                                                        this.openScreen(e, t)
+                                                    ];
+                                                case 1:
+                                                    return _state.sent(), [
+                                                        4,
+                                                        new Promise(function(t) {
+                                                            De.on(ke.CLOSE_SCREEN, function n(r) {
+                                                                r.screenName === Ee[e] && (De.off(ke.CLOSE_SCREEN, n), t(r));
+                                                            });
+                                                        })
+                                                    ];
+                                                case 2:
+                                                    return [
+                                                        2,
+                                                        _state.sent()
+                                                    ];
+                                            }
+                                        });
+                                    }), function(e, t) {
+                                        return r.apply(this, arguments);
+                                    })
+                                },
+                                {
+                                    key: "showLoadingScreen",
+                                    value: function value(e) {
+                                        return this.openScreen(Se.LOADING_SCREEN, {
+                                            duration: e
+                                        });
+                                    }
+                                },
+                                {
+                                    key: "closeLoadingScreen",
+                                    value: function value() {
+                                        return this.closeScreen(Se.LOADING_SCREEN);
+                                    }
+                                },
+                                {
+                                    key: "showNotificationScreen",
+                                    value: function value(e, t) {
+                                        return this.openScreen(Se.NOTIFICATION_SCREEN, {
+                                            message: e,
+                                            duration: t
+                                        });
+                                    }
+                                },
+                                {
+                                    key: "showNotificationScreenWithLocalizedKey",
+                                    value: function value(e, t) {
+                                        return this.openScreen(Se.NOTIFICATION_SCREEN, {
+                                            localizedMessageKey: e,
+                                            duration: t
+                                        });
+                                    }
+                                },
+                                {
+                                    key: "closeNotificationScreen",
+                                    value: function value() {
+                                        return this.closeScreen(Se.NOTIFICATION_SCREEN);
+                                    }
+                                },
+                                {
+                                    key: "addShowedScene",
+                                    value: function value(e) {
+                                        Oe.has(this.inst.showedScreens$, e) || this.inst.showedScreens$.push(e);
+                                    }
+                                },
+                                {
+                                    key: "showLoadingFullScreen",
+                                    value: (n = C(function(e) {
+                                        var t;
+                                        return _ts_generator(this, function(_state) {
+                                            switch(_state.label){
+                                                case 0:
+                                                    if (Oe.has(this.inst.showedScreens$, e) || (this.addShowedScene(e), !(t = S("Loading")))) return [
+                                                        3,
+                                                        2
+                                                    ];
+                                                    return [
+                                                        4,
+                                                        t.getComponent("Loading").show(e)
+                                                    ];
+                                                case 1:
+                                                    _state.sent(), _state.label = 2;
+                                                case 2:
+                                                    return [
+                                                        2
+                                                    ];
+                                            }
+                                        });
+                                    }), function(e) {
+                                        return n.apply(this, arguments);
+                                    })
+                                },
+                                {
+                                    key: "hideLoadingFullScreen",
+                                    value: (t = C(function(e) {
+                                        var t, n;
+                                        return _ts_generator(this, function(_state) {
+                                            switch(_state.label){
+                                                case 0:
+                                                    if (Oe.has(this.inst.showedScreens$, e)) return [
+                                                        3,
+                                                        2
+                                                    ];
+                                                    return [
+                                                        4,
+                                                        null == (n = null == (t = S("Loading")) ? void 0 : t.getComponent("Loading")) ? void 0 : n.hide(e)
+                                                    ];
+                                                case 1:
+                                                    _state.sent(), _state.label = 2;
+                                                case 2:
+                                                    return [
+                                                        2
+                                                    ];
+                                            }
+                                        });
+                                    }), function(e) {
+                                        return t.apply(this, arguments);
+                                    })
+                                },
+                                {
+                                    key: "showLoadingNotificationScreen",
+                                    value: function value() {
+                                        return this.openScreen(Se.NOTIFICATION_SCREEN, {
+                                            message: "Loading",
+                                            enableCloseOnTouch: !1
+                                        });
+                                    }
+                                }
+                            ]), e;
+                        }()));
+                        t._RF.pop(), t._RF.push({}, "4a4bfX6KIJCcIozlNHuAwoi", "AdsUtils", void 0);
+                        var $e = Ludex, Be = $e.Events, Fe = $e.Configs, xe = Fe.Ads.Enabled, Ge = Fe.Gameplay.StartAdAtLevel, Me = $e.Plugins.Ads, Ue = void 0 === Me ? {} : Me, He = Ue.Types, We = Ue.Status, je = $e.Utils, Ke = je.Array, ze = je.Function, Ve = je.Object, Ye = codex, qe = Ye.ads, Je = Ye.event, Ze = Ye.player, Xe = function(e) {
+                            P(n, e);
+                            var t = H(n);
+                            function n(e) {
+                                return D(this, n), t.call(this, "AdsUtils.loadAdAsync: Timed out after ".concat(e, "ms"));
+                            }
+                            return k(n);
+                        }(G(Error));
+                        e("t", function(e) {
+                            P(r, e);
+                            var t, n = H(r);
+                            function r() {
+                                return D(this, r), n.apply(this, arguments);
+                            }
+                            return k(r, null, [
+                                {
+                                    key: "preloadAds",
+                                    value: (t = C(function() {
+                                        return _ts_generator(this, function(_state) {
+                                            return He && (this.preloadAdsByType(He.INTERSTITIAL), this.preloadAdsByType(He.REWARDED_VIDEO)), [
+                                                2
+                                            ];
+                                        });
+                                    }), function() {
+                                        return t.apply(this, arguments);
+                                    })
+                                },
+                                {
+                                    key: "applyRemoveAds",
+                                    value: function value() {
+                                        if (He) {
+                                            var _$e = !this.isRemoveAdActive();
+                                            this.setAdEnable(He.BANNER, _$e), this.setAdEnable(He.INTERSTITIAL, _$e), this.refreshBannerAdVisibility();
+                                        }
+                                    }
+                                },
+                                {
+                                    key: "isRemoveAdActive",
+                                    value: function value() {
+                                        var _$e = (Ze.getGameData() || {}).removeAdEndTime;
+                                        return !!_$e && _$e > Date.now();
+                                    }
+                                }
+                            ]), r;
+                        }(function() {
+                            var t, n, r, i;
+                            function e() {
+                                var _$e, t = this;
+                                D(this, e), this.adsEnable$ = {}, this.visibleBannerConfigs$ = [], this.invisibleBannerConfigs$ = [], this.isAdInProgress$ = !1, this.updateBannerAdsConfigByLayout$ = function(e) {
+                                    if (He) {
+                                        var n = h.getVisibleSize(), r = de.worldSizeToCssSize(n.height * Ce.MAX_BOTTOM_BANNER_RATIO), i = e === le.Layout.Landscape, a = qe.getAdsByType(He.BANNER).map(function(e) {
+                                            return e.config;
+                                        }).filter(function(e) {
+                                            var t = e.Position, n = e.BannerHeight;
+                                            return !("bottom" === t && n > r);
+                                        });
+                                        t.visibleBannerConfigs$ = a.filter(function(e) {
+                                            var t = e.Position;
+                                            return i || "bottom" === t || "top" === t;
+                                        }), t.invisibleBannerConfigs$ = a.filter(function(e) {
+                                            return !t.visibleBannerConfigs$.includes(e);
+                                        });
+                                    }
+                                }, this.getAdReady$ = function(e, n) {
+                                    if (!We || !t.self.isAdEnabled(e)) return null;
+                                    if (n) return qe.getAdStatus(e, n) === We.FILLED ? n : null;
+                                    var r, i = qe.getAdsByType(e).find(function(t) {
+                                        return qe.getAdStatus(e, t.placementId) === We.FILLED;
+                                    });
+                                    return null != (r = null == i ? void 0 : i.placementId) ? r : null;
+                                }, this.getPlacementIdByService$ = function(e, t) {
+                                    if (!t || !He) return !1;
+                                    var n, r = qe.getAdsByType(e), i = Ke.search(r, function(e) {
+                                        return e.config.AdService === t;
+                                    });
+                                    return null != (n = null == i ? void 0 : i.placementId) && n;
+                                }, this.getAdIdByPayload$ = function(e, n) {
+                                    var r = n || {}, i = r.adService, a = r.placementId;
+                                    return t.getPlacementIdByService$(e, i) || a;
+                                }, this.getAdErrorMessage$ = function(e, n) {
+                                    if (!He) return null;
+                                    switch(e){
+                                        case He.REWARDED_VIDEO:
+                                        case He.REWARDED_INTERSTITIAL:
+                                            return t.isUserCancelledAdError$(n) ? "ads.cancelled" : "error.noAd";
+                                        default:
+                                            return null;
+                                    }
+                                }, this.showAdByType$ = (_$e = C(function(e, n) {
+                                    var r, i, a, o, s, u, l, c, d, f, y, h, v, p, m, e1, n1, g;
+                                    return _ts_generator(this, function(_state) {
+                                        switch(_state.label){
+                                            case 0:
+                                                if (!He || !We || !t.self.isAdEnabled(e) || (i = (r = n || {}).placementId, a = r.includeSDK, o = r.excludeSDK, s = r.forceLoad, u = r.autoLoad, l = r.adService, d = void 0 === (c = r.timeout) ? 15e3 : c, f = r.showError, !t.canShowInSDK$(a, o))) return [
+                                                    2,
+                                                    !1
+                                                ];
+                                                y = t.getAdIdByPayload$(e, n), h = !1, v = !1, _state.label = 1;
+                                            case 1:
+                                                if (_state.trys.push([
+                                                    1,
+                                                    10,
+                                                    11,
+                                                    12
+                                                ]), p = qe.getAdStatus(e, i), !(s || u && p !== We.FILLED)) return [
+                                                    3,
+                                                    3
+                                                ];
+                                                return Pe.showLoadingScreen(), [
+                                                    4,
+                                                    ze.timeOut(qe.loadAdAsync(e, y), d)
+                                                ];
+                                            case 2:
+                                                _state.sent(), _state.label = 3;
+                                            case 3:
+                                                t.isAdInProgress$ = !0, _e.muteAudio(!0), _e.pauseMusic(), _e.stopAllSounds(), _state.label = 4;
+                                            case 4:
+                                                if (h) return [
+                                                    3,
+                                                    9
+                                                ];
+                                                _state.label = 5;
+                                            case 5:
+                                                if (_state.trys.push([
+                                                    5,
+                                                    7,
+                                                    ,
+                                                    8
+                                                ]), !(m = t.getAdReady$(e, y))) return [
+                                                    2,
+                                                    !1
+                                                ];
+                                                return y = m, [
+                                                    4,
+                                                    qe.showAdAsync(e, y)
+                                                ];
+                                            case 6:
+                                                return _state.sent(), h = !0, [
+                                                    3,
+                                                    8
+                                                ];
+                                            case 7:
+                                                if (e1 = _state.sent(), l || t.isUserCancelledAdError$(e1) || t.isRequestAdTimeoutError$(e1)) throw e1;
+                                                return y = void 0, h = !1, v = !0, [
+                                                    3,
+                                                    8
+                                                ];
+                                            case 8:
+                                                return [
+                                                    3,
+                                                    4
+                                                ];
+                                            case 9:
+                                                return [
+                                                    2,
+                                                    !0
+                                                ];
+                                            case 10:
+                                                return n1 = _state.sent(), v = !0, [
+                                                    2,
+                                                    ((g = t.getAdErrorMessage$(e, n1)) && f && Pe.showNotificationScreenWithLocalizedKey(g, 2), !1)
+                                                ];
+                                            case 11:
+                                                return t.isAdInProgress$ = !1, t.isPlatformMuted() || (_e.muteAudio(!1), _e.playMusic(he.BG_MUSIC)), (s || u) && Pe.closeLoadingScreen(), v && (y = i), t.self.preloadAdsByType(e, y), Je.emit(Be.REQUEST_RESIZE_GAME), [
+                                                    7
+                                                ];
+                                            case 12:
+                                                return [
+                                                    2
+                                                ];
+                                        }
+                                    });
+                                }), function(t, n) {
+                                    return _$e.apply(this, arguments);
+                                }), this.canShowInSDK$ = function() {
+                                    var _$e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [], t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [], n = GameSDK.getSDKName();
+                                    return (null == t || !t.length || !Ke.has(t, n)) && !(null != _$e && _$e.length && !Ke.has(_$e, n));
+                                }, this.isUserCancelledAdError$ = function(e) {
+                                    return Ve.hasOwn(e, "code") && "USER_INPUT" === e.code;
+                                }, this.isRequestAdTimeoutError$ = function(e) {
+                                    return _instanceof(e, Xe) || !(!Ve.hasOwn(e, "code") || "SHOW_ADS_TIMEOUT" !== e.code);
+                                };
+                            }
+                            return k(e, [
+                                {
+                                    key: "self",
+                                    get: function get() {
+                                        return this.constructor;
+                                    }
+                                },
+                                {
+                                    key: "isPlatformMuted",
+                                    value: function value() {
+                                        return !!GameSDK.isGameSDK("YoutubePlayables") && !GameSDK.extra.isAudioEnabled();
+                                    }
+                                }
+                            ], [
+                                {
+                                    key: "inst",
+                                    get: function get() {
+                                        return this.inst$ || (this.inst$ = new this), this.inst$;
+                                    }
+                                },
+                                {
+                                    key: "setAdEnable",
+                                    value: function value(e, t) {
+                                        this.inst.adsEnable$[e] = t;
+                                    }
+                                },
+                                {
+                                    key: "isAdEnabled",
+                                    value: function value(e) {
+                                        return !!xe && !1 !== this.inst.adsEnable$[e];
+                                    }
+                                },
+                                {
+                                    key: "preloadAds",
+                                    value: (i = C(function() {
+                                        return _ts_generator(this, function(_state) {
+                                            return He && (this.preloadAdsByType(He.INTERSTITIAL), this.preloadAdsByType(He.REWARDED_VIDEO), this.preloadAdsByType(He.REWARDED_INTERSTITIAL)), [
+                                                2
+                                            ];
+                                        });
+                                    }), function() {
+                                        return i.apply(this, arguments);
+                                    })
+                                },
+                                {
+                                    key: "isServiceDegraded",
+                                    value: function value() {
+                                        return qe.isServiceDegraded();
+                                    }
+                                },
+                                {
+                                    key: "preloadAdsByType",
+                                    value: function value(e, t) {
+                                        if (this.isAdEnabled(e) && We) {
+                                            var n = qe.getAdsByType(e);
+                                            (t ? n.filter(function(e) {
+                                                return e.placementId === t;
+                                            }) : n).forEach(function(n) {
+                                                qe.getAdStatus(e, n.placementId) !== We.FILLED && qe.getAdStatus(e, t) !== We.FILLED && qe.loadAdAsync(e, n.placementId).catch(function() {});
+                                            });
+                                        }
+                                    }
+                                },
+                                {
+                                    key: "updateBannerAdsByLayout",
+                                    value: function value(e) {
+                                        this.inst.updateBannerAdsConfigByLayout$(e);
+                                    }
+                                },
+                                {
+                                    key: "refreshBannerAdVisibility",
+                                    value: function value() {
+                                        if (He && We) if (this.isAdEnabled(He.BANNER)) {
+                                            var _$e, t = Y(this.inst.invisibleBannerConfigs$);
+                                            try {
+                                                for(t.s(); !(_$e = t.n()).done;){
+                                                    var n = _$e.value.PlacementId;
+                                                    qe.getAdStatus(He.BANNER, n) === We.SHOWING && this.hideBannerAd(n);
+                                                }
+                                            } catch (e) {
+                                                t.e(e);
+                                            } finally{
+                                                t.f();
+                                            }
+                                            var r, i = Y(this.inst.visibleBannerConfigs$);
+                                            try {
+                                                for(i.s(); !(r = i.n()).done;){
+                                                    var a = r.value.PlacementId, o = qe.getAdStatus(He.BANNER, a);
+                                                    !1 !== o && o !== We.SHOWING && this.showBannerAd(a);
+                                                }
+                                            } catch (e) {
+                                                i.e(e);
+                                            } finally{
+                                                i.f();
+                                            }
+                                        } else this.hideBannerAds();
+                                    }
+                                },
+                                {
+                                    key: "getBannerAdHeight",
+                                    value: function value() {
+                                        try {
+                                            if (!He) return 0;
+                                            var _$e = de.cssSizeToWorldSize(1), t = qe.getAd(He.BANNER);
+                                            return Math.round(qe.getBannerHeight(t.placementId, _$e));
+                                        } catch (e) {
+                                            return console.warn("[AdsUtils] getBannerAdHeight error:", e), 0;
+                                        }
+                                    }
+                                },
+                                {
+                                    key: "showBannerAds",
+                                    value: function value() {
+                                        if (He && We && this.isAdEnabled(He.BANNER)) {
+                                            var _$e, t = Y(qe.getAdsByType(He.BANNER));
+                                            try {
+                                                for(t.s(); !(_$e = t.n()).done;){
+                                                    var n = _$e.value;
+                                                    qe.getAdStatus(He.BANNER, n.placementId) !== We.IDLE && this.showBannerAd(n.placementId);
+                                                }
+                                            } catch (e) {
+                                                t.e(e);
+                                            } finally{
+                                                t.f();
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    key: "hideBannerAds",
+                                    value: function value() {
+                                        if (xe && He && We) {
+                                            var _$e, t = Y(qe.getAdsByType(He.BANNER));
+                                            try {
+                                                for(t.s(); !(_$e = t.n()).done;){
+                                                    var n = _$e.value;
+                                                    qe.getAdStatus(He.BANNER, n.placementId) !== We.IDLE && this.hideBannerAd(n.placementId);
+                                                }
+                                            } catch (e) {
+                                                t.e(e);
+                                            } finally{
+                                                t.f();
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    key: "showBannerAd",
+                                    value: function value(e) {
+                                        He && this.isAdEnabled(He.BANNER) && qe.showBannerAdAsync(e).catch(function() {});
+                                    }
+                                },
+                                {
+                                    key: "hideBannerAd",
+                                    value: function value(e) {
+                                        xe && qe.hideBannerAdAsync(e).catch(function() {});
+                                    }
+                                },
+                                {
+                                    key: "isReadyAdShowable",
+                                    value: function value(e, t) {
+                                        var n = this.inst.getAdReady$(e, t);
+                                        return !!n && qe.canShowAd(e, n);
+                                    }
+                                },
+                                {
+                                    key: "isBannerAdShowing",
+                                    value: function value() {
+                                        if (!He || !We) return !1;
+                                        var _$e, t = Y(qe.getAdsByType(He.BANNER));
+                                        try {
+                                            for(t.s(); !(_$e = t.n()).done;){
+                                                var n = _$e.value;
+                                                if (qe.getAdStatus(He.BANNER, n.placementId) === We.SHOWING) return !0;
+                                            }
+                                        } catch (e) {
+                                            t.e(e);
+                                        } finally{
+                                            t.f();
+                                        }
+                                        return !1;
+                                    }
+                                },
+                                {
+                                    key: "showInterstitialAdAsync",
+                                    value: (r = C(function(e) {
+                                        var t, n, r, i, a, o, s;
+                                        return _ts_generator(this, function(_state) {
+                                            return He ? (i = (r = null != e ? e : {}).forLevel, a = r.contextType, o = r.forceLoad, i && Ge >= i) ? [
+                                                2,
+                                                !1
+                                            ] : (a && (null == (t = window.GoogleAds) || t.setInterstitialType(a), null == (n = window.TranssionH5Ads) || n.setInterstitialType(a)), s = GameSDK.isGameSDK("MsGames"), [
+                                                2,
+                                                this.inst.showAdByType$(He.INTERSTITIAL, w(w({}, e), {}, {
+                                                    forceLoad: o || s
+                                                }))
+                                            ]) : [
+                                                2,
+                                                !1
+                                            ];
+                                        });
+                                    }), function(e) {
+                                        return r.apply(this, arguments);
+                                    })
+                                },
+                                {
+                                    key: "showRewardVideoAdAsync",
+                                    value: (n = C(function(e) {
+                                        var t, n, r;
+                                        return _ts_generator(this, function(_state) {
+                                            return He ? [
+                                                2,
+                                                ((r = (null != e ? e : {}).contextType) && (null == (t = window.GoogleAds) || t.setRewardType(r), null == (n = window.TranssionH5Ads) || n.setRewardType(r)), this.inst.showAdByType$(He.REWARDED_VIDEO, w(w({
+                                                    showError: !0
+                                                }, e), {}, {
+                                                    autoLoad: !0
+                                                })))
+                                            ] : [
+                                                2,
+                                                !1
+                                            ];
+                                        });
+                                    }), function(e) {
+                                        return n.apply(this, arguments);
+                                    })
+                                },
+                                {
+                                    key: "showRewardedInterstitialAdAsync",
+                                    value: (t = C(function(e) {
+                                        var t, n, r;
+                                        return _ts_generator(this, function(_state) {
+                                            return He ? [
+                                                2,
+                                                ((r = (null != e ? e : {}).contextType) && (null == (t = window.GoogleAds) || t.setRewardType(r), null == (n = window.TranssionH5Ads) || n.setRewardType(r)), this.inst.showAdByType$(He.REWARDED_INTERSTITIAL, w(w({
+                                                    showError: !0
+                                                }, e), {}, {
+                                                    autoLoad: !0
+                                                })))
+                                            ] : [
+                                                2,
+                                                !1
+                                            ];
+                                        });
+                                    }), function(e) {
+                                        return t.apply(this, arguments);
+                                    })
+                                },
+                                {
+                                    key: "isAdInProgress",
+                                    value: function value() {
+                                        return this.inst.isAdInProgress$;
+                                    }
+                                }
+                            ]), e;
+                        }())), t._RF.pop(), t._RF.push({}, "f8533KH/fxOfYqya9sgLrSj", "GameData", void 0);
+                        var _$e, e1, me, ge, Qe, et = e("I", {
                             level: 0,
                             coins: 0,
                             bestEndlessScore: 0,
@@ -2331,8 +2297,8 @@ System.register([], function(_export, _context) {
                             tournamentProgress: {}
                         });
                         t._RF.pop(), t._RF.push({}, "3b9bcPJBxpNOqG2I6exTOVn", "MatchCustomData", void 0);
-                        var rt = Ludex.Dtos.Match, it = (void 0 === rt ? {} : rt).CustomData;
-                        e("M", R(R({}, null != (tt = null == it ? void 0 : it.getDefaults()) ? tt : {}), {}, {
+                        var tt = Ludex.Dtos.Match, nt = (void 0 === tt ? {} : tt).CustomData;
+                        e("M", w(w({}, null != (Qe = null == nt ? void 0 : nt.getDefaults()) ? Qe : {}), {}, {
                             score: 0,
                             challengeData: null
                         })), t._RF.pop(), t._RF.push({}, "074c4KXFZ1Pq6d+66PrLd2+", "PlayerData", void 0), e("P", {
@@ -2343,7 +2309,7 @@ System.register([], function(_export, _context) {
                                 vibrate: !0,
                                 language: "en"
                             },
-                            gameData: nt,
+                            gameData: et,
                             isFirstLogin: !0,
                             dailyRewardedData: {
                                 logDays: [],
@@ -2356,7 +2322,7 @@ System.register([], function(_export, _context) {
                                 process: {}
                             }
                         }), t._RF.pop(), t._RF.push({}, "ff436w8KphN2o+jnnVL3RYx", "SceneKeys", void 0);
-                        var ot = e("B", {
+                        var it = e("B", {
                             TEST_SCENE: "TestScene",
                             BOOT_SCENE: "BootScene",
                             DASHBOARD_SCENE: "DashboardScene",
@@ -2369,9 +2335,9 @@ System.register([], function(_export, _context) {
                             TEST_PARTICLE_SYSTEM_SCENE: "TestParticleSystemScene"
                         });
                         t._RF.pop(), t._RF.push({}, "58f4330KXRL77xyoA3903MY", "WasmUtils", void 0);
-                        var st = Ludex.Utils.Function, ut = e("W", function(e) {
-                            $(n, e);
-                            var t = W(n);
+                        var at = Ludex.Utils.Function, ot = e("W", function(e) {
+                            P(n, e);
+                            var t = H(n);
                             function n() {
                                 return D(this, n), t.apply(this, arguments);
                             }
@@ -2379,7 +2345,7 @@ System.register([], function(_export, _context) {
                         }(function() {
                             var t;
                             function e() {
-                                D(this, e), this.mutex$ = st.mutex();
+                                D(this, e), this.mutex$ = at.mutex();
                             }
                             return k(e, null, [
                                 {
@@ -2496,10 +2462,10 @@ System.register([], function(_export, _context) {
                             ]), e;
                         }()));
                         t._RF.pop(), t._RF.push({}, "97ca9J9nzNCeIjC1l+ZT/Hm", "SceneUtils", void 0);
-                        var lt = codex.event, ct = Ludex.Events;
+                        var st = codex.event, ut = Ludex.Events;
                         e("z", function(e) {
-                            $(i, e);
-                            var t, n, r = W(i);
+                            P(i, e);
+                            var t, n, r = H(i);
                             function i() {
                                 return D(this, i), r.apply(this, arguments);
                             }
@@ -2507,13 +2473,13 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "preloadDashboardScene",
                                     value: function value() {
-                                        this.preloadScene(ot.DASHBOARD_SCENE);
+                                        this.preloadScene(it.DASHBOARD_SCENE);
                                     }
                                 },
                                 {
                                     key: "switchToDashboardScene",
                                     value: function value(e) {
-                                        this.switchScene(ot.DASHBOARD_SCENE, e);
+                                        this.switchScene(it.DASHBOARD_SCENE, e);
                                     }
                                 },
                                 {
@@ -2524,10 +2490,10 @@ System.register([], function(_export, _context) {
                                                 case 0:
                                                     return [
                                                         4,
-                                                        ut.loadModuleAsync("spine")
+                                                        ot.loadModuleAsync("spine")
                                                     ];
                                                 case 1:
-                                                    return _state.sent(), this.preloadScene(ot.GAME_SCENE), [
+                                                    return _state.sent(), this.preloadScene(it.GAME_SCENE), [
                                                         2
                                                     ];
                                             }
@@ -2542,12 +2508,12 @@ System.register([], function(_export, _context) {
                                         return _ts_generator(this, function(_state) {
                                             switch(_state.label){
                                                 case 0:
-                                                    return et.stopAllSounds(), et.turnOffMusic(), [
+                                                    return _e.stopAllSounds(), _e.turnOffMusic(), [
                                                         4,
-                                                        ut.loadModuleAsync("spine")
+                                                        ot.loadModuleAsync("spine")
                                                     ];
                                                 case 1:
-                                                    return _state.sent(), this.switchScene(ot.GAME_SCENE, e), [
+                                                    return _state.sent(), this.switchScene(it.GAME_SCENE, e), [
                                                         2
                                                     ];
                                             }
@@ -2559,7 +2525,7 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "switchToEndlessScene",
                                     value: function value(e) {
-                                        et.stopAllSounds(), et.turnOffMusic(), this.switchScene(ot.ENDLESS_SCENE, e);
+                                        _e.stopAllSounds(), _e.turnOffMusic(), this.switchScene(it.ENDLESS_SCENE, e);
                                     }
                                 }
                             ]), i;
@@ -2577,7 +2543,7 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "switchScene",
                                     value: function value(e, t) {
-                                        lt.emit(ct.SWITCH_SCENE, {
+                                        st.emit(ut.SWITCH_SCENE, {
                                             sceneName: e,
                                             sceneData: t
                                         });
@@ -2586,7 +2552,7 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "preloadScene",
                                     value: function value(e) {
-                                        lt.emit(ct.PRELOAD_SCENE, {
+                                        st.emit(ut.PRELOAD_SCENE, {
                                             sceneName: e
                                         });
                                     }
@@ -2607,7 +2573,7 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "markIsTestScene",
                                     value: function value(e) {
-                                        lt.emit(ct.MARK_IS_TEST_SCENE, {
+                                        st.emit(ut.MARK_IS_TEST_SCENE, {
                                             sceneName: e
                                         });
                                     }
@@ -2620,8 +2586,8 @@ System.register([], function(_export, _context) {
                                 }
                             ]), e;
                         }())), t._RF.pop(), t._RF.push({}, "669a1OtNF9EDrMRLWTjxk4B", "GeneralUtils", void 0), e("O", function(e) {
-                            $(n, e);
-                            var t = W(n);
+                            P(n, e);
+                            var t = H(n);
                             function n() {
                                 return D(this, n), t.apply(this, arguments);
                             }
@@ -2640,23 +2606,23 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "setBlockInput",
                                     value: function value(e) {
-                                        var t = g("Canvas/InputBlocker");
+                                        var t = S("Canvas/InputBlocker");
                                         t && (t.active = e);
                                     }
                                 },
                                 {
                                     key: "getBlockInput",
                                     value: function value() {
-                                        var _$e = g("Canvas/InputBlocker");
+                                        var _$e = S("Canvas/InputBlocker");
                                         return !!_$e && _$e.active;
                                     }
                                 }
                             ]), e;
                         }())), t._RF.pop(), t._RF.push({}, "ed5c6D+6KVEj5lrgtq+D9bJ", "LayoutUtils", void 0);
-                        var ft = le.Layout;
+                        var ct = le.Layout;
                         e("H", function(e) {
-                            $(n, e);
-                            var t = W(n);
+                            P(n, e);
+                            var t = H(n);
                             function n() {
                                 return D(this, n), t.apply(this, arguments);
                             }
@@ -2664,7 +2630,7 @@ System.register([], function(_export, _context) {
                         }(function() {
                             function e() {
                                 var t = this;
-                                D(this, e), this.isListening$ = !1, this.currentLayout$ = ft.Portrait, this.onLayoutChanged$ = function(e) {
+                                D(this, e), this.isListening$ = !1, this.currentLayout$ = ct.Portrait, this.onLayoutChanged$ = function(e) {
                                     t.currentLayout$ !== e && (t.currentLayout$ = e, I.emit(ue.ORIENTATION_CHANGED, e));
                                 };
                             }
@@ -2690,13 +2656,13 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "isPortrait",
                                     value: function value() {
-                                        return this.inst.currentLayout$ === ft.Portrait;
+                                        return this.inst.currentLayout$ === ct.Portrait;
                                     }
                                 },
                                 {
                                     key: "isLandscape",
                                     value: function value() {
-                                        return this.inst.currentLayout$ === ft.Landscape;
+                                        return this.inst.currentLayout$ === ct.Landscape;
                                     }
                                 },
                                 {
@@ -2707,9 +2673,9 @@ System.register([], function(_export, _context) {
                                 }
                             ]), e;
                         }())), t._RF.pop(), t._RF.push({}, "58eae10lp9GX4EnVB/hLwAg", "LoaderUtils", void 0);
-                        var yt = codex, ht = yt.event, vt = yt.match, pt = yt.player, mt = yt.context, St = e("Q", function(e) {
-                            $(n, e);
-                            var t = W(n);
+                        var dt = codex, ft = dt.event, yt = dt.match, ht = dt.player, vt = dt.context, pt = e("Q", function(e) {
+                            P(n, e);
+                            var t = H(n);
                             function n() {
                                 return D(this, n), t.apply(this, arguments);
                             }
@@ -2718,7 +2684,7 @@ System.register([], function(_export, _context) {
                                     key: "applyCustomFlows",
                                     value: function value() {
                                         var _$e = this;
-                                        mt.configureFlows(function(t) {
+                                        vt.configureFlows(function(t) {
                                             t.addBefore("ChallengeFromPostFlow", _$e.createNewUserChallengeFriendToSingleFlow$(t)), t.addBefore("ChallengeFromPostFlow", _$e.createStartSingleFromShareInviteContextFlow$(t)), t.addBefore("ChallengeFromMessageFlow", _$e.createFastChallengeFromMessageFlow$(t));
                                         });
                                     }
@@ -2737,8 +2703,8 @@ System.register([], function(_export, _context) {
                                 }
                             ]), e;
                         }()));
-                        St.createNewUserChallengeFriendToSingleFlow$ = function(e) {
-                            var t = mt.getSessionContextTypes().CHALLENGE_FRIEND;
+                        pt.createNewUserChallengeFriendToSingleFlow$ = function(e) {
+                            var t = vt.getSessionContextTypes().CHALLENGE_FRIEND;
                             return {
                                 id: "NewUserChallengeFriendToSingleFlow",
                                 when: function when(e) {
@@ -2746,36 +2712,36 @@ System.register([], function(_export, _context) {
                                     return !!e.isFirstSession && n === t;
                                 },
                                 do: e.createSteps([
-                                    St.createNewUserSingleModeStep$(),
-                                    St.createSwitchSceneStep$()
+                                    pt.createNewUserSingleModeStep$(),
+                                    pt.createSwitchSceneStep$()
                                 ])
                             };
-                        }, St.createStartSingleFromShareInviteContextFlow$ = function(e) {
-                            var t = mt.getSessionContextTypes().CHALLENGE_FRIEND;
+                        }, pt.createStartSingleFromShareInviteContextFlow$ = function(e) {
+                            var t = vt.getSessionContextTypes().CHALLENGE_FRIEND;
                             return {
                                 id: "StartSingleFromChallengeContextFlow",
                                 when: function when(e) {
                                     var n = e.contextSessionType;
-                                    return !e.isFirstSession && n === t && null !== St.extractLevel$(e.contextData);
+                                    return !e.isFirstSession && n === t && null !== pt.extractLevel$(e.contextData);
                                 },
                                 do: e.createSteps([
-                                    St.createStartSingleMode$(),
-                                    St.createSwitchSceneStep$()
+                                    pt.createStartSingleMode$(),
+                                    pt.createSwitchSceneStep$()
                                 ])
                             };
-                        }, St.createFastChallengeFromMessageFlow$ = function(e) {
-                            var t = mt.getSessionContextTypes().CHALLENGE_FRIEND;
+                        }, pt.createFastChallengeFromMessageFlow$ = function(e) {
+                            var t = vt.getSessionContextTypes().CHALLENGE_FRIEND;
                             return {
                                 id: "FastChallengeFromMessageFlow",
                                 when: function when(e) {
                                     var n = e.contextData, r = n.matchId, i = n.playerId, a = n.opponentId, o = e.contextSessionType;
-                                    return !e.isFirstSession && "string" == typeof r && "string" == typeof i && "string" == typeof a && o === t && null !== St.extractLevel$(e.contextData);
+                                    return !e.isFirstSession && "string" == typeof r && "string" == typeof i && "string" == typeof a && o === t && null !== pt.extractLevel$(e.contextData);
                                 },
                                 do: e.createSteps([
-                                    St.createPrepareChallengeLevelStep$()
+                                    pt.createPrepareChallengeLevelStep$()
                                 ])
                             };
-                        }, St.createSwitchSceneStep$ = function() {
+                        }, pt.createSwitchSceneStep$ = function() {
                             var _$e;
                             return {
                                 id: "SwitchScene",
@@ -2784,7 +2750,7 @@ System.register([], function(_export, _context) {
                                     return _ts_generator(this, function(_state) {
                                         return [
                                             2,
-                                            !(t = e.sceneName) || (ht.emit(Ludex.Events.SWITCH_SCENE, {
+                                            !(t = e.sceneName) || (ft.emit(Ludex.Events.SWITCH_SCENE, {
                                                 sceneName: t,
                                                 sceneData: {
                                                     isFromLoader: !0
@@ -2796,7 +2762,7 @@ System.register([], function(_export, _context) {
                                     return _$e.apply(this, arguments);
                                 })
                             };
-                        }, St.createNewUserSingleModeStep$ = function() {
+                        }, pt.createNewUserSingleModeStep$ = function() {
                             var _$e;
                             return {
                                 id: "NewUserSingleMode",
@@ -2805,9 +2771,9 @@ System.register([], function(_export, _context) {
                                     return _ts_generator(this, function(_state) {
                                         switch(_state.label){
                                             case 0:
-                                                return t = pt.getPlayerId(), [
+                                                return t = ht.getPlayerId(), [
                                                     4,
-                                                    vt.handler.setMatchCustomData({
+                                                    yt.handler.setMatchCustomData({
                                                         playerId: t,
                                                         contextId: "SOLO"
                                                     })
@@ -2815,14 +2781,14 @@ System.register([], function(_export, _context) {
                                             case 1:
                                                 return _state.sent(), [
                                                     4,
-                                                    vt.single.start.processAsync({
+                                                    yt.single.start.processAsync({
                                                         playerId: t
                                                     })
                                                 ];
                                             case 2:
                                                 return [
                                                     2,
-                                                    (_state.sent(), e.sceneName = ot.GAME_SCENE, !0)
+                                                    (_state.sent(), e.sceneName = it.GAME_SCENE, !0)
                                                 ];
                                         }
                                     });
@@ -2830,7 +2796,7 @@ System.register([], function(_export, _context) {
                                     return _$e.apply(this, arguments);
                                 })
                             };
-                        }, St.createPrepareChallengeLevelStep$ = function() {
+                        }, pt.createPrepareChallengeLevelStep$ = function() {
                             var _$e;
                             return {
                                 id: "PrepareChallengeLevelFromMessage",
@@ -2839,13 +2805,13 @@ System.register([], function(_export, _context) {
                                     return _ts_generator(this, function(_state) {
                                         switch(_state.label){
                                             case 0:
-                                                if ("number" != typeof (t = St.extractLevel$(e.contextData))) return [
+                                                if ("number" != typeof (t = pt.extractLevel$(e.contextData))) return [
                                                     3,
                                                     2
                                                 ];
                                                 return [
                                                     4,
-                                                    vt.handler.setMatchCustomData({
+                                                    yt.handler.setMatchCustomData({
                                                         level: t
                                                     })
                                                 ];
@@ -2862,7 +2828,7 @@ System.register([], function(_export, _context) {
                                     return _$e.apply(this, arguments);
                                 })
                             };
-                        }, St.createStartSingleMode$ = function() {
+                        }, pt.createStartSingleMode$ = function() {
                             var _$e;
                             return {
                                 id: "StartSingleMode",
@@ -2871,27 +2837,27 @@ System.register([], function(_export, _context) {
                                     return _ts_generator(this, function(_state) {
                                         switch(_state.label){
                                             case 0:
-                                                if ("number" != typeof (t = St.extractLevel$(e.contextData))) return [
+                                                if ("number" != typeof (t = pt.extractLevel$(e.contextData))) return [
                                                     2,
                                                     !0
                                                 ];
-                                                return n = pt.getPlayerId(), [
+                                                return n = ht.getPlayerId(), [
                                                     4,
-                                                    vt.handler.setMatchCustomData({
+                                                    yt.handler.setMatchCustomData({
                                                         level: t
                                                     })
                                                 ];
                                             case 1:
                                                 return _state.sent(), [
                                                     4,
-                                                    vt.single.start.processAsync({
+                                                    yt.single.start.processAsync({
                                                         playerId: n
                                                     })
                                                 ];
                                             case 2:
                                                 return [
                                                     2,
-                                                    (_state.sent(), e.sceneName = ot.GAME_SCENE, !0)
+                                                    (_state.sent(), e.sceneName = it.GAME_SCENE, !0)
                                                 ];
                                         }
                                     });
@@ -2899,14 +2865,14 @@ System.register([], function(_export, _context) {
                                     return _$e.apply(this, arguments);
                                 })
                             };
-                        }, St.extractLevel$ = function(e) {
+                        }, pt.extractLevel$ = function(e) {
                             var t = e.level;
                             return "number" == typeof t ? t : null;
                         }, t._RF.pop(), t._RF.push({}, "d6fb7/+FFxLs7k5w6K38JYb", "TournamentUtils", void 0);
-                        var gt = Ludex, Et = gt.Utils, At = Et.String, Tt = Et.Valid, Nt = Et.Array, It = gt.Configs.Mockup.Leaderboards, bt = codex.language, Rt = codex, wt = Rt.leaderboard, _t = Rt.player;
+                        var mt = Ludex, gt = mt.Utils, St = gt.String, Et = gt.Valid, At = gt.Array, Tt = mt.Configs.Mockup.Leaderboards, Nt = codex.language, It = codex, bt = It.leaderboard, wt = It.player;
                         e("T", function(e) {
-                            $(r, e);
-                            var t, n = W(r);
+                            P(r, e);
+                            var t, n = H(r);
                             function r() {
                                 return D(this, r), n.apply(this, arguments);
                             }
@@ -2945,7 +2911,7 @@ System.register([], function(_export, _context) {
                                     key: "processGlobalTournamentLeaderboardData",
                                     value: function value() {
                                         var _$e = [];
-                                        if (It.Enabled) {
+                                        if (Tt.Enabled) {
                                             var t, n = Y(this.playerTournaments$);
                                             try {
                                                 for(n.s(); !(t = n.n()).done;){
@@ -2979,13 +2945,13 @@ System.register([], function(_export, _context) {
                                                     continue;
                                                 }
                                                 if (this.validateExpireTime(v) && this.validateGlobalTournamentPayload(p)) {
-                                                    var m = "isNEZP" in GameSDK.extra && GameSDK.extra.isNEZP(), S = "isRestricted" in GameSDK.extra && GameSDK.extra.isRestricted();
-                                                    if (m || S) {
+                                                    var m = "isNEZP" in GameSDK.extra && GameSDK.extra.isNEZP(), g = "isRestricted" in GameSDK.extra && GameSDK.extra.isRestricted();
+                                                    if (m || g) {
                                                         if (!p.restrict) continue;
                                                     } else if (p.restrict) continue;
-                                                    var g = null != (y = null == (h = p.i18n) || null == (h = h[bt.getCurrentLocale()]) ? void 0 : h.title) ? y : v.name, E = {
+                                                    var S = null != (y = null == (h = p.i18n) || null == (h = h[Nt.getCurrentLocale()]) ? void 0 : h.title) ? y : v.name, E = {
                                                         id: p.tournamentId,
-                                                        title: g,
+                                                        title: S,
                                                         endTime: this.getTournamentEndTime(v),
                                                         contextId: p.contextId,
                                                         payload: {
@@ -3009,7 +2975,7 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "createDefaultTournamentName",
                                     value: function value(e) {
-                                        var t = e.substring(0, 7), n = "".concat(t.split(" ")[0] || t, "'s Tournament"), _$r = At.removeDiacritics(n);
+                                        var t = e.substring(0, 7), n = "".concat(t.split(" ")[0] || t, "'s Tournament"), _$r = St.removeDiacritics(n);
                                         return "".concat(_$r);
                                     }
                                 }
@@ -3033,9 +2999,9 @@ System.register([], function(_export, _context) {
                                                         return e.endTime - t.endTime;
                                                     }), n.sort(function(e, t) {
                                                         return e.endTime - t.endTime;
-                                                    }), _$e.tournamentData$ = [].concat(V(n), V(t)), i = Y(_$e.tournamentData$);
+                                                    }), _$e.tournamentData$ = [].concat(K(n), K(t)), i = Y(_$e.tournamentData$);
                                                     try {
-                                                        for(i.s(); !(_$r = i.n()).done;)(a = _$r.value.payload.leaderboardId) && (wt.isExistLeaderboardId(a) || wt.addLeaderboard({
+                                                        for(i.s(); !(_$r = i.n()).done;)(a = _$r.value.payload.leaderboardId) && (bt.isExistLeaderboardId(a) || bt.addLeaderboard({
                                                             type: "tournament",
                                                             name: a,
                                                             autoSortRank: !0,
@@ -3059,28 +3025,28 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "saveTournamentProgress",
                                     value: function value(e, t, n) {
-                                        var _$r, i, a, o, s = (null != (_$r = _t.getGameData()) ? _$r : {}).tournamentProgress, u = null == s ? void 0 : s[n], l = {
+                                        var _$r, i, a, o, s = (null != (_$r = wt.getGameData()) ? _$r : {}).tournamentProgress, u = null == s ? void 0 : s[n], l = {
                                             level: Math.max(e, null != (i = null == u ? void 0 : u.level) ? i : 0),
                                             score: Math.max(t, null != (a = null == u ? void 0 : u.score) ? a : 0),
                                             replayCount: null != (o = null == u ? void 0 : u.replayCount) ? o : 0
                                         };
-                                        _t.setGameData({
-                                            tournamentProgress: R(R({}, s), {}, O({}, n, l))
+                                        wt.setGameData({
+                                            tournamentProgress: w(w({}, s), {}, O({}, n, l))
                                         });
                                     }
                                 },
                                 {
                                     key: "syncTournamentProgress",
                                     value: function value() {
-                                        var _$e, t = (null != (_$e = _t.getGameData()) ? _$e : {}).tournamentProgress;
+                                        var _$e, t = (null != (_$e = wt.getGameData()) ? _$e : {}).tournamentProgress;
                                         if (t) {
                                             var n = this.inst, _$r = function r(e) {
-                                                Nt.search(n.tournamentData$, function(t) {
+                                                At.search(n.tournamentData$, function(t) {
                                                     return t.id === e;
                                                 }) || delete t[e];
                                             };
                                             for(var i in t)_$r(i);
-                                            _t.setGameData({
+                                            wt.setGameData({
                                                 tournamentProgress: t
                                             });
                                         }
@@ -3105,7 +3071,7 @@ System.register([], function(_export, _context) {
                                                 ];
                                                 return [
                                                     4,
-                                                    wt.requestLeaderboardsAsync({
+                                                    bt.requestLeaderboardsAsync({
                                                         limit: 100,
                                                         type: "world_tournament_leaderboard"
                                                     })
@@ -3176,7 +3142,7 @@ System.register([], function(_export, _context) {
                                     key: "validateGlobalTournamentPayload",
                                     value: function value(e) {
                                         var t = e.tournamentId, n = e.contextId;
-                                        return !(!Tt.isString(t) || "" === t) && !(!Tt.isString(n) || "" === n);
+                                        return !(!Et.isString(t) || "" === t) && !(!Et.isString(n) || "" === n);
                                     }
                                 },
                                 {
@@ -3195,7 +3161,7 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "validateGameSDKTournamentPayload",
                                     value: function value(e) {
-                                        return !(!Tt.isString(e.playerId) || "" === e.playerId) && !(!Tt.isString(e.playerName) || "" === e.playerName) && !(!Tt.isString(e.leaderboardId) || "" === e.leaderboardId);
+                                        return !(!Et.isString(e.playerId) || "" === e.playerId) && !(!Et.isString(e.playerName) || "" === e.playerName) && !(!Et.isString(e.leaderboardId) || "" === e.leaderboardId);
                                     }
                                 },
                                 {
@@ -3226,7 +3192,7 @@ System.register([], function(_export, _context) {
                                     key: "getTournamentDataById",
                                     value: function value(e) {
                                         var t = this.inst;
-                                        return Nt.search(t.tournamentData$, function(t) {
+                                        return At.search(t.tournamentData$, function(t) {
                                             return t.id === e;
                                         });
                                     }
@@ -3234,7 +3200,7 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "getPlayerTournamentData",
                                     value: function value() {
-                                        var _$e = this.inst, t = _t.getPlayerId();
+                                        var _$e = this.inst, t = wt.getPlayerId();
                                         return _$e.tournamentData$.filter(function(e) {
                                             return e.payload.playerId === t;
                                         });
@@ -3243,7 +3209,7 @@ System.register([], function(_export, _context) {
                                 {
                                     key: "getFriendsTournamentData",
                                     value: function value() {
-                                        var _$e = this.inst, t = _t.getPlayerId();
+                                        var _$e = this.inst, t = wt.getPlayerId();
                                         return _$e.tournamentData$.filter(function(e) {
                                             var n = e.payload;
                                             return n.playerId !== t && "global" !== n.playerId;
