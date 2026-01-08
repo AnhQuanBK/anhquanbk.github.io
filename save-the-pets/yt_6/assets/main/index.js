@@ -19136,7 +19136,7 @@ System.register("chunks:///main.js", [
                         value: function value() {
                             if (GameSDK.isGameSDK("YoutubePlayables")) {
                                 var _$e = GameSDK.extra.isAudioEnabled();
-                                XR.setSetting("music", _$e), XR.setSetting("sound", _$e), k.muteAudio(!_$e), _$e ? k.playMusic(w.BG_MUSIC) : (k.pauseMusic(), k.stopAllSounds());
+                                XR.setSetting("music", _$e), XR.setSetting("sound", _$e), k.muteAudio(!_$e);
                             }
                         }
                     },
