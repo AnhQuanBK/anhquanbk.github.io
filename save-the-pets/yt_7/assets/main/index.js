@@ -108,14 +108,14 @@ System.register("chunks:///main.js", [
     "./TournamentUtils-9f4fc570.js",
     "cc"
 ], function() {
-    var e, t, n, i, a, o, r, s, l, u, c, h, d, p, y, v, f, m, g, b, S, k, C, w, E, A, T, R, P, L, _, B, D, O, I, N, F, z, x, G, M, U, H, j, W, V, $, q, K, Y, J, X, Z, Q, ee, te, ne, ie, ae, oe, re, se, le, ue, ce, he, de, pe, ye, ve, fe, me, ge, be, Se, ke, Ce, we, Ee, Ae, Te, Re, Pe, Le, _e, Be, De, Oe, Ie, Ne, Fe, ze, xe, Ge, Me, Ue, He, je, We, Ve, $e, qe, Ke, Ye, Je, Xe, Ze, Qe, et, tt, nt, it, at, ot, rt, st, lt;
+    var e, t, n, i, a, o, r, s, l, u, c, h, d, p, y, v, f, m, g, b, S, k, C, w, E, A, T, R, P, L, _, B, D, O, I, N, F, z, x, M, G, U, H, j, W, V, $, q, K, Y, J, X, Z, Q, ee, te, ne, ie, ae, oe, re, se, le, ue, ce, he, de, pe, ye, ve, fe, me, ge, be, Se, ke, Ce, we, Ee, Ae, Te, Re, Pe, Le, _e, Be, De, Oe, Ie, Ne, Fe, ze, xe, Me, Ge, Ue, He, je, We, Ve, $e, qe, Ke, Ye, Je, Xe, Ze, Qe, et, tt, nt, it, at, ot, rt, st, lt;
     return {
         setters: [
             function(x) {
                 e = x._, t = x.a, n = x.b, i = x.c, a = x.d, o = x.e, r = x.f, s = x.g, l = x.h, u = x.i, c = x.j, h = x.R, d = x.k, p = x.l, y = x.m, v = x.A, f = x.G, m = x.n, g = x.C, b = x.S, S = x.o, k = x.p, C = x.q, w = x.r, E = x.s, A = x.t, T = x.u, R = x.v, P = x.w, L = x.E, _ = x.L, B = x.x, D = x.y, O = x.z, I = x.B, N = x.W, F = x.D, z = x.F;
             },
             function(e) {
-                x = e.cclegacy, G = e.isCCObject, M = e._decorator, U = e.Animation, H = e.CCString, j = e.CCInteger, W = e.Component, V = e.AudioSource, $ = e.director, q = e.UITransform, K = e.CCFloat, Y = e.Widget, J = e.tween, X = e.Layout, Z = e.Sprite, Q = e.game, ee = e.Button, te = e.CCBoolean, ne = e.EventTouch, ie = e.Vec3, ae = e.Input, oe = e.Node, re = e.UIOpacity, se = e.Label, le = e.RichText, ue = e.Graphics, ce = e.Color, he = e.sys, de = e.Director, pe = e.EventTarget, ye = e.ParticleSystem2D, ve = e.math, fe = e.View, me = e.Vec2, ge = e.ccenum, be = e.Enum, Se = e.Layers, ke = e.find, Ce = e.ERigidBody2DType, we = e.RigidBody2D, Ee = e.sp, Ae = e.Collider2D, Te = e.Contact2DType, Re = e.SpriteFrame, Pe = e.HingeJoint2D, Le = e.RelativeJoint2D, _e = e.BoxCollider2D, Be = e.Prefab, De = e.instantiate, Oe = e.CircleCollider2D, Ie = e.Mask, Ne = e.PolygonCollider2D, Fe = e.NodePool, ze = e.Tween, xe = e.PhysicsSystem2D, Ge = e.ERaycast2DType, Me = e.Intersection2D, Ue = e.JsonAsset, He = e.ProgressBar, je = e.EPhysics2DDrawFlags, We = e.DistanceJoint2D, Ve = e.repeat, $e = e.lerp, qe = e.approx, Ke = e.EPSILON, Ye = e.RealCurve, Je = e.Gradient, Xe = e.bits, Ze = e.random, Qe = e.randomRange, et = e.randomRangeInt, tt = e.js, nt = e.misc, it = e.MeshRenderData, at = e.pseudoRandom, ot = e.toRadian, rt = e.CCClass, st = e.UIRenderer, lt = e.Material;
+                x = e.cclegacy, M = e.isCCObject, G = e._decorator, U = e.Animation, H = e.CCString, j = e.CCInteger, W = e.Component, V = e.AudioSource, $ = e.director, q = e.UITransform, K = e.CCFloat, Y = e.Widget, J = e.tween, X = e.Layout, Z = e.Sprite, Q = e.game, ee = e.Button, te = e.CCBoolean, ne = e.EventTouch, ie = e.Vec3, ae = e.Input, oe = e.Node, re = e.UIOpacity, se = e.Label, le = e.RichText, ue = e.Graphics, ce = e.Color, he = e.sys, de = e.Director, pe = e.EventTarget, ye = e.ParticleSystem2D, ve = e.math, fe = e.View, me = e.Vec2, ge = e.ccenum, be = e.Enum, Se = e.Layers, ke = e.find, Ce = e.ERigidBody2DType, we = e.RigidBody2D, Ee = e.sp, Ae = e.Collider2D, Te = e.Contact2DType, Re = e.SpriteFrame, Pe = e.HingeJoint2D, Le = e.RelativeJoint2D, _e = e.BoxCollider2D, Be = e.Prefab, De = e.instantiate, Oe = e.CircleCollider2D, Ie = e.Mask, Ne = e.PolygonCollider2D, Fe = e.NodePool, ze = e.Tween, xe = e.PhysicsSystem2D, Me = e.ERaycast2DType, Ge = e.Intersection2D, Ue = e.JsonAsset, He = e.ProgressBar, je = e.EPhysics2DDrawFlags, We = e.DistanceJoint2D, Ve = e.repeat, $e = e.lerp, qe = e.approx, Ke = e.EPSILON, Ye = e.RealCurve, Je = e.Gradient, Xe = e.bits, Ze = e.random, Qe = e.randomRange, et = e.randomRangeInt, tt = e.js, nt = e.misc, it = e.MeshRenderData, at = e.pseudoRandom, ot = e.toRadian, rt = e.CCClass, st = e.UIRenderer, lt = e.Material;
             }
         ],
         execute: function execute() {
@@ -305,7 +305,7 @@ System.register("chunks:///main.js", [
                                     var r = _$t.value;
                                     if (!Nt.hasOwn(e, r)) throw Error("".concat(n, ": Missing required ").concat(r, " property"));
                                     var l = this.getProperty(r, e);
-                                    if (!G(l)) throw Error("".concat(n, ": ").concat(r, " property is not a cc object"));
+                                    if (!M(l)) throw Error("".concat(n, ": ").concat(r, " property is not a cc object"));
                                 }
                             } catch (e) {
                                 o.e(e);
@@ -323,7 +323,7 @@ System.register("chunks:///main.js", [
                                     var o = _$t.value;
                                     if (!Nt.hasOwn(e, o)) throw Error("".concat(n, ": Missing required ").concat(o, " property"));
                                     var r = this.getProperty(o, e);
-                                    if (!G(r)) throw Error("".concat(n, ": ").concat(o, " property is not a cc object"));
+                                    if (!M(r)) throw Error("".concat(n, ": ").concat(o, " property is not a cc object"));
                                 }
                             } catch (e) {
                                 a.e(e);
@@ -351,7 +351,7 @@ System.register("chunks:///main.js", [
                         key: "getRequiredPropNames",
                         value: function value(e) {
                             return this.getProps(e).filter(function(t) {
-                                return "node" !== t && !!Nt.hasOwn(e, t) && !!G(e[t]) && !t.startsWith("_");
+                                return "node" !== t && !!Nt.hasOwn(e, t) && !!M(e[t]) && !t.startsWith("_");
                             });
                         }
                     },
@@ -385,7 +385,7 @@ System.register("chunks:///main.js", [
                             }).filter(function(n) {
                                 if (!Nt.hasOwn(e, n)) return !1;
                                 var i = _$t.getProperty(n, e);
-                                return !(!Ft.isObject(i) || !G(i));
+                                return !(!Ft.isObject(i) || !M(i));
                             });
                         }
                     }
@@ -461,7 +461,7 @@ System.register("chunks:///main.js", [
                 ]), t;
             }());
             x._RF.pop(), x._RF.push({}, "60ac3vor0dMT5bXi8D3VSJN", "BubbleAnimation", void 0);
-            var Gt, Mt = M.ccclass, Ut = M.property, Ht = (Et = Mt("BubbleAnimation"), At = Ut(U), Tt = Ut(H), Rt = Ut(j), Et((_t = l((Lt = function(e) {
+            var Mt, Gt = G.ccclass, Ut = G.property, Ht = (Et = Gt("BubbleAnimation"), At = Ut(U), Tt = Ut(H), Rt = Ut(j), Et((_t = l((Lt = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -528,7 +528,7 @@ System.register("chunks:///main.js", [
                 }
             }), Lt)) || Lt);
             x._RF.pop(), x._RF.push({}, "cc0a5OvhdRCMZRZuRscaz+7", "AudioPlayer", void 0);
-            var jt = null == (Gt = Ludex.Plugins.Audio) ? void 0 : Gt.BaseAudioPlayer;
+            var jt = null == (Mt = Ludex.Plugins.Audio) ? void 0 : Mt.BaseAudioPlayer;
             jt || (jt = o(function e(t) {
                 a(this, e), console.warn("BaseAudioPlayer is not defined", t);
             }));
@@ -712,7 +712,7 @@ System.register("chunks:///main.js", [
                 Vt
             ], Object.getOwnPropertyDescriptor($t.prototype, "onLoadAudio"), $t.prototype), $t);
             x._RF.pop(), x._RF.push({}, "1a025mmN7BL7r5cF6gWR4b/", "Music", void 0);
-            var on, rn, ln, un, cn = M.ccclass, hn = M.property, dn = codex, pn = dn.audio, yn = dn.player;
+            var on, rn, ln, un, cn = G.ccclass, hn = G.property, dn = codex, pn = dn.audio, yn = dn.player;
             Zt = cn("Music"), Qt = hn(H), Zt((nn = l((tn = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -806,7 +806,7 @@ System.register("chunks:///main.js", [
                     return "global_music";
                 }
             }), tn)), x._RF.pop(), x._RF.push({}, "1299a7X1XNNEKxSKMV6E5jQ", "Sound", void 0);
-            var vn, fn, mn, bn, Sn, kn, Cn, wn, En, An, Tn, Rn, Pn, _n, Bn, Dn, On, In, Nn = M.ccclass, Fn = M.property, zn = codex, xn = zn.audio, Gn = zn.player;
+            var vn, fn, mn, bn, Sn, kn, Cn, wn, En, An, Tn, Rn, Pn, _n, Bn, Dn, On, In, Nn = G.ccclass, Fn = G.property, zn = codex, xn = zn.audio, Mn = zn.player;
             on = Nn("Sound"), rn = Fn(H), on((un = l((ln = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -850,7 +850,7 @@ System.register("chunks:///main.js", [
                     {
                         key: "isSoundEnable",
                         value: function value() {
-                            return !!Gn.getPlayerSetting("sound");
+                            return !!Mn.getPlayerSetting("sound");
                         }
                     },
                     {
@@ -900,7 +900,7 @@ System.register("chunks:///main.js", [
                     return "";
                 }
             }), ln)), x._RF.pop(), x._RF.push({}, "84a2dB5IaRJ8JB+n9yXfBc7", "AutoLayout", void 0);
-            var Mn, Un, jn, Wn, Vn = M.ccclass, $n = M.property, qn = (vn = Vn("AutoLayoutWrappee"), fn = $n({
+            var Gn, Un, jn, Wn, Vn = G.ccclass, $n = G.property, qn = (vn = Vn("AutoLayoutWrappee"), fn = $n({
                 type: q
             }), mn = $n({
                 type: q
@@ -1141,8 +1141,8 @@ System.register("chunks:///main.js", [
                     return 0;
                 }
             }), _n)), x._RF.pop(), x._RF.push({}, "ca427NpeqpC3bUoGTd9I/BM", "Background", void 0);
-            var Yn = M.ccclass, Jn = m.Layout;
-            Mn = Yn("Background"), Un = xt.required(), Mn((Wn = l((jn = function(e) {
+            var Yn = G.ccclass, Jn = m.Layout;
+            Gn = Yn("Background"), Un = xt.required(), Gn((Wn = l((jn = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -1183,7 +1183,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), jn)), x._RF.pop(), x._RF.push({}, "7ddc4vU74pB/LdHrUupDA/G", "BlockLines", void 0);
-            var Xn, Zn, Qn, ei, ti, ni, ii, ai, oi, ri, si, li, ui, ci, hi, di, pi, yi = M.ccclass, vi = m.Layout;
+            var Xn, Zn, Qn, ei, ti, ni, ii, ai, oi, ri, si, li, ui, ci, hi, di, pi, yi = G.ccclass, vi = m.Layout;
             yi("BlockLines")(function(e) {
                 n(r, e);
                 var t = i(r);
@@ -1240,7 +1240,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)), x._RF.pop(), x._RF.push({}, "4b299Dv1kVGcqQmJC9yBPAV", "ButtonReleased", void 0);
-            var fi = M.ccclass, mi = M.requireComponent, gi = M.property, bi = M.disallowMultiple, Si = M.executionOrder, ki = codex.analytics;
+            var fi = G.ccclass, mi = G.requireComponent, gi = G.property, bi = G.disallowMultiple, Si = G.executionOrder, ki = codex.analytics;
             Xn = fi("ButtonReleased"), Zn = mi([
                 U,
                 ee
@@ -1521,7 +1521,7 @@ System.register("chunks:///main.js", [
                 ]), e;
             }();
             x._RF.pop(), x._RF.push({}, "0e570DdAIZPKY6DNtNerFmX", "OpacityToggler", void 0);
-            var Pi, Li, _i, Bi, Di, Oi, Ii, Ni, Fi, zi, xi, Gi, Mi, Ui, Hi, ji, Wi = M.ccclass, Vi = M.requireComponent, $i = M.property, qi = Wi("OpacityToggler")(Ci = Vi([
+            var Pi, Li, _i, Bi, Di, Oi, Ii, Ni, Fi, zi, xi, Mi, Gi, Ui, Hi, ji, Wi = G.ccclass, Vi = G.requireComponent, $i = G.property, qi = Wi("OpacityToggler")(Ci = Vi([
                 re
             ])((Ei = l((wi = function(e) {
                 n(l, e);
@@ -1598,7 +1598,7 @@ System.register("chunks:///main.js", [
                 }
             }), Ci = wi)) || Ci) || Ci;
             x._RF.pop(), x._RF.push({}, "08623z7mLxP/4DVAyNB9srK", "DebugAdsPlugin", void 0);
-            var Ki, Ji, Xi = M.ccclass, Zi = M.property, Qi = M.requireComponent, ea = Ludex, ta = ea.Events, na = ea.Plugins.Ads, ia = (void 0 === na ? {} : na).Types, aa = codex, oa = aa.event, ra = aa.ads, sa = {
+            var Ki, Ji, Xi = G.ccclass, Zi = G.property, Qi = G.requireComponent, ea = Ludex, ta = ea.Events, na = ea.Plugins.Ads, ia = (void 0 === na ? {} : na).Types, aa = codex, oa = aa.event, ra = aa.ads, sa = {
                 color: "#00FFFF",
                 prefix: "LOADING"
             }, la = {
@@ -1620,7 +1620,7 @@ System.register("chunks:///main.js", [
                 color: "#AAAAAA",
                 prefix: "CLOSED"
             };
-            Pi = Xi("DebugAdsPlugin"), Li = Qi(re), _i = xt.required(), Bi = Zi(se), Di = xt.required(), Oi = Zi(se), Ii = xt.required(), Ni = Zi(le), Fi = xt.required(), zi = Zi(re), Pi(xi = Li((Mi = l((Gi = function(e) {
+            Pi = Xi("DebugAdsPlugin"), Li = Qi(re), _i = xt.required(), Bi = Zi(se), Di = xt.required(), Oi = Zi(se), Ii = xt.required(), Ni = Zi(le), Fi = xt.required(), zi = Zi(re), Pi(xi = Li((Gi = l((Mi = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -1629,7 +1629,7 @@ System.register("chunks:///main.js", [
                     for(var n = arguments.length, i = Array(n), o = 0; o < n; o++)i[o] = arguments[o];
                     return _$e = t.call.apply(t, [
                         this
-                    ].concat(i)), u(_$e, "statusLabel", Mi, c(_$e)), u(_$e, "timersLabel", Ui, c(_$e)), u(_$e, "logLabel", Hi, c(_$e)), u(_$e, "opacity", ji, c(_$e)), _$e.logLines$ = [], _$e.touchMs$ = 0, _$e.setupEventListeners$ = function(t) {
+                    ].concat(i)), u(_$e, "statusLabel", Gi, c(_$e)), u(_$e, "timersLabel", Ui, c(_$e)), u(_$e, "logLabel", Hi, c(_$e)), u(_$e, "opacity", ji, c(_$e)), _$e.logLines$ = [], _$e.touchMs$ = 0, _$e.setupEventListeners$ = function(t) {
                         [
                             [
                                 ta.AD_LOADING,
@@ -1753,7 +1753,7 @@ System.register("chunks:///main.js", [
                 enumerable: !0,
                 writable: !0,
                 initializer: null
-            }), Ui = l(Gi.prototype, "timersLabel", [
+            }), Ui = l(Mi.prototype, "timersLabel", [
                 Di,
                 Oi
             ], {
@@ -1761,7 +1761,7 @@ System.register("chunks:///main.js", [
                 enumerable: !0,
                 writable: !0,
                 initializer: null
-            }), Hi = l(Gi.prototype, "logLabel", [
+            }), Hi = l(Mi.prototype, "logLabel", [
                 Ii,
                 Ni
             ], {
@@ -1769,7 +1769,7 @@ System.register("chunks:///main.js", [
                 enumerable: !0,
                 writable: !0,
                 initializer: null
-            }), ji = l(Gi.prototype, "opacity", [
+            }), ji = l(Mi.prototype, "opacity", [
                 Fi,
                 zi
             ], {
@@ -1777,8 +1777,8 @@ System.register("chunks:///main.js", [
                 enumerable: !0,
                 writable: !0,
                 initializer: null
-            }), xi = Gi)) || xi), x._RF.pop(), x._RF.push({}, "7ef37Q3PZpKYaeik5JzGwNy", "DebugResolution", void 0);
-            var ya, va, fa, ma, ga, ba, Sa, ka, Ca, wa, Ea, Aa, Ta, Ra = M.ccclass, Pa = M.property, La = M.requireComponent, _a = M.disallowMultiple, Ba = M.executeInEditMode, Da = m.DesignSize, Oa = Da.Portrait, Ia = Da.Landscape;
+            }), xi = Mi)) || xi), x._RF.pop(), x._RF.push({}, "7ef37Q3PZpKYaeik5JzGwNy", "DebugResolution", void 0);
+            var ya, va, fa, ma, ga, ba, Sa, ka, Ca, wa, Ea, Aa, Ta, Ra = G.ccclass, Pa = G.property, La = G.requireComponent, _a = G.disallowMultiple, Ba = G.executeInEditMode, Da = m.DesignSize, Oa = Da.Portrait, Ia = Da.Landscape;
             Ra("DebugResolution")(Ki = _a(Ki = La([
                 ue
             ])(Ki = Ba(!0)(((Ji = function(e) {
@@ -1864,7 +1864,7 @@ System.register("chunks:///main.js", [
             ], Object.getOwnPropertyDescriptor(Ji.prototype, "drawPortrait"), Ji.prototype), l(Ji.prototype, "drawLandscape", [
                 Pa
             ], Object.getOwnPropertyDescriptor(Ji.prototype, "drawLandscape"), Ji.prototype), Ki = Ji)) || Ki) || Ki) || Ki), x._RF.pop(), x._RF.push({}, "c4718hmr29IBpiwZUE/Uo4H", "DebugScreenManager", void 0);
-            var Na = M.ccclass, Fa = M.property, za = M.requireComponent, xa = Ludex.Events, Ga = codex.event, Ma = {
+            var Na = G.ccclass, Fa = G.property, za = G.requireComponent, xa = Ludex.Events, Ma = codex.event, Ga = {
                 color: "#00FFFF",
                 prefix: "OPEN"
             }, Ua = {
@@ -1901,7 +1901,7 @@ System.register("chunks:///main.js", [
                     ].concat(i)), u(_$e, "statusLabel", Ea, c(_$e)), u(_$e, "logLabel", Aa, c(_$e)), u(_$e, "opacity", Ta, c(_$e)), _$e.touchMs$ = 0, _$e.logLines$ = [], _$e.screenStates$ = {}, _$e.eventHandlers$ = {}, _$e.initEventHandlers$ = function() {
                         var t;
                         T(t = {}, xa.OPEN_SCREEN, function(t) {
-                            return _$e.logEvent$(Ma, t);
+                            return _$e.logEvent$(Ga, t);
                         }), T(t, xa.OPENING_SCREEN, function(t) {
                             _$e.logEvent$(Ua, t);
                         }), T(t, xa.OPENED_SCREEN, function(t) {
@@ -1920,7 +1920,7 @@ System.register("chunks:///main.js", [
                     }, _$e.setupEventListeners$ = function(t) {
                         Object.entries(_$e.eventHandlers$).forEach(function(e) {
                             var n = E(e, 2), i = n[0], a = n[1];
-                            Ga[t](i, a);
+                            Ma[t](i, a);
                         }), _$e.node[t](ae.EventType.TOUCH_END, _$e.handleTouchEnd$), _$e.node[t](ae.EventType.TOUCH_START, _$e.handleTouchStart$);
                     }, _$e.handleScreenStates$ = function(t) {
                         _$e.screenStates$ = t;
@@ -2017,7 +2017,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), Ca = wa)) || Ca), x._RF.pop(), x._RF.push({}, "0405b+DQy1IALb/j8jx5Lpc", "PerfCounter", void 0);
-            var Ka, Ya, Ja, Xa, Za, Qa, eo, to, no, io, ao, oo, ro, so, lo, uo, co, ho, po, yo, vo, fo, mo, go, bo, So, ko, Co, wo, Eo, Ao, To, Ro, Po, Lo, _o, Bo, Do, Oo, Io, No, Fo, zo, xo, Go, Mo, Uo, Ho = function() {
+            var Ka, Ya, Ja, Xa, Za, Qa, eo, to, no, io, ao, oo, ro, so, lo, uo, co, ho, po, yo, vo, fo, mo, go, bo, So, ko, Co, wo, Eo, Ao, To, Ro, Po, Lo, _o, Bo, Do, Oo, Io, No, Fo, zo, xo, Mo, Go, Uo, Ho = function() {
                 function e() {
                     a(this, e), this.time = 0, this._value = 0, this.time = 0, this._value = 0;
                 }
@@ -2045,7 +2045,7 @@ System.register("chunks:///main.js", [
                 ]), e;
             }();
             x._RF.pop(), x._RF.push({}, "0e2d6yn/BVObK1kyTJ5a09a", "GameStats", void 0);
-            var jo = M.ccclass, Wo = M.executionOrder, Vo = M.property, $o = M.requireComponent, qo = Ludex, Ko = qo.Utils, Yo = Ko.Valid, Jo = Ko.Array, Xo = Ko.Device, Zo = qo.Configs.Debugger.ListPlayerDevIds, Qo = codex.player, er = ce.RED, tr = ce.YELLOW, nr = ce.WHITE, ir = ce.BLACK;
+            var jo = G.ccclass, Wo = G.executionOrder, Vo = G.property, $o = G.requireComponent, qo = Ludex, Ko = qo.Utils, Yo = Ko.Valid, Jo = Ko.Array, Xo = Ko.Device, Zo = qo.Configs.Debugger.ListPlayerDevIds, Qo = codex.player, er = ce.RED, tr = ce.YELLOW, nr = ce.WHITE, ir = ce.BLACK;
             Ka = jo("GameStats"), Ya = Wo(-1000), Ja = $o([
                 re
             ]), Xa = xt.required(), Za = Vo(se), Qa = xt.required(), eo = Vo(se), to = xt.required(), no = Vo(se), io = xt.required(), ao = Vo(se), oo = xt.required(), ro = Vo(se), so = xt.required(), lo = Vo(se), uo = xt.required(), co = Vo(se), ho = xt.required(), po = Vo(se), yo = xt.required(), vo = Vo(se), fo = xt.required(), mo = Vo(se), go = xt.required(), bo = Vo(se), So = xt.required(), ko = Vo(se), Co = xt.required(), wo = Vo(Z), Eo = xt.required(), Ao = Vo(re), Ka(To = Ya(To = Ja((Po = l((Ro = function(e) {
@@ -2057,7 +2057,7 @@ System.register("chunks:///main.js", [
                     for(var n = arguments.length, i = Array(n), o = 0; o < n; o++)i[o] = arguments[o];
                     return _$e = t.call.apply(t, [
                         this
-                    ].concat(i)), u(_$e, "dprLabel", Po, c(_$e)), u(_$e, "fpsLabel", Lo, c(_$e)), u(_$e, "fpsRawLabel", _o, c(_$e)), u(_$e, "drawCountLabel", Bo, c(_$e)), u(_$e, "rafTimeLabel", Do, c(_$e)), u(_$e, "deltaTimeLabel", Oo, c(_$e)), u(_$e, "logicTimeLabel", Io, c(_$e)), u(_$e, "physicTimeLabel", No, c(_$e)), u(_$e, "renderTimeLabel", Fo, c(_$e)), u(_$e, "totalMemoryLabel", zo, c(_$e)), u(_$e, "objectMemoryLabel", xo, c(_$e)), u(_$e, "textureMemoryLabel", Go, c(_$e)), u(_$e, "bg", Mo, c(_$e)), u(_$e, "opacity", Uo, c(_$e)), _$e.lastRafTime$ = 0, _$e.slowRefreshInterval$ = 1, _$e.mediumRefreshInterval$ = .5, _$e.fastRefreshInterval$ = .16, _$e.isBackgroundEnabled$ = !1, _$e.touchMs$ = 0, _$e.isDragging$ = !1, _$e.listenInputEvents$ = function() {
+                    ].concat(i)), u(_$e, "dprLabel", Po, c(_$e)), u(_$e, "fpsLabel", Lo, c(_$e)), u(_$e, "fpsRawLabel", _o, c(_$e)), u(_$e, "drawCountLabel", Bo, c(_$e)), u(_$e, "rafTimeLabel", Do, c(_$e)), u(_$e, "deltaTimeLabel", Oo, c(_$e)), u(_$e, "logicTimeLabel", Io, c(_$e)), u(_$e, "physicTimeLabel", No, c(_$e)), u(_$e, "renderTimeLabel", Fo, c(_$e)), u(_$e, "totalMemoryLabel", zo, c(_$e)), u(_$e, "objectMemoryLabel", xo, c(_$e)), u(_$e, "textureMemoryLabel", Mo, c(_$e)), u(_$e, "bg", Go, c(_$e)), u(_$e, "opacity", Uo, c(_$e)), _$e.lastRafTime$ = 0, _$e.slowRefreshInterval$ = 1, _$e.mediumRefreshInterval$ = .5, _$e.fastRefreshInterval$ = .16, _$e.isBackgroundEnabled$ = !1, _$e.touchMs$ = 0, _$e.isDragging$ = !1, _$e.listenInputEvents$ = function() {
                         _$e.node.on(ae.EventType.TOUCH_START, _$e.handleTouchStart$), _$e.node.on(ae.EventType.TOUCH_MOVE, _$e.handleTouchMove$), _$e.node.on(ae.EventType.TOUCH_END, _$e.handleTouchEnd$), _$e.node.on(ae.EventType.TOUCH_CANCEL, _$e.handleTouchEnd$), _$e.node.on(ae.EventType.MOUSE_WHEEL, function() {
                             Q.emit(f.REQUEST_DYNAMIC_ATLAS);
                         });
@@ -2313,7 +2313,7 @@ System.register("chunks:///main.js", [
                 enumerable: !0,
                 writable: !0,
                 initializer: null
-            }), Go = l(Ro.prototype, "textureMemoryLabel", [
+            }), Mo = l(Ro.prototype, "textureMemoryLabel", [
                 So,
                 ko
             ], {
@@ -2321,7 +2321,7 @@ System.register("chunks:///main.js", [
                 enumerable: !0,
                 writable: !0,
                 initializer: null
-            }), Mo = l(Ro.prototype, "bg", [
+            }), Go = l(Ro.prototype, "bg", [
                 Co,
                 wo
             ], {
@@ -2340,7 +2340,7 @@ System.register("chunks:///main.js", [
             }), To = Ro)) || To) || To), x._RF.pop(), x._RF.push({}, "ca922n1V0RLioEyUJg8hQXH", "GameEvents", void 0);
             var e1, ar, or = ((e1 = or || {}).NEXT_LEVEL = "next-level", e1.UPDATE_LEVEL = "update-level", e1.START_OVER = "start-over", e1.SELECT_LEVEL = "select-level", e1.GAME_START = "game-start", e1.GAME_PAUSE = "game-pause", e1.GAME_RESUME = "game-resume", e1.GAME_REPLAY = "game-replay", e1.SHOW_HINT = "show-hint", e1.SKIP_LEVEL = "skip-level", e1.TIME_OUT = "time-out", e1.DRAWING = "drawing", e1.DOGE_DIE = "doge-die", e1.DOGE_SURVIVE = "doge-survive", e1.BEE_DIE = "bee-die", e1.BEE_ATTACK = "bee-attack", e1.BIG_BEE_DIE = "big-bee-die", e1.GAME_OBJECTS_SPAWNED = "game-objects-spawned", e1);
             x._RF.pop(), x._RF.push({}, "8249dDH5xBEc4nnCGRgSjaW", "PanelAnimationController", void 0);
-            var rr, sr, ur, cr, hr, dr, pr, yr, vr, fr, mr, gr, br, kr, Cr, wr, Er = (0, M.ccclass)("PanelAnimationController")(ar = function(e) {
+            var rr, sr, ur, cr, hr, dr, pr, yr, vr, fr, mr, gr, br, kr, Cr, wr, Er = (0, G.ccclass)("PanelAnimationController")(ar = function(e) {
                 n(l, e);
                 var r = i(l);
                 function l() {
@@ -2470,7 +2470,7 @@ System.register("chunks:///main.js", [
                 ]), l;
             }(W)) || ar;
             x._RF.pop(), x._RF.push({}, "f190aWZvVlGiplYX4XrZG3a", "PanelAnimator", void 0);
-            var Ar, Tr = M.ccclass, Rr = M.property, Pr = Ludex.Utils.Object, Lr = (rr = Tr("AnimationConfig"), sr = Rr({
+            var Ar, Tr = G.ccclass, Rr = G.property, Pr = Ludex.Utils.Object, Lr = (rr = Tr("AnimationConfig"), sr = Rr({
                 type: [
                     Y
                 ]
@@ -2774,7 +2774,7 @@ System.register("chunks:///main.js", [
                     return new Lr;
                 }
             }), kr)), x._RF.pop(), x._RF.push({}, "21a9aAlkBtGxKLqip8g0o6l", "ParticleSystem2DExtra", void 0);
-            var Br = M.ccclass, Dr = M.disallowMultiple, Or = M.executeInEditMode, Ir = M.requireComponent, Nr = Br("ParticleSystem2DExtra")(Ar = Or(!0)(Ar = Dr(!0)(Ar = Ir(ye)(Ar = function(e) {
+            var Br = G.ccclass, Dr = G.disallowMultiple, Or = G.executeInEditMode, Ir = G.requireComponent, Nr = Br("ParticleSystem2DExtra")(Ar = Or(!0)(Ar = Dr(!0)(Ar = Ir(ye)(Ar = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -2823,7 +2823,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)) || Ar) || Ar) || Ar) || Ar;
-            x._RF.pop(), x._RF.push({}, "9a5a3MgLaRAKbHluGCPsA8j", "ExampleParticleSystem2DExtra", void 0), (0, M.ccclass)("ExampleParticleSystem2DExtra")(function(e) {
+            x._RF.pop(), x._RF.push({}, "9a5a3MgLaRAKbHluGCPsA8j", "ExampleParticleSystem2DExtra", void 0), (0, G.ccclass)("ExampleParticleSystem2DExtra")(function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -2858,7 +2858,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(Nr)), x._RF.pop(), x._RF.push({}, "6ea01hdw/9MHb28SCDAiRss", "ResizeWithBannerAd", void 0);
-            var Fr, zr, xr, Gr, Mr, Ur, Hr, jr, Wr, Vr, $r, qr, Kr, Yr, Jr, Xr, Zr, Qr, es, ts, ns, is, as, os, rs, ss, ls, us, cs, hs, ds, ps, ys, vs, fs, ms, gs = M.ccclass, bs = M.requireComponent, Ss = M.property, ks = codex, Cs = ks.ads, ws = ks.event, Es = Ludex, As = Es.Events, Ts = Es.Plugins.Ads, Rs = void 0 === Ts ? {} : Ts, Ps = Rs.Types, Ls = Rs.Status, _s = Es.Utils, Bs = _s.Array, Ds = _s.Function, Os = _s.Device, Is = [
+            var Fr, zr, xr, Mr, Gr, Ur, Hr, jr, Wr, Vr, $r, qr, Kr, Yr, Jr, Xr, Zr, Qr, es, ts, ns, is, as, os, rs, ss, ls, us, cs, hs, ds, ps, ys, vs, fs, ms, gs = G.ccclass, bs = G.requireComponent, Ss = G.property, ks = codex, Cs = ks.ads, ws = ks.event, Es = Ludex, As = Es.Events, Ts = Es.Plugins.Ads, Rs = void 0 === Ts ? {} : Ts, Ps = Rs.Types, Ls = Rs.Status, _s = Es.Utils, Bs = _s.Array, Ds = _s.Function, Os = _s.Device, Is = [
                 "top",
                 "topleft",
                 "topright"
@@ -2875,7 +2875,7 @@ System.register("chunks:///main.js", [
                 "topright",
                 "bottomright"
             ];
-            Fr = gs("ResizeWithBannerAd"), zr = bs(Y), xr = xt.required(), Gr = Ss(te), Mr = xt.required(), Ur = Ss(te), Hr = xt.required(), jr = Ss(te), Wr = xt.required(), Vr = Ss(te), $r = xt.required(), qr = Ss(te), Kr = xt.required(), Yr = Ss(Y), Fr(Jr = zr((Zr = l((Xr = function(e) {
+            Fr = gs("ResizeWithBannerAd"), zr = bs(Y), xr = xt.required(), Mr = Ss(te), Gr = xt.required(), Ur = Ss(te), Hr = xt.required(), jr = Ss(te), Wr = xt.required(), Vr = Ss(te), $r = xt.required(), qr = Ss(te), Kr = xt.required(), Yr = Ss(Y), Fr(Jr = zr((Zr = l((Xr = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -3003,7 +3003,7 @@ System.register("chunks:///main.js", [
                 ]), r;
             }(W)).prototype, "includeSAB", [
                 xr,
-                Gr
+                Mr
             ], {
                 configurable: !0,
                 enumerable: !0,
@@ -3012,7 +3012,7 @@ System.register("chunks:///main.js", [
                     return !0;
                 }
             }), Qr = l(Xr.prototype, "includeRightBanner", [
-                Mr,
+                Gr,
                 Ur
             ], {
                 configurable: !0,
@@ -3060,7 +3060,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), Jr = Xr)) || Jr), x._RF.pop(), x._RF.push({}, "aa4b0d0u0hLeqd3+/PQZ/QD", "SwitchButton", void 0);
-            var xs, Gs, Ms, Us, Hs, js, Ws, Vs = M.ccclass, $s = M.property, qs = M.requireComponent, Ks = codex.analytics, Ys = (as = Vs("SwitchButton"), os = qs([
+            var xs, Ms, Gs, Us, Hs, js, Ws, Vs = G.ccclass, $s = G.property, qs = G.requireComponent, Ks = codex.analytics, Ys = (as = Vs("SwitchButton"), os = qs([
                 ee
             ]), rs = $s(te), ss = $s(oe), ls = $s(oe), us = $s(te), cs = $s({
                 visible: function visible() {
@@ -3168,8 +3168,8 @@ System.register("chunks:///main.js", [
                 }
             }), hs = ds)) || hs) || hs);
             x._RF.pop(), x._RF.push({}, "aa60frMJLtIlJZh2yJhMp1s", "DynamicLabel", void 0);
-            var Js, Xs, Zs, el, tl, nl, il, al, ol, rl, sl, ll, ul, cl, hl, dl, pl, yl, vl, fl, ml, gl, bl, Sl, kl, Cl, wl, El, Al, Tl, Rl, Pl, Ll, _l, Bl, Dl, Ol, Il, Nl, Fl = M.ccclass, zl = M.property, xl = M.executeInEditMode, Gl = M.requireComponent;
-            xs = Fl("DynamicLabel"), Gs = Gl(se), Ms = xl(!0), Us = zl({
+            var Js, Xs, Zs, el, tl, nl, il, al, ol, rl, sl, ll, ul, cl, hl, dl, pl, yl, vl, fl, ml, gl, bl, Sl, kl, Cl, wl, El, Al, Tl, Rl, Pl, Ll, _l, Bl, Dl, Ol, Il, Nl, Fl = G.ccclass, zl = G.property, xl = G.executeInEditMode, Ml = G.requireComponent;
+            xs = Fl("DynamicLabel"), Ms = Ml(se), Gs = xl(!0), Us = zl({
                 type: K,
                 min: 1,
                 max: 200
@@ -3177,7 +3177,7 @@ System.register("chunks:///main.js", [
                 type: K,
                 min: .1,
                 max: 4
-            }), xs(js = Gs(js = Ms((l((Ws = function(e) {
+            }), xs(js = Ms(js = Gs((l((Ws = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -3225,9 +3225,9 @@ System.register("chunks:///main.js", [
             ], Object.getOwnPropertyDescriptor(Ws.prototype, "size"), Ws.prototype), l(Ws.prototype, "quality", [
                 Hs
             ], Object.getOwnPropertyDescriptor(Ws.prototype, "quality"), Ws.prototype), js = Ws)) || js) || js), x._RF.pop(), x._RF.push({}, "bce15LcVrxOfYMa9rbXN/qi", "Localize", void 0);
-            var Ml = M.ccclass, Ul = M.property, Hl = M.executeInEditMode, jl = M.disallowMultiple, Wl = Ludex, Vl = Wl.Utils, $l = Vl.Signal, ql = (Vl.Function, Vl.Array), Kl = Wl.Events, Yl = codex, Jl = Yl.language, Xl = Yl.event, Zl = ((e2 = {})[e2.Text = 0] = "Text", e2[e2.Texture = 1] = "Texture", e2);
+            var Gl = G.ccclass, Ul = G.property, Hl = G.executeInEditMode, jl = G.disallowMultiple, Wl = Ludex, Vl = Wl.Utils, $l = Vl.Signal, ql = (Vl.Function, Vl.Array), Kl = Wl.Events, Yl = codex, Jl = Yl.language, Xl = Yl.event, Zl = ((e2 = {})[e2.Text = 0] = "Text", e2[e2.Texture = 1] = "Texture", e2);
             ge(Zl);
-            var e2, Ql, eu, tu, iu, au, ou, ru, su, uu, cu, hu, du, pu, vu, fu, mu, gu = "localize-params-updated", bu = (Js = Ml("LocalizeParams"), Xs = Ul({
+            var e2, Ql, eu, tu, iu, au, ou, ru, su, uu, cu, hu, du, pu, vu, fu, mu, gu = "localize-params-updated", bu = (Js = Gl("LocalizeParams"), Xs = Ul({
                 visible: !1
             }), Zs = Ul(H), Js((tl = l((el = function() {
                 function e() {
@@ -3258,7 +3258,7 @@ System.register("chunks:///main.js", [
                 }
             }), l(el.prototype, "text", [
                 Zs
-            ], Object.getOwnPropertyDescriptor(el.prototype, "text"), el.prototype), el)) || el), Su = (nl = Ml("Localize"), il = Hl(!0), al = Ul({
+            ], Object.getOwnPropertyDescriptor(el.prototype, "text"), el.prototype), el)) || el), Su = (nl = Gl("Localize"), il = Hl(!0), al = Ul({
                 visible: !1
             }), ol = Ul({
                 type: H,
@@ -3951,7 +3951,7 @@ System.register("chunks:///main.js", [
                 Al
             ], Object.getOwnPropertyDescriptor(Rl.prototype, "setSpriteEditor"), Rl.prototype), Tl = Rl)) || Tl) || Tl) || Tl);
             x._RF.pop(), x._RF.push({}, "060a722v8VBE68QPm8fKcyQ", "LocalizePreloader", void 0);
-            var ku, Cu, wu, Eu, Au, Tu, Ru, Pu, Lu, _u, Bu, Du, Ou, Iu, Nu, Fu, zu = M.ccclass, xu = M.property, Gu = Ludex.Utils, Mu = Gu.Array, Uu = Gu.Valid, Hu = codex.language, ju = (Ql = zu("LocalizeTextureKey"), eu = xu({
+            var ku, Cu, wu, Eu, Au, Tu, Ru, Pu, Lu, _u, Bu, Du, Ou, Iu, Nu, Fu, zu = G.ccclass, xu = G.property, Mu = Ludex.Utils, Gu = Mu.Array, Uu = Mu.Valid, Hu = codex.language, ju = (Ql = zu("LocalizeTextureKey"), eu = xu({
                 visible: !1
             }), tu = xu(H), Ql((au = l((iu = function() {
                 function e() {
@@ -3992,7 +3992,7 @@ System.register("chunks:///main.js", [
                             return this._key;
                         },
                         set: function set(e) {
-                            Mu.has(P, e) ? this._key = e : console.warn("Key ".concat(e, " not found. Supported locales are ").concat(P.join(", ")));
+                            Gu.has(P, e) ? this._key = e : console.warn("Key ".concat(e, " not found. Supported locales are ").concat(P.join(", ")));
                         }
                     }
                 ]), e;
@@ -4037,7 +4037,7 @@ System.register("chunks:///main.js", [
                             var _$e = Hu.getCurrentLocale(), t = this.locales.map(function(e) {
                                 return e.key;
                             });
-                            if (Mu.has(t, _$e)) {
+                            if (Gu.has(t, _$e)) {
                                 var n, i = [], a = s(this.keys);
                                 try {
                                     for(a.s(); !(n = a.n()).done;){
@@ -4076,7 +4076,7 @@ System.register("chunks:///main.js", [
                     return [];
                 }
             }), vu)), x._RF.pop(), x._RF.push({}, "3f364xnTJtDR5yeow2MWHhm", "LocalizedLayout", void 0);
-            var Vu, $u, qu, Ku, Yu, Ju, Xu, Zu, Qu, ec, tc, nc, ic, ac, oc, rc, sc, lc, uc, cc, hc, dc, pc, yc, vc, fc, mc, gc, bc = M.ccclass, Sc = M.property, kc = M.executeInEditMode, Cc = M.disallowMultiple, wc = M.requireComponent;
+            var Vu, $u, qu, Ku, Yu, Ju, Xu, Zu, Qu, ec, tc, nc, ic, ac, oc, rc, sc, lc, uc, cc, hc, dc, pc, yc, vc, fc, mc, gc, bc = G.ccclass, Sc = G.property, kc = G.executeInEditMode, Cc = G.disallowMultiple, wc = G.requireComponent;
             ku = bc("LocalizedLayout"), Cu = kc(!0), wu = wc(q), Eu = Sc(Su), Au = xt.required(), Tu = Sc(q), Ru = Sc({
                 visible: !1
             }), Pu = Sc({
@@ -4210,7 +4210,7 @@ System.register("chunks:///main.js", [
             ], Object.getOwnPropertyDescriptor(Du.prototype, "horizontal"), Du.prototype), l(Du.prototype, "vertical", [
                 _u
             ], Object.getOwnPropertyDescriptor(Du.prototype, "vertical"), Du.prototype), Bu = Du)) || Bu) || Bu) || Bu), x._RF.pop(), x._RF.push({}, "a2260jBMJFPCrn/Q4Vo4iB1", "BatchNodes", void 0);
-            var Ec, Ac, Tc, Rc, Pc, Lc, _c, Bc, Dc, Oc, Ic, Nc, Fc, zc, xc, Gc, Mc, Uc, Hc, jc, Wc = M.ccclass, Vc = M.executionOrder, $c = M.property, qc = Ludex.Utils, Kc = qc.Decorator, Yc = qc.Array, Jc = "Batch By Name", Xc = "Batch Label", Zc = "Batch Sprite";
+            var Ec, Ac, Tc, Rc, Pc, Lc, _c, Bc, Dc, Oc, Ic, Nc, Fc, zc, xc, Mc, Gc, Uc, Hc, jc, Wc = G.ccclass, Vc = G.executionOrder, $c = G.property, qc = Ludex.Utils, Kc = qc.Decorator, Yc = qc.Array, Jc = "Batch By Name", Xc = "Batch Label", Zc = "Batch Sprite";
             Vu = Wc("BatchNodes"), $u = Vc(99999), qu = $c({
                 group: {
                     name: Jc
@@ -4681,7 +4681,7 @@ System.register("chunks:///main.js", [
                     };
                 }
             }), oc = rc)) || oc), x._RF.pop(), x._RF.push({}, "1ecebJCOPhK9L6AO92sjHzD", "BatchNodesV2", void 0);
-            var Qc, eh = M.ccclass, th = M.executionOrder, nh = M.property, ih = Ludex.Utils, ah = ih.Array, oh = ih.Object;
+            var Qc, eh = G.ccclass, th = G.executionOrder, nh = G.property, ih = Ludex.Utils, ah = ih.Array, oh = ih.Object;
             Ec = eh("BatchNodesV2"), Ac = th(99999), Tc = nh({
                 group: "Batch Settings"
             }), Rc = nh({
@@ -4728,7 +4728,7 @@ System.register("chunks:///main.js", [
                     for(var n = arguments.length, i = Array(n), o = 0; o < n; o++)i[o] = arguments[o];
                     return _$e = t.call.apply(t, [
                         this
-                    ].concat(i)), u(_$e, "batchByName", Fc, c(_$e)), u(_$e, "listName", zc, c(_$e)), u(_$e, "depthNames", xc, c(_$e)), u(_$e, "batchLabel", Gc, c(_$e)), u(_$e, "typeLabel", Mc, c(_$e)), u(_$e, "depthLabel", Uc, c(_$e)), u(_$e, "batchSprite", Hc, c(_$e)), u(_$e, "depthSprite", jc, c(_$e)), _$e.batchNodes = {}, _$e.originalParents = {}, _$e.labelNodes = [], _$e.spriteNodes = [], _$e.namedNodes = {}, _$e.isInitialized = !1, _$e.labelNodesByType = {
+                    ].concat(i)), u(_$e, "batchByName", Fc, c(_$e)), u(_$e, "listName", zc, c(_$e)), u(_$e, "depthNames", xc, c(_$e)), u(_$e, "batchLabel", Mc, c(_$e)), u(_$e, "typeLabel", Gc, c(_$e)), u(_$e, "depthLabel", Uc, c(_$e)), u(_$e, "batchSprite", Hc, c(_$e)), u(_$e, "depthSprite", jc, c(_$e)), _$e.batchNodes = {}, _$e.originalParents = {}, _$e.labelNodes = [], _$e.spriteNodes = [], _$e.namedNodes = {}, _$e.isInitialized = !1, _$e.labelNodesByType = {
                         bitmap: [],
                         char: [],
                         none: []
@@ -5013,7 +5013,7 @@ System.register("chunks:///main.js", [
                 initializer: function initializer() {
                     return [];
                 }
-            }), Gc = l(Nc.prototype, "batchLabel", [
+            }), Mc = l(Nc.prototype, "batchLabel", [
                 Lc
             ], {
                 configurable: !0,
@@ -5022,7 +5022,7 @@ System.register("chunks:///main.js", [
                 initializer: function initializer() {
                     return !1;
                 }
-            }), Mc = l(Nc.prototype, "typeLabel", [
+            }), Gc = l(Nc.prototype, "typeLabel", [
                 _c
             ], {
                 configurable: !0,
@@ -5059,7 +5059,7 @@ System.register("chunks:///main.js", [
                     return 0;
                 }
             }), Ic = Nc)) || Ic), x._RF.pop(), x._RF.push({}, "9b958Lf6PFClb/JuJfTLzxG", "Vibrate", void 0);
-            var sh = M.ccclass, lh = Ludex.Utils.Browser, uh = codex.player, ch = sh("Vibrate")(Qc = function(e) {
+            var sh = G.ccclass, lh = Ludex.Utils.Browser, uh = codex.player, ch = sh("Vibrate")(Qc = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -5083,7 +5083,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)) || Qc;
-            x._RF.pop(), x._RF.push({}, "21fbd1aIo9DNoKfAoZaF1DC", "WidgetCanvasTarget", void 0), (0, M.ccclass)("WidgetCanvasTarget")(function(e) {
+            x._RF.pop(), x._RF.push({}, "21fbd1aIo9DNoKfAoZaF1DC", "WidgetCanvasTarget", void 0), (0, G.ccclass)("WidgetCanvasTarget")(function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -5374,7 +5374,7 @@ System.register("chunks:///main.js", [
                 }
             };
             x._RF.pop(), x._RF.push({}, "e2458xYf5xBG6uFEvkD4R6s", "FlowStratery", void 0);
-            var Ch = M.ccclass, wh = Ludex, Eh = wh.Utils, Ah = Eh.Decorator, Th = Eh.String, Rh = Eh.Number, Ph = wh.Dtos.Match.CustomData, Lh = codex, _h = Lh.match, Bh = Lh.player, Dh = function Dh(e) {
+            var Ch = G.ccclass, wh = Ludex, Eh = wh.Utils, Ah = Eh.Decorator, Th = Eh.String, Rh = Eh.Number, Ph = wh.Dtos.Match.CustomData, Lh = codex, _h = Lh.match, Bh = Lh.player, Dh = function Dh(e) {
                 B.closeLoadingScreen(), _instanceof(e, Error) && B.showNotificationScreen(e.message);
             };
             fh = Ch("FlowStrategy"), mh = Ah.tryCatch(Dh), gh = Ah.tryCatch(Dh), fh((l((Sh = function(e) {
@@ -5483,8 +5483,8 @@ System.register("chunks:///main.js", [
             ], Object.getOwnPropertyDescriptor(Sh.prototype, "finishStrategy"), Sh.prototype), Sh)), x._RF.pop(), x._RF.push({}, "91649r9HndHx6OjoY70+mR1", "GameMode", void 0);
             var Oh = "classic", Ih = "endless";
             x._RF.pop(), x._RF.push({}, "adb272QtfxDGZ+87PwkWEiN", "GameSettings", void 0), x._RF.pop(), x._RF.push({}, "52b52FNwvhBKY/becAy420o", "Leaderboard", void 0);
-            var Fh, xh, Mh = Ludex.Configs.Leaderboards.LeaderboardList;
-            null == (Fh = Mh[0]) || Fh.Id, null == (xh = Mh[1]) || xh.Id, x._RF.pop(), x._RF.push({}, "e8e10DJmXdH8Jw30JCMjJqd", "ScreensFlows", void 0), (0, M.ccclass)("ScreensFlows")(function(e) {
+            var Fh, xh, Gh = Ludex.Configs.Leaderboards.LeaderboardList;
+            null == (Fh = Gh[0]) || Fh.Id, null == (xh = Gh[1]) || xh.Id, x._RF.pop(), x._RF.push({}, "e8e10DJmXdH8Jw30JCMjJqd", "ScreensFlows", void 0), (0, G.ccclass)("ScreensFlows")(function(e) {
                 n(u, e);
                 var r, s, l = i(u);
                 function u() {
@@ -5731,7 +5731,7 @@ System.register("chunks:///main.js", [
             x._RF.pop(), x._RF.push({}, "a6e4bjV/RVH17qBEx1mZaFg", "ResourcePaths", void 0);
             var e5, e6, e7, e8, e9, e10, td, nd = ((e10 = nd || {}).WATER_SURFACE_FRAME = "sprites/water-surface/spriteFrame", e10.IC_HAND_FRAME = "sprites/ic-hand/spriteFrame", e10.POISON_CIRCLE_FRAME = "sprites/poison-circle/spriteFrame", e10.POISON_BUBBLE_PREFAB = "prefabs/PoisonBubble", e10.DUST_PARTICLE_SPINE = "spines/dust-particle/siwang_texiao", e10.MAP_JSON_PREFIX = "maps-json/", e10);
             x._RF.pop(), x._RF.push({}, "476e6UyMHFJyI2GmFP4KpHY", "BaseObject", void 0);
-            var id, ad, od, sd, ld, ud, cd = (0, M.ccclass)("BaseObject")(td = function(e) {
+            var id, ad, od, sd, ld, ud, cd = (0, G.ccclass)("BaseObject")(td = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -5840,7 +5840,7 @@ System.register("chunks:///main.js", [
                 ]), r;
             }(W)) || td;
             x._RF.pop(), x._RF.push({}, "15b7bvQaXpFgItiEHCr7GsP", "AirFan", void 0);
-            var hd = M.ccclass, dd = M.property, pd = Ludex.Utils.Array, yd = (id = hd("AirFan"), ad = dd(j), od = dd(Ae), id((ld = l((sd = function(e) {
+            var hd = G.ccclass, dd = G.property, pd = Ludex.Utils.Array, yd = (id = hd("AirFan"), ad = dd(j), od = dd(Ae), id((ld = l((sd = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -5940,7 +5940,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), sd)) || sd);
             x._RF.pop(), x._RF.push({}, "8a02eYTwSpP9IpQ4MrTsAiL", "SpineAnimationName", void 0), x._RF.pop(), x._RF.push({}, "ff37brNpltMuaZm+M+x9+1N", "Rope", void 0);
-            var vd, fd, md, bd, Sd, kd, Ad, Td, Rd, Pd, _d, Bd, Dd, Od, Id = M.ccclass, Nd = M.property, Fd = (vd = Id("Rope"), fd = Nd(Re), md = Nd(j), vd((Sd = l((bd = function(e) {
+            var vd, fd, md, bd, Sd, kd, Ad, Td, Rd, Pd, _d, Bd, Dd, Od, Id = G.ccclass, Nd = G.property, Fd = (vd = Id("Rope"), fd = Nd(Re), md = Nd(j), vd((Sd = l((bd = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -6050,7 +6050,7 @@ System.register("chunks:///main.js", [
                 }
             }), bd)) || bd);
             x._RF.pop(), x._RF.push({}, "a8a47NhLJ9C1ahfjfiJ2xjc", "Balloon", void 0);
-            var zd = M.ccclass, xd = M.property, Gd = Ludex.Utils.Array, Md = (Ad = zd("Balloon"), Td = xd(Be), Rd = xd(Ae), Pd = xd(we), Ad((Bd = l((_d = function(e) {
+            var zd = G.ccclass, xd = G.property, Md = Ludex.Utils.Array, Gd = (Ad = zd("Balloon"), Td = xd(Be), Rd = xd(Ae), Pd = xd(we), Ad((Bd = l((_d = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -6066,7 +6066,7 @@ System.register("chunks:///main.js", [
                                 Vh.THORN,
                                 Vh.THORN_BALL
                             ];
-                            Gd.has(i, n.node.name) && (_$e.rope.disconnect(), _$e.setSpineAnimation("animation2", !1), _$e.scheduleOnce(function() {
+                            Md.has(i, n.node.name) && (_$e.rope.disconnect(), _$e.setSpineAnimation("animation2", !1), _$e.scheduleOnce(function() {
                                 _$e.rigidBody.enabled = !1;
                             }));
                         }
@@ -6208,7 +6208,7 @@ System.register("chunks:///main.js", [
                 ]), e;
             }();
             x._RF.pop(), x._RF.push({}, "0b146P+xAlN5LGe2MJHlJDc", "Bee", void 0);
-            var np = M.ccclass, ip = M.property, ap = (jd = np("Bee"), Wd = ip(oe), Vd = ip(Ee.Skeleton), $d = ip(Ae), qd = ip(we), jd((Jd = l((Yd = function(e) {
+            var np = G.ccclass, ip = G.property, ap = (jd = np("Bee"), Wd = ip(oe), Vd = ip(Ee.Skeleton), $d = ip(Ae), qd = ip(we), jd((Jd = l((Yd = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -6394,7 +6394,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), Yd)) || Yd);
             x._RF.pop(), x._RF.push({}, "23d64mdR6VPRoojd1BBKwos", "World", void 0), x._RF.pop(), x._RF.push({}, "5f264eibqlEH7PqbJQqHTF7", "Line", void 0);
-            var yp = M.ccclass, vp = M.property, fp = (op = yp("Line"), rp = vp(ue), sp = vp(we), op((cp = l((up = function(e) {
+            var yp = G.ccclass, vp = G.property, fp = (op = yp("Line"), rp = vp(ue), sp = vp(we), op((cp = l((up = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -6617,7 +6617,7 @@ System.register("chunks:///main.js", [
                 ]), e;
             }();
             x._RF.pop(), x._RF.push({}, "2181aAj+ElOoL2tBGH10euY", "Beehive", void 0);
-            var kp, Cp, wp, Ep, Ap, Rp, Pp, Lp, _p, Bp, Dp = M.ccclass, Op = M.property, Ip = Dp("Beehive")((bp = l((gp = function(e) {
+            var kp, Cp, wp, Ep, Ap, Rp, Pp, Lp, _p, Bp, Dp = G.ccclass, Op = G.property, Ip = Dp("Beehive")((bp = l((gp = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -6694,7 +6694,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), gp)) || gp;
             x._RF.pop(), x._RF.push({}, "a17a07Pu/tAGb4MdM3jxHke", "BigBeeBullet", void 0);
-            var Np, Fp, zp, xp, Gp, Up, Hp, jp, Wp, Vp, $p, qp = M.ccclass, Kp = M.property, Yp = (kp = qp("BigBeeBullet"), Cp = Kp(Z), wp = Kp(Ee.Skeleton), Ep = Kp(Ae), Ap = Kp(we), kp((Pp = l((Rp = function(e) {
+            var Np, Fp, zp, xp, Mp, Up, Hp, jp, Wp, Vp, $p, qp = G.ccclass, Kp = G.property, Yp = (kp = qp("BigBeeBullet"), Cp = Kp(Z), wp = Kp(Ee.Skeleton), Ep = Kp(Ae), Ap = Kp(we), kp((Pp = l((Rp = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -6782,7 +6782,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), Rp)) || Rp);
             x._RF.pop(), x._RF.push({}, "2b15b1CihdEf60Zy/wIYirK", "BigBee", void 0);
-            var Jp, Xp, Zp, Qp, ey, ty, ny, iy, ay = M.ccclass, oy = M.property, ry = (Np = ay("BigBee"), Fp = oy(Be), zp = oy(Ee.Skeleton), xp = oy(Oe), Gp = oy(we), Np((Hp = l((Up = function(e) {
+            var Jp, Xp, Zp, Qp, ey, ty, ny, iy, ay = G.ccclass, oy = G.property, ry = (Np = ay("BigBee"), Fp = oy(Be), zp = oy(Ee.Skeleton), xp = oy(Oe), Mp = oy(we), Np((Hp = l((Up = function(e) {
                 n(l, e);
                 var r, s = i(l);
                 function l() {
@@ -6974,7 +6974,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), $p = l(Up.prototype, "rigidBody", [
-                Gp
+                Mp
             ], {
                 configurable: !0,
                 enumerable: !0,
@@ -6982,7 +6982,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), Up)) || Up);
             x._RF.pop(), x._RF.push({}, "8e16aARuABAK56lFGhIfeH+", "Brick", void 0);
-            var sy, ly, cy, hy, dy = M.ccclass, py = M.property, yy = M.requireComponent, vy = (Jp = dy("Brick"), Xp = yy([
+            var sy, ly, cy, hy, dy = G.ccclass, py = G.property, yy = G.requireComponent, vy = (Jp = dy("Brick"), Xp = yy([
                 Ie
             ]), Zp = py({
                 tooltip: "Use batch draw all bricks"
@@ -7188,7 +7188,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), ey = ty)) || ey) || ey);
             x._RF.pop(), x._RF.push({}, "46fa0f/kl1Heo/JvM2kAEAf", "GraphicsPattern", void 0);
-            var fy, my, gy, by, Sy, ky, Cy, wy, Ey, Ay, Ty, Ry, Py = M.ccclass, Ly = M.property, _y = (sy = Py("GraphicsPattern"), ly = Ly(ue), sy((hy = l((cy = function(e) {
+            var fy, my, gy, by, Sy, ky, Cy, wy, Ey, Ay, Ty, Ry, Py = G.ccclass, Ly = G.property, _y = (sy = Py("GraphicsPattern"), ly = Ly(ue), sy((hy = l((cy = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -7265,7 +7265,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), cy)) || cy);
             x._RF.pop(), x._RF.push({}, "959bd9NhYpMTK0O78HSl4rc", "Pattern", void 0);
-            var By, Dy = M.ccclass, Oy = M.property, Iy = M.requireComponent, Ny = (fy = Dy("Pattern"), my = Iy([
+            var By, Dy = G.ccclass, Oy = G.property, Iy = G.requireComponent, Ny = (fy = Dy("Pattern"), my = Iy([
                 ue,
                 Ne,
                 we
@@ -7417,7 +7417,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), Cy = wy)) || Cy) || Cy);
             x._RF.pop(), x._RF.push({}, "a08960ZMBtFcLD/1nWNbAM9", "Poison", void 0);
-            var Fy, zy = M.ccclass, xy = M.requireComponent, Gy = zy("Poison")(By = xy([
+            var Fy, zy = G.ccclass, xy = G.requireComponent, My = zy("Poison")(By = xy([
                 _y
             ])(By = function(e) {
                 n(u, e);
@@ -7672,7 +7672,7 @@ System.register("chunks:///main.js", [
                 ]), u;
             }(W)) || By) || By;
             x._RF.pop(), x._RF.push({}, "8633c11nMJN7I7TAFaGu3Fg", "PoisonSurface", void 0);
-            var My, Uy = (0, M.ccclass)("PoisonSurface")(Fy = function(e) {
+            var Gy, Uy = (0, G.ccclass)("PoisonSurface")(Fy = function(e) {
                 n(u, e);
                 var r, l = i(u);
                 function u() {
@@ -7871,9 +7871,9 @@ System.register("chunks:///main.js", [
                 ]), u;
             }(W)) || Fy;
             x._RF.pop(), x._RF.push({}, "9aa6cp2xqhK1LJeA0kz2hWR", "Water", void 0);
-            var Hy = M.ccclass, jy = M.requireComponent, Wy = Hy("Water")(My = jy([
+            var Hy = G.ccclass, jy = G.requireComponent, Wy = Hy("Water")(Gy = jy([
                 _y
-            ])(My = function(e) {
+            ])(Gy = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -7975,11 +7975,11 @@ System.register("chunks:///main.js", [
                         }
                     }
                 ]), r;
-            }(W)) || My) || My;
+            }(W)) || Gy) || Gy;
             x._RF.pop(), x._RF.push({}, "d6e4emyi1lPpLbSlAWFj/GD", "CrossingBeeLineTypes", void 0);
             var e11, Vy, $y, qy, Ky, Yy, Jy, Xy, Zy, Qy, ev, tv, nv, iv, av, ov = ((e11 = ov || {})[e11.LOW = 0] = "LOW", e11[e11.MEDIUM = 1] = "MEDIUM", e11[e11.HIGH = 2] = "HIGH", e11);
             ge(ov), x._RF.pop(), x._RF.push({}, "988b72EAIhJ1qc0nrLU68l7", "CrossingBeeLine", void 0);
-            var rv = M.ccclass, sv = M.property, lv = M.requireComponent, uv = (Vy = rv("CrossingBeeLine"), $y = lv([
+            var rv = G.ccclass, sv = G.property, lv = G.requireComponent, uv = (Vy = rv("CrossingBeeLine"), $y = lv([
                 Z,
                 q
             ]), qy = sv(Re), Ky = sv(Re), Yy = sv(Re), Jy = sv({
@@ -8126,7 +8126,7 @@ System.register("chunks:///main.js", [
             x._RF.pop(), x._RF.push({}, "169a1O0ruFLoI6OnJUZap7V", "DogeState", void 0);
             var e12, cv, hv = ((e12 = hv || {})[e12.IDLE = 0] = "IDLE", e12[e12.SMILE = 1] = "SMILE", e12[e12.SCARE = 2] = "SCARE", e12[e12.BEE_STING = 3] = "BEE_STING", e12[e12.THORN_STAB = 4] = "THORN_STAB", e12[e12.OUT_OF_SCREEN = 5] = "OUT_OF_SCREEN", e12[e12.POISONED = 6] = "POISONED", e12[e12.DROWNING = 7] = "DROWNING", e12[e12.OVER_VIEW = 8] = "OVER_VIEW", e12);
             x._RF.pop(), x._RF.push({}, "852f9XjNUVJ3Zt1Kd/EbqXU", "Eye", void 0);
-            var dv, pv, yv, fv, mv, gv, bv = (0, M.ccclass)("Eye")(cv = function(e) {
+            var dv, pv, yv, fv, mv, gv, bv = (0, G.ccclass)("Eye")(cv = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -8190,7 +8190,7 @@ System.register("chunks:///main.js", [
                 ]), r;
             }(W)) || cv;
             x._RF.pop(), x._RF.push({}, "df218vrmOtEH5vRQXxIZ3yS", "Eyes", void 0);
-            var Sv, kv, Cv, Ev, Av, Tv, Rv, Pv = M.ccclass, Lv = M.property, _v = (dv = Pv("Eyes"), pv = Lv(bv), yv = Lv(bv), dv((mv = l((fv = function(e) {
+            var Sv, kv, Cv, Ev, Av, Tv, Rv, Pv = G.ccclass, Lv = G.property, _v = (dv = Pv("Eyes"), pv = Lv(bv), yv = Lv(bv), dv((mv = l((fv = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -8287,13 +8287,13 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), fv)) || fv);
             x._RF.pop(), x._RF.push({}, "14172TbYDBAeISJqcpvLYV7", "Doge", void 0);
-            var Bv, Dv, Ov, Iv, Nv, Fv, zv, xv, Gv = M.ccclass, Mv = M.property, Uv = Ludex.Utils.Array, Hv = [
+            var Bv, Dv, Ov, Iv, Nv, Fv, zv, xv, Mv = G.ccclass, Gv = G.property, Uv = Ludex.Utils.Array, Hv = [
                 hv.OVER_VIEW,
                 hv.BEE_STING,
                 hv.THORN_STAB,
                 hv.POISONED,
                 hv.OUT_OF_SCREEN
-            ], jv = (Sv = Gv("Doge"), kv = Mv(_v), Cv = Mv(Ae), Sv((Av = l((Ev = function(e) {
+            ], jv = (Sv = Mv("Doge"), kv = Gv(_v), Cv = Gv(Ae), Sv((Av = l((Ev = function(e) {
                 n(d, e);
                 var r, l = i(d);
                 function d() {
@@ -8506,7 +8506,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), Rv = l(Ev.prototype, "gameObjects", [
-                Mv
+                Gv
             ], {
                 configurable: !0,
                 enumerable: !0,
@@ -8514,7 +8514,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), Ev)) || Ev);
             x._RF.pop(), x._RF.push({}, "2ca763+kElPuqiAkECtFMMS", "Grass", void 0);
-            var Wv, Vv, qv, Kv, Yv = M.ccclass, Jv = M.property, Xv = M.requireComponent, Zv = (Bv = Yv("Grass"), Dv = Xv(ue), Ov = Jv({
+            var Wv, Vv, qv, Kv, Yv = G.ccclass, Jv = G.property, Xv = G.requireComponent, Zv = (Bv = Yv("Grass"), Dv = Xv(ue), Ov = Jv({
                 tooltip: "Use batch draw all grass polygons"
             }), Iv = Jv(ue), Bv(Nv = Dv((zv = l((Fv = function(e) {
                 n(r, e);
@@ -8639,7 +8639,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), Nv = Fv)) || Nv) || Nv);
             x._RF.pop(), x._RF.push({}, "7027fhYTgdDe6EinMz7XLC6", "MapLine", void 0);
-            var Qv = M.ccclass, ef = M.property, tf = (Wv = Qv("MapLine"), Vv = ef(ue), Wv((Kv = l((qv = function(e) {
+            var Qv = G.ccclass, ef = G.property, tf = (Wv = Qv("MapLine"), Vv = ef(ue), Wv((Kv = l((qv = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -8885,7 +8885,7 @@ System.register("chunks:///main.js", [
                 ]), e;
             }();
             x._RF.pop(), x._RF.push({}, "4c04ffCcRhGsqEZlVWUHd8s", "MapTransformer", void 0);
-            var af, of, rf, sf, lf, uf, cf, hf, df, pf, yf, vf, ff, mf, gf, bf, Sf, kf, Cf, wf, Ef, Af, Rf, Pf, Lf, _f, Bf, Df, Of, If, Nf, Ff, zf, xf, Gf, Mf, Uf, Hf, jf, Wf, Vf, $f, qf, Kf, Xf = function() {
+            var af, of, rf, sf, lf, uf, cf, hf, df, pf, yf, vf, ff, mf, gf, bf, Sf, kf, Cf, wf, Ef, Af, Rf, Pf, Lf, _f, Bf, Df, Of, If, Nf, Ff, zf, xf, Mf, Gf, Uf, Hf, jf, Wf, Vf, $f, qf, Kf, Xf = function() {
                 function e() {
                     a(this, e);
                 }
@@ -9022,7 +9022,7 @@ System.register("chunks:///main.js", [
                 ]), e;
             }();
             x._RF.pop(), x._RF.push({}, "75ad9uPflhLL4N96NmHF2Sk", "GameObjects", void 0);
-            var Zf, Qf = M.ccclass, em = M.property, tm = (af = Qf("GameObjects"), of = em(Be), rf = em(Be), sf = em(Be), lf = em(Be), uf = em(Be), cf = em(Be), hf = em(Be), df = em(Be), pf = em(Be), yf = em(Be), vf = em(Be), ff = em(Be), mf = em(Be), gf = em(Be), bf = em(Be), Sf = em(Be), kf = em({
+            var Zf, Qf = G.ccclass, em = G.property, tm = (af = Qf("GameObjects"), of = em(Be), rf = em(Be), sf = em(Be), lf = em(Be), uf = em(Be), cf = em(Be), hf = em(Be), df = em(Be), pf = em(Be), yf = em(Be), vf = em(Be), ff = em(Be), mf = em(Be), gf = em(Be), bf = em(Be), Sf = em(Be), kf = em({
                 tooltip: "Use batch draw all map lines."
             }), Cf = em({
                 tooltip: "Use batch draw all poison pools."
@@ -9041,7 +9041,7 @@ System.register("chunks:///main.js", [
                     for(var t = arguments.length, n = Array(t), i = 0; i < t; i++)n[i] = arguments[i];
                     return _$e = l.call.apply(l, [
                         this
-                    ].concat(n)), u(_$e, "dogePrefab", Pf, c(_$e)), u(_$e, "spiderPrefab", Lf, c(_$e)), u(_$e, "beePrefab", _f, c(_$e)), u(_$e, "beehivePrefab", Bf, c(_$e)), u(_$e, "bigBeePrefab", Df, c(_$e)), u(_$e, "thornPrefab", Of, c(_$e)), u(_$e, "thornBallPrefab", If, c(_$e)), u(_$e, "airFanPrefab", Nf, c(_$e)), u(_$e, "grassPrefab", Ff, c(_$e)), u(_$e, "balloonPrefab", zf, c(_$e)), u(_$e, "brickPrefab", xf, c(_$e)), u(_$e, "arenaPrefab", Gf, c(_$e)), u(_$e, "woodPrefab", Mf, c(_$e)), u(_$e, "connectPrefab", Uf, c(_$e)), u(_$e, "mapLinePrefab", Hf, c(_$e)), u(_$e, "crossingBeeLinePrefab", jf, c(_$e)), u(_$e, "batchMapLines", Wf, c(_$e)), u(_$e, "batchPoisonPool", Vf, c(_$e)), u(_$e, "batchPoisonSurface", $f, c(_$e)), u(_$e, "batchWaterPool", qf, c(_$e)), u(_$e, "batchDangerArea", Kf, c(_$e)), _$e.batchObjects = new nf, _$e.objects = new Map, _$e;
+                    ].concat(n)), u(_$e, "dogePrefab", Pf, c(_$e)), u(_$e, "spiderPrefab", Lf, c(_$e)), u(_$e, "beePrefab", _f, c(_$e)), u(_$e, "beehivePrefab", Bf, c(_$e)), u(_$e, "bigBeePrefab", Df, c(_$e)), u(_$e, "thornPrefab", Of, c(_$e)), u(_$e, "thornBallPrefab", If, c(_$e)), u(_$e, "airFanPrefab", Nf, c(_$e)), u(_$e, "grassPrefab", Ff, c(_$e)), u(_$e, "balloonPrefab", zf, c(_$e)), u(_$e, "brickPrefab", xf, c(_$e)), u(_$e, "arenaPrefab", Mf, c(_$e)), u(_$e, "woodPrefab", Gf, c(_$e)), u(_$e, "connectPrefab", Uf, c(_$e)), u(_$e, "mapLinePrefab", Hf, c(_$e)), u(_$e, "crossingBeeLinePrefab", jf, c(_$e)), u(_$e, "batchMapLines", Wf, c(_$e)), u(_$e, "batchPoisonPool", Vf, c(_$e)), u(_$e, "batchPoisonSurface", $f, c(_$e)), u(_$e, "batchWaterPool", qf, c(_$e)), u(_$e, "batchDangerArea", Kf, c(_$e)), _$e.batchObjects = new nf, _$e.objects = new Map, _$e;
                 }
                 return o(d, [
                     {
@@ -9534,7 +9534,7 @@ System.register("chunks:///main.js", [
                                 var t = De(this.arenaPrefab);
                                 if (!_instanceof(t, oe)) return null;
                                 t.name = Vh.POISON, this.addObject(t);
-                                var n = t.addComponent(Gy);
+                                var n = t.addComponent(My);
                                 return n.useBatch = !0, this.batchObjects.isPoisonInitialized = !0, this.batchObjects.assignMainPoisonComponent(n), this.batchObjects.updatePoisonPolygon(e), t;
                             }
                             return this.batchObjects.updatePoisonPolygon(e), null;
@@ -9544,7 +9544,7 @@ System.register("chunks:///main.js", [
                         key: "spawnPoisonNormal",
                         value: function value(e) {
                             var t = De(this.arenaPrefab);
-                            return _instanceof(t, oe) ? (t.name = Vh.POISON, this.addObject(t), t.addComponent(Gy).polygon = e, t) : null;
+                            return _instanceof(t, oe) ? (t.name = Vh.POISON, this.addObject(t), t.addComponent(My).polygon = e, t) : null;
                         }
                     },
                     {
@@ -9741,7 +9741,7 @@ System.register("chunks:///main.js", [
                             var i = De(this.balloonPrefab);
                             if (!_instanceof(i, oe)) return null;
                             i.name = Vh.BALLOON, i.setPosition(e, t);
-                            var a = i.getComponent(Md);
+                            var a = i.getComponent(Gd);
                             if (!a) return console.warn("Balloon not found"), null;
                             var o = a.connectToDoge(n);
                             return this.addObject(i), o && this.addObject(o.node), i;
@@ -9882,7 +9882,7 @@ System.register("chunks:///main.js", [
                 initializer: function initializer() {
                     return null;
                 }
-            }), Gf = l(Rf.prototype, "arenaPrefab", [
+            }), Mf = l(Rf.prototype, "arenaPrefab", [
                 ff
             ], {
                 configurable: !0,
@@ -9891,7 +9891,7 @@ System.register("chunks:///main.js", [
                 initializer: function initializer() {
                     return null;
                 }
-            }), Mf = l(Rf.prototype, "woodPrefab", [
+            }), Gf = l(Rf.prototype, "woodPrefab", [
                 mf
             ], {
                 configurable: !0,
@@ -9974,7 +9974,7 @@ System.register("chunks:///main.js", [
                 }
             }), Rf)) || Rf);
             x._RF.pop(), x._RF.push({}, "97f21hkFElI0YdBDCgAkt9+", "Hint", void 0);
-            var nm, im, om, rm, sm = (0, M.ccclass)("Hint")(Zf = function(e) {
+            var nm, im, om, rm, sm = (0, G.ccclass)("Hint")(Zf = function(e) {
                 n(u, e);
                 var r, l = i(u);
                 function u() {
@@ -10117,7 +10117,7 @@ System.register("chunks:///main.js", [
                 ]), u;
             }(W)) || Zf;
             x._RF.pop(), x._RF.push({}, "33281kEO4dMXLCvmfkrwqQM", "CollisionDetectLine", void 0);
-            var lm, um, cm, hm, dm, pm, ym, vm, fm, mm, gm = M.ccclass, bm = M.property, Sm = (nm = gm("CollisionDetectLine"), im = bm(ue), nm((rm = l((om = function(e) {
+            var lm, um, cm, hm, dm, pm, ym, vm, fm, mm, gm = G.ccclass, bm = G.property, Sm = (nm = gm("CollisionDetectLine"), im = bm(ue), nm((rm = l((om = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -10157,7 +10157,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), om)) || om);
             x._RF.pop(), x._RF.push({}, "00eeawrUitLxLgSANaGHhcv", "LineDrawer", void 0);
-            var km = M.ccclass, Cm = M.property, wm = M.executionOrder, Em = (lm = km("LineDrawer"), um = wm(3), cm = Cm(Be), hm = Cm(Be), dm = Cm(j), lm(pm = um((vm = l((ym = function(e) {
+            var km = G.ccclass, Cm = G.property, wm = G.executionOrder, Em = (lm = km("LineDrawer"), um = wm(3), cm = Cm(Be), hm = Cm(Be), dm = Cm(j), lm(pm = um((vm = l((ym = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -10268,17 +10268,17 @@ System.register("chunks:///main.js", [
                     {
                         key: "isCurrentLineOverlapWithMap",
                         value: function value(e, t) {
-                            var n = this.getParallelLines(t, e, 2), i = n.leftLine, a = n.rightLine, o = xe.instance.raycast(t, e, Ge.All).filter(function(e) {
+                            var n = this.getParallelLines(t, e, 2), i = n.leftLine, a = n.rightLine, o = xe.instance.raycast(t, e, Me.All).filter(function(e) {
                                 return !e.collider.sensor;
                             }).filter(function(e) {
                                 var _$t;
                                 return "rope" !== (null == (_$t = e.collider.node.parent) ? void 0 : _$t.name);
-                            }), _$r = xe.instance.raycast(i.p1, i.p2, Ge.All).filter(function(e) {
+                            }), _$r = xe.instance.raycast(i.p1, i.p2, Me.All).filter(function(e) {
                                 return !e.collider.sensor;
                             }).filter(function(e) {
                                 var _$t;
                                 return "rope" !== (null == (_$t = e.collider.node.parent) ? void 0 : _$t.name);
-                            }), s = xe.instance.raycast(a.p1, a.p2, Ge.All).filter(function(e) {
+                            }), s = xe.instance.raycast(a.p1, a.p2, Me.All).filter(function(e) {
                                 return !e.collider.sensor;
                             }).filter(function(e) {
                                 var _$t;
@@ -10340,11 +10340,11 @@ System.register("chunks:///main.js", [
                             }).filter(function(t) {
                                 if (_instanceof(t, Ne)) {
                                     var n = new ie;
-                                    return t.node.inverseTransformPoint(n, new ie(e.x, e.y)), Me.polygonCircle(t.points, new me(n.x, n.y), 2);
+                                    return t.node.inverseTransformPoint(n, new ie(e.x, e.y)), Ge.polygonCircle(t.points, new me(n.x, n.y), 2);
                                 }
                                 if (_instanceof(t, Oe)) {
                                     var i = t.node.getWorldPosition(), a = i.x, o = i.y;
-                                    return Me.circleCircle(new me(a, o + t.worldPosition.y), t.radius, new me(e.x, e.y), 2);
+                                    return Ge.circleCircle(new me(a, o + t.worldPosition.y), t.radius, new me(e.x, e.y), 2);
                                 }
                                 return !t.sensor;
                             });
@@ -12008,7 +12008,7 @@ System.register("chunks:///main.js", [
                 }
             ];
             x._RF.pop(), x._RF.push({}, "45df2RUUZZNhaXqOADOV0HC", "MapLoader", void 0);
-            var Rm, Bm = (0, M.ccclass)("MapLoader")(Am = function(e) {
+            var Rm, Bm = (0, G.ccclass)("MapLoader")(Am = function(e) {
                 n(l, e);
                 var r, s = i(l);
                 function l() {
@@ -12096,7 +12096,7 @@ System.register("chunks:///main.js", [
                 ]), l;
             }(W)) || Am;
             x._RF.pop(), x._RF.push({}, "8d3c7nuQGRNgpZcqAOCJY6O", "InkCapacityController", void 0);
-            var Dm, Om = (0, M.ccclass)("InkCapacityController")(Rm = function(e) {
+            var Dm, Om = (0, G.ccclass)("InkCapacityController")(Rm = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -12166,7 +12166,7 @@ System.register("chunks:///main.js", [
                 ]), r;
             }(W)) || Rm;
             x._RF.pop(), x._RF.push({}, "014cbNey8JEV4aPhDm9R5W4", "InputController", void 0);
-            var Im = (0, M.ccclass)("InputController")(Dm = function(e) {
+            var Im = (0, G.ccclass)("InputController")(Dm = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -12478,7 +12478,7 @@ System.register("chunks:///main.js", [
                 ]), r;
             }(Nm);
             x._RF.pop(), x._RF.push({}, "71778iMCmVDQKkpW1Ag0dZz", "DrawingState", void 0);
-            var Gm = function(e) {
+            var Mm = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r(e) {
@@ -12584,7 +12584,7 @@ System.register("chunks:///main.js", [
                 ]), r;
             }(Nm);
             x._RF.pop(), x._RF.push({}, "d600e+7dHhGOYCGrcOjxVcl", "EscapeState", void 0);
-            var Mm = codex, Um = Mm.player, Hm = Mm.analytics, jm = function(e) {
+            var Gm = codex, Um = Gm.player, Hm = Gm.analytics, jm = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r(e) {
@@ -14090,7 +14090,7 @@ System.register("chunks:///main.js", [
                 ]), r;
             }(Nm);
             x._RF.pop(), x._RF.push({}, "bb0e3beWSxOOLCv7gjyg2s0", "StateManager", void 0);
-            var kg, Cg, wg, Eg, Ag, Tg, Rg, Pg, Lg, _g, Bg, Dg, Og, Ig, Ng, Fg = (0, M.ccclass)("StateManager")(bg = function(e) {
+            var kg, Cg, wg, Eg, Ag, Tg, Rg, Pg, Lg, _g, Bg, Dg, Og, Ig, Ng, Fg = (0, G.ccclass)("StateManager")(bg = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -14148,7 +14148,7 @@ System.register("chunks:///main.js", [
                     {
                         key: "isDrawing",
                         value: function value() {
-                            return _instanceof(this.state, Gm);
+                            return _instanceof(this.state, Mm);
                         }
                     },
                     {
@@ -14226,7 +14226,7 @@ System.register("chunks:///main.js", [
                     {
                         key: "createDrawingState",
                         value: function value() {
-                            return new Gm(this);
+                            return new Mm(this);
                         }
                     },
                     {
@@ -14256,7 +14256,7 @@ System.register("chunks:///main.js", [
                 ]), r;
             }(W)) || bg;
             x._RF.pop(), x._RF.push({}, "9e40aEq56tMKLFoeACyl+eH", "Clock", void 0);
-            var zg, xg, Gg, Mg, Ug, Hg, jg, Wg, Vg = M.ccclass, $g = M.disallowMultiple, qg = M.property, Kg = (kg = Vg("Clock"), Cg = qg(se), wg = qg(oe), Eg = qg(Z), Ag = qg(oe), Tg = qg(oe), Rg = qg(U), kg(Pg = $g((_g = l((Lg = function(e) {
+            var zg, xg, Mg, Gg, Ug, Hg, jg, Wg, Vg = G.ccclass, $g = G.disallowMultiple, qg = G.property, Kg = (kg = Vg("Clock"), Cg = qg(se), wg = qg(oe), Eg = qg(Z), Ag = qg(oe), Tg = qg(oe), Rg = qg(U), kg(Pg = $g((_g = l((Lg = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -14421,7 +14421,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), Pg = Lg)) || Pg) || Pg);
             x._RF.pop(), x._RF.push({}, "7c115t9HKlH6ZfnhCnLAnpe", "Star", void 0);
-            var Yg, Jg, Xg, Zg, Qg, tb, nb, ib, ab, ob, rb = M.ccclass, sb = M.property, lb = M.requireComponent, ub = (zg = rb("Star"), xg = lb(U), Gg = sb(W), Mg = sb(U), zg(Ug = xg((jg = l((Hg = function(e) {
+            var Yg, Jg, Xg, Zg, Qg, tb, nb, ib, ab, ob, rb = G.ccclass, sb = G.property, lb = G.requireComponent, ub = (zg = rb("Star"), xg = lb(U), Mg = sb(W), Gg = sb(U), zg(Ug = xg((jg = l((Hg = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -14479,14 +14479,14 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)).prototype, "starAppearance", [
-                Gg
+                Mg
             ], {
                 configurable: !0,
                 enumerable: !0,
                 writable: !0,
                 initializer: null
             }), Wg = l(Hg.prototype, "animation", [
-                Mg
+                Gg
             ], {
                 configurable: !0,
                 enumerable: !0,
@@ -14494,7 +14494,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), Ug = Hg)) || Ug) || Ug);
             x._RF.pop(), x._RF.push({}, "09f0bRvi+1OQZiIGBFqdNzq", "LevelProgressBar", void 0);
-            var cb, hb, db, pb, yb, vb, fb, mb, bb, Sb, kb, Cb, wb, Eb, Ab, Tb, Rb = M.ccclass, Pb = M.property, Lb = (Yg = Rb("LevelProgressBar"), Jg = Pb(He), Xg = Pb(ub), Zg = Pb(ub), Qg = Pb(ub), Yg((nb = l((tb = function(e) {
+            var cb, hb, db, pb, yb, vb, fb, mb, bb, Sb, kb, Cb, wb, Eb, Ab, Tb, Rb = G.ccclass, Pb = G.property, Lb = (Yg = Rb("LevelProgressBar"), Jg = Pb(He), Xg = Pb(ub), Zg = Pb(ub), Qg = Pb(ub), Yg((nb = l((tb = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -14607,7 +14607,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), tb)) || tb);
             x._RF.pop(), x._RF.push({}, "61791zAr2tJR4p22EZ5QRfk", "Header", void 0);
-            var _b, Bb, Db, Ob, Ib, Nb, Fb, zb, xb, Gb, Mb, Ub, Hb, jb, Wb, Vb, $b, qb, Kb, Yb, Jb, Xb, Zb, Qb, eS, tS, iS, aS, oS, rS, sS, lS, uS, cS, hS, dS, pS, yS, vS, fS, mS, gS, bS, SS, kS, CS, wS, ES, AS, TS, RS, PS, LS = M.ccclass, _S = M.property, BS = codex, DS = BS.language, OS = BS.player, IS = (cb = LS("Header"), hb = _S(se), db = _S(Lb), pb = _S(Ht), yb = _S(oe), vb = _S(oe), fb = _S(oe), mb = _S(oe), cb((Sb = l((bb = function(e) {
+            var _b, Bb, Db, Ob, Ib, Nb, Fb, zb, xb, Mb, Gb, Ub, Hb, jb, Wb, Vb, $b, qb, Kb, Yb, Jb, Xb, Zb, Qb, eS, tS, iS, aS, oS, rS, sS, lS, uS, cS, hS, dS, pS, yS, vS, fS, mS, gS, bS, SS, kS, CS, wS, ES, AS, TS, RS, PS, LS = G.ccclass, _S = G.property, BS = codex, DS = BS.language, OS = BS.player, IS = (cb = LS("Header"), hb = _S(se), db = _S(Lb), pb = _S(Ht), yb = _S(oe), vb = _S(oe), fb = _S(oe), mb = _S(oe), cb((Sb = l((bb = function(e) {
                 n(l, e);
                 var r, s = i(l);
                 function l() {
@@ -14816,7 +14816,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), bb)) || bb);
             x._RF.pop(), x._RF.push({}, "151afQBVDpOYpTjtwP+wYH+", "DevTools", void 0);
-            var NS, FS, zS, xS, MS, US, HS, jS, WS = M.ccclass, VS = M.property, $S = (_b = WS("DevToolsContainer"), Bb = VS(oe), Db = VS(oe), Ob = VS(oe), Ib = VS(oe), Nb = VS(oe), Fb = VS(oe), zb = VS(oe), xb = VS(oe), Gb = VS(oe), Mb = VS(oe), Ub = VS(oe), Hb = VS(oe), jb = VS(oe), Wb = VS(oe), Vb = VS(oe), $b = VS(oe), qb = VS(oe), Kb = VS(oe), Yb = VS(oe), Jb = VS(oe), Xb = VS(oe), Zb = VS(oe), Qb = VS(oe), eS = VS(oe), tS = VS(oe), _b((aS = l((iS = function(e) {
+            var NS, FS, zS, xS, GS, US, HS, jS, WS = G.ccclass, VS = G.property, $S = (_b = WS("DevToolsContainer"), Bb = VS(oe), Db = VS(oe), Ob = VS(oe), Ib = VS(oe), Nb = VS(oe), Fb = VS(oe), zb = VS(oe), xb = VS(oe), Mb = VS(oe), Gb = VS(oe), Ub = VS(oe), Hb = VS(oe), jb = VS(oe), Wb = VS(oe), Vb = VS(oe), $b = VS(oe), qb = VS(oe), Kb = VS(oe), Yb = VS(oe), Jb = VS(oe), Xb = VS(oe), Zb = VS(oe), Qb = VS(oe), eS = VS(oe), tS = VS(oe), _b((aS = l((iS = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -15082,14 +15082,14 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), dS = l(iS.prototype, "physicButton", [
-                Gb
+                Mb
             ], {
                 configurable: !0,
                 enumerable: !0,
                 writable: !0,
                 initializer: null
             }), pS = l(iS.prototype, "bundleButton", [
-                Mb
+                Gb
             ], {
                 configurable: !0,
                 enumerable: !0,
@@ -15202,7 +15202,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), iS)) || iS);
             x._RF.pop(), x._RF.push({}, "a3b0f6zU+1D97PyszsgST1H", "UIManager", void 0);
-            var qS, KS, YS, JS, XS, ZS, QS, ek, tk, nk, ik, ak, ok = M.ccclass, rk = M.property, sk = Ludex.Utils, lk = (NS = ok("UIManager"), FS = rk(Kg), zS = rk(IS), xS = rk($S), NS((US = l((MS = function(e) {
+            var qS, KS, YS, JS, XS, ZS, QS, ek, tk, nk, ik, ak, ok = G.ccclass, rk = G.property, sk = Ludex.Utils, lk = (NS = ok("UIManager"), FS = rk(Kg), zS = rk(IS), xS = rk($S), NS((US = l((GS = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -15338,14 +15338,14 @@ System.register("chunks:///main.js", [
                 enumerable: !0,
                 writable: !0,
                 initializer: null
-            }), HS = l(MS.prototype, "header", [
+            }), HS = l(GS.prototype, "header", [
                 zS
             ], {
                 configurable: !0,
                 enumerable: !0,
                 writable: !0,
                 initializer: null
-            }), jS = l(MS.prototype, "devTools", [
+            }), jS = l(GS.prototype, "devTools", [
                 xS
             ], {
                 configurable: !0,
@@ -15354,9 +15354,9 @@ System.register("chunks:///main.js", [
                 initializer: function initializer() {
                     return null;
                 }
-            }), MS)) || MS);
+            }), GS)) || GS);
             x._RF.pop(), x._RF.push({}, "157f203vjtMma2FDvAlyM6h", "Gameplay", void 0);
-            var ck = M.ccclass, hk = M.requireComponent, dk = M.property, pk = codex, yk = pk.player, vk = (pk.analytics, qS = ck("Gameplay"), KS = hk([
+            var ck = G.ccclass, hk = G.requireComponent, dk = G.property, pk = codex, yk = pk.player, vk = (pk.analytics, qS = ck("Gameplay"), KS = hk([
                 Fg,
                 Im,
                 Om
@@ -15655,7 +15655,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), QS = ek)) || QS) || QS);
-            x._RF.pop(), x._RF.push({}, "bfd3fZcEttGVawFb2B3Gmqu", "DangerArea", void 0), (0, M.ccclass)("DangerArea")(function(e) {
+            x._RF.pop(), x._RF.push({}, "bfd3fZcEttGVawFb2B3Gmqu", "DangerArea", void 0), (0, G.ccclass)("DangerArea")(function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -15729,8 +15729,8 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)), x._RF.pop(), x._RF.push({}, "0daa9+mtbVHG5tVordU0a3q", "Spider", void 0);
-            var fk, mk, gk, bk, Sk, kk, Ck, Ek, Ak, Tk, Rk, Pk, Lk, _k, Bk, Dk, Ok, Nk, Fk, zk, xk = M.ccclass, Gk = M.property;
-            fk = xk("Spider"), mk = Gk(oe), gk = Gk(oe), bk = Gk(oe), Sk = Gk(Ae), kk = Gk(we), Ck = Gk(ue), fk((Ak = l((Ek = function(e) {
+            var fk, mk, gk, bk, Sk, kk, Ck, Ek, Ak, Tk, Rk, Pk, Lk, _k, Bk, Dk, Ok, Nk, Fk, zk, xk = G.ccclass, Mk = G.property;
+            fk = xk("Spider"), mk = Mk(oe), gk = Mk(oe), bk = Mk(oe), Sk = Mk(Ae), kk = Mk(we), Ck = Mk(ue), fk((Ak = l((Ek = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -15864,7 +15864,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), Ek)), x._RF.pop(), x._RF.push({}, "8fe7bkzdtdNfY7I8uaDov+b", "EndlessHeader", void 0);
-            var Mk, Uk, Hk, jk, Wk, Vk, $k, qk, Kk, Yk, Jk, Xk = M.ccclass, Zk = M.property, Qk = (Bk = Xk("EndlessHeader"), Dk = Zk(oe), Ok = Zk(oe), Bk((Fk = l((Nk = function(e) {
+            var Gk, Uk, Hk, jk, Wk, Vk, $k, qk, Kk, Yk, Jk, Xk = G.ccclass, Zk = G.property, Qk = (Bk = Xk("EndlessHeader"), Dk = Zk(oe), Ok = Zk(oe), Bk((Fk = l((Nk = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -15945,7 +15945,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), Nk)) || Nk);
             x._RF.pop(), x._RF.push({}, "bc951s11zREU72nQBqwoD3m", "EndlessClock", void 0);
-            var eC, tC, nC, iC, aC, rC, sC, lC, uC, cC, hC = M.ccclass, dC = M.disallowMultiple, pC = M.property, yC = (Mk = hC("EndlessClock"), Uk = pC(se), Hk = pC(se), jk = pC(U), Wk = pC(Z), Mk(Vk = dC((qk = l(($k = function(e) {
+            var eC, tC, nC, iC, aC, rC, sC, lC, uC, cC, hC = G.ccclass, dC = G.disallowMultiple, pC = G.property, yC = (Gk = hC("EndlessClock"), Uk = pC(se), Hk = pC(se), jk = pC(U), Wk = pC(Z), Gk(Vk = dC((qk = l(($k = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -16070,7 +16070,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), Vk = $k)) || Vk) || Vk);
             x._RF.pop(), x._RF.push({}, "346956Nk9hPgpT3ZCsaVr+P", "EndlessUIManager", void 0);
-            var vC, fC, mC, gC, bC, SC, kC, CC, wC, EC, AC, TC, RC, PC, LC, _C, BC = M.ccclass, DC = M.property, OC = Ludex.Utils, IC = (eC = BC("EndlessUIManager"), tC = DC(yC), nC = DC(Qk), iC = DC($S), aC = DC(oe), eC((sC = l((rC = function(e) {
+            var vC, fC, mC, gC, bC, SC, kC, CC, wC, EC, AC, TC, RC, PC, LC, _C, BC = G.ccclass, DC = G.property, OC = Ludex.Utils, IC = (eC = BC("EndlessUIManager"), tC = DC(yC), nC = DC(Qk), iC = DC($S), aC = DC(oe), eC((sC = l((rC = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -16218,7 +16218,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), rC)) || rC);
             x._RF.pop(), x._RF.push({}, "9d32c879Q1FRIas0BgO+iNP", "EndlessGameplay", void 0);
-            var NC = M.ccclass, FC = M.property, zC = M.requireComponent, xC = codex.player, GC = (vC = NC("EndlessGameplay"), fC = zC(q), mC = FC({
+            var NC = G.ccclass, FC = G.property, zC = G.requireComponent, xC = codex.player, MC = (vC = NC("EndlessGameplay"), fC = zC(q), mC = FC({
                 type: Be,
                 group: "Thorns"
             }), gC = FC({
@@ -16464,9 +16464,9 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), wC = EC)) || wC) || wC);
             x._RF.pop(), x._RF.push({}, "43aefNoI9lJxJNh3LPuKYPt", "BaseState", void 0);
-            var MC = function() {
+            var GC = function() {
                 function e(t) {
-                    if (a(this, e), this.game = null, this.data = {}, this.game = t.node.getComponent(GC), !this.game) throw Error("Gameplay component not found");
+                    if (a(this, e), this.game = null, this.data = {}, this.game = t.node.getComponent(MC), !this.game) throw Error("Gameplay component not found");
                     this.manager = t, this.updateStateData(), this.logDebug();
                 }
                 return o(e, [
@@ -16610,7 +16610,7 @@ System.register("chunks:///main.js", [
                         }
                     }
                 ]), r;
-            }(MC);
+            }(GC);
             x._RF.pop(), x._RF.push({}, "638devCm49MrpqRRWptDInp", "FinishState", void 0);
             var jC = codex.player, WC = function(e) {
                 n(l, e);
@@ -16698,7 +16698,7 @@ System.register("chunks:///main.js", [
                         })
                     }
                 ]), l;
-            }(MC);
+            }(GC);
             x._RF.pop(), x._RF.push({}, "97260ZJNotE0LYFeNm4wsEz", "InitializeState", void 0);
             var VC = function(e) {
                 n(u, e);
@@ -16877,7 +16877,7 @@ System.register("chunks:///main.js", [
                         })
                     }
                 ]), u;
-            }(MC);
+            }(GC);
             x._RF.pop(), x._RF.push({}, "ecbe0PxfZNJBLsmLBPc2pBD", "LoadingState", void 0);
             var $C = codex.player, qC = function(e) {
                 n(r, e);
@@ -16924,7 +16924,7 @@ System.register("chunks:///main.js", [
                         value: function value() {}
                     }
                 ]), r;
-            }(MC);
+            }(GC);
             x._RF.pop(), x._RF.push({}, "651d4HD0HpFPLrL8dycqU3R", "PlayingState", void 0);
             var KC = codex.player;
             function YC() {
@@ -17114,7 +17114,7 @@ System.register("chunks:///main.js", [
                         }
                     }
                 ]), r;
-            }(MC);
+            }(GC);
             x._RF.pop(), x._RF.push({}, "9516f5Gc/FENLPaNEZwDwcn", "ReadyState", void 0);
             var XC, ZC = codex.analytics, QC = function(e) {
                 n(r, e);
@@ -17192,9 +17192,9 @@ System.register("chunks:///main.js", [
                         }
                     }
                 ]), r;
-            }(MC);
+            }(GC);
             x._RF.pop(), x._RF.push({}, "946848BySlM54Wly5+1otNa", "EndlessStateManager", void 0);
-            var ew = (0, M.ccclass)("EndlessStateManager")(XC = function(e) {
+            var ew = (0, G.ccclass)("EndlessStateManager")(XC = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -17324,7 +17324,7 @@ System.register("chunks:///main.js", [
                 ]), r;
             }(W)) || XC;
             x._RF.pop(), x._RF.push({}, "d10c8b8p8RD45oVz5qSL2LD", "clampToBoundingBox", void 0), x._RF.pop(), x._RF.push({}, "02e30BdQXxIEbItBFTh00UT", "getClosestPair", void 0), x._RF.pop(), x._RF.push({}, "eb6c23usqxHPaoJcvF0LbY6", "separatePositions", void 0), x._RF.pop(), x._RF.push({}, "bfb989Gr/dArq4M9uSSrF5/", "stagger", void 0), x._RF.pop(), x._RF.push({}, "d2a57+mB4NG9rcdh+dy1VPe", "traverse4", void 0), x._RF.pop(), x._RF.push({}, "ca614iJ+X5LrL1rX/wDQDTD", "shuffle", void 0), x._RF.pop(), x._RF.push({}, "1cf4cygDSdP5JL+7w3wIJL7", "traverseRandom", void 0), x._RF.pop(), x._RF.push({}, "cd0d548/WxD7KCyW2hwySVO", "traverseSpiralIn", void 0), x._RF.pop(), x._RF.push({}, "a70090n5pRBdIZb/GuW6wDs", "toSortedIndices", void 0), Ludex.Utils.Array, x._RF.pop(), x._RF.push({}, "56e87lhVSNJ8LMUzQpgUomc", "randomSign", void 0), x._RF.pop(), x._RF.push({}, "1e7cch8i/5DkYHOwJowrjeg", "AFPool", void 0), x._RF.pop(), x._RF.push({}, "1faa9NgJrBE7p8Zs/HBWrZn", "pad", void 0), x._RF.pop(), x._RF.push({}, "78746Q4viBIlbRROK4J1bSl", "Burst", void 0);
-            var tw, nw, iw, aw, ow, sw, lw, uw, cw, hw, dw, pw, yw, vw, fw, mw, gw, bw, kw, Cw, ww, Ew, Aw, Tw, Rw, Pw, Lw = M.ccclass, _w = M.property, Bw = (tw = Lw("Burst"), nw = _w(K), iw = _w(j), aw = _w(K), ow = _w(j), tw((lw = l((sw = function() {
+            var tw, nw, iw, aw, ow, sw, lw, uw, cw, hw, dw, pw, yw, vw, fw, mw, gw, bw, kw, Cw, ww, Ew, Aw, Tw, Rw, Pw, Lw = G.ccclass, _w = G.property, Bw = (tw = Lw("Burst"), nw = _w(K), iw = _w(j), aw = _w(K), ow = _w(j), tw((lw = l((sw = function() {
                 function e() {
                     a(this, e), u(this, "time", lw, this), u(this, "repeatCount", uw, this), u(this, "repeatInterval", cw, this), u(this, "count", hw, this), this.remainingCount = 0, this.curTime = 0;
                 }
@@ -17385,7 +17385,7 @@ System.register("chunks:///main.js", [
                 }
             }), sw)) || sw);
             x._RF.pop(), x._RF.push({}, "00eb3NBo0tM/qcD6ViMjx0A", "CurveRange", void 0);
-            var Dw, Ow, Iw, Nw, Fw, zw, xw, Gw, Uw, Hw, jw, Ww, Vw, $w, qw, Kw, Yw = M.ccclass, Jw = M.property, Xw = be({
+            var Dw, Ow, Iw, Nw, Fw, zw, xw, Mw, Uw, Hw, jw, Ww, Vw, $w, qw, Kw, Yw = G.ccclass, Jw = G.property, Xw = be({
                 Constant: 0,
                 Curve: 1,
                 TwoCurves: 2,
@@ -17550,7 +17550,7 @@ System.register("chunks:///main.js", [
                 }
             }), kw)) || kw);
             x._RF.pop(), x._RF.push({}, "3fe5eBRNTJFCZgeD7SqFSh5", "GradientRange", void 0);
-            var Qw = M.ccclass, eE = M.property, tE = be({
+            var Qw = G.ccclass, eE = G.property, tE = be({
                 Color: 0,
                 Gradient: 1,
                 TwoColors: 2,
@@ -17578,7 +17578,7 @@ System.register("chunks:///main.js", [
                 visible: function visible() {
                     return this.mode === tE.TwoGradients;
                 }
-            }), Gw = eE({
+            }), Mw = eE({
                 visible: function visible() {
                     return this.mode === tE.TwoGradients;
                 }
@@ -17662,7 +17662,7 @@ System.register("chunks:///main.js", [
                     return new Je;
                 }
             }), Kw = l(Uw.prototype, "gradientMax", [
-                Gw
+                Mw
             ], {
                 configurable: !0,
                 enumerable: !0,
@@ -17829,7 +17829,7 @@ System.register("chunks:///main.js", [
                 ]), e;
             }();
             x._RF.pop(), x._RF.push({}, "c2fc2/T2apMGZCPX5a4abo/", "ModuleRandSeed", void 0), x._RF.pop(), x._RF.push({}, "39785+APfBJU5kvcdjZGiLr", "ColorOvertimeModule", void 0);
-            var hE, dE, pE, vE, fE, mE, EE, AE, TE, RE, LE, _E, BE, DE, OE = M.ccclass, IE = M.property, FE = (hE = OE("ColorOvertimeModule"), dE = IE({
+            var hE, dE, pE, vE, fE, mE, EE, AE, TE, RE, LE, _E, BE, DE, OE = G.ccclass, IE = G.property, FE = (hE = OE("ColorOvertimeModule"), dE = IE({
                 type: te
             }), pE = IE({
                 type: aE
@@ -17875,7 +17875,7 @@ System.register("chunks:///main.js", [
                 }
             }), vE)) || vE);
             x._RF.pop(), x._RF.push({}, "c397apirpxFfJTJN1KLAcGi", "LimitVelocityOvertimeModule", void 0);
-            var zE, xE, GE, ME, UE, HE, WE, VE, $E, qE, KE, YE, JE = M.ccclass, XE = M.property, QE = (EE = JE("LimitVelocityOvertimeModule"), AE = XE({
+            var zE, xE, ME, GE, UE, HE, WE, VE, $E, qE, KE, YE, JE = G.ccclass, XE = G.property, QE = (EE = JE("LimitVelocityOvertimeModule"), AE = XE({
                 type: te
             }), TE = XE({
                 type: Zw
@@ -17931,9 +17931,9 @@ System.register("chunks:///main.js", [
                 }
             }), LE)) || LE);
             x._RF.pop(), x._RF.push({}, "c6cfbhYVctHt53aUXC4oSWy", "RotationOvertimeModule", void 0);
-            var eA, tA, nA, iA, aA, oA, rA, sA, lA, uA, cA, dA, pA, yA, vA, fA, mA, gA, bA, SA, kA, CA, wA = M.ccclass, EA = M.property, TA = (zE = wA("RotationOvertimeModule"), xE = EA({
+            var eA, tA, nA, iA, aA, oA, rA, sA, lA, uA, cA, dA, pA, yA, vA, fA, mA, gA, bA, SA, kA, CA, wA = G.ccclass, EA = G.property, TA = (zE = wA("RotationOvertimeModule"), xE = EA({
                 type: te
-            }), GE = EA(te), ME = EA({
+            }), ME = EA(te), GE = EA({
                 type: Zw,
                 visible: function visible() {
                     return this.separateAxes;
@@ -17972,7 +17972,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), $E = l(WE.prototype, "separateAxes", [
-                GE
+                ME
             ], {
                 configurable: !0,
                 enumerable: !0,
@@ -17981,7 +17981,7 @@ System.register("chunks:///main.js", [
                     return !1;
                 }
             }), qE = l(WE.prototype, "x", [
-                ME
+                GE
             ], {
                 configurable: !0,
                 enumerable: !0,
@@ -18009,7 +18009,7 @@ System.register("chunks:///main.js", [
                 }
             }), WE)) || WE);
             x._RF.pop(), x._RF.push({}, "f63cd4ScDJFPrnTLNT4+QKu", "ShapeModule", void 0);
-            var RA, PA, LA, _A, BA, DA, IA, NA, FA, zA, xA, GA, MA = M.ccclass, UA = M.property, HA = be({
+            var RA, PA, LA, _A, BA, DA, IA, NA, FA, zA, xA, MA, GA = G.ccclass, UA = G.property, HA = be({
                 Circle: 0,
                 Rectangle: 1
             }), jA = be({
@@ -18022,7 +18022,7 @@ System.register("chunks:///main.js", [
             }, $A = [
                 0,
                 0
-            ], qA = (eA = MA("ShapeModule"), tA = UA({
+            ], qA = (eA = GA("ShapeModule"), tA = UA({
                 type: be(HA)
             }), nA = UA({
                 type: be(jA),
@@ -18240,7 +18240,7 @@ System.register("chunks:///main.js", [
                 }
             }), dA)) || dA);
             x._RF.pop(), x._RF.push({}, "1b7c1WztGdLzKO8gh4ulm2c", "SizeOvertimeModule", void 0);
-            var KA, YA, JA, XA, QA, eT, tT, nT, iT = M.ccclass, aT = M.property, rT = (RA = iT("SizeOvertimeModule"), PA = aT({
+            var KA, YA, JA, XA, QA, eT, tT, nT, iT = G.ccclass, aT = G.property, rT = (RA = iT("SizeOvertimeModule"), PA = aT({
                 type: te
             }), LA = aT(te), _A = aT({
                 type: Zw,
@@ -18259,7 +18259,7 @@ System.register("chunks:///main.js", [
                 }
             }), RA((NA = l((IA = function() {
                 function e() {
-                    a(this, e), u(this, "enable", NA, this), u(this, "separateAxes", FA, this), u(this, "size", zA, this), u(this, "x", xA, this), u(this, "y", GA, this), this.size.constant = 1, this.x.constant = 1, this.y.constant = 1;
+                    a(this, e), u(this, "enable", NA, this), u(this, "separateAxes", FA, this), u(this, "size", zA, this), u(this, "x", xA, this), u(this, "y", MA, this), this.size.constant = 1, this.x.constant = 1, this.y.constant = 1;
                 }
                 return o(e, [
                     {
@@ -18312,7 +18312,7 @@ System.register("chunks:///main.js", [
                 initializer: function initializer() {
                     return new Zw;
                 }
-            }), GA = l(IA.prototype, "y", [
+            }), MA = l(IA.prototype, "y", [
                 DA
             ], {
                 configurable: !0,
@@ -18323,7 +18323,7 @@ System.register("chunks:///main.js", [
                 }
             }), IA)) || IA);
             x._RF.pop(), x._RF.push({}, "f6ad5Yz6wpE2ZzModn16CYQ", "VelocityOvertimeModule", void 0);
-            var sT, lT, uT, cT, hT, dT, pT, yT, vT, fT, mT, gT, bT, ST, kT, CT, wT, ET, AT, TT, RT, PT, LT, _T, BT, DT, OT, IT, NT, FT, zT, xT, GT, MT, UT, HT, jT, WT, VT, $T, qT, KT, YT, JT, XT, ZT, QT, eR, tR, nR, iR, aR, oR, rR, sR, lR, uR, cR, hR, dR, pR, yR = M.ccclass, vR = M.property, fR = (KA = yR("VelocityOvertimeModule"), YA = vR({
+            var sT, lT, uT, cT, hT, dT, pT, yT, vT, fT, mT, gT, bT, ST, kT, CT, wT, ET, AT, TT, RT, PT, LT, _T, BT, DT, OT, IT, NT, FT, zT, xT, MT, GT, UT, HT, jT, WT, VT, $T, qT, KT, YT, JT, XT, ZT, QT, eR, tR, nR, iR, aR, oR, rR, sR, lR, uR, cR, hR, dR, pR, yR = G.ccclass, vR = G.property, fR = (KA = yR("VelocityOvertimeModule"), YA = vR({
                 type: te
             }), JA = vR({
                 type: Zw
@@ -18371,7 +18371,7 @@ System.register("chunks:///main.js", [
                 }
             }), QA)) || QA);
             x._RF.pop(), x._RF.push({}, "10bc3IfFqBLtpSgVri/NVeX", "ParticleSystem", void 0);
-            var mR, gR, bR, kR, CR, wR, ER = M.ccclass, AR = M.property, TR = M.executeInEditMode, RR = M.disallowMultiple, PR = M.playOnFocus, LR = rt.Attr.setClassAttr, _R = be({
+            var mR, gR, bR, kR, CR, wR, ER = G.ccclass, AR = G.property, TR = G.executeInEditMode, RR = G.disallowMultiple, PR = G.playOnFocus, LR = rt.Attr.setClassAttr, _R = be({
                 World: 0,
                 Local: 1
             }), BR = (sT = ER("ParticleSystem"), lT = TR(!0), uT = RR(!0), cT = PR(!0), hT = AR({}), dT = AR({
@@ -18425,9 +18425,9 @@ System.register("chunks:///main.js", [
                 type: QE
             }), zT = AR(Bw), xT = AR({
                 serializable: !0
-            }), GT = AR({
+            }), MT = AR({
                 type: Re
-            }), sT(MT = lT(MT = uT(MT = cT((l((UT = function(e) {
+            }), sT(GT = lT(GT = uT(GT = cT((l((UT = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -18890,10 +18890,10 @@ System.register("chunks:///main.js", [
                     return null;
                 }
             }), l(UT.prototype, "spriteFrame", [
-                GT
-            ], Object.getOwnPropertyDescriptor(UT.prototype, "spriteFrame"), UT.prototype), MT = UT)) || MT) || MT) || MT) || MT);
+                MT
+            ], Object.getOwnPropertyDescriptor(UT.prototype, "spriteFrame"), UT.prototype), GT = UT)) || GT) || GT) || GT) || GT);
             LR(BR, "color", "visible", !1), x._RF.pop(), x._RF.push({}, "442c2KaGHdNip4TBoeKOOoY", "RendererModule", void 0);
-            var DR, OR = M.ccclass, IR = M.property;
+            var DR, OR = G.ccclass, IR = G.property;
             mR = OR("RendererModule"), gR = IR(lt), bR = IR(Re), mR((CR = l((kR = o(function e() {
                 a(this, e), u(this, "material", CR, this), u(this, "spriteFrame", wR, this);
             })).prototype, "material", [
@@ -18911,7 +18911,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), kR)), x._RF.pop(), x._RF.push({}, "c20acgKcuRFP6+Am/XjOFeP", "ParticleSystem2DExtra", void 0);
-            var FR = M.ccclass, zR = M.disallowMultiple, xR = M.executeInEditMode, GR = M.requireComponent, MR = FR("ParticleSystem2DExtra")(DR = xR(!0)(DR = zR(!0)(DR = GR(ye)(DR = function(e) {
+            var FR = G.ccclass, zR = G.disallowMultiple, xR = G.executeInEditMode, MR = G.requireComponent, GR = FR("ParticleSystem2DExtra")(DR = xR(!0)(DR = zR(!0)(DR = MR(ye)(DR = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -18960,7 +18960,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)) || DR) || DR) || DR) || DR;
-            x._RF.pop(), x._RF.push({}, "664feJL84ZOTaM99dgWY4x0", "ExampleParticleSystem2DExtra", void 0), (0, M.ccclass)("ExampleParticleSystem2DExtra")(function(e) {
+            x._RF.pop(), x._RF.push({}, "664feJL84ZOTaM99dgWY4x0", "ExampleParticleSystem2DExtra", void 0), (0, G.ccclass)("ExampleParticleSystem2DExtra")(function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -18994,8 +18994,8 @@ System.register("chunks:///main.js", [
                         }
                     }
                 ]), r;
-            }(MR)), x._RF.pop(), x._RF.push({}, "4a9beTdMntC0q9yngb8a2go", "BootScene", void 0);
-            var UR, HR, jR = M.ccclass, WR = M.disallowMultiple, VR = Ludex, $R = VR.Events, qR = (VR.Utils.Valid, VR.Configs.Core.StartSDKAfterLoadGame), KR = VR.Plugins.Ads, YR = ((void 0 === KR ? {} : KR).Types, codex), JR = YR.ads, XR = YR.player, ZR = YR.event, QR = YR.context;
+            }(GR)), x._RF.pop(), x._RF.push({}, "4a9beTdMntC0q9yngb8a2go", "BootScene", void 0);
+            var UR, HR, jR = G.ccclass, WR = G.disallowMultiple, VR = Ludex, $R = VR.Events, qR = (VR.Utils.Valid, VR.Configs.Core.StartSDKAfterLoadGame), KR = VR.Plugins.Ads, YR = ((void 0 === KR ? {} : KR).Types, codex), JR = YR.ads, XR = YR.player, ZR = YR.event, QR = YR.context;
             jR("BootScene")(UR = WR(UR = function(e) {
                 n(c, e);
                 var r, s, l, u = i(c);
@@ -19211,7 +19211,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), c;
             }(W)) || UR), x._RF.pop(), x._RF.push({}, "3f6029o9mpM/K2ccwbuv3XD", "EndlessScene", void 0);
-            var eP, tP = M.ccclass, nP = M.disallowMultiple, iP = codex, aP = iP.audio, oP = iP.ads, rP = m.Layout, sP = m.DesignSize.Portrait;
+            var eP, tP = G.ccclass, nP = G.disallowMultiple, iP = codex, aP = iP.audio, oP = iP.ads, rP = m.Layout, sP = m.DesignSize.Portrait;
             tP("EndlessScene")(HR = nP(HR = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -19292,7 +19292,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)) || HR), x._RF.pop(), x._RF.push({}, "9b83boaSv9PE6mRFqy0MSI8", "GameScene", void 0);
-            var lP, uP, cP, hP, dP, pP, yP, vP, fP, mP, gP, bP, SP, kP, CP, wP, EP, AP, TP = M.ccclass, RP = M.disallowMultiple, PP = codex, LP = PP.audio, _P = PP.ads, BP = m.Layout, DP = m.DesignSize.Portrait;
+            var lP, uP, cP, hP, dP, pP, yP, vP, fP, mP, gP, bP, SP, kP, CP, wP, EP, AP, TP = G.ccclass, RP = G.disallowMultiple, PP = codex, LP = PP.audio, _P = PP.ads, BP = m.Layout, DP = m.DesignSize.Portrait;
             TP("GameScene")(eP = RP(eP = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -19375,7 +19375,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)) || eP), x._RF.pop(), x._RF.push({}, "11abe47Ss1CtabSFT1/cPKt", "PlayableScene", void 0);
-            var OP, IP = M.ccclass, NP = M.property, FP = M.disallowMultiple, zP = codex.analytics;
+            var OP, IP = G.ccclass, NP = G.property, FP = G.disallowMultiple, zP = codex.analytics;
             lP = IP("PlayableScene"), uP = xt.required(), cP = NP({
                 type: se
             }), hP = xt.required(), dP = NP({
@@ -19558,7 +19558,7 @@ System.register("chunks:///main.js", [
             ], Object.getOwnPropertyDescriptor(kP.prototype, "playParticles"), kP.prototype), l(kP.prototype, "playAnimations", [
                 bP
             ], Object.getOwnPropertyDescriptor(kP.prototype, "playAnimations"), kP.prototype), SP = kP)) || SP), x._RF.pop(), x._RF.push({}, "16f4aNBnvRI1Z/6f8l+RIiE", "TestLayoutScene", void 0);
-            var xP, GP, UP, HP, jP = M.ccclass, WP = M.disallowMultiple;
+            var xP, MP, UP, HP, jP = G.ccclass, WP = G.disallowMultiple;
             jP("TestLayoutScene")(OP = WP(OP = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -19589,8 +19589,8 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)) || OP), x._RF.pop(), x._RF.push({}, "b5a9b5CfCVE56tnPfBAE8JR", "TestParticleSystemScene", void 0);
-            var VP, $P = M.ccclass, qP = M.property;
-            xP = $P("TestParticleSystemScene"), GP = qP(BR), xP((HP = l((UP = function(e) {
+            var VP, $P = G.ccclass, qP = G.property;
+            xP = $P("TestParticleSystemScene"), MP = qP(BR), xP((HP = l((UP = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -19609,14 +19609,14 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)).prototype, "starParticleSystem", [
-                GP
+                MP
             ], {
                 configurable: !0,
                 enumerable: !0,
                 writable: !0,
                 initializer: null
             }), UP)), x._RF.pop(), x._RF.push({}, "03336l0Yy9BkI817xYNA8KM", "TestPerformanceScene", void 0);
-            var KP, YP = M.ccclass, JP = M.disallowMultiple;
+            var KP, YP = G.ccclass, JP = G.disallowMultiple;
             YP("TestPerformanceScene")(VP = JP(VP = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -19637,7 +19637,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)) || VP), x._RF.pop(), x._RF.push({}, "0e876/A9rJJh6RiiBfkpaVx", "TestScene", void 0);
-            var ZP = M.ccclass, QP = M.disallowMultiple, eL = Ludex.Events, tL = codex.event;
+            var ZP = G.ccclass, QP = G.disallowMultiple, eL = Ludex.Events, tL = codex.event;
             ZP("TestScene")(KP = QP(KP = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -19668,7 +19668,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)) || KP), x._RF.pop(), x._RF.push({}, "0a69a5acDJJDrbwLJnxnyXY", "AdsFlows", void 0);
-            var nL, iL, aL, oL, rL, sL, uL, cL = M.ccclass, hL = Ludex.Plugins.Ads.Types;
+            var nL, iL, aL, oL, rL, sL, uL, cL = G.ccclass, hL = Ludex.Plugins.Ads.Types;
             cL("AdsFlows")(function(e) {
                 n(r, e);
                 var t = i(r);
@@ -19773,7 +19773,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)), x._RF.pop(), x._RF.push({}, "f5c69RbYb1Cl4DusuWnM8MV", "FlowChallenge", void 0);
-            var dL, pL, yL, fL, mL = M.ccclass, gL = Ludex.Utils, bL = gL.Decorator, SL = gL.String, kL = gL.Number, CL = codex, wL = CL.match, EL = CL.player, AL = function AL(e) {
+            var dL, pL, yL, fL, mL = G.ccclass, gL = Ludex.Utils, bL = gL.Decorator, SL = gL.String, kL = gL.Number, CL = codex, wL = CL.match, EL = CL.player, AL = function AL(e) {
                 B.closeLoadingScreen(), _instanceof(e, Error) && B.showNotificationScreen(e.message);
             };
             nL = mL("FlowChallenge"), iL = bL.tryCatch(AL), aL = bL.tryCatch(AL), oL = bL.tryCatch(AL), rL = bL.tryCatch(AL), sL = bL.tryCatch(AL), nL((l((uL = function(e) {
@@ -19930,7 +19930,7 @@ System.register("chunks:///main.js", [
             ], Object.getOwnPropertyDescriptor(uL.prototype, "continueChallenge"), uL.prototype), l(uL.prototype, "finishChallenge", [
                 sL
             ], Object.getOwnPropertyDescriptor(uL.prototype, "finishChallenge"), uL.prototype), uL)), x._RF.pop(), x._RF.push({}, "be648IXP/ZCkJ107nu6VzqO", "FlowSingle", void 0);
-            var TL, RL, PL, LL, _L, BL, DL, OL, IL, NL = M.ccclass, FL = Ludex.Utils, zL = FL.Decorator, xL = FL.Number, GL = codex, ML = GL.match, UL = GL.player, HL = function HL(e) {
+            var TL, RL, PL, LL, _L, BL, DL, OL, IL, NL = G.ccclass, FL = Ludex.Utils, zL = FL.Decorator, xL = FL.Number, ML = codex, GL = ML.match, UL = ML.player, HL = function HL(e) {
                 B.closeLoadingScreen(), _instanceof(e, Error) && B.showNotificationScreen(e.message);
             };
             dL = NL("FlowSingle"), pL = zL.tryCatch(HL), yL = zL.tryCatch(HL), dL((l((fL = function(e) {
@@ -19959,7 +19959,7 @@ System.register("chunks:///main.js", [
                                     case 0:
                                         return B.showLoadingScreen(0), [
                                             4,
-                                            ML.single.start.processAsync({
+                                            GL.single.start.processAsync({
                                                 playerId: this.playerId
                                             })
                                         ];
@@ -19981,7 +19981,7 @@ System.register("chunks:///main.js", [
                                     case 0:
                                         return UL.setPlayerDataByName("score", xL.random(1e3)), [
                                             4,
-                                            ML.single.finish.processAsync()
+                                            GL.single.finish.processAsync()
                                         ];
                                     case 1:
                                         return _state.sent(), [
@@ -19999,7 +19999,7 @@ System.register("chunks:///main.js", [
             ], Object.getOwnPropertyDescriptor(fL.prototype, "startSingle"), fL.prototype), l(fL.prototype, "finishSingle", [
                 yL
             ], Object.getOwnPropertyDescriptor(fL.prototype, "finishSingle"), fL.prototype), fL)), x._RF.pop(), x._RF.push({}, "acb0egHPppFmYJalVNrDDv/", "BaseScreen", void 0);
-            var jL, WL = M.ccclass, VL = M.property, $L = M.disallowMultiple, qL = Ludex.Events, KL = codex.event, YL = (TL = WL("BaseScreen"), RL = VL(oe), PL = VL(oe), LL = VL(re), TL(_L = $L((DL = l((BL = function(e) {
+            var jL, WL = G.ccclass, VL = G.property, $L = G.disallowMultiple, qL = Ludex.Events, KL = codex.event, YL = (TL = WL("BaseScreen"), RL = VL(oe), PL = VL(oe), LL = VL(re), TL(_L = $L((DL = l((BL = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -20134,7 +20134,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), _L = BL)) || _L) || _L);
             x._RF.pop(), x._RF.push({}, "f3521L4Mn5I3bhxr0QZJ9y9", "BackgroundMask", void 0);
-            var JL, XL, ZL, QL, e_, t_ = M.ccclass, n_ = M.requireComponent;
+            var JL, XL, ZL, QL, e_, t_ = G.ccclass, n_ = G.requireComponent;
             t_("BackgroundMask")(jL = n_([
                 re
             ])(jL = function(e) {
@@ -20160,7 +20160,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)) || jL), x._RF.pop(), x._RF.push({}, "d562cAXnG1PQ6vXfOEq2wVu", "Screens", void 0);
-            var i_, a_, o_, r_, s_, l_, u_, c_, h_, d_, p_, y_, v_, f_, m_ = M.ccclass, g_ = M.property, b_ = M.executeInEditMode;
+            var i_, a_, o_, r_, s_, l_, u_, c_, h_, d_, p_, y_, v_, f_, m_ = G.ccclass, g_ = G.property, b_ = G.executeInEditMode;
             JL = m_("Screens"), XL = g_({
                 type: be(D)
             }), JL(ZL = b_((e_ = l((QL = function(e) {
@@ -20198,7 +20198,7 @@ System.register("chunks:///main.js", [
                     return [];
                 }
             }), ZL = QL)) || ZL), x._RF.pop(), x._RF.push({}, "cecf2nUBzhIWZw7uJgVliXz", "CongratulationScreen", void 0);
-            var S_, k_, C_, E_, A_, T_, R_ = M.ccclass, P_ = M.property, L_ = M.disallowMultiple, __ = M.requireComponent, B_ = Ludex.Events, D_ = codex.event;
+            var S_, k_, C_, E_, A_, T_, R_ = G.ccclass, P_ = G.property, L_ = G.disallowMultiple, __ = G.requireComponent, B_ = Ludex.Events, D_ = codex.event;
             i_ = R_("CongratulationScreen"), a_ = __(YL), o_ = P_(oe), r_ = P_(oe), s_ = P_(ee), l_ = P_(ee), u_ = P_(ee), i_(c_ = L_(c_ = a_((d_ = l((h_ = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -20343,7 +20343,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), c_ = h_)) || c_) || c_), x._RF.pop(), x._RF.push({}, "7b024d/xQ1BBZV0UpNjM9UQ", "LoadingFullScreen", void 0);
-            var O_, I_, F_, z_, x_ = M.ccclass, G_ = M.property, M_ = (S_ = x_("LoadingFullScreen"), k_ = G_(He), C_ = G_(se), S_((A_ = l((E_ = function(e) {
+            var O_, I_, F_, z_, x_ = G.ccclass, M_ = G.property, G_ = (S_ = x_("LoadingFullScreen"), k_ = M_(He), C_ = M_(se), S_((A_ = l((E_ = function(e) {
                 n(h, e);
                 var r, s, l = i(h);
                 function h() {
@@ -20468,7 +20468,7 @@ System.register("chunks:///main.js", [
                 initializer: null
             }), E_)) || E_);
             x._RF.pop(), x._RF.push({}, "daa70r49mtGR6iXhcKLcS3q", "Loading", void 0);
-            var U_, H_ = M.ccclass, j_ = M.property;
+            var U_, H_ = G.ccclass, j_ = G.property;
             O_ = H_("Loading"), I_ = j_(Be), O_((z_ = l((F_ = function(e) {
                 n(h, e);
                 var r, s, l = i(h);
@@ -20512,7 +20512,7 @@ System.register("chunks:///main.js", [
                             if (t && !t.getChildByName("Loading")) {
                                 this.loadingNode || (this.loadingNode = De(this.loadingPrefab));
                                 var n = De._clone(this.loadingNode);
-                                this.loadingFullScreen = n.getComponent(M_), this.node.active = !1, null == (_$e = ke("Canvas")) || _$e.addChild(n);
+                                this.loadingFullScreen = n.getComponent(G_), this.node.active = !1, null == (_$e = ke("Canvas")) || _$e.addChild(n);
                             }
                         }
                     },
@@ -20578,7 +20578,7 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), F_)), x._RF.pop(), x._RF.push({}, "61985gSEDBMY6nVNc9Q1D6W", "LoadingScreen", void 0);
-            var W_, V_, $_, q_, K_, Y_, J_, X_, Z_, Q_, eB, tB, nB, iB, aB, oB, rB, sB, lB, uB, cB, hB = M.ccclass, dB = M.disallowMultiple, pB = M.requireComponent, yB = Ludex.Events, vB = codex.event;
+            var W_, V_, $_, q_, K_, Y_, J_, X_, Z_, Q_, eB, tB, nB, iB, aB, oB, rB, sB, lB, uB, cB, hB = G.ccclass, dB = G.disallowMultiple, pB = G.requireComponent, yB = Ludex.Events, vB = codex.event;
             hB("LoadingScreen")(U_ = dB(U_ = pB(YL)(U_ = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -20649,7 +20649,7 @@ System.register("chunks:///main.js", [
                     }
                 ]), r;
             }(W)) || U_) || U_), x._RF.pop(), x._RF.push({}, "15681ka+CZC45B7BdUhsnhF", "LoseScreen", void 0);
-            var fB, mB, gB, bB, SB, kB, CB, wB, EB = M.ccclass, AB = M.property, TB = M.disallowMultiple, RB = M.requireComponent, PB = Ludex, LB = PB.Events, _B = PB.Utils.Decorator, BB = codex, DB = BB.language, OB = BB.event;
+            var fB, mB, gB, bB, SB, kB, CB, wB, EB = G.ccclass, AB = G.property, TB = G.disallowMultiple, RB = G.requireComponent, PB = Ludex, LB = PB.Events, _B = PB.Utils.Decorator, BB = codex, DB = BB.language, OB = BB.event;
             W_ = EB("LoseScreen"), V_ = RB(YL), $_ = AB(se), q_ = AB(ee), K_ = AB(oe), Y_ = AB(oe), J_ = AB(ee), X_ = AB(ee), Z_ = AB(ee), Q_ = AB(ee), eB = _B.tryCatch(), W_(tB = TB(tB = V_((iB = l((nB = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -20950,7 +20950,7 @@ System.register("chunks:///main.js", [
             }), l(nB.prototype, "setLevelText", [
                 eB
             ], Object.getOwnPropertyDescriptor(nB.prototype, "setLevelText"), nB.prototype), tB = nB)) || tB) || tB), x._RF.pop(), x._RF.push({}, "6460akNFfhP9pDOT2Z0+s2R", "NotificationScreen", void 0);
-            var IB, NB, FB, zB, xB, GB, MB, UB, HB, jB, WB, VB, $B, qB, KB, YB, JB, XB, ZB, QB, eD = M.ccclass, tD = M.disallowMultiple, nD = M.requireComponent, iD = M.property, aD = Ludex, oD = aD.Events, rD = aD.Utils, sD = codex.event;
+            var IB, NB, FB, zB, xB, MB, GB, UB, HB, jB, WB, VB, $B, qB, KB, YB, JB, XB, ZB, QB, eD = G.ccclass, tD = G.disallowMultiple, nD = G.requireComponent, iD = G.property, aD = Ludex, oD = aD.Events, rD = aD.Utils, sD = codex.event;
             fB = eD("NotificationScreen"), mB = nD(YL), gB = iD(se), bB = iD(ee), fB(SB = tD(SB = mB((CB = l((kB = function(e) {
                 n(r, e);
                 var t = i(r);
@@ -21046,8 +21046,8 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), SB = kB)) || SB) || SB), x._RF.pop(), x._RF.push({}, "61932YLC/5CFrE0eD0ez8Zg", "SettingsScreen", void 0);
-            var lD, uD, cD, hD, dD, pD, yD, vD, fD, mD, gD, bD, SD, kD, CD, wD, ED, AD, TD, RD, PD, LD, _D, BD, DD, OD, ID = M.ccclass, ND = M.property, FD = M.requireComponent, zD = Ludex, xD = zD.Events, GD = zD.Utils, MD = codex, UD = MD.player, HD = MD.event;
-            IB = ID("SettingsScreen"), NB = FD(YL), FB = ND(oe), zB = ND(oe), xB = ND(oe), GB = ND(Ys), MB = ND(Ys), UB = ND(Ys), HB = ND(ee), jB = ND(ee), IB(WB = NB(($B = l((VB = function(e) {
+            var lD, uD, cD, hD, dD, pD, yD, vD, fD, mD, gD, bD, SD, kD, CD, wD, ED, AD, TD, RD, PD, LD, _D, BD, DD, OD, ID = G.ccclass, ND = G.property, FD = G.requireComponent, zD = Ludex, xD = zD.Events, MD = zD.Utils, GD = codex, UD = GD.player, HD = GD.event;
+            IB = ID("SettingsScreen"), NB = FD(YL), FB = ND(oe), zB = ND(oe), xB = ND(oe), MB = ND(Ys), GB = ND(Ys), UB = ND(Ys), HB = ND(ee), jB = ND(ee), IB(WB = NB(($B = l((VB = function(e) {
                 n(r, e);
                 var t = i(r);
                 function r() {
@@ -21065,7 +21065,7 @@ System.register("chunks:///main.js", [
                         "number" == typeof n && -1 !== i.indexOf(n.toString()) && (_$e.triggerSequence += n.toString(), console.log("SettingsScreen: handleTriggerUnlockKey", n, _$e.triggerSequence, _$e.triggerSequence === i), _$e.triggerSequence === i && (_$e.node.scene.emit(yh.UNLOCK_DEV_TOOLS), _$e.node.off(yh.TRIGGER_UNLOCK_KEY)));
                     }, _$e.updateVibrateButton = function() {
                         var t = _$e.vibrateSetting.getComponentInChildren(Ys);
-                        if (t) if (GD.Device.isMobile()) {
+                        if (t) if (MD.Device.isMobile()) {
                             var n, i = null != (n = UD.getPlayerSetting("vibrate")) && n;
                             t.setEnabled(i);
                         } else _$e.setSwitchNodeUIState(_$e.vibrateSetting, !1);
@@ -21108,11 +21108,10 @@ System.register("chunks:///main.js", [
                         value: function value() {
                             var _$e = this;
                             if (GameSDK.isGameSDK("YoutubePlayables")) {
-                                GameSDK.extra.onAudioEnabledChange(function(t) {
+                                var t = function t(t) {
                                     _$e.setSwitchNodeUIState(_$e.musicSetting, t), _$e.setSwitchNodeUIState(_$e.soundSetting, t);
-                                });
-                                var t = GameSDK.extra.isAudioEnabled();
-                                this.setSwitchNodeUIState(this.musicSetting, t), this.setSwitchNodeUIState(this.soundSetting, t);
+                                };
+                                GameSDK.extra.onAudioEnabledChange(t), t(GameSDK.extra.isAudioEnabled());
                             }
                         }
                     },
@@ -21179,12 +21178,10 @@ System.register("chunks:///main.js", [
                         key: "switchMusicButton",
                         value: function value() {
                             if (this.musicSwitch) {
-                                if (!GameSDK.isGameSDK("YoutubePlayables") || GameSDK.extra.isAudioEnabled() || this.musicSwitch.isEnabled()) {
-                                    var _$e = this.musicSwitch.switch();
-                                    UD.setSetting("music", _$e), this.node.emit(yh.TRIGGER_UNLOCK_KEY, {
-                                        code: +!!_$e
-                                    }), _$e ? k.playMusic(w.BG_MUSIC) : k.pauseMusic();
-                                }
+                                var _$e = this.musicSwitch.switch();
+                                UD.setSetting("music", _$e), this.node.emit(yh.TRIGGER_UNLOCK_KEY, {
+                                    code: +!!_$e
+                                }), _$e ? k.playMusic(w.BG_MUSIC) : k.pauseMusic();
                             } else console.warn("SettingsScreen: musicSwitch not found");
                         }
                     },
@@ -21192,12 +21189,10 @@ System.register("chunks:///main.js", [
                         key: "switchSoundButton",
                         value: function value() {
                             if (this.soundSwitch) {
-                                if (!GameSDK.isGameSDK("YoutubePlayables") || GameSDK.extra.isAudioEnabled() || this.soundSwitch.isEnabled()) {
-                                    var _$e = this.soundSwitch.switch();
-                                    UD.setSetting("sound", _$e), this.node.emit(yh.TRIGGER_UNLOCK_KEY, {
-                                        code: _$e ? 3 : 2
-                                    });
-                                }
+                                var _$e = this.soundSwitch.switch();
+                                UD.setSetting("sound", _$e), this.node.emit(yh.TRIGGER_UNLOCK_KEY, {
+                                    code: _$e ? 3 : 2
+                                });
                             } else console.warn("SettingsScreen: soundSwitch not found");
                         }
                     },
@@ -21258,14 +21253,14 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), YB = l(VB.prototype, "musicSwitch", [
-                GB
+                MB
             ], {
                 configurable: !0,
                 enumerable: !0,
                 writable: !0,
                 initializer: null
             }), JB = l(VB.prototype, "soundSwitch", [
-                MB
+                GB
             ], {
                 configurable: !0,
                 enumerable: !0,
@@ -21293,8 +21288,8 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), WB = VB)) || WB), x._RF.pop(), x._RF.push({}, "35c09YGmdFA4pHOJFDg1tw5", "WinningScreen", void 0);
-            var jD = M.ccclass, WD = M.property, VD = M.disallowMultiple, $D = M.requireComponent, qD = Ludex.Events, KD = codex, YD = KD.player, JD = KD.event;
-            KD.language, lD = jD("WinningScreen"), uD = $D(YL), cD = WD(Z), hD = WD(ee), dD = WD(ee), pD = WD(oe), yD = WD(oe), vD = WD(se), fD = WD(ee), mD = WD(ee), gD = WD(ee), bD = WD(ee), SD = WD(ee), lD(kD = VD(kD = uD((wD = l((CD = function(e) {
+            var jD = G.ccclass, WD = G.property, VD = G.disallowMultiple, $D = G.requireComponent, qD = Ludex.Events, KD = codex, YD = KD.player, JD = KD.event, XD = KD.language;
+            lD = jD("WinningScreen"), uD = $D(YL), cD = WD(Z), hD = WD(ee), dD = WD(ee), pD = WD(oe), yD = WD(oe), vD = WD(se), fD = WD(ee), mD = WD(ee), gD = WD(ee), bD = WD(ee), SD = WD(ee), lD(kD = VD(kD = uD((wD = l((CD = function(e) {
                 n(l, e);
                 var r = i(l);
                 function l() {
@@ -21472,8 +21467,8 @@ System.register("chunks:///main.js", [
                     {
                         key: "updateLevel",
                         value: function value() {
-                            var _$e = this.screen.data.level;
-                            this.levelText.string = "Level ".concat(_$e);
+                            var _$e = this.screen.data.level, t = XD.getText("game.level");
+                            this.levelText.string = "".concat(t, " ").concat(_$e), this.levelText.string = "Level ".concat(_$e);
                         }
                     },
                     {
@@ -21703,8 +21698,8 @@ System.register("chunks:///main.js", [
                 writable: !0,
                 initializer: null
             }), kD = CD)) || kD) || kD), x._RF.pop(), x._RF.push({}, "af947t5g91EkZVWXv5upZaV", "CacheUtils", void 0), Ludex.Utils.Image, codex.frameCapture, x._RF.pop(), x._RF.push({}, "e80e4nIcfdLN56j5b9SMhvH", "LeaderboardUtils", void 0), codex.leaderboard, x._RF.pop(), x._RF.push({}, "9ecd9Kte0VJN4rRVFlb6CzI", "OverlayUtils", void 0);
-            var XD = codex, ZD = (XD.player, XD.analytics, Ludex.Plugins.Analytics);
-            (void 0 === ZD ? {} : ZD).Events, x._RF.pop(), x._RF.push({}, "36e26OmHk5GXL6+/b4UibIf", "SortNodeUtils", void 0), x._RF.pop(), x._RF.push({}, "88f2b4WH6NBlaGD7WvCOA2j", "VibrateUtils", void 0), Ludex.Utils.Browser, codex.player, x._RF.pop();
+            var ZD = codex, QD = (ZD.player, ZD.analytics, Ludex.Plugins.Analytics);
+            (void 0 === QD ? {} : QD).Events, x._RF.pop(), x._RF.push({}, "36e26OmHk5GXL6+/b4UibIf", "SortNodeUtils", void 0), x._RF.pop(), x._RF.push({}, "88f2b4WH6NBlaGD7WvCOA2j", "VibrateUtils", void 0), Ludex.Utils.Browser, codex.player, x._RF.pop();
         }
     };
 });
