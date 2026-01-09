@@ -1,0 +1,217 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"/><title>Solitaire TriPeaks Journey</title><script src="https://www.youtube.com/game_api/v1"></script><style>:root {
+                --sat: env(safe-area-inset-top);
+                --sar: env(safe-area-inset-right);
+                --sab: env(safe-area-inset-bottom);
+                --sal: env(safe-area-inset-left);
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+            }
+
+            html {
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                scroll-behavior: smooth;
+                font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+                color: white;
+                background: transparent;
+            }
+
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: #181818;
+                overflow: hidden;
+            }
+
+            #app {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: #181818;
+                align-content: center;
+            }
+
+            #game-wrapper {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                background-color: #181818;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                max-height: 100%;
+                max-width: 100%;
+                margin: auto;
+                display: flex;
+                /* transition: width 0.5s, height 0.5s; */
+            }
+
+            #background {
+                width: 100%;
+                height: calc(100% - 1px);
+                position: absolute;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                margin: auto;
+            }
+
+            #bottom-overlay {
+                width: 100%;
+                height: 0px;
+                background: rgb(39 33 79 / 0);
+                position: relative;
+                margin: 0px auto;
+            }
+
+            canvas {
+                /* max-height: 100%; */
+                max-width: 100%;
+                object-fit: contain;
+                position: absolute;
+            }
+
+            #capture {
+                display: none;
+            }
+
+            #lds-dual-ring,
+            #wait-ads-dual-ring {
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 0px auto;
+                border-radius: 50%;
+                border: 6px solid #fff;
+                border-color: #fff transparent #fff transparent;
+                animation: lds-dual-ring 1.2s linear infinite;
+                -webkit-animation: lds-dual-ring 1.2s linear infinite;
+            }
+
+            #loading-game-icon-blur,
+            #loading-game-icon {
+                display: block;
+                background-image: url('icon-512x512.png');
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+            }
+
+            #loading-game-icon-blur {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                filter: blur(30px);
+                -webkit-filter: blur(30px);
+            }
+
+            #loading-game-icon {
+                width: 75px;
+                height: 75px;
+                margin: 0 auto;
+                animation: icon-fade-in 0.4s ease-in, icon-bubble 1.5s ease-in-out infinite;
+            }
+
+            #lds-text,
+            #wait-ads-text {
+                text-align: center;
+                -webkit-text-align: center;
+                margin-top: 30px;
+                font-size: 1.2rem;
+            }
+
+            #lds-content,
+            #wait-ads-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+            }
+
+            #wrongRotation {
+                width: 100%;
+                height: 100%;
+                background-color: #2d2d2f;
+                position: absolute;
+                display: none;
+            }
+
+            #wrongRotationIcon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+            }
+
+            #wait-ads-mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: #191919;
+            }
+
+            @keyframes lds-dual-ring {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes icon-fade-in {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes icon-bubble {
+                0%,
+                100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.05);
+                }
+            }
+
+            div[hidden] {
+                display: none !important;
+            }</style><link href="sdk.0bd5558d0b06e072ff7f.bundle.js" rel="preload" as="script"/><link href="vendors.42ee8e58b52be4fcc827.bundle.js" rel="preload" as="script"/><link href="engine.cfd5e0f2407617a7c84d.bundle.js" rel="preload" as="script"/><link href="game.aa7f5c5dd034110622d9.bundle.js" rel="preload" as="script"/><script defer="defer" src="libs/sentry.min.js"></script><script>"use strict"
+
+    var waitSentryTimer = setInterval(function () {
+    if (!window.hasOwnProperty('Sentry')) return
+    clearInterval(waitSentryTimer)
+    var dns = "null"
+    if(dns === "null" || !dns) return
+    
+    Sentry.init({
+        dsn: dns,
+        environment: 'production',
+        release: '1',
+        tracesSampleRate: '1.0',
+    })
+    }, 100)</script><script>window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }</script></head><body oncontextmenu="event.preventDefault()"><div id="app"><div id="game-wrapper"><div id="background"></div></div></div><div id="wrongRotation"><div id="wrongRotationIcon"><svg class="screen-manager-rotate-banner__image" fill="none" height="163" viewBox="0 0 153 163" width="153" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m135.778 4h-41.5558c-7.3024 0-13.2222 6.0674-13.2222 13.552v93.896c0 7.485 5.9198 13.552 13.2222 13.552h41.5558c7.302 0 13.222-6.067 13.222-13.552v-93.896c0-7.4846-5.92-13.552-13.222-13.552zm-5.178 4h-1.635c.023.16331.035.33025.035.50001 0 1.93299-1.567 3.49999-3.5 3.49999h-21c-1.933 0-3.5-1.567-3.5-3.49999 0-.16976.012-.3367.035-.50001h-1.635c-5.0405 0-7.5607 0-9.4859.98094-1.6935.86286-3.0703 2.23966-3.9332 3.93316-.9809 1.9252-.9809 4.4454-.9809 9.4859v84.2c0 5.04 0 7.561.9809 9.486.8629 1.693 2.2397 3.07 3.9332 3.933 1.9252.981 4.4454.981 9.4859.981h31.2c5.04 0 7.561 0 9.486-.981 1.693-.863 3.07-2.24 3.933-3.933.981-1.925.981-4.446.981-9.486v-84.2c0-5.0405 0-7.5607-.981-9.4859-.863-1.6935-2.24-3.0703-3.933-3.93316-1.925-.98094-4.446-.98094-9.486-.98094z" fill="#fff" fill-rule="evenodd" opacity=".2"></path><rect fill="#454545" height="68" rx="14" width="121" x="4" y="91"></rect><path clip-rule="evenodd" d="m4 145.778v-41.556c0-7.3022 6.0674-13.222 13.552-13.222h93.896c7.485 0 13.552 5.9198 13.552 13.222v41.556c0 7.302-6.067 13.222-13.552 13.222h-93.896c-7.4846 0-13.552-5.92-13.552-13.222zm4-5.178v-1.635c.1633.023.33024.035.50001.035 1.93299 0 3.49999-1.567 3.49999-3.5v-21c0-1.933-1.567-3.5-3.49999-3.5-.16977 0-.33671.012-.50001.035v-1.635c0-5.04 0-7.561.98094-9.4859.86286-1.6935 2.23966-3.0703 3.93316-3.9332 1.9252-.9809 4.4454-.9809 9.4859-.9809h84.2c5.04 0 7.561 0 9.486.9809 1.693.8629 3.07 2.2397 3.933 3.9332.981 1.9249.981 4.4459.981 9.4859v31.2c0 5.04 0 7.561-.981 9.486-.863 1.693-2.24 3.07-3.933 3.933-1.925.981-4.446.981-9.486.981h-84.2c-5.0405 0-7.5607 0-9.4859-.981-1.6935-.863-3.0703-2.24-3.93316-3.933-.98094-1.925-.98094-4.446-.98094-9.486z" fill="#fff" fill-rule="evenodd"></path><path class="arrow_left" d="m35.9999 69.6001c3.3485 3.3485 5.2259 5.2259 8.5745 8.5744" stroke="#5641ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path class="arrow_right" d="m52.8525 70.0005-8.1524 8.1526" stroke="#5641ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path class="arrow_tail" d="m41.7002 76c0 1.6569 1.3431 3 3 3 1.6568 0 3-1.3431 3-3zm27-22c1.6568 0 3-1.3431 3-3s-1.3432-3-3-3zm-21 22v-13h-6v13zm9-22h12v-6h-12zm-9 9c0-4.9706 4.0294-9 9-9v-6c-8.2843 0-15 6.7157-15 15z" fill="#5641ff"></path></svg></div></div><script src="sdk.0bd5558d0b06e072ff7f.bundle.js"></script><script>"use strict";function initFbInstant(){var t=1,n=setInterval((function(){"FBInstant"in window&&(clearInterval(n),FBInstant.initializeAsync().then((function(){window.focus();var n=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(t){initGoogleAnalytics(n,t)})).catch((function(){initGoogleAnalytics(n,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(t++),t>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(t,n){if(window.__GA_CONFIG){var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=FBInstant.getEntryPointData()||{},o=e.fbig_ad_id,s=e.fbig_adset_id,c=e.fbig_campaign_id,_=n;!!e.notificationPayload&&(_="msn_notification");var g=document.createElement("script");g.async=!0,g.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(g),gtag("set","client_storage","none"),gtag("set","client_id","100."+t),gtag("set","user_id",t),gtag("set","send_page_view",!1),gtag("js",new Date),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,dpr:window.devicePixelRatio||1,medium:_,campaign:c,groups:"GA"}),gtag("set","user_properties",{user_id:t,traffic_source:_,campaign_id:c,adset_id:s,ad_id:o});try{FBInstant.getTournamentAsync().then((function(t){var n=t.getID();gtag("set","user_properties",{tournament_id:n})})).catch((function(t){}))}catch(d){}gtag("event","app_launch",{send_to:"GA"}),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.42ee8e58b52be4fcc827.bundle.js"></script><script defer="defer" src="engine.cfd5e0f2407617a7c84d.bundle.js"></script><script defer="defer" src="game.aa7f5c5dd034110622d9.bundle.js"></script></body></html>
