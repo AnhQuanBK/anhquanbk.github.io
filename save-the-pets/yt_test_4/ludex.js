@@ -331,7 +331,7 @@ function _ts_generator(thisArg, body) {
         });
     }, trace = function trace() {
         var args = arguments;
-        "event" === args[0] && ("object" !== _type_of(args[2]) && (args[2] = {}), args[2].build = 4, args[2].send_to = "GA", args[2].extend_session = 1), window.dataLayer.push(args);
+        "event" === args[0] && ("object" !== _type_of(args[2]) && (args[2] = {}), args[2].build = 5, args[2].send_to = "GA", args[2].extend_session = 1), window.dataLayer.push(args);
     }, addGoogleAnalyticsScript = function addGoogleAnalyticsScript() {
         try {
             return;
@@ -2519,7 +2519,7 @@ ent-mock",
                         user_id: userId,
                         send_page_view: !1
                     });
-                    var buildVersion = 4, _iteratorNormalCompletion = !0, _didIteratorError = !1, _iteratorError = void 0;
+                    var buildVersion = 5, _iteratorNormalCompletion = !0, _didIteratorError = !1, _iteratorError = void 0;
                     try {
                         for(var _ref, _ref1, _ref2, _GameSDK, _Ludex_Utils_Browser, _Ludex_Utils, _Ludex, _step, _iterator = tagIds[Symbol.iterator](); !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = !0){
                             var tagId = _step.value;
@@ -6081,10 +6081,14 @@ g ads");
                                                 2
                                             ];
                                             return canvasRecorder.setCanvas(gameCanvas), canvasRecorder.snapshotFrameAsync().then(function(image2) {
-                                                if (image2) {
-                                                    var imageUrl = URL.createObjectURL(image2);
-                                                    Ludex.Utils.Image.logImage(imageUrl);
-                                                }
+                                                image2 && new Promise(function(resolve, reject) {
+                                                    var reader = new FileReader();
+                                                    reader.onload = function() {
+                                                        return resolve(reader.result);
+                                                    }, reader.onerror = reject, reader.readAsDataURL(image2);
+                                                }).then(function(base64) {
+                                                    "string" == typeof base64 && Ludex.Utils.Image.logImage(base64);
+                                                });
                                             }), [
                                                 2
                                             ];
@@ -19424,7 +19428,7 @@ n" != typeof targetValue) {
             Analytics: null
         })
     });
-    window.Ludex = Ludex2, window.TypeGuard = type_guard_default, window.GameName = "Save The Pets", window.CommitId = "477c8ee9-ef6a42bd", window.BuildVersion = 4, console.warn("Env mode:", "development"), console.warn("Debugger:", Ludex2.Utils.Valid.isDebugger()), console.warn("DevIds:", Ludex2.Configs.Debugger.ListPlayerDevIds), init_define_GAME_CONFIG(), init_define_GAME_SDK_CONFIG(), init_console(), init_track_events(), init_track_errors(), init_GameSDK2(), init_progress(), init_init_core(), init_navigator(), init_performance(), init_browser(), init_init(), init_google_analytics(), init_youtube(), init_define_GAME_CONFIG(), init_define_GAME_SDK_CONFIG(), init_console(), init_track_events(), init_track_errors(), init_GameSDK2(), init_progress(), init_init_core(), init_navigator(), init_performance(), init_browser(), init_init(), init_google_analytics(), init_youtube();
+    window.Ludex = Ludex2, window.TypeGuard = type_guard_default, window.GameName = "Save The Pets", window.CommitId = "477c8ee9-ef6a42bd", window.BuildVersion = 5, console.warn("Env mode:", "development"), console.warn("Debugger:", Ludex2.Utils.Valid.isDebugger()), console.warn("DevIds:", Ludex2.Configs.Debugger.ListPlayerDevIds), init_define_GAME_CONFIG(), init_define_GAME_SDK_CONFIG(), init_console(), init_track_events(), init_track_errors(), init_GameSDK2(), init_progress(), init_init_core(), init_navigator(), init_performance(), init_browser(), init_init(), init_google_analytics(), init_youtube(), init_define_GAME_CONFIG(), init_define_GAME_SDK_CONFIG(), init_console(), init_track_events(), init_track_errors(), init_GameSDK2(), init_progress(), init_init_core(), init_navigator(), init_performance(), init_browser(), init_init(), init_google_analytics(), init_youtube();
     var _Ludex_Utils = Ludex.Utils, V = _Ludex_Utils.Valid, O = _Ludex_Utils.Object, S = _Ludex_Utils.String, J = _Ludex_Utils.Json, MESSAGE_INVALID = "is invalid", DtosData = {}, _BaseDtos = function() {
         function _BaseDtos(data) {
             _class_call_check(this, _BaseDtos), this.processData$(data);
@@ -33226,7 +33230,7 @@ customData"
     __name(_GoogleAnalytics, "GoogleAnalytics");
     var GoogleAnalytics = _GoogleAnalytics, GoogleAnalytics_default = GoogleAnalytics;
     init_empty_script(), init_empty_script(), init_empty_script(), init_empty_script(), init_accessBlocker();
-    var NODE_ENV = "development", BUILD_VERSION = 4, Dtos15 = Ludex.Dtos, Events9 = Ludex.Events, _Ludex_Configs11 = Ludex.Configs, AppId5 = _Ludex_Configs11.AppId, Ads = _Ludex_Configs11.Ads, Context4 = _Ludex_Configs11.Context, Debugger = _Ludex_Configs11.Debugger, Firebase = _Ludex_Configs11.Firebase, Analytics3 = _Ludex_Configs11.Analytics, Notification = _Ludex_Configs11.Notification, RemoteConfig = _Ludex_Configs11.RemoteConfig, PerformanceMonitor = _Ludex_Configs11.PerformanceMonitor, AdaptivePerformance = _Ludex_Configs11.AdaptivePerformance, Plugins2 = Ludex.Plugins, _Ludex_Utils50 = Ludex.Utils, D3 = _Ludex_Utils50.Device, O32 = _Ludex_Utils50.Object, J5 = _Ludex_Utils50.Json, S8 = _Ludex_Utils50.String, V36 = _Ludex_Utils50.Valid, T3 = _Ludex_Utils50.Time, F6 = _Ludex_Utils50.Function, Mark2 = _Ludex_Utils50.Mark, _MagicCodex = function(codex_default) {
+    var NODE_ENV = "development", BUILD_VERSION = 5, Dtos15 = Ludex.Dtos, Events9 = Ludex.Events, _Ludex_Configs11 = Ludex.Configs, AppId5 = _Ludex_Configs11.AppId, Ads = _Ludex_Configs11.Ads, Context4 = _Ludex_Configs11.Context, Debugger = _Ludex_Configs11.Debugger, Firebase = _Ludex_Configs11.Firebase, Analytics3 = _Ludex_Configs11.Analytics, Notification = _Ludex_Configs11.Notification, RemoteConfig = _Ludex_Configs11.RemoteConfig, PerformanceMonitor = _Ludex_Configs11.PerformanceMonitor, AdaptivePerformance = _Ludex_Configs11.AdaptivePerformance, Plugins2 = Ludex.Plugins, _Ludex_Utils50 = Ludex.Utils, D3 = _Ludex_Utils50.Device, O32 = _Ludex_Utils50.Object, J5 = _Ludex_Utils50.Json, S8 = _Ludex_Utils50.String, V36 = _Ludex_Utils50.Valid, T3 = _Ludex_Utils50.Time, F6 = _Ludex_Utils50.Function, Mark2 = _Ludex_Utils50.Mark, _MagicCodex = function(codex_default) {
         function _MagicCodex() {
             var _this, _this1;
             return _class_call_check(this, _MagicCodex), _this = _call_super(this, _MagicCodex, arguments), _this1 = _this, _define_property(_this, "markName$", "Core Initialize"), _define_property(_this, "modulePlugins$", []), _define_property(_this, "processContextSession$", __name(function() {
