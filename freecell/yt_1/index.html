@@ -44,30 +44,16 @@
                 /* background-image: url(./assets/images/2x/bg-desktop-0.jpg); */
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 100% 100%;
+                max-width: 100%;
+                max-height: 100%;
             }
 
-            @media (min-aspect-ratio: 16/9) {
-                #app-bg {
-                    background-size: contain;
-                }
-            }
-
-            #app-mask-left {
+            #app-mask {
                 width: 100%;
                 height: 100%;
                 position: absolute;
                 user-select: none;
-                background: rgb(29 29 29 / 0);
-            }
-
-            #app-mask-right {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                user-select: none;
-                background: rgb(29 29 29 / 0);
-                right: 0px;
             }
 
             canvas {
@@ -185,7 +171,7 @@
 
             div[hidden] {
                 display: none !important;
-            }</style><link href="sdk.a044093673748886420c.bundle.js" rel="preload" as="script"/><link href="vendors.7bf21ddb04eba630fd6c.bundle.js" rel="preload" as="script"/><link href="engine.47351b33a7200953c96e.bundle.js" rel="preload" as="script"/><link href="game.1aa7aff10a49d8f0f2d5.bundle.js" rel="preload" as="script"/><script defer="defer" src="libs/sentry.min.js"></script><script>"use strict"
+            }</style><link href="sdk.0ef2d45aab9c9f7996b2.bundle.js" rel="preload" as="script"/><link href="vendors.c84ec13adb8f28a97ce5.bundle.js" rel="preload" as="script"/><link href="engine.70062d2884bef044969e.bundle.js" rel="preload" as="script"/><link href="game.4802dbc59e5ca7447063.bundle.js" rel="preload" as="script"/><script defer="defer" src="libs/sentry.min.js"></script><script>"use strict"
 
     var waitSentryTimer = setInterval(function () {
     if (!window.hasOwnProperty('Sentry')) return
@@ -196,7 +182,7 @@
     Sentry.init({
         dsn: dns,
         environment: 'production',
-        release: '1',
+        release: '2',
         tracesSampleRate: '1.0',
     })
     }, 100)</script><script>window.dataLayer = window.dataLayer || [];
@@ -204,5 +190,5 @@ function gtag() { dataLayer.push(arguments); }</script><link href="https://www.g
         window.__GA_CONFIG = {
             GAME_NAME: 'FreeCell - Classic Solitaire',
             GA_MEASUREMENT_ID: 'G-6GQF9WK23J',
-            BUILD_VERSION: '1',
-        }</script></head><body oncontextmenu="event.preventDefault()"><div id="app"><div id="app-bg"></div><div id="app-mask-left"></div><div id="app-mask-right"></div></div><div id="lds-content" hidden><div id="lds-dual-ring"></div><div id="lds-text"><span id="lds-percent">0</span>%</div></div><script src="sdk.a044093673748886420c.bundle.js"></script><script>"use strict";function initFbInstant(){var t=1,n=setInterval((function(){"FBInstant"in window&&(clearInterval(n),FBInstant.initializeAsync().then((function(){window.focus();var n=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(t){initGoogleAnalytics(n,t)})).catch((function(){initGoogleAnalytics(n,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(t++),t>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(t,n){if(window.__GA_CONFIG){var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=FBInstant.getEntryPointData()||{},s=e.fbig_ad_id,o=e.fbig_adset_id,c=e.fbig_campaign_id,_=n;!!e.notificationPayload&&(_="msn_notification");var g=document.createElement("script");g.async=!0,g.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(g),gtag("set","client_storage","none"),gtag("set","client_id","100."+t),gtag("set","user_id",t),gtag("set","send_page_view",!1),gtag("js",new Date),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,medium:_,campaign:c,groups:"GA"}),gtag("set","user_properties",{user_id:t,traffic_source:_,campaign_id:c,adset_id:o,ad_id:s});try{FBInstant.getTournamentAsync().then((function(t){var n=t.getID();gtag("set","user_properties",{tournament_id:n})})).catch((function(t){}))}catch(d){}gtag("event","app_launch",{send_to:"GA"}),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.7bf21ddb04eba630fd6c.bundle.js"></script><script defer="defer" src="engine.47351b33a7200953c96e.bundle.js"></script><script defer="defer" src="game.1aa7aff10a49d8f0f2d5.bundle.js"></script></body></html>
+            BUILD_VERSION: '2',
+        }</script></head><body oncontextmenu="event.preventDefault()"><div id="app"><div id="app-bg"></div><div id="app-mask"></div></div><div id="lds-content" hidden><div id="lds-dual-ring"></div><div id="lds-text"><span id="lds-percent">0</span>%</div></div><script src="sdk.0ef2d45aab9c9f7996b2.bundle.js"></script><script>"use strict";function initFbInstant(){var t=1,n=setInterval((function(){"FBInstant"in window&&(clearInterval(n),FBInstant.initializeAsync().then((function(){window.focus();var n=FBInstant.player.getID();FBInstant.getEntryPointAsync().then((function(t){initGoogleAnalytics(n,t)})).catch((function(){initGoogleAnalytics(n,"no_entry")})),window.__fbInstantInitiated=!0,window.__fbInstantLoadingTimer=setInterval((function(){FBInstant.setLoadingProgress(t++),t>=30&&clearInterval(window.__fbInstantLoadingTimer)}),80)})))}),50)}function initGoogleAnalytics(t,n){if(window.__GA_CONFIG){var i=window.__GA_CONFIG.BUILD_VERSION,a=window.__GA_CONFIG.GA_MEASUREMENT_ID;if("null"!=a){var e=FBInstant.getEntryPointData()||{},s=e.fbig_ad_id,o=e.fbig_adset_id,c=e.fbig_campaign_id,_=n;!!e.notificationPayload&&(_="msn_notification");var g=document.createElement("script");g.async=!0,g.src="https://www.googletagmanager.com/gtag/js?id="+a,document.head.appendChild(g),gtag("set","client_storage","none"),gtag("set","client_id","100."+t),gtag("set","user_id",t),gtag("set","send_page_view",!1),gtag("js",new Date),gtag("config",a,{cookie_flags:"SameSite=None;Secure",build:i,medium:_,campaign:c,groups:"GA"}),gtag("set","user_properties",{user_id:t,traffic_source:_,campaign_id:c,adset_id:o,ad_id:s});try{FBInstant.getTournamentAsync().then((function(t){var n=t.getID();gtag("set","user_properties",{tournament_id:n})})).catch((function(t){}))}catch(d){}gtag("event","app_launch",{send_to:"GA"}),window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}else window.__analyticsInitiated=!0}initFbInstant();</script><script defer="defer" src="vendors.c84ec13adb8f28a97ce5.bundle.js"></script><script defer="defer" src="engine.70062d2884bef044969e.bundle.js"></script><script defer="defer" src="game.4802dbc59e5ca7447063.bundle.js"></script></body></html>
