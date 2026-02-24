@@ -19092,7 +19092,13 @@ System.register("chunks:///main.js", [
                                             2,
                                             3,
                                             4
-                                        ]), Q.pause(), window.customLog = "game paused", [
+                                        ]), Q.pause(), window.performance.mark("Game Paused", {
+                                            detail: {
+                                                devtools: {
+                                                    dataType: "marker"
+                                                }
+                                            }
+                                        }), [
                                             4,
                                             Promise.all([
                                                 this.loadWasmModules(),
@@ -19110,7 +19116,13 @@ System.register("chunks:///main.js", [
                                             4
                                         ];
                                     case 3:
-                                        return window.customLog = "preloadAssets completed", null != JR && JR.isAdFullSizeShowing() || Q.resume(), [
+                                        return window.performance.mark("Preload Assets Completed", {
+                                            detail: {
+                                                devtools: {
+                                                    dataType: "marker"
+                                                }
+                                            }
+                                        }), Q.resume(), [
                                             7
                                         ];
                                     case 4:

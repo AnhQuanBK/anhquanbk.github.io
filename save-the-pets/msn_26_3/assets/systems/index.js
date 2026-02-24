@@ -3884,18 +3884,13 @@ System.register("chunks:///systems.js", [
                                     GameSDK.extra.waitSDKInitiatedAsync()
                                 ];
                             case 3:
-                                if (_state.sent(), console.debug("Game paused", P.isPaused()), !P.isPaused()) return [
-                                    3,
-                                    5
-                                ];
-                                return [
-                                    4,
-                                    t.waitGameResume$()
-                                ];
-                            case 4:
-                                _state.sent(), _state.label = 5;
-                            case 5:
-                                return window.customLog = "game resumed", t.processStartGame$(), [
+                                return _state.sent(), console.debug("Game paused", P.isPaused()), window.performance.mark("Game Resumed", {
+                                    detail: {
+                                        devtools: {
+                                            dataType: "marker"
+                                        }
+                                    }
+                                }), t.processStartGame$(), [
                                     2
                                 ];
                         }
