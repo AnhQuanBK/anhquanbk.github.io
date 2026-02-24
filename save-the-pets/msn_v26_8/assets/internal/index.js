@@ -1,0 +1,19 @@
+System.register("chunks:///internal.js", [], function() {
+    return {
+        execute: function execute() {}
+    };
+});
+System.register('virtual:///prerequisite-imports/internal', [
+    'chunks:///internal.js'
+], function(_export, _context) {
+    return {
+        setters: [
+            function(_m) {
+                var _exportObj = {};
+                for(var _key in _m)"default" !== _key && "__esModule" !== _key && (_exportObj[_key] = _m[_key]);
+                _export(_exportObj);
+            }
+        ],
+        execute: function execute() {}
+    };
+});
