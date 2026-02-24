@@ -3895,7 +3895,7 @@ System.register("chunks:///systems.js", [
                             case 4:
                                 _state.sent(), _state.label = 5;
                             case 5:
-                                return t.processStartGame$(), [
+                                return window.customLog = "game resumed", t.processStartGame$(), [
                                     2
                                 ];
                         }

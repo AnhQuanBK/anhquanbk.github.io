@@ -19092,7 +19092,7 @@ System.register("chunks:///main.js", [
                                             2,
                                             3,
                                             4
-                                        ]), Q.pause(), [
+                                        ]), Q.pause(), window.customLog = "game paused", [
                                             4,
                                             Promise.all([
                                                 this.loadWasmModules(),
@@ -19110,7 +19110,7 @@ System.register("chunks:///main.js", [
                                             4
                                         ];
                                     case 3:
-                                        return null != JR && JR.isAdFullSizeShowing() || Q.resume(), [
+                                        return window.customLog = "preloadAssets completed", null != JR && JR.isAdFullSizeShowing() || Q.resume(), [
                                             7
                                         ];
                                     case 4:
