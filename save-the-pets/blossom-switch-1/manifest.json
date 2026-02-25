@@ -1,0 +1,41 @@
+{
+    "name": "Save The Pets",
+    "short_name": "Save The Pets",
+    "description": "Save The Pets is a fun, web-based puzzle game where you draw lines to protect adorable dogs from swarms of bees and other hazards. Use your skills to shield the pets and conquer challenging levels. Play now directly in your browser and be the hero these cute dogs need!",
+    "icons": [
+        {
+            "src": "./icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./banner-1920x1080.jpg",
+            "sizes": "1920x1080",
+            "type": "image/jpeg"
+        }
+    ],
+    "start_url": "/ms-games/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "ms_start_compatible": true,
+    "background_color": "#000000",
+    "id": "9p3610rr8qt5",
+    "lang": "en",
+    "orientation": "portrait-primary",
+    "categories": [
+        "games"
+    ],
+    "prefer_related_applications": false,
+    "dir": "auto",
+    "display_override": [
+        "window-controls-overlay"
+    ],
+    "_msstart": {
+        "leaderboards": {
+            "default": {
+                "score_type": "Numeric",
+                "score_order_by": "Desc"
+            }
+        }
+    }
+}
