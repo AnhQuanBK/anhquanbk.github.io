@@ -19122,7 +19122,7 @@ System.register("chunks:///main.js", [
                                                     dataType: "marker"
                                                 }
                                             }
-                                        }), Q.resume(), [
+                                        }), null != JR && JR.isAdFullSizeShowing() || Q.resume(), [
                                             7
                                         ];
                                     case 4:
