@@ -3870,6 +3870,13 @@ System.register("chunks:///systems.js", [
                                 color: "secondary"
                             }
                         }
+                    }), window.performance.mark("Listen Scene Events", {
+                        detail: {
+                            devtools: {
+                                dataType: "marker",
+                                color: "secondary"
+                            }
+                        }
                     }), Si.catchUp(hi.SCENE_LOADED, t.preloadScenes$), Si.catchUp(hi.SCENE_LAUNCHED, t.processBootSceneLaunched$), t.runBootScene$();
                 }, this.processBootSceneLaunched$ = n(function() {
                     return _ts_generator(this, function(_state) {
