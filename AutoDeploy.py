@@ -1,35 +1,54 @@
-# Generate a random hash of 16 characters for the commit
+#!/usr/bin/env python3
 
 import hashlib
 import os
 import sys
-import gc
-import atexit
-
-
-def cleanup():
-    gc.collect()
-    print("Garbage collection done")
+import subprocess
 
 
 def get_hash():
-    hashString = hashlib.md5()
-    hashString.update(os.urandom(128))
-    return hashString.hexdigest()[:16]
+    hash_string = hashlib.md5()
+    hash_string.update(os.urandom(128))
+    return hash_string.hexdigest()[:16]
+
+
+def run_command(command, description):
+    """Run a shell command and handle errors."""
+    print(f"\n{description}...")
+    try:
+        result = subprocess.run(
+            command,
+            shell=True,
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        if result.stdout:
+            print(result.stdout)
+        return True
+    except subprocess.CalledProcessError as e:
+        print(f"Error: {e}")
+        if e.stderr:
+            print(f"Error details: {e.stderr}")
+        return False
 
 
 def main():
-    # Run cmd command git add --all
-    os.system("git add --all")
+    print("Starting auto-deploy process...")
+    
+    if not run_command("git add --all", "Adding all changes"):
+        sys.exit(1)
+    
+    hash_string = get_hash()
+    commit_message = f"AutoDeploy: {hash_string}"
+    if not run_command(f'git commit -m "{commit_message}"', f"Committing with message: {commit_message}"):
+        print("Note: No changes to commit or commit failed")
+    
+    if not run_command("git push", "Pushing to remote"):
+        sys.exit(1)
+    
+    print("\n✅ Auto-deploy completed successfully!")
 
-    # Run cmd command git commit -m "AutoDeploy: <hash>"
-    hashString = get_hash()
-    os.system("git commit -m \"AutoDeploy: " + hashString + "\"")
 
-    # Run cmd command git push origin master
-    os.system("git push")
-
-
-gc.enable()
-
-main()
+if __name__ == "__main__":
+    main()
