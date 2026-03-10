@@ -1,0 +1,186 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"/><title>Pop Jewels Master</title><style>:root {
+                --sat: env(safe-area-inset-top);
+                --sar: env(safe-area-inset-right);
+                --sab: env(safe-area-inset-bottom);
+                --sal: env(safe-area-inset-left);
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+            }
+
+            html {
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                scroll-behavior: smooth;
+                font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+                background-color: #191919;
+            }
+
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                color: white;
+                background: transparent;
+                overflow: hidden;
+            }
+
+            #app {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            #app.portrait {
+                box-shadow: rgb(0 0 0 / 10%) 0px 0px 16px 16px;
+            }
+
+            #background {
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: #000;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            #background-mask {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgb(0, 0, 0, 0);
+            }
+
+            canvas {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                position: relative;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                touch-action: none;
+            }
+
+            #capture {
+                display: none;
+            }
+
+            #yt-backup-loader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #191919;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 9999;
+                transition: opacity 0.3s ease;
+            }
+
+            #yt-backup-loader.hidden {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            #yt-loader-spinner {
+                display: block;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                border: 6px solid #fff;
+                border-color: #fff transparent #fff transparent;
+                animation: lds-dual-ring 1.2s linear infinite;
+                -webkit-animation: lds-dual-ring 1.2s linear infinite;
+            }
+
+            #wait-ads-mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: #191919;
+            }
+
+            #wait-ads-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+            }
+
+            #wait-ads-dual-ring {
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 0px auto;
+                border-radius: 50%;
+                border: 6px solid #fff;
+                border-color: #fff transparent #fff transparent;
+                animation: lds-dual-ring 1.2s linear infinite;
+                -webkit-animation: lds-dual-ring 1.2s linear infinite;
+            }
+
+            #wait-ads-text {
+                text-align: center;
+                -webkit-text-align: center;
+                margin-top: 30px;
+                font-size: 1.2rem;
+            }
+
+            @keyframes lds-dual-ring {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            div[hidden] {
+                display: none !important;
+            }</style><script src="https://www.gstatic.com/play-games-playables/sdk/v1/ytgame.js"></script><script>(function() {
+            var sanitize = function(url) {
+                if (typeof url !== 'string') return url;
+                return url.replace(/[{}[\]|\\^~`<>]/g, function(c) {
+                    return '%' + c.charCodeAt(0).toString(16).toUpperCase();
+                });
+            };
+
+            var OrigXHR = XMLHttpRequest.prototype.open;
+            XMLHttpRequest.prototype.open = function(method, url) {
+                arguments[1] = sanitize(url);
+                return OrigXHR.apply(this, arguments);
+            };
+
+            var OrigImage = window.Image;
+            window.Image = function(w, h) {
+                var img = new OrigImage(w, h);
+                var origSrc = Object.getOwnPropertyDescriptor(HTMLImageElement.prototype, 'src');
+                if (origSrc && origSrc.set) {
+                    Object.defineProperty(img, 'src', {
+                        set: function(val) { origSrc.set.call(this, sanitize(val)); },
+                        get: function() { return origSrc.get.call(this); }
+                    });
+                }
+                return img;
+            };
+
+            window.__analyticsInitiated = true;
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function() { window.dataLayer.push(arguments); };
+        })();</script><link href="sdk.4b0e0dc8336a956f13a3.bundle.js" rel="preload" as="script"/><link href="vendors.2c820f65fb7ac57ba177.bundle.js" rel="preload" as="script"/><link href="engine.8ac8ab58c5f212c44ab7.bundle.js" rel="preload" as="script"/><link href="game.37e90cc6c224f0d7c4b5.bundle.js" rel="preload" as="script"/></head><body oncontextmenu="event.preventDefault()"><div id="yt-backup-loader"><div id="yt-loader-spinner"></div></div><div><div id="background"></div><div id="background-mask"></div></div><div id="app" class="portrait"></div><script src="sdk.4b0e0dc8336a956f13a3.bundle.js"></script><script defer="defer" src="vendors.2c820f65fb7ac57ba177.bundle.js"></script><script defer="defer" src="engine.8ac8ab58c5f212c44ab7.bundle.js"></script><script defer="defer" src="game.37e90cc6c224f0d7c4b5.bundle.js"></script></body></html>
