@@ -534,65 +534,63 @@ ca-pub-2993382360222769",
                         PlacementId: "\
 interstitial_platform",
                         SecondsFirstTime: 45,
-                        SecondsBetweenAds: 60
-                    },
-                    {
-                        AdService: "adsense",
-                        PlacementId: "\
-interstitial_adsense",
-                        SecondsFirstTime: 45,
-                        SecondsBetweenAds: 60
-                    }
-                ],
-                RewardedVideoAdOptions: [
-                    {
-                        AdService: "\
-platform",
-                        PlacementId: "rewarded_video_platform",
-                        SecondsFirstTime: 0,
-                        SecondsBetweenAds: 0
+                        SecondsBetweenAds: 60,
+                        Platform: "ALL"
                     },
                     {
                         AdService: "\
 adsense",
-                        PlacementId: "rewarded_video_adsense",
-                        SecondsFirstTime: 0,
-                        SecondsBetweenAds: 0
+                        PlacementId: "interstitial_adsense",
+                        SecondsFirstTime: 45,
+                        SecondsBetweenAds: 60,
+                        Platform: "\
+ALL"
                     }
                 ],
-                RewardedInterstitialAdOptions: [
+                RewardedVideoAdOptions: [
                     {
                         AdService: "platform",
-                        PlacementId: "rewarded_interstitial_demo",
-                        SecondsFirstTime: 0,
-                        SecondsBetweenAds: 0,
-                        Platform: "IOS"
-                    },
-                    {
-                        AdService: "platform",
-                        PlacementId: "rewarded_interstitial_demo",
-                        SecondsFirstTime: 0,
-                        SecondsBetweenAds: 0,
-                        Platform: "ANDROID"
-                    },
-                    {
-                        AdService: "platform",
-                        PlacementId: "rewarded_int\
-erstitial_demo",
+                        PlacementId: "rewarded_video_platform",
                         SecondsFirstTime: 0,
                         SecondsBetweenAds: 0,
                         Platform: "ALL"
                     },
                     {
                         AdService: "adsense",
-                        PlacementId: "rewarded_interstitial_adsense",
+                        PlacementId: "rewarded_video_ad\
+sense",
                         SecondsFirstTime: 0,
                         SecondsBetweenAds: 0,
-                        Platform: "\
-ALL"
+                        Platform: "ALL"
                     }
                 ],
-                BannerDisplayAdOptions: []
+                RewardedInterstitialAdOptions: [
+                    {
+                        AdService: "platform",
+                        PlacementId: "rewarded_video_platform",
+                        SecondsFirstTime: 0,
+                        SecondsBetweenAds: 0,
+                        Platform: "ALL"
+                    },
+                    {
+                        AdService: "adsense",
+                        PlacementId: "rewarded_video_adsense",
+                        SecondsFirstTime: 0,
+                        SecondsBetweenAds: 0,
+                        Platform: "ALL"
+                    }
+                ],
+                BannerDisplayAdOptions: [
+                    {
+                        PlacementId: "web_banner",
+                        Position: "\
+right",
+                        BannerWidth: 160,
+                        BannerHeight: 600,
+                        SecondsReload: 60,
+                        Platform: "WEB"
+                    }
+                ]
             },
             Languages: {
                 DetectPlayerLocale: true
@@ -605,8 +603,8 @@ ALL"
                     ScheduleNotification: {
                         D1: "A few snakes are still trapped on the board. Tap them free and clear another puzzle! \uD83D\uDC0D",
                         D2: "Your next escape puzzle is ready. Click each snake in the right order and set them free! \uD83E\uDDE9",
-                        D3: "\
-Stuck snakes are waiting for your help. Jump back in and free them with a few smart taps! \u2728",
+                        D3: "Stuck snakes are waiting for your help. Jump back in and fr\
+ee them with a few smart taps! \u2728",
                         D4: "Take a quick break with a fresh snake puzzle. Tap every snake loose and finish the board! \uD83C\uDFAF",
                         D5: "More snakes need an escape route. Return now and free them one click at a time! \uD83D\uDEAA",
                         D6: "A new board full of trapped snakes is waiting. Tap carefully and guide them all to freedom! \uD83C\uDF1F",
@@ -686,7 +684,8 @@ Stuck snakes are waiting for your help. Jump back in and free them with a few sm
                             lossless: false,
                             alphaQuality: 40,
                             smartSubsample: true,
-                            preset: "drawing"
+                            preset: "\
+drawing"
                         }
                     },
                     IgnoreFiles: [
@@ -762,7 +761,8 @@ Stuck snakes are waiting for your help. Jump back in and free them with a few sm
                             "APP_READY",
                             "PAGE_VIEW",
                             "BUTTON_CLICK",
-                            "AD_SHOWING",
+                            "AD_SHOW\
+ING",
                             "LEVEL_START",
                             "LEVEL_END"
                         ]
@@ -795,8 +795,7 @@ Stuck snakes are waiting for your help. Jump back in and free them with a few sm
                     FetchIntervalInSeconds: 300
                 },
                 ServiceType: "mockup",
-                DefaultConfigId: "\
-default",
+                DefaultConfigId: "default",
                 SupportedDataTypes: [
                     "Ludex",
                     "Gameplay"
@@ -821,8 +820,7 @@ default",
             },
             Notification: {
                 Enabled: true,
-                ApiUrl: "htt\
-ps://notifications.sunstudio.io"
+                ApiUrl: "https://notifications.sunstudio.io"
             },
             DailyRewards: {
                 MaxDays: 7,
@@ -833,21 +831,24 @@ ps://notifications.sunstudio.io"
                 Ads: {
                     Enabled: false,
                     ErrorRate: 0,
-                    GiphyApiKey: "VmjHIRsfrwCAssDS4mDo9DoImxJm1lLM",
+                    GiphyApiKey: "VmjHIRsfrw\
+CAssDS4mDo9DoImxJm1lLM",
                     SafeAreaBottom: 0
                 },
                 Match: {
                     Enabled: false,
                     ErrorRate: 5,
                     PlayerInfo: {
-                        Id: "player-mock",
+                        Id: "\
+player-mock",
                         Name: "Player Mock",
                         Photo: "",
                         Signature: ""
                     },
                     OpponentInfo: {
                         Id: "opponent-mock",
-                        Name: "Opponent Mock",
+                        Name: "\
+Opponent Mock",
                         Photo: "",
                         Signature: ""
                     }
@@ -899,8 +900,8 @@ ps://notifications.sunstudio.io"
                     ErrorRate: 5,
                     RandomDelayMs: 1e3,
                     AvatarUrl: "https://picsum.photos/seed/%1/300/300",
-                    RandomNameApiKey: "\
-a1f7164dc9d2468b953aef67b0a19355"
+                    RandomNameApiKey: "a1f7164dc9d2468b953aef67b\
+0a19355"
                 },
                 Leaderboards: {
                     Enabled: false,
@@ -1525,7 +1526,7 @@ var init_init_core = __esm({
                     user_id: userId,
                     send_page_view: false
                 });
-                var buildVersion = "0";
+                var buildVersion = 1;
                 var _iteratorNormalCompletion = true, _didIteratorError = false, _iteratorError = undefined;
                 try {
                     for(var _iterator = tagIds[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true){
@@ -1827,7 +1828,7 @@ function trace() {
         if (_type_of(args[2]) !== "object") {
             args[2] = {};
         }
-        args[2].build = 0;
+        args[2].build = 1;
         args[2].send_to = "GA";
         args[2].extend_session = 1;
     }
@@ -6688,6 +6689,18 @@ var init_MSExtra = __esm({
                                             base64
                                         ];
                                 }
+                            });
+                        })();
+                    }
+                },
+                {
+                    key: "waitSDKInitiatedAsync",
+                    value: function waitSDKInitiatedAsync() {
+                        return _async_to_generator(function() {
+                            return _ts_generator(this, function(_state) {
+                                return [
+                                    2
+                                ];
                             });
                         })();
                     }
@@ -11881,7 +11894,7 @@ tart()");
     }
 });
 // extensions/ludex/src/plugins/monitor-error/adapters/BugSnagAdapter.ts
-var import_browser368, BugSnagAdapter, BugSnagAdapter_default;
+var import_browser370, BugSnagAdapter, BugSnagAdapter_default;
 var init_BugSnagAdapter = __esm({
     "extensions/ludex/src/plugins/monitor-error/adapters/BugSnagAdapter.ts": function() {
         "use strict";
@@ -11896,7 +11909,7 @@ var init_BugSnagAdapter = __esm({
         init_browser();
         init_init();
         init_GameSDK2();
-        import_browser368 = __toESM(require_bugsnag());
+        import_browser370 = __toESM(require_bugsnag());
         BugSnagAdapter = /*#__PURE__*/ function() {
             function BugSnagAdapter(plugin) {
                 var _this = this;
@@ -11923,7 +11936,7 @@ var init_BugSnagAdapter = __esm({
                     key: "configure",
                     value: function configure(config) {
                         var apiKey = config.apiKey, buildVersion = config.buildVersion;
-                        import_browser368.default.start({
+                        import_browser370.default.start({
                             apiKey: apiKey,
                             appVersion: buildVersion,
                             releaseStage: "production",
@@ -11951,7 +11964,7 @@ r",
                         var id = user.id, name2 = user.name;
                         var userId = id !== null && id !== void 0 ? id : void 0;
                         var userName = name2 !== null && name2 !== void 0 ? name2 : void 0;
-                        import_browser368.default.setUser(userId, void 0, userName);
+                        import_browser370.default.setUser(userId, void 0, userName);
                     }
                 },
                 {
@@ -11960,7 +11973,7 @@ r",
                         if (metadata) {
                             this.customMetaData = metadata;
                         }
-                        import_browser368.default.notify(error);
+                        import_browser370.default.notify(error);
                     }
                 },
                 {
@@ -11972,7 +11985,7 @@ r",
                 {
                     key: "addBreadcrumb",
                     value: function addBreadcrumb(breadcrumb) {
-                        import_browser368.default.leaveBreadcrumb(breadcrumb);
+                        import_browser370.default.leaveBreadcrumb(breadcrumb);
                     }
                 }
             ]);
@@ -17372,7 +17385,7 @@ var Ludex2 = Object.preventExtensions({
 window.Ludex = Ludex2;
 window.TypeGuard = type_guard_default;
 window.GameName = "Snake Escape Puzzle";
-window.BuildVersion = 0;
+window.BuildVersion = 1;
 console.warn("Env mode:", "development");
 console.warn("Debugger:", Ludex2.Utils.Valid.isDebugger());
 console.warn("DevIds:", Ludex2.Configs.Debugger.ListPlayerDevIds);
@@ -37158,8 +37171,150 @@ var AdSenseInstance = /*#__PURE__*/ function(NormalAdInstance_default) {
     return AdSenseInstance;
 }(NormalAdInstance_default);
 var AdSenseInstance_default = AdSenseInstance;
-// extensions/ludex/src/codex/index.ts
-init_empty_script();
+// extensions/ludex/src/ads/BannerAdInstance.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_analytics();
+init_performance();
+init_resize_observer();
+init_browser();
+init_init();
+init_GameSDK2();
+// extensions/ludex/src/plugins/ads/instances/BannerInstance.ts
+init_define_GAME_CONFIG();
+init_define_GAME_SDK_CONFIG();
+init_track_events();
+init_track_errors();
+init_init_core();
+init_google_analytics();
+init_performance();
+init_resize_observer();
+init_browser();
+init_init();
+init_GameSDK2();
+var BannerInstance = /*#__PURE__*/ function(AdInstance_default2) {
+    _inherits(BannerInstance, AdInstance_default2);
+    function BannerInstance() {
+        _class_call_check(this, BannerInstance);
+        return _call_super(this, BannerInstance, arguments);
+    }
+    _create_class(BannerInstance, [
+        {
+            key: "loadAsync",
+            value: function loadAsync() {
+                return _async_to_generator(function() {
+                    return _ts_generator(this, function(_state) {
+                        this.exception$("This method is not implemented");
+                        return [
+                            2
+                        ];
+                    });
+                }).call(this);
+            }
+        },
+        {
+            key: "showAsync",
+            value: function showAsync() {
+                return _async_to_generator(function() {
+                    return _ts_generator(this, function(_state) {
+                        this.exception$("This method is not implemented");
+                        return [
+                            2
+                        ];
+                    });
+                }).call(this);
+            }
+        },
+        {
+            key: "hideAsync",
+            value: function hideAsync() {
+                return _async_to_generator(function() {
+                    return _ts_generator(this, function(_state) {
+                        this.exception$("This method is not implemented");
+                        return [
+                            2
+                        ];
+                    });
+                }).call(this);
+            }
+        }
+    ]);
+    return BannerInstance;
+}(AdInstance_default2);
+var BannerInstance_default = BannerInstance;
+// extensions/ludex/src/ads/BannerAdInstance.ts
+var _Ludex_Plugins_Ads2 = Ludex.Plugins.Ads, Status2 = _Ludex_Plugins_Ads2.Status;
+var BannerAdInstance = /*#__PURE__*/ function(BannerInstance_default) {
+    _inherits(BannerAdInstance, BannerInstance_default);
+    function BannerAdInstance() {
+        _class_call_check(this, BannerAdInstance);
+        return _call_super(this, BannerAdInstance, arguments);
+    }
+    _create_class(BannerAdInstance, [
+        {
+            key: "loadAsync",
+            value: function loadAsync() {
+                return _async_to_generator(function() {
+                    return _ts_generator(this, function(_state) {
+                        switch(_state.label){
+                            case 0:
+                                return [
+                                    4,
+                                    GameSDK.loadBannerAdAsync(this.placementId)
+                                ];
+                            case 1:
+                                _state.sent();
+                                this.setStatus(Status2.FILLED);
+                                return [
+                                    2
+                                ];
+                        }
+                    });
+                }).call(this);
+            }
+        },
+        {
+            key: "showAsync",
+            value: function showAsync() {
+                return _async_to_generator(function() {
+                    return _ts_generator(this, function(_state) {
+                        this.setStatus(Status2.SHOWING);
+                        return [
+                            2
+                        ];
+                    });
+                }).call(this);
+            }
+        },
+        {
+            key: "hideAsync",
+            value: function hideAsync() {
+                return _async_to_generator(function() {
+                    return _ts_generator(this, function(_state) {
+                        switch(_state.label){
+                            case 0:
+                                return [
+                                    4,
+                                    GameSDK.hideBannerAdAsync(this.placementId)
+                                ];
+                            case 1:
+                                _state.sent();
+                                this.setStatus(Status2.IDLE);
+                                return [
+                                    2
+                                ];
+                        }
+                    });
+                }).call(this);
+            }
+        }
+    ]);
+    return BannerAdInstance;
+}(BannerInstance_default);
+var BannerAdInstance_default = BannerAdInstance;
 // extensions/ludex/src/ads/GoogleAds.ts
 init_define_GAME_CONFIG();
 init_define_GAME_SDK_CONFIG();
@@ -37988,8 +38143,8 @@ init_empty_script();
 init_empty_script();
 init_empty_script();
 var NODE_ENV = "development";
-var BUILD_VERSION = 0;
-var Dtos15 = Ludex.Dtos, Events5 = Ludex.Events, _Ludex_Configs9 = Ludex.Configs, AppId5 = _Ludex_Configs9.AppId, Ads = _Ludex_Configs9.Ads, Analytics7 = _Ludex_Configs9.Analytics, Debugger = _Ludex_Configs9.Debugger, Firebase = _Ludex_Configs9.Firebase, Notification = _Ludex_Configs9.Notification, RemoteConfig = _Ludex_Configs9.RemoteConfig, PerformanceMonitor = _Ludex_Configs9.PerformanceMonitor, AdaptivePerformance = _Ludex_Configs9.AdaptivePerformance, _Ludex_Plugins3 = Ludex.Plugins, _Ludex_Plugins_Ads2 = _Ludex_Plugins3.Ads, AdsTypes = _Ludex_Plugins_Ads2.Types, _Ludex_Utils48 = Ludex.Utils, D = _Ludex_Utils48.Device, O31 = _Ludex_Utils48.Object, J6 = _Ludex_Utils48.Json, S8 = _Ludex_Utils48.String, V36 = _Ludex_Utils48.Valid, T2 = _Ludex_Utils48.Time, F5 = _Ludex_Utils48.Function, Mark2 = _Ludex_Utils48.Mark;
+var BUILD_VERSION = 1;
+var Dtos15 = Ludex.Dtos, Events5 = Ludex.Events, _Ludex_Configs9 = Ludex.Configs, AppId5 = _Ludex_Configs9.AppId, Ads = _Ludex_Configs9.Ads, Analytics7 = _Ludex_Configs9.Analytics, Debugger = _Ludex_Configs9.Debugger, Firebase = _Ludex_Configs9.Firebase, Notification = _Ludex_Configs9.Notification, RemoteConfig = _Ludex_Configs9.RemoteConfig, PerformanceMonitor = _Ludex_Configs9.PerformanceMonitor, AdaptivePerformance = _Ludex_Configs9.AdaptivePerformance, _Ludex_Plugins3 = Ludex.Plugins, _Ludex_Plugins_Ads3 = _Ludex_Plugins3.Ads, AdsTypes = _Ludex_Plugins_Ads3.Types, _Ludex_Utils48 = Ludex.Utils, D = _Ludex_Utils48.Device, O31 = _Ludex_Utils48.Object, J6 = _Ludex_Utils48.Json, S8 = _Ludex_Utils48.String, V36 = _Ludex_Utils48.Valid, T2 = _Ludex_Utils48.Time, F5 = _Ludex_Utils48.Function, Mark2 = _Ludex_Utils48.Mark;
 var MagicCodex = /*#__PURE__*/ function(codex_default) {
     _inherits(MagicCodex, codex_default);
     function MagicCodex() {
@@ -38897,7 +39052,7 @@ var MagicCodex = /*#__PURE__*/ function(codex_default) {
                         }
                         break;
                     default:
-                        if (isBanner) return empty_script_default;
+                        if (isBanner) return BannerAdInstance_default;
                         return NormalAdInstance_default;
                 }
                 return null;
