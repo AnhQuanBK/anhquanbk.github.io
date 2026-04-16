@@ -1,6 +1,0 @@
-<View className="share-async-overlay">
-  <Image src="share-score.png" className="wideframe-share-score"/>
-  <Image src="{{FBInstant.player.photo}}" className="player-photo"/>
-  <Text content="{{score}}" className="player-score"/>
-  <Text content="Can you do better?" className="share-score-text"/>
-</View>
