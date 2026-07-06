@@ -450,7 +450,7 @@ streak! Log in now and keep the blocks falling in Block Puzzle Social. \u{1F4C8}
             user_id: userId,
             send_page_view: false
           });
-          const buildVersion = 1;
+          const buildVersion = 2;
           for (const tagId of tagIds) {
             window.gtag("config", tagId, {
               cookie_flags: "SameSite=None;Secure",
@@ -660,7 +660,7 @@ streak! Log in now and keep the blocks falling in Block Puzzle Social. \u{1F4C8}
       if (typeof args[2] !== "object") {
         args[2] = {};
       }
-      args[2].build = 1;
+      args[2].build = 2;
       args[2].send_to = "GA";
       args[2].extend_session = 1;
     }
@@ -10027,8 +10027,8 @@ n") {
   window.Ludex = Ludex2;
   window.TypeGuard = type_guard_default;
   window.GameName = "Block Puzzle Social";
-  window.CommitId = "8196921a-d9521494";
-  window.BuildVersion = 1;
+  window.CommitId = "8196921a-c0a235f1";
+  window.BuildVersion = 2;
   console.warn("Env mode:", "development");
   console.warn("Debugger:", Ludex2.Utils.Valid.isDebugger());
   console.warn("DevIds:", Ludex2.Configs.Debugger.ListPlayerDevIds);
@@ -12012,7 +12012,7 @@ n") {
       });
     }
     loadAdEvent$(payload) {
-      const { type, placement, service: adService } = payload;
+      const { type, placement, adService } = payload;
       this.event(Events_default.AD_LOAD, {
         ad_type: type,
         screen_name: placement,
@@ -12020,7 +12020,7 @@ n") {
       });
     }
     showAdEvent$(payload) {
-      const { type, placement, service: adService } = payload;
+      const { type, placement, adService } = payload;
       this.event(Events_default.AD_SHOW, {
         ad_type: type,
         screen_name: placement,
@@ -12028,69 +12028,69 @@ n") {
       });
     }
     loadInterstitialAd(payload) {
-      const { placement, service: adService } = payload;
+      const { placement, adService } = payload;
       this.loadAdEvent$({
         type: "interstitial",
         placement,
-        service: adService
+        adService
       });
     }
     showInterstitialAd(payload) {
-      const { placement, service: adService } = payload;
+      const { placement, adService } = payload;
       this.showAdEvent$({
         type: "interstitial",
         placement,
-        service: adService
+        adService
       });
     }
     loadRewardedVideoAd(payload) {
-      const { placement, service: adService } = payload;
+      const { placement, adService } = payload;
       this.loadAdEvent$({
         type: "rewarded_video",
         placement,
-        service: adService
+        adService
       });
     }
     showRewardedVideoAd(payload) {
-      const { placement, service: adService } = payload;
+      const { placement, adService } = payload;
       this.showAdEvent$({
         type: "rewarded_video",
         placement,
-        service: adService
+        adService
       });
     }
     receiveVideoReward(payload) {
-      const { placement, service: adService } = payload;
+      const { placement, adService } = payload;
       this.event(Events_default.AD_REWARD, {
         screen_name: placement,
         ad_service: adService
       });
     }
     loadRewardedInterstitialAd(payload) {
-      const { placement, service: adService } = payload;
+      const { placement, adService } = payload;
       this.loadAdEvent$({
         type: "rewarded_interstitial",
         placement,
-        service: adService
+        adService
       });
     }
     showRewardedInterstitialAd(payload) {
-      const { placement, service: adService } = payload;
+      const { placement, adService } = payload;
       this.showAdEvent$({
         type: "rewarded_interstitial",
         placement,
-        service: adService
+        adService
       });
     }
     receiveInterstitialReward(payload) {
-      const { placement, service: adService } = payload;
+      const { placement, adService } = payload;
       this.event(Events_default.AD_REWARD, {
         screen_name: placement,
         ad_service: adService
       });
     }
     loadAdFail(payload) {
-      const { type, placement, service: adService } = payload;
+      const { type, placement, adService } = payload;
       this.event(Events_default.AD_LOAD_FAILED, {
         ad_type: type,
         screen_name: placement,
@@ -12098,7 +12098,7 @@ n") {
       });
     }
     showAdFail(payload) {
-      const { type, placement, service: adService } = payload;
+      const { type, placement, adService } = payload;
       this.event(Events_default.AD_SHOW_FAILED, {
         ad_type: type,
         screen_name: placement,
@@ -12106,7 +12106,7 @@ n") {
       });
     }
     showingAd(payload) {
-      const { type, placement, service: adService } = payload;
+      const { type, placement, adService } = payload;
       this.event(Events_default.AD_SHOWING, {
         ad_type: type,
         screen_name: placement,
@@ -21576,7 +21576,7 @@ i n\xE0o!`
   init_empty_script();
   init_accessBlocker();
   var NODE_ENV = "development";
-  var BUILD_VERSION = 1;
+  var BUILD_VERSION = 2;
   var {
     Dtos: Dtos15,
     Events: Events9,
