@@ -1,0 +1,30 @@
+.invite-async-overlay {
+    width: 100%;
+    aspect-ratio: 952 / 492;
+}
+
+.wideframe-invite-score {
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.player-photo {
+    width: 19.22%;
+    height: 37.19%;
+    z-index: -1;
+    left: 7.77%;
+    top: 26.63%;
+    position: absolute;
+}
+
+.player-score {
+    color: #f2a62e;
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 2;
+    top: 65.71%;
+    left: 18.07%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
