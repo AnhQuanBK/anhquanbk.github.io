@@ -1,0 +1,5 @@
+<View className="invite-async-overlay">
+  <Image src="invite-score.png" className="wideframe-invite-score"/>
+  <Image src="{{FBInstant.player.photo}}" className="player-photo"/>
+  <Text content="{{score}}" className="player-score"/>
+</View>
