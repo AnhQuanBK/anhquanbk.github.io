@@ -12489,7 +12489,7 @@ n" != typeof targetValue) {
                 key: "recordFlow$",
                 value: function recordFlow$() {
                     var outcome = "abandoned";
-                    this.isFunnelCompleted() ? outcome = "completed" : this.isFunnelFailed() && (outcome = "failed"), _AdsFlowFunnel.flowHistory$.push({
+                    this.isFunnelCompleted() ? outcome = "completed" : this.isFunnelFailed() && (outcome = "failed"), _AdsFlowFunnel.flowHistory.push({
                         outcome: outcome,
                         history: _to_consumable_array(this.labels$),
                         missing: this.getMissingEvents(),
